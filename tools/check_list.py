@@ -145,82 +145,114 @@ challenging_conversation_flow = [
     {"speaker": "Recruiter", "text": "Impressive. Final question: why are you looking to leave your current role?"},
     {"speaker": "Candidate", "text": "I'm looking for new challenges, and your team's reputation for rigorous, foundational research is really what attracts me."}
 ]
-
 verbose = False
+new_questions = []
 
-if not API_KEY or API_KEY == "votre_cle_api_anthropic_ici":
-    print("="*50)
-    print("ERREUR : Clé API non configurée.")
-    print("Veuillez éditer le script et ajouter votre clé API Claude")
-    print("à la variable 'API_KEY' en haut du fichier.")
-    print("="*50)
+if not API_KEY or API_KEY in ("votre_cle_api_anthropic_ici", "YOUR_ANTHROPIC_API_KEY_HERE"):
+    print("=" * 50)
+    print("ERROR: Anthropic API key not configured.")
+    print("Please edit the script and set the ANTHROPIC API key in the 'API_KEY' variable.")
+    print("=" * 50)
 else:
     if verbose:
-        print("Initialisation du Moteur Zero-Shot Claude (API)...")
+        print("Initializing Claude zero-shot engine (API)...")
     engine = ClaudeBatchAnalyzer(themes=all_themes, api_key=API_KEY)
     if verbose:
-        print("Moteur prêt.\n")
-        print("--- DÉBUT DE LA SIMULATION D'ENTRETIEN ---")
+        print("Engine ready.\n")
+        print("--- START OF INTERVIEW SIMULATION ---")
+
     output = []
     speaker = challenging_conversation_flow[0]["speaker"]
     current_text = f"[{speaker}]"
-    for sentence in challenging_conversation_flow:
-        if speaker == "Recruiter" and sentence["speaker"] == "Candidate":
-            current_text += f"[Candidate] {sentence["text"]}"
+
+    for turn in challenging_conversation_flow:
+        if speaker == "Recruiter" and turn["speaker"] == "Candidate":
+            current_text += f"[Candidate] {turn['text']}"
             speaker = "Candidate"
-        elif speaker == "Candidate" and sentence["speaker"] == "Recruiter":
-            covered_themes = engine.analyze_text(current_text)
-            output.append({'text': current_text, 'covered_theme': covered_themes})
-            for theme in covered_themes:
-                if theme in list(all_themes.keys()):
-                    occurrences[theme] += 1
-            current_text = f"[Recruiter] {sentence["text"]}"
+        elif speaker == "Candidate" and turn["speaker"] == "Recruiter":
+            covered_themes = engine.analyze_text(current_text, verbose=verbose)
+            # Split current_text into recruiter question and candidate answer
+            parts = re.findall(r"\[(Recruiter|Candidate)\]\s*([^\[]+)", current_text)
+            recruiter_part = ""
+            candidate_part = ""
+            for role, txt in parts:
+                txt = txt.strip()
+                if role == "Recruiter":
+                    recruiter_part = txt
+                elif role == "Candidate":
+                    candidate_part = txt
+            output.append({"recruiter_part": recruiter_part, "candidate_part": candidate_part, "covered_theme": covered_themes})
+            if "[EXTRA]" in covered_themes:
+                new_questions.append(recruiter_part)
+            else:
+                for theme in covered_themes:
+                    if theme in all_themes:
+                        occurrences[theme] += 1
+            current_text = f"[Recruiter] {turn['text']}"
             speaker = "Recruiter"
         else:
-            current_text += f" {sentence["text"]}"
-    covered_themes = engine.analyze_text(current_text)
-    output.append({'text': current_text, 'covered_theme': covered_themes})
-    for theme in covered_themes:
-        if theme in list(all_themes.keys()):
-            occurrences[theme] += 1
-    
-    
-    print("\n--- RÉSULTATS DE L'ANALYSE DE L'ENTRETIEN ---")
-    # Présentation synthétique et lisible des résultats d'occurrence
-    print("\n" + "="*60)
-    print("RÉSULTAT : Occurrences des thèmes détectés")
-    print("="*60)
+            current_text += f" {turn['text']}"
 
-    # Nombre de segments analysés
-    num_segments = len(output) if 'output' in globals() else 0
-    print(f"Segments analysés : {num_segments}\n")
+    # Analyze the final accumulated segment
+    covered_themes = engine.analyze_text(current_text, verbose=verbose)
+    # Split current_text into recruiter question and candidate answer
+    parts = re.findall(r"\[(Recruiter|Candidate)\]\s*([^\[]+)", current_text)
+    recruiter_part = ""
+    candidate_part = ""
+    for role, txt in parts:
+        txt = txt.strip()
+        if role == "Recruiter":
+            recruiter_part = txt
+        elif role == "Candidate":
+            candidate_part = txt
+    output.append({"recruiter_part": recruiter_part, "candidate_part": candidate_part, "covered_theme": covered_themes})
+    if "[EXTRA]" in covered_themes:
+        new_questions.append(recruiter_part)
+    else:
+        for theme in covered_themes:
+            if theme in all_themes:
+                occurrences[theme] += 1
 
-    # Séparer thèmes principaux et suggestions
+    # ----------------------
+    # PRINT SUMMARY REPORT
+    # ----------------------
+    print("\n--- INTERVIEW ANALYSIS RESULTS ---")
+    print("\n" + "=" * 60)
+    print("SUMMARY: Detected theme occurrences")
+    print("=" * 60)
+
+    num_segments = len(output)
+    print(f"Analyzed segments : {num_segments}\n")
+
     suggested_keys = set(suggested_questions.keys())
     main_keys = [k for k in occurrences.keys() if k not in suggested_keys]
 
-    # Thèmes principaux triés par occurrences décroissantes
     sorted_main = sorted(main_keys, key=lambda k: occurrences.get(k, 0), reverse=True)
 
-    print("Thèmes (triés par fréquence) :")
+    print("Themes (sorted by frequency):")
     for tag in sorted_main:
         count = occurrences.get(tag, 0)
         desc = all_themes.get(tag, "")
         if count > 0:
             print(f"  {tag:25} — {count:3d} occurrences — {desc}")
-    # Afficher ceux à zéro en bloc, si nécessaire
+
     zeros = [t for t in sorted_main if occurrences.get(t, 0) == 0]
     if zeros:
-        print("\nThèmes non détectés :")
+        print("\nUndetected themes:")
         for tag in zeros:
             print(f"  {tag}")
 
-    # Suggestions traitées à part
-    print("\n" + "-"*60)
-    print("Questions suggérées (traitées séparément) :")
+    print("\n" + "-" * 60)
+    print("Suggested questions (handled separately):")
     for tag, q in suggested_questions.items():
         count = occurrences.get(tag, 0)
         print(f"  {tag:15} — {count:3d} occurrences — {q}")
-    print("\n" + "="*60)
-    print("Fin du rapport.")
-    print("="*60)
+
+    if new_questions:
+        print("\nUnclassified segments:")
+        for i, q in enumerate(new_questions, 1):
+            print(f"  {i}. {q}")
+
+    print("\n" + "=" * 60)
+    print("End of report.")
+    print("=" * 60)
