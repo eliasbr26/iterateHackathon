@@ -7,12 +7,12 @@ from typing import Dict, List, Any
 # API_KEY = os.environ.get("ANTHROPIC_API_KEY")
 API_KEY = "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"
 
-class ClaudeBatchAnalyzer:
+class DetectThemes:
     """
     Analyzes a full interview transcript (Batch) and
     returns a list of all themes that were discussed.
     """
-    def __init__(self, themes: Dict[str, str], api_key: str):
+    def __init__(self, themes: Dict[str, str], model: str, api_key: str):
         if not api_key:
             raise ValueError(
                 "Anthropic API key not found. "
@@ -20,7 +20,9 @@ class ClaudeBatchAnalyzer:
                 "the ANTHROPIC_API_KEY environment variable."
             )
         self.themes = themes
+        self.model = model
         self.client = anthropic.Anthropic(api_key=api_key)
+        self.current_line = 0
 
     def _build_prompt(self, full_transcript: str) -> str:
         """
@@ -32,7 +34,6 @@ class ClaudeBatchAnalyzer:
         for tag, description in self.themes.items():
             prompt += f"{tag}: {description}\n"
         prompt += "</themes_to_track>\n\n"
-        
         prompt += "Here is the full transcript of an interview:\n"
         prompt += "<full_transcript>\n"
         prompt += full_transcript
@@ -52,14 +53,31 @@ class ClaudeBatchAnalyzer:
         """
         tags = re.findall(r"\[([0-9A-Z_]+)\]", response_text)
         return [f"[{tag}]" for tag in tags]
+        
+    def run_analysis(self, file: str, verbose: bool=False) -> List[str]:
+        """
+        Public method to run the analysis on the full transcript.
+        """
+        with open(file, "r", encoding="utf-8") as f:
+            transcript = f.readlines()
+        line = transcript[-1]
+        current_time = int(line[1:3])*3600 + int(line[4:6])*60 + int(line[7:9])
+        for i in range(len(transcript)-2,-1,-1):
+            line = transcript[i]
+            time_code = int(line[1:3])*3600 + int(line[4:6])*60 + int(line[7:9])
+            if current_time - time_code > 30:
+                transcript = transcript[i+1:]
+                break
+        transcript = "".join(transcript)
+        return self.detect_QA(transcript, verbose=verbose)
 
-    def analyze_text(self, transcript: str, verbose: bool=False) -> List[str]:
+    def detect_QA(self, text: str, verbose: bool=False) -> List[str]:
         """
         Runs the complete analysis of the transcript.
         """
         if verbose:
             print("[INFO] Starting 'Batch Analysis' (Single Prediction)...")
-        prompt = self._build_prompt(transcript)
+        prompt = self._build_prompt(text)
         
         start_time = time.time()
         if verbose:
@@ -68,8 +86,8 @@ class ClaudeBatchAnalyzer:
         try:
             message = self.client.messages.create(
                 # For long transcript analysis, Sonnet is a good balance.
-                model="claude-3-haiku-20240307", 
-                max_tokens=1000, # Leave room for the list
+                model=self.model, 
+                max_tokens=100, # Leave room for the list
                 system="You are an interview analyzer. Respond *only* in the requested list format.",
                 messages=[
                     {"role": "user", "content": prompt}
@@ -93,6 +111,9 @@ class ClaudeBatchAnalyzer:
         # --- Parse the response ---
         covered_themes = self._parse_response(raw_response)
         return covered_themes
+
+
+
 
 # --- HELPER FUNCTION (unchanged logic) ---
 def format_conversation(dialogue: List[Dict[str, str]]) -> str:

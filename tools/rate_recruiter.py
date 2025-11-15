@@ -44,18 +44,18 @@ class ClaudeRecruiterRater:
         prompt += "Example of the response format:\n"
         prompt += """
 {
-  "QUESTION_QUALITY": {
+  "[CRITERIA_1]": {
     "score": 0.8,
-    "justification": "The question was open-ended and relevant."
-  },
-  "ACTIVE_LISTENING": {
+    "justification": "The recruiter is ..."
+    },
+    "[CRITERIA_2]": {
     "score": 0.5,
-    "justification": "The recruiter missed a key detail the candidate mentioned."
-  },
-  "CLARITY": {
-    "score": 1.0,
-    "justification": "The question was direct and easy to understand."
-  }
+    "justification": "The recruiter ..."
+    },
+    "[CRITERIA_3]": {
+    "score": 0.2,
+    "justification": "The recruiter ..."
+    }
 }
 """
         return prompt
@@ -64,7 +64,6 @@ class ClaudeRecruiterRater:
         """
         Extracts the JSON object from Claude's raw response.
         """
-        print(f"  [DEBUG] Raw response from Claude:\n{response_text}")
         
         match = re.search(r"\{.*\}", response_text, re.DOTALL)
         
@@ -79,17 +78,20 @@ class ClaudeRecruiterRater:
             return data
         except json.JSONDecodeError as e:
             print(f"  [ERROR] JSON parsing failed: {e}")
+            print("  [DEBUG] Extracted JSON string:\n", json_string)
             return {}
 
-    def rate_recruiter_performance(self, segment_transcript: str, criteria: Dict[str, str]) -> Dict[str, Any]:
+    def rate_recruiter_performance(self, segment_transcript: str, criteria: Dict[str, str], verbose: bool = False) -> Dict[str, Any]:
         """
         Runs the complete analysis of the segment.
         """
-        print("[INFO] Starting 'Recruiter Performance' Analysis...")
+        if verbose:
+            print("[INFO] Starting 'Recruiter Performance' Analysis...")
         prompt = self._build_prompt(segment_transcript, criteria)
         
         start_time = time.time()
-        print("  [INFO] Calling Claude API (Sonnet)...")
+        if verbose:
+            print("  [INFO] Calling Claude API (Sonnet)...")
         
         try:
             message = self.client.messages.create(
@@ -112,8 +114,10 @@ class ClaudeRecruiterRater:
         end_time = time.time()
         latency = end_time - start_time
         
-        print(f"  [INFO] Response received in {latency:.2f}s.")
-        
+        if verbose:
+            print(f"  [INFO] Response received in {latency:.2f}s.")
+            print(f"  [DEBUG] Raw response from Claude:\n{raw_response}")
+
         # --- Parse the JSON response ---
         ratings = self._parse_response(raw_response)
         return ratings
@@ -183,11 +187,13 @@ segment_to_analyze = [
 
 # --- RUN THE ANALYSIS ---
 
+verbose = False
 
 if not API_KEY or API_KEY == "sk-ant-...":
     print("ERROR: API Key not configured.")
 else:
-    print("Initializing Recruiter Rater Engine...")
+    if verbose:
+        print("Initializing Recruiter Rater Engine...")
     rater = ClaudeRecruiterRater(api_key=API_KEY)
     
     # Format the segment into a single string
@@ -200,7 +206,6 @@ else:
     
     print("\n--- RECRUITER PERFORMANCE RATINGS ---")
     if rate_dynamic:
-        # Pretty-print the JSON
         print(json.dumps(rate_dynamic, indent=2))
     if rate_questionning:
         print(json.dumps(rate_questionning, indent=2))
