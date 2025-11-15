@@ -25,6 +25,36 @@ export interface GenerateTokenResponse {
   url: string;
 }
 
+export interface Analytics {
+  room: string;
+  total_evaluations: number;
+  total_transcripts: number;
+  difficulty_distribution: {
+    easy: number;
+    medium: number;
+    hard: number;
+    unknown: number;
+  };
+  topic_coverage: {
+    [topic: string]: boolean;
+  };
+  average_tone: 'harsh' | 'neutral' | 'encouraging';
+  red_flag_count: number;
+  average_confidence: {
+    subject: number;
+    difficulty: number;
+    tone: number;
+  };
+  evaluations_sample?: any[];
+}
+
+export interface AgentStatus {
+  room: string;
+  status: 'running' | 'stopped' | 'error' | 'completed';
+  started_at: string;
+  error?: string;
+}
+
 export const api = {
   async createRoom(roomName?: string, maxParticipants: number = 10): Promise<CreateRoomResponse> {
     const response = await fetch(`${API_BASE_URL}/rooms/create`, {
@@ -88,6 +118,26 @@ export const api = {
 
     if (!response.ok) {
       throw new Error(`Failed to delete room: ${response.statusText}`);
+    }
+
+    return response.json();
+  },
+
+  async getAnalytics(roomName: string): Promise<Analytics> {
+    const response = await fetch(`${API_BASE_URL}/rooms/${roomName}/analytics`);
+
+    if (!response.ok) {
+      throw new Error(`Failed to get analytics: ${response.statusText}`);
+    }
+
+    return response.json();
+  },
+
+  async getAgentStatus(roomName: string): Promise<AgentStatus> {
+    const response = await fetch(`${API_BASE_URL}/rooms/${roomName}/status`);
+
+    if (!response.ok) {
+      throw new Error(`Failed to get agent status: ${response.statusText}`);
     }
 
     return response.json();

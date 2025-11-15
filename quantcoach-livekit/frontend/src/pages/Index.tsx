@@ -1,197 +1,166 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import DashboardHeader from "@/components/dashboard/DashboardHeader";
 import MetricsPanel from "@/components/dashboard/MetricsPanel";
 import TranscriptFeed from "@/components/dashboard/TranscriptFeed";
-import AlertPanel from "@/components/dashboard/AlertPanel";
 import CoverageProgressBar from "@/components/dashboard/CoverageProgressBar";
 import { VideoArea } from "@/components/video/VideoArea";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { CheckCircle2, XCircle, TrendingUp, User, Briefcase, Globe, Calendar } from "lucide-react";
+import { CheckCircle2, TrendingUp, User, Briefcase, Globe, Calendar } from "lucide-react";
 
-// Demo data for realistic simulation
+// New visualization components
+import DifficultyBar from "@/components/dashboard/DifficultyBar";
+import TopicCoverageRadar from "@/components/dashboard/TopicCoverageRadar";
+import RedFlagPanel from "@/components/dashboard/RedFlagPanel";
+import ToneIndicator from "@/components/dashboard/ToneIndicator";
+import InterviewTimeline from "@/components/dashboard/InterviewTimeline";
+import ConfidenceMeters from "@/components/dashboard/ConfidenceMeters";
+
+// Real-time data hook
+import { useTranscriptStream } from "@/hooks/useTranscriptStream";
+
+// Demo data (kept for demo mode)
 const DEMO_TRANSCRIPTS = [
-  { 
-    id: '1', 
-    text: "Let's start with a technical question. Can you walk me through the Black-Scholes model and its assumptions?", 
-    speaker: 'interviewer' as const, 
+  {
+    id: '1',
+    text: "Let's start with a technical question. Can you walk me through the Black-Scholes model and its assumptions?",
+    speaker: 'interviewer' as const,
     timestamp: Date.now() - 120000,
     confidence: 0.96
   },
-  { 
-    id: '2', 
-    text: "Absolutely. The Black-Scholes model is a mathematical framework for pricing European options. The key assumptions include: constant volatility, log-normal distribution of returns, no transaction costs, and the ability to short sell. The formula itself derives from solving a partial differential equation that accounts for the option's time decay and the underlying asset's stochastic behavior.", 
-    speaker: 'candidate' as const, 
+  {
+    id: '2',
+    text: "Absolutely. The Black-Scholes model is a mathematical framework for pricing European options. The key assumptions include: constant volatility, log-normal distribution of returns, no transaction costs, and the ability to short sell.",
+    speaker: 'candidate' as const,
     timestamp: Date.now() - 105000,
     confidence: 0.94
   },
-  { 
-    id: '3', 
-    text: "Good. Now explain Delta and Gamma to me. How do they interact?", 
-    speaker: 'interviewer' as const, 
-    timestamp: Date.now() - 90000,
-    confidence: 0.97
-  },
-  { 
-    id: '4', 
-    text: "Delta measures the option's sensitivity to price changes in the underlying - essentially the hedge ratio. Gamma is the second derivative - it measures how Delta itself changes. High Gamma means your hedge becomes unstable quickly, requiring frequent rebalancing. In volatile markets, managing Gamma risk is crucial because your Delta hedge can deteriorate rapidly.", 
-    speaker: 'candidate' as const, 
-    timestamp: Date.now() - 70000,
-    confidence: 0.93
-  },
-  { 
-    id: '5', 
-    text: "Impressive. Tell me about a time when you had to make a decision under extreme pressure. How did you handle it?", 
-    speaker: 'interviewer' as const, 
-    timestamp: Date.now() - 50000,
-    confidence: 0.95
-  },
+];
+
+const DEMO_EVALUATIONS = [
   {
-    id: '6',
-    text: "During my internship at the trading desk, there was a flash crash scenario. I had to quickly assess whether our positions were at risk and communicate with the team. I stayed calm, verified the data twice, and we managed to hedge appropriately before significant losses occurred.",
-    speaker: 'candidate' as const,
-    timestamp: Date.now() - 35000,
-    confidence: 0.91
+    timestamp: new Date().toISOString(),
+    window_start: new Date(Date.now() - 20000).toISOString(),
+    window_end: new Date(Date.now() - 10000).toISOString(),
+    transcripts_evaluated: 2,
+    subject_relevance: 'on_topic' as const,
+    question_difficulty: 'medium' as const,
+    interviewer_tone: 'neutral' as const,
+    summary: 'Discussion about Black-Scholes model and option pricing fundamentals.',
+    key_topics: ['CV_TECHNIQUES', 'TIME_SERIES_MODELS'],
+    flags: [],
+    confidence_subject: 0.95,
+    confidence_difficulty: 0.88,
+    confidence_tone: 0.92,
   }
 ];
 
-const DEMO_ALERT = {
-  id: 'alert-1',
-  type: 'suggestion' as const,
-  severity: 'low' as const,
-  title: 'Follow-up Opportunity',
-  message: 'The candidate mentioned risk management. Consider asking about specific quantitative risk metrics they\'ve used.',
-  suggestion: 'Ask about VaR, Expected Shortfall, or stress testing methodologies.',
-  timestamp: Date.now() - 5000,
-  dismissed: false
-};
-
-const INTERVIEWER_PROFILE = {
-  name: "Marcus Chen",
-  age: 34,
-  role: "Senior Quantitative Analyst",
-  languages: ["English (Native)", "Mandarin (Fluent)", "Spanish (Intermediate)"],
-  experience: "8 years",
-  education: "PhD in Financial Mathematics, MIT",
-  specializations: ["Derivatives Pricing", "Risk Management", "Statistical Arbitrage"],
-  keyInsights: [
-    "Strong technical questioning approach",
-    "Focuses on practical application of theory",
-    "Values stress-testing knowledge",
-    "Emphasizes real-world trading scenarios"
-  ],
-  interviewHistory: {
-    totalInterviews: 127,
-    averageRating: 4.6,
-    successRate: 73
-  }
-};
-
-const AI_REVIEWS = {
-  strengths: [
-    {
-      title: "Clear Technical Questions",
-      description: "Questions were well-structured and progressively increased in complexity, from Black-Scholes basics to advanced Greeks interaction.",
-      score: 9.2
-    },
-    {
-      title: "Good Follow-up Timing",
-      description: "Appropriately transitioned from technical to behavioral questions after establishing candidate's knowledge base.",
-      score: 8.8
-    },
-    {
-      title: "Active Listening",
-      description: "Demonstrated attention to candidate's responses by asking relevant follow-ups about risk management.",
-      score: 8.5
-    }
-  ],
-  improvements: [
-    {
-      title: "Probe Deeper on Practical Experience",
-      description: "While the flash crash story was good, consider asking for specific numbers or outcomes to verify depth of experience.",
-      severity: "medium",
-      suggestion: "Ask: 'What was the P&L impact?' or 'What specific hedging strategy did you implement?'"
-    },
-    {
-      title: "Diversify Question Types",
-      description: "Heavy focus on quantitative finance. Consider adding questions about teamwork, communication, or project management.",
-      severity: "low",
-      suggestion: "Include questions about cross-functional collaboration or handling disagreements with traders."
-    },
-    {
-      title: "Watch Interruption Patterns",
-      description: "Interrupted candidate once during the Greeks explanation. Allow complete answers before moving forward.",
-      severity: "low",
-      suggestion: "Wait 2-3 seconds after candidate finishes speaking before asking next question."
-    }
-  ],
-  overallScore: 8.7,
-  biasCheck: {
-    status: "passed",
-    notes: "No detected bias in questioning. Maintained professional and objective tone throughout."
-  }
-};
-
 const Index = () => {
-  const [demoMode, setDemoMode] = useState(false);
+  const [demoMode, setDemoMode] = useState(false); // Start in demo mode
   const [sessionStatus, setSessionStatus] = useState<'initializing' | 'active' | 'paused' | 'completed'>('active');
-  const [duration, setDuration] = useState(847);
-  const [transcripts, setTranscripts] = useState(DEMO_TRANSCRIPTS);
-  const [alerts, setAlerts] = useState([DEMO_ALERT]);
-  const [audioActivity, setAudioActivity] = useState({ interviewer: 0, candidate: 0 });
+  const [duration, setDuration] = useState(0);
   const [activeTab, setActiveTab] = useState("session");
-  
-  const [metrics, setMetrics] = useState({
-    coverageScore: 7.2,
-    scriptAdherence: 89,
-    biasAlerts: 0,
-    consistency: 'High' as const
+  const [roomName, setRoomName] = useState<string>("test1");
+
+  // Real-time SSE connection
+  const {
+    transcripts: liveTranscripts,
+    evaluations: liveEvaluations,
+    isConnected,
+    error: sseError
+  } = useTranscriptStream({
+    roomName: roomName,
+    apiBaseUrl: import.meta.env.VITE_API_URL || 'http://localhost:8000',
+    autoConnect: !demoMode, // Only connect if not in demo mode
   });
 
-  const [coverage, setCoverage] = useState({
-    technical: 0.67,
-    behavioral: 0.33,
-    market_knowledge: 0.20
-  });
+  // Choose between demo and real data
+  const transcripts = demoMode ? DEMO_TRANSCRIPTS : liveTranscripts;
+  const evaluations = demoMode ? DEMO_EVALUATIONS : liveEvaluations;
 
-  // Demo mode: simulate real-time updates (only on Live Session tab)
+  // Convert transcripts to feed format
+  const transcriptFeedData = transcripts.map((t, idx) => ({
+    id: `transcript-${idx}`,
+    text: t.text,
+    speaker: t.speaker as 'interviewer' | 'candidate',
+    timestamp: new Date(t.timestamp).getTime(),
+    confidence: 0.9,
+  }));
+
+  // Calculate metrics from evaluations
+  const calculateMetrics = () => {
+    if (evaluations.length === 0) {
+      return {
+        coverageScore: 0,
+        scriptAdherence: 0,
+        biasAlerts: 0,
+        consistency: 'Unknown' as const
+      };
+    }
+
+    // Calculate coverage score based on topic variety
+    const uniqueTopics = new Set(evaluations.flatMap(e => e.key_topics));
+    const coverageScore = Math.min(10, (uniqueTopics.size / 11) * 10);
+
+    // Calculate script adherence based on relevance
+    const onTopicCount = evaluations.filter(e => e.subject_relevance === 'on_topic').length;
+    const scriptAdherence = (onTopicCount / evaluations.length) * 100;
+
+    // Count bias alerts (harsh tone or off-topic)
+    const biasAlerts = evaluations.filter(
+      e => e.interviewer_tone === 'harsh' || e.subject_relevance === 'off_topic'
+    ).length;
+
+    // Determine consistency based on tone variance
+    const toneValues = { harsh: 0, neutral: 1, encouraging: 2 };
+    const toneScores = evaluations.map(e => toneValues[e.interviewer_tone.toLowerCase() as keyof typeof toneValues] ?? 1);
+    const toneVariance = toneScores.reduce((acc, val) => acc + Math.abs(val - 1), 0) / toneScores.length;
+    const consistency = toneVariance < 0.3 ? 'High' : toneVariance < 0.6 ? 'Medium' : 'Low';
+
+    return {
+      coverageScore,
+      scriptAdherence: Math.round(scriptAdherence),
+      biasAlerts,
+      consistency: consistency as 'High' | 'Medium' | 'Low'
+    };
+  };
+
+  const metrics = calculateMetrics();
+
+  // Calculate topic coverage for progress bar
+  const calculateCoverage = () => {
+    const allTopics = evaluations.flatMap(e => e.key_topics);
+
+    const technicalTopics = ['CV_TECHNIQUES', 'REGULARIZATION', 'FEATURE_SELECTION',
+                             'STATIONARITY', 'TIME_SERIES_MODELS', 'OPTIMIZATION_PYTHON'];
+    const behavioralTopics = ['BEHAVIORAL_PRESSURE', 'BEHAVIORAL_TEAMWORK'];
+    const marketTopics = ['LOOKAHEAD_BIAS', 'DATA_PIPELINE'];
+
+    const technicalCovered = technicalTopics.filter(t => allTopics.includes(t)).length;
+    const behavioralCovered = behavioralTopics.filter(t => allTopics.includes(t)).length;
+    const marketCovered = marketTopics.filter(t => allTopics.includes(t)).length;
+
+    return {
+      technical: technicalCovered / technicalTopics.length,
+      behavioral: behavioralCovered / behavioralTopics.length,
+      market_knowledge: marketCovered / marketTopics.length,
+    };
+  };
+
+  const coverage = calculateCoverage();
+
+  // Update duration timer
   useEffect(() => {
-    if (!demoMode || sessionStatus !== 'active' || activeTab !== 'session') return;
+    if (sessionStatus !== 'active') return;
 
     const timer = setInterval(() => {
       setDuration(prev => prev + 1);
-      
-      // Randomly update audio activity
-      if (Math.random() > 0.7) {
-        setAudioActivity({
-          interviewer: Math.random() > 0.5 ? Math.random() : 0,
-          candidate: Math.random() > 0.5 ? Math.random() : 0
-        });
-      }
-
-      // Gradually improve metrics
-      if (Math.random() > 0.9) {
-        setMetrics(prev => ({
-          ...prev,
-          coverageScore: Math.min(10, prev.coverageScore + 0.1),
-          scriptAdherence: Math.min(100, prev.scriptAdherence + 1)
-        }));
-      }
-
-      // Gradually increase coverage
-      if (Math.random() > 0.85) {
-        setCoverage(prev => ({
-          technical: Math.min(1, prev.technical + 0.02),
-          behavioral: Math.min(1, prev.behavioral + 0.03),
-          market_knowledge: Math.min(1, prev.market_knowledge + 0.02)
-        }));
-      }
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [demoMode, sessionStatus, activeTab]);
+  }, [sessionStatus]);
 
   const handlePause = () => {
     setSessionStatus(prev => prev === 'active' ? 'paused' : 'active');
@@ -203,42 +172,62 @@ const Index = () => {
     }
   };
 
-  const handleDismissAlert = (id: string) => {
-    setAlerts(prev => prev.map(a => a.id === id ? { ...a, dismissed: true } : a));
+  const handleToggleDemo = () => {
+    setDemoMode(!demoMode);
   };
 
-  const DashboardContent = () => {
+  const dashboardContent = useMemo(() => {
     return (
       <>
         <div className="flex-1 flex flex-col overflow-hidden">
           {/* Video Area - Top Section */}
           <div className="border-b border-border-subtle p-6">
             <VideoArea />
+
+            {/* Connection status indicator */}
+            {!demoMode && (
+              <div className="mt-4 flex items-center gap-2 text-xs">
+                <div className={`w-2 h-2 rounded-full ${isConnected ? 'bg-green-500' : 'bg-red-500'}`} />
+                <span className="text-muted-foreground">
+                  {isConnected ? 'Live data streaming' : 'Disconnected'}
+                  {sseError && ` - ${sseError}`}
+                </span>
+              </div>
+            )}
           </div>
 
-          {/* Three Column Layout - Bottom Section */}
-          <div className="flex-1 flex overflow-hidden">
-            {/* Metrics Panel - Left 20% */}
-            <div className="w-[20%] border-r border-border-subtle p-6 overflow-y-auto">
-              <h2 className="text-sm font-semibold text-text-primary mb-4">Performance Metrics</h2>
+          {/* Main Content Grid */}
+          <div className="flex-1 grid grid-cols-12 gap-6 p-6 overflow-auto">
+            {/* Left Column - 3 cols */}
+            <div className="col-span-3 space-y-6 overflow-y-auto">
+              <ToneIndicator evaluations={evaluations} />
+              <ConfidenceMeters evaluations={evaluations} />
               <MetricsPanel metrics={metrics} />
             </div>
 
-            {/* Transcript Feed - Center 50% */}
-            <div className="w-[50%] border-r border-border-subtle flex flex-col">
-              <TranscriptFeed
-                messages={transcripts}
-                isLive={sessionStatus === 'active'}
-                audioActivity={audioActivity}
-              />
+            {/* Center Column - 6 cols */}
+            <div className="col-span-6 flex flex-col space-y-4 overflow-hidden">
+              <DifficultyBar evaluations={evaluations} />
+              <div className="flex-1 border rounded-lg overflow-hidden">
+                <TranscriptFeed
+                  messages={transcriptFeedData}
+                  isLive={sessionStatus === 'active'}
+                  audioActivity={{ interviewer: 0, candidate: 0 }}
+                />
+              </div>
             </div>
 
-            {/* Alert Panel - Right 30% */}
-            <div className="w-[30%] p-6 overflow-y-auto">
-              <AlertPanel
-                alerts={alerts}
-                onDismissAlert={handleDismissAlert}
-              />
+            {/* Right Column - 3 cols */}
+            <div className="col-span-3 overflow-y-auto">
+              <RedFlagPanel evaluations={evaluations} />
+            </div>
+          </div>
+
+          {/* Bottom Section - Visualizations */}
+          <div className="border-t p-6 space-y-6">
+            <div className="grid grid-cols-2 gap-6">
+              <TopicCoverageRadar evaluations={evaluations} />
+              <InterviewTimeline evaluations={evaluations} />
             </div>
           </div>
         </div>
@@ -246,18 +235,64 @@ const Index = () => {
         <CoverageProgressBar coverage={coverage} />
       </>
     );
+  }, [demoMode, isConnected, sseError, evaluations, metrics, transcriptFeedData, sessionStatus, coverage]);
+
+  // Interviewer profile (static for now)
+  const INTERVIEWER_PROFILE = {
+    name: "AI Interview Analyst",
+    age: null,
+    role: "Quantitative Finance Interview System",
+    languages: ["English"],
+    experience: "Real-time AI-powered analysis",
+    education: "Anthropic Claude Sonnet 4.5",
+    specializations: ["Topic Detection", "Difficulty Analysis", "Tone Assessment"],
+    keyInsights: [
+      "Tracks 11 core quantitative finance topics",
+      "Real-time difficulty assessment (Easy/Medium/Hard)",
+      "Interviewer tone analysis (Harsh/Neutral/Encouraging)",
+      "Automatic red flag detection for off-topic discussions"
+    ],
+  };
+
+  const AI_REVIEWS = {
+    overallScore: evaluations.length > 0
+      ? ((metrics.coverageScore + (metrics.scriptAdherence / 10)) / 2).toFixed(1)
+      : "N/A",
+    biasCheck: {
+      status: metrics.biasAlerts === 0 ? "passed" : "warnings",
+      notes: metrics.biasAlerts === 0
+        ? "No detected bias in questioning"
+        : `${metrics.biasAlerts} potential bias indicators detected`,
+    },
+    strengths: evaluations
+      .filter(e => e.subject_relevance === 'on_topic' && e.question_difficulty !== 'easy')
+      .slice(-3)
+      .map(e => ({
+        title: `Focused on ${e.key_topics[0] || 'Core Topics'}`,
+        description: e.summary,
+        score: e.confidence_subject * 10,
+      })),
+    improvements: evaluations
+      .filter(e => e.flags.length > 0 || e.subject_relevance === 'off_topic')
+      .slice(-3)
+      .map(e => ({
+        title: e.subject_relevance === 'off_topic' ? 'Went Off-Topic' : 'Follow-up Opportunity',
+        description: e.summary,
+        severity: e.subject_relevance === 'off_topic' ? 'high' : 'medium',
+        suggestion: e.flags[0] || 'Consider steering back to quantitative finance topics',
+      })),
   };
 
   return (
     <div className="min-h-screen flex flex-col bg-bg-primary">
       <DashboardHeader
-        sessionId="demo-12847"
+        sessionId={roomName}
         sessionStatus={sessionStatus}
         duration={duration}
         onPause={handlePause}
         onEnd={handleEnd}
         demoMode={demoMode}
-        onToggleDemo={() => setDemoMode(!demoMode)}
+        onToggleDemo={handleToggleDemo}
       />
 
       <div className="flex-1 overflow-hidden">
@@ -265,18 +300,17 @@ const Index = () => {
           <div className="border-b border-border-subtle px-6">
             <TabsList className="h-12">
               <TabsTrigger value="session">Live Session</TabsTrigger>
-              <TabsTrigger value="profile">Interviewer Profile</TabsTrigger>
-              <TabsTrigger value="reviews">AI Reviews</TabsTrigger>
+              <TabsTrigger value="profile">System Info</TabsTrigger>
+              <TabsTrigger value="reviews">AI Analysis</TabsTrigger>
             </TabsList>
           </div>
 
           <TabsContent value="session" className="flex-1 m-0 overflow-hidden">
-            <DashboardContent />
+            {dashboardContent}
           </TabsContent>
 
           <TabsContent value="profile" className="flex-1 m-0 overflow-auto p-6">
             <div className="max-w-6xl mx-auto space-y-6">
-              {/* Header Section */}
               <Card>
                 <CardHeader>
                   <div className="flex items-start justify-between">
@@ -290,91 +324,40 @@ const Index = () => {
                       </div>
                     </div>
                     <Badge variant="secondary" className="text-sm">
-                      Active Interviewer
+                      {isConnected && !demoMode ? 'Live' : 'Demo Mode'}
                     </Badge>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                     <div className="space-y-1">
                       <div className="flex items-center gap-2 text-muted-foreground text-sm">
-                        <Calendar className="h-4 w-4" />
-                        <span>Age</span>
+                        <Globe className="h-4 w-4" />
+                        <span>Language</span>
                       </div>
-                      <p className="font-medium">{INTERVIEWER_PROFILE.age} years</p>
+                      <p className="font-medium">{INTERVIEWER_PROFILE.languages.join(', ')}</p>
                     </div>
                     <div className="space-y-1">
                       <div className="flex items-center gap-2 text-muted-foreground text-sm">
                         <Briefcase className="h-4 w-4" />
-                        <span>Experience</span>
+                        <span>Model</span>
                       </div>
-                      <p className="font-medium">{INTERVIEWER_PROFILE.experience}</p>
+                      <p className="font-medium">{INTERVIEWER_PROFILE.education}</p>
                     </div>
                     <div className="space-y-1">
                       <div className="flex items-center gap-2 text-muted-foreground text-sm">
                         <TrendingUp className="h-4 w-4" />
-                        <span>Success Rate</span>
+                        <span>Evaluations</span>
                       </div>
-                      <p className="font-medium">{INTERVIEWER_PROFILE.interviewHistory.successRate}%</p>
-                    </div>
-                    <div className="space-y-1">
-                      <div className="flex items-center gap-2 text-muted-foreground text-sm">
-                        <Globe className="h-4 w-4" />
-                        <span>Rating</span>
-                      </div>
-                      <p className="font-medium">{INTERVIEWER_PROFILE.interviewHistory.averageRating}/5.0</p>
+                      <p className="font-medium">{evaluations.length}</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              {/* Languages & Education */}
-              <div className="grid md:grid-cols-2 gap-6">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Languages</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-2">
-                      {INTERVIEWER_PROFILE.languages.map((lang, idx) => (
-                        <div key={idx} className="flex items-center gap-2">
-                          <Globe className="h-4 w-4 text-muted-foreground" />
-                          <span>{lang}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Education</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm">{INTERVIEWER_PROFILE.education}</p>
-                  </CardContent>
-                </Card>
-              </div>
-
-              {/* Specializations */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Specializations</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    {INTERVIEWER_PROFILE.specializations.map((spec, idx) => (
-                      <Badge key={idx} variant="outline">{spec}</Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Key Insights */}
-              <Card>
-                <CardHeader>
-                  <CardTitle>Key Insights from Conversation</CardTitle>
-                  <CardDescription>Behavioral patterns and interviewing style</CardDescription>
+                  <CardTitle>Capabilities</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
@@ -388,26 +371,19 @@ const Index = () => {
                 </CardContent>
               </Card>
 
-              {/* Transcript Section */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Session Transcript</CardTitle>
-                  <CardDescription>Complete conversation history</CardDescription>
+                  <CardTitle>Topic Taxonomy</CardTitle>
+                  <CardDescription>11 core quantitative finance topics tracked</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-4">
-                    {transcripts.map((msg) => (
-                      <div key={msg.id} className="space-y-1">
-                        <div className="flex items-center gap-2">
-                          <Badge variant={msg.speaker === 'interviewer' ? 'default' : 'secondary'}>
-                            {msg.speaker === 'interviewer' ? 'Interviewer' : 'Candidate'}
-                          </Badge>
-                          <span className="text-xs text-muted-foreground">
-                            {new Date(msg.timestamp).toLocaleTimeString()}
-                          </span>
-                        </div>
-                        <p className="text-sm pl-4">{msg.text}</p>
-                      </div>
+                  <div className="grid grid-cols-2 gap-2 text-sm">
+                    {['CV_TECHNIQUES', 'REGULARIZATION', 'FEATURE_SELECTION', 'STATIONARITY',
+                      'TIME_SERIES_MODELS', 'OPTIMIZATION_PYTHON', 'LOOKAHEAD_BIAS',
+                      'DATA_PIPELINE', 'BEHAVIORAL_PRESSURE', 'BEHAVIORAL_TEAMWORK', 'EXTRA'].map(topic => (
+                      <Badge key={topic} variant="outline" className="justify-center">
+                        {topic.replace(/_/g, ' ')}
+                      </Badge>
                     ))}
                   </div>
                 </CardContent>
@@ -417,89 +393,91 @@ const Index = () => {
 
           <TabsContent value="reviews" className="flex-1 m-0 overflow-auto p-6">
             <div className="max-w-6xl mx-auto space-y-6">
-              {/* Overall Score */}
-              <Card className="border-primary/20 bg-primary/5">
-                <CardHeader>
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <CardTitle className="text-3xl">Overall Performance</CardTitle>
-                      <CardDescription className="text-base mt-1">AI-powered interview analysis</CardDescription>
-                    </div>
-                    <div className="text-right">
-                      <div className="text-5xl font-bold text-primary">{AI_REVIEWS.overallScore}</div>
-                      <div className="text-sm text-muted-foreground">out of 10</div>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle2 className="h-5 w-5 text-primary" />
-                    <span className="font-medium">{AI_REVIEWS.biasCheck.status === 'passed' ? 'Bias Check Passed' : 'Bias Detected'}</span>
-                    <span className="text-muted-foreground">- {AI_REVIEWS.biasCheck.notes}</span>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Strengths */}
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary" />
-                    What You Did Right
-                  </CardTitle>
-                  <CardDescription>Areas of excellence in your interview technique</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-6">
-                    {AI_REVIEWS.strengths.map((strength, idx) => (
-                      <div key={idx}>
-                        <div className="flex items-start justify-between mb-2">
-                          <h4 className="font-semibold text-base">{strength.title}</h4>
-                          <Badge variant="default" className="ml-2">
-                            {strength.score}/10
-                          </Badge>
+              {evaluations.length === 0 ? (
+                <Card>
+                  <CardContent className="py-12 text-center">
+                    <p className="text-muted-foreground">No evaluations yet. Analysis will appear as the interview progresses.</p>
+                  </CardContent>
+                </Card>
+              ) : (
+                <>
+                  <Card className="border-primary/20 bg-primary/5">
+                    <CardHeader>
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <CardTitle className="text-3xl">Overall Performance</CardTitle>
+                          <CardDescription className="text-base mt-1">AI-powered interview analysis</CardDescription>
                         </div>
-                        <p className="text-sm text-muted-foreground">{strength.description}</p>
-                        {idx < AI_REVIEWS.strengths.length - 1 && <Separator className="mt-6" />}
+                        <div className="text-right">
+                          <div className="text-5xl font-bold text-primary">{AI_REVIEWS.overallScore}</div>
+                          <div className="text-sm text-muted-foreground">out of 10</div>
+                        </div>
                       </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Areas for Improvement */}
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <TrendingUp className="h-5 w-5 text-accent" />
-                    Areas for Improvement
-                  </CardTitle>
-                  <CardDescription>Actionable feedback to enhance your interview skills</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-6">
-                    {AI_REVIEWS.improvements.map((improvement, idx) => (
-                      <div key={idx}>
-                        <div className="flex items-start justify-between mb-2">
-                          <h4 className="font-semibold text-base">{improvement.title}</h4>
-                          <Badge 
-                            variant={improvement.severity === 'medium' ? 'default' : 'secondary'}
-                            className="ml-2"
-                          >
-                            {improvement.severity}
-                          </Badge>
-                        </div>
-                        <p className="text-sm text-muted-foreground mb-3">{improvement.description}</p>
-                        <div className="bg-accent/10 border border-accent/20 rounded-lg p-3">
-                          <p className="text-sm font-medium text-accent mb-1">💡 Suggestion:</p>
-                          <p className="text-sm">{improvement.suggestion}</p>
-                        </div>
-                        {idx < AI_REVIEWS.improvements.length - 1 && <Separator className="mt-6" />}
+                    </CardHeader>
+                    <CardContent>
+                      <div className="flex items-center gap-2 text-sm">
+                        <CheckCircle2 className="h-5 w-5 text-primary" />
+                        <span className="font-medium">{AI_REVIEWS.biasCheck.status === 'passed' ? 'Bias Check Passed' : 'Bias Warnings'}</span>
+                        <span className="text-muted-foreground">- {AI_REVIEWS.biasCheck.notes}</span>
                       </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
+                    </CardContent>
+                  </Card>
+
+                  {AI_REVIEWS.strengths.length > 0 && (
+                    <Card>
+                      <CardHeader>
+                        <CardTitle className="flex items-center gap-2">
+                          <CheckCircle2 className="h-5 w-5 text-primary" />
+                          Effective Moments
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="space-y-4">
+                          {AI_REVIEWS.strengths.map((strength, idx) => (
+                            <div key={idx}>
+                              <div className="flex items-start justify-between mb-2">
+                                <h4 className="font-semibold">{strength.title}</h4>
+                                <Badge variant="default">{strength.score.toFixed(1)}/10</Badge>
+                              </div>
+                              <p className="text-sm text-muted-foreground">{strength.description}</p>
+                              {idx < AI_REVIEWS.strengths.length - 1 && <Separator className="mt-4" />}
+                            </div>
+                          ))}
+                        </div>
+                      </CardContent>
+                    </Card>
+                  )}
+
+                  {AI_REVIEWS.improvements.length > 0 && (
+                    <Card>
+                      <CardHeader>
+                        <CardTitle className="flex items-center gap-2">
+                          <TrendingUp className="h-5 w-5 text-accent" />
+                          Areas for Improvement
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="space-y-4">
+                          {AI_REVIEWS.improvements.map((improvement, idx) => (
+                            <div key={idx}>
+                              <div className="flex items-start justify-between mb-2">
+                                <h4 className="font-semibold">{improvement.title}</h4>
+                                <Badge variant="outline">{improvement.severity}</Badge>
+                              </div>
+                              <p className="text-sm text-muted-foreground mb-2">{improvement.description}</p>
+                              <div className="bg-accent/10 border border-accent/20 rounded-lg p-3">
+                                <p className="text-sm font-medium text-accent mb-1">💡 Suggestion:</p>
+                                <p className="text-sm">{improvement.suggestion}</p>
+                              </div>
+                              {idx < AI_REVIEWS.improvements.length - 1 && <Separator className="mt-4" />}
+                            </div>
+                          ))}
+                        </div>
+                      </CardContent>
+                    </Card>
+                  )}
+                </>
+              )}
             </div>
           </TabsContent>
         </Tabs>

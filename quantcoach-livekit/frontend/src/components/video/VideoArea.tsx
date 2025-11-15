@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, memo } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -10,7 +10,7 @@ import { api } from '@/services/api';
 import { ParticipantView } from './ParticipantView';
 import { useToast } from '@/hooks/use-toast';
 
-export const VideoArea = () => {
+const VideoAreaComponent = () => {
   const [roomName, setRoomName] = useState('');
   const [participantName, setParticipantName] = useState('');
   const [role, setRole] = useState<'interviewer' | 'candidate'>('interviewer');
@@ -255,3 +255,6 @@ export const VideoArea = () => {
     </Card>
   );
 };
+
+// Wrap with memo to prevent re-renders from parent timer
+export const VideoArea = memo(VideoAreaComponent);
