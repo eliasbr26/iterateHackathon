@@ -1,12 +1,9 @@
-# Troubleshooting Guide
-
-## 🔍 Common Problems and Solutions
 
 ### 1. Connection Errors
 
 #### ❌ "LIVEKIT_TOKEN not set in environment"
 
-**Cause**: Environment variable is not set
+**Cause**: Environment variable missing
 
 **Solutions**:
 ```bash
@@ -44,51 +41,56 @@ curl -I https://your-livekit-server.com
 LOG_LEVEL=DEBUG python example_usage.py
 ```
 
-#### ❌ "Failed to connect to ElevenLabs"
+#### ❌ "ElevenLabs API error (401): Unauthorized"
 
-**Possible causes**:
-1. Invalid API key
-2. Quota exceeded
-3. Network issue
-4. ElevenLabs service down
+**Cause**: Invalid or missing API key
 
 **Solutions**:
 ```bash
 # 1. Check the API key
 echo $ELEVENLABS_API_KEY
 
-# 2. Test the API key
+# 2. Test the API key manually
 curl -H "xi-api-key: $ELEVENLABS_API_KEY" \
   https://api.elevenlabs.io/v1/user
 
-# 3. Check the quota
-# Go to dashboard.elevenlabs.io
+# 3. Verify key is active in ElevenLabs dashboard
+# Go to: https://elevenlabs.io/app/settings/api-keys
+```
 
-# 4. Check ElevenLabs status
-# https://status.elevenlabs.io/
+#### ❌ "ElevenLabs API error (422): Invalid audio format"
+
+**Cause**: Audio format not compatible with ElevenLabs
+
+**Solutions**:
+1. Check audio conversion logs
+2. Verify PCM format is correct (16kHz, mono, 16-bit)
+3. Enable debug logging to see conversion details:
+
+```python
+import logging
+logging.getLogger("audio_pipeline.audio_converter").setLevel(logging.DEBUG)
 ```
 
 ### 2. Participant Issues
 
 #### ❌ "Only 0 participant(s) found. Expected at least 2"
 
-**Cause**: Participants have not joined the room before the bot
+**Cause**: Participants haven't joined the room before bot
 
 **Solutions**:
 1. **Have participants join BEFORE launching the bot**
-2. Increase the wait timeout
-
-```python
-# In livekit_handler.py, line ~72
-max_wait = 60  # Increase from 30 to 60 seconds
-```
+2. Increase the wait timeout (in `pipeline.py`, line ~266):
+   ```python
+   max_wait = 60  # Increase from 30 to 60 seconds
+   ```
 
 #### ❌ "Participant [identity] not found"
 
 **Cause**: Incorrect identity or participant disconnected
 
 **Solutions**:
-```python
+```bash
 # Check participant identities in logs
 LOG_LEVEL=DEBUG python example_usage.py
 
@@ -102,7 +104,7 @@ LOG_LEVEL=DEBUG python example_usage.py
 #### ❌ "Audio track not available after 30s"
 
 **Possible causes**:
-1. Participant has not enabled their microphone
+1. Participant hasn't enabled their microphone
 2. Permissions denied
 3. Track not published
 
@@ -132,6 +134,7 @@ import logging
 logging.getLogger("audio_pipeline.audio_converter").setLevel(logging.DEBUG)
 
 # Check frame format in logs
+# Expected: 16kHz or 48kHz, mono or stereo, int16
 ```
 
 ### 4. Transcription Issues
@@ -141,76 +144,103 @@ logging.getLogger("audio_pipeline.audio_converter").setLevel(logging.DEBUG)
 **Possible causes**:
 1. No audio being sent
 2. ElevenLabs not detecting speech
-3. WebSocket disconnected
+3. Invalid API key
 4. Incorrect language
+5. Network issues
 
 **Solutions**:
 ```python
 # 1. Check that audio is being sent
 # Logs to look for:
-# "Sending audio chunk of X bytes"
+# "[speaker] Sending X bytes to batch STT"
 
 # 2. Check the language
 pipeline = AudioPipeline(
     ...,
-    language="en"  # Or "fr" as needed
+    language="en"  # Or "fr", "es", etc.
 )
 
 # 3. Test with known audio content
-# Have someone speak clearly
+# Have someone speak clearly for 5+ seconds
 
 # 4. Check ElevenLabs logs
-grep "ElevenLabs" logs.txt
+grep "ElevenLabs" logs.txt | grep -i error
+
+# 5. Verify network connectivity
+curl -I https://api.elevenlabs.io
 ```
 
-#### ❌ "Transcripts are partial only, never final"
+#### ❌ "Transcripts arrive very slowly (> 10 seconds)"
 
-**Cause**: ElevenLabs only sends partial transcripts
+**Cause**: This is expected behavior for batch STT
 
-**Explanation**: This is normal at the beginning of a sentence. Final transcripts arrive when:
-- Pause detected (> 500ms)
-- End of sentence detected
-- Speaker change
+**Explanation**:
+- Batch STT buffers 5 seconds of audio
+- Sends to ElevenLabs (~500ms-1s processing)
+- Total: ~5-6 seconds per transcript
 
-**Solution**: Wait a few seconds after speaking
+This is **normal** and significantly slower than real-time streaming (~500ms).
 
-### 5. Performance Issues
-
-#### ⚠️ "High latency (> 1 second)"
-
-**Possible causes**:
-1. Slow network connection
-2. Audio chunks too large
-3. CPU overload
-4. Server distance too large
-
-**Solutions**:
+**Solutions to reduce latency**:
 ```python
-# 1. Reduce chunk size
-# In pipeline.py, line ~86
-target_chunk_size = self.audio_converter.calculate_chunk_size(
-    duration_ms=50  # Reduce from 100 to 50ms
+# 1. Reduce buffer duration (more API calls)
+pipeline = AudioPipeline(
+    ...,
+    buffer_duration_ms=3000  # 3 seconds instead of 5
 )
 
 # 2. Check network latency
-ping your-livekit-server.com
+ping api.elevenlabs.io
 
-# 3. Monitor CPU
-top
-# or
-htop
-
-# 4. Use a geographically closer server
+# 3. Use a closer geographic region for LiveKit
 ```
 
-#### ⚠️ "Memory usage growing continuously"
+#### ❌ "Empty transcripts / No speech detected"
 
-**Cause**: Possible memory leak
+**Cause**: ElevenLabs returned empty string (no speech in buffer)
+
+**Explanation**: If a 5-second buffer contains only silence or unclear audio, ElevenLabs returns no text. This is normal.
+
+**Solutions**:
+1. Ensure participants are speaking clearly
+2. Check microphone quality
+3. Verify audio levels are adequate
+4. Consider implementing Voice Activity Detection (VAD) to skip silent buffers
+
+### 5. Performance Issues
+
+#### ⚠️ "High API usage / Cost"
+
+**Cause**: Batch STT makes 1 API call every 5 seconds per speaker
+
+**Calculations**:
+```
+2 speakers × 12 calls/minute × 60 minutes = 1,440 calls/hour
+At $0.10 per 1000 calls = $0.14/hour
+```
+
+**Solutions to reduce cost**:
+```python
+# 1. Increase buffer duration (fewer calls)
+pipeline = AudioPipeline(
+    ...,
+    buffer_duration_ms=10000  # 10 seconds = half the API calls
+)
+
+# 2. Implement Voice Activity Detection
+# Skip buffers with no speech (future enhancement)
+
+# 3. Monitor usage in ElevenLabs dashboard
+```
+
+#### ⚠️ "Memory usage growing"
+
+**Cause**: Audio buffers not being cleared
 
 **Solutions**:
 ```python
-# 1. Check for growing buffers
-# In pipeline.py, verify that buffers are properly reset
+# 1. Check buffer reset logic (should happen automatically)
+# Each buffer is reset after sending to ElevenLabs
 
 # 2. Monitor memory
 import psutil
@@ -219,11 +249,24 @@ import os
 process = psutil.Process(os.getpid())
 print(f"Memory: {process.memory_info().rss / 1024 / 1024:.2f} MB")
 
+# Expected: ~0.35 MB for audio buffers (2 speakers × 160KB each)
+
 # 3. Limit session duration
-# Restart the bot periodically
+# Restart bot periodically if needed
 ```
 
 ### 6. Dependency Issues
+
+#### ❌ "ModuleNotFoundError: No module named 'aiohttp'"
+
+**Solution**:
+```bash
+pip install -r requirements.txt
+
+# If that doesn't work
+pip install --upgrade pip
+pip install aiohttp>=3.9.0
+```
 
 #### ❌ "ModuleNotFoundError: No module named 'livekit'"
 
@@ -232,7 +275,6 @@ print(f"Memory: {process.memory_info().rss / 1024 / 1024:.2f} MB")
 pip install -r requirements.txt
 
 # If that doesn't work
-pip install --upgrade pip
 pip install livekit livekit-api
 ```
 
@@ -269,38 +311,26 @@ logging.basicConfig(
 # Very detailed logs for key modules
 logging.getLogger("audio_pipeline").setLevel(logging.DEBUG)
 logging.getLogger("livekit").setLevel(logging.DEBUG)
-logging.getLogger("websockets").setLevel(logging.DEBUG)
+logging.getLogger("aiohttp").setLevel(logging.DEBUG)
 ```
 
-#### Use verbose mode
-
-```python
-from audio_pipeline.logging_config import setup_colored_logging
-
-setup_colored_logging(level="DEBUG")
-```
-
-#### Capture exceptions
-
-```python
-import traceback
-
-try:
-    async for transcript in pipeline.start_transcription():
-        print(transcript)
-except Exception as e:
-    print(f"Error: {e}")
-    traceback.print_exc()
-```
-
-#### Monitor WebSockets
+#### Monitor HTTP requests
 
 ```bash
-# Use wscat to test ElevenLabs connection
-npm install -g wscat
+# Use Charles Proxy or mitmproxy to inspect HTTP traffic
+mitmproxy --mode reverse:https://api.elevenlabs.io --listen-port 8080
 
-wscat -c "wss://api.elevenlabs.io/v1/convai/conversation/websocket" \
-  -H "xi-api-key: your_api_key"
+# Update code to use proxy (for debugging only)
+```
+
+#### Capture audio buffers
+
+```python
+# In pipeline.py, add before sending to ElevenLabs:
+with open(f"debug_audio_{speaker_label}_{timestamp}.wav", "wb") as f:
+    f.write(wav_buffer.getvalue())
+
+# This lets you verify audio format manually
 ```
 
 ### 8. Validation Tests
@@ -309,6 +339,7 @@ wscat -c "wss://api.elevenlabs.io/v1/convai/conversation/websocket" \
 
 ```python
 from livekit import rtc
+import asyncio
 
 async def test_livekit():
     room = rtc.Room()
@@ -323,19 +354,24 @@ asyncio.run(test_livekit())
 #### Test 2: ElevenLabs API
 
 ```python
-import requests
+import aiohttp
+import asyncio
 
-headers = {"xi-api-key": ELEVENLABS_API_KEY}
-response = requests.get(
-    "https://api.elevenlabs.io/v1/user",
-    headers=headers
-)
+async def test_elevenlabs():
+    headers = {"xi-api-key": ELEVENLABS_API_KEY}
+    async with aiohttp.ClientSession() as session:
+        async with session.get(
+            "https://api.elevenlabs.io/v1/user",
+            headers=headers
+        ) as response:
+            if response.status == 200:
+                data = await response.json()
+                print("✓ ElevenLabs API OK")
+                print(data)
+            else:
+                print(f"✗ Error: {response.status}")
 
-if response.status_code == 200:
-    print("✓ ElevenLabs API OK")
-    print(response.json())
-else:
-    print(f"✗ Error: {response.status_code}")
+asyncio.run(test_elevenlabs())
 ```
 
 #### Test 3: Audio Conversion
@@ -358,8 +394,8 @@ print(f"✓ Conversion OK: {len(audio)} → {len(pcm)} samples")
 If the problem persists:
 
 1. **Check the logs** with `LOG_LEVEL=DEBUG`
-2. **Search GitHub issues** (if public repo)
-3. **Consult the documentation**:
+2. **Review architecture docs**: [ARCHITECTURE.md](ARCHITECTURE.md)
+3. **Consult external documentation**:
    - [LiveKit Docs](https://docs.livekit.io/)
    - [ElevenLabs Docs](https://elevenlabs.io/docs)
 4. **Create an issue** with:
@@ -380,8 +416,8 @@ Before requesting help, verify:
 - [ ] Participants have joined the room
 - [ ] Participants have enabled their microphone
 - [ ] DEBUG logs enabled
-- [ ] Unit tests pass (`pytest`)
 - [ ] Stable network connection
+- [ ] Understanding of batch STT latency (~5-6s per transcript)
 
 ## 📝 Bug Report Template
 
@@ -389,12 +425,13 @@ Before requesting help, verify:
 **Environment**
 - OS: macOS 14.1
 - Python: 3.11.5
-- Version: 1.0.0
+- Version: 2.0.0
 
 **Configuration**
 - LiveKit URL: wss://...
 - Room: interview-room
 - Language: en
+- Buffer duration: 5000ms
 
 **Problem**
 Clear description of the problem
@@ -406,7 +443,7 @@ Clear description of the problem
 
 **Logs**
 ```
-[Paste logs here]
+[Paste logs here with DEBUG level]
 ```
 
 **Expected behavior**
@@ -415,3 +452,13 @@ What should happen
 **Actual behavior**
 What actually happens
 ```
+
+## Known Limitations
+
+### Expected Behavior (Not Bugs)
+
+1. **~5-6 second latency**: This is normal for batch STT
+2. **No partial transcripts**: Only final transcripts in batch mode
+3. **Transcripts arrive in batches**: Not word-by-word
+4. **Potential word cuts at boundaries**: No overlap between 5s windows
+5. **Empty transcripts on silence**: Normal if no speech detected in buffer

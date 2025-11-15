@@ -1,11 +1,13 @@
 """
-Audio Pipeline for LiveKit + ElevenLabs Realtime STT
+Audio Pipeline for LiveKit + ElevenLabs Batch STT
+
+Clean batch-based implementation for interview transcription.
 
 Main components:
-- AudioPipeline: Main orchestrator for real-time transcription
+- AudioPipeline: Main orchestrator
 - Transcript: Dataclass for transcript results
 - LiveKitHandler: LiveKit connection management
-- ElevenLabsSTT: ElevenLabs STT client
+- ElevenLabsSTT: ElevenLabs batch STT client
 - AudioConverter: Audio format conversion utilities
 """
 
@@ -16,7 +18,7 @@ from .elevenlabs_stt import ElevenLabsSTT
 from .audio_converter import AudioConverter
 from .logging_config import setup_logging, setup_colored_logging
 
-__version__ = "1.0.0"
+__version__ = "2.0.0"
 
 __all__ = [
     "Transcript",

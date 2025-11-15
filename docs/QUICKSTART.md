@@ -1,4 +1,4 @@
-# Quick Start Guide
+# Quick Start Guide - Batch STT
 
 ## Installation (5 minutes)
 
@@ -8,6 +8,12 @@
 cd /path/to/iterateHackathon
 pip install -r requirements.txt
 ```
+
+Required dependencies:
+- `livekit` - WebRTC audio capture
+- `aiohttp` - HTTP client for ElevenLabs
+- `numpy` - Audio processing
+- `python-dotenv` - Environment variables
 
 ### 2. Configuration
 
@@ -93,64 +99,92 @@ INFO - Connecting to LiveKit room: interview-room
 INFO - Connected to LiveKit room
 INFO - Waiting for participants...
 INFO - Found 2 participants
-INFO - [recruiter] Stream manager started
-INFO - [candidate] Stream manager started
+INFO - [recruiter] Stream manager started (batch mode)
+INFO - [candidate] Stream manager started (batch mode)
+INFO - [recruiter] Buffering 5000ms per batch request
+INFO - [candidate] Buffering 5000ms per batch request
 
 ============================================================
 REAL-TIME TRANSCRIPTION
 ============================================================
 
+(waiting 5-6 seconds for first transcript...)
+
 👔 [RECRUITER] ✓ Hello, thank you for joining us today.
+
+(waiting 5-6 seconds...)
+
 👤 [CANDIDATE] ✓ Thank you for having me.
+
+(waiting 5-6 seconds...)
+
 👔 [RECRUITER] ✓ Can you tell me about your experience?
-👤 [CANDIDATE] ~ I have been working in software development...
+
+(waiting 5-6 seconds...)
+
 👤 [CANDIDATE] ✓ I have been working in software development for 5 years.
 ```
 
+**Note**: Transcripts arrive every ~5-6 seconds (batch processing), not continuously.
+
 Legend:
-- `✓` : Final transcript
-- `~` : Partial transcript (in progress)
+- `✓` : Final transcript (all transcripts are final in batch mode)
 - `👔` : Recruiter
 - `👤` : Candidate
 
-## Tests
+## What to Expect
 
-### Run unit tests
+### Latency
 
-```bash
-pytest test_audio_pipeline.py -v
-```
+**~5-6 seconds per transcript**
 
-### Manual test with test audio
+This is normal for batch STT. The pipeline:
+1. Buffers 5 seconds of audio
+2. Sends to ElevenLabs (~500ms-1s processing)
+3. Returns transcript
+4. Repeats
 
-Create a `manual_test.py` file:
+Unlike real-time streaming (~500ms latency), batch processing trades latency for simplicity and compatibility.
+
+### Transcript Format
+
+All transcripts have `is_final=True` - there are no partial updates.
 
 ```python
-import asyncio
-from audio_pipeline import AudioPipeline
-
-async def test_with_mock_room():
-    """Test with a test room"""
-    pipeline = AudioPipeline(
-        livekit_url="wss://test.livekit.cloud",
-        livekit_room="test-room",
-        livekit_token="your_test_token",
-        elevenlabs_api_key="your_api_key"
-    )
-
-    count = 0
-    async for transcript in pipeline.start_transcription():
-        print(transcript)
-        count += 1
-
-        # Stop after 10 transcripts for testing
-        if count >= 10:
-            break
-
-    await pipeline.stop()
-
-asyncio.run(test_with_mock_room())
+Transcript(
+    text="Hello, thank you for joining us.",
+    speaker="recruiter",
+    is_final=True,  # Always True in batch mode
+    start_ms=None,   # Timing info not available
+    end_ms=None
+)
 ```
+
+## Configuration Options
+
+### Adjust Buffer Duration
+
+For lower latency (more API calls):
+
+```python
+pipeline = AudioPipeline(
+    ...,
+    buffer_duration_ms=3000  # 3 seconds instead of 5
+)
+```
+
+For higher latency (fewer API calls):
+
+```python
+pipeline = AudioPipeline(
+    ...,
+    buffer_duration_ms=10000  # 10 seconds
+)
+```
+
+Trade-off:
+- Lower buffer = Lower latency, more API calls, more cost
+- Higher buffer = Higher latency, fewer API calls, less cost
 
 ## Quick Troubleshooting
 
@@ -160,39 +194,79 @@ asyncio.run(test_with_mock_room())
 
 ### Error: "No participants found"
 
-→ Check that participants have joined the room before launching the bot
+→ Check that participants have joined the room **before** launching the bot
 
-### No transcripts
+### No transcripts received
 
 → Check that:
 1. Participants have enabled their microphone
-2. The bot has the proper permissions `can_subscribe: true`
+2. The bot has proper permissions: `can_subscribe: true`
 3. The logs show "Audio track registered"
+4. API key is valid: `ELEVENLABS_API_KEY`
 
-### High latency
+### Error: "ElevenLabs API error (401)"
 
-→ Check:
-1. Network connection
-2. Reduce audio chunk size (in `pipeline.py`)
-3. Use a geographically closer LiveKit server
+→ Invalid API key. Check `.env` file.
+
+### Error: "ElevenLabs API error (422)"
+
+→ Invalid audio format. This shouldn't happen with the default setup. Check logs for audio conversion errors.
+
+### Transcripts arrive slowly (> 10 seconds)
+
+→ This is expected with batch STT. Check:
+1. Network connection to ElevenLabs
+2. Consider reducing `buffer_duration_ms` to 3000
 
 ## Next Steps
 
 1. **Integration**: Integrate into your application
-2. **Customization**: Adapt speaker labels
+2. **Customization**: Adapt speaker labels for your use case
 3. **Storage**: Save transcripts to a database
-4. **Analytics**: Analyze transcripts in real-time
+4. **Analysis**: Process transcripts in real-time
+
+## Advanced Usage
+
+### Custom Speaker Mapping
+
+```python
+pipeline = AudioPipeline(
+    ...,
+    recruiter_identity="host",      # Instead of "interviewer"
+    candidate_identity="guest"      # Instead of "candidate"
+)
+```
+
+### Monitoring Transcripts
+
+```python
+async for transcript in pipeline.start_transcription():
+    # All transcripts are final
+    if transcript.speaker == "recruiter":
+        print(f"Recruiter said: {transcript.text}")
+    else:
+        print(f"Candidate said: {transcript.text}")
+
+    # Save to database
+    await save_to_db(transcript)
+
+    # Real-time analysis
+    sentiment = analyze_sentiment(transcript.text)
+    print(f"Sentiment: {sentiment}")
+```
 
 ## Resources
 
-- [Complete documentation](AUDIO_PIPELINE_README.md)
+- [Complete documentation](../AUDIO_PIPELINE_README.md)
 - [Detailed architecture](ARCHITECTURE.md)
+- [Troubleshooting guide](TROUBLESHOOTING.md)
 - [LiveKit Docs](https://docs.livekit.io/)
 - [ElevenLabs Docs](https://elevenlabs.io/docs)
 
 ## Support
 
-For any questions:
-- GitHub Issues
+For questions:
+- Check [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
+- Review [ARCHITECTURE.md](ARCHITECTURE.md)
 - LiveKit Documentation
 - ElevenLabs Support

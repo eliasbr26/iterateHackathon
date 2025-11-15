@@ -42,7 +42,6 @@ def check_dependencies():
     """Check if required packages are installed"""
     required = [
         "livekit",
-        "websockets",
         "numpy",
         "dotenv",
         "aiohttp"

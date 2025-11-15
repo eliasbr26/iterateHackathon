@@ -1,24 +1,32 @@
 """
-Main audio pipeline orchestrator
-Connects LiveKit audio streams to ElevenLabs STT and yields transcripts
+Audio Pipeline - Clean batch-based implementation
+Buffers audio from LiveKit and sends to ElevenLabs batch STT
 """
 
 import asyncio
 import logging
 import time
-from typing import AsyncIterator, Dict, Optional, Set
+from typing import AsyncIterator, Dict, Optional
 from io import BytesIO
 
 from .models import Transcript
 from .livekit_handler import LiveKitHandler, ParticipantInfo
-from .elevenlabs_stt import ElevenLabsSTT, TranscriptChunk
+from .elevenlabs_stt import ElevenLabsSTT
 from .audio_converter import AudioConverter
 
 logger = logging.getLogger(__name__)
 
 
 class SpeakerStreamManager:
-    """Manages audio streaming and transcription for a single speaker"""
+    """
+    Manages audio buffering and batch transcription for a single speaker
+
+    Simple approach:
+    - Buffer audio for N seconds (default 5)
+    - Send buffer to ElevenLabs batch STT
+    - Put transcript in queue
+    - Repeat
+    """
 
     def __init__(
         self,
@@ -26,42 +34,68 @@ class SpeakerStreamManager:
         speaker_label: str,
         livekit_handler: LiveKitHandler,
         elevenlabs_api_key: str,
-        language: str = "en"
+        language: str = "en",
+        buffer_duration_ms: int = 5000
     ):
+        """
+        Initialize speaker stream manager
+
+        Args:
+            participant_identity: LiveKit participant ID
+            speaker_label: Speaker label ("recruiter" or "candidate")
+            livekit_handler: LiveKit handler instance
+            elevenlabs_api_key: ElevenLabs API key
+            language: Language code (default: "en")
+            buffer_duration_ms: Buffer duration in ms (default: 5000 = 5 seconds)
+        """
         self.participant_identity = participant_identity
         self.speaker_label = speaker_label
         self.livekit_handler = livekit_handler
         self.elevenlabs_api_key = elevenlabs_api_key
         self.language = language
+        self.buffer_duration_ms = buffer_duration_ms
 
         self.stt_client: Optional[ElevenLabsSTT] = None
         self.audio_converter = AudioConverter()
         self._running = False
+        self._transcript_queue: Optional[asyncio.Queue] = None
 
     async def start(self) -> None:
-        """Initialize STT connection"""
+        """Initialize STT client and queue"""
         self.stt_client = ElevenLabsSTT(
             api_key=self.elevenlabs_api_key,
-            speaker_label=self.speaker_label,
             language=self.language
         )
-        await self.stt_client.connect()
+        self._transcript_queue = asyncio.Queue()
         self._running = True
-        logger.info(f"[{self.speaker_label}] Stream manager started")
+        logger.info(f"[{self.speaker_label}] Stream manager started (batch mode)")
 
     async def stream_audio(self) -> None:
-        """Stream audio from LiveKit to ElevenLabs"""
-        if not self.stt_client:
-            raise RuntimeError("STT client not initialized")
+        """
+        Main audio processing loop
+
+        1. Get audio frames from LiveKit
+        2. Convert to PCM and buffer
+        3. Every N seconds, send buffer to batch STT
+        4. Put transcript in queue
+        5. Repeat
+        """
+        if not self.stt_client or not self._transcript_queue:
+            raise RuntimeError("Stream manager not started")
 
         try:
             audio_stream = self.livekit_handler.get_audio_stream(
                 self.participant_identity
             )
 
-            chunk_buffer = BytesIO()
-            target_chunk_size = self.audio_converter.calculate_chunk_size(
-                duration_ms=100  # Send 100ms chunks
+            audio_buffer = BytesIO()
+            target_buffer_size = self.audio_converter.calculate_chunk_size(
+                duration_ms=self.buffer_duration_ms
+            )
+
+            logger.info(
+                f"[{self.speaker_label}] Buffering {self.buffer_duration_ms}ms "
+                f"per batch request"
             )
 
             async for audio_frame in audio_stream:
@@ -71,43 +105,65 @@ class SpeakerStreamManager:
                 try:
                     # Convert frame to PCM
                     pcm_data = self.audio_converter.convert_frame(audio_frame)
+                    audio_buffer.write(pcm_data)
 
-                    # Buffer audio chunks
-                    chunk_buffer.write(pcm_data)
+                    # When buffer is full, send to batch STT
+                    if audio_buffer.tell() >= target_buffer_size:
+                        buffer_bytes = audio_buffer.getvalue()
 
-                    # Send when buffer reaches target size
-                    if chunk_buffer.tell() >= target_chunk_size:
-                        audio_chunk = chunk_buffer.getvalue()
-                        await self.stt_client.send_audio_chunk(audio_chunk)
+                        logger.debug(
+                            f"[{self.speaker_label}] Sending {len(buffer_bytes)} bytes "
+                            f"to batch STT"
+                        )
 
-                        # Reset buffer
-                        chunk_buffer = BytesIO()
+                        # Transcribe buffer
+                        text = await self.stt_client.transcribe_pcm(
+                            buffer_bytes,
+                            speaker=self.speaker_label
+                        )
+
+                        # If we got text, create transcript and queue it
+                        if text:
+                            transcript = Transcript(
+                                text=text,
+                                speaker=self.speaker_label,
+                                start_ms=None,
+                                end_ms=None,
+                                is_final=True
+                            )
+                            await self._transcript_queue.put(transcript)
+
+                        # Reset buffer for next window
+                        audio_buffer = BytesIO()
 
                 except Exception as e:
-                    logger.error(
-                        f"[{self.speaker_label}] Error processing audio frame: {e}"
-                    )
+                    logger.error(f"[{self.speaker_label}] Error processing frame: {e}")
 
         except Exception as e:
             logger.error(f"[{self.speaker_label}] Error in audio streaming: {e}")
             raise
         finally:
+            # Signal end of transcripts
+            await self._transcript_queue.put(None)
             logger.info(f"[{self.speaker_label}] Audio streaming stopped")
 
     async def receive_transcripts(self) -> AsyncIterator[Transcript]:
-        """Receive and yield transcripts from ElevenLabs"""
-        if not self.stt_client:
-            raise RuntimeError("STT client not initialized")
+        """
+        Yield transcripts from queue as they become available
+
+        This method simply reads from the queue that stream_audio() fills.
+        """
+        if not self._transcript_queue:
+            raise RuntimeError("Transcript queue not initialized")
 
         try:
-            async for chunk in self.stt_client.receive_transcripts():
-                transcript = Transcript(
-                    text=chunk.text,
-                    speaker=self.speaker_label,
-                    start_ms=chunk.start_ms,
-                    end_ms=chunk.end_ms,
-                    is_final=chunk.is_final
-                )
+            while True:
+                transcript = await self._transcript_queue.get()
+
+                if transcript is None:
+                    logger.info(f"[{self.speaker_label}] End of transcript stream")
+                    break
+
                 yield transcript
 
         except Exception as e:
@@ -115,19 +171,19 @@ class SpeakerStreamManager:
             raise
 
     async def stop(self) -> None:
-        """Stop streaming and disconnect"""
+        """Stop streaming and close STT client"""
         self._running = False
         if self.stt_client:
-            await self.stt_client.disconnect()
+            await self.stt_client.close()
         logger.info(f"[{self.speaker_label}] Stream manager stopped")
 
 
 class AudioPipeline:
     """
-    Main audio pipeline for real-time transcription
+    Main audio pipeline orchestrator
 
-    Connects to LiveKit room, streams audio to ElevenLabs STT,
-    and yields transcripts with speaker labels
+    Connects to LiveKit, captures audio from participants,
+    sends to ElevenLabs batch STT, and yields transcripts.
     """
 
     def __init__(
@@ -138,7 +194,8 @@ class AudioPipeline:
         elevenlabs_api_key: str,
         language: str = "en",
         recruiter_identity: str = "interviewer",
-        candidate_identity: str = "candidate"
+        candidate_identity: str = "candidate",
+        buffer_duration_ms: int = 5000
     ):
         """
         Initialize audio pipeline
@@ -151,6 +208,7 @@ class AudioPipeline:
             language: Language code (default: "en")
             recruiter_identity: Identity string for recruiter
             candidate_identity: Identity string for candidate
+            buffer_duration_ms: Buffer duration for batch STT (default: 5000ms)
         """
         self.livekit_url = livekit_url
         self.livekit_room = livekit_room
@@ -159,6 +217,7 @@ class AudioPipeline:
         self.language = language
         self.recruiter_identity = recruiter_identity
         self.candidate_identity = candidate_identity
+        self.buffer_duration_ms = buffer_duration_ms
 
         self.livekit_handler: Optional[LiveKitHandler] = None
         self.stream_managers: Dict[str, SpeakerStreamManager] = {}
@@ -180,16 +239,14 @@ class AudioPipeline:
 
         # Wait for participants to join
         logger.info("Waiting for participants...")
-        max_wait = 30  # seconds
+        max_wait = 30
         start_time = time.time()
 
         while time.time() - start_time < max_wait:
             participants = self.livekit_handler.get_all_participants()
-
             if len(participants) >= 2:
                 logger.info(f"Found {len(participants)} participants")
                 break
-
             await asyncio.sleep(0.5)
 
         participants = self.livekit_handler.get_all_participants()
@@ -206,7 +263,8 @@ class AudioPipeline:
                 speaker_label=participant_info.speaker_label,
                 livekit_handler=self.livekit_handler,
                 elevenlabs_api_key=self.elevenlabs_api_key,
-                language=self.language
+                language=self.language,
+                buffer_duration_ms=self.buffer_duration_ms
             )
             await manager.start()
             self.stream_managers[identity] = manager
@@ -215,36 +273,30 @@ class AudioPipeline:
         self._running = True
 
     async def _stream_all_audio(self) -> None:
-        """Start audio streaming for all participants"""
+        """Start audio streaming tasks for all participants"""
         tasks = []
         for manager in self.stream_managers.values():
             task = asyncio.create_task(manager.stream_audio())
             tasks.append(task)
 
-        # Wait for all streaming tasks (they run indefinitely)
         try:
             await asyncio.gather(*tasks)
         except Exception as e:
             logger.error(f"Error in audio streaming tasks: {e}")
-            # Cancel remaining tasks
             for task in tasks:
                 if not task.done():
                     task.cancel()
 
-    async def start_transcription(
-        self,
-        audio_stream=None  # For compatibility with your interface
-    ) -> AsyncIterator[Transcript]:
+    async def start_transcription(self) -> AsyncIterator[Transcript]:
         """
         Start real-time transcription
 
         Yields:
-            Transcript objects with speaker labels in real-time
+            Transcript objects with speaker labels
 
         Example:
             ```python
             pipeline = AudioPipeline(...)
-
             async for transcript in pipeline.start_transcription():
                 print(f"[{transcript.speaker}] {transcript.text}")
             ```
@@ -253,69 +305,58 @@ class AudioPipeline:
             # Initialize connections
             await self._initialize()
 
-            # Start audio streaming tasks in background
+            # Start audio streaming in background
             audio_streaming_task = asyncio.create_task(self._stream_all_audio())
 
-            # Create transcript queues for each speaker UP FRONT
+            # Create queues and start receiver tasks
             transcript_queues: Dict[str, asyncio.Queue] = {}
+            receiver_tasks = []
 
-            # Start transcript receiving tasks
             async def receive_and_queue(manager: SpeakerStreamManager, queue: asyncio.Queue):
-                """Receive transcripts and put them in queue"""
+                """Receive transcripts and put in queue"""
                 try:
                     async for transcript in manager.receive_transcripts():
                         await queue.put(transcript)
                 except Exception as e:
-                    logger.error(
-                        f"[{manager.speaker_label}] Error in transcript receiver: {e}"
-                    )
+                    logger.error(f"Error in transcript receiver: {e}")
                 finally:
-                    await queue.put(None)  # Sentinel value
+                    await queue.put(None)
 
-            # Create queues and start receiver tasks
-            receiver_tasks = []
             for manager in self.stream_managers.values():
                 queue = asyncio.Queue()
                 transcript_queues[manager.speaker_label] = queue
                 task = asyncio.create_task(receive_and_queue(manager, queue))
                 receiver_tasks.append(task)
 
-            # Yield transcripts as they arrive from any speaker
+            # Yield transcripts as they arrive
             active_queues = set(transcript_queues.keys())
 
             while active_queues and self._running:
-                # Check all queues for available transcripts
                 for speaker_label in list(active_queues):
                     queue = transcript_queues[speaker_label]
 
                     try:
-                        # Try to get transcript without blocking
                         transcript = queue.get_nowait()
 
                         if transcript is None:
-                            # Speaker stream ended
                             active_queues.remove(speaker_label)
                             logger.info(f"[{speaker_label}] Stream ended")
                         else:
                             yield transcript
 
                     except asyncio.QueueEmpty:
-                        # No transcript available from this speaker yet
                         pass
 
-                # Small delay to prevent busy-waiting
                 await asyncio.sleep(0.01)
 
             # Cleanup
             logger.info("Transcription ended, cleaning up...")
 
-            # Cancel tasks
             audio_streaming_task.cancel()
             for task in receiver_tasks:
                 if not task.done():
                     task.cancel()
 
-            # Wait for cancellation
             try:
                 await audio_streaming_task
             except asyncio.CancelledError:
@@ -339,14 +380,12 @@ class AudioPipeline:
 
         logger.info("Cleaning up audio pipeline...")
 
-        # Stop all stream managers
         for manager in self.stream_managers.values():
             try:
                 await manager.stop()
             except Exception as e:
                 logger.error(f"Error stopping stream manager: {e}")
 
-        # Disconnect from LiveKit
         if self.livekit_handler:
             try:
                 await self.livekit_handler.disconnect()

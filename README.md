@@ -1,6 +1,6 @@
-# Hackathon Iterate - Audio Pipeline 🎙️
+# Audio Pipeline - Batch STT 🎙️
 
-Real-time audio pipeline for interview transcription with automatic speaker identification via **LiveKit** (WebRTC) + **ElevenLabs Realtime STT**.
+Clean, minimal audio transcription pipeline for interviews using **LiveKit** (WebRTC) + **ElevenLabs Batch STT**.
 
 ## 🚀 Quick Start
 
@@ -24,16 +24,15 @@ python example_usage.py
 - ✅ LiveKit connection as bot
 - ✅ Audio capture from each participant (interviewer + candidate)
 - ✅ Audio conversion WebRTC → PCM 16kHz mono
-- ✅ ElevenLabs Realtime STT per speaker (no diarization needed)
+- ✅ ElevenLabs Batch STT (5-second windows)
 - ✅ Real-time transcripts with speaker labels
-- ✅ Latency < 500ms
-- ✅ Error handling and automatic reconnection
+- ✅ Simple, clean architecture
 
 ## 📦 Architecture
 
 ```
-LiveKit Room → LiveKitHandler → AudioConverter → ElevenLabs STT → Transcripts
-   (WebRTC)      (audio tracks)   (PCM 16kHz)     (WebSocket)    (speaker labels)
+LiveKit Room → LiveKitHandler → AudioConverter → Buffer (5s) → ElevenLabs Batch STT → Transcripts
+   (WebRTC)      (audio tracks)   (PCM 16kHz)     (buffering)    (REST API)          (speaker labels)
 ```
 
 ## 💻 Usage
@@ -41,56 +40,16 @@ LiveKit Room → LiveKitHandler → AudioConverter → ElevenLabs STT → Transc
 ```python
 from audio_pipeline import AudioPipeline
 
-async def main():
-    pipeline = AudioPipeline(
-        livekit_url="wss://your-server.com",
-        livekit_room="interview-room",
-        livekit_token="your_token",
-        elevenlabs_api_key="your_api_key",
-        language="en"
-    )
+pipeline = AudioPipeline(
+    livekit_url="wss://your-server.com",
+    livekit_room="interview-room",
+    livekit_token="your_token",
+    elevenlabs_api_key="your_key",
+    language="en"
+)
 
-    async for transcript in pipeline.start_transcription():
-        print(f"[{transcript.speaker}] {transcript.text}")
-```
-
-## 📚 Documentation
-
-- **[QUICKSTART.md](docs/QUICKSTART.md)** - Quick start guide (5 min)
-- **[ARCHITECTURE.md](docs/ARCHITECTURE.md)** - Detailed architecture
-- **[AUDIO_PIPELINE_README.md](AUDIO_PIPELINE_README.md)** - Complete documentation
-- **[PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md)** - Project structure
-
-## 🎯 Examples
-
-### Simple example
-```bash
-python example_usage.py
-```
-
-### Advanced example (with analysis and storage)
-```bash
-python advanced_example.py
-```
-
-## 🧪 Tests
-
-```bash
-pytest test_audio_pipeline.py -v
-```
-
-## 📊 Project Structure
-
-```
-audio_pipeline/          # Main module
-├── pipeline.py          # AudioPipeline (orchestrator)
-├── livekit_handler.py   # LiveKit management
-├── elevenlabs_stt.py    # ElevenLabs WebSocket client
-├── audio_converter.py   # Audio conversion
-└── models.py            # Transcript dataclass
-
-docs/                    # Documentation
-utils/                   # Utilities (token generator, etc.)
+async for transcript in pipeline.start_transcription():
+    print(f"[{transcript.speaker}] {transcript.text}")
 ```
 
 ## 🔧 Configuration
@@ -104,9 +63,28 @@ LIVEKIT_TOKEN=your_jwt_token
 ELEVENLABS_API_KEY=your_elevenlabs_api_key
 ```
 
-## 🤝 Contributing
+## 📊 Project Structure
 
-Contributions are welcome! See the documentation for more information.
+```
+audio_pipeline/          # Main module
+├── pipeline.py          # AudioPipeline (orchestrator)
+├── livekit_handler.py   # LiveKit management
+├── elevenlabs_stt.py    # ElevenLabs batch STT client
+├── audio_converter.py   # Audio conversion
+└── models.py            # Transcript dataclass
+
+docs/                    # Documentation
+utils/                   # Utilities (token generator, etc.)
+```
+
+## ⚙️ How It Works
+
+1. **Connect to LiveKit**: Bot joins room and detects participants
+2. **Capture Audio**: LiveKit provides audio tracks for each participant
+3. **Convert Format**: WebRTC audio → PCM 16kHz mono
+4. **Buffer Audio**: Collect 5 seconds of audio per speaker
+5. **Batch Transcribe**: Send buffer to ElevenLabs REST API
+6. **Yield Transcripts**: Return transcribed text with speaker label
 
 ## 📝 License
 
