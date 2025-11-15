@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Test Client - Interview Analysis</title>
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .status {
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .connected {
+            background: #d4edda;
+            color: #155724;
+        }
+        .disconnected {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .logs {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 15px;
+            border-radius: 4px;
+            max-height: 400px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+        }
+        .log-entry {
+            margin-bottom: 5px;
+            padding: 5px;
+            border-left: 3px solid #4CAF50;
+            padding-left: 10px;
+        }
+        .log-entry.error {
+            border-left-color: #f44336;
+        }
+        .log-entry.info {
+            border-left-color: #2196F3;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .stat-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            border-left: 4px solid #4CAF50;
+        }
+        .stat-label {
+            color: #666;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Backend Test Client - Interview Analysis</h1>
+    
+    <div class="container">
+        <h2>📡 Connection Status</h2>
+        <div id="status" class="status disconnected">⚠️ Disconnected</div>
+    </div>
+
+    <div class="container">
+        <h2>🔧 Configuration</h2>
+        <div class="form-group">
+            <label for="serverUrl">Server URL:</label>
+            <input type="text" id="serverUrl" value="http://localhost:3001">
+        </div>
+        <div class="form-group">
+            <label for="roomId">Room ID:</label>
+            <input type="text" id="roomId" value="test-room-001">
+        </div>
+        <button id="connectBtn">Connect to Server</button>
+    </div>
+
+    <div class="container">
+        <h2>📝 Send Question</h2>
+        <div class="form-group">
+            <label for="questionText">Question Text:</label>
+            <textarea id="questionText" placeholder="Enter a technical interview question...">Expliquez-moi comment fonctionne la récursivité en programmation.</textarea>
+        </div>
+        <button id="sendQuestionBtn" disabled>Send Question</button>
+    </div>
+
+    <div class="container">
+        <h2>📊 Statistics</h2>
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-label">Questions Sent</div>
+                <div class="stat-value" id="questionCount">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Average Difficulty</div>
+                <div class="stat-value" id="avgDifficulty">0.0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Last Difficulty</div>
+                <div class="stat-value" id="lastDifficulty">-</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>📋 Event Logs</h2>
+        <button onclick="clearLogs()" style="width: auto; margin-bottom: 10px;">Clear Logs</button>
+        <div class="logs" id="logs"></div>
+    </div>
+
+    <script>
+        let socket = null;
+        let questionCount = 0;
+        let avgDifficulty = 0;
+
+        const statusEl = document.getElementById('status');
+        const logsEl = document.getElementById('logs');
+        const connectBtn = document.getElementById('connectBtn');
+        const sendQuestionBtn = document.getElementById('sendQuestionBtn');
+
+        // Sample questions for quick testing
+        const sampleQuestions = [
+            "Expliquez-moi comment fonctionne la récursivité en programmation.",
+            "Quelle est la différence entre une liste et un tuple en Python ?",
+            "Comment optimiseriez-vous une requête SQL lente ?",
+            "Qu'est-ce qu'un closure en JavaScript ?",
+            "Expliquez le principe de l'injection de dépendances.",
+            "Comment gérer les erreurs dans une application asynchrone ?",
+            "Quelle est la complexité temporelle de quicksort ?",
+            "Expliquez le pattern MVC.",
+            "Comment fonctionne le garbage collector en Java ?",
+            "Qu'est-ce que REST et comment concevoir une API RESTful ?"
+        ];
+
+        function log(message, type = 'info') {
+            const timestamp = new Date().toLocaleTimeString();
+            const entry = document.createElement('div');
+            entry.className = `log-entry ${type}`;
+            entry.textContent = `[${timestamp}] ${message}`;
+            logsEl.appendChild(entry);
+            logsEl.scrollTop = logsEl.scrollHeight;
+        }
+
+        function clearLogs() {
+            logsEl.innerHTML = '';
+            log('Logs cleared');
+        }
+
+        function updateStatus(connected) {
+            if (connected) {
+                statusEl.className = 'status connected';
+                statusEl.textContent = '✅ Connected';
+                sendQuestionBtn.disabled = false;
+                connectBtn.textContent = 'Disconnect';
+            } else {
+                statusEl.className = 'status disconnected';
+                statusEl.textContent = '⚠️ Disconnected';
+                sendQuestionBtn.disabled = true;
+                connectBtn.textContent = 'Connect to Server';
+            }
+        }
+
+        function updateStats() {
+            document.getElementById('questionCount').textContent = questionCount;
+            document.getElementById('avgDifficulty').textContent = avgDifficulty.toFixed(2);
+        }
+
+        connectBtn.addEventListener('click', () => {
+            if (socket && socket.connected) {
+                socket.disconnect();
+                socket = null;
+                log('Disconnected from server', 'info');
+                updateStatus(false);
+                return;
+            }
+
+            const serverUrl = document.getElementById('serverUrl').value;
+            const roomId = document.getElementById('roomId').value;
+
+            log(`Connecting to ${serverUrl}...`, 'info');
+            
+            socket = io(serverUrl);
+
+            socket.on('connect', () => {
+                log('Connected to server!', 'info');
+                updateStatus(true);
+                
+                // Join room
+                socket.emit('join:room', roomId);
+                log(`Joining room: ${roomId}`, 'info');
+            });
+
+            socket.on('disconnect', () => {
+                log('Disconnected from server', 'error');
+                updateStatus(false);
+            });
+
+            socket.on('room:joined', (data) => {
+                log(`Room joined: ${JSON.stringify(data)}`, 'info');
+                questionCount = data.questionCount || 0;
+                avgDifficulty = data.avgDifficulty || 0;
+                updateStats();
+            });
+
+            socket.on('difficulty:update', (data) => {
+                log(`📊 Difficulty Update: ${JSON.stringify(data, null, 2)}`, 'info');
+                questionCount = data.questionIndex;
+                avgDifficulty = data.avgDifficulty;
+                document.getElementById('lastDifficulty').textContent = `${data.difficulty}/5`;
+                updateStats();
+            });
+
+            socket.on('question:processed', (data) => {
+                log(`✅ Question processed: ${JSON.stringify(data)}`, 'info');
+            });
+
+            socket.on('question:error', (data) => {
+                log(`❌ Error processing question: ${JSON.stringify(data)}`, 'error');
+            });
+
+            socket.on('interview:resetted', (data) => {
+                log(`🔄 Interview reset: ${JSON.stringify(data)}`, 'info');
+                questionCount = 0;
+                avgDifficulty = 0;
+                document.getElementById('lastDifficulty').textContent = '-';
+                updateStats();
+            });
+        });
+
+        sendQuestionBtn.addEventListener('click', () => {
+            const roomId = document.getElementById('roomId').value;
+            const text = document.getElementById('questionText').value;
+
+            if (!text.trim()) {
+                log('❌ Question text is empty', 'error');
+                return;
+            }
+
+            log(`Sending question: "${text.substring(0, 50)}..."`, 'info');
+            
+            socket.emit('question:new', {
+                roomId: roomId,
+                text: text
+            });
+
+            // Random next question
+            const randomQuestion = sampleQuestions[Math.floor(Math.random() * sampleQuestions.length)];
+            document.getElementById('questionText').value = randomQuestion;
+        });
+
+        // Initial log
+        log('Test client initialized. Click "Connect to Server" to start.', 'info');
+    </script>
+</body>
+</html>
