@@ -1,0 +1,397 @@
+
+================================================================================
+[21:04:51] EVALUATION
+================================================================================
+Window: 21:04:41 - 21:04:46
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This appears to be a casual, off-topic exchange with the candidate saying 'I'm a pumpkin' repeatedly and the recruiter responding with brief acknowledgments. No technical quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Candidate providing nonsensical responses
+   - Possible technical issue or joke at interview start
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[21:04:56] EVALUATION
+================================================================================
+Window: 21:04:41 - 21:04:51
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: The conversation consists entirely of nonsensical exchanges with participants saying phrases like 'I'm a pumpkin' and 'It's you' with no discernible quant finance or professional content.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No professional content detected
+   - Conversation appears incoherent or potentially a technical recording issue
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[21:05:01] EVALUATION
+================================================================================
+Window: 21:04:46 - 21:04:56
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.95)
+
+📝 Summary: This excerpt captures a technical setup issue where the recruiter and candidate are troubleshooting audio/video connectivity problems before the interview begins.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Technical setup issues
+   - Interview has not begun
+   - No substantive content
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[21:05:17] EVALUATION
+================================================================================
+Window: 21:04:51 - 21:05:12
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This excerpt captures technical difficulties at the start of the interview, with participants discussing connectivity or equipment issues (possibly audio/video setup problems with a charger or device).
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - technical setup issues only
+   - No substantive interview content
+   - Unclear communication - fragmented sentences suggest connection problems
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[21:05:25] EVALUATION
+================================================================================
+Window: 21:05:03 - 21:05:20
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: This excerpt appears to be casual conversation about technical equipment (a charger) with fragmented dialogue, possibly during interview setup or a technical interruption. No quantitative finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - no quant finance content
+   - Fragmented/unclear dialogue
+   - Possible technical issues or interview setup phase
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[21:05:46] EVALUATION
+================================================================================
+Window: 21:05:12 - 21:05:41
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: This excerpt captures the beginning of an interview with technical difficulties including audio issues and discussions about transcription. No quant finance content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Technical/audio difficulties
+   - Interview has not properly started
+   - No substantive content to evaluate
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[21:05:53] EVALUATION
+================================================================================
+Window: 21:05:41 - 21:05:48
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: This excerpt captures the initial connection phase of the interview where participants are checking audio connectivity. There is a fragmented reference to 'Harry Potter' that appears to be accidental speech or audio issues.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Audio/connection issues apparent
+   - No substantive content exchanged
+   - Fragmented/unclear candidate statements
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[21:05:59] EVALUATION
+================================================================================
+Window: 21:05:41 - 21:05:53
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: This excerpt captures only the initial connection phase of the interview with audio check and fragmented statements, including an unclear reference to Harry Potter. No substantive quant finance discussion has begun.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content
+   - Audio/connection setup only
+   - Fragmented candidate statements
+   - Unclear communication - possible technical issues
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[21:06:07] EVALUATION
+================================================================================
+Window: 21:05:46 - 21:06:01
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: This appears to be the initial connection phase of an interview with audio testing and fragmented conversation. No substantive quant finance content was discussed, only technical setup communication.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - no quant finance content
+   - Fragmented conversation - possible audio/connection issues
+   - Unclear context - Harry Potter reference unexplained
+   - Interview has not properly started
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[21:06:11] EVALUATION
+================================================================================
+Window: 21:05:53 - 21:06:07
+Transcripts: 3
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.70)
+🎯 Question Difficulty: EASY (confidence: 0.75)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.40)
+
+📝 Summary: The recruiter appears to be asking a basic question about linear regression coefficients, which is a fundamental concept in quantitative finance and relates to regression modeling techniques.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Incomplete conversation excerpt
+   - Context unclear - opening fragment
+   - Question not fully articulated
+
+
+================================================================================
+[21:06:37] EVALUATION
+================================================================================
+Window: 21:06:01 - 21:06:32
+Transcripts: 4
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.40)
+🎯 Question Difficulty: EASY (confidence: 0.30)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.10)
+
+📝 Summary: The conversation fragment shows the recruiter beginning a question, the candidate mentioning linear regression coefficients (a basic quant concept), followed by confusion about interview scheduling.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Incomplete conversation - appears truncated or corrupted
+   - Scheduling confusion detected
+   - Candidate appears to be asking questions rather than answering
+   - Insufficient data to properly evaluate interview
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[21:06:58] EVALUATION
+================================================================================
+Window: 21:06:32 - 21:06:53
+Transcripts: 4
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.10)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.00)
+
+📝 Summary: The excerpt contains only fragmented candidate responses with incomplete thoughts. No interviewer questions are visible, and no complete technical concepts are discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incomplete conversation excerpt
+   - No interviewer dialogue present
+   - Insufficient context to evaluate
+   - Fragmented candidate responses only
+
+
+================================================================================
+[21:07:20] EVALUATION
+================================================================================
+Window: 21:06:50 - 21:07:15
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.90)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: The candidate makes a brief, incomplete statement about 'getting the most information about the process' and then asks about transcription visibility. No substantive technical discussion occurs.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incomplete conversation fragment
+   - No clear technical discussion
+   - Technical issue mentioned (transcription visibility)
+   - Insufficient context to evaluate quant finance content
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[21:07:42] EVALUATION
+================================================================================
+Window: 21:07:15 - 21:07:38
+Transcripts: 4
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.90)
+🎯 Question Difficulty: EASY (confidence: 0.70)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.30)
+
+📝 Summary: The candidate is beginning to explain cross-validation concepts, specifically mentioning the use of multiple batches of data, though the explanation is incomplete and fragmented.
+
+🔑 Key Topics: CV_TECHNIQUES
+
+🚩 Flags:
+   - Incomplete explanation
+   - Candidate appears to be struggling with articulation
+   - No interviewer input visible in excerpt
+
+
+================================================================================
+[21:07:59] EVALUATION
+================================================================================
+Window: 21:07:32 - 21:07:53
+Transcripts: 9
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.10)
+
+📝 Summary: Candidate explains cross-validation fundamentals, describing random data splitting (80/20 train-test), multiple batches, and its role in preventing overfitting.
+
+🔑 Key Topics: CV_TECHNIQUES, REGULARIZATION
+
+🚩 Flags:
+   - Candidate shows repetitive speech patterns suggesting nervousness or language difficulty
+   - No interviewer speech present in excerpt
+   - Basic definition-level response without depth on walk-forward or time-series specific considerations
+
+
+================================================================================
+[21:08:15] EVALUATION
+================================================================================
+Window: 21:07:44 - 21:08:09
+Transcripts: 8
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.75)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.10)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.00)
+
+📝 Summary: Candidate appears to be discussing cross-validation techniques (80/20 split) and overfitting prevention, with a fragmented mention of regression at the end. The conversation is choppy and incomplete.
+
+🔑 Key Topics: CV_TECHNIQUES, REGULARIZATION
+
+🚩 Flags:
+   - Transcript is fragmented and difficult to understand
+   - Only candidate responses visible - no interviewer questions
+   - Candidate speech appears incomplete or poorly transcribed
+   - Cannot assess question difficulty without seeing interviewer questions
+
+
+================================================================================
+[21:08:26] EVALUATION
+================================================================================
+Window: 21:08:00 - 21:08:20
+Transcripts: 7
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.00)
+
+📝 Summary: Evaluation failed: Missing required field: interviewer_tone
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - EVALUATION_ERROR: Missing required field: interviewer_tone
+
+
+================================================================================
+[21:08:47] EVALUATION
+================================================================================
+Window: 21:08:15 - 21:08:41
+Transcripts: 10
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.00)
+
+📝 Summary: Evaluation failed: Missing required field: interviewer_tone
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - EVALUATION_ERROR: Missing required field: interviewer_tone
+
+
+================================================================================
+[21:13:31] EVALUATION
+================================================================================
+Window: 21:08:32 - 21:08:41
+Transcripts: 3
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.30)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.20)
+
+📝 Summary: The candidate mentions using Lasso regression (L1 regularization) and expresses a preference for this technique, though the context is incomplete due to the brief excerpt.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Incomplete conversation excerpt
+   - No interviewer input visible
+   - Context unclear - unable to determine what problem is being addressed
+

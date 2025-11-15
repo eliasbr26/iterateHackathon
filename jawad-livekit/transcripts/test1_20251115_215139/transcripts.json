@@ -1,0 +1,324 @@
+{
+  "room": "test1",
+  "session_start": "2025-11-15T21:51:48.013849",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-15T21:51:48.013849",
+      "speaker": "recruiter",
+      "text": "Hello? Hello?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:51:49.006604",
+      "speaker": "candidate",
+      "text": "what what",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:51:54.036327",
+      "speaker": "recruiter",
+      "text": "Hello, can you hear me? Yes.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:51:58.961274",
+      "speaker": "candidate",
+      "text": "Yeah, of course I can hear you. Of course I can hear you.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:04.442182",
+      "speaker": "recruiter",
+      "text": "Okay, great. Well, that's great.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:10.054231",
+      "speaker": "recruiter",
+      "text": "Okay, can you talk to me about linear regression?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:11.118910",
+      "speaker": "candidate",
+      "text": "Yeah, of course. Hey, of course. Hey",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:18.085301",
+      "speaker": "candidate",
+      "text": "The most basic models in quantitative finance. You can see, uh, uh,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:19.057259",
+      "speaker": "candidate",
+      "text": "I think it's really studied. I think it's really studied.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:20.103055",
+      "speaker": "candidate",
+      "text": "Because you can, uh, because you can, uh,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:21.301817",
+      "speaker": "candidate",
+      "text": "have like exact, have like exact,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:22.042118",
+      "speaker": "candidate",
+      "text": "values for example, values for example,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:23.032611",
+      "speaker": "candidate",
+      "text": "values for example,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:24.019987",
+      "speaker": "candidate",
+      "text": "which is which is",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:25.037955",
+      "speaker": "candidate",
+      "text": "x transpo x transpo",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:31.041747",
+      "speaker": "candidate",
+      "text": "x times x x times x",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:31.109363",
+      "speaker": "candidate",
+      "text": "minus 1 minus 1.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:32.120330",
+      "speaker": "candidate",
+      "text": "Times x transpose y. We can have also some exact values for the set of the set",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:34.041312",
+      "speaker": "candidate",
+      "text": "like to have some like to have some",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:35.036740",
+      "speaker": "candidate",
+      "text": "hypothesis about the hypothesis about the",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:36.052969",
+      "speaker": "candidate",
+      "text": "Epsilon for example Epsilon for example",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:39.093482",
+      "speaker": "recruiter",
+      "text": "Okay, great. And, uh, and, uh,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:45.055576",
+      "speaker": "recruiter",
+      "text": "Can you tell me about ARIMA models in finance?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:47.044485",
+      "speaker": "candidate",
+      "text": "Lina Armandos?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:54.064068",
+      "speaker": "recruiter",
+      "text": "Arima Arima or Arma you know for you know for",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:52:54.069254",
+      "speaker": "candidate",
+      "text": "Sorry, I can't Arima, I have no idea what is Arima.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:53:04.137993",
+      "speaker": "candidate",
+      "text": "absolutely not oh I think you are you think you are you",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:53:04.324642",
+      "speaker": "recruiter",
+      "text": "I think you should know what time series as a future quant. This is not normal to not know this.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:53:09.504821",
+      "speaker": "candidate",
+      "text": "think you are you think you are",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:53:15.075180",
+      "speaker": "recruiter",
+      "text": "I don't care. I don't. I will not hire you.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:53:20.270286",
+      "speaker": "candidate",
+      "text": "you mean like a mobile mobile",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:53:25.398275",
+      "speaker": "recruiter",
+      "text": "uh I don't think you I don't think you",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:53:30.364037",
+      "speaker": "recruiter",
+      "text": "know what you are thinking about you know what you are thinking about",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:53:30.920079",
+      "speaker": "recruiter",
+      "text": "it's very good to look at LGBT but it's not the way it's not the way to",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:53:31.051784",
+      "speaker": "candidate",
+      "text": "Are you talking about moving average? About moving average?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:53:38.105798",
+      "speaker": "recruiter",
+      "text": "Yes, yes. Let me know what you know about moving average.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:53:44.132672",
+      "speaker": "candidate",
+      "text": "Okay, so like moving average, for example, you can take the moving average on two different samples, for example, 20 samples, for example, 20.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:53:49.534780",
+      "speaker": "candidate",
+      "text": "days or five days or five.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:53:50.068514",
+      "speaker": "candidate",
+      "text": "Days you can get like very significant information by understanding some. Uh, uh,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:53:51.034872",
+      "speaker": "candidate",
+      "text": "momentum in the data. Momentum in the data.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:53:52.045869",
+      "speaker": "candidate",
+      "text": "For example, if you have the For example, if you have the",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:53:53.039655",
+      "speaker": "candidate",
+      "text": "moving average of the 20 moving average of the 20",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:53:55.110538",
+      "speaker": "candidate",
+      "text": "I'm getting rid of the fight I'm getting rid of the fight",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:53:56.022291",
+      "speaker": "candidate",
+      "text": "That means I That means I",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:53:57.058123",
+      "speaker": "candidate",
+      "text": "That means I took That means I took your That means I took your stuff That means I took your stuff",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:54:01.034664",
+      "speaker": "candidate",
+      "text": "to grow a lot I guess grow a lot I guess",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:54:07.101952",
+      "speaker": "recruiter",
+      "text": "Good, good, good. You know how to read from ChatGPT. This is very good. Very",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:54:14.033357",
+      "speaker": "recruiter",
+      "text": "Thank you. I like it.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:54:14.059344",
+      "speaker": "candidate",
+      "text": "I can share my screen if you want.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:54:19.234133",
+      "speaker": "candidate",
+      "text": "And that's all. And that's all.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:54:20.072232",
+      "speaker": "candidate",
+      "text": "What? What?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:54:26.103160",
+      "speaker": "recruiter",
+      "text": "No? No, no, I'm supposed to",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:54:38.038769",
+      "speaker": "candidate",
+      "text": "I thought you were going to say something",
+      "is_final": true
+    }
+  ]
+}

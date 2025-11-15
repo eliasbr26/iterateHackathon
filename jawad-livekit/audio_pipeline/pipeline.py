@@ -11,7 +11,9 @@ from io import BytesIO
 
 from .models import Transcript
 from .livekit_handler import LiveKitHandler, ParticipantInfo
-from .elevenlabs_stt import ElevenLabsSTT, TranscriptChunk
+from .elevenlabs_stt import ElevenLabsSTT
+from .deepgram_stt import DeepgramSTT
+from .elevenlabs_stt import TranscriptChunk
 from .audio_converter import AudioConverter
 
 logger = logging.getLogger(__name__)
@@ -25,29 +27,41 @@ class SpeakerStreamManager:
         participant_identity: str,
         speaker_label: str,
         livekit_handler: LiveKitHandler,
-        elevenlabs_api_key: str,
-        language: str = "en"
+        stt_api_key: str,
+        language: str = "en",
+        stt_provider: str = "deepgram"
     ):
         self.participant_identity = participant_identity
         self.speaker_label = speaker_label
         self.livekit_handler = livekit_handler
-        self.elevenlabs_api_key = elevenlabs_api_key
+        self.stt_api_key = stt_api_key
         self.language = language
+        self.stt_provider = stt_provider
 
-        self.stt_client: Optional[ElevenLabsSTT] = None
+        self.stt_client = None
         self.audio_converter = AudioConverter()
         self._running = False
 
     async def start(self) -> None:
         """Initialize STT connection"""
-        self.stt_client = ElevenLabsSTT(
-            api_key=self.elevenlabs_api_key,
-            speaker_label=self.speaker_label,
-            language=self.language
-        )
+        if self.stt_provider == "deepgram":
+            self.stt_client = DeepgramSTT(
+                api_key=self.stt_api_key,
+                speaker_label=self.speaker_label,
+                language=self.language
+            )
+        elif self.stt_provider == "elevenlabs":
+            self.stt_client = ElevenLabsSTT(
+                api_key=self.stt_api_key,
+                speaker_label=self.speaker_label,
+                language=self.language
+            )
+        else:
+            raise ValueError(f"Unknown STT provider: {self.stt_provider}")
+
         await self.stt_client.connect()
         self._running = True
-        logger.info(f"[{self.speaker_label}] Stream manager started")
+        logger.info(f"[{self.speaker_label}] Stream manager started with {self.stt_provider}")
 
     async def stream_audio(self) -> None:
         """Stream audio from LiveKit to ElevenLabs"""
@@ -135,10 +149,11 @@ class AudioPipeline:
         livekit_url: str,
         livekit_room: str,
         livekit_token: str,
-        elevenlabs_api_key: str,
+        stt_api_key: str,
         language: str = "en",
         recruiter_identity: str = "interviewer",
-        candidate_identity: str = "candidate"
+        candidate_identity: str = "candidate",
+        stt_provider: str = "deepgram"
     ):
         """
         Initialize audio pipeline
@@ -147,18 +162,20 @@ class AudioPipeline:
             livekit_url: LiveKit server URL
             livekit_room: LiveKit room name
             livekit_token: LiveKit JWT token
-            elevenlabs_api_key: ElevenLabs API key
+            stt_api_key: STT API key (Deepgram or ElevenLabs)
             language: Language code (default: "en")
             recruiter_identity: Identity string for recruiter
             candidate_identity: Identity string for candidate
+            stt_provider: STT provider - "deepgram" or "elevenlabs" (default: "deepgram")
         """
         self.livekit_url = livekit_url
         self.livekit_room = livekit_room
         self.livekit_token = livekit_token
-        self.elevenlabs_api_key = elevenlabs_api_key
+        self.stt_api_key = stt_api_key
         self.language = language
         self.recruiter_identity = recruiter_identity
         self.candidate_identity = candidate_identity
+        self.stt_provider = stt_provider
 
         self.livekit_handler: Optional[LiveKitHandler] = None
         self.stream_managers: Dict[str, SpeakerStreamManager] = {}
@@ -233,8 +250,9 @@ class AudioPipeline:
                 participant_identity=identity,
                 speaker_label=participant_info.speaker_label,
                 livekit_handler=self.livekit_handler,
-                elevenlabs_api_key=self.elevenlabs_api_key,
-                language=self.language
+                stt_api_key=self.stt_api_key,
+                language=self.language,
+                stt_provider=self.stt_provider
             )
             await manager.start()
             self.stream_managers[identity] = manager

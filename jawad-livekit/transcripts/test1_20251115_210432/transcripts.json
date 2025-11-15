@@ -1,0 +1,324 @@
+{
+  "room": "test1",
+  "session_start": "2025-11-15T21:04:41.123586",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-15T21:04:41.123586",
+      "speaker": "recruiter",
+      "text": "Okay okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:04:41.137332",
+      "speaker": "candidate",
+      "text": "I'm a pumpkin I'm a pumpkin I'm a",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:04:46.151463",
+      "speaker": "recruiter",
+      "text": "It's you.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:04:51.343373",
+      "speaker": "candidate",
+      "text": "It's you. No, it's you. It's you.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:04:56.457398",
+      "speaker": "recruiter",
+      "text": "Wait, it's still there for me. For me, it's still there.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:05:01.324137",
+      "speaker": "recruiter",
+      "text": "I'm still not coming. I'm not coming. I'm not coming.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:05:01.358628",
+      "speaker": "recruiter",
+      "text": "I don't know if he's gone. He's gone.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:05:03.162945",
+      "speaker": "recruiter",
+      "text": "we got a new we got a new",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:05:07.176229",
+      "speaker": "recruiter",
+      "text": "the thing is this is the new this is the new charger",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:05:09.140535",
+      "speaker": "recruiter",
+      "text": "yeah yeah yeah yeah",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:05:12.162273",
+      "speaker": "recruiter",
+      "text": "yeah",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:05:19.247121",
+      "speaker": "recruiter",
+      "text": "I'll go a little bit far away and I'll",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:05:20.582203",
+      "speaker": "candidate",
+      "text": "Transcribe? It's a bit long, it's a bit",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:05:25.874488",
+      "speaker": "candidate",
+      "text": "long. I don't know what to do.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:05:41.541094",
+      "speaker": "candidate",
+      "text": "hello do you hear me yeah yeah",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:05:46.685497",
+      "speaker": "candidate",
+      "text": "I can hear you",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:05:46.764550",
+      "speaker": "candidate",
+      "text": ". Harry Potter's body.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:05:47.530148",
+      "speaker": "candidate",
+      "text": "I'm not trying to. I'm not trying to",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:05:48.198483",
+      "speaker": "recruiter",
+      "text": "Yeah, I can hear you.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:05:53.762281",
+      "speaker": "candidate",
+      "text": ". Basically, that's what you can talk about.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:06:01.198917",
+      "speaker": "recruiter",
+      "text": "OK, so what is the",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:06:07.573086",
+      "speaker": "candidate",
+      "text": "Okay, so what is the coefficient of the linear regression?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:06:14.572001",
+      "speaker": "candidate",
+      "text": "I think you are you sure you are interviewing on Monday?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:06:32.525678",
+      "speaker": "candidate",
+      "text": "Okay.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:06:39.559067",
+      "speaker": "candidate",
+      "text": "Yes.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:06:50.572751",
+      "speaker": "candidate",
+      "text": "Yeah, I guess like the--",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:06:53.553938",
+      "speaker": "candidate",
+      "text": "allows you to get the most information about",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:06:58.483756",
+      "speaker": "candidate",
+      "text": "the process process.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:06:59.531831",
+      "speaker": "candidate",
+      "text": "Do you see the transcription or not?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:07:15.545259",
+      "speaker": "candidate",
+      "text": "Yes.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:07:32.568573",
+      "speaker": "candidate",
+      "text": "Okay, so the idea of course, the idea of course, validation",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:07:35.545652",
+      "speaker": "candidate",
+      "text": "is that you're going to use several several",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:07:38.568813",
+      "speaker": "candidate",
+      "text": "um batch of your data that are going to be that are going to be",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:07:42.872435",
+      "speaker": "candidate",
+      "text": "taken as random random",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:07:42.960141",
+      "speaker": "candidate",
+      "text": "we will train uh on like uh on like",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:07:44.569845",
+      "speaker": "candidate",
+      "text": "for example 80% of these random data of these random data",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:07:47.539976",
+      "speaker": "candidate",
+      "text": "and these are the other 20% so",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:07:50.591281",
+      "speaker": "candidate",
+      "text": "allows you to get a lot of information and to be sure that and to be sure that",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:07:53.539356",
+      "speaker": "candidate",
+      "text": "the model does not overfit. But",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:07:59.361341",
+      "speaker": "candidate",
+      "text": "on the data.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:08:00.539437",
+      "speaker": "candidate",
+      "text": "Oh, actually, yeah. Parts of the",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:08:03.533688",
+      "speaker": "candidate",
+      "text": "Yeah, of course.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:08:09.570235",
+      "speaker": "candidate",
+      "text": "Yeah, of course, retrogression is a, is a,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:08:15.815062",
+      "speaker": "candidate",
+      "text": "is the L2 and the L2",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:08:15.914740",
+      "speaker": "candidate",
+      "text": "norm which is very interesting which is very interesting",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:08:17.551839",
+      "speaker": "candidate",
+      "text": "because you can solve it because you can solve it because you can solve it and and",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:08:20.543819",
+      "speaker": "candidate",
+      "text": "exactly by using a formula which is pretty much which is pretty",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:08:26.518353",
+      "speaker": "candidate",
+      "text": "much similar to one of the beta of the class one of the beta of the class",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:08:26.820313",
+      "speaker": "candidate",
+      "text": "It's not a formula that",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:08:29.594475",
+      "speaker": "candidate",
+      "text": "allows you to go to zero for the coefficients for that you need to",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:08:32.535383",
+      "speaker": "candidate",
+      "text": "use a laser which is using the using the",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:08:35.528599",
+      "speaker": "candidate",
+      "text": "L1 regression.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:08:41.527069",
+      "speaker": "candidate",
+      "text": "I like this one",
+      "is_final": true
+    }
+  ]
+}

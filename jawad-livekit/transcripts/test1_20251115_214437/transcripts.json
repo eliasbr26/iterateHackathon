@@ -1,0 +1,24 @@
+{
+  "room": "test1",
+  "session_start": "2025-11-15T21:46:08.813234",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-15T21:46:08.813234",
+      "speaker": "recruiter",
+      "text": "Hello.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:46:15.833120",
+      "speaker": "recruiter",
+      "text": "Ah oui d'accord ! Ok \u00e7a marche comme \u00e7a !",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T21:46:19.795894",
+      "speaker": "recruiter",
+      "text": "Good, it's much better.",
+      "is_final": true
+    }
+  ]
+}

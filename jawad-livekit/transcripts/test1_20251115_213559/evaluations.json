@@ -1,0 +1,48 @@
+{
+  "room": "test1",
+  "total_evaluations": 2,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-15T21:36:58.688010",
+      "window_start": "2025-11-15T21:36:17.518089",
+      "window_end": "2025-11-15T21:36:53.538315",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation excerpt contains fragmented, unclear statements about putting something in a box and using a keyboard, with no discernible quant finance content or coherent interview dialogue.",
+      "key_topics": [],
+      "flags": [
+        "Incoherent conversation content",
+        "No technical discussion detected",
+        "Insufficient context to evaluate interview quality",
+        "Possible transcription error or incomplete excerpt"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation excerpt contains fragmented, unclear statements about putting something in a box and using a keyboard, with no discernible quant finance content or coherent interview dialogue.\",\n    \"flags\": [\n        \"Incoherent conversation content\",\n        \"No technical discussion detected\",\n        \"Insufficient context to evaluate interview quality\",\n        \"Possible transcription error or incomplete excerpt\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T21:41:08.433663",
+      "window_start": "2025-11-15T21:36:53.538315",
+      "window_end": "2025-11-15T21:37:00.524837",
+      "transcripts_evaluated": 2,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation contains only two brief, unclear candidate statements ('foreign' and 'i'm wrong about the other kids') with no identifiable quant finance content or interviewer participation.",
+      "key_topics": [],
+      "flags": [
+        "Incomplete conversation excerpt",
+        "No interviewer dialogue present",
+        "Candidate statements are unclear and lack context",
+        "No quant finance topics discussed"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.9,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation contains only two brief, unclear candidate statements ('foreign' and 'i'm wrong about the other kids') with no identifiable quant finance content or interviewer participation.\",\n    \"flags\": [\n        \"Incomplete conversation excerpt\",\n        \"No interviewer dialogue present\",\n        \"Candidate statements are unclear and lack context\",\n        \"No quant finance topics discussed\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.9\n}\n```"
+    }
+  ]
+}

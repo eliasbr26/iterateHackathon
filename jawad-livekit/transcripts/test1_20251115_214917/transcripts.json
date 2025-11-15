@@ -1,0 +1,12 @@
+{
+  "room": "test1",
+  "session_start": "2025-11-15T21:50:36.624532",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-15T21:50:36.624532",
+      "speaker": "recruiter",
+      "text": "Hello, hello, hello.",
+      "is_final": true
+    }
+  ]
+}

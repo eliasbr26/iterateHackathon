@@ -180,15 +180,16 @@ async def main():
     logger.info(f"📡 Connecting to: {LIVEKIT_URL}")
     logger.info(f"🤖 LLM Evaluation: ENABLED (20s windows with 10s overlap)")
 
-    # Create pipeline
+    # Create pipeline (using ElevenLabs Scribe v2 Realtime)
     pipeline = AudioPipeline(
         livekit_url=LIVEKIT_URL,
         livekit_room=LIVEKIT_ROOM,
         livekit_token=token,
-        elevenlabs_api_key=ELEVENLABS_API_KEY,
+        stt_api_key=ELEVENLABS_API_KEY,
         language="en",
         recruiter_identity="interviewer",
-        candidate_identity="candidate"
+        candidate_identity="candidate",
+        stt_provider="elevenlabs"
     )
 
     print("\n" + "="*80)

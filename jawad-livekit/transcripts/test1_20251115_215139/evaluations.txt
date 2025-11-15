@@ -1,0 +1,435 @@
+
+================================================================================
+[21:51:58] EVALUATION
+================================================================================
+Window: 21:51:48 - 21:51:54
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.90)
+
+📝 Summary: This is the initial connection phase of the interview where the recruiter and candidate are establishing audio communication. No substantive content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Interview just starting - no technical content yet
+   - Audio connection being established
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[21:52:04] EVALUATION
+================================================================================
+Window: 21:51:48 - 21:51:58
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.90)
+
+📝 Summary: This is the initial connection phase of the interview where the recruiter and candidate are testing audio connection and confirming they can hear each other. No substantive content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content yet
+   - Interview just beginning - connection check only
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[21:52:09] EVALUATION
+================================================================================
+Window: 21:51:49 - 21:52:04
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.90)
+
+📝 Summary: This is the initial audio check and greeting phase of the interview where the recruiter and candidate verify they can hear each other. No technical content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Interview has not begun - only technical setup/greeting phase
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[21:52:16] EVALUATION
+================================================================================
+Window: 21:51:58 - 21:52:11
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.85)
+
+📝 Summary: This excerpt captures the initial moments of an interview with audio checks and casual greetings. The recruiter begins to ask about linear regression at the very end, but no substantive discussion has occurred yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No substantive technical content yet
+   - Interview just beginning
+   - Linear regression question posed but not answered
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[21:52:30] EVALUATION
+================================================================================
+Window: 21:52:04 - 21:52:25
+Transcripts: 11
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: Recruiter asks candidate to explain linear regression. Candidate begins responding but the answer is incomplete and fragmented, mentioning it's a basic model in quant finance and starting to reference the normal equation (X transpose X) but not completing the explanation.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Candidate response is highly fragmented and incomplete
+   - Severe speech disfluency or transcription errors present
+   - No clear technical explanation provided despite relevant question
+
+
+================================================================================
+[21:52:44] EVALUATION
+================================================================================
+Window: 21:52:18 - 21:52:39
+Transcripts: 15
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.70)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.75)
+
+📝 Summary: The candidate is explaining basic linear regression concepts in quantitative finance, including the closed-form solution (X'X)^-1 X'y and mentioning hypotheses about the error term epsilon, which relates to fundamental modeling assumptions.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Candidate speech is fragmented and repetitive
+   - Audio quality or transcription issues evident
+   - Incomplete explanation - cut off mid-response
+   - Difficult to assess full understanding due to unclear communication
+
+
+================================================================================
+[21:52:52] EVALUATION
+================================================================================
+Window: 21:52:31 - 21:52:47
+Transcripts: 9
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: Candidate appears to be discussing regularization concepts (possibly ridge regression with x'x - lambda*I formulation) and epsilon hypotheses, followed by interviewer asking a basic question about ARIMA models in finance. Candidate's response to ARIMA question is unclear or misheard.
+
+🔑 Key Topics: REGULARIZATION, TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Candidate speech unclear or fragmented
+   - Candidate may not have understood ARIMA question
+   - Audio quality or transcription issues possible
+
+
+================================================================================
+[21:52:58] EVALUATION
+================================================================================
+Window: 21:52:39 - 21:52:54
+Transcripts: 4
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.75)
+
+📝 Summary: The recruiter asks the candidate about ARIMA models in finance, but the candidate appears to have difficulty understanding the question initially, possibly due to audio issues or unfamiliarity with the terminology.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Candidate did not understand the question
+   - Communication issue - possible audio problem or accent barrier
+   - No substantive answer provided yet
+
+
+================================================================================
+[21:53:03] EVALUATION
+================================================================================
+Window: 21:52:45 - 21:52:54
+Transcripts: 4
+
+📊 Subject Relevance: ON_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: EASY (confidence: 0.95)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.85)
+
+📝 Summary: The recruiter asked about ARIMA models in finance, but the candidate did not recognize or understand the term, indicating a significant knowledge gap in basic time series modeling.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Candidate unfamiliar with fundamental time series concept (ARIMA)
+   - Communication difficulty - candidate misheard term initially
+   - Knowledge gap on basic quant finance topic
+
+
+================================================================================
+[21:53:09] EVALUATION
+================================================================================
+Window: 21:52:45 - 21:53:04
+Transcripts: 6
+
+📊 Subject Relevance: ON_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: EASY (confidence: 0.95)
+💬 Interviewer Tone: HARSH (confidence: 1.00)
+
+📝 Summary: The recruiter asked about ARIMA models in finance, but the candidate did not recognize or know what ARIMA is. The recruiter responded critically, stating this is abnormal knowledge for a future quant.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Harsh tone detected
+   - Candidate lacks fundamental time series knowledge
+   - Recruiter openly critical of candidate's knowledge gap
+   - Potential communication breakdown (candidate initially mishears question)
+
+
+================================================================================
+[21:53:14] EVALUATION
+================================================================================
+Window: 21:53:04 - 21:53:09
+Transcripts: 3
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.85)
+💬 Interviewer Tone: HARSH (confidence: 0.98)
+
+📝 Summary: The recruiter criticizes the candidate for not knowing time series concepts, stating this is not normal for a future quant position. The candidate's responses are fragmented and incoherent.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Harsh tone detected - recruiter states 'This is not normal to not know this'
+   - Candidate responses are unintelligible/fragmented
+   - Possible communication breakdown or technical issues
+   - Unprofessional interview dynamic
+
+
+================================================================================
+[21:53:20] EVALUATION
+================================================================================
+Window: 21:53:04 - 21:53:15
+Transcripts: 4
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.75)
+💬 Interviewer Tone: HARSH (confidence: 0.95)
+
+📝 Summary: The recruiter criticized the candidate for not knowing about time series models, stating this knowledge is essential for a quant role and ultimately deciding not to hire them.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Harsh tone detected
+   - Highly unprofessional interview conduct
+   - Candidate appears incoherent or distressed
+   - Abrupt rejection without proper assessment
+   - Possible communication breakdown
+
+
+================================================================================
+[21:53:25] EVALUATION
+================================================================================
+Window: 21:53:09 - 21:53:20
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: HARSH (confidence: 0.98)
+
+📝 Summary: The conversation appears to be incoherent or incomplete, with the recruiter explicitly stating they will not hire the candidate. No quantitative finance topics were discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Harsh tone detected - recruiter states 'I will not hire you'
+   - Incoherent conversation - unclear what is being discussed
+   - No technical content present
+   - Potentially unprofessional interview conduct
+   - Conversation appears incomplete or corrupted
+
+
+================================================================================
+[21:53:30] EVALUATION
+================================================================================
+Window: 21:53:15 - 21:53:25
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: HARSH (confidence: 0.98)
+
+📝 Summary: The recruiter makes a dismissive statement about not hiring the candidate. The conversation fragments are incomplete and incoherent, with no discernible quant finance content discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Harsh tone detected - recruiter explicitly states unwillingness to hire
+   - Unprofessional interview conduct
+   - Incomplete/fragmented conversation
+   - No technical content discussed
+   - Potentially hostile interview environment
+
+
+================================================================================
+[21:53:36] EVALUATION
+================================================================================
+Window: 21:53:20 - 21:53:31
+Transcripts: 5
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.00)
+
+📝 Summary: Evaluation failed: Missing required field: interviewer_tone
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - EVALUATION_ERROR: Missing required field: interviewer_tone
+
+
+================================================================================
+[21:53:43] EVALUATION
+================================================================================
+Window: 21:53:25 - 21:53:38
+Transcripts: 5
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.60)
+
+📝 Summary: The recruiter is asking the candidate to explain what they know about moving averages, which is a basic time series concept relevant to quantitative finance.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Transcript quality issue - recruiter's initial statements are unclear/garbled
+   - Possible transcription errors affecting clarity
+   - Context missing - unclear what 'LGBT' refers to (likely transcription error)
+
+
+================================================================================
+[21:53:49] EVALUATION
+================================================================================
+Window: 21:53:30 - 21:53:44
+Transcripts: 5
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.80)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.60)
+
+📝 Summary: The recruiter asks the candidate to explain moving averages, a basic time series concept. The candidate begins to describe moving averages with examples of sample sizes (e.g., 20 periods).
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Conversation appears fragmented or unclear (possible transcription issues)
+   - Recruiter's opening statement is incoherent
+   - Very brief exchange with incomplete candidate response
+
+
+================================================================================
+[21:54:06] EVALUATION
+================================================================================
+Window: 21:53:38 - 21:54:01
+Transcripts: 11
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.90)
+🎯 Question Difficulty: EASY (confidence: 0.85)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter asked about moving averages, and the candidate attempted to explain them in the context of different time windows (20 days, 5 days) and momentum, but the response was fragmented and incoherent with significant communication issues.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Candidate response highly incoherent and difficult to understand
+   - Possible audio/transcription quality issues
+   - Incomplete explanation of moving averages
+   - Candidate struggled to articulate basic concept clearly
+
+
+================================================================================
+[21:54:13] EVALUATION
+================================================================================
+Window: 21:53:51 - 21:54:07
+Transcripts: 8
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.85)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: HARSH (confidence: 0.95)
+
+📝 Summary: The candidate appears to be discussing momentum and moving averages in a fragmented manner, possibly reading from an external source. The recruiter sarcastically accuses the candidate of reading from ChatGPT, indicating suspected dishonesty.
+
+🔑 Key Topics: FEATURE_SELECTION, TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Suspected cheating - recruiter accuses candidate of reading from ChatGPT
+   - Highly fragmented candidate responses suggest technical issues or dishonesty
+   - Harsh/sarcastic tone from interviewer
+   - Interview integrity compromised
+   - No clear question or structured dialogue
+
+
+================================================================================
+[21:54:19] EVALUATION
+================================================================================
+Window: 21:54:01 - 21:54:14
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: HARSH (confidence: 0.95)
+
+📝 Summary: Brief exchange where the recruiter sarcastically comments that the candidate knows how to read from ChatGPT, followed by the candidate offering to share their screen. No technical quant finance content discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Harsh tone detected - sarcastic comment about ChatGPT
+   - Off-topic discussion
+   - Potential accusation of cheating/using AI assistance
+   - No technical content present
+   - Unprofessional interviewer behavior
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[21:54:30] EVALUATION
+================================================================================
+Window: 21:54:07 - 21:54:26
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.75)
+
+📝 Summary: This excerpt shows a brief informal exchange where the recruiter makes a comment about reading from ChatGPT and the candidate offers to share their screen. No technical quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - ChatGPT reference suggests possible concern about authenticity
+   - Conversation fragment appears incomplete or mid-transition
+   - No technical questions asked
+   - Off-topic/casual discussion detected ([EXTRA])
+

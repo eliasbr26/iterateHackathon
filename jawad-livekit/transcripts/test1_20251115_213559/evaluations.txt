@@ -1,0 +1,42 @@
+
+================================================================================
+[21:36:58] EVALUATION
+================================================================================
+Window: 21:36:17 - 21:36:53
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: The conversation excerpt contains fragmented, unclear statements about putting something in a box and using a keyboard, with no discernible quant finance content or coherent interview dialogue.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incoherent conversation content
+   - No technical discussion detected
+   - Insufficient context to evaluate interview quality
+   - Possible transcription error or incomplete excerpt
+
+
+================================================================================
+[21:41:08] EVALUATION
+================================================================================
+Window: 21:36:53 - 21:37:00
+Transcripts: 2
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: The conversation contains only two brief, unclear candidate statements ('foreign' and 'i'm wrong about the other kids') with no identifiable quant finance content or interviewer participation.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incomplete conversation excerpt
+   - No interviewer dialogue present
+   - Candidate statements are unclear and lack context
+   - No quant finance topics discussed
+

@@ -1,0 +1,465 @@
+{
+  "room": "test1",
+  "total_evaluations": 21,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-15T21:51:58.736287",
+      "window_start": "2025-11-15T21:51:48.017181",
+      "window_end": "2025-11-15T21:51:54.039347",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "This is the initial connection phase of the interview where the recruiter and candidate are establishing audio communication. No substantive content has been discussed yet.",
+      "key_topics": [],
+      "flags": [
+        "Interview just starting - no technical content yet",
+        "Audio connection being established",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.9,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"This is the initial connection phase of the interview where the recruiter and candidate are establishing audio communication. No substantive content has been discussed yet.\",\n    \"flags\": [\"Interview just starting - no technical content yet\", \"Audio connection being established\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.9\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T21:52:04.209541",
+      "window_start": "2025-11-15T21:51:48.017181",
+      "window_end": "2025-11-15T21:51:58.964906",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "This is the initial connection phase of the interview where the recruiter and candidate are testing audio connection and confirming they can hear each other. No substantive content has been discussed yet.",
+      "key_topics": [],
+      "flags": [
+        "No technical content yet",
+        "Interview just beginning - connection check only",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.9,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"This is the initial connection phase of the interview where the recruiter and candidate are testing audio connection and confirming they can hear each other. No substantive content has been discussed yet.\",\n    \"flags\": [\"No technical content yet\", \"Interview just beginning - connection check only\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.9\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T21:52:09.346509",
+      "window_start": "2025-11-15T21:51:49.010118",
+      "window_end": "2025-11-15T21:52:04.445567",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "This is the initial audio check and greeting phase of the interview where the recruiter and candidate verify they can hear each other. No technical content has been discussed yet.",
+      "key_topics": [],
+      "flags": [
+        "Interview has not begun - only technical setup/greeting phase",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.9,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"This is the initial audio check and greeting phase of the interview where the recruiter and candidate verify they can hear each other. No technical content has been discussed yet.\",\n    \"flags\": [\"Interview has not begun - only technical setup/greeting phase\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.9\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T21:52:16.783028",
+      "window_start": "2025-11-15T21:51:58.964906",
+      "window_end": "2025-11-15T21:52:11.122243",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "This excerpt captures the initial moments of an interview with audio checks and casual greetings. The recruiter begins to ask about linear regression at the very end, but no substantive discussion has occurred yet.",
+      "key_topics": [],
+      "flags": [
+        "No substantive technical content yet",
+        "Interview just beginning",
+        "Linear regression question posed but not answered",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"This excerpt captures the initial moments of an interview with audio checks and casual greetings. The recruiter begins to ask about linear regression at the very end, but no substantive discussion has occurred yet.\",\n    \"flags\": [\"No substantive technical content yet\", \"Interview just beginning\", \"Linear regression question posed but not answered\"],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T21:52:30.816555",
+      "window_start": "2025-11-15T21:52:04.445567",
+      "window_end": "2025-11-15T21:52:25.041798",
+      "transcripts_evaluated": 11,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "neutral",
+      "summary": "Recruiter asks candidate to explain linear regression. Candidate begins responding but the answer is incomplete and fragmented, mentioning it's a basic model in quant finance and starting to reference the normal equation (X transpose X) but not completing the explanation.",
+      "key_topics": [],
+      "flags": [
+        "Candidate response is highly fragmented and incomplete",
+        "Severe speech disfluency or transcription errors present",
+        "No clear technical explanation provided despite relevant question"
+      ],
+      "confidence_subject": 0.85,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"Recruiter asks candidate to explain linear regression. Candidate begins responding but the answer is incomplete and fragmented, mentioning it's a basic model in quant finance and starting to reference the normal equation (X transpose X) but not completing the explanation.\",\n    \"flags\": [\n        \"Candidate response is highly fragmented and incomplete\",\n        \"Severe speech disfluency or transcription errors present\",\n        \"No clear technical explanation provided despite relevant question\"\n    ],\n    \"confidence_subject\": 0.85,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T21:52:44.321038",
+      "window_start": "2025-11-15T21:52:18.088731",
+      "window_end": "2025-11-15T21:52:39.097372",
+      "transcripts_evaluated": 15,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "encouraging",
+      "summary": "The candidate is explaining basic linear regression concepts in quantitative finance, including the closed-form solution (X'X)^-1 X'y and mentioning hypotheses about the error term epsilon, which relates to fundamental modeling assumptions.",
+      "key_topics": [
+        "REGULARIZATION"
+      ],
+      "flags": [
+        "Candidate speech is fragmented and repetitive",
+        "Audio quality or transcription issues evident",
+        "Incomplete explanation - cut off mid-response",
+        "Difficult to assess full understanding due to unclear communication"
+      ],
+      "confidence_subject": 0.85,
+      "confidence_difficulty": 0.7,
+      "confidence_tone": 0.75,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[REGULARIZATION]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"encouraging\",\n    \"summary\": \"The candidate is explaining basic linear regression concepts in quantitative finance, including the closed-form solution (X'X)^-1 X'y and mentioning hypotheses about the error term epsilon, which relates to fundamental modeling assumptions.\",\n    \"flags\": [\n        \"Candidate speech is fragmented and repetitive\",\n        \"Audio quality or transcription issues evident\",\n        \"Incomplete explanation - cut off mid-response\",\n        \"Difficult to assess full understanding due to unclear communication\"\n    ],\n    \"confidence_subject\": 0.85,\n    \"confidence_difficulty\": 0.7,\n    \"confidence_tone\": 0.75\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T21:52:52.819845",
+      "window_start": "2025-11-15T21:52:31.045203",
+      "window_end": "2025-11-15T21:52:47.049414",
+      "transcripts_evaluated": 9,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "neutral",
+      "summary": "Candidate appears to be discussing regularization concepts (possibly ridge regression with x'x - lambda*I formulation) and epsilon hypotheses, followed by interviewer asking a basic question about ARIMA models in finance. Candidate's response to ARIMA question is unclear or misheard.",
+      "key_topics": [
+        "REGULARIZATION",
+        "TIME_SERIES_MODELS"
+      ],
+      "flags": [
+        "Candidate speech unclear or fragmented",
+        "Candidate may not have understood ARIMA question",
+        "Audio quality or transcription issues possible"
+      ],
+      "confidence_subject": 0.85,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[REGULARIZATION]\", \"[TIME_SERIES_MODELS]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"Candidate appears to be discussing regularization concepts (possibly ridge regression with x'x - lambda*I formulation) and epsilon hypotheses, followed by interviewer asking a basic question about ARIMA models in finance. Candidate's response to ARIMA question is unclear or misheard.\",\n    \"flags\": [\"Candidate speech unclear or fragmented\", \"Candidate may not have understood ARIMA question\", \"Audio quality or transcription issues possible\"],\n    \"confidence_subject\": 0.85,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T21:52:58.933750",
+      "window_start": "2025-11-15T21:52:39.097372",
+      "window_end": "2025-11-15T21:52:54.068908",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter asks the candidate about ARIMA models in finance, but the candidate appears to have difficulty understanding the question initially, possibly due to audio issues or unfamiliarity with the terminology.",
+      "key_topics": [
+        "TIME_SERIES_MODELS"
+      ],
+      "flags": [
+        "Candidate did not understand the question",
+        "Communication issue - possible audio problem or accent barrier",
+        "No substantive answer provided yet"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.75,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[TIME_SERIES_MODELS]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter asks the candidate about ARIMA models in finance, but the candidate appears to have difficulty understanding the question initially, possibly due to audio issues or unfamiliarity with the terminology.\",\n    \"flags\": [\"Candidate did not understand the question\", \"Communication issue - possible audio problem or accent barrier\", \"No substantive answer provided yet\"],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.75\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T21:53:03.608483",
+      "window_start": "2025-11-15T21:52:45.059021",
+      "window_end": "2025-11-15T21:52:54.073280",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter asked about ARIMA models in finance, but the candidate did not recognize or understand the term, indicating a significant knowledge gap in basic time series modeling.",
+      "key_topics": [
+        "TIME_SERIES_MODELS"
+      ],
+      "flags": [
+        "Candidate unfamiliar with fundamental time series concept (ARIMA)",
+        "Communication difficulty - candidate misheard term initially",
+        "Knowledge gap on basic quant finance topic"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[TIME_SERIES_MODELS]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter asked about ARIMA models in finance, but the candidate did not recognize or understand the term, indicating a significant knowledge gap in basic time series modeling.\",\n    \"flags\": [\n        \"Candidate unfamiliar with fundamental time series concept (ARIMA)\",\n        \"Communication difficulty - candidate misheard term initially\",\n        \"Knowledge gap on basic quant finance topic\"\n    ],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T21:53:09.250070",
+      "window_start": "2025-11-15T21:52:45.059021",
+      "window_end": "2025-11-15T21:53:04.328698",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "harsh",
+      "summary": "The recruiter asked about ARIMA models in finance, but the candidate did not recognize or know what ARIMA is. The recruiter responded critically, stating this is abnormal knowledge for a future quant.",
+      "key_topics": [
+        "TIME_SERIES_MODELS"
+      ],
+      "flags": [
+        "Harsh tone detected",
+        "Candidate lacks fundamental time series knowledge",
+        "Recruiter openly critical of candidate's knowledge gap",
+        "Potential communication breakdown (candidate initially mishears question)"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 1.0,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[TIME_SERIES_MODELS]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"harsh\",\n    \"summary\": \"The recruiter asked about ARIMA models in finance, but the candidate did not recognize or know what ARIMA is. The recruiter responded critically, stating this is abnormal knowledge for a future quant.\",\n    \"flags\": [\n        \"Harsh tone detected\",\n        \"Candidate lacks fundamental time series knowledge\",\n        \"Recruiter openly critical of candidate's knowledge gap\",\n        \"Potential communication breakdown (candidate initially mishears question)\"\n    ],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 1.0\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T21:53:14.161643",
+      "window_start": "2025-11-15T21:53:04.142168",
+      "window_end": "2025-11-15T21:53:09.508749",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "harsh",
+      "summary": "The recruiter criticizes the candidate for not knowing time series concepts, stating this is not normal for a future quant position. The candidate's responses are fragmented and incoherent.",
+      "key_topics": [
+        "TIME_SERIES_MODELS"
+      ],
+      "flags": [
+        "Harsh tone detected - recruiter states 'This is not normal to not know this'",
+        "Candidate responses are unintelligible/fragmented",
+        "Possible communication breakdown or technical issues",
+        "Unprofessional interview dynamic"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.85,
+      "confidence_tone": 0.98,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[TIME_SERIES_MODELS]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"harsh\",\n    \"summary\": \"The recruiter criticizes the candidate for not knowing time series concepts, stating this is not normal for a future quant position. The candidate's responses are fragmented and incoherent.\",\n    \"flags\": [\n        \"Harsh tone detected - recruiter states 'This is not normal to not know this'\",\n        \"Candidate responses are unintelligible/fragmented\",\n        \"Possible communication breakdown or technical issues\",\n        \"Unprofessional interview dynamic\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.85,\n    \"confidence_tone\": 0.98\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T21:53:20.046414",
+      "window_start": "2025-11-15T21:53:04.142168",
+      "window_end": "2025-11-15T21:53:15.079676",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "harsh",
+      "summary": "The recruiter criticized the candidate for not knowing about time series models, stating this knowledge is essential for a quant role and ultimately deciding not to hire them.",
+      "key_topics": [
+        "TIME_SERIES_MODELS"
+      ],
+      "flags": [
+        "Harsh tone detected",
+        "Highly unprofessional interview conduct",
+        "Candidate appears incoherent or distressed",
+        "Abrupt rejection without proper assessment",
+        "Possible communication breakdown"
+      ],
+      "confidence_subject": 0.85,
+      "confidence_difficulty": 0.75,
+      "confidence_tone": 0.95,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[TIME_SERIES_MODELS]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"harsh\",\n    \"summary\": \"The recruiter criticized the candidate for not knowing about time series models, stating this knowledge is essential for a quant role and ultimately deciding not to hire them.\",\n    \"flags\": [\n        \"Harsh tone detected\",\n        \"Highly unprofessional interview conduct\",\n        \"Candidate appears incoherent or distressed\",\n        \"Abrupt rejection without proper assessment\",\n        \"Possible communication breakdown\"\n    ],\n    \"confidence_subject\": 0.85,\n    \"confidence_difficulty\": 0.75,\n    \"confidence_tone\": 0.95\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T21:53:25.102413",
+      "window_start": "2025-11-15T21:53:09.508749",
+      "window_end": "2025-11-15T21:53:20.274081",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "harsh",
+      "summary": "The conversation appears to be incoherent or incomplete, with the recruiter explicitly stating they will not hire the candidate. No quantitative finance topics were discussed.",
+      "key_topics": [],
+      "flags": [
+        "Harsh tone detected - recruiter states 'I will not hire you'",
+        "Incoherent conversation - unclear what is being discussed",
+        "No technical content present",
+        "Potentially unprofessional interview conduct",
+        "Conversation appears incomplete or corrupted"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.98,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"harsh\",\n    \"summary\": \"The conversation appears to be incoherent or incomplete, with the recruiter explicitly stating they will not hire the candidate. No quantitative finance topics were discussed.\",\n    \"flags\": [\n        \"Harsh tone detected - recruiter states 'I will not hire you'\",\n        \"Incoherent conversation - unclear what is being discussed\",\n        \"No technical content present\",\n        \"Potentially unprofessional interview conduct\",\n        \"Conversation appears incomplete or corrupted\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.90,\n    \"confidence_tone\": 0.98\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T21:53:30.342617",
+      "window_start": "2025-11-15T21:53:15.079676",
+      "window_end": "2025-11-15T21:53:25.402035",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "harsh",
+      "summary": "The recruiter makes a dismissive statement about not hiring the candidate. The conversation fragments are incomplete and incoherent, with no discernible quant finance content discussed.",
+      "key_topics": [],
+      "flags": [
+        "Harsh tone detected - recruiter explicitly states unwillingness to hire",
+        "Unprofessional interview conduct",
+        "Incomplete/fragmented conversation",
+        "No technical content discussed",
+        "Potentially hostile interview environment"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.98,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"harsh\",\n    \"summary\": \"The recruiter makes a dismissive statement about not hiring the candidate. The conversation fragments are incomplete and incoherent, with no discernible quant finance content discussed.\",\n    \"flags\": [\n        \"Harsh tone detected - recruiter explicitly states unwillingness to hire\",\n        \"Unprofessional interview conduct\",\n        \"Incomplete/fragmented conversation\",\n        \"No technical content discussed\",\n        \"Potentially hostile interview environment\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.98\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T21:53:36.754823",
+      "window_start": "2025-11-15T21:53:20.274081",
+      "window_end": "2025-11-15T21:53:31.058508",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "unknown",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "Evaluation failed: Missing required field: interviewer_tone",
+      "key_topics": [],
+      "flags": [
+        "EVALUATION_ERROR: Missing required field: interviewer_tone"
+      ],
+      "confidence_subject": 0.0,
+      "confidence_difficulty": 0.0,
+      "confidence_tone": 0.0,
+      "raw_llm_response": null
+    },
+    {
+      "timestamp": "2025-11-15T21:53:43.345716",
+      "window_start": "2025-11-15T21:53:25.402035",
+      "window_end": "2025-11-15T21:53:38.109844",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter is asking the candidate to explain what they know about moving averages, which is a basic time series concept relevant to quantitative finance.",
+      "key_topics": [
+        "TIME_SERIES_MODELS"
+      ],
+      "flags": [
+        "Transcript quality issue - recruiter's initial statements are unclear/garbled",
+        "Possible transcription errors affecting clarity",
+        "Context missing - unclear what 'LGBT' refers to (likely transcription error)"
+      ],
+      "confidence_subject": 0.85,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.6,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[TIME_SERIES_MODELS]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter is asking the candidate to explain what they know about moving averages, which is a basic time series concept relevant to quantitative finance.\",\n    \"flags\": [\n        \"Transcript quality issue - recruiter's initial statements are unclear/garbled\",\n        \"Possible transcription errors affecting clarity\",\n        \"Context missing - unclear what 'LGBT' refers to (likely transcription error)\"\n    ],\n    \"confidence_subject\": 0.85,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.6\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T21:53:49.324933",
+      "window_start": "2025-11-15T21:53:30.366542",
+      "window_end": "2025-11-15T21:53:44.136744",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter asks the candidate to explain moving averages, a basic time series concept. The candidate begins to describe moving averages with examples of sample sizes (e.g., 20 periods).",
+      "key_topics": [
+        "TIME_SERIES_MODELS"
+      ],
+      "flags": [
+        "Conversation appears fragmented or unclear (possible transcription issues)",
+        "Recruiter's opening statement is incoherent",
+        "Very brief exchange with incomplete candidate response"
+      ],
+      "confidence_subject": 0.85,
+      "confidence_difficulty": 0.8,
+      "confidence_tone": 0.6,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[TIME_SERIES_MODELS]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter asks the candidate to explain moving averages, a basic time series concept. The candidate begins to describe moving averages with examples of sample sizes (e.g., 20 periods).\",\n    \"flags\": [\n        \"Conversation appears fragmented or unclear (possible transcription issues)\",\n        \"Recruiter's opening statement is incoherent\",\n        \"Very brief exchange with incomplete candidate response\"\n    ],\n    \"confidence_subject\": 0.85,\n    \"confidence_difficulty\": 0.80,\n    \"confidence_tone\": 0.60\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T21:54:06.416288",
+      "window_start": "2025-11-15T21:53:38.109844",
+      "window_end": "2025-11-15T21:54:01.039353",
+      "transcripts_evaluated": 11,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter asked about moving averages, and the candidate attempted to explain them in the context of different time windows (20 days, 5 days) and momentum, but the response was fragmented and incoherent with significant communication issues.",
+      "key_topics": [
+        "TIME_SERIES_MODELS"
+      ],
+      "flags": [
+        "Candidate response highly incoherent and difficult to understand",
+        "Possible audio/transcription quality issues",
+        "Incomplete explanation of moving averages",
+        "Candidate struggled to articulate basic concept clearly"
+      ],
+      "confidence_subject": 0.9,
+      "confidence_difficulty": 0.85,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[TIME_SERIES_MODELS]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter asked about moving averages, and the candidate attempted to explain them in the context of different time windows (20 days, 5 days) and momentum, but the response was fragmented and incoherent with significant communication issues.\",\n    \"flags\": [\n        \"Candidate response highly incoherent and difficult to understand\",\n        \"Possible audio/transcription quality issues\",\n        \"Incomplete explanation of moving averages\",\n        \"Candidate struggled to articulate basic concept clearly\"\n    ],\n    \"confidence_subject\": 0.9,\n    \"confidence_difficulty\": 0.85,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T21:54:13.192347",
+      "window_start": "2025-11-15T21:53:51.039620",
+      "window_end": "2025-11-15T21:54:07.106435",
+      "transcripts_evaluated": 8,
+      "subject_relevance": "partially_relevant",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "harsh",
+      "summary": "The candidate appears to be discussing momentum and moving averages in a fragmented manner, possibly reading from an external source. The recruiter sarcastically accuses the candidate of reading from ChatGPT, indicating suspected dishonesty.",
+      "key_topics": [
+        "FEATURE_SELECTION",
+        "TIME_SERIES_MODELS"
+      ],
+      "flags": [
+        "Suspected cheating - recruiter accuses candidate of reading from ChatGPT",
+        "Highly fragmented candidate responses suggest technical issues or dishonesty",
+        "Harsh/sarcastic tone from interviewer",
+        "Interview integrity compromised",
+        "No clear question or structured dialogue"
+      ],
+      "confidence_subject": 0.85,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.95,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[FEATURE_SELECTION]\", \"[TIME_SERIES_MODELS]\"],\n    \"subject_relevance\": \"partially_relevant\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"harsh\",\n    \"summary\": \"The candidate appears to be discussing momentum and moving averages in a fragmented manner, possibly reading from an external source. The recruiter sarcastically accuses the candidate of reading from ChatGPT, indicating suspected dishonesty.\",\n    \"flags\": [\n        \"Suspected cheating - recruiter accuses candidate of reading from ChatGPT\",\n        \"Highly fragmented candidate responses suggest technical issues or dishonesty\",\n        \"Harsh/sarcastic tone from interviewer\",\n        \"Interview integrity compromised\",\n        \"No clear question or structured dialogue\"\n    ],\n    \"confidence_subject\": 0.85,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.95\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T21:54:19.009428",
+      "window_start": "2025-11-15T21:54:01.039353",
+      "window_end": "2025-11-15T21:54:14.063364",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "harsh",
+      "summary": "Brief exchange where the recruiter sarcastically comments that the candidate knows how to read from ChatGPT, followed by the candidate offering to share their screen. No technical quant finance content discussed.",
+      "key_topics": [],
+      "flags": [
+        "Harsh tone detected - sarcastic comment about ChatGPT",
+        "Off-topic discussion",
+        "Potential accusation of cheating/using AI assistance",
+        "No technical content present",
+        "Unprofessional interviewer behavior",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.95,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"harsh\",\n    \"summary\": \"Brief exchange where the recruiter sarcastically comments that the candidate knows how to read from ChatGPT, followed by the candidate offering to share their screen. No technical quant finance content discussed.\",\n    \"flags\": [\n        \"Harsh tone detected - sarcastic comment about ChatGPT\",\n        \"Off-topic discussion\",\n        \"Potential accusation of cheating/using AI assistance\",\n        \"No technical content present\",\n        \"Unprofessional interviewer behavior\"\n    ],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.95\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T21:54:30.881038",
+      "window_start": "2025-11-15T21:54:07.106435",
+      "window_end": "2025-11-15T21:54:26.107475",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "encouraging",
+      "summary": "This excerpt shows a brief informal exchange where the recruiter makes a comment about reading from ChatGPT and the candidate offers to share their screen. No technical quant finance content is discussed.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "ChatGPT reference suggests possible concern about authenticity",
+        "Conversation fragment appears incomplete or mid-transition",
+        "No technical questions asked",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.75,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"encouraging\",\n    \"summary\": \"This excerpt shows a brief informal exchange where the recruiter makes a comment about reading from ChatGPT and the candidate offers to share their screen. No technical quant finance content is discussed.\",\n    \"flags\": [\n        \"Off-topic discussion\",\n        \"ChatGPT reference suggests possible concern about authenticity\",\n        \"Conversation fragment appears incomplete or mid-transition\",\n        \"No technical questions asked\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.75\n}\n```"
+    }
+  ]
+}

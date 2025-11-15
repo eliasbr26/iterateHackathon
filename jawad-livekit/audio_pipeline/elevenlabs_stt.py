@@ -72,7 +72,9 @@ class ElevenLabsSTT:
                 "language_code": self.language,
                 "commit_strategy": "vad",
                 "include_timestamps": False,
-                "vad_threshold": 0.3,  # Lower threshold = more sensitive (catches more speech)
+                "vad_threshold": 0.5,  # Higher = less noise, better for clean audio (0.4 default, 0.1-0.9 range)
+                "vad_silence_threshold_secs": 1.0,  # 1.0s silence before committing (was 1.5s default)
+                "min_speech_duration_ms": 200,  # Require 200ms speech to avoid noise (default 100ms)
             }
 
             # Build full URI with query parameters

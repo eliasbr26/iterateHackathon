@@ -1,0 +1,53 @@
+[21:51:48] 👔 RECRUITER: Hello? Hello?
+[21:51:49] 👤 CANDIDATE: what what
+[21:51:54] 👔 RECRUITER: Hello, can you hear me? Yes.
+[21:51:58] 👤 CANDIDATE: Yeah, of course I can hear you. Of course I can hear you.
+[21:52:04] 👔 RECRUITER: Okay, great. Well, that's great.
+[21:52:10] 👔 RECRUITER: Okay, can you talk to me about linear regression?
+[21:52:11] 👤 CANDIDATE: Yeah, of course. Hey, of course. Hey
+[21:52:18] 👤 CANDIDATE: The most basic models in quantitative finance. You can see, uh, uh,
+[21:52:19] 👤 CANDIDATE: I think it's really studied. I think it's really studied.
+[21:52:20] 👤 CANDIDATE: Because you can, uh, because you can, uh,
+[21:52:21] 👤 CANDIDATE: have like exact, have like exact,
+[21:52:22] 👤 CANDIDATE: values for example, values for example,
+[21:52:23] 👤 CANDIDATE: values for example,
+[21:52:24] 👤 CANDIDATE: which is which is
+[21:52:25] 👤 CANDIDATE: x transpo x transpo
+[21:52:31] 👤 CANDIDATE: x times x x times x
+[21:52:31] 👤 CANDIDATE: minus 1 minus 1.
+[21:52:32] 👤 CANDIDATE: Times x transpose y. We can have also some exact values for the set of the set
+[21:52:34] 👤 CANDIDATE: like to have some like to have some
+[21:52:35] 👤 CANDIDATE: hypothesis about the hypothesis about the
+[21:52:36] 👤 CANDIDATE: Epsilon for example Epsilon for example
+[21:52:39] 👔 RECRUITER: Okay, great. And, uh, and, uh,
+[21:52:45] 👔 RECRUITER: Can you tell me about ARIMA models in finance?
+[21:52:47] 👤 CANDIDATE: Lina Armandos?
+[21:52:54] 👔 RECRUITER: Arima Arima or Arma you know for you know for
+[21:52:54] 👤 CANDIDATE: Sorry, I can't Arima, I have no idea what is Arima.
+[21:53:04] 👤 CANDIDATE: absolutely not oh I think you are you think you are you
+[21:53:04] 👔 RECRUITER: I think you should know what time series as a future quant. This is not normal to not know this.
+[21:53:09] 👤 CANDIDATE: think you are you think you are
+[21:53:15] 👔 RECRUITER: I don't care. I don't. I will not hire you.
+[21:53:20] 👤 CANDIDATE: you mean like a mobile mobile
+[21:53:25] 👔 RECRUITER: uh I don't think you I don't think you
+[21:53:30] 👔 RECRUITER: know what you are thinking about you know what you are thinking about
+[21:53:30] 👔 RECRUITER: it's very good to look at LGBT but it's not the way it's not the way to
+[21:53:31] 👤 CANDIDATE: Are you talking about moving average? About moving average?
+[21:53:38] 👔 RECRUITER: Yes, yes. Let me know what you know about moving average.
+[21:53:44] 👤 CANDIDATE: Okay, so like moving average, for example, you can take the moving average on two different samples, for example, 20 samples, for example, 20.
+[21:53:49] 👤 CANDIDATE: days or five days or five.
+[21:53:50] 👤 CANDIDATE: Days you can get like very significant information by understanding some. Uh, uh,
+[21:53:51] 👤 CANDIDATE: momentum in the data. Momentum in the data.
+[21:53:52] 👤 CANDIDATE: For example, if you have the For example, if you have the
+[21:53:53] 👤 CANDIDATE: moving average of the 20 moving average of the 20
+[21:53:55] 👤 CANDIDATE: I'm getting rid of the fight I'm getting rid of the fight
+[21:53:56] 👤 CANDIDATE: That means I That means I
+[21:53:57] 👤 CANDIDATE: That means I took That means I took your That means I took your stuff That means I took your stuff
+[21:54:01] 👤 CANDIDATE: to grow a lot I guess grow a lot I guess
+[21:54:07] 👔 RECRUITER: Good, good, good. You know how to read from ChatGPT. This is very good. Very
+[21:54:14] 👔 RECRUITER: Thank you. I like it.
+[21:54:14] 👤 CANDIDATE: I can share my screen if you want.
+[21:54:19] 👤 CANDIDATE: And that's all. And that's all.
+[21:54:20] 👤 CANDIDATE: What? What?
+[21:54:26] 👔 RECRUITER: No? No, no, I'm supposed to
+[21:54:38] 👤 CANDIDATE: I thought you were going to say something
