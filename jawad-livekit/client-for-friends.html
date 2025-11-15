@@ -267,6 +267,38 @@
             console.log('Track subscribed:', track.kind, 'from', participant.identity);
             if (track.kind === LivekitClient.Track.Kind.Video) {
                 addVideoElement(participant, false, track);
+            } else if (track.kind === LivekitClient.Track.Kind.Audio) {
+                // Attach audio track to existing video element or create audio element
+                attachAudioTrack(participant, track);
+            }
+        }
+
+        function attachAudioTrack(participant, audioTrack) {
+            const videoId = `video-${participant.identity}`;
+            let videoElement = document.getElementById(videoId);
+
+            if (videoElement) {
+                // Find the video tag inside the wrapper
+                const video = videoElement.querySelector('video');
+                if (video) {
+                    // Add audio track to existing video element
+                    const audioStream = new MediaStream([audioTrack.mediaStreamTrack]);
+                    const existingStream = video.srcObject;
+                    if (existingStream) {
+                        audioStream.getAudioTracks().forEach(track => existingStream.addTrack(track));
+                    } else {
+                        video.srcObject = audioStream;
+                    }
+                    console.log('Audio track attached to video for', participant.identity);
+                }
+            } else {
+                // Create invisible audio element if no video exists yet
+                const audio = document.createElement('audio');
+                audio.autoplay = true;
+                audio.srcObject = new MediaStream([audioTrack.mediaStreamTrack]);
+                audio.id = `audio-${participant.identity}`;
+                document.body.appendChild(audio);
+                console.log('Audio element created for', participant.identity);
             }
         }
 
