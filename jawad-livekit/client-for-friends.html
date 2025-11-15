@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveKit Interview Room - For Friends</title>
+    <script src="https://cdn.jsdelivr.net/npm/livekit-client@2.5.8/dist/livekit-client.umd.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 100%;
+        }
+        h1 { color: #333; margin-bottom: 10px; }
+        .subtitle { color: #666; margin-bottom: 30px; }
+        .input-group { margin-bottom: 15px; }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: 500;
+        }
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4); }
+        button:disabled { background: #ccc; cursor: not-allowed; }
+        #status {
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: none;
+        }
+        #status.info { background: #e3f2fd; color: #1976d2; border-left: 4px solid #1976d2; }
+        #status.success { background: #e8f5e9; color: #388e3c; border-left: 4px solid #388e3c; }
+        #status.error { background: #ffebee; color: #c62828; border-left: 4px solid #c62828; }
+        #videoContainer { display: none; margin-top: 30px; }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .video-wrapper {
+            position: relative;
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+            aspect-ratio: 16/9;
+        }
+        .video-wrapper video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .participant-label {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        .controls {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        .controls button { flex: 1; }
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎥 Interview Room</h1>
+        <p class="subtitle">Join the interview session</p>
+
+        <div class="note">
+            <strong>📝 Instructions:</strong><br>
+            1. Enter your name and the room name (ask your host for it)<br>
+            2. Select your role (Interviewer or Candidate)<br>
+            3. Click Join Room<br>
+            4. Allow camera and microphone when asked
+        </div>
+
+        <div class="section">
+            <div class="input-group">
+                <label for="roomName">Room Name (ask host for this!)</label>
+                <input type="text" id="roomName" placeholder="e.g., interview-2024-11-15-143000">
+            </div>
+
+            <div class="input-group">
+                <label for="participantRole">Join as</label>
+                <select id="participantRole">
+                    <option value="interviewer">Interviewer</option>
+                    <option value="candidate">Candidate</option>
+                    <option value="observer">Observer</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="participantName">Your Name</label>
+                <input type="text" id="participantName" placeholder="Enter your name">
+            </div>
+
+            <button id="joinBtn" onclick="joinRoom()">Join Room</button>
+        </div>
+
+        <div id="status"></div>
+
+        <div id="videoContainer">
+            <h3>Interview Session</h3>
+            <div class="video-grid" id="videoGrid"></div>
+            <div class="controls">
+                <button onclick="toggleAudio()">Toggle Microphone</button>
+                <button onclick="toggleVideo()">Toggle Camera</button>
+                <button onclick="leaveRoom()" style="background: #c62828;">Leave Room</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-sha256@0.9.0/src/sha256.min.js"></script>
+    <script>
+        let room;
+        let audioEnabled = true;
+        let videoEnabled = true;
+
+        // LiveKit credentials (pre-configured)
+        const LIVEKIT_URL = 'wss://iterate-hackathon-1qxzyt73.livekit.cloud';
+        const API_KEY = 'APIgvNeqnUXX3y9';
+        const API_SECRET = 'XqU85wFfZwxVHUZU7hgkzbBOfaGNL4l1xChephaYL9XB';
+
+        function showStatus(message, type = 'info') {
+            const status = document.getElementById('status');
+            status.textContent = message;
+            status.className = type;
+            status.style.display = 'block';
+        }
+
+        function generateToken(apiKey, apiSecret, roomName, participantName, participantRole) {
+            const header = { alg: 'HS256', typ: 'JWT' };
+            const now = Math.floor(Date.now() / 1000);
+            const payload = {
+                video: {
+                    room: roomName,
+                    roomJoin: true,
+                    canPublish: true,
+                    canSubscribe: true
+                },
+                iss: apiKey,
+                sub: participantName,
+                nbf: now,
+                exp: now + 7200,
+                name: participantName,
+                metadata: JSON.stringify({ role: participantRole })
+            };
+
+            const base64UrlEncode = (obj) => {
+                return btoa(JSON.stringify(obj))
+                    .replace(/\+/g, '-')
+                    .replace(/\//g, '_')
+                    .replace(/=/g, '');
+            };
+
+            const encodedHeader = base64UrlEncode(header);
+            const encodedPayload = base64UrlEncode(payload);
+            const message = `${encodedHeader}.${encodedPayload}`;
+            const signature = sha256.hmac(apiSecret, message);
+            const encodedSignature = btoa(String.fromCharCode(...signature.match(/.{1,2}/g).map(byte => parseInt(byte, 16))))
+                .replace(/\+/g, '-')
+                .replace(/\//g, '_')
+                .replace(/=/g, '');
+
+            return `${message}.${encodedSignature}`;
+        }
+
+        async function joinRoom() {
+            const roomName = document.getElementById('roomName').value;
+            const role = document.getElementById('participantRole').value;
+            const name = document.getElementById('participantName').value || 'Anonymous';
+
+            if (!roomName) {
+                showStatus('Please enter a room name!', 'error');
+                return;
+            }
+
+            document.getElementById('joinBtn').disabled = true;
+            showStatus('Joining room...', 'info');
+
+            try {
+                const participantId = `${role}-${Date.now()}`;
+                const token = generateToken(API_KEY, API_SECRET, roomName, participantId, role);
+
+                room = new LivekitClient.Room({
+                    adaptiveStream: true,
+                    dynacast: true,
+                });
+
+                room.on(LivekitClient.RoomEvent.TrackSubscribed, handleTrackSubscribed);
+                room.on(LivekitClient.RoomEvent.TrackUnsubscribed, handleTrackUnsubscribed);
+                room.on(LivekitClient.RoomEvent.ParticipantConnected, (participant) => {
+                    showStatus(`${participant.identity} joined`, 'info');
+                });
+                room.on(LivekitClient.RoomEvent.ParticipantDisconnected, (participant) => {
+                    showStatus(`${participant.identity} left`, 'info');
+                });
+
+                await room.connect(LIVEKIT_URL, token);
+                showStatus(`✅ Connected to room: ${roomName}`, 'success');
+
+                await room.localParticipant.enableCameraAndMicrophone();
+
+                setTimeout(() => {
+                    addVideoElement(room.localParticipant, true);
+                }, 500);
+
+                document.getElementById('videoContainer').style.display = 'block';
+
+            } catch (error) {
+                console.error('Error joining room:', error);
+                showStatus(`Error: ${error.message}`, 'error');
+                document.getElementById('joinBtn').disabled = false;
+            }
+        }
+
+        function handleTrackSubscribed(track, publication, participant) {
+            console.log('Track subscribed:', track.kind, 'from', participant.identity);
+            if (track.kind === LivekitClient.Track.Kind.Video) {
+                addVideoElement(participant, false, track);
+            }
+        }
+
+        function handleTrackUnsubscribed(track, publication, participant) {
+            const videoId = `video-${participant.identity}`;
+            const element = document.getElementById(videoId);
+            if (element) element.remove();
+        }
+
+        function addVideoElement(participant, isLocal, track = null) {
+            const videoGrid = document.getElementById('videoGrid');
+            const videoId = `video-${participant.identity}`;
+
+            const existing = document.getElementById(videoId);
+            if (existing) existing.remove();
+
+            const wrapper = document.createElement('div');
+            wrapper.className = 'video-wrapper';
+            wrapper.id = videoId;
+
+            const video = document.createElement('video');
+            video.autoplay = true;
+            video.playsInline = true;
+            video.muted = isLocal;
+
+            const label = document.createElement('div');
+            label.className = 'participant-label';
+            label.textContent = isLocal ? 'You' : participant.identity;
+
+            wrapper.appendChild(video);
+            wrapper.appendChild(label);
+            videoGrid.appendChild(wrapper);
+
+            if (isLocal) {
+                const videoTracks = participant.videoTrackPublications;
+                if (videoTracks && videoTracks.size > 0) {
+                    const firstTrack = Array.from(videoTracks.values())[0];
+                    if (firstTrack && firstTrack.track) {
+                        video.srcObject = new MediaStream([firstTrack.track.mediaStreamTrack]);
+                    }
+                }
+            } else if (track) {
+                video.srcObject = new MediaStream([track.mediaStreamTrack]);
+            }
+        }
+
+        async function toggleAudio() {
+            if (!room) return;
+            audioEnabled = !audioEnabled;
+            await room.localParticipant.setMicrophoneEnabled(audioEnabled);
+            showStatus(audioEnabled ? 'Microphone enabled' : 'Microphone disabled', 'info');
+        }
+
+        async function toggleVideo() {
+            if (!room) return;
+            videoEnabled = !videoEnabled;
+            await room.localParticipant.setCameraEnabled(videoEnabled);
+            showStatus(videoEnabled ? 'Camera enabled' : 'Camera disabled', 'info');
+        }
+
+        async function leaveRoom() {
+            if (room) {
+                await room.disconnect();
+                room = null;
+                document.getElementById('videoContainer').style.display = 'none';
+                document.getElementById('videoGrid').innerHTML = '';
+                document.getElementById('joinBtn').disabled = false;
+                showStatus('Left the room', 'info');
+            }
+        }
+    </script>
+</body>
+</html>
