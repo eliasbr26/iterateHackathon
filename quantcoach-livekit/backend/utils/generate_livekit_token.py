@@ -110,12 +110,12 @@ def main():
         room_name=room_name,
         participant_identity="interviewer",
         participant_name="Interviewer",
-        ttl_hours=2,
+        ttl_hours=24,
         can_publish=True,
         can_subscribe=True
     )
 
-    print(f"Interviewer Token (valid for 2h):")
+    print(f"Interviewer Token (valid for 24h):")
     print(f"{interviewer_token}\n")
 
     print("\n👤 Generating token for candidate...")
@@ -125,12 +125,12 @@ def main():
         room_name=room_name,
         participant_identity="candidate",
         participant_name="Candidate",
-        ttl_hours=2,
+        ttl_hours=24,
         can_publish=True,
         can_subscribe=True
     )
 
-    print(f"Candidate Token (valid for 2h):")
+    print(f"Candidate Token (valid for 24h):")
     print(f"{candidate_token}\n")
 
     print("=" * 60)
