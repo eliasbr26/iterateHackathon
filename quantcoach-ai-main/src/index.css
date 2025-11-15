@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Interview Dashboard Design System */
+
+@layer base {
+  :root {
+    /* Background Hierarchy - Deep Navy Theme */
+    --bg-primary: 222 47% 5%;        /* #0a0e1a - Main background */
+    --bg-secondary: 225 38% 9%;      /* #151b2e - Card backgrounds */
+    --bg-tertiary: 225 33% 13%;      /* #1e2943 - Elevated elements */
+    --bg-elevated: 225 30% 17%;      /* #2a3555 - Hover states */
+
+    /* Accent Colors */
+    --accent-blue: 217 91% 60%;      /* #3b82f6 - Primary actions */
+    --accent-green: 158 64% 52%;     /* #10b981 - Success */
+    --accent-amber: 38 92% 50%;      /* #f59e0b - Warning */
+    --accent-red: 0 84% 60%;         /* #ef4444 - Danger */
+    --accent-purple: 258 90% 66%;    /* #8b5cf6 - AI features */
+
+    /* Text Hierarchy */
+    --text-primary: 210 40% 98%;     /* #f8fafc - Primary text */
+    --text-secondary: 214 32% 81%;   /* #cbd5e1 - Secondary text */
+    --text-tertiary: 215 20% 65%;    /* #64748b - Tertiary text */
+    --text-disabled: 215 19% 35%;    /* #475569 - Disabled */
+
+    /* Semantic Colors */
+    --interviewer-msg: 217 91% 60%;  /* Blue for interviewer */
+    --candidate-msg: 215 19% 35%;    /* Gray for candidate */
+    --border-subtle: 222 47% 11%;    /* #1e293b - Subtle borders */
+    --border-default: 215 25% 27%;   /* #334155 - Default borders */
+
+    /* Standard shadcn mappings */
+    --background: var(--bg-primary);
+    --foreground: var(--text-primary);
+    --card: var(--bg-secondary);
+    --card-foreground: var(--text-primary);
+    --popover: var(--bg-tertiary);
+    --popover-foreground: var(--text-primary);
+    --primary: var(--accent-blue);
+    --primary-foreground: var(--text-primary);
+    --secondary: var(--bg-secondary);
+    --secondary-foreground: var(--text-primary);
+    --muted: var(--bg-tertiary);
+    --muted-foreground: var(--text-tertiary);
+    --accent: var(--accent-blue);
+    --accent-foreground: var(--text-primary);
+    --destructive: var(--accent-red);
+    --destructive-foreground: var(--text-primary);
+    --border: var(--border-default);
+    --input: var(--bg-tertiary);
+    --ring: var(--accent-blue);
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  /* Smooth transitions for all interactive elements */
+  button, a, [role="button"] {
+    @apply transition-all duration-200 ease-in-out;
+  }
+}
+
+@layer utilities {
+  /* Glass-morphism effect */
+  .glass {
+    @apply backdrop-blur-sm bg-opacity-80;
+  }
+
+  /* Pulsing animation for status indicators */
+  .pulse-dot {
+    animation: pulse-dot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes pulse-dot {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.1);
+    }
+  }
+
+  /* Slide in from right for alerts */
+  .slide-in-right {
+    animation: slideInRight 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* Shimmer loading effect */
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      hsl(var(--bg-secondary)) 0%,
+      hsl(var(--bg-tertiary)) 50%,
+      hsl(var(--bg-secondary)) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  /* Smooth number counting */
+  .metric-value {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Glow effects for cards */
+  .glow-blue {
+    box-shadow: 0 0 20px -5px hsl(var(--accent-blue) / 0.3);
+  }
+
+  .glow-green {
+    box-shadow: 0 0 20px -5px hsl(var(--accent-green) / 0.3);
+  }
+
+  .glow-amber {
+    box-shadow: 0 0 20px -5px hsl(var(--accent-amber) / 0.3);
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 20px -5px hsl(var(--accent-purple) / 0.3);
+  }
+
+  .glow-red {
+    box-shadow: 0 0 20px -5px hsl(var(--accent-red) / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
