@@ -134,54 +134,65 @@ class TranscriptAndEvaluationStorage:
         }
 
 
-async def main():
-    """Main function to run audio agent with evaluation"""
-    # Load environment variables
-    load_dotenv()
+async def run_agent(
+    room_name: str,
+    livekit_url: str,
+    livekit_token: str,
+    elevenlabs_api_key: str,
+    anthropic_api_key: str,
+    event_callback=None,
+    output_dir: str = "transcripts"
+):
+    """
+    Run audio agent with evaluation for a specific room
 
-    # Get configuration
-    LIVEKIT_URL = os.getenv("LIVEKIT_URL", "wss://iterate-hackathon-1qxzyt73.livekit.cloud")
-    LIVEKIT_ROOM = os.getenv("LIVEKIT_ROOM", "test1")
-    ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
-    ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
-
-    if not ELEVENLABS_API_KEY:
-        logger.error("❌ ELEVENLABS_API_KEY not set in .env file")
+    Args:
+        room_name: LiveKit room name
+        livekit_url: LiveKit server URL
+        livekit_token: Agent access token
+        elevenlabs_api_key: ElevenLabs API key
+        anthropic_api_key: Anthropic API key
+        event_callback: Optional async callback for events (transcript, evaluation, status)
+        output_dir: Directory to save transcripts
+    """
+    if not elevenlabs_api_key:
+        logger.error("❌ ELEVENLABS_API_KEY not provided")
         return
 
-    if not ANTHROPIC_API_KEY:
-        logger.error("❌ ANTHROPIC_API_KEY not set in .env file")
-        logger.error("   Please add: ANTHROPIC_API_KEY=your-api-key to .env")
+    if not anthropic_api_key:
+        logger.error("❌ ANTHROPIC_API_KEY not provided")
         return
 
     # Initialize components
-    storage = TranscriptAndEvaluationStorage(room_name=LIVEKIT_ROOM)
+    storage = TranscriptAndEvaluationStorage(room_name=room_name, output_dir=output_dir)
     buffer = TranscriptBuffer(
         window_size_seconds=20.0,
         overlap_seconds=10.0,
         min_transcripts_for_evaluation=2
     )
-    evaluator = InterviewEvaluator(api_key=ANTHROPIC_API_KEY)
+    evaluator = InterviewEvaluator(api_key=anthropic_api_key)
 
-    # Generate token using room_manager
-    room_manager = RoomManager()
-    token = room_manager.generate_token(
-        room_name=LIVEKIT_ROOM,
-        participant_identity=f"audio-agent-{asyncio.get_event_loop().time()}",
-        participant_name="Audio Transcription + Evaluation Agent",
-        metadata='{"role": "agent", "type": "audio-evaluation"}'
-    )
-
-    logger.info(f"🎙️  Starting audio transcription + evaluation agent for room: {LIVEKIT_ROOM}")
-    logger.info(f"📡 Connecting to: {LIVEKIT_URL}")
+    logger.info(f"🎙️  Starting audio transcription + evaluation agent for room: {room_name}")
+    logger.info(f"📡 Connecting to: {livekit_url}")
     logger.info(f"🤖 LLM Evaluation: ENABLED (20s windows with 10s overlap)")
+
+    # Send status event
+    if event_callback:
+        await event_callback({
+            "type": "status",
+            "data": {
+                "status": "starting",
+                "room": room_name,
+                "timestamp": datetime.now().isoformat()
+            }
+        })
 
     # Create pipeline
     pipeline = AudioPipeline(
-        livekit_url=LIVEKIT_URL,
-        livekit_room=LIVEKIT_ROOM,
-        livekit_token=token,
-        elevenlabs_api_key=ELEVENLABS_API_KEY,
+        livekit_url=livekit_url,
+        livekit_room=room_name,
+        livekit_token=livekit_token,
+        elevenlabs_api_key=elevenlabs_api_key,
         language="en",
         recruiter_identity="interviewer",
         candidate_identity="candidate"
@@ -205,6 +216,13 @@ async def main():
                 logger.info(f"🤖 Starting LLM evaluation for window...")
                 evaluation = await evaluator.evaluate(window)
                 storage.add_evaluation(evaluation)
+
+                # Send evaluation event
+                if event_callback:
+                    await event_callback({
+                        "type": "evaluation",
+                        "data": evaluation.to_dict()
+                    })
 
                 # Display evaluation
                 print(f"\n{'─'*80}")
@@ -241,6 +259,18 @@ async def main():
 
                 # Save final transcript
                 storage.add_transcript(transcript)
+
+                # Send transcript event
+                if event_callback:
+                    await event_callback({
+                        "type": "transcript",
+                        "data": {
+                            "timestamp": datetime.now().isoformat(),
+                            "speaker": transcript.speaker,
+                            "text": transcript.text,
+                            "is_final": transcript.is_final
+                        }
+                    })
 
                 # Add to buffer and check for evaluation trigger
                 window = buffer.add_transcript(transcript)
@@ -282,6 +312,45 @@ async def main():
         logger.info(f"   - Total evaluations: {summary['total_evaluations']}")
         logger.info(f"   - Speakers: {', '.join(summary['speakers'])}")
         logger.info(f"   - Saved to: {summary['output_dir']}")
+
+
+async def main():
+    """Main function for command-line usage (backward compatibility)"""
+    # Load environment variables
+    load_dotenv()
+
+    # Get configuration
+    LIVEKIT_URL = os.getenv("LIVEKIT_URL", "wss://iterate-hackathon-1qxzyt73.livekit.cloud")
+    LIVEKIT_ROOM = os.getenv("LIVEKIT_ROOM", "test1")
+    ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
+    ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+
+    if not ELEVENLABS_API_KEY:
+        logger.error("❌ ELEVENLABS_API_KEY not set in .env file")
+        return
+
+    if not ANTHROPIC_API_KEY:
+        logger.error("❌ ANTHROPIC_API_KEY not set in .env file")
+        return
+
+    # Generate token using room_manager
+    room_manager = RoomManager()
+    token = room_manager.generate_token(
+        room_name=LIVEKIT_ROOM,
+        participant_identity=f"audio-agent-{asyncio.get_event_loop().time()}",
+        participant_name="Audio Transcription + Evaluation Agent",
+        metadata='{"role": "agent", "type": "audio-evaluation"}'
+    )
+
+    # Run agent
+    await run_agent(
+        room_name=LIVEKIT_ROOM,
+        livekit_url=LIVEKIT_URL,
+        livekit_token=token,
+        elevenlabs_api_key=ELEVENLABS_API_KEY,
+        anthropic_api_key=ANTHROPIC_API_KEY,
+        event_callback=None  # No callback for CLI usage
+    )
 
 
 if __name__ == "__main__":

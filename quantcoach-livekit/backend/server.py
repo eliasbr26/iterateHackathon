@@ -10,17 +10,23 @@ Provides REST API endpoints for:
 Compatible with the QuantCoach frontend VideoArea component.
 """
 
+import asyncio
+import json
 import logging
 import os
+from collections import defaultdict
 from datetime import datetime
-from typing import Optional
+from pathlib import Path
+from typing import Optional, Dict, List
 
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from sse_starlette.sse import EventSourceResponse
 
 from room_manager import RoomManager
+from agent_manager import AgentManager
 
 load_dotenv()
 
@@ -55,6 +61,43 @@ except Exception as e:
     logger.error(f"❌ Failed to initialize RoomManager: {e}")
     logger.error("Make sure LIVEKIT_URL, LIVEKIT_API_KEY, and LIVEKIT_API_SECRET are set in .env")
     room_manager = None
+
+# Initialize AgentManager
+agent_manager = None
+if room_manager:
+    try:
+        livekit_url = os.getenv("LIVEKIT_URL")
+        elevenlabs_api_key = os.getenv("ELEVENLABS_API_KEY")
+        anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
+
+        if not elevenlabs_api_key:
+            logger.warning("⚠️ ELEVENLABS_API_KEY not set - transcription will not work")
+        if not anthropic_api_key:
+            logger.warning("⚠️ ANTHROPIC_API_KEY not set - evaluation will not work")
+
+        agent_manager = AgentManager(
+            livekit_url=livekit_url,
+            elevenlabs_api_key=elevenlabs_api_key or "",
+            anthropic_api_key=anthropic_api_key or "",
+            output_dir="transcripts"
+        )
+        logger.info("✅ AgentManager initialized successfully")
+    except Exception as e:
+        logger.error(f"❌ Failed to initialize AgentManager: {e}")
+        agent_manager = None
+
+# Event queues for SSE streaming: room_name -> asyncio.Queue
+event_queues: Dict[str, List[asyncio.Queue]] = defaultdict(list)
+
+# Session data storage: room_name -> {transcripts: [], evaluations: []}
+session_data: Dict[str, dict] = defaultdict(lambda: {"transcripts": [], "evaluations": []})
+
+
+@app.on_event("shutdown")
+async def shutdown_event():
+    """Cleanup on shutdown"""
+    if agent_manager:
+        await agent_manager.cleanup()
 
 
 # Pydantic models for request/response
@@ -180,6 +223,39 @@ async def create_interview_room(request: CreateRoomRequest):
 
         logger.info(f"✅ Tokens generated for room: {room_name}")
 
+        # Auto-start agent if AgentManager is available
+        if agent_manager:
+            async def event_callback(event: dict):
+                """Callback to publish events to SSE streams"""
+                event_type = event.get("type")
+                event_data = event.get("data")
+
+                # Store events in session data
+                if event_type == "transcript":
+                    session_data[room_name]["transcripts"].append(event_data)
+                elif event_type == "evaluation":
+                    session_data[room_name]["evaluations"].append(event_data)
+
+                # Publish to all subscribers
+                if room_name in event_queues:
+                    for queue in event_queues[room_name]:
+                        try:
+                            await queue.put(event)
+                        except Exception:
+                            pass  # Queue might be closed
+
+            # Start agent
+            agent_started = await agent_manager.start_agent(
+                room_name=room_name,
+                livekit_token=agent_token,
+                event_callback=event_callback
+            )
+
+            if agent_started:
+                logger.info(f"✅ Agent auto-started for room: {room_name}")
+            else:
+                logger.warning(f"⚠️ Failed to auto-start agent for room: {room_name}")
+
         return CreateRoomResponse(
             sid=room["sid"],
             name=room["name"],
@@ -301,12 +377,218 @@ async def delete_room(room_name: str):
         )
 
     try:
+        # Stop agent if running
+        if agent_manager:
+            await agent_manager.stop_agent(room_name)
+
         await room_manager.delete_room(room_name)
         logger.info(f"✅ Room deleted: {room_name}")
         return {"status": "success", "message": f"Room {room_name} deleted"}
     except Exception as e:
         logger.error(f"❌ Failed to delete room: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/rooms/{room_name}/stream")
+async def stream_room_events(room_name: str):
+    """
+    Server-Sent Events stream for real-time transcripts and evaluations
+
+    Streams:
+    - transcript events: {type: "transcript", data: {...}}
+    - evaluation events: {type: "evaluation", data: {...}}
+    - status events: {type: "status", data: {...}}
+    """
+    # Create a new queue for this client
+    client_queue = asyncio.Queue()
+    event_queues[room_name].append(client_queue)
+
+    logger.info(f"📡 New SSE client connected to room: {room_name}")
+
+    async def event_generator():
+        try:
+            # Send connection confirmation
+            yield {
+                "event": "connected",
+                "data": json.dumps({
+                    "room": room_name,
+                    "timestamp": datetime.now().isoformat()
+                })
+            }
+
+            # Send any existing data
+            if room_name in session_data:
+                data = session_data[room_name]
+
+                # Send existing transcripts
+                for transcript in data["transcripts"]:
+                    yield {
+                        "event": "transcript",
+                        "data": json.dumps(transcript)
+                    }
+
+                # Send existing evaluations
+                for evaluation in data["evaluations"]:
+                    yield {
+                        "event": "evaluation",
+                        "data": json.dumps(evaluation)
+                    }
+
+            # Stream new events
+            while True:
+                event = await client_queue.get()
+
+                if event is None:  # Sentinel to stop
+                    break
+
+                event_type = event.get("type", "message")
+                event_data = event.get("data", {})
+
+                yield {
+                    "event": event_type,
+                    "data": json.dumps(event_data)
+                }
+
+        except asyncio.CancelledError:
+            logger.info(f"📡 SSE client disconnected from room: {room_name}")
+        finally:
+            # Remove queue from subscribers
+            if room_name in event_queues:
+                event_queues[room_name].remove(client_queue)
+                if not event_queues[room_name]:
+                    del event_queues[room_name]
+
+    return EventSourceResponse(event_generator())
+
+
+@app.get("/rooms/{room_name}/analytics")
+async def get_room_analytics(room_name: str):
+    """
+    Get aggregated analytics for a room
+
+    Returns:
+    - Difficulty distribution (easy/medium/hard percentages)
+    - Topic coverage (which topics discussed)
+    - Average tone
+    - Red flag count
+    - Confidence scores
+    """
+    if room_name not in session_data:
+        raise HTTPException(
+            status_code=404,
+            detail=f"No session data found for room: {room_name}"
+        )
+
+    data = session_data[room_name]
+    evaluations = data["evaluations"]
+
+    if not evaluations:
+        return {
+            "room": room_name,
+            "total_evaluations": 0,
+            "difficulty_distribution": {},
+            "topic_coverage": {},
+            "average_tone": None,
+            "red_flag_count": 0,
+            "average_confidence": {}
+        }
+
+    # Calculate difficulty distribution
+    difficulty_counts = {"easy": 0, "medium": 0, "hard": 0, "unknown": 0}
+    for eval in evaluations:
+        difficulty = eval.get("question_difficulty", "unknown").lower()
+        difficulty_counts[difficulty] = difficulty_counts.get(difficulty, 0) + 1
+
+    total = len(evaluations)
+    difficulty_distribution = {
+        k: (v / total * 100) if total > 0 else 0
+        for k, v in difficulty_counts.items()
+    }
+
+    # Calculate topic coverage
+    all_topics = [
+        "CV_TECHNIQUES", "REGULARIZATION", "FEATURE_SELECTION",
+        "STATIONARITY", "TIME_SERIES_MODELS", "OPTIMIZATION_PYTHON",
+        "LOOKAHEAD_BIAS", "DATA_PIPELINE", "BEHAVIORAL_PRESSURE",
+        "BEHAVIORAL_TEAMWORK", "EXTRA"
+    ]
+
+    topics_covered = set()
+    for eval in evaluations:
+        topics = eval.get("key_topics", [])
+        topics_covered.update(topics)
+
+    topic_coverage = {
+        topic: topic in topics_covered
+        for topic in all_topics
+    }
+
+    # Calculate average tone
+    tone_values = {"harsh": 0, "neutral": 1, "encouraging": 2}
+    tone_scores = []
+    for eval in evaluations:
+        tone = eval.get("interviewer_tone", "neutral").lower()
+        if tone in tone_values:
+            tone_scores.append(tone_values[tone])
+
+    avg_tone_score = sum(tone_scores) / len(tone_scores) if tone_scores else 1
+    avg_tone = "neutral"
+    if avg_tone_score < 0.5:
+        avg_tone = "harsh"
+    elif avg_tone_score > 1.5:
+        avg_tone = "encouraging"
+
+    # Count red flags
+    red_flag_count = 0
+    for eval in evaluations:
+        flags = eval.get("flags", [])
+        red_flag_count += len(flags)
+
+        # Count off-topic as red flag
+        if eval.get("subject_relevance") == "off_topic":
+            red_flag_count += 1
+
+    # Calculate average confidence
+    avg_confidence = {
+        "subject": sum(e.get("confidence_subject", 0) for e in evaluations) / total,
+        "difficulty": sum(e.get("confidence_difficulty", 0) for e in evaluations) / total,
+        "tone": sum(e.get("confidence_tone", 0) for e in evaluations) / total,
+    }
+
+    return {
+        "room": room_name,
+        "total_evaluations": len(evaluations),
+        "total_transcripts": len(data["transcripts"]),
+        "difficulty_distribution": difficulty_distribution,
+        "topic_coverage": topic_coverage,
+        "average_tone": avg_tone,
+        "red_flag_count": red_flag_count,
+        "average_confidence": avg_confidence,
+        "evaluations_sample": evaluations[-5:] if len(evaluations) > 5 else evaluations
+    }
+
+
+@app.get("/rooms/{room_name}/status")
+async def get_room_status(room_name: str):
+    """Get status of agent for a room"""
+    if not agent_manager:
+        raise HTTPException(
+            status_code=503,
+            detail="AgentManager not available"
+        )
+
+    status = agent_manager.get_agent_status(room_name)
+
+    if not status:
+        raise HTTPException(
+            status_code=404,
+            detail=f"No agent found for room: {room_name}"
+        )
+
+    return {
+        "room": room_name,
+        **status
+    }
 
 
 if __name__ == "__main__":
