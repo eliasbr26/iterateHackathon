@@ -248,7 +248,14 @@
                 await room.connect(LIVEKIT_URL, token);
                 showStatus(`✅ Connected to room: ${roomName}`, 'success');
 
-                await room.localParticipant.enableCameraAndMicrophone();
+                // Enable camera and microphone with echo cancellation and noise suppression
+                await room.localParticipant.enableCameraAndMicrophone({
+                    audio: {
+                        echoCancellation: true,
+                        noiseSuppression: true,
+                        autoGainControl: true
+                    }
+                });
 
                 setTimeout(() => {
                     addVideoElement(room.localParticipant, true);
