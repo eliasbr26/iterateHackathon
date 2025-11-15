@@ -1,29 +1,18 @@
 """
-Audio Pipeline for LiveKit + ElevenLabs Realtime STT
+Audio Pipeline for QuantCoach LiveKit Backend
 
-Main components:
-- AudioPipeline: Main orchestrator for real-time transcription
-- Transcript: Dataclass for transcript results
-- LiveKitHandler: LiveKit connection management
-- ElevenLabsSTT: ElevenLabs STT client
-- AudioConverter: Audio format conversion utilities
+Real-time audio transcription pipeline using LiveKit and ElevenLabs STT.
 """
 
-from .models import Transcript
+from .models import Transcript, BufferedWindow, EvaluationResult
 from .pipeline import AudioPipeline
-from .livekit_handler import LiveKitHandler
-from .elevenlabs_stt import ElevenLabsSTT
-from .audio_converter import AudioConverter
-from .logging_config import setup_logging, setup_colored_logging
-
-__version__ = "1.0.0"
+from .livekit_handler import LiveKitHandler, ParticipantInfo
 
 __all__ = [
     "Transcript",
+    "BufferedWindow",
+    "EvaluationResult",
     "AudioPipeline",
     "LiveKitHandler",
-    "ElevenLabsSTT",
-    "AudioConverter",
-    "setup_logging",
-    "setup_colored_logging"
+    "ParticipantInfo",
 ]

@@ -1,0 +1,114 @@
+{
+  "room": "test1",
+  "total_evaluations": 6,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-15T20:46:14.662595",
+      "window_start": "2025-11-15T20:45:52.478097",
+      "window_end": "2025-11-15T20:46:14.487832",
+      "transcripts_evaluated": 8,
+      "subject_relevance": "unknown",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "Evaluation failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-sonnet-20241022'}, 'request_id': 'req_011CVAFVhCpi8TKLZyEnL6bg'}",
+      "key_topics": [],
+      "flags": [
+        "EVALUATION_ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-sonnet-20241022'}, 'request_id': 'req_011CVAFVhCpi8TKLZyEnL6bg'}"
+      ],
+      "confidence_subject": 0.0,
+      "confidence_difficulty": 0.0,
+      "confidence_tone": 0.0,
+      "raw_llm_response": null
+    },
+    {
+      "timestamp": "2025-11-15T20:46:26.639909",
+      "window_start": "2025-11-15T20:46:05.486161",
+      "window_end": "2025-11-15T20:46:26.485603",
+      "transcripts_evaluated": 7,
+      "subject_relevance": "unknown",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "Evaluation failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-sonnet-20241022'}, 'request_id': 'req_011CVAFWaUnSR2VQE8xEdit4'}",
+      "key_topics": [],
+      "flags": [
+        "EVALUATION_ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-sonnet-20241022'}, 'request_id': 'req_011CVAFWaUnSR2VQE8xEdit4'}"
+      ],
+      "confidence_subject": 0.0,
+      "confidence_difficulty": 0.0,
+      "confidence_tone": 0.0,
+      "raw_llm_response": null
+    },
+    {
+      "timestamp": "2025-11-15T20:46:42.636603",
+      "window_start": "2025-11-15T20:46:20.494172",
+      "window_end": "2025-11-15T20:46:42.500888",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "unknown",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "Evaluation failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-sonnet-20241022'}, 'request_id': 'req_011CVAFXkuNyB5tQ5ute2zDs'}",
+      "key_topics": [],
+      "flags": [
+        "EVALUATION_ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-sonnet-20241022'}, 'request_id': 'req_011CVAFXkuNyB5tQ5ute2zDs'}"
+      ],
+      "confidence_subject": 0.0,
+      "confidence_difficulty": 0.0,
+      "confidence_tone": 0.0,
+      "raw_llm_response": null
+    },
+    {
+      "timestamp": "2025-11-15T20:46:53.630837",
+      "window_start": "2025-11-15T20:46:32.511514",
+      "window_end": "2025-11-15T20:46:53.488534",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "unknown",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "Evaluation failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-sonnet-20241022'}, 'request_id': 'req_011CVAFYZu7nJ93V5EKpafXd'}",
+      "key_topics": [],
+      "flags": [
+        "EVALUATION_ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-sonnet-20241022'}, 'request_id': 'req_011CVAFYZu7nJ93V5EKpafXd'}"
+      ],
+      "confidence_subject": 0.0,
+      "confidence_difficulty": 0.0,
+      "confidence_tone": 0.0,
+      "raw_llm_response": null
+    },
+    {
+      "timestamp": "2025-11-15T20:47:50.703910",
+      "window_start": "2025-11-15T20:46:44.488076",
+      "window_end": "2025-11-15T20:47:50.563148",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "unknown",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "Evaluation failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-sonnet-20241022'}, 'request_id': 'req_011CVAFcmt4CAh9JEDRMhqqR'}",
+      "key_topics": [],
+      "flags": [
+        "EVALUATION_ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-sonnet-20241022'}, 'request_id': 'req_011CVAFcmt4CAh9JEDRMhqqR'}"
+      ],
+      "confidence_subject": 0.0,
+      "confidence_difficulty": 0.0,
+      "confidence_tone": 0.0,
+      "raw_llm_response": null
+    },
+    {
+      "timestamp": "2025-11-15T20:48:17.615182",
+      "window_start": "2025-11-15T20:47:50.563148",
+      "window_end": "2025-11-15T20:48:17.477067",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "unknown",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "Evaluation failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-sonnet-20241022'}, 'request_id': 'req_011CVAFekxJ7iWXxUURugaM7'}",
+      "key_topics": [],
+      "flags": [
+        "EVALUATION_ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-sonnet-20241022'}, 'request_id': 'req_011CVAFekxJ7iWXxUURugaM7'}"
+      ],
+      "confidence_subject": 0.0,
+      "confidence_difficulty": 0.0,
+      "confidence_tone": 0.0,
+      "raw_llm_response": null
+    }
+  ]
+}

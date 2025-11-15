@@ -4,6 +4,7 @@ LiveKit Room Manager
 Utilities for creating rooms and generating access tokens for participants.
 """
 
+import logging
 import os
 from datetime import timedelta
 from typing import Optional
@@ -12,6 +13,8 @@ from dotenv import load_dotenv
 from livekit import api
 
 load_dotenv()
+
+logger = logging.getLogger(__name__)
 
 
 class RoomManager:
@@ -34,6 +37,7 @@ class RoomManager:
 
         # LiveKit API instance will be created lazily
         self.lkapi = None
+        logger.info("✅ RoomManager initialized")
 
     def _ensure_api(self):
         """Lazily create LiveKit API instance if needed"""
@@ -65,6 +69,7 @@ class RoomManager:
                     empty_timeout=600,  # Room closes 10 minutes after last participant leaves
                 )
             )
+            logger.info(f"✅ Room created: {room.name} (sid: {room.sid})")
             return {
                 "sid": room.sid,
                 "name": room.name,
@@ -72,6 +77,7 @@ class RoomManager:
                 "creation_time": room.creation_time,
             }
         except Exception as e:
+            logger.error(f"❌ Failed to create room: {e}")
             raise Exception(f"Failed to create room: {e}")
 
     def generate_token(
@@ -111,6 +117,7 @@ class RoomManager:
         if metadata:
             token.with_metadata(metadata)
 
+        logger.info(f"✅ Token generated for {participant_identity} in room {room_name}")
         return token.to_jwt()
 
     async def list_rooms(self) -> list:
@@ -118,6 +125,7 @@ class RoomManager:
         try:
             lkapi = self._ensure_api()
             rooms = await lkapi.room.list_rooms(api.ListRoomsRequest())
+            logger.info(f"📋 Listed {len(rooms.rooms)} active rooms")
             return [
                 {
                     "sid": room.sid,
@@ -128,6 +136,7 @@ class RoomManager:
                 for room in rooms.rooms
             ]
         except Exception as e:
+            logger.error(f"❌ Failed to list rooms: {e}")
             raise Exception(f"Failed to list rooms: {e}")
 
     async def get_room_participants(self, room_name: str) -> list:
@@ -137,6 +146,7 @@ class RoomManager:
             participants = await lkapi.room.list_participants(
                 api.ListParticipantsRequest(room=room_name)
             )
+            logger.info(f"👥 Room {room_name} has {len(participants.participants)} participants")
             return [
                 {
                     "sid": p.sid,
@@ -147,6 +157,7 @@ class RoomManager:
                 for p in participants.participants
             ]
         except Exception as e:
+            logger.error(f"❌ Failed to get participants: {e}")
             raise Exception(f"Failed to get participants: {e}")
 
     async def delete_room(self, room_name: str):
@@ -154,58 +165,13 @@ class RoomManager:
         try:
             lkapi = self._ensure_api()
             await lkapi.room.delete_room(api.DeleteRoomRequest(room=room_name))
+            logger.info(f"🗑️  Room deleted: {room_name}")
         except Exception as e:
+            logger.error(f"❌ Failed to delete room: {e}")
             raise Exception(f"Failed to delete room: {e}")
 
     async def close(self):
         """Close the API session"""
-        await self.lkapi.aclose()
-
-
-# Example usage
-async def example_usage():
-    """Example of how to use the RoomManager"""
-    manager = RoomManager()
-
-    try:
-        # Create a room
-        room = await manager.create_room("interview-session-001")
-        print(f"Created room: {room}")
-
-        # Generate tokens for participants
-        interviewer_token = manager.generate_token(
-            room_name="interview-session-001",
-            participant_identity="interviewer-1",
-            participant_name="John Interviewer",
-            metadata='{"role": "interviewer"}',
-        )
-        print(f"Interviewer token: {interviewer_token[:50]}...")
-
-        candidate_token = manager.generate_token(
-            room_name="interview-session-001",
-            participant_identity="candidate-1",
-            participant_name="Jane Candidate",
-            metadata='{"role": "candidate"}',
-        )
-        print(f"Candidate token: {candidate_token[:50]}...")
-
-        agent_token = manager.generate_token(
-            room_name="interview-session-001",
-            participant_identity="analysis-agent",
-            participant_name="Interview Analyzer",
-            metadata='{"role": "agent", "type": "analyzer"}',
-        )
-        print(f"Agent token: {agent_token[:50]}...")
-
-        # List all rooms
-        rooms = await manager.list_rooms()
-        print(f"Active rooms: {rooms}")
-
-    finally:
-        await manager.close()
-
-
-if __name__ == "__main__":
-    import asyncio
-
-    asyncio.run(example_usage())
+        if self.lkapi:
+            await self.lkapi.aclose()
+            logger.info("🔌 API connection closed")

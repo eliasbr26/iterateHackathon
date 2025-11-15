@@ -1,0 +1,60 @@
+{
+  "room": "test1",
+  "session_start": "2025-11-15T22:43:50.351577",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-15T22:43:50.351577",
+      "speaker": "recruiter",
+      "text": "I don't care if you hear me",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:43:52.298390",
+      "speaker": "recruiter",
+      "text": "open",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:43:54.418657",
+      "speaker": "recruiter",
+      "text": "the door",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:43:55.325964",
+      "speaker": "candidate",
+      "text": "I can hear you.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:44:00.365786",
+      "speaker": "recruiter",
+      "text": "I'm not sure if I'm going to be able to do this.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:44:03.321310",
+      "speaker": "candidate",
+      "text": "Okay, it's square.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:44:06.326860",
+      "speaker": "recruiter",
+      "text": "I want to fuck myself",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:44:21.370280",
+      "speaker": "recruiter",
+      "text": "I asked Claude again.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:44:52.246672",
+      "speaker": "recruiter",
+      "text": "I'm going to charge my little charger, I have to charge my computer",
+      "is_final": true
+    }
+  ]
+}

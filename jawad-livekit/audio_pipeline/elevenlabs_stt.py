@@ -72,6 +72,7 @@ class ElevenLabsSTT:
                 "language_code": self.language,
                 "commit_strategy": "vad",
                 "include_timestamps": False,
+                "vad_threshold": 0.3,  # Lower threshold = more sensitive (catches more speech)
             }
 
             # Build full URI with query parameters

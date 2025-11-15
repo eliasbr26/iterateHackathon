@@ -6,7 +6,7 @@ Connects LiveKit audio streams to ElevenLabs STT and yields transcripts
 import asyncio
 import logging
 import time
-from typing import AsyncIterator, Dict, Optional, Set
+from typing import AsyncIterator, Dict, Optional
 from io import BytesIO
 
 from .models import Transcript
@@ -47,7 +47,7 @@ class SpeakerStreamManager:
         )
         await self.stt_client.connect()
         self._running = True
-        logger.info(f"[{self.speaker_label}] Stream manager started")
+        logger.info(f"[{self.speaker_label}] ✅ Stream manager started")
 
     async def stream_audio(self) -> None:
         """Stream audio from LiveKit to ElevenLabs"""
@@ -61,7 +61,7 @@ class SpeakerStreamManager:
 
             chunk_buffer = BytesIO()
             target_chunk_size = self.audio_converter.calculate_chunk_size(
-                duration_ms=100  # Send 100ms chunks
+                duration_ms=200  # Send 200ms chunks
             )
 
             async for audio_frame in audio_stream:
@@ -85,14 +85,14 @@ class SpeakerStreamManager:
 
                 except Exception as e:
                     logger.error(
-                        f"[{self.speaker_label}] Error processing audio frame: {e}"
+                        f"[{self.speaker_label}] ❌ Error processing audio frame: {e}"
                     )
 
         except Exception as e:
-            logger.error(f"[{self.speaker_label}] Error in audio streaming: {e}")
+            logger.error(f"[{self.speaker_label}] ❌ Error in audio streaming: {e}")
             raise
         finally:
-            logger.info(f"[{self.speaker_label}] Audio streaming stopped")
+            logger.info(f"[{self.speaker_label}] 🛑 Audio streaming stopped")
 
     async def receive_transcripts(self) -> AsyncIterator[Transcript]:
         """Receive and yield transcripts from ElevenLabs"""
@@ -111,7 +111,7 @@ class SpeakerStreamManager:
                 yield transcript
 
         except Exception as e:
-            logger.error(f"[{self.speaker_label}] Error receiving transcripts: {e}")
+            logger.error(f"[{self.speaker_label}] ❌ Error receiving transcripts: {e}")
             raise
 
     async def stop(self) -> None:
@@ -119,7 +119,7 @@ class SpeakerStreamManager:
         self._running = False
         if self.stt_client:
             await self.stt_client.disconnect()
-        logger.info(f"[{self.speaker_label}] Stream manager stopped")
+        logger.info(f"[{self.speaker_label}] 🛑 Stream manager stopped")
 
 
 class AudioPipeline:
@@ -166,7 +166,7 @@ class AudioPipeline:
 
     async def _initialize(self) -> None:
         """Initialize LiveKit connection and wait for participants"""
-        logger.info("Initializing audio pipeline...")
+        logger.info("🚀 Initializing audio pipeline...")
 
         # Connect to LiveKit
         self.livekit_handler = LiveKitHandler(
@@ -179,28 +179,56 @@ class AudioPipeline:
         await self.livekit_handler.connect()
 
         # Wait for participants to join
-        logger.info("Waiting for participants...")
-        max_wait = 30  # seconds
+        logger.info("⏳ Waiting for participants...")
+        max_wait = 60  # seconds
         start_time = time.time()
 
         while time.time() - start_time < max_wait:
             participants = self.livekit_handler.get_all_participants()
 
             if len(participants) >= 2:
-                logger.info(f"Found {len(participants)} participants")
+                logger.info(f"✅ Found {len(participants)} participants")
+                # Wait additional 5 seconds for audio tracks
+                logger.info("⏳ Waiting 5s for audio tracks to stabilize...")
+                await asyncio.sleep(5)
                 break
 
             await asyncio.sleep(0.5)
 
         participants = self.livekit_handler.get_all_participants()
-        if len(participants) < 2:
+
+        # Validate participant count
+        human_participants = {
+            identity: info for identity, info in participants.items()
+            if info.speaker_label != "agent"
+        }
+        if len(human_participants) < 2:
             logger.warning(
-                f"Only {len(participants)} participant(s) found. "
+                f"⚠️  Only {len(human_participants)} human participant(s) found. "
                 "Expected at least 2 (recruiter and candidate)"
             )
 
+        # Validate audio tracks
+        logger.info("🔍 Validating audio tracks for participants...")
+        for identity, participant_info in human_participants.items():
+            if participant_info.audio_track is None:
+                logger.warning(
+                    f"⚠️  Participant {identity} ({participant_info.speaker_label}) "
+                    "has no audio track - may timeout during streaming"
+                )
+            else:
+                logger.info(
+                    f"✅ Participant {identity} ({participant_info.speaker_label}) "
+                    "has audio track ready"
+                )
+
         # Initialize stream managers for each participant
         for identity, participant_info in participants.items():
+            # Skip agent participants
+            if participant_info.speaker_label == "agent":
+                logger.info(f"⏭️  Skipping agent participant: {identity}")
+                continue
+
             manager = SpeakerStreamManager(
                 participant_identity=identity,
                 speaker_label=participant_info.speaker_label,
@@ -211,29 +239,43 @@ class AudioPipeline:
             await manager.start()
             self.stream_managers[identity] = manager
 
-        logger.info(f"Initialized {len(self.stream_managers)} stream managers")
+        logger.info(f"✅ Initialized {len(self.stream_managers)} stream managers (skipped agents)")
         self._running = True
+
+    async def _stream_with_error_handling(self, manager) -> None:
+        """Stream audio with graceful error handling for individual participants"""
+        try:
+            await manager.stream_audio()
+        except TimeoutError as e:
+            logger.warning(
+                f"⚠️  Timeout for participant {manager.participant_identity}: {e} "
+                "- continuing with other participants"
+            )
+        except Exception as e:
+            logger.error(
+                f"❌ Error streaming audio for {manager.participant_identity}: {e}",
+                exc_info=True
+            )
 
     async def _stream_all_audio(self) -> None:
         """Start audio streaming for all participants"""
         tasks = []
         for manager in self.stream_managers.values():
-            task = asyncio.create_task(manager.stream_audio())
+            task = asyncio.create_task(self._stream_with_error_handling(manager))
             tasks.append(task)
 
-        # Wait for all streaming tasks (they run indefinitely)
+        # Wait for all streaming tasks
         try:
             await asyncio.gather(*tasks)
         except Exception as e:
-            logger.error(f"Error in audio streaming tasks: {e}")
-            # Cancel remaining tasks
+            logger.error(f"❌ Error in audio streaming tasks: {e}")
             for task in tasks:
                 if not task.done():
                     task.cancel()
 
     async def start_transcription(
         self,
-        audio_stream=None  # For compatibility with your interface
+        audio_stream=None  # For compatibility
     ) -> AsyncIterator[Transcript]:
         """
         Start real-time transcription
@@ -256,7 +298,7 @@ class AudioPipeline:
             # Start audio streaming tasks in background
             audio_streaming_task = asyncio.create_task(self._stream_all_audio())
 
-            # Create transcript queues for each speaker UP FRONT
+            # Create transcript queues for each speaker
             transcript_queues: Dict[str, asyncio.Queue] = {}
 
             # Start transcript receiving tasks
@@ -267,7 +309,7 @@ class AudioPipeline:
                         await queue.put(transcript)
                 except Exception as e:
                     logger.error(
-                        f"[{manager.speaker_label}] Error in transcript receiver: {e}"
+                        f"[{manager.speaker_label}] ❌ Error in transcript receiver: {e}"
                     )
                 finally:
                     await queue.put(None)  # Sentinel value
@@ -295,7 +337,7 @@ class AudioPipeline:
                         if transcript is None:
                             # Speaker stream ended
                             active_queues.remove(speaker_label)
-                            logger.info(f"[{speaker_label}] Stream ended")
+                            logger.info(f"[{speaker_label}] 🏁 Stream ended")
                         else:
                             yield transcript
 
@@ -307,7 +349,7 @@ class AudioPipeline:
                 await asyncio.sleep(0.01)
 
             # Cleanup
-            logger.info("Transcription ended, cleaning up...")
+            logger.info("🧹 Transcription ended, cleaning up...")
 
             # Cancel tasks
             audio_streaming_task.cancel()
@@ -328,7 +370,7 @@ class AudioPipeline:
                     pass
 
         except Exception as e:
-            logger.error(f"Error in audio pipeline: {e}")
+            logger.error(f"❌ Error in audio pipeline: {e}")
             raise
         finally:
             await self.cleanup()
@@ -337,7 +379,7 @@ class AudioPipeline:
         """Clean up all connections and resources"""
         self._running = False
 
-        logger.info("Cleaning up audio pipeline...")
+        logger.info("🧹 Cleaning up audio pipeline...")
 
         # Stop all stream managers
         for manager in self.stream_managers.values():
@@ -353,7 +395,7 @@ class AudioPipeline:
             except Exception as e:
                 logger.error(f"Error disconnecting from LiveKit: {e}")
 
-        logger.info("Audio pipeline cleanup complete")
+        logger.info("✅ Audio pipeline cleanup complete")
 
     async def stop(self) -> None:
         """Stop the pipeline"""

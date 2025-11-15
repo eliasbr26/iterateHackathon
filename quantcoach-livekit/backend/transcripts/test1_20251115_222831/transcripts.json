@@ -1,0 +1,162 @@
+{
+  "room": "test1",
+  "session_start": "2025-11-15T22:28:41.925192",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-15T22:28:41.925192",
+      "speaker": "recruiter",
+      "text": "Okay. Okay.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:28:43.922023",
+      "speaker": "recruiter",
+      "text": "Hi, yes. I",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:28:46.041826",
+      "speaker": "recruiter",
+      "text": "am Stefan. I will build your",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:28:48.985443",
+      "speaker": "recruiter",
+      "text": "intro introvert today. I'm the senior manager at manager at, uh,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:28:51.927295",
+      "speaker": "recruiter",
+      "text": "uh, QRT.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:28:54.972100",
+      "speaker": "recruiter",
+      "text": "So, um, can you just, uh, can you just, uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:28:57.948306",
+      "speaker": "recruiter",
+      "text": ", introduce yourself for 30 seconds?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:29:01.063385",
+      "speaker": "candidate",
+      "text": "Yeah, of course. I'm Elias. I'm a fourth year student, fourth year student",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:29:03.945959",
+      "speaker": "candidate",
+      "text": "at Eco Polytechnic and I'm specialized",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:29:07.006866",
+      "speaker": "candidate",
+      "text": "in artificial intelligence at Dauphine",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:29:09.965926",
+      "speaker": "candidate",
+      "text": "University. I'm currently looking for a 4 to 6",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:29:12.929003",
+      "speaker": "candidate",
+      "text": "months internship in Quant Research.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:29:15.974597",
+      "speaker": "candidate",
+      "text": "Thank you.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:29:18.977953",
+      "speaker": "recruiter",
+      "text": "Okay, okay, okay. Great, great.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:29:22.010370",
+      "speaker": "recruiter",
+      "text": "What can you tell me? What can you tell me",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:29:24.935098",
+      "speaker": "recruiter",
+      "text": "about transformers?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:29:27.987119",
+      "speaker": "candidate",
+      "text": "Transformers is a very interesting architecture.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:29:30.929994",
+      "speaker": "candidate",
+      "text": "Because you can have like, um, um,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:29:33.943215",
+      "speaker": "candidate",
+      "text": "a lot of context on all the embedding, all the embedding",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:29:36.928543",
+      "speaker": "candidate",
+      "text": "things. You can also have",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:29:39.927966",
+      "speaker": "candidate",
+      "text": "something that is non recursive",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:29:43.000721",
+      "speaker": "candidate",
+      "text": "it's very interesting in term of computation it can be computation it can be",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:29:45.918722",
+      "speaker": "candidate",
+      "text": "totally paralyzed",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:29:48.987047",
+      "speaker": "recruiter",
+      "text": "uh see you mean King King",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:29:51.919782",
+      "speaker": "recruiter",
+      "text": "okay okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:29:54.932917",
+      "speaker": "recruiter",
+      "text": "okay okay okay okay",
+      "is_final": true
+    }
+  ]
+}

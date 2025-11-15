@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 class ParticipantInfo:
     """Information about a LiveKit participant"""
     identity: str
-    speaker_label: str  # "recruiter" or "candidate"
+    speaker_label: str  # "recruiter", "candidate", or "agent"
     audio_track: Optional[rtc.RemoteAudioTrack] = None
 
 
@@ -62,12 +62,12 @@ class LiveKitHandler:
         # Set up event handlers
         @self.room.on("participant_connected")
         def on_participant_connected(participant: rtc.RemoteParticipant):
-            logger.info(f"Participant connected: {participant.identity}")
+            logger.info(f"✅ Participant connected: {participant.identity}")
             self._register_participant(participant)
 
         @self.room.on("participant_disconnected")
         def on_participant_disconnected(participant: rtc.RemoteParticipant):
-            logger.info(f"Participant disconnected: {participant.identity}")
+            logger.info(f"🚪 Participant disconnected: {participant.identity}")
             if participant.identity in self.participants:
                 del self.participants[participant.identity]
 
@@ -77,7 +77,7 @@ class LiveKitHandler:
             participant: rtc.RemoteParticipant
         ):
             logger.info(
-                f"Track published: {publication.sid} by {participant.identity}"
+                f"📢 Track published: {publication.sid} by {participant.identity}"
             )
 
         @self.room.on("track_subscribed")
@@ -86,7 +86,7 @@ class LiveKitHandler:
             publication: rtc.RemoteTrackPublication,
             participant: rtc.RemoteParticipant
         ):
-            logger.info(f"Track subscribed: {track.sid} by {participant.identity}")
+            logger.info(f"🎧 Track subscribed: {track.sid} by {participant.identity}")
             if track.kind == rtc.TrackKind.KIND_AUDIO:
                 self._handle_audio_track(participant, track)
 
@@ -96,15 +96,15 @@ class LiveKitHandler:
             publication: rtc.RemoteTrackPublication,
             participant: rtc.RemoteParticipant
         ):
-            logger.info(f"Track unsubscribed: {track.sid} by {participant.identity}")
+            logger.info(f"🔇 Track unsubscribed: {track.sid} by {participant.identity}")
             if participant.identity in self.participants:
                 self.participants[participant.identity].audio_track = None
 
         # Connect to room
-        logger.info(f"Connecting to LiveKit room: {self.room_name}")
+        logger.info(f"🔌 Connecting to LiveKit room: {self.room_name}")
         await self.room.connect(self.room_url, self.token)
         self._connected = True
-        logger.info("Connected to LiveKit room")
+        logger.info("✅ Connected to LiveKit room")
 
         # Register existing participants
         for participant in self.room.remote_participants.values():
@@ -120,11 +120,15 @@ class LiveKitHandler:
         )
 
         self.participants[participant.identity] = participant_info
-        logger.info(f"Registered participant {participant.identity} as {speaker_label}")
+        logger.info(f"✅ Registered participant {participant.identity} as {speaker_label}")
 
     def _get_speaker_label(self, identity: str) -> str:
         """Determine speaker label from participant identity"""
         identity_lower = identity.lower()
+
+        # Filter out bot/agent participants
+        if identity_lower.startswith("audio-agent-") or identity_lower.startswith("agent-simple-") or "agent" in identity_lower:
+            return "agent"
 
         if self.recruiter_identity.lower() in identity_lower or "interviewer" in identity_lower:
             return "recruiter"
@@ -146,7 +150,7 @@ class LiveKitHandler:
         if participant.identity in self.participants:
             self.participants[participant.identity].audio_track = track
             logger.info(
-                f"Audio track registered for {participant.identity} "
+                f"🎤 Audio track registered for {participant.identity} "
                 f"({self.participants[participant.identity].speaker_label})"
             )
 
@@ -169,7 +173,7 @@ class LiveKitHandler:
         participant_info = self.participants[participant_identity]
 
         # Wait for audio track to be available
-        max_wait = 30  # seconds
+        max_wait = 60  # seconds
         waited = 0
         while participant_info.audio_track is None and waited < max_wait:
             await asyncio.sleep(0.1)
@@ -181,7 +185,7 @@ class LiveKitHandler:
             )
 
         track = participant_info.audio_track
-        logger.info(f"Starting audio stream for {participant_identity}")
+        logger.info(f"🎵 Starting audio stream for {participant_identity}")
 
         # Stream audio frames
         async for frame_event in rtc.AudioStream(track):
@@ -202,7 +206,7 @@ class LiveKitHandler:
         if self.room and self._connected:
             await self.room.disconnect()
             self._connected = False
-            logger.info("Disconnected from LiveKit room")
+            logger.info("🔌 Disconnected from LiveKit room")
 
     @property
     def is_connected(self) -> bool:

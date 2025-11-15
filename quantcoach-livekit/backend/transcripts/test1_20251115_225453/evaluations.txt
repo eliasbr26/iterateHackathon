@@ -1,0 +1,316 @@
+
+================================================================================
+[22:55:25] EVALUATION
+================================================================================
+Window: 22:55:03 - 22:55:19
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.75)
+
+📝 Summary: Initial interview greeting and introduction phase. The recruiter introduces himself as Stéphane and asks the candidate to introduce themselves. The candidate makes a self-deprecating joke about P&L.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content yet
+   - Interview just starting - introductory phase only
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[22:55:34] EVALUATION
+================================================================================
+Window: 22:55:13 - 22:55:28
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.60)
+
+📝 Summary: This appears to be the opening moments of an interview with casual introductions and a humorous exchange about P&L (possibly a misunderstanding about 'Piano'). The conversation is cut off before any substantive technical discussion begins.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - only casual greetings/introductions
+   - Conversation fragment - incomplete exchange
+   - No technical content present
+   - Possible audio/communication issues ('Oh my god, my god')
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[22:55:46] EVALUATION
+================================================================================
+Window: 22:55:19 - 22:55:40
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The conversation shows a brief technical disruption where the candidate mentions P&L in Fortuna and API, but the recruiter experiences a technical issue and attempts to recover, confirming there's no error and suggesting to continue the interview.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Technical disruption during interview
+   - Incomplete conversation excerpt
+   - No substantive technical content exchanged
+   - Interview appears interrupted before substantive discussion began
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[22:55:55] EVALUATION
+================================================================================
+Window: 22:55:34 - 22:55:49
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.85)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter asks about the most important technique in LLMs (Large Language Models). The candidate begins responding about Transformers but the conversation is cut off. This topic is not related to quantitative finance.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - LLMs and Transformers are not relevant to Quant Finance
+   - Question appears to be for ML/AI role rather than Quant Finance
+   - Possible interview recording issue - recruiter mentions 'there's no error' suggesting technical difficulties
+   - Incomplete candidate response
+
+
+================================================================================
+[22:56:03] EVALUATION
+================================================================================
+Window: 22:55:40 - 22:55:58
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter asks about LLMs (Large Language Models) and BERT, which are machine learning/NLP topics not related to quantitative finance. The candidate begins explaining Transformers but the conversation is cut off.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - LLMs and BERT are not quant finance topics
+   - No quant finance themes discussed
+   - Incomplete candidate response
+
+
+================================================================================
+[22:56:08] EVALUATION
+================================================================================
+Window: 22:55:49 - 22:56:03
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.80)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.85)
+
+📝 Summary: The recruiter asks about BERT (a natural language processing model) and its components, while the candidate provides incoherent responses about transformers and robots. This appears to be a machine learning/NLP discussion rather than quant finance.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - NLP/ML models not relevant to quant finance
+   - Candidate responses are incoherent and lack clarity
+   - No quant finance topics discussed
+   - Possible language barrier or communication issue
+
+
+================================================================================
+[22:56:19] EVALUATION
+================================================================================
+Window: 22:55:58 - 22:56:13
+Transcripts: 10
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter asks about BERT (Bidirectional Encoder Representations from Transformers), a natural language processing model. The candidate provides a fragmented, incomplete response attempting to explain BERT as a bilinear encoder for encoding words.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - BERT is an NLP/ML topic, not Quant Finance
+   - Candidate communication issues - fragmented, repetitive, incomplete responses
+   - Poor audio quality or technical difficulties suggested by repeated words
+   - No Quant Finance topics discussed
+
+
+================================================================================
+[22:56:28] EVALUATION
+================================================================================
+Window: 22:56:08 - 22:56:22
+Transcripts: 11
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.85)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The conversation discusses BERT (a natural language processing model) and tokenization/position encoding, which are machine learning/NLP topics unrelated to quantitative finance. The candidate appears to be struggling with communication, showing repetitive speech patterns.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - NLP/ML topics not relevant to Quant Finance
+   - Communication issues - candidate showing repetitive speech patterns
+   - Incomplete responses - conversation appears fragmented
+
+
+================================================================================
+[22:56:39] EVALUATION
+================================================================================
+Window: 22:56:13 - 22:56:34
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.85)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The interviewer asks about position coding in tokenization, and the candidate discusses sinusoidal embeddings and rotation matrices. This appears to be a machine learning/NLP discussion about transformer architectures, not quant finance.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - ML/NLP tokenization not related to quant finance
+   - Conversation appears incomplete or truncated
+   - No quant finance topics discussed
+
+
+================================================================================
+[22:56:47] EVALUATION
+================================================================================
+Window: 22:56:28 - 22:56:41
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.75)
+
+📝 Summary: The candidate appears to be discussing sinusoidal embeddings and rotation matrices (possibly related to NLP/ML techniques), but the recruiter interrupts to ask about the candidate's educational background (Polytechnique). The conversation shifts from technical content to biographical information.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - educational background question
+   - Incomplete technical explanation from candidate
+   - Context unclear - sinusoidal embeddings not directly related to core quant finance topics
+   - Conversation interrupted mid-technical explanation
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[22:56:54] EVALUATION
+================================================================================
+Window: 22:56:34 - 22:56:49
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.75)
+
+📝 Summary: The conversation consists of casual small talk where the recruiter asks about the candidate's educational background (Polytechnique vs Polytechnic), and the candidate provides a brief personal anecdote. No technical quant finance topics are discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Conversation fragment appears incomplete or mid-discussion
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[22:56:59] EVALUATION
+================================================================================
+Window: 22:56:39 - 22:56:54
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: This excerpt contains casual introductory conversation where the recruiter and candidate discuss which school (Polytechnique vs Polytechnic) the candidate attended. No technical quant finance content is present.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Interview appears to be in early greeting/introduction phase
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[22:57:14] EVALUATION
+================================================================================
+Window: 22:56:47 - 22:57:01
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.60)
+
+📝 Summary: The conversation consists of casual chitchat about Polytechnique and appears to contain technical issues with repeated text. No quant finance topics are discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Transcript appears corrupted with repeated phrases
+   - Unclear communication - possible transcription errors
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[22:57:18] EVALUATION
+================================================================================
+Window: 22:56:54 - 22:57:01
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.40)
+
+📝 Summary: The recruiter appears to be making general comments about job market difficulty for polytechnic graduates. The conversation is fragmented and contains no technical quant finance content.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Fragmented/unclear conversation
+   - No technical content
+   - Possible transcription errors
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[22:57:25] EVALUATION
+================================================================================
+Window: 22:56:54 - 22:57:01
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter is discussing the difficulty of getting industry jobs for candidates from polytechnic backgrounds. No technical quant finance content is present in this excerpt.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Transcript quality issues - repetitive text suggests recording/transcription errors
+   - Conversation appears incomplete or fragmented
+   - Off-topic/casual discussion detected ([EXTRA])
+

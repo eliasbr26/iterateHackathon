@@ -72,6 +72,7 @@ class ElevenLabsSTT:
                 "language_code": self.language,
                 "commit_strategy": "vad",
                 "include_timestamps": False,
+                "vad_threshold": 0.3,  # Lower threshold = more sensitive (catches more speech)
             }
 
             # Build full URI with query parameters
@@ -93,10 +94,10 @@ class ElevenLabsSTT:
             )
 
             self._connected = True
-            logger.info(f"[{self.speaker_label}] Connected to ElevenLabs STT")
+            logger.info(f"[{self.speaker_label}] ✅ Connected to ElevenLabs STT")
 
         except Exception as e:
-            logger.error(f"[{self.speaker_label}] Failed to connect to ElevenLabs: {e}")
+            logger.error(f"[{self.speaker_label}] ❌ Failed to connect to ElevenLabs: {e}")
             raise
 
     async def send_audio_chunk(self, audio_data: bytes) -> None:
@@ -148,7 +149,7 @@ class ElevenLabsSTT:
                         # Session initialization
                         self._session_id = data.get("session_id")
                         logger.info(
-                            f"[{self.speaker_label}] Session started: {self._session_id}"
+                            f"[{self.speaker_label}] ✅ Session started: {self._session_id}"
                         )
 
                     elif message_type == "partial_transcript":
@@ -182,7 +183,7 @@ class ElevenLabsSTT:
                             )
 
                             logger.info(
-                                f"[{self.speaker_label}] [FINAL] {text}"
+                                f"[{self.speaker_label}] ✅ [FINAL] {text}"
                             )
 
                             yield chunk
@@ -191,7 +192,7 @@ class ElevenLabsSTT:
                         # Error messages
                         error_msg = data.get("message", data.get("error", "Unknown error"))
                         logger.error(
-                            f"[{self.speaker_label}] ElevenLabs error ({message_type}): {error_msg}"
+                            f"[{self.speaker_label}] ❌ ElevenLabs error ({message_type}): {error_msg}"
                         )
                         logger.debug(f"[{self.speaker_label}] Full error data: {data}")
 
@@ -201,7 +202,7 @@ class ElevenLabsSTT:
                     logger.error(f"[{self.speaker_label}] Error processing message: {e}")
 
         except Exception as e:
-            logger.error(f"[{self.speaker_label}] Error receiving transcripts: {e}")
+            logger.error(f"[{self.speaker_label}] ❌ Error receiving transcripts: {e}")
             raise
         finally:
             self._connected = False
@@ -212,7 +213,7 @@ class ElevenLabsSTT:
         if self.ws and self._connected:
             try:
                 await self.ws.close()
-                logger.info(f"[{self.speaker_label}] Disconnected from ElevenLabs")
+                logger.info(f"[{self.speaker_label}] 🔌 Disconnected from ElevenLabs")
             except Exception as e:
                 logger.error(f"[{self.speaker_label}] Error disconnecting: {e}")
             finally:

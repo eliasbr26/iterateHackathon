@@ -1,0 +1,31 @@
+[22:21:46] 👤 CANDIDATE: What what
+[22:21:55] 👤 CANDIDATE: Hi, so much closer.
+[22:21:56] 👔 RECRUITER: so hi yes I'm Stefan I will be your man I will be your
+[22:21:59] 👔 RECRUITER: interviewer today so first so first uh
+[22:22:02] 👔 RECRUITER: can you just uh
+[22:22:06] 👔 RECRUITER: um introduce yourself a little bit like a little bit like a
+[22:22:08] 👔 RECRUITER: for 30 seconds
+[22:22:11] 👤 CANDIDATE: okay so um I'm a fourth year student at
+[22:22:14] 👤 CANDIDATE: engineering school uh uh
+[22:22:17] 👤 CANDIDATE: and I'm doing a master in uh artificial intelligence artificial intelligence
+[22:22:21] 👤 CANDIDATE: and I want to apply for a quantitative for a quantitative
+[22:22:23] 👤 CANDIDATE: internship. My name is internship because I like the mindset, like the mindset.
+[22:22:26] 👤 CANDIDATE: And I already had some experience with the experience with the
+[22:22:29] 👤 CANDIDATE: AI transformers and etc.
+[22:22:32] 👤 CANDIDATE: Okay, hope that is that
+[22:22:32] 👔 RECRUITER: Okay, great. Let's let's
+[22:22:35] 👔 RECRUITER: have a have a
+[22:22:38] 👔 RECRUITER: technical question. What can you tell me about can you tell me about
+[22:22:41] 👔 RECRUITER: linear regression?
+[22:22:44] 👤 CANDIDATE: Linear regression is one of the most basic models
+[22:22:47] 👤 CANDIDATE: in quantitative finance because it's very interesting
+[22:22:50] 👤 CANDIDATE: interesting to study because for example you're gonna have for example you're gonna have
+[22:22:53] 👤 CANDIDATE: exact values like the black the
+[22:22:56] 👤 CANDIDATE: which is equal to x transpose times x transpose times x
+[22:22:59] 👤 CANDIDATE: to the power of minus 1 times 1 times
+[22:23:02] 👤 CANDIDATE: 6 times plus y and you also have a lot of so have a lot of
+[22:23:05] 👤 CANDIDATE: then hypothesis you know no
+[22:23:08] 👔 RECRUITER: Okay, great.
+[22:23:11] 👔 RECRUITER: So thank you, Elias. I think it will be, it will be,
+[22:23:14] 👔 RECRUITER: all for this test. Thank you.
+[22:23:17] 👤 CANDIDATE: Thank you, Stéphane.

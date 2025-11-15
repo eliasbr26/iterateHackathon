@@ -1,0 +1,26 @@
+[22:28:41] 👔 RECRUITER: Okay. Okay.
+[22:28:43] 👔 RECRUITER: Hi, yes. I
+[22:28:46] 👔 RECRUITER: am Stefan. I will build your
+[22:28:48] 👔 RECRUITER: intro introvert today. I'm the senior manager at manager at, uh,
+[22:28:51] 👔 RECRUITER: uh, QRT.
+[22:28:54] 👔 RECRUITER: So, um, can you just, uh, can you just, uh
+[22:28:57] 👔 RECRUITER: , introduce yourself for 30 seconds?
+[22:29:01] 👤 CANDIDATE: Yeah, of course. I'm Elias. I'm a fourth year student, fourth year student
+[22:29:03] 👤 CANDIDATE: at Eco Polytechnic and I'm specialized
+[22:29:07] 👤 CANDIDATE: in artificial intelligence at Dauphine
+[22:29:09] 👤 CANDIDATE: University. I'm currently looking for a 4 to 6
+[22:29:12] 👤 CANDIDATE: months internship in Quant Research.
+[22:29:15] 👤 CANDIDATE: Thank you.
+[22:29:18] 👔 RECRUITER: Okay, okay, okay. Great, great.
+[22:29:22] 👔 RECRUITER: What can you tell me? What can you tell me
+[22:29:24] 👔 RECRUITER: about transformers?
+[22:29:27] 👤 CANDIDATE: Transformers is a very interesting architecture.
+[22:29:30] 👤 CANDIDATE: Because you can have like, um, um,
+[22:29:33] 👤 CANDIDATE: a lot of context on all the embedding, all the embedding
+[22:29:36] 👤 CANDIDATE: things. You can also have
+[22:29:39] 👤 CANDIDATE: something that is non recursive
+[22:29:43] 👤 CANDIDATE: it's very interesting in term of computation it can be computation it can be
+[22:29:45] 👤 CANDIDATE: totally paralyzed
+[22:29:48] 👔 RECRUITER: uh see you mean King King
+[22:29:51] 👔 RECRUITER: okay okay
+[22:29:54] 👔 RECRUITER: okay okay okay okay

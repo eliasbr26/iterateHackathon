@@ -1,0 +1,9 @@
+[22:45:42] 👔 RECRUITER: Welcome to Gare de Lyon-Paradis.
+[22:45:48] 👔 RECRUITER: Maybe not in the Garden of Paradise.
+[22:45:50] 👔 RECRUITER: Okay, let's say Paradise. Paradise.
+[22:46:00] 👔 RECRUITER: Okay, that's the closest form of the linear regression. Regression.
+[22:46:03] 👤 CANDIDATE: Do you hear me?
+[22:46:05] 👔 RECRUITER: Wait, Tonton, I hear you.
+[22:46:08] 👤 CANDIDATE: Okay, so like close for it and say it's like the beta which is equal to x, which is equal to x
+[22:46:11] 👔 RECRUITER: I'm going to throw it up in the air
+[22:46:11] 👤 CANDIDATE: transpose x.

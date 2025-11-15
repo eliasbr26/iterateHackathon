@@ -1,10 +1,13 @@
 """
-FastAPI Server for LiveKit Interview Platform
+FastAPI Server for QuantCoach LiveKit Interview Platform
 
-This server provides REST API endpoints for:
+Provides REST API endpoints for:
 - Creating interview rooms
 - Generating access tokens
 - Managing participants
+- Health checks
+
+Compatible with the QuantCoach frontend VideoArea component.
 """
 
 import logging
@@ -22,14 +25,17 @@ from room_manager import RoomManager
 load_dotenv()
 
 # Configure logging
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
 logger = logging.getLogger(__name__)
 
 # Initialize FastAPI app
 app = FastAPI(
-    title="LiveKit Interview API",
-    description="API for managing LiveKit interview rooms and participants",
-    version="1.0.0",
+    title="QuantCoach LiveKit API",
+    description="API for managing LiveKit interview rooms with audio transcription",
+    version="2.0.0",
 )
 
 # Add CORS middleware
@@ -42,7 +48,13 @@ app.add_middleware(
 )
 
 # Initialize RoomManager
-room_manager = RoomManager()
+try:
+    room_manager = RoomManager()
+    logger.info("✅ RoomManager initialized successfully")
+except Exception as e:
+    logger.error(f"❌ Failed to initialize RoomManager: {e}")
+    logger.error("Make sure LIVEKIT_URL, LIVEKIT_API_KEY, and LIVEKIT_API_SECRET are set in .env")
+    room_manager = None
 
 
 # Pydantic models for request/response
@@ -95,8 +107,25 @@ async def root():
     """Health check endpoint"""
     return {
         "status": "ok",
-        "service": "LiveKit Interview API",
-        "version": "1.0.0",
+        "service": "QuantCoach LiveKit API",
+        "version": "2.0.0",
+        "livekit_configured": room_manager is not None,
+    }
+
+
+@app.get("/health")
+async def health_check():
+    """Detailed health check"""
+    if not room_manager:
+        raise HTTPException(
+            status_code=503,
+            detail="LiveKit not configured. Check LIVEKIT_URL, LIVEKIT_API_KEY, LIVEKIT_API_SECRET"
+        )
+
+    return {
+        "status": "healthy",
+        "livekit_url": room_manager.url,
+        "timestamp": datetime.now().isoformat(),
     }
 
 
@@ -104,13 +133,28 @@ async def root():
 async def create_interview_room(request: CreateRoomRequest):
     """
     Create a new interview room and generate tokens for all participants
+
+    This endpoint:
+    1. Creates a new LiveKit room
+    2. Generates access tokens for interviewer, candidate, and agent
+    3. Returns all information needed to join the room
     """
+    if not room_manager:
+        raise HTTPException(
+            status_code=503,
+            detail="LiveKit not configured"
+        )
+
     try:
         # Generate room name if not provided
         room_name = request.room_name or f"interview-{datetime.now().strftime('%Y%m%d-%H%M%S')}"
 
+        logger.info(f"Creating room: {room_name}")
+
         # Create the room
         room = await room_manager.create_room(room_name, request.max_participants)
+
+        logger.info(f"✅ Room created: {room['name']} (sid: {room['sid']})")
 
         # Generate tokens for all participant types
         interviewer_token = room_manager.generate_token(
@@ -134,6 +178,8 @@ async def create_interview_room(request: CreateRoomRequest):
             metadata='{"role": "agent", "type": "analyzer"}',
         )
 
+        logger.info(f"✅ Tokens generated for room: {room_name}")
+
         return CreateRoomResponse(
             sid=room["sid"],
             name=room["name"],
@@ -146,22 +192,34 @@ async def create_interview_room(request: CreateRoomRequest):
         )
 
     except Exception as e:
-        logger.error(f"Failed to create room: {e}")
+        logger.error(f"❌ Failed to create room: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
 @app.post("/tokens/generate", response_model=GenerateTokenResponse)
 async def generate_token(request: GenerateTokenRequest):
     """
-    Generate an access token for a participant
+    Generate an access token for a participant to join an existing room
+
+    This is used when a participant wants to join a room that already exists.
     """
+    if not room_manager:
+        raise HTTPException(
+            status_code=503,
+            detail="LiveKit not configured"
+        )
+
     try:
+        logger.info(f"Generating token for {request.participant_identity} in room {request.room_name}")
+
         token = room_manager.generate_token(
             room_name=request.room_name,
             participant_identity=request.participant_identity,
             participant_name=request.participant_name,
             metadata=f'{{"role": "{request.role}"}}',
         )
+
+        logger.info(f"✅ Token generated for {request.participant_identity}")
 
         return GenerateTokenResponse(
             token=token,
@@ -171,7 +229,7 @@ async def generate_token(request: GenerateTokenRequest):
         )
 
     except Exception as e:
-        logger.error(f"Failed to generate token: {e}")
+        logger.error(f"❌ Failed to generate token: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -180,8 +238,15 @@ async def list_rooms():
     """
     List all active rooms
     """
+    if not room_manager:
+        raise HTTPException(
+            status_code=503,
+            detail="LiveKit not configured"
+        )
+
     try:
         rooms = await room_manager.list_rooms()
+        logger.info(f"Listed {len(rooms)} active rooms")
         return [
             RoomInfo(
                 sid=room["sid"],
@@ -192,7 +257,7 @@ async def list_rooms():
             for room in rooms
         ]
     except Exception as e:
-        logger.error(f"Failed to list rooms: {e}")
+        logger.error(f"❌ Failed to list rooms: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -201,8 +266,15 @@ async def get_room_participants(room_name: str):
     """
     Get list of participants in a specific room
     """
+    if not room_manager:
+        raise HTTPException(
+            status_code=503,
+            detail="LiveKit not configured"
+        )
+
     try:
         participants = await room_manager.get_room_participants(room_name)
+        logger.info(f"Room {room_name} has {len(participants)} participants")
         return [
             ParticipantInfo(
                 sid=p["sid"],
@@ -213,7 +285,7 @@ async def get_room_participants(room_name: str):
             for p in participants
         ]
     except Exception as e:
-        logger.error(f"Failed to get participants: {e}")
+        logger.error(f"❌ Failed to get participants: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -222,16 +294,27 @@ async def delete_room(room_name: str):
     """
     Delete a room
     """
+    if not room_manager:
+        raise HTTPException(
+            status_code=503,
+            detail="LiveKit not configured"
+        )
+
     try:
         await room_manager.delete_room(room_name)
+        logger.info(f"✅ Room deleted: {room_name}")
         return {"status": "success", "message": f"Room {room_name} deleted"}
     except Exception as e:
-        logger.error(f"Failed to delete room: {e}")
+        logger.error(f"❌ Failed to delete room: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
 if __name__ == "__main__":
     import uvicorn
+
+    logger.info("🚀 Starting QuantCoach LiveKit API Server")
+    logger.info(f"📍 Server will run on: http://0.0.0.0:8000")
+    logger.info(f"📖 API Docs: http://localhost:8000/docs")
 
     uvicorn.run(
         app,
