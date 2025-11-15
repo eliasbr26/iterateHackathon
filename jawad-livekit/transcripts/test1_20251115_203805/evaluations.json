@@ -1,0 +1,24 @@
+{
+  "room": "test1",
+  "total_evaluations": 1,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-15T20:38:57.220435",
+      "window_start": "2025-11-15T20:38:18.388484",
+      "window_end": "2025-11-15T20:38:23.407592",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "unknown",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "Evaluation failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-sonnet-20241022'}, 'request_id': 'req_011CVAEwSzuhiPWeFLaQWsS8'}",
+      "key_topics": [],
+      "flags": [
+        "EVALUATION_ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-sonnet-20241022'}, 'request_id': 'req_011CVAEwSzuhiPWeFLaQWsS8'}"
+      ],
+      "confidence_subject": 0.0,
+      "confidence_difficulty": 0.0,
+      "confidence_tone": 0.0,
+      "raw_llm_response": null
+    }
+  ]
+}

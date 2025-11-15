@@ -1,0 +1,60 @@
+{
+  "room": "test1",
+  "session_start": "2025-11-15T17:53:47.941227",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-15T17:53:47.941227",
+      "speaker": "recruiter",
+      "text": "Hello. Hello.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T17:53:49.950575",
+      "speaker": "recruiter",
+      "text": "Hello.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T17:53:54.980104",
+      "speaker": "recruiter",
+      "text": "Bonjour, est-ce que je peux te pr\u00e9senter ?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T17:53:58.006422",
+      "speaker": "recruiter",
+      "text": "Bonjour, je m'appelle Ilias, je suis en 4\u00e8me \u00e0 l'ES",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T17:54:00.998314",
+      "speaker": "recruiter",
+      "text": "LE. Je suis en 4\u00e8me \u00e0 l'ESLE.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T17:54:07.063805",
+      "speaker": "recruiter",
+      "text": "Je suis en 4\u00e8me \u00e0 l'ESLE. Je suis en 4\u00e8me \u00e0 l'ESLE. Je suis en 4\u00e8me \u00e0 l'ESLE. Je suis en",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T17:54:10.069318",
+      "speaker": "recruiter",
+      "text": "4\u00e8me \u00e0 l'ESLE. Je suis en 4\u00e8me \u00e0 l'ESLE. Je suis en 4\u00e8me \u00e0 l'ESLE. Je suis en 4\u00e8me \u00e0 l",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T17:54:13.101572",
+      "speaker": "recruiter",
+      "text": "'ESLE. Je suis en 4\u00e8me \u00e0 l'ESLE. Je suis en 4\u00e8me \u00e0 l'ESLE. Je suis en 4\u00e8me \u00e0 l'ESLE.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T17:54:16.039574",
+      "speaker": "recruiter",
+      "text": "\u00c7a marche pas parce que c'est gratuit. Le titre est gratuit. Le titre est gratuit.",
+      "is_final": true
+    }
+  ]
+}
