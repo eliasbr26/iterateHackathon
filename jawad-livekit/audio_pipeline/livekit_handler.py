@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 class ParticipantInfo:
     """Information about a LiveKit participant"""
     identity: str
-    speaker_label: str  # "recruiter" or "candidate"
+    speaker_label: str  # "recruiter", "candidate", or "agent"
     audio_track: Optional[rtc.RemoteAudioTrack] = None
 
 
@@ -126,6 +126,10 @@ class LiveKitHandler:
         """Determine speaker label from participant identity"""
         identity_lower = identity.lower()
 
+        # Filter out bot/agent participants
+        if identity_lower.startswith("audio-agent-") or identity_lower.startswith("agent-simple-"):
+            return "agent"
+
         if self.recruiter_identity.lower() in identity_lower or "interviewer" in identity_lower:
             return "recruiter"
         elif self.candidate_identity.lower() in identity_lower or "candidate" in identity_lower:
@@ -169,7 +173,7 @@ class LiveKitHandler:
         participant_info = self.participants[participant_identity]
 
         # Wait for audio track to be available
-        max_wait = 30  # seconds
+        max_wait = 60  # seconds (increased from 30s)
         waited = 0
         while participant_info.audio_track is None and waited < max_wait:
             await asyncio.sleep(0.1)

@@ -1,0 +1,322 @@
+{
+  "room": "test1",
+  "total_evaluations": 15,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-15T22:55:25.850177",
+      "window_start": "2025-11-15T22:55:03.825198",
+      "window_end": "2025-11-15T22:55:19.878259",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "encouraging",
+      "summary": "Initial interview greeting and introduction phase. The recruiter introduces himself as St\u00e9phane and asks the candidate to introduce themselves. The candidate makes a self-deprecating joke about P&L.",
+      "key_topics": [],
+      "flags": [
+        "No technical content yet",
+        "Interview just starting - introductory phase only",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.98,
+      "confidence_tone": 0.75,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"encouraging\",\n    \"summary\": \"Initial interview greeting and introduction phase. The recruiter introduces himself as St\u00e9phane and asks the candidate to introduce themselves. The candidate makes a self-deprecating joke about P&L.\",\n    \"flags\": [\"No technical content yet\", \"Interview just starting - introductory phase only\"],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.98,\n    \"confidence_tone\": 0.75\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T22:55:34.684028",
+      "window_start": "2025-11-15T22:55:13.796235",
+      "window_end": "2025-11-15T22:55:28.835563",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This appears to be the opening moments of an interview with casual introductions and a humorous exchange about P&L (possibly a misunderstanding about 'Piano'). The conversation is cut off before any substantive technical discussion begins.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - only casual greetings/introductions",
+        "Conversation fragment - incomplete exchange",
+        "No technical content present",
+        "Possible audio/communication issues ('Oh my god, my god')",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.6,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This appears to be the opening moments of an interview with casual introductions and a humorous exchange about P&L (possibly a misunderstanding about 'Piano'). The conversation is cut off before any substantive technical discussion begins.\",\n    \"flags\": [\n        \"Off-topic discussion - only casual greetings/introductions\",\n        \"Conversation fragment - incomplete exchange\",\n        \"No technical content present\",\n        \"Possible audio/communication issues ('Oh my god, my god')\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.6\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T22:55:46.476826",
+      "window_start": "2025-11-15T22:55:19.878259",
+      "window_end": "2025-11-15T22:55:40.747473",
+      "transcripts_evaluated": 8,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "The conversation shows a brief technical disruption where the candidate mentions P&L in Fortuna and API, but the recruiter experiences a technical issue and attempts to recover, confirming there's no error and suggesting to continue the interview.",
+      "key_topics": [],
+      "flags": [
+        "Technical disruption during interview",
+        "Incomplete conversation excerpt",
+        "No substantive technical content exchanged",
+        "Interview appears interrupted before substantive discussion began",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The conversation shows a brief technical disruption where the candidate mentions P&L in Fortuna and API, but the recruiter experiences a technical issue and attempts to recover, confirming there's no error and suggesting to continue the interview.\",\n    \"flags\": [\n        \"Technical disruption during interview\",\n        \"Incomplete conversation excerpt\",\n        \"No substantive technical content exchanged\",\n        \"Interview appears interrupted before substantive discussion began\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T22:55:55.554521",
+      "window_start": "2025-11-15T22:55:34.982902",
+      "window_end": "2025-11-15T22:55:49.873071",
+      "transcripts_evaluated": 7,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter asks about the most important technique in LLMs (Large Language Models). The candidate begins responding about Transformers but the conversation is cut off. This topic is not related to quantitative finance.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - LLMs and Transformers are not relevant to Quant Finance",
+        "Question appears to be for ML/AI role rather than Quant Finance",
+        "Possible interview recording issue - recruiter mentions 'there's no error' suggesting technical difficulties",
+        "Incomplete candidate response"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.85,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter asks about the most important technique in LLMs (Large Language Models). The candidate begins responding about Transformers but the conversation is cut off. This topic is not related to quantitative finance.\",\n    \"flags\": [\n        \"Off-topic discussion - LLMs and Transformers are not relevant to Quant Finance\",\n        \"Question appears to be for ML/AI role rather than Quant Finance\",\n        \"Possible interview recording issue - recruiter mentions 'there's no error' suggesting technical difficulties\",\n        \"Incomplete candidate response\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.85,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T22:56:03.215186",
+      "window_start": "2025-11-15T22:55:40.747473",
+      "window_end": "2025-11-15T22:55:58.794616",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter asks about LLMs (Large Language Models) and BERT, which are machine learning/NLP topics not related to quantitative finance. The candidate begins explaining Transformers but the conversation is cut off.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - LLMs and BERT are not quant finance topics",
+        "No quant finance themes discussed",
+        "Incomplete candidate response"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter asks about LLMs (Large Language Models) and BERT, which are machine learning/NLP topics not related to quantitative finance. The candidate begins explaining Transformers but the conversation is cut off.\",\n    \"flags\": [\n        \"Off-topic discussion - LLMs and BERT are not quant finance topics\",\n        \"No quant finance themes discussed\",\n        \"Incomplete candidate response\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T22:56:08.156257",
+      "window_start": "2025-11-15T22:55:49.873071",
+      "window_end": "2025-11-15T22:56:03.251406",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter asks about BERT (a natural language processing model) and its components, while the candidate provides incoherent responses about transformers and robots. This appears to be a machine learning/NLP discussion rather than quant finance.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - NLP/ML models not relevant to quant finance",
+        "Candidate responses are incoherent and lack clarity",
+        "No quant finance topics discussed",
+        "Possible language barrier or communication issue"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.8,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter asks about BERT (a natural language processing model) and its components, while the candidate provides incoherent responses about transformers and robots. This appears to be a machine learning/NLP discussion rather than quant finance.\",\n    \"flags\": [\n        \"Off-topic discussion - NLP/ML models not relevant to quant finance\",\n        \"Candidate responses are incoherent and lack clarity\",\n        \"No quant finance topics discussed\",\n        \"Possible language barrier or communication issue\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.8,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T22:56:19.785877",
+      "window_start": "2025-11-15T22:55:58.794616",
+      "window_end": "2025-11-15T22:56:13.733388",
+      "transcripts_evaluated": 10,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter asks about BERT (Bidirectional Encoder Representations from Transformers), a natural language processing model. The candidate provides a fragmented, incomplete response attempting to explain BERT as a bilinear encoder for encoding words.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - BERT is an NLP/ML topic, not Quant Finance",
+        "Candidate communication issues - fragmented, repetitive, incomplete responses",
+        "Poor audio quality or technical difficulties suggested by repeated words",
+        "No Quant Finance topics discussed"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter asks about BERT (Bidirectional Encoder Representations from Transformers), a natural language processing model. The candidate provides a fragmented, incomplete response attempting to explain BERT as a bilinear encoder for encoding words.\",\n    \"flags\": [\n        \"Off-topic discussion - BERT is an NLP/ML topic, not Quant Finance\",\n        \"Candidate communication issues - fragmented, repetitive, incomplete responses\",\n        \"Poor audio quality or technical difficulties suggested by repeated words\",\n        \"No Quant Finance topics discussed\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T22:56:28.283081",
+      "window_start": "2025-11-15T22:56:08.247831",
+      "window_end": "2025-11-15T22:56:22.842767",
+      "transcripts_evaluated": 11,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "The conversation discusses BERT (a natural language processing model) and tokenization/position encoding, which are machine learning/NLP topics unrelated to quantitative finance. The candidate appears to be struggling with communication, showing repetitive speech patterns.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - NLP/ML topics not relevant to Quant Finance",
+        "Communication issues - candidate showing repetitive speech patterns",
+        "Incomplete responses - conversation appears fragmented"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.85,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The conversation discusses BERT (a natural language processing model) and tokenization/position encoding, which are machine learning/NLP topics unrelated to quantitative finance. The candidate appears to be struggling with communication, showing repetitive speech patterns.\",\n    \"flags\": [\n        \"Off-topic discussion - NLP/ML topics not relevant to Quant Finance\",\n        \"Communication issues - candidate showing repetitive speech patterns\",\n        \"Incomplete responses - conversation appears fragmented\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.85,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T22:56:39.472021",
+      "window_start": "2025-11-15T22:56:13.733388",
+      "window_end": "2025-11-15T22:56:34.739027",
+      "transcripts_evaluated": 8,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "The interviewer asks about position coding in tokenization, and the candidate discusses sinusoidal embeddings and rotation matrices. This appears to be a machine learning/NLP discussion about transformer architectures, not quant finance.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - ML/NLP tokenization not related to quant finance",
+        "Conversation appears incomplete or truncated",
+        "No quant finance topics discussed"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.85,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The interviewer asks about position coding in tokenization, and the candidate discusses sinusoidal embeddings and rotation matrices. This appears to be a machine learning/NLP discussion about transformer architectures, not quant finance.\",\n    \"flags\": [\n        \"Off-topic discussion - ML/NLP tokenization not related to quant finance\",\n        \"Conversation appears incomplete or truncated\",\n        \"No quant finance topics discussed\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.85,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T22:56:47.604998",
+      "window_start": "2025-11-15T22:56:28.627393",
+      "window_end": "2025-11-15T22:56:41.765364",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "The candidate appears to be discussing sinusoidal embeddings and rotation matrices (possibly related to NLP/ML techniques), but the recruiter interrupts to ask about the candidate's educational background (Polytechnique). The conversation shifts from technical content to biographical information.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - educational background question",
+        "Incomplete technical explanation from candidate",
+        "Context unclear - sinusoidal embeddings not directly related to core quant finance topics",
+        "Conversation interrupted mid-technical explanation",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.85,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.75,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The candidate appears to be discussing sinusoidal embeddings and rotation matrices (possibly related to NLP/ML techniques), but the recruiter interrupts to ask about the candidate's educational background (Polytechnique). The conversation shifts from technical content to biographical information.\",\n    \"flags\": [\n        \"Off-topic discussion - educational background question\",\n        \"Incomplete technical explanation from candidate\",\n        \"Context unclear - sinusoidal embeddings not directly related to core quant finance topics\",\n        \"Conversation interrupted mid-technical explanation\"\n    ],\n    \"confidence_subject\": 0.85,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.75\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T22:56:54.625337",
+      "window_start": "2025-11-15T22:56:34.739027",
+      "window_end": "2025-11-15T22:56:49.784913",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "encouraging",
+      "summary": "The conversation consists of casual small talk where the recruiter asks about the candidate's educational background (Polytechnique vs Polytechnic), and the candidate provides a brief personal anecdote. No technical quant finance topics are discussed.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "No technical content",
+        "Conversation fragment appears incomplete or mid-discussion",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.75,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"encouraging\",\n    \"summary\": \"The conversation consists of casual small talk where the recruiter asks about the candidate's educational background (Polytechnique vs Polytechnic), and the candidate provides a brief personal anecdote. No technical quant finance topics are discussed.\",\n    \"flags\": [\"Off-topic discussion\", \"No technical content\", \"Conversation fragment appears incomplete or mid-discussion\"],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.75\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T22:56:59.865700",
+      "window_start": "2025-11-15T22:56:39.925337",
+      "window_end": "2025-11-15T22:56:54.930619",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "encouraging",
+      "summary": "This excerpt contains casual introductory conversation where the recruiter and candidate discuss which school (Polytechnique vs Polytechnic) the candidate attended. No technical quant finance content is present.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "Interview appears to be in early greeting/introduction phase",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"encouraging\",\n    \"summary\": \"This excerpt contains casual introductory conversation where the recruiter and candidate discuss which school (Polytechnique vs Polytechnic) the candidate attended. No technical quant finance content is present.\",\n    \"flags\": [\"Off-topic discussion\", \"Interview appears to be in early greeting/introduction phase\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T22:57:14.018932",
+      "window_start": "2025-11-15T22:56:47.857414",
+      "window_end": "2025-11-15T22:57:01.712282",
+      "transcripts_evaluated": 7,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "The conversation consists of casual chitchat about Polytechnique and appears to contain technical issues with repeated text. No quant finance topics are discussed.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "No technical content",
+        "Transcript appears corrupted with repeated phrases",
+        "Unclear communication - possible transcription errors",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.6,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The conversation consists of casual chitchat about Polytechnique and appears to contain technical issues with repeated text. No quant finance topics are discussed.\",\n    \"flags\": [\n        \"Off-topic discussion\",\n        \"No technical content\",\n        \"Transcript appears corrupted with repeated phrases\",\n        \"Unclear communication - possible transcription errors\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.6\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T22:57:18.926972",
+      "window_start": "2025-11-15T22:56:54.930619",
+      "window_end": "2025-11-15T22:57:01.713156",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The recruiter appears to be making general comments about job market difficulty for polytechnic graduates. The conversation is fragmented and contains no technical quant finance content.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "Fragmented/unclear conversation",
+        "No technical content",
+        "Possible transcription errors",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.4,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The recruiter appears to be making general comments about job market difficulty for polytechnic graduates. The conversation is fragmented and contains no technical quant finance content.\",\n    \"flags\": [\n        \"Off-topic discussion\",\n        \"Fragmented/unclear conversation\",\n        \"No technical content\",\n        \"Possible transcription errors\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.4\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T22:57:25.298437",
+      "window_start": "2025-11-15T22:56:54.930619",
+      "window_end": "2025-11-15T22:57:01.713156",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter is discussing the difficulty of getting industry jobs for candidates from polytechnic backgrounds. No technical quant finance content is present in this excerpt.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "No technical content",
+        "Transcript quality issues - repetitive text suggests recording/transcription errors",
+        "Conversation appears incomplete or fragmented",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter is discussing the difficulty of getting industry jobs for candidates from polytechnic backgrounds. No technical quant finance content is present in this excerpt.\",\n    \"flags\": [\n        \"Off-topic discussion\",\n        \"No technical content\",\n        \"Transcript quality issues - repetitive text suggests recording/transcription errors\",\n        \"Conversation appears incomplete or fragmented\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.7\n}\n```"
+    }
+  ]
+}

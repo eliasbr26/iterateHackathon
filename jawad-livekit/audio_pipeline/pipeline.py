@@ -61,7 +61,7 @@ class SpeakerStreamManager:
 
             chunk_buffer = BytesIO()
             target_chunk_size = self.audio_converter.calculate_chunk_size(
-                duration_ms=100  # Send 100ms chunks
+                duration_ms=200  # Send 200ms chunks (more data = better accuracy)
             )
 
             async for audio_frame in audio_stream:
@@ -180,7 +180,7 @@ class AudioPipeline:
 
         # Wait for participants to join
         logger.info("Waiting for participants...")
-        max_wait = 30  # seconds
+        max_wait = 60  # seconds (increased from 30s)
         start_time = time.time()
 
         while time.time() - start_time < max_wait:
@@ -188,19 +188,47 @@ class AudioPipeline:
 
             if len(participants) >= 2:
                 logger.info(f"Found {len(participants)} participants")
+                # Wait an additional 5 seconds for audio tracks to be fully ready
+                logger.info("Waiting 5s for audio tracks to stabilize...")
+                await asyncio.sleep(5)
                 break
 
             await asyncio.sleep(0.5)
 
         participants = self.livekit_handler.get_all_participants()
-        if len(participants) < 2:
+
+        # Validate participant count
+        human_participants = {
+            identity: info for identity, info in participants.items()
+            if info.speaker_label != "agent"
+        }
+        if len(human_participants) < 2:
             logger.warning(
-                f"Only {len(participants)} participant(s) found. "
+                f"Only {len(human_participants)} human participant(s) found. "
                 "Expected at least 2 (recruiter and candidate)"
             )
 
+        # Validate audio tracks for human participants
+        logger.info("Validating audio tracks for participants...")
+        for identity, participant_info in human_participants.items():
+            if participant_info.audio_track is None:
+                logger.warning(
+                    f"⚠️  Participant {identity} ({participant_info.speaker_label}) "
+                    "has no audio track - may timeout during streaming"
+                )
+            else:
+                logger.info(
+                    f"✓ Participant {identity} ({participant_info.speaker_label}) "
+                    "has audio track ready"
+                )
+
         # Initialize stream managers for each participant
         for identity, participant_info in participants.items():
+            # Skip agent participants (bots that join for monitoring/transcription)
+            if participant_info.speaker_label == "agent":
+                logger.info(f"Skipping agent participant: {identity}")
+                continue
+
             manager = SpeakerStreamManager(
                 participant_identity=identity,
                 speaker_label=participant_info.speaker_label,
@@ -211,14 +239,34 @@ class AudioPipeline:
             await manager.start()
             self.stream_managers[identity] = manager
 
-        logger.info(f"Initialized {len(self.stream_managers)} stream managers")
+        logger.info(f"Initialized {len(self.stream_managers)} stream managers (skipped agents)")
         self._running = True
+
+    async def _stream_with_error_handling(self, manager) -> None:
+        """
+        Stream audio with graceful error handling for individual participants
+
+        This prevents one participant's failure from crashing the entire pipeline
+        """
+        try:
+            await manager.stream_audio()
+        except TimeoutError as e:
+            logger.warning(
+                f"Timeout for participant {manager.participant_identity}: {e} "
+                "- continuing with other participants"
+            )
+        except Exception as e:
+            logger.error(
+                f"Error streaming audio for {manager.participant_identity}: {e}",
+                exc_info=True
+            )
 
     async def _stream_all_audio(self) -> None:
         """Start audio streaming for all participants"""
         tasks = []
         for manager in self.stream_managers.values():
-            task = asyncio.create_task(manager.stream_audio())
+            # Wrap each stream in error handling
+            task = asyncio.create_task(self._stream_with_error_handling(manager))
             tasks.append(task)
 
         # Wait for all streaming tasks (they run indefinitely)

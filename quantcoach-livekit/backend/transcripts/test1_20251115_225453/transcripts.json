@@ -1,0 +1,258 @@
+{
+  "room": "test1",
+  "session_start": "2025-11-15T22:55:03.823243",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-15T22:55:03.823243",
+      "speaker": "recruiter",
+      "text": "Okay, we can start. Go ahead. Okay, we can start. Go ahead.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:55:05.728855",
+      "speaker": "recruiter",
+      "text": "Hi, Elias. I'm",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:55:07.837082",
+      "speaker": "recruiter",
+      "text": "St\u00e9phane. I will be your inter I will be your inter",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:55:13.794576",
+      "speaker": "recruiter",
+      "text": "I make a lot of PNL (",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:55:16.750985",
+      "speaker": "recruiter",
+      "text": "Piano) And you? Can you introduce yourself? (",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:55:19.877553",
+      "speaker": "candidate",
+      "text": "Hi St\u00e9phane, at the moment I make no P&L in Fortuna.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:55:26.190098",
+      "speaker": "candidate",
+      "text": "But I hope the API",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:55:28.832687",
+      "speaker": "recruiter",
+      "text": "Okay, it seems that... Oh my god, my god.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:55:34.981807",
+      "speaker": "recruiter",
+      "text": "Okay, there, there, there, there",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:55:35.111041",
+      "speaker": "recruiter",
+      "text": "No, there's no error. There's no error.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:55:35.154749",
+      "speaker": "recruiter",
+      "text": "For the moment it For the moment it",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:55:37.741079",
+      "speaker": "recruiter",
+      "text": "is good, we can continue. Can",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:55:40.746418",
+      "speaker": "recruiter",
+      "text": "we continue? What is the most important",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:55:46.734026",
+      "speaker": "recruiter",
+      "text": "technique in LLMs? LLMs.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:55:49.872214",
+      "speaker": "candidate",
+      "text": "For me, the most important technique is Transformers because it's very good. But we can also say, we can also say, uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:55:58.793366",
+      "speaker": "recruiter",
+      "text": "Okay, and can you explain BERT? What is BERT? What is E in BERT? What is E in BERT?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:03.250815",
+      "speaker": "candidate",
+      "text": ", the robot because robot may transformer robot may transformer",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:08.247130",
+      "speaker": "candidate",
+      "text": "better better.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:08.289778",
+      "speaker": "candidate",
+      "text": "Yes, of course. Of course.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:08.311499",
+      "speaker": "candidate",
+      "text": "Bert, Bert,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:08.322234",
+      "speaker": "candidate",
+      "text": "is a bilinear bilinear",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:08.472965",
+      "speaker": "candidate",
+      "text": "encoder uh we uh we",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:08.546278",
+      "speaker": "candidate",
+      "text": "which is very interesting because it because it result",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:08.723456",
+      "speaker": "candidate",
+      "text": "to encode some words and to open words and to open",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:13.730833",
+      "speaker": "recruiter",
+      "text": "Okay, and can you explain the, uh,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:20.050812",
+      "speaker": "recruiter",
+      "text": "how do you code the position, code the position?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:20.188638",
+      "speaker": "recruiter",
+      "text": "In tokenization. Tokenization.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:22.840543",
+      "speaker": "candidate",
+      "text": "Yes, so the old version was to, was to,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:28.626483",
+      "speaker": "candidate",
+      "text": "like to add some sinusoidal, some sinusoidal,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:28.699198",
+      "speaker": "candidate",
+      "text": "term to the embeddings, embeddings.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:31.761602",
+      "speaker": "candidate",
+      "text": "But now it's more interesting. You can take some rotation matrix and you can",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:34.729794",
+      "speaker": "candidate",
+      "text": "can look at what is the angle between some some amb",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:39.923484",
+      "speaker": "candidate",
+      "text": "Matrices.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:41.764305",
+      "speaker": "recruiter",
+      "text": "Okay, Elias, can you remind me, do you come from Polytechnique or",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:47.856575",
+      "speaker": "recruiter",
+      "text": "Polytechnic? I come from Polytechnique.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:49.782192",
+      "speaker": "candidate",
+      "text": "I come from Polytechnique, but I know a girl which is from Polytechnique, which is super nice. Nice.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:54.929379",
+      "speaker": "recruiter",
+      "text": "Okay, nice. Because if you are from polytechnics, it's very",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:56:59.914300",
+      "speaker": "recruiter",
+      "text": "difficult to get a job in the industry. The industry",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:57:00.146018",
+      "speaker": "recruiter",
+      "text": "is very difficult to get a job in the industry. The industry is very difficult to get a job in the industry. The",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:57:00.385934",
+      "speaker": "recruiter",
+      "text": "industry is very difficult to get a job in the industry. The industry is very difficult to get a job in the industry. Another subject. Another",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:57:01.711058",
+      "speaker": "candidate",
+      "text": "they mention.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:57:01.712678",
+      "speaker": "recruiter",
+      "text": "Okay, just to give an example for",
+      "is_final": true
+    }
+  ]
+}
