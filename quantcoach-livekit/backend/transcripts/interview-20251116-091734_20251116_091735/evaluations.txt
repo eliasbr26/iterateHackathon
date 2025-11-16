@@ -1,0 +1,43 @@
+
+================================================================================
+[09:19:29] EVALUATION
+================================================================================
+Window: 09:18:52 - 09:19:24
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.65)
+
+📝 Summary: The recruiter appears to be wrapping up the interview with self-reflection about not asking follow-up questions. They mention that no technical quant finance topics were covered and seem to be providing a preliminary evaluation.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content discussed
+   - Recruiter self-commentary only
+   - Fragmented speech suggests recording/transcription issues
+   - Explicit mention of 'no technical quant finances' indicates lack of substantive interview content
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:19:51] EVALUATION
+================================================================================
+Window: 09:19:24 - 09:19:30
+Transcripts: 2
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.60)
+
+📝 Summary: The recruiter appears to be scoring or evaluating something numerically (mentioning scores less than 1.8), but the context is unclear and no technical quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Insufficient context to understand conversation
+   - No technical discussion present
+   - Unclear what is being evaluated
+   - Very brief excerpt with ambiguous content
+

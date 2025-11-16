@@ -1,0 +1,164 @@
+
+================================================================================
+[10:08:19] EVALUATION
+================================================================================
+Window: 10:07:46 - 10:08:14
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.30)
+
+📝 Summary: The conversation contains only casual greetings and minimal interaction with no substantive content discussed. The recruiter repeats 'Hey yo' multiple times and the candidate responds with 'let's'.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No substantive interview content
+   - Extremely brief exchange
+   - Appears to be opening pleasantries or technical difficulties
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[10:08:26] EVALUATION
+================================================================================
+Window: 10:08:06 - 10:08:22
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.80)
+
+📝 Summary: This is the opening greeting and transition of the interview where the recruiter welcomes the candidate (Stepan) and indicates they will begin the interview questions.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content yet
+   - Interview just beginning
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[10:08:32] EVALUATION
+================================================================================
+Window: 10:08:14 - 10:08:27
+Transcripts: 4
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.75)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: Interview opening with brief greetings followed by the candidate beginning to explain regularization at a basic definitional level, though the response appears incomplete or interrupted.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Incomplete candidate response
+   - Very brief excerpt - limited context
+   - Candidate appears to be stuttering or restarting explanation
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[10:08:37] EVALUATION
+================================================================================
+Window: 10:08:21 - 10:08:32
+Transcripts: 4
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The interview begins with introductory greetings and quickly transitions to a technical question about regularization. The candidate starts to answer but the excerpt cuts off before a complete explanation is provided.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Incomplete answer - candidate was cut off mid-response
+   - Very brief excerpt - limited context for evaluation
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[10:08:42] EVALUATION
+================================================================================
+Window: 10:08:27 - 10:08:38
+Transcripts: 3
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter asked the candidate to explain regularization. The candidate began attempting to define it but struggled to articulate a clear explanation, mentioning variables and verifying properties without completing coherent thoughts.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Candidate struggling to provide clear definition
+   - Incomplete/incoherent response
+   - Very brief excerpt - limited context
+
+
+================================================================================
+[10:08:49] EVALUATION
+================================================================================
+Window: 10:08:32 - 10:08:43
+Transcripts: 4
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.70)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.30)
+
+📝 Summary: Recruiter asks about regularization, but the candidate's response is fragmented and unclear, mentioning loss percentages incoherently. The recruiter mentions 'a bug' which may indicate technical issues or miscommunication during the interview.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Candidate response incoherent or incomplete
+   - Technical communication issue or transcription error likely
+   - Recruiter mentions 'bug' - possible technical difficulty during interview
+   - No meaningful regularization discussion occurred despite topic being introduced
+
+
+================================================================================
+[10:08:55] EVALUATION
+================================================================================
+Window: 10:08:38 - 10:08:49
+Transcripts: 5
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.60)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.30)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.40)
+
+📝 Summary: Brief exchange mentioning sparse variables (likely L1 regularization/Lasso) and a bug discussion. The conversation is fragmented and difficult to interpret fully.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Fragmented conversation - difficult to assess context
+   - Recruiter mentions 'bug' repeatedly - unclear if discussing code issue or interview problem
+   - No clear question-answer structure
+   - Insufficient context to evaluate technical depth
+
+
+================================================================================
+[10:09:16] EVALUATION
+================================================================================
+Window: 10:08:43 - 10:08:49
+Transcripts: 4
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.60)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.30)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.40)
+
+📝 Summary: Fragment of a conversation mentioning sparse variables (likely L1 regularization/Lasso) and a bug discussion. Context is too limited to determine full technical depth.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Incomplete conversation fragment
+   - Unclear context
+   - Mention of 'bug' suggests possible code debugging discussion
+

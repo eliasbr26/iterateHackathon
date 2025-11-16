@@ -1,0 +1,106 @@
+
+================================================================================
+[10:10:35] EVALUATION
+================================================================================
+Window: 10:09:57 - 10:10:31
+Transcripts: 2
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 1.00)
+
+📝 Summary: The conversation contains only brief acknowledgments and a statement to begin the interview. No substantive technical or quant finance content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content yet
+   - Interview just starting
+   - Insufficient data for meaningful evaluation
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[10:11:08] EVALUATION
+================================================================================
+Window: 10:10:31 - 10:11:01
+Transcripts: 10
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.85)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.30)
+
+📝 Summary: The candidate was asked about cross-validation techniques and provided a basic explanation of K-Fold cross-validation, describing how the training set is divided into k parts with k-1 parts used for training and the remaining part for evaluation.
+
+🔑 Key Topics: CV_TECHNIQUES
+
+🚩 Flags:
+   - Interviewer questions not visible in transcript
+   - Candidate response appears incomplete or hesitant with multiple filler words
+   - Basic definition-level response lacking depth or practical application
+
+
+================================================================================
+[10:11:40] EVALUATION
+================================================================================
+Window: 10:10:52 - 10:11:34
+Transcripts: 9
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.85)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.30)
+
+📝 Summary: Candidate explains basic definitions of k-fold cross-validation and regularization with Lasso penalty, but struggles with articulation and appears to have gaps in understanding, particularly around linear algebra concepts.
+
+🔑 Key Topics: CV_TECHNIQUES, REGULARIZATION
+
+🚩 Flags:
+   - Candidate shows difficulty articulating concepts clearly
+   - Incomplete explanation of regularization
+   - Admitted knowledge gap in linear algebra
+   - No interviewer questions visible in excerpt
+
+
+================================================================================
+[10:12:16] EVALUATION
+================================================================================
+Window: 10:11:34 - 10:12:11
+Transcripts: 5
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.30)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.20)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.10)
+
+📝 Summary: The conversation excerpt shows fragmented, incomplete statements from the candidate mentioning linear algebra but contains no coherent technical discussion or clear interviewer responses.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incoherent conversation structure
+   - No clear interviewer participation visible
+   - Candidate appears confused or disoriented
+   - Insufficient content for meaningful evaluation
+   - Possible technical issues with recording or transcription
+
+
+================================================================================
+[10:12:52] EVALUATION
+================================================================================
+Window: 10:12:01 - 10:12:28
+Transcripts: 4
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.95)
+
+📝 Summary: The conversation consists only of incomplete utterances and repetitive filler words from the candidate with no substantive content or interviewer participation visible.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No substantive content detected
+   - Only candidate speech fragments present
+   - No interviewer questions or responses visible
+   - Possible technical or recording issues
+   - Insufficient data for meaningful evaluation
+

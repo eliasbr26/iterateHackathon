@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"from livekit.api import LiveKitAPI; help(LiveKitAPI.__init__)\":*)",
+      "Bash(curl:*)",
+      "Bash(python -m json.tool:*)",
+      "Bash(npx localtunnel --port 8000)",
+      "Bash(audio_pipeline/pipeline.py)",
+      "Bash(audio_pipeline/logging_config.py)",
+      "Bash(utils/__init__.py)",
+      "Bash(utils/generate_livekit_token.py)",
+      "Bash(tree:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,21 @@
+
+================================================================================
+[09:04:05] EVALUATION
+================================================================================
+Window: 09:03:26 - 09:03:40
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This excerpt contains only introductions and a casual comment about the airport. No quant finance topics were discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Possible audio/transcription issues with repeated text
+   - Off-topic/casual discussion detected ([EXTRA])
+

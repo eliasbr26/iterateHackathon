@@ -1,0 +1,89 @@
+
+================================================================================
+[09:22:49] EVALUATION
+================================================================================
+Window: 09:22:01 - 09:22:44
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: The conversation excerpt contains fragmented, unclear speech that appears to be either technical difficulties, casual banter, or incomprehensible dialogue. No substantive quant finance content is present.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incomprehensible dialogue
+   - No technical content
+   - Possible transcription error or audio issues
+   - Unable to assess interview quality
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:23:31] EVALUATION
+================================================================================
+Window: 09:22:44 - 09:23:26
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: The conversation appears to be garbled or mistranscribed text with no coherent discussion. The recruiter mentions being hungry, waiting, and references to a program/website and someone named Maggie, but no quant finance topics are addressed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Garbled or mistranscribed conversation
+   - No coherent quant finance discussion
+   - Possible technical issue with recording or transcription
+   - Off-topic discussion only
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:24:02] EVALUATION
+================================================================================
+Window: 09:23:26 - 09:23:56
+Transcripts: 9
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This conversation appears to be largely incoherent or mistranscribed, containing fragments in multiple languages discussing front-end/back-end development for an app, with mentions of someone named Maggie and a reference to 3 o'clock in the morning. No quantitative finance topics are discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Conversation appears mistranscribed or corrupted
+   - No technical quant finance content
+   - Unclear context and coherence
+   - Mixed languages and fragmented sentences
+   - Discussion about app development (front-end/back-end) not quant finance
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:24:47] EVALUATION
+================================================================================
+Window: 09:23:47 - 09:24:11
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This conversation appears to be fragmented or mistranscribed content discussing arriving at a hotel at 3am, taking taxis, and mentions of an app backend and video intimidation. No quantitative finance topics are discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - no quant finance content
+   - Conversation appears fragmented or mistranscribed
+   - Unable to identify clear interview structure
+   - Content may be translation artifacts or transcription errors
+   - Off-topic/casual discussion detected ([EXTRA])
+

@@ -1,0 +1,246 @@
+{
+  "room": "interview-20251116-095647",
+  "session_start": "2025-11-16T09:57:57.802365",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T09:57:57.802365",
+      "speaker": "candidate",
+      "text": "If we don't want to be filmed, okay? Okay, okay, okay, okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:58:33.985294",
+      "speaker": "candidate",
+      "text": "Okay, Java, do you hear me?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:58:42.920723",
+      "speaker": "candidate",
+      "text": "Thank you very much. Thank you. Thank you.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:58:45.783127",
+      "speaker": "candidate",
+      "text": "Yeah, so my name is Stefan. My name is Stefan.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:58:49.021234",
+      "speaker": "candidate",
+      "text": "I'm a fourth year student at Ecole Polytechnique. At Ecole Polytechnique",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:58:51.751813",
+      "speaker": "candidate",
+      "text": "and I'm currently attending the master's degree",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:58:54.755056",
+      "speaker": "candidate",
+      "text": "MVA mathematics vision",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:58:57.900822",
+      "speaker": "candidate",
+      "text": "and learning and thank you for this interview",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:59:18.769758",
+      "speaker": "candidate",
+      "text": "Yeah, cross validation is a mean of, is a mean of",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:59:24.467923",
+      "speaker": "candidate",
+      "text": "avoiding avoiding avoiding.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:59:24.468682",
+      "speaker": "candidate",
+      "text": "Overfitting, for example, for example,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:59:24.781907",
+      "speaker": "candidate",
+      "text": "the most used cross-validation is cross-validation is",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:59:27.885584",
+      "speaker": "candidate",
+      "text": "scaffold cross-validation it's when you when you",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:59:30.910063",
+      "speaker": "candidate",
+      "text": "when you devise your trainset your trainset",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:59:33.932163",
+      "speaker": "candidate",
+      "text": "into k parts and you use a k minus we use a k minus",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:59:36.763176",
+      "speaker": "candidate",
+      "text": "one part to train your models and then your models and then",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:59:39.877074",
+      "speaker": "candidate",
+      "text": "one last part to put it",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:59:42.727088",
+      "speaker": "candidate",
+      "text": "together.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:59:45.820863",
+      "speaker": "candidate",
+      "text": "Very useful to look at",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:59:48.948270",
+      "speaker": "candidate",
+      "text": "the high performance as for example.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:59:58.897538",
+      "speaker": "candidate",
+      "text": "Yeah, regulation is the mean, the mean.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:00:00.751975",
+      "speaker": "candidate",
+      "text": "It's the fact that, it's the fact that,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:00:03.839240",
+      "speaker": "candidate",
+      "text": "when we add a penalty term in the loss that we",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:00:06.776651",
+      "speaker": "candidate",
+      "text": "want to minimize it's",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:00:09.874186",
+      "speaker": "candidate",
+      "text": "very useful to make",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:00:12.735784",
+      "speaker": "candidate",
+      "text": "our variables respects respects",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:00:18.301178",
+      "speaker": "candidate",
+      "text": "some properties for example if for example if if",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:00:19.764244",
+      "speaker": "candidate",
+      "text": "you add a lesser regulation term our variable will be a variable will be a",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:00:42.878198",
+      "speaker": "candidate",
+      "text": "Sorry, I don't know. I am not good at linear algebra. Linear algebra.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:00:58.805566",
+      "speaker": "candidate",
+      "text": "Okay, sorry.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:01:15.773005",
+      "speaker": "candidate",
+      "text": "I don't know, I think we could try to organize",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:01:21.685848",
+      "speaker": "candidate",
+      "text": "the metrics or something like this or something like",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:01:22.078336",
+      "speaker": "candidate",
+      "text": "look at the eigen uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:01:24.709969",
+      "speaker": "candidate",
+      "text": "spaces",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:01:43.927507",
+      "speaker": "candidate",
+      "text": "Okay, I think it's too long Jawadla, too long Jawadla.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:01:54.891352",
+      "speaker": "candidate",
+      "text": "Yes, but in this case you just have to be more assertive, you have to treat me like a",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:02:01.068988",
+      "speaker": "candidate",
+      "text": "human being. I'm not a human being. I'm not a human being.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:02:03.773107",
+      "speaker": "candidate",
+      "text": "If not, we'll do it again in 30 seconds and we'll continue.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:02:05.740537",
+      "speaker": "candidate",
+      "text": "Okay. Okay.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:02:12.740919",
+      "speaker": "candidate",
+      "text": "We cut the video and we redo it, otherwise",
+      "is_final": true
+    }
+  ]
+}

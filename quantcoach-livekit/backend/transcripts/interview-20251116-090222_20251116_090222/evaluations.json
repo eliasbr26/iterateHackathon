@@ -1,0 +1,27 @@
+{
+  "room": "interview-20251116-090222",
+  "total_evaluations": 1,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T09:04:05.419522",
+      "window_start": "2025-11-16T09:03:26.090638",
+      "window_end": "2025-11-16T09:03:40.126461",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This excerpt contains only introductions and a casual comment about the airport. No quant finance topics were discussed.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "No technical content",
+        "Possible audio/transcription issues with repeated text",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.9,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This excerpt contains only introductions and a casual comment about the airport. No quant finance topics were discussed.\",\n    \"flags\": [\"Off-topic discussion\", \"No technical content\", \"Possible audio/transcription issues with repeated text\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.9\n}\n```"
+    }
+  ]
+}

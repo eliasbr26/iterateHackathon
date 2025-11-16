@@ -1,0 +1,177 @@
+{
+  "room": "interview-20251116-093243",
+  "total_evaluations": 8,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T09:33:29.471931",
+      "window_start": "2025-11-16T09:33:19.376953",
+      "window_end": "2025-11-16T09:33:25.322586",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This excerpt contains only initial greetings and casual exchanges between recruiter and candidate with no substantive quant finance discussion.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "No technical content",
+        "Interview appears to be in very early greeting phase",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.9,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This excerpt contains only initial greetings and casual exchanges between recruiter and candidate with no substantive quant finance discussion.\",\n    \"flags\": [\"Off-topic discussion\", \"No technical content\", \"Interview appears to be in very early greeting phase\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.9\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:34:03.208571",
+      "window_start": "2025-11-16T09:33:19.376953",
+      "window_end": "2025-11-16T09:33:58.190654",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This excerpt captures only the initial greeting phase of the interview with informal exchanges and apparent audio connection issues. No substantive quant finance discussion has begun.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - only greetings present",
+        "Audio/connection issues mentioned",
+        "No technical content yet",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.9,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This excerpt captures only the initial greeting phase of the interview with informal exchanges and apparent audio connection issues. No substantive quant finance discussion has begun.\",\n    \"flags\": [\n        \"Off-topic discussion - only greetings present\",\n        \"Audio/connection issues mentioned\",\n        \"No technical content yet\"\n    ],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.9\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:34:07.971556",
+      "window_start": "2025-11-16T09:33:58.190654",
+      "window_end": "2025-11-16T09:34:03.426523",
+      "transcripts_evaluated": 2,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "Technical difficulty at the start of the interview where the recruiter cannot hear the candidate, leading to a brief exchange about resolving the audio issue.",
+      "key_topics": [],
+      "flags": [
+        "Technical audio issues",
+        "Interview has not substantively begun",
+        "No technical content discussed",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.9,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"Technical difficulty at the start of the interview where the recruiter cannot hear the candidate, leading to a brief exchange about resolving the audio issue.\",\n    \"flags\": [\"Technical audio issues\", \"Interview has not substantively begun\", \"No technical content discussed\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.9\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:34:15.015739",
+      "window_start": "2025-11-16T09:33:58.190654",
+      "window_end": "2025-11-16T09:34:10.189109",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "This is a brief technical difficulty exchange where the recruiter indicates audio problems and both parties are trying to resolve the connection issue before the interview can properly begin.",
+      "key_topics": [],
+      "flags": [
+        "Technical difficulties before interview started",
+        "No substantive content discussed",
+        "Audio connection problems",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"This is a brief technical difficulty exchange where the recruiter indicates audio problems and both parties are trying to resolve the connection issue before the interview can properly begin.\",\n    \"flags\": [\"Technical difficulties before interview started\", \"No substantive content discussed\", \"Audio connection problems\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:34:34.090972",
+      "window_start": "2025-11-16T09:34:03.426523",
+      "window_end": "2025-11-16T09:34:29.278415",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This appears to be the initial connection phase of an interview with technical difficulties. The conversation consists only of greetings and attempts to establish audio/video communication with no substantive content discussed.",
+      "key_topics": [],
+      "flags": [
+        "No technical content",
+        "Communication/connection issues",
+        "Incoherent dialogue suggesting audio problems",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.9,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This appears to be the initial connection phase of an interview with technical difficulties. The conversation consists only of greetings and attempts to establish audio/video communication with no substantive content discussed.\",\n    \"flags\": [\"No technical content\", \"Communication/connection issues\", \"Incoherent dialogue suggesting audio problems\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.9\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:34:39.569168",
+      "window_start": "2025-11-16T09:34:26.189468",
+      "window_end": "2025-11-16T09:34:34.464523",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This excerpt captures only technical difficulties at the start of the interview with connection issues and unintelligible audio from the candidate. No substantive discussion occurred.",
+      "key_topics": [],
+      "flags": [
+        "Technical difficulties - audio/video connection issues",
+        "Unintelligible candidate response",
+        "No actual interview content",
+        "Interview may not have properly started",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.9,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This excerpt captures only technical difficulties at the start of the interview with connection issues and unintelligible audio from the candidate. No substantive discussion occurred.\",\n    \"flags\": [\n        \"Technical difficulties - audio/video connection issues\",\n        \"Unintelligible candidate response\",\n        \"No actual interview content\",\n        \"Interview may not have properly started\"\n    ],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.9\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:34:44.685979",
+      "window_start": "2025-11-16T09:34:26.189468",
+      "window_end": "2025-11-16T09:34:39.933829",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This appears to be a technical difficulty scenario where the recruiter and candidate are experiencing audio/video connection problems, with no substantive interview content taking place.",
+      "key_topics": [],
+      "flags": [
+        "No interview content - technical difficulties",
+        "Incoherent candidate audio",
+        "Connection issues preventing interview",
+        "No quant finance topics discussed",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.9,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This appears to be a technical difficulty scenario where the recruiter and candidate are experiencing audio/video connection problems, with no substantive interview content taking place.\",\n    \"flags\": [\n        \"No interview content - technical difficulties\",\n        \"Incoherent candidate audio\",\n        \"Connection issues preventing interview\",\n        \"No quant finance topics discussed\"\n    ],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.9\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:36:01.059703",
+      "window_start": "2025-11-16T09:34:34.464523",
+      "window_end": "2025-11-16T09:34:44.692716",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "This appears to be a technical difficulty moment at the start of an interview where the recruiter indicates they cannot see the candidate, followed by unintelligible or fragmented audio/text from the candidate, possibly attempting to address microphone issues.",
+      "key_topics": [],
+      "flags": [
+        "Technical difficulties present",
+        "No substantive interview content",
+        "Communication breakdown",
+        "Unintelligible candidate responses",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.98,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"This appears to be a technical difficulty moment at the start of an interview where the recruiter indicates they cannot see the candidate, followed by unintelligible or fragmented audio/text from the candidate, possibly attempting to address microphone issues.\",\n    \"flags\": [\n        \"Technical difficulties present\",\n        \"No substantive interview content\",\n        \"Communication breakdown\",\n        \"Unintelligible candidate responses\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.98,\n    \"confidence_tone\": 0.7\n}\n```"
+    }
+  ]
+}

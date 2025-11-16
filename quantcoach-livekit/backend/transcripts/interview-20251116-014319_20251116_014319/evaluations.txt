@@ -1,0 +1,246 @@
+
+================================================================================
+[01:44:50] EVALUATION
+================================================================================
+Window: 01:44:22 - 01:44:45
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.30)
+
+📝 Summary: This excerpt contains no substantive interview content - only audio/technical testing and fragmented speech that appears to be the recruiter checking equipment or connection quality.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No interview content present
+   - Technical testing only
+   - Inappropriate language used during testing
+   - No candidate responses recorded
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:45:08] EVALUATION
+================================================================================
+Window: 01:44:41 - 01:45:02
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: HARSH (confidence: 1.00)
+
+📝 Summary: This conversation contains no discernible quant finance content and consists of incoherent, hostile, and inappropriate statements from the recruiter including direct threats and expressions of hatred toward the candidate.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Extremely inappropriate and hostile language
+   - Direct threats made by recruiter
+   - No professional content whatsoever
+   - Potentially abusive interview environment
+   - Incoherent speech patterns
+   - No technical discussion occurred
+   - Serious ethical and professional concerns
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:45:28] EVALUATION
+================================================================================
+Window: 01:44:53 - 01:45:23
+Transcripts: 9
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: HARSH (confidence: 1.00)
+
+📝 Summary: The recruiter exhibits highly unprofessional and hostile behavior with inappropriate statements, then abruptly asks a basic question about cross-validation at the end.
+
+🔑 Key Topics: CV_TECHNIQUES
+
+🚩 Flags:
+   - Extremely unprofessional and hostile language
+   - Inappropriate threatening statements
+   - Incoherent rambling before technical question
+   - Abrupt topic shift to technical content
+   - Serious behavioral concerns
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:45:50] EVALUATION
+================================================================================
+Window: 01:45:23 - 01:45:44
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.90)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The recruiter briefly asked about cross-validation but then apologized repeatedly and made incoherent statements about unrelated topics. No substantive technical discussion occurred.
+
+🔑 Key Topics: CV_TECHNIQUES
+
+🚩 Flags:
+   - Incoherent conversation
+   - Recruiter apologies and disjointed communication
+   - No candidate responses recorded
+   - Technical question asked but not pursued
+   - Possible transcription errors or technical issues
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:46:02] EVALUATION
+================================================================================
+Window: 01:45:35 - 01:45:57
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: The conversation consists of fragmented, unclear statements that appear to be either transcription errors or casual pre-interview chatter. No substantive quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Unintelligible conversation
+   - Possible transcription errors
+   - No technical content detected
+   - Cannot assess interview quality
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:46:19] EVALUATION
+================================================================================
+Window: 01:45:50 - 01:46:14
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.30)
+
+📝 Summary: The conversation appears to be fragmented or possibly corrupted text with repeated phrases about 'Fuki' and 'pushing' that contain no discernible quant finance content. This does not appear to be a legitimate interview exchange.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Unintelligible conversation
+   - No technical content detected
+   - Possible transcription error or corrupted data
+   - Not a valid interview exchange
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:46:37] EVALUATION
+================================================================================
+Window: 01:46:09 - 01:46:32
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation appears to be fragmented technical troubleshooting or connection issues, with no discernible quant finance content. The recruiter seems to be struggling with some technical setup or connectivity problem.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No quant finance content detected
+   - Conversation appears fragmented or corrupted
+   - Possible technical difficulties with interview setup
+   - Unable to assess interview quality
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:46:58] EVALUATION
+================================================================================
+Window: 01:46:29 - 01:46:53
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation appears fragmented and incoherent, containing only casual remarks and transitions without any discernible quant finance content or technical discussion.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content detected
+   - Conversation appears incomplete or corrupted
+   - Unable to identify clear questions or answers
+   - Possible transcription error or audio quality issue
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:47:11] EVALUATION
+================================================================================
+Window: 01:46:44 - 01:47:05
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.75)
+
+📝 Summary: The conversation appears fragmented and unclear, consisting of incomplete statements by the recruiter with no discernible technical content. The recruiter seems to be having technical difficulties or the transcript is corrupted, ending with what appears to be confirming someone's name (Stefan).
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Conversation appears corrupted or poorly transcribed
+   - No technical quant finance content present
+   - Only recruiter speaking - no candidate responses captured
+   - Fragmented and incoherent dialogue
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:47:47] EVALUATION
+================================================================================
+Window: 01:47:00 - 01:47:42
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This excerpt captures the initial moments of an interview beginning, with the recruiter apparently verifying the candidate's name (Stefan from Reverso) and indicating that the interview is starting. No technical content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content
+   - Interview just beginning
+   - Incomplete/fragmented conversation
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:48:46] EVALUATION
+================================================================================
+Window: 01:47:42 - 01:47:53
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt contains only casual conversation fragments from the recruiter, appearing to be pre-interview small talk or technical setup discussion. No substantive quant finance content is present.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Incomplete/fragmented conversation
+   - Interview appears not yet started
+   - Off-topic/casual discussion detected ([EXTRA])
+

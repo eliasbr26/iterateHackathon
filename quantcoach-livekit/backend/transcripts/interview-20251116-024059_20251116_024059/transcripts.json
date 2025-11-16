@@ -1,0 +1,30 @@
+{
+  "room": "interview-20251116-024059",
+  "session_start": "2025-11-16T02:42:13.937334",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T02:42:13.937334",
+      "speaker": "recruiter",
+      "text": "We would want also to have a good time.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T02:42:18.959351",
+      "speaker": "recruiter",
+      "text": "but that's not but",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T02:42:27.928018",
+      "speaker": "recruiter",
+      "text": "Before it dies man, before it dies man.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T02:42:31.080316",
+      "speaker": "recruiter",
+      "text": "I'm gonna keep it alive. Yeah.",
+      "is_final": true
+    }
+  ]
+}

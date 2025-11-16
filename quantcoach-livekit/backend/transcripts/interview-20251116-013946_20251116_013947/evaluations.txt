@@ -1,0 +1,90 @@
+
+================================================================================
+[01:41:41] EVALUATION
+================================================================================
+Window: 01:41:15 - 01:41:36
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The recruiter appears to be having technical difficulties or informal conversation, struggling to find words and making disjointed statements. No substantive quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Unprofessional language detected
+   - No technical content
+   - Recruiter appears disorganized or distracted
+   - Possible technical/communication issues
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:41:59] EVALUATION
+================================================================================
+Window: 01:41:31 - 01:41:54
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.60)
+
+📝 Summary: This excerpt contains only fragmented, unclear statements from the recruiter with no coherent discussion. The speaker appears to be having a confused or frustrated internal monologue with no actual interview content.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No interview content detected
+   - Incoherent conversation
+   - Recruiter appears unprepared or frustrated
+   - No candidate responses present
+   - Unprofessional language used
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:42:14] EVALUATION
+================================================================================
+Window: 01:41:48 - 01:42:09
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.99)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.99)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt contains only casual chat and technical setup communication from the recruiter, with fragmented speech suggesting interview preparation or audio/video setup. No substantive quant finance discussion occurs.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Fragmented communication suggesting technical difficulties or setup phase
+   - Interview has not properly started
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:42:42] EVALUATION
+================================================================================
+Window: 01:42:06 - 01:42:14
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation appears to be the opening moments of an interview with unclear/garbled audio or transcription. The recruiter seems to be settling in and possibly having technical difficulties or making informal remarks before the interview properly begins.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Unclear/garbled conversation
+   - No substantive content
+   - Possible transcription errors
+   - Interview has not properly started
+   - Off-topic/casual discussion detected ([EXTRA])
+

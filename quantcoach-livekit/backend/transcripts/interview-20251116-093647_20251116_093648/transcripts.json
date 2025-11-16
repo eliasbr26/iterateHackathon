@@ -1,0 +1,378 @@
+{
+  "room": "interview-20251116-093647",
+  "session_start": "2025-11-16T09:37:19.467563",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T09:37:19.467563",
+      "speaker": "candidate",
+      "text": "Okay okay okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:37:19.468846",
+      "speaker": "recruiter",
+      "text": "Okay okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:37:23.578288",
+      "speaker": "candidate",
+      "text": "Let's see.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:37:26.522585",
+      "speaker": "candidate",
+      "text": "(crowd chattering)",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:37:28.615734",
+      "speaker": "candidate",
+      "text": "- Sounds like, sounds like",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:37:30.623777",
+      "speaker": "candidate",
+      "text": "(echoing)",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:37:32.675042",
+      "speaker": "candidate",
+      "text": "(beeping) - Keep up with it. Keep up with it.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:37:32.834492",
+      "speaker": "recruiter",
+      "text": "okay okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:37:37.903550",
+      "speaker": "candidate",
+      "text": "(beeping)",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:37:43.010312",
+      "speaker": "candidate",
+      "text": "(speaking in foreign language)",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:37:43.164734",
+      "speaker": "candidate",
+      "text": "- So, so.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:37:44.542372",
+      "speaker": "candidate",
+      "text": "- Hi, I'm Stephan El Echani. I'm a fourth",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:37:44.701277",
+      "speaker": "recruiter",
+      "text": "Okay, hello. Okay, hello.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:37:50.170051",
+      "speaker": "candidate",
+      "text": "year student. - Yeah, yeah, yeah, yeah, yeah, yeah, yeah, yeah, yeah, yeah, yeah",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:37:50.171326",
+      "speaker": "recruiter",
+      "text": "Number, number",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:38:00.183583",
+      "speaker": "candidate",
+      "text": ". I'm a fourth year student at Ecithia student at Ecithia",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:38:05.085473",
+      "speaker": "candidate",
+      "text": "student at Ecithia Polytechnic and I am well and I am well and I am well",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:38:06.662901",
+      "speaker": "recruiter",
+      "text": "Hello.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:38:16.700878",
+      "speaker": "candidate",
+      "text": "When you want to make your variable respect some kind of property",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:38:16.702520",
+      "speaker": "candidate",
+      "text": "this for example if you add",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:38:23.385161",
+      "speaker": "candidate",
+      "text": "a certain penalty term in the loss that you want to minimize your variable will be different.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:38:23.386106",
+      "speaker": "candidate",
+      "text": "For example, you can add a",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:38:23.535039",
+      "speaker": "candidate",
+      "text": "less penalty term to have a",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:38:23.535953",
+      "speaker": "recruiter",
+      "text": "Okay, yeah.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:38:30.332764",
+      "speaker": "candidate",
+      "text": "variable",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:38:35.646489",
+      "speaker": "recruiter",
+      "text": "Okay, nice. (indistinct chatter)",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:38:35.647638",
+      "speaker": "candidate",
+      "text": ". I can also speak about time series. Uh, uh,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:38:44.780267",
+      "speaker": "recruiter",
+      "text": "(",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:38:50.210821",
+      "speaker": "candidate",
+      "text": "time series is a way of modeling, way of modeling",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:38:54.930116",
+      "speaker": "candidate",
+      "text": "modeling",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:38:55.086770",
+      "speaker": "recruiter",
+      "text": "inaudible)",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:38:55.088295",
+      "speaker": "recruiter",
+      "text": "Okay. Okay.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:38:55.089934",
+      "speaker": "candidate",
+      "text": "values that evolve through time. There exists a lot of models in time series, but I think the most used one for the moment in finance is the ARIMA model",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:39:00.286268",
+      "speaker": "recruiter",
+      "text": "Okay. Okay.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:39:05.659437",
+      "speaker": "candidate",
+      "text": ". It is an autoregressive",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:39:05.662237",
+      "speaker": "candidate",
+      "text": "model .",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:39:12.315819",
+      "speaker": "candidate",
+      "text": "And do you have a question? Do you have a question",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:39:12.632703",
+      "speaker": "recruiter",
+      "text": "Amazing. I think, yeah, I think you are very not knowledgeable. You don't know anything. It's very unfortunate, but I don't think you can make it for this role. For this role.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:39:18.318251",
+      "speaker": "recruiter",
+      "text": "okay okay uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:39:20.855483",
+      "speaker": "recruiter",
+      "text": "can you tell me about the expectancy and the variance of a poisson law poisson law",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:39:23.917946",
+      "speaker": "recruiter",
+      "text": "that's that's",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:39:26.732250",
+      "speaker": "recruiter",
+      "text": "probably assertion distribution where where uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:39:29.692713",
+      "speaker": "recruiter",
+      "text": "I mean for binomial where the input the input",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:39:32.835012",
+      "speaker": "recruiter",
+      "text": "are not independent.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:39:42.664410",
+      "speaker": "recruiter",
+      "text": "okay maybe yeah maybe yeah",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:39:48.533047",
+      "speaker": "recruiter",
+      "text": "okay I understand it's okay it's okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:40:02.856530",
+      "speaker": "recruiter",
+      "text": "let's modify the bridge here here it's",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:40:05.674154",
+      "speaker": "recruiter",
+      "text": "voltage but but",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:40:14.859249",
+      "speaker": "recruiter",
+      "text": "I'm not sure if you can see it, but there's a video of the... the... the... the... the... the... the... the... the... the... the... the... the",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:40:20.667725",
+      "speaker": "recruiter",
+      "text": "- Did you move the house? - Yes, it moved. -",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:40:24.722888",
+      "speaker": "recruiter",
+      "text": "I was asked to interview Arsenal.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:40:29.812756",
+      "speaker": "recruiter",
+      "text": "a scenario okay that's that's",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:40:32.644706",
+      "speaker": "recruiter",
+      "text": "okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:40:39.763221",
+      "speaker": "recruiter",
+      "text": "Can we walk? It doesn't walk. It's a",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:40:47.853356",
+      "speaker": "recruiter",
+      "text": "It's true that we can put a table here.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:40:50.923207",
+      "speaker": "recruiter",
+      "text": "But I wanted to put it here, but wait, okay, wait, okay, wait, okay, wait, okay,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:40:56.721176",
+      "speaker": "recruiter",
+      "text": "hey uh can you put the inter put the inter",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:40:59.642670",
+      "speaker": "recruiter",
+      "text": "yeah yeah same",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:41:08.688381",
+      "speaker": "recruiter",
+      "text": "make it scrollable what I mean what I mean",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:41:17.691899",
+      "speaker": "recruiter",
+      "text": "at the same place as the dashboard and analysis etc.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:41:20.791890",
+      "speaker": "recruiter",
+      "text": "That's same height, height,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:41:23.806362",
+      "speaker": "recruiter",
+      "text": "that's on the right. Is it, is it, do",
+      "is_final": true
+    }
+  ]
+}

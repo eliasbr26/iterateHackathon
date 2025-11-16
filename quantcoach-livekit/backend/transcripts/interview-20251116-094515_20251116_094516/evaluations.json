@@ -1,0 +1,49 @@
+{
+  "room": "interview-20251116-094515",
+  "total_evaluations": 2,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T09:47:11.407650",
+      "window_start": "2025-11-16T09:46:23.509828",
+      "window_end": "2025-11-16T09:47:06.577819",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation appears to be pre-interview setup or technical difficulties with recording equipment. No substantive quant finance content was discussed.",
+      "key_topics": [],
+      "flags": [
+        "No technical content discussed",
+        "Appears to be recording setup/technical issues",
+        "Fragmented/unclear communication",
+        "No actual interview questions asked",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation appears to be pre-interview setup or technical difficulties with recording equipment. No substantive quant finance content was discussed.\",\n    \"flags\": [\n        \"No technical content discussed\",\n        \"Appears to be recording setup/technical issues\",\n        \"Fragmented/unclear communication\",\n        \"No actual interview questions asked\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:47:56.733621",
+      "window_start": "2025-11-16T09:47:06.577819",
+      "window_end": "2025-11-16T09:47:32.635039",
+      "transcripts_evaluated": 8,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation appears to be incomplete or corrupted audio/text with fragmented words and phrases in multiple languages. No coherent quant finance discussion is discernible.",
+      "key_topics": [],
+      "flags": [
+        "Unintelligible conversation",
+        "No technical content detected",
+        "Possible transcription error or audio corruption",
+        "Mixed languages without clear context"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.9,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation appears to be incomplete or corrupted audio/text with fragmented words and phrases in multiple languages. No coherent quant finance discussion is discernible.\",\n    \"flags\": [\n        \"Unintelligible conversation\",\n        \"No technical content detected\",\n        \"Possible transcription error or audio corruption\",\n        \"Mixed languages without clear context\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.90\n}\n```"
+    }
+  ]
+}

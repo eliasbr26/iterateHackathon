@@ -1,0 +1,111 @@
+[02:00:40] 👔 RECRUITER: What's the what what's the what
+[02:00:40] 👤 CANDIDATE: Must have a watch. Must have a watch.
+[02:00:48] 👔 RECRUITER: why I can't see you
+[02:00:55] 👤 CANDIDATE: Too sad.
+[02:01:00] 👤 CANDIDATE: You don't have the privilege.
+[02:01:02] 👤 CANDIDATE: Okay, great. You have the privilege. You have the privilege.
+[02:01:02] 👔 RECRUITER: Okay, nice. I can see you.
+[02:01:07] 👤 CANDIDATE: Just to see my beautiful face.
+[02:01:12] 👔 RECRUITER: yeah I think you're beautiful now
+[02:01:17] 👔 RECRUITER: I'm just kidding
+[02:01:18] 👔 RECRUITER: Yes, I got the transcription.
+[02:01:18] 👤 CANDIDATE: Do you have the transcription?
+[02:01:23] 👤 CANDIDATE: Okay. Okay.
+[02:01:24] 👔 RECRUITER: It's weird.
+[02:01:30] 👤 CANDIDATE: Why? What happened? What happened?
+[02:01:35] 👔 RECRUITER: Yeah, give me a second. Give me a second.
+[02:01:39] 👔 RECRUITER: I think the transcription is quite cheap.
+[02:01:39] 👤 CANDIDATE: oh no it's because of uh because of uh 11
+[02:01:44] 👤 CANDIDATE: collapse it's not our full powerful
+[02:01:44] 👔 RECRUITER: Ah, yeah, it's, uh, the transcription is not, uh, live. Live.
+[02:01:48] 👔 RECRUITER: Ah.
+[02:01:48] 👤 CANDIDATE: you live okay so okay so
+[02:01:53] 👤 CANDIDATE: okay it has a little bit of delay hey
+[02:01:53] 👔 RECRUITER: I mean, there is a 10 second delay. 10 second delay.
+[02:01:58] 👔 RECRUITER: Okay. Okay.
+[02:01:58] 👤 CANDIDATE: 10 seconds 10 seconds
+[02:02:02] 👤 CANDIDATE: quite okay actually actually
+[02:02:02] 👔 RECRUITER: I guess, I mean, you don't need to look at the transcription directly.
+[02:02:06] 👤 CANDIDATE: yeah good and and and
+[02:02:11] 👤 CANDIDATE: do you have the the topic if topic if
+[02:02:11] 👤 CANDIDATE: we if for example if for example
+[02:02:11] 👤 CANDIDATE: people I speak about cross-validation about cross-validation
+[02:02:14] 👔 RECRUITER: Yes, we are going to speak a little bit about cross-validation. How do you do K-fold cross-validation?
+[02:02:19] 👔 RECRUITER: When you have mis
+[02:02:21] 👔 RECRUITER: count.
+[02:02:21] 👤 CANDIDATE: If I have missing values, missing values,
+[02:02:26] 👤 CANDIDATE: unknown, unknown,
+[02:02:27] 👔 RECRUITER: Yes. You have 10 seconds, sir.
+[02:02:32] 👤 CANDIDATE: unknown. Okay, so maybe I can speak about K
+[02:02:38] 👤 CANDIDATE: . The validation, it's when you, it's when you,
+[02:02:38] 👤 CANDIDATE: you have your, you have your,
+[02:02:41] 👔 RECRUITER: Okay.
+[02:02:46] 👤 CANDIDATE: uh, training set, you divide it into k parts, and you use, uh, k minus one part to train, and train, and,
+[02:02:51] 👔 RECRUITER: Take a look.
+[02:02:56] 👤 CANDIDATE: and then, uh, uh, uh, uh,
+[02:03:00] 👤 CANDIDATE: one, uh, one part to, to,
+[02:03:00] 👤 CANDIDATE: to validate, uh, your scores, uh, your scores
+[02:03:01] 👤 CANDIDATE: . For example, if you, if you're looking for hyper parameters or anything like that,
+[02:03:01] 👔 RECRUITER: OK, nice. OK, very good. Do you
+[02:03:06] 👔 RECRUITER: know anything about time series?
+[02:03:08] 👤 CANDIDATE: Yeah, time series is a way to model
+[02:03:14] 👔 RECRUITER: What's that? What's that?
+[02:03:19] 👤 CANDIDATE: Some values that evolve in the time. There's a lot of, uh,
+[02:03:24] 👤 CANDIDATE: techniques, techniques,
+[02:03:24] 👤 CANDIDATE: in time series. in time series. A
+[02:03:24] 👔 RECRUITER: Yo Adam, quick question. What is the true space for after photo?
+[02:03:29] 👤 CANDIDATE: we can do.
+[02:03:34] 👤 CANDIDATE: Like for example, prediction, there are
+[02:03:34] 👤 CANDIDATE: also a lot of model
+[02:03:34] 👤 CANDIDATE: models in time series is quite useful
+[02:03:34] 👔 RECRUITER: you put it before water in this brush or after this brush or after
+[02:03:39] 👔 RECRUITER: this brush
+[02:03:40] 👤 CANDIDATE: in quantitative research for example or in trading. I know the
+[02:03:45] 👤 CANDIDATE: RMA model itself it's
+[02:03:45] 👤 CANDIDATE: the auto progressive
+[02:03:45] 👤 CANDIDATE: I don't have the rest
+[02:03:47] 👔 RECRUITER: Okay, okay, it's very good. Good, good, good. Okay, just to Okay, just to
+[02:03:53] 👔 RECRUITER: I think you're a shit candidate, a shit candidate, a
+[02:03:53] 👔 RECRUITER: shit candidate. I think you're very, very bad, bad,
+[02:03:53] 👔 RECRUITER: bad. That is what I did. That's what I did
+[02:03:54] 👤 CANDIDATE: So mean. I'm so sad.
+[02:04:00] 👔 RECRUITER: . Okay, we are good. We are good.
+[02:04:07] 👔 RECRUITER: Okay, I'm still very professional despite that. Okay.
+[02:04:07] 👔 RECRUITER: Is that yours? No, that's yours. No, that
+[02:04:08] 👔 RECRUITER: I've seen you before. Have you? Have you? Have you?
+[02:04:08] 👤 CANDIDATE: oh oh so we have to correct that but if uh if all of all of
+[02:04:14] 👤 CANDIDATE: what if it didn't work
+[02:04:14] 👔 RECRUITER: You're done. I'm ready. Perfect. Perfect.
+[02:04:18] 👔 RECRUITER: Yes. Okay. So, okay. So, front.
+[02:04:18] 👤 CANDIDATE: it's good
+[02:04:23] 👔 RECRUITER: Should we front it now? Now?
+[02:04:23] 👤 CANDIDATE: so okay so okay
+[02:04:33] 👤 CANDIDATE: do you have the the topic coverage does it work oh
+[02:04:33] 👔 RECRUITER: Front end? Yeah, mostly front end now. Yeah, the pick coverage is very good.
+[02:04:38] 👔 RECRUITER: But the flag
+[02:04:38] 👤 CANDIDATE: okay and the live transcript is good and the the difficulty level uh try to to ask to ask
+[02:04:43] 👤 CANDIDATE: me some very basic questions basic questions
+[02:04:43] 👔 RECRUITER: my knowledge will focus about that because the
+[02:04:48] 👤 CANDIDATE: and then just ask me just ask me a
+[02:04:53] 👤 CANDIDATE: very very difficult one of my difficult one of my
+[02:04:53] 👤 CANDIDATE: automatic or something
+[02:04:55] 👤 CANDIDATE: 2 + 2 is 5.
+[02:04:56] 👔 RECRUITER: Okay, so what is two plus two? It
+[02:05:05] 👔 RECRUITER: but the transcription is really anything
+[02:05:15] 👔 RECRUITER: I don't know what's wrong
+[02:05:21] 👔 RECRUITER: with the transcription. You did. Can't description. You did. Can't
+[02:05:26] 👔 RECRUITER: and what I say sometimes it doesn't seem like it, I mean I ask you a question and you say the answer and your answer appears before mine, your answer appears before
+[02:05:31] 👔 RECRUITER: mine.
+[02:05:35] 👔 RECRUITER: I think we're going to sound.
+[02:05:36] 👤 CANDIDATE: Thank you.
+[02:05:41] 👔 RECRUITER: We'll move on.
+[02:05:46] 👔 RECRUITER: So, we can't put the live transcript in a window apart. Like this
+[02:06:02] 👔 RECRUITER: Like it was before. In fact, if you're interested, it's not a live transcript. It's... After, in
+[02:06:02] 👤 CANDIDATE: Yes, that's true, that's true, that's true. But we had
+[02:06:07] 👔 RECRUITER: fact, it's a live transcript. It's important to have the live transcript to see what the
+[02:06:07] 👤 CANDIDATE: to say that we wanted to follow up on questions, follow up on questions,
+[02:06:07] 👤 CANDIDATE: if it was hard or not, if it was just
+[02:06:11] 👤 CANDIDATE: easy. I sometimes move the cursor depending on the question, you know, like
+[02:06:15] 👔 RECRUITER: but that's how it's done in real life the exam is becoming easier I have the impression
+[02:06:20] 👔 RECRUITER: that I'm doing well
+[02:06:27] 👤 CANDIDATE: Go ahead, I'm coming. Wait, wait, wait.

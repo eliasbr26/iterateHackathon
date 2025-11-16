@@ -1,0 +1,21 @@
+
+================================================================================
+[09:32:58] EVALUATION
+================================================================================
+Window: 09:27:57 - 09:28:21
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: This excerpt contains fragmented speech that appears to be technical difficulties or navigation instructions (possibly screen sharing or interface issues) with no discernible quant finance content.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content detected
+   - Fragmented/incomplete conversation
+   - Possible technical difficulties during interview
+   - Unable to assess interview quality from this excerpt
+

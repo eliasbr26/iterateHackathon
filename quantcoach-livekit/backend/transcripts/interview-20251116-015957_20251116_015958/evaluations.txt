@@ -1,0 +1,1118 @@
+
+================================================================================
+[02:00:53] EVALUATION
+================================================================================
+Window: 02:00:40 - 02:00:48
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This excerpt contains only technical difficulties with the video/audio connection setup, with the recruiter unable to see the candidate and both parties experiencing communication issues.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Technical connection issues
+   - No substantive interview content
+   - Very brief excerpt
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:01:00] EVALUATION
+================================================================================
+Window: 02:00:40 - 02:00:55
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This appears to be a technical difficulty moment at the start of an interview where the recruiter and candidate are having audio/video connection issues and cannot see or hear each other properly.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Technical connection issues
+   - No substantive content discussed
+   - Interview has not properly started
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:01:07] EVALUATION
+================================================================================
+Window: 02:00:48 - 02:01:02
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.90)
+
+📝 Summary: This excerpt captures the initial technical setup phase of the interview where the recruiter and candidate are troubleshooting video connection issues before the actual interview begins.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - technical setup only
+   - No substantive interview content
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:01:12] EVALUATION
+================================================================================
+Window: 02:00:55 - 02:01:07
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.70)
+
+📝 Summary: This excerpt captures the initial video connection setup between recruiter and candidate, with casual banter about video visibility before the substantive interview begins.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Interview not yet started
+   - No technical content present
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:01:17] EVALUATION
+================================================================================
+Window: 02:01:00 - 02:01:12
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: This excerpt captures the initial technical setup phase of the interview where participants are testing video connection and exchanging casual pleasantries before beginning the substantive discussion.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content present
+   - Interview has not yet begun substantively
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:01:22] EVALUATION
+================================================================================
+Window: 02:01:02 - 02:01:18
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: This excerpt contains only casual banter and setup conversation between the candidate and recruiter, including jokes about appearance and confirming transcription setup. No technical quant finance content was discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Interview appears to be in setup phase
+   - No technical content yet
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:01:30] EVALUATION
+================================================================================
+Window: 02:01:12 - 02:01:24
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt contains only casual banter and logistical discussion about transcription, with no technical quant finance content whatsoever.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Inappropriate comment from recruiter
+   - Appears to be pre-interview or break conversation
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:01:34] EVALUATION
+================================================================================
+Window: 02:01:17 - 02:01:30
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.85)
+
+📝 Summary: Brief casual exchange between recruiter and candidate about transcription logistics, with no technical quant finance content discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No substantive interview content
+   - Administrative/logistical conversation only
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:01:39] EVALUATION
+================================================================================
+Window: 02:01:23 - 02:01:35
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.80)
+
+📝 Summary: Brief technical interruption in the interview where the recruiter experiences some issue and asks for a moment to resolve it. No substantive quant finance content discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Technical interruption
+   - No substantive content
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:01:44] EVALUATION
+================================================================================
+Window: 02:01:30 - 02:01:39
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: Brief technical disruption or connection issue during the interview with fragmented conversation about transcription and unclear references to '11'. No quant finance content discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Technical/connection issues apparent
+   - Incomplete or fragmented conversation
+   - No substantive interview content
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:01:48] EVALUATION
+================================================================================
+Window: 02:01:30 - 02:01:44
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.85)
+
+📝 Summary: This excerpt appears to capture a technical difficulty moment where the candidate and recruiter are troubleshooting transcription or connection issues. No quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Technical difficulties with transcription/connection
+   - No substantive interview content
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:01:53] EVALUATION
+================================================================================
+Window: 02:01:35 - 02:01:48
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.85)
+
+📝 Summary: This excerpt captures technical difficulties with transcription services at the beginning of an interview. No quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Technical setup issues
+   - No substantive interview content
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:01:58] EVALUATION
+================================================================================
+Window: 02:01:39 - 02:01:53
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.90)
+
+📝 Summary: This excerpt contains only technical troubleshooting discussion about transcription delay and audio quality issues. No quant finance content was discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Technical difficulties with transcription system
+   - No substantive interview content
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:02:02] EVALUATION
+================================================================================
+Window: 02:01:44 - 02:01:58
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.90)
+
+📝 Summary: This excerpt captures the beginning of an interview where the candidate and recruiter are troubleshooting technical issues with audio/video transcription delay, with no substantive content discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Technical setup issues
+   - No interview content yet
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:02:06] EVALUATION
+================================================================================
+Window: 02:01:48 - 02:02:02
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.85)
+
+📝 Summary: This excerpt contains only technical setup discussion about audio/video delay and transcription, with no quant finance content discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Technical setup only
+   - No substantive interview content
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:02:11] EVALUATION
+================================================================================
+Window: 02:01:53 - 02:02:06
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: This excerpt captures the beginning of an interview with technical setup discussion about audio/video delay and transcription. No quant finance content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - technical setup only
+   - Interview appears to be just starting
+   - No substantive content to evaluate
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:02:19] EVALUATION
+================================================================================
+Window: 02:01:58 - 02:02:14
+Transcripts: 9
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The conversation begins with casual technical setup discussion and transitions into a quant finance topic when the recruiter asks the candidate to explain how to perform K-fold cross-validation.
+
+🔑 Key Topics: CV_TECHNIQUES
+
+🚩 Flags:
+   - Conversation includes audio/setup issues
+   - Question just posed - no answer yet to evaluate
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:02:26] EVALUATION
+================================================================================
+Window: 02:02:06 - 02:02:21
+Transcripts: 8
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: MEDIUM (confidence: 0.75)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter asks about K-fold cross-validation methodology, specifically how to handle it when missing values are present in the dataset. The candidate appears to be confirming the topic before answering.
+
+🔑 Key Topics: CV_TECHNIQUES
+
+🚩 Flags:
+   - Incomplete exchange - answer not yet provided
+   - Communication clarity issues - candidate speech fragmented
+
+
+================================================================================
+[02:02:32] EVALUATION
+================================================================================
+Window: 02:02:14 - 02:02:27
+Transcripts: 6
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: MEDIUM (confidence: 0.85)
+💬 Interviewer Tone: HARSH (confidence: 0.90)
+
+📝 Summary: Recruiter asked about K-fold cross-validation implementation with missing values. Candidate appeared to struggle with the response, and recruiter imposed a strict 10-second time limit.
+
+🔑 Key Topics: CV_TECHNIQUES, DATA_PIPELINE
+
+🚩 Flags:
+   - Harsh tone detected - strict 10-second deadline imposed
+   - Candidate appears to be struggling with response
+   - Incomplete conversation - question interrupted
+   - Possible language barrier or communication difficulty
+
+
+================================================================================
+[02:02:38] EVALUATION
+================================================================================
+Window: 02:02:19 - 02:02:32
+Transcripts: 6
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: MEDIUM (confidence: 0.65)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: Recruiter asks about handling missing values in data, giving the candidate 10 seconds to respond. The candidate struggles initially but mentions considering K-fold (likely K-nearest neighbors imputation or K-fold cross-validation context).
+
+🔑 Key Topics: CV_TECHNIQUES, DATA_PIPELINE
+
+🚩 Flags:
+   - Very brief exchange - limited context
+   - Time pressure imposed (10 seconds)
+   - Candidate appears to struggle with articulation
+   - Incomplete response - candidate cut off mid-sentence
+
+
+================================================================================
+[02:02:46] EVALUATION
+================================================================================
+Window: 02:02:26 - 02:02:41
+Transcripts: 6
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.75)
+💬 Interviewer Tone: HARSH (confidence: 0.80)
+
+📝 Summary: The candidate appears to be attempting to explain K-fold cross-validation under time pressure (10 seconds), but struggles to articulate the concept clearly before being cut off.
+
+🔑 Key Topics: CV_TECHNIQUES
+
+🚩 Flags:
+   - Harsh tone detected - very short time limit imposed
+   - Candidate struggling to articulate response clearly
+   - Incomplete explanation of cross-validation
+   - Extremely brief exchange - insufficient to assess candidate knowledge
+
+
+================================================================================
+[02:02:51] EVALUATION
+================================================================================
+Window: 02:02:32 - 02:02:46
+Transcripts: 5
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.85)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.70)
+
+📝 Summary: The candidate is explaining K-fold cross-validation, describing how a training set is divided into k parts where k-1 parts are used for training. The explanation appears incomplete but is on the right track.
+
+🔑 Key Topics: CV_TECHNIQUES
+
+🚩 Flags:
+   - Incomplete explanation
+   - Candidate appears hesitant or struggling with articulation
+
+
+================================================================================
+[02:02:56] EVALUATION
+================================================================================
+Window: 02:02:38 - 02:02:51
+Transcripts: 5
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.85)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.60)
+
+📝 Summary: The candidate is explaining K-Fold cross-validation, describing how to divide a training set into k parts and use k-1 parts for training. The explanation appears incomplete or interrupted.
+
+🔑 Key Topics: CV_TECHNIQUES
+
+🚩 Flags:
+   - Incomplete explanation - candidate appears to be struggling or was interrupted
+   - Fragmented speech pattern suggests nervousness or difficulty articulating
+   - Very brief excerpt - limited context for full assessment
+
+
+================================================================================
+[02:03:00] EVALUATION
+================================================================================
+Window: 02:02:41 - 02:02:56
+Transcripts: 4
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.85)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.60)
+
+📝 Summary: The candidate is explaining k-fold cross-validation, describing how the training set is divided into k parts with k-1 parts used for training. The explanation appears incomplete with hesitation.
+
+🔑 Key Topics: CV_TECHNIQUES
+
+🚩 Flags:
+   - Incomplete explanation
+   - Candidate showing hesitation/uncertainty
+   - Interruption or redirect from interviewer
+
+
+================================================================================
+[02:03:06] EVALUATION
+================================================================================
+Window: 02:02:46 - 02:03:01
+Transcripts: 7
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: The candidate is explaining k-fold cross-validation, describing how the training set is divided into k parts with k-1 parts used for training and one part for validation, mentioning its use for hyperparameter tuning. The recruiter provides positive feedback.
+
+🔑 Key Topics: CV_TECHNIQUES
+
+🚩 Flags:
+   - Candidate shows hesitation with multiple 'uh' fillers
+   - Explanation is basic but correct
+
+
+================================================================================
+[02:03:14] EVALUATION
+================================================================================
+Window: 02:02:56 - 02:03:08
+Transcripts: 7
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.90)
+🎯 Question Difficulty: EASY (confidence: 0.85)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.75)
+
+📝 Summary: Candidate discusses validation techniques and hyperparameter tuning (likely cross-validation). Recruiter then transitions to asking about time series knowledge, and candidate begins to respond with a basic definition.
+
+🔑 Key Topics: CV_TECHNIQUES, TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Candidate speech is fragmented with multiple fillers
+   - Very brief exchange - limited context for full assessment
+   - Time series answer appears incomplete/cut off
+
+
+================================================================================
+[02:03:19] EVALUATION
+================================================================================
+Window: 02:03:00 - 02:03:14
+Transcripts: 7
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.80)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.75)
+
+📝 Summary: The candidate discusses validation techniques and hyperparameter tuning (cross-validation context), then the recruiter transitions to asking about time series modeling. The candidate begins to answer but the excerpt cuts off.
+
+🔑 Key Topics: CV_TECHNIQUES, TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Incomplete answer - candidate response about time series cut off
+   - Brief excerpt limits full assessment
+
+
+================================================================================
+[02:03:24] EVALUATION
+================================================================================
+Window: 02:03:06 - 02:03:19
+Transcripts: 4
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: Recruiter asks candidate about knowledge of time series. Candidate begins to provide a basic definition describing time series as values that evolve over time but is interrupted mid-response.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Candidate interrupted before completing answer
+   - Very brief exchange - limited assessment possible
+
+
+================================================================================
+[02:03:29] EVALUATION
+================================================================================
+Window: 02:03:14 - 02:03:24
+Transcripts: 5
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.70)
+🎯 Question Difficulty: EASY (confidence: 0.60)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.30)
+
+📝 Summary: The candidate begins explaining time series concepts but the conversation is fragmented and unclear. The recruiter interrupts with an unrelated question about 'true space for after photo' which appears off-topic.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Highly fragmented conversation
+   - Unclear or garbled dialogue
+   - Recruiter's final question appears unrelated to quant finance
+   - Candidate's explanation incomplete
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:03:34] EVALUATION
+================================================================================
+Window: 02:03:19 - 02:03:29
+Transcripts: 5
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.70)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.60)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.50)
+
+📝 Summary: Candidate begins explaining time series concepts but is interrupted by recruiter asking an unclear off-topic question about 'true space for after photo', making the technical discussion incomplete.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Conversation fragment - incomplete context
+   - Recruiter question unclear/possibly unrelated
+   - Technical discussion interrupted before substantive content delivered
+   - Candidate's response cut off mid-explanation
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:03:39] EVALUATION
+================================================================================
+Window: 02:03:19 - 02:03:34
+Transcripts: 9
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.70)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.60)
+
+📝 Summary: The candidate begins explaining time series concepts including prediction and models, but the recruiter interrupts with an off-topic question about photo editing or a brush, creating a disjointed and unprofessional exchange.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Severe interruption - recruiter asked completely off-topic question
+   - Unprofessional interview conduct
+   - Candidate's response fragmented and incomplete
+   - Interview appears disrupted or possibly misaligned audio
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:03:45] EVALUATION
+================================================================================
+Window: 02:03:24 - 02:03:40
+Transcripts: 9
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.40)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.20)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.20)
+
+📝 Summary: The candidate mentions time series applications in prediction, modeling, and quantitative research/trading, but the conversation is fragmented and difficult to follow. The recruiter's question about 'true space for after photo' and 'water in this brush' is unclear and possibly garbled audio/transcription.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Poor audio quality or transcription errors
+   - Fragmented conversation - difficult to assess content
+   - Recruiter's question is unintelligible
+   - Incomplete responses from candidate
+
+
+================================================================================
+[02:03:52] EVALUATION
+================================================================================
+Window: 02:03:34 - 02:03:47
+Transcripts: 10
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.70)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.75)
+
+📝 Summary: Candidate discusses time series models in quantitative research and trading, specifically mentioning ARMA (autoregressive moving average) models but struggles to recall the complete definition. Recruiter provides positive feedback.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Candidate shows incomplete knowledge of ARMA model terminology
+   - Recruiter's question unclear due to fragmented speech
+   - Conversation quality is poor - unclear and fragmented dialogue
+
+
+================================================================================
+[02:04:00] EVALUATION
+================================================================================
+Window: 02:03:39 - 02:03:54
+Transcripts: 10
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.75)
+💬 Interviewer Tone: HARSH (confidence: 0.99)
+
+📝 Summary: Candidate briefly mentioned ARIMA models in context of quantitative research/trading but couldn't complete the explanation. The interviewer responded extremely negatively and unprofessionally, calling the candidate derogatory names.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Extremely harsh and unprofessional tone detected
+   - Interviewer used abusive language repeatedly
+   - Inappropriate interview conduct
+   - Candidate was not given opportunity to properly answer
+   - Conversation appears fragmented or possibly transcription error
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:04:06] EVALUATION
+================================================================================
+Window: 02:03:45 - 02:04:00
+Transcripts: 9
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.85)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.40)
+💬 Interviewer Tone: HARSH (confidence: 0.98)
+
+📝 Summary: Candidate briefly mentions ARMA (autoregressive) model but conversation quickly deteriorates into unprofessional interaction where recruiter makes highly inappropriate negative comments about the candidate.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Extremely harsh and unprofessional tone detected
+   - Recruiter made inappropriate derogatory comments
+   - Conversation lacks professional structure
+   - Incomplete technical discussion - candidate's ARMA explanation cut off
+   - Possible hostile interview environment
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:04:13] EVALUATION
+================================================================================
+Window: 02:03:53 - 02:04:08
+Transcripts: 9
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: HARSH (confidence: 1.00)
+
+📝 Summary: This excerpt contains unprofessional and hostile language from the recruiter calling the candidate derogatory terms, followed by confused and fragmented dialogue with no technical content.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Extremely unprofessional and hostile language from recruiter
+   - No technical content discussed
+   - Incoherent conversation structure
+   - Potential inappropriate interview conduct
+   - Candidate appears distressed by comments
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:04:18] EVALUATION
+================================================================================
+Window: 02:04:00 - 02:04:14
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt contains only casual pre-interview banter with fragmented dialogue about technical setup and readiness. No substantive quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Appears to be pre-interview setup or technical difficulties
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:04:23] EVALUATION
+================================================================================
+Window: 02:04:07 - 02:04:18
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt appears to capture pre-interview small talk or technical setup issues, with fragmented dialogue about getting ready and settling in. No substantive quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content discussed
+   - Fragmented/unclear dialogue - possible audio issues or transition period
+   - Cannot assess interviewer competency from this excerpt
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:04:28] EVALUATION
+================================================================================
+Window: 02:04:08 - 02:04:23
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: This excerpt contains fragmented, incomplete dialogue that appears to be technical difficulties or pre-interview setup rather than substantive interview content. No quant finance topics are discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Unintelligible conversation
+   - No technical content
+   - Possible audio/recording issues
+   - Appears to be pre-interview setup or technical difficulties
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:04:33] EVALUATION
+================================================================================
+Window: 02:04:14 - 02:04:23
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: This excerpt appears to capture technical setup or transition moments with fragmented speech patterns. No substantive quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content detected
+   - Fragmented conversation suggests technical difficulties or transition period
+   - Insufficient data to evaluate interview quality
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:04:38] EVALUATION
+================================================================================
+Window: 02:04:14 - 02:04:33
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt captures the beginning of an interview with technical setup issues and casual conversation about getting started. No substantive quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - no technical content
+   - Setup/transition phase only
+   - Unclear communication - fragmented sentences
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:04:43] EVALUATION
+================================================================================
+Window: 02:04:23 - 02:04:38
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This appears to be a technical setup conversation where the recruiter and candidate are discussing audio/video quality, transcript functionality, and preparing to begin the actual interview. No quant finance content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Pre-interview setup conversation
+   - No technical content discussed yet
+   - Audio quality check in progress
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:04:48] EVALUATION
+================================================================================
+Window: 02:04:33 - 02:04:43
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: This appears to be a technical setup or preliminary discussion where the candidate is checking audio/video quality and requesting that the interviewer ask basic-level questions. No actual quant finance content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - technical setup only
+   - No quant finance content discussed
+   - Conversation appears fragmented or unclear
+   - Candidate explicitly requesting easy questions
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:04:53] EVALUATION
+================================================================================
+Window: 02:04:38 - 02:04:48
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This appears to be a meta-conversation about interview setup and difficulty level, with the candidate requesting basic questions. No actual quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - interview setup only
+   - Fragmented conversation - unclear context
+   - No technical content present
+   - Candidate appears to be directing interview difficulty
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:05:02] EVALUATION
+================================================================================
+Window: 02:04:43 - 02:04:56
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation appears to be a preliminary exchange where the candidate requests basic questions followed by difficult ones, then provides an incorrect answer to a trivial arithmetic question (2+2=5), while the recruiter begins to ask what 2+2 equals.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - no quant finance content
+   - Trivial arithmetic question asked (2+2)
+   - Candidate provided incorrect answer to basic arithmetic
+   - Conversation appears fragmented or poorly transcribed
+   - No substantive technical content
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:05:20] EVALUATION
+================================================================================
+Window: 02:04:48 - 02:05:15
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt appears to be a technical or communication issue during the interview setup, with the candidate making unclear statements and the recruiter commenting on transcription problems. No substantive quant finance content was discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Communication/transcription issues reported
+   - No clear technical discussion
+   - Incoherent candidate statements
+   - Possible technical difficulties with interview platform
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:05:31] EVALUATION
+================================================================================
+Window: 02:05:05 - 02:05:26
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: The recruiter is discussing technical difficulties with the transcription system, noting that responses appear out of order and the transcription quality is poor. No quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - technical issues only
+   - No interview content present
+   - Transcription system malfunction mentioned
+   - Cannot assess interview quality due to lack of substantive content
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:05:40] EVALUATION
+================================================================================
+Window: 02:05:21 - 02:05:36
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: This excerpt contains only technical difficulties with audio/video synchronization during the interview setup. No quant finance content was discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Technical audio/video issues
+   - No substantive interview content
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:05:45] EVALUATION
+================================================================================
+Window: 02:05:26 - 02:05:41
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.75)
+
+📝 Summary: This excerpt appears to be a technical difficulty moment during the interview where the recruiter is discussing audio/video synchronization issues, followed by a decision to move forward with the interview.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Technical difficulties discussed
+   - No substantive interview content
+   - Audio/video lag mentioned
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:06:06] EVALUATION
+================================================================================
+Window: 02:05:31 - 02:06:02
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: This excerpt contains only technical setup discussion about transcription windows and logistics, with no quant finance content discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Technical setup/logistics only
+   - No substantive interview content
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:06:20] EVALUATION
+================================================================================
+Window: 02:06:02 - 02:06:15
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.70)
+
+📝 Summary: This appears to be a casual meta-conversation about the interview process itself, discussing transcripts, follow-up questions, and exam difficulty. No actual quant finance technical content is present.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Fragmented/unclear conversation
+   - Possibly discussing interview format rather than technical material
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:06:32] EVALUATION
+================================================================================
+Window: 02:06:07 - 02:06:27
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.75)
+
+📝 Summary: This appears to be a casual, fragmented conversation about exam logistics and difficulty perceptions, with no substantive quant finance content discussed. The recruiter makes encouraging remarks about the exam becoming easier.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical quant finance content
+   - Fragmented conversation possibly due to transcription issues
+   - Unclear context - may be pre/post-interview small talk
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:06:56] EVALUATION
+================================================================================
+Window: 02:06:20 - 02:06:27
+Transcripts: 2
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This excerpt captures only the very beginning of the interview with informal greetings and the candidate appears to be getting settled or dealing with a brief interruption before the conversation properly begins.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Interview not yet started
+   - No technical content present
+   - Off-topic/casual discussion detected ([EXTRA])
+

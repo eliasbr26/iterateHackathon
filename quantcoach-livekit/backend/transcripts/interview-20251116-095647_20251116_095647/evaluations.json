@@ -1,0 +1,188 @@
+{
+  "room": "interview-20251116-095647",
+  "total_evaluations": 8,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T09:58:38.956885",
+      "window_start": "2025-11-16T09:57:57.803757",
+      "window_end": "2025-11-16T09:58:33.988327",
+      "transcripts_evaluated": 2,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation consists only of pre-interview setup discussion about filming preferences and audio check confirmation. No technical content has been discussed yet.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "Interview has not started",
+        "Only logistical setup conversation",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 1.0,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation consists only of pre-interview setup discussion about filming preferences and audio check confirmation. No technical content has been discussed yet.\",\n    \"flags\": [\"Off-topic discussion\", \"Interview has not started\", \"Only logistical setup conversation\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 1.0\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:59:24.110633",
+      "window_start": "2025-11-16T09:58:33.988327",
+      "window_end": "2025-11-16T09:59:18.771188",
+      "transcripts_evaluated": 8,
+      "subject_relevance": "partially_relevant",
+      "question_difficulty": "easy",
+      "interviewer_tone": "unknown",
+      "summary": "Interview beginning with introductions where candidate (Stefan, 4th year at Ecole Polytechnique) introduces himself and starts answering what appears to be a basic question about cross-validation.",
+      "key_topics": [
+        "CV_TECHNIQUES"
+      ],
+      "flags": [
+        "Very brief excerpt",
+        "Mostly introductory content",
+        "Answer on cross-validation incomplete",
+        "No interviewer speech captured",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.85,
+      "confidence_difficulty": 0.75,
+      "confidence_tone": 0.2,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[CV_TECHNIQUES]\", \"[EXTRA]\"],\n    \"subject_relevance\": \"partially_relevant\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"Interview beginning with introductions where candidate (Stefan, 4th year at Ecole Polytechnique) introduces himself and starts answering what appears to be a basic question about cross-validation.\",\n    \"flags\": [\"Very brief excerpt\", \"Mostly introductory content\", \"Answer on cross-validation incomplete\", \"No interviewer speech captured\"],\n    \"confidence_subject\": 0.85,\n    \"confidence_difficulty\": 0.75,\n    \"confidence_tone\": 0.2\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:59:54.901461",
+      "window_start": "2025-11-16T09:59:18.771188",
+      "window_end": "2025-11-16T09:59:48.949574",
+      "transcripts_evaluated": 12,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "unknown",
+      "summary": "The candidate explains cross-validation as a technique to avoid overfitting, specifically describing k-fold cross-validation where the training set is divided into k parts, using k-1 parts for training and 1 for validation.",
+      "key_topics": [
+        "CV_TECHNIQUES",
+        "REGULARIZATION"
+      ],
+      "flags": [
+        "Candidate shows hesitation and repetitive speech patterns",
+        "Explanation lacks clarity and completeness",
+        "Only candidate speaking - no interviewer questions visible in excerpt",
+        "Mentions 'scaffold cross-validation' which appears to be confused terminology (likely meant k-fold)",
+        "Incomplete explanation of how cross-validation works"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.75,
+      "confidence_tone": 0.3,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[CV_TECHNIQUES]\", \"[REGULARIZATION]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The candidate explains cross-validation as a technique to avoid overfitting, specifically describing k-fold cross-validation where the training set is divided into k parts, using k-1 parts for training and 1 for validation.\",\n    \"flags\": [\n        \"Candidate shows hesitation and repetitive speech patterns\",\n        \"Explanation lacks clarity and completeness\",\n        \"Only candidate speaking - no interviewer questions visible in excerpt\",\n        \"Mentions 'scaffold cross-validation' which appears to be confused terminology (likely meant k-fold)\",\n        \"Incomplete explanation of how cross-validation works\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.75,\n    \"confidence_tone\": 0.3\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T10:00:18.016795",
+      "window_start": "2025-11-16T09:59:39.877932",
+      "window_end": "2025-11-16T10:00:12.737446",
+      "transcripts_evaluated": 10,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The candidate is discussing regularization techniques, specifically mentioning the concept of adding a penalty term to the loss function to constrain variables, though the explanation is fragmented and incomplete.",
+      "key_topics": [
+        "REGULARIZATION"
+      ],
+      "flags": [
+        "Fragmented speech - difficult to assess understanding",
+        "No interviewer dialogue visible",
+        "Incomplete explanation of regularization concept"
+      ],
+      "confidence_subject": 0.85,
+      "confidence_difficulty": 0.3,
+      "confidence_tone": 0.2,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[REGULARIZATION]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The candidate is discussing regularization techniques, specifically mentioning the concept of adding a penalty term to the loss function to constrain variables, though the explanation is fragmented and incomplete.\",\n    \"flags\": [\"Fragmented speech - difficult to assess understanding\", \"No interviewer dialogue visible\", \"Incomplete explanation of regularization concept\"],\n    \"confidence_subject\": 0.85,\n    \"confidence_difficulty\": 0.3,\n    \"confidence_tone\": 0.2\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T10:00:48.200323",
+      "window_start": "2025-11-16T10:00:03.840346",
+      "window_end": "2025-11-16T10:00:42.880347",
+      "transcripts_evaluated": 7,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "unknown",
+      "summary": "Candidate attempts to explain regularization and penalty terms in loss functions, specifically mentioning Lasso regularization, but struggles to complete the explanation and admits lack of knowledge in linear algebra.",
+      "key_topics": [
+        "REGULARIZATION"
+      ],
+      "flags": [
+        "Candidate shows incomplete understanding of regularization concepts",
+        "Candidate explicitly admits weakness in linear algebra",
+        "Response is fragmented and incomplete",
+        "No interviewer input visible in this excerpt"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.75,
+      "confidence_tone": 0.2,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[REGULARIZATION]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"Candidate attempts to explain regularization and penalty terms in loss functions, specifically mentioning Lasso regularization, but struggles to complete the explanation and admits lack of knowledge in linear algebra.\",\n    \"flags\": [\n        \"Candidate shows incomplete understanding of regularization concepts\",\n        \"Candidate explicitly admits weakness in linear algebra\",\n        \"Response is fragmented and incomplete\",\n        \"No interviewer input visible in this excerpt\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.75,\n    \"confidence_tone\": 0.2\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T10:01:21.328505",
+      "window_start": "2025-11-16T10:00:42.880347",
+      "window_end": "2025-11-16T10:01:15.774929",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "unknown",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "Candidate apologizes multiple times for not knowing linear algebra and appears uncertain or struggling to respond. The excerpt is too brief and lacks context to determine what was actually discussed or asked.",
+      "key_topics": [],
+      "flags": [
+        "Insufficient conversation context",
+        "Only candidate responses visible - no interviewer questions",
+        "Candidate showing uncertainty and lack of knowledge",
+        "Linear algebra mentioned but no clear quant finance connection in excerpt"
+      ],
+      "confidence_subject": 0.3,
+      "confidence_difficulty": 0.2,
+      "confidence_tone": 0.1,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"unknown\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"Candidate apologizes multiple times for not knowing linear algebra and appears uncertain or struggling to respond. The excerpt is too brief and lacks context to determine what was actually discussed or asked.\",\n    \"flags\": [\n        \"Insufficient conversation context\",\n        \"Only candidate responses visible - no interviewer questions\",\n        \"Candidate showing uncertainty and lack of knowledge\",\n        \"Linear algebra mentioned but no clear quant finance connection in excerpt\"\n    ],\n    \"confidence_subject\": 0.3,\n    \"confidence_difficulty\": 0.2,\n    \"confidence_tone\": 0.1\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T10:02:00.804572",
+      "window_start": "2025-11-16T10:01:15.774929",
+      "window_end": "2025-11-16T10:01:54.892627",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "partially_relevant",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "Candidate makes fragmented statements about organizing metrics and eigenspaces (possibly related to PCA/dimensionality reduction), then transitions to discussing interview dynamics and assertiveness. The technical content is minimal and unclear.",
+      "key_topics": [
+        "FEATURE_SELECTION"
+      ],
+      "flags": [
+        "Fragmented technical discussion - unclear context",
+        "Candidate discussing interview process/dynamics rather than answering technical questions",
+        "Insufficient interviewer input to assess tone or questions",
+        "Possible language barrier or communication difficulty ('Jawadla' repetition)",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.7,
+      "confidence_difficulty": 0.8,
+      "confidence_tone": 0.3,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[FEATURE_SELECTION]\", \"[EXTRA]\"],\n    \"subject_relevance\": \"partially_relevant\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"Candidate makes fragmented statements about organizing metrics and eigenspaces (possibly related to PCA/dimensionality reduction), then transitions to discussing interview dynamics and assertiveness. The technical content is minimal and unclear.\",\n    \"flags\": [\n        \"Fragmented technical discussion - unclear context\",\n        \"Candidate discussing interview process/dynamics rather than answering technical questions\",\n        \"Insufficient interviewer input to assess tone or questions\",\n        \"Possible language barrier or communication difficulty ('Jawadla' repetition)\"\n    ],\n    \"confidence_subject\": 0.7,\n    \"confidence_difficulty\": 0.8,\n    \"confidence_tone\": 0.3\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T10:02:36.102146",
+      "window_start": "2025-11-16T10:01:54.892627",
+      "window_end": "2025-11-16T10:02:12.742709",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation appears to be a meta-discussion about the interview process itself, with the candidate discussing restarting or redoing a video recording. No quant finance topics were discussed.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - no technical content",
+        "Unclear context - appears to be technical difficulties or recording issues",
+        "Possible interview disruption or restart",
+        "Fragmented speech suggests recording or transcription issues",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation appears to be a meta-discussion about the interview process itself, with the candidate discussing restarting or redoing a video recording. No quant finance topics were discussed.\",\n    \"flags\": [\n        \"Off-topic discussion - no technical content\",\n        \"Unclear context - appears to be technical difficulties or recording issues\",\n        \"Possible interview disruption or restart\",\n        \"Fragmented speech suggests recording or transcription issues\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.7\n}\n```"
+    }
+  ]
+}

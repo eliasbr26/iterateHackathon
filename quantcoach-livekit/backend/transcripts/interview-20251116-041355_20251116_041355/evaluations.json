@@ -1,0 +1,247 @@
+{
+  "room": "interview-20251116-041355",
+  "total_evaluations": 11,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T04:15:38.122368",
+      "window_start": "2025-11-16T04:15:00.759919",
+      "window_end": "2025-11-16T04:15:32.773794",
+      "transcripts_evaluated": 8,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "harsh",
+      "summary": "The conversation appears to be fragmented and incoherent, with the recruiter repeatedly saying 'shut up' and making unclear statements about 'timeline' and 'inclusion' without any clear quant finance content. The transcript may be corrupted or poorly captured.",
+      "key_topics": [],
+      "flags": [
+        "Harsh tone detected - recruiter says 'shut up' multiple times",
+        "Conversation is incoherent and fragmented",
+        "No clear technical discussion",
+        "Possible transcript quality issues",
+        "Unprofessional communication"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"harsh\",\n    \"summary\": \"The conversation appears to be fragmented and incoherent, with the recruiter repeatedly saying 'shut up' and making unclear statements about 'timeline' and 'inclusion' without any clear quant finance content. The transcript may be corrupted or poorly captured.\",\n    \"flags\": [\n        \"Harsh tone detected - recruiter says 'shut up' multiple times\",\n        \"Conversation is incoherent and fragmented\",\n        \"No clear technical discussion\",\n        \"Possible transcript quality issues\",\n        \"Unprofessional communication\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T04:16:03.595861",
+      "window_start": "2025-11-16T04:15:24.796395",
+      "window_end": "2025-11-16T04:15:58.800582",
+      "transcripts_evaluated": 8,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation appears fragmented and incoherent, with the recruiter making disjointed statements about 'timeline' without clear context. No recognizable quant finance topics were discussed.",
+      "key_topics": [],
+      "flags": [
+        "Incoherent conversation structure",
+        "No technical content identified",
+        "Possible transcription errors or communication issues",
+        "Unclear if this is actual interview content",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation appears fragmented and incoherent, with the recruiter making disjointed statements about 'timeline' without clear context. No recognizable quant finance topics were discussed.\",\n    \"flags\": [\n        \"Incoherent conversation structure\",\n        \"No technical content identified\",\n        \"Possible transcription errors or communication issues\",\n        \"Unclear if this is actual interview content\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.90,\n    \"confidence_tone\": 0.70\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T04:16:34.902011",
+      "window_start": "2025-11-16T04:15:58.800582",
+      "window_end": "2025-11-16T04:16:29.952279",
+      "transcripts_evaluated": 12,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This excerpt contains only technical testing of recording/transcription functionality with no substantive interview content. The recruiter is testing if the system scrolls and continues recording while speaking casually.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "No interview content present",
+        "Appears to be technical setup/testing phase",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.9,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This excerpt contains only technical testing of recording/transcription functionality with no substantive interview content. The recruiter is testing if the system scrolls and continues recording while speaking casually.\",\n    \"flags\": [\"Off-topic discussion\", \"No interview content present\", \"Appears to be technical setup/testing phase\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.9\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T04:16:55.824006",
+      "window_start": "2025-11-16T04:16:20.794710",
+      "window_end": "2025-11-16T04:16:50.970547",
+      "transcripts_evaluated": 12,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This excerpt contains only casual conversation between recruiters discussing timing and filling time before an interview begins. No technical quant finance content is present.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "No technical content",
+        "Appears to be pre-interview or technical setup conversation",
+        "No candidate participation visible",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This excerpt contains only casual conversation between recruiters discussing timing and filling time before an interview begins. No technical quant finance content is present.\",\n    \"flags\": [\"Off-topic discussion\", \"No technical content\", \"Appears to be pre-interview or technical setup conversation\", \"No candidate participation visible\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T04:17:20.104718",
+      "window_start": "2025-11-16T04:16:41.989706",
+      "window_end": "2025-11-16T04:17:14.817556",
+      "transcripts_evaluated": 12,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "encouraging",
+      "summary": "The recruiter appears to be making informal, fragmented comments about motivation and encouragement, with no technical quant finance content discussed. The conversation seems disjointed and possibly affected by transcription issues or technical difficulties.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - no quant finance content",
+        "Fragmented/unclear communication",
+        "Possible transcription errors or audio quality issues",
+        "No substantive interview questions asked",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"encouraging\",\n    \"summary\": \"The recruiter appears to be making informal, fragmented comments about motivation and encouragement, with no technical quant finance content discussed. The conversation seems disjointed and possibly affected by transcription issues or technical difficulties.\",\n    \"flags\": [\n        \"Off-topic discussion - no quant finance content\",\n        \"Fragmented/unclear communication\",\n        \"Possible transcription errors or audio quality issues\",\n        \"No substantive interview questions asked\"\n    ],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T04:17:42.093778",
+      "window_start": "2025-11-16T04:17:05.831243",
+      "window_end": "2025-11-16T04:17:35.835656",
+      "transcripts_evaluated": 11,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "encouraging",
+      "summary": "This excerpt contains fragmented, repetitive speech from the recruiter discussing general encouragement and willingness to help, with no technical quant finance content. The conversation appears to be either corrupted audio transcription or informal chat unrelated to technical assessment.",
+      "key_topics": [],
+      "flags": [
+        "No technical content discussed",
+        "Transcript quality issues - repetitive and fragmented speech",
+        "Possible transcription error or audio corruption",
+        "No candidate responses present",
+        "Not a substantive interview exchange",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"encouraging\",\n    \"summary\": \"This excerpt contains fragmented, repetitive speech from the recruiter discussing general encouragement and willingness to help, with no technical quant finance content. The conversation appears to be either corrupted audio transcription or informal chat unrelated to technical assessment.\",\n    \"flags\": [\n        \"No technical content discussed\",\n        \"Transcript quality issues - repetitive and fragmented speech\",\n        \"Possible transcription error or audio corruption\",\n        \"No candidate responses present\",\n        \"Not a substantive interview exchange\"\n    ],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T04:18:02.773874",
+      "window_start": "2025-11-16T04:17:26.898556",
+      "window_end": "2025-11-16T04:17:56.926995",
+      "transcripts_evaluated": 11,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation consists of fragmented, repetitive statements from the recruiter about communication importance, confidence scores, and AI assessment metrics. No substantive quant finance content or clear interview questions are present.",
+      "key_topics": [],
+      "flags": [
+        "Highly fragmented and incoherent dialogue",
+        "No clear technical discussion",
+        "Appears to be corrupted or incomplete transcript",
+        "Only recruiter speaking - no candidate responses visible",
+        "Repetitive stuttering pattern suggests transcription error",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation consists of fragmented, repetitive statements from the recruiter about communication importance, confidence scores, and AI assessment metrics. No substantive quant finance content or clear interview questions are present.\",\n    \"flags\": [\n        \"Highly fragmented and incoherent dialogue\",\n        \"No clear technical discussion\",\n        \"Appears to be corrupted or incomplete transcript\",\n        \"Only recruiter speaking - no candidate responses visible\",\n        \"Repetitive stuttering pattern suggests transcription error\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.90,\n    \"confidence_tone\": 0.70\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T04:18:26.879810",
+      "window_start": "2025-11-16T04:17:47.772965",
+      "window_end": "2025-11-16T04:18:20.890986",
+      "transcripts_evaluated": 12,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The recruiter appears to be testing or demonstrating something about AI confidence assessment, followed by rambling statements about colors, ceilings, and taking breaks. No quant finance content or meaningful interview dialogue occurred.",
+      "key_topics": [],
+      "flags": [
+        "No quant finance content detected",
+        "Incoherent or test conversation",
+        "Possible system test or calibration dialogue",
+        "Repetitive and fragmented speech patterns",
+        "No candidate responses present",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.3,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The recruiter appears to be testing or demonstrating something about AI confidence assessment, followed by rambling statements about colors, ceilings, and taking breaks. No quant finance content or meaningful interview dialogue occurred.\",\n    \"flags\": [\n        \"No quant finance content detected\",\n        \"Incoherent or test conversation\",\n        \"Possible system test or calibration dialogue\",\n        \"Repetitive and fragmented speech patterns\",\n        \"No candidate responses present\"\n    ],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.3\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T04:18:52.721867",
+      "window_start": "2025-11-16T04:18:15.965587",
+      "window_end": "2025-11-16T04:18:47.786074",
+      "transcripts_evaluated": 13,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "encouraging",
+      "summary": "The recruiter discusses the importance of taking work breaks to prevent burnout and maintain physical, mental, and emotional health, while noting that breaks should be balanced with actual work productivity. No quant finance topics were discussed.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - no quant finance content",
+        "Repetitive speech patterns suggest potential technical issues or nervousness",
+        "No technical questions asked",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"encouraging\",\n    \"summary\": \"The recruiter discusses the importance of taking work breaks to prevent burnout and maintain physical, mental, and emotional health, while noting that breaks should be balanced with actual work productivity. No quant finance topics were discussed.\",\n    \"flags\": [\n        \"Off-topic discussion - no quant finance content\",\n        \"Repetitive speech patterns suggest potential technical issues or nervousness\",\n        \"No technical questions asked\"\n    ],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T04:19:17.014136",
+      "window_start": "2025-11-16T04:18:38.778011",
+      "window_end": "2025-11-16T04:19:11.814288",
+      "transcripts_evaluated": 13,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "encouraging",
+      "summary": "The recruiter is giving casual advice about taking breaks within reasonable limits and uses very informal language ('big chilling', 'hella chilling') to describe the relaxed atmosphere of the call. No technical quant finance content is discussed.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - no quant finance content",
+        "Highly informal/unprofessional language used",
+        "Repetitive speech patterns suggest possible technical issues or lack of preparation",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.95,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"encouraging\",\n    \"summary\": \"The recruiter is giving casual advice about taking breaks within reasonable limits and uses very informal language ('big chilling', 'hella chilling') to describe the relaxed atmosphere of the call. No technical quant finance content is discussed.\",\n    \"flags\": [\n        \"Off-topic discussion - no quant finance content\",\n        \"Highly informal/unprofessional language used\",\n        \"Repetitive speech patterns suggest possible technical issues or lack of preparation\"\n    ],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.95\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T04:19:47.822922",
+      "window_start": "2025-11-16T04:19:02.944757",
+      "window_end": "2025-11-16T04:19:20.896145",
+      "transcripts_evaluated": 8,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "encouraging",
+      "summary": "This excerpt contains only casual conversation with informal language ('big chilling', 'hella chilling') and no technical quant finance content. The recruiter is checking in on comfort levels before proceeding.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - no quant finance content",
+        "Extremely informal language for professional interview",
+        "No technical questions asked in this segment",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"encouraging\",\n    \"summary\": \"This excerpt contains only casual conversation with informal language ('big chilling', 'hella chilling') and no technical quant finance content. The recruiter is checking in on comfort levels before proceeding.\",\n    \"flags\": [\n        \"Off-topic discussion - no quant finance content\",\n        \"Extremely informal language for professional interview\",\n        \"No technical questions asked in this segment\"\n    ],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.85\n}\n```"
+    }
+  ]
+}

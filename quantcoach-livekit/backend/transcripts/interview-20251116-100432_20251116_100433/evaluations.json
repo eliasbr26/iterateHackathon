@@ -1,0 +1,74 @@
+{
+  "room": "interview-20251116-100432",
+  "total_evaluations": 3,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T10:06:15.174740",
+      "window_start": "2025-11-16T10:05:38.314934",
+      "window_end": "2025-11-16T10:06:10.343723",
+      "transcripts_evaluated": 10,
+      "subject_relevance": "partially_relevant",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "harsh",
+      "summary": "The recruiter mentions regularization and requests the candidate present themselves, but the conversation is largely incoherent with inappropriate language and off-topic discussion about bathrooms and finding things.",
+      "key_topics": [
+        "REGULARIZATION"
+      ],
+      "flags": [
+        "Harsh tone detected",
+        "Inappropriate language used by recruiter",
+        "Incoherent conversation flow",
+        "Technical topics mentioned but not properly discussed",
+        "Unprofessional interview conduct",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.85,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.95,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[REGULARIZATION]\", \"[EXTRA]\"],\n    \"subject_relevance\": \"partially_relevant\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"harsh\",\n    \"summary\": \"The recruiter mentions regularization and requests the candidate present themselves, but the conversation is largely incoherent with inappropriate language and off-topic discussion about bathrooms and finding things.\",\n    \"flags\": [\n        \"Harsh tone detected\",\n        \"Inappropriate language used by recruiter\",\n        \"Incoherent conversation flow\",\n        \"Technical topics mentioned but not properly discussed\",\n        \"Unprofessional interview conduct\"\n    ],\n    \"confidence_subject\": 0.85,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.95\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T10:06:39.573675",
+      "window_start": "2025-11-16T10:06:04.172135",
+      "window_end": "2025-11-16T10:06:34.208114",
+      "transcripts_evaluated": 7,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation appears to be a casual transition moment discussing bathroom breaks and possibly technical difficulties with video sharing. No quantitative finance content is discussed.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "No technical content present",
+        "Possible transcription errors or audio issues",
+        "Interview may not have started yet or is during a break",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.98,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation appears to be a casual transition moment discussing bathroom breaks and possibly technical difficulties with video sharing. No quantitative finance content is discussed.\",\n    \"flags\": [\n        \"Off-topic discussion\",\n        \"No technical content present\",\n        \"Possible transcription errors or audio issues\",\n        \"Interview may not have started yet or is during a break\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.98,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T10:07:00.463636",
+      "window_start": "2025-11-16T10:06:25.166193",
+      "window_end": "2025-11-16T10:06:34.208114",
+      "transcripts_evaluated": 2,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter is making a brief administrative comment about sending a video, with no technical content discussed. This appears to be a transition or technical setup moment in the interview.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "Administrative/logistical conversation only",
+        "No substantive interview content",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter is making a brief administrative comment about sending a video, with no technical content discussed. This appears to be a transition or technical setup moment in the interview.\",\n    \"flags\": [\"Off-topic discussion\", \"Administrative/logistical conversation only\", \"No substantive interview content\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.7\n}\n```"
+    }
+  ]
+}

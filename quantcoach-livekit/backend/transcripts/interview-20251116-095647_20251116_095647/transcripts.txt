@@ -1,0 +1,40 @@
+[09:57:57] 👤 CANDIDATE: If we don't want to be filmed, okay? Okay, okay, okay, okay
+[09:58:33] 👤 CANDIDATE: Okay, Java, do you hear me?
+[09:58:42] 👤 CANDIDATE: Thank you very much. Thank you. Thank you.
+[09:58:45] 👤 CANDIDATE: Yeah, so my name is Stefan. My name is Stefan.
+[09:58:49] 👤 CANDIDATE: I'm a fourth year student at Ecole Polytechnique. At Ecole Polytechnique
+[09:58:51] 👤 CANDIDATE: and I'm currently attending the master's degree
+[09:58:54] 👤 CANDIDATE: MVA mathematics vision
+[09:58:57] 👤 CANDIDATE: and learning and thank you for this interview
+[09:59:18] 👤 CANDIDATE: Yeah, cross validation is a mean of, is a mean of
+[09:59:24] 👤 CANDIDATE: avoiding avoiding avoiding.
+[09:59:24] 👤 CANDIDATE: Overfitting, for example, for example,
+[09:59:24] 👤 CANDIDATE: the most used cross-validation is cross-validation is
+[09:59:27] 👤 CANDIDATE: scaffold cross-validation it's when you when you
+[09:59:30] 👤 CANDIDATE: when you devise your trainset your trainset
+[09:59:33] 👤 CANDIDATE: into k parts and you use a k minus we use a k minus
+[09:59:36] 👤 CANDIDATE: one part to train your models and then your models and then
+[09:59:39] 👤 CANDIDATE: one last part to put it
+[09:59:42] 👤 CANDIDATE: together.
+[09:59:45] 👤 CANDIDATE: Very useful to look at
+[09:59:48] 👤 CANDIDATE: the high performance as for example.
+[09:59:58] 👤 CANDIDATE: Yeah, regulation is the mean, the mean.
+[10:00:00] 👤 CANDIDATE: It's the fact that, it's the fact that,
+[10:00:03] 👤 CANDIDATE: when we add a penalty term in the loss that we
+[10:00:06] 👤 CANDIDATE: want to minimize it's
+[10:00:09] 👤 CANDIDATE: very useful to make
+[10:00:12] 👤 CANDIDATE: our variables respects respects
+[10:00:18] 👤 CANDIDATE: some properties for example if for example if if
+[10:00:19] 👤 CANDIDATE: you add a lesser regulation term our variable will be a variable will be a
+[10:00:42] 👤 CANDIDATE: Sorry, I don't know. I am not good at linear algebra. Linear algebra.
+[10:00:58] 👤 CANDIDATE: Okay, sorry.
+[10:01:15] 👤 CANDIDATE: I don't know, I think we could try to organize
+[10:01:21] 👤 CANDIDATE: the metrics or something like this or something like
+[10:01:22] 👤 CANDIDATE: look at the eigen uh
+[10:01:24] 👤 CANDIDATE: spaces
+[10:01:43] 👤 CANDIDATE: Okay, I think it's too long Jawadla, too long Jawadla.
+[10:01:54] 👤 CANDIDATE: Yes, but in this case you just have to be more assertive, you have to treat me like a
+[10:02:01] 👤 CANDIDATE: human being. I'm not a human being. I'm not a human being.
+[10:02:03] 👤 CANDIDATE: If not, we'll do it again in 30 seconds and we'll continue.
+[10:02:05] 👤 CANDIDATE: Okay. Okay.
+[10:02:12] 👤 CANDIDATE: We cut the video and we redo it, otherwise

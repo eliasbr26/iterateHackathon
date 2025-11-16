@@ -1,0 +1,241 @@
+
+================================================================================
+[04:15:38] EVALUATION
+================================================================================
+Window: 04:15:00 - 04:15:32
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: HARSH (confidence: 0.85)
+
+📝 Summary: The conversation appears to be fragmented and incoherent, with the recruiter repeatedly saying 'shut up' and making unclear statements about 'timeline' and 'inclusion' without any clear quant finance content. The transcript may be corrupted or poorly captured.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Harsh tone detected - recruiter says 'shut up' multiple times
+   - Conversation is incoherent and fragmented
+   - No clear technical discussion
+   - Possible transcript quality issues
+   - Unprofessional communication
+
+
+================================================================================
+[04:16:03] EVALUATION
+================================================================================
+Window: 04:15:24 - 04:15:58
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation appears fragmented and incoherent, with the recruiter making disjointed statements about 'timeline' without clear context. No recognizable quant finance topics were discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incoherent conversation structure
+   - No technical content identified
+   - Possible transcription errors or communication issues
+   - Unclear if this is actual interview content
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[04:16:34] EVALUATION
+================================================================================
+Window: 04:15:58 - 04:16:29
+Transcripts: 12
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This excerpt contains only technical testing of recording/transcription functionality with no substantive interview content. The recruiter is testing if the system scrolls and continues recording while speaking casually.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No interview content present
+   - Appears to be technical setup/testing phase
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[04:16:55] EVALUATION
+================================================================================
+Window: 04:16:20 - 04:16:50
+Transcripts: 12
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt contains only casual conversation between recruiters discussing timing and filling time before an interview begins. No technical quant finance content is present.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Appears to be pre-interview or technical setup conversation
+   - No candidate participation visible
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[04:17:20] EVALUATION
+================================================================================
+Window: 04:16:41 - 04:17:14
+Transcripts: 12
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.70)
+
+📝 Summary: The recruiter appears to be making informal, fragmented comments about motivation and encouragement, with no technical quant finance content discussed. The conversation seems disjointed and possibly affected by transcription issues or technical difficulties.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - no quant finance content
+   - Fragmented/unclear communication
+   - Possible transcription errors or audio quality issues
+   - No substantive interview questions asked
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[04:17:42] EVALUATION
+================================================================================
+Window: 04:17:05 - 04:17:35
+Transcripts: 11
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.70)
+
+📝 Summary: This excerpt contains fragmented, repetitive speech from the recruiter discussing general encouragement and willingness to help, with no technical quant finance content. The conversation appears to be either corrupted audio transcription or informal chat unrelated to technical assessment.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content discussed
+   - Transcript quality issues - repetitive and fragmented speech
+   - Possible transcription error or audio corruption
+   - No candidate responses present
+   - Not a substantive interview exchange
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[04:18:02] EVALUATION
+================================================================================
+Window: 04:17:26 - 04:17:56
+Transcripts: 11
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation consists of fragmented, repetitive statements from the recruiter about communication importance, confidence scores, and AI assessment metrics. No substantive quant finance content or clear interview questions are present.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Highly fragmented and incoherent dialogue
+   - No clear technical discussion
+   - Appears to be corrupted or incomplete transcript
+   - Only recruiter speaking - no candidate responses visible
+   - Repetitive stuttering pattern suggests transcription error
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[04:18:26] EVALUATION
+================================================================================
+Window: 04:17:47 - 04:18:20
+Transcripts: 12
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.30)
+
+📝 Summary: The recruiter appears to be testing or demonstrating something about AI confidence assessment, followed by rambling statements about colors, ceilings, and taking breaks. No quant finance content or meaningful interview dialogue occurred.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No quant finance content detected
+   - Incoherent or test conversation
+   - Possible system test or calibration dialogue
+   - Repetitive and fragmented speech patterns
+   - No candidate responses present
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[04:18:52] EVALUATION
+================================================================================
+Window: 04:18:15 - 04:18:47
+Transcripts: 13
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: The recruiter discusses the importance of taking work breaks to prevent burnout and maintain physical, mental, and emotional health, while noting that breaks should be balanced with actual work productivity. No quant finance topics were discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - no quant finance content
+   - Repetitive speech patterns suggest potential technical issues or nervousness
+   - No technical questions asked
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[04:19:17] EVALUATION
+================================================================================
+Window: 04:18:38 - 04:19:11
+Transcripts: 13
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.95)
+
+📝 Summary: The recruiter is giving casual advice about taking breaks within reasonable limits and uses very informal language ('big chilling', 'hella chilling') to describe the relaxed atmosphere of the call. No technical quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - no quant finance content
+   - Highly informal/unprofessional language used
+   - Repetitive speech patterns suggest possible technical issues or lack of preparation
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[04:19:47] EVALUATION
+================================================================================
+Window: 04:19:02 - 04:19:20
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: This excerpt contains only casual conversation with informal language ('big chilling', 'hella chilling') and no technical quant finance content. The recruiter is checking in on comfort levels before proceeding.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - no quant finance content
+   - Extremely informal language for professional interview
+   - No technical questions asked in this segment
+   - Off-topic/casual discussion detected ([EXTRA])
+

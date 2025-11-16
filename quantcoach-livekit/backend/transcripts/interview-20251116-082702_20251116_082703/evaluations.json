@@ -1,0 +1,72 @@
+{
+  "room": "interview-20251116-082702",
+  "total_evaluations": 3,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T08:28:52.224092",
+      "window_start": "2025-11-16T08:28:16.766345",
+      "window_end": "2025-11-16T08:28:46.943799",
+      "transcripts_evaluated": 7,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation appears to be fragmented or garbled audio/transcription with no discernible quant finance content. The recruiter seems to be having technical difficulties or the transcription is severely corrupted.",
+      "key_topics": [],
+      "flags": [
+        "Severely corrupted or garbled transcription",
+        "No intelligible technical content",
+        "Possible audio/technical issues during interview",
+        "Cannot assess interview quality",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation appears to be fragmented or garbled audio/transcription with no discernible quant finance content. The recruiter seems to be having technical difficulties or the transcription is severely corrupted.\",\n    \"flags\": [\n        \"Severely corrupted or garbled transcription\",\n        \"No intelligible technical content\",\n        \"Possible audio/technical issues during interview\",\n        \"Cannot assess interview quality\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T08:29:13.333822",
+      "window_start": "2025-11-16T08:28:37.896929",
+      "window_end": "2025-11-16T08:29:07.921938",
+      "transcripts_evaluated": 8,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This conversation appears to be casual banter or technical setup discussion unrelated to quant finance, possibly involving equipment testing or room setup with fragmented speech patterns.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - no quant finance content detected",
+        "Conversation appears fragmented or possibly transcription errors",
+        "No discernible interview questions asked",
+        "May be pre-interview setup or casual chat",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.6,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This conversation appears to be casual banter or technical setup discussion unrelated to quant finance, possibly involving equipment testing or room setup with fragmented speech patterns.\",\n    \"flags\": [\n        \"Off-topic discussion - no quant finance content detected\",\n        \"Conversation appears fragmented or possibly transcription errors\",\n        \"No discernible interview questions asked\",\n        \"May be pre-interview setup or casual chat\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.90,\n    \"confidence_tone\": 0.60\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T08:29:43.341559",
+      "window_start": "2025-11-16T08:28:59.750877",
+      "window_end": "2025-11-16T08:29:37.719732",
+      "transcripts_evaluated": 9,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation appears to be garbled or corrupted text with no coherent technical discussion. The recruiter seems to be having technical difficulties or the transcript is severely malformed, with fragmented sentences about 'Mickey', 'bugs', and unclear plans.",
+      "key_topics": [],
+      "flags": [
+        "Transcript appears corrupted or malformed",
+        "No intelligible technical content",
+        "Possible recording or transcription error",
+        "Cannot evaluate interview quality from this excerpt",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation appears to be garbled or corrupted text with no coherent technical discussion. The recruiter seems to be having technical difficulties or the transcript is severely malformed, with fragmented sentences about 'Mickey', 'bugs', and unclear plans.\",\n    \"flags\": [\n        \"Transcript appears corrupted or malformed\",\n        \"No intelligible technical content\",\n        \"Possible recording or transcription error\",\n        \"Cannot evaluate interview quality from this excerpt\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.85\n}\n```"
+    }
+  ]
+}

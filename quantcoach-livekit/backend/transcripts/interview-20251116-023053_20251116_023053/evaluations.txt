@@ -1,0 +1,43 @@
+
+================================================================================
+[02:31:37] EVALUATION
+================================================================================
+Window: 02:31:26 - 02:31:33
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt contains only technical difficulties with video connectivity at the start of the interview, with no substantive content discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - technical setup only
+   - Unprofessional language ('What's up, baby?' repeated)
+   - No quant finance content yet
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:31:45] EVALUATION
+================================================================================
+Window: 02:31:26 - 02:31:33
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt shows only initial technical difficulties with video connectivity at the start of the interview, with no substantive content discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - only technical setup issues
+   - No quant finance content present
+   - Unprofessional language used by recruiter ('What's up, baby?')
+   - Video connectivity problems
+   - Off-topic/casual discussion detected ([EXTRA])
+

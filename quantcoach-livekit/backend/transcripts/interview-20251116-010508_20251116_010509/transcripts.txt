@@ -1,0 +1,65 @@
+[01:06:32] 👔 RECRUITER: The American Pronunciation Guide Presents "How to Pronounce
+[01:07:08] 👔 RECRUITER: Okay, can you hear me?
+[01:07:13] 👔 RECRUITER: This is a young man. This is a young man.
+[01:07:15] 👔 RECRUITER: Okay.
+[01:07:26] 👔 RECRUITER: Okay, amazing. Amazing. I have the live transcript. The live transcript.
+[01:07:29] 👔 RECRUITER: I can I can
+[01:07:34] 👔 RECRUITER: see everything you're saying saying
+[01:07:34] 👔 RECRUITER: you ready you ready
+[01:07:44] 👔 RECRUITER: Oh wow, okay, nice, nice.
+[01:07:47] 👔 RECRUITER: I can see many interesting
+[01:07:52] 👔 RECRUITER: things. For example, can I, I will, example, can I, I will,
+[01:07:52] 👔 RECRUITER: I still vote linear regression, no. regression, no. regression, no. regression, no.
+[01:07:53] 👔 RECRUITER: What do you know about linear regression? about linear regression?
+[01:07:56] 👤 CANDIDATE: Okay. I'm not prepared for that. I'm not prepared for that.
+[01:08:01] 👤 CANDIDATE: The kind of question. Sorry. Sorry.
+[01:08:01] 👤 CANDIDATE: I know that it's a model. I know that it's a model.
+[01:08:02] 👤 CANDIDATE: Of road. Of road
+[01:08:05] 👔 RECRUITER: You have to be prepared. And then.
+[01:08:11] 👤 CANDIDATE: . No, I don't. I don't know the. I don't know the.
+[01:08:17] 👤 CANDIDATE: Hypothesis. But. But
+[01:08:17] 👤 CANDIDATE: I can I can.
+[01:08:20] 👔 RECRUITER: Okay, sure. Tell me about Transformers.
+[01:08:25] 👤 CANDIDATE: Talk about transformers if you want. So in transformers there are keys, queries, queries
+[01:08:32] 👤 CANDIDATE: and values.
+[01:08:32] 👤 CANDIDATE: So, so
+[01:08:32] 👤 CANDIDATE: we look at each token, look at each token.
+[01:08:35] 👤 CANDIDATE: And I don't know. I think I'm not a good candidate.
+[01:08:35] 👔 RECRUITER: it's okay it's okay uh can you can you give me the black can you give me the black
+[01:08:41] 👔 RECRUITER: so this is the equation and the and the
+[01:08:42] 👔 RECRUITER: equation of the mission of the.
+[01:08:42] 👔 RECRUITER: Movement.
+[01:08:44] 👤 CANDIDATE: Okay, so the Black-Scholes equation gives
+[01:08:49] 👤 CANDIDATE: us the price
+[01:08:51] 👤 CANDIDATE: of a of a call or a put uh given the given the
+[01:08:53] 👤 CANDIDATE: the payoff and payoff and
+[01:08:56] 👤 CANDIDATE: the time the time.
+[01:09:01] 👔 RECRUITER: okay and another and another
+[01:09:07] 👔 RECRUITER: very hard question about about uh
+[01:09:07] 👔 RECRUITER: linear regression um um
+[01:09:09] 👔 RECRUITER: if you have missing data how do you do to evaluate the correlation evaluate the correlation of
+[01:09:11] 👔 RECRUITER: function
+[01:09:14] 👔 RECRUITER: uh uh
+[01:09:19] 👤 CANDIDATE: of what sorry the the
+[01:09:24] 👤 CANDIDATE: I'm just near the toilet so I'm not so I'm
+[01:09:24] 👔 RECRUITER: I think you don't understand the question understand the question
+[01:09:29] 👤 CANDIDATE: not sure no no no
+[01:09:34] 👔 RECRUITER: it's okay I mean I mean
+[01:09:39] 👔 RECRUITER: everybody doesn't understand the question doesn't understand the question
+[01:09:39] 👤 CANDIDATE: it's so uh i'm so destabilized stabilized
+[01:09:44] 👤 CANDIDATE: you're
+[01:09:44] 👔 RECRUITER: you don't have a it's okay it's okay but but but
+[01:09:49] 👤 CANDIDATE: not a good interviewer I think sorry
+[01:09:54] 👔 RECRUITER: I think you're not a good candidate a good candidate
+[01:10:00] 👤 CANDIDATE: so mean so mean
+[01:10:05] 👤 CANDIDATE: that's so mean
+[01:10:05] 👔 RECRUITER: it's okay it's
+[01:10:11] 👔 RECRUITER: okay
+[01:10:11] 👤 CANDIDATE: is it good can I come back or um
+[01:10:16] 👤 CANDIDATE: okay
+[01:10:16] 👔 RECRUITER: Okay, yeah, yeah, you can come back, you can, yeah, yeah, you can come back, you can
+[01:10:21] 👔 RECRUITER: come back, come, come, come, come, come, come,
+[01:10:21] 👤 CANDIDATE: I'm quitting, I'm stopping. Oh no!
+[01:10:26] 👔 RECRUITER: Okay, yeah, yeah, plenty of things that bug.
+[01:10:32] 👔 RECRUITER: But it's interesting. It's interesting.
+[01:10:32] 👔 RECRUITER: I don't know if I can leave

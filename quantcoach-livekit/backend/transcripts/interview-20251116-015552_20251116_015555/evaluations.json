@@ -1,0 +1,49 @@
+{
+  "room": "interview-20251116-015552",
+  "total_evaluations": 2,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T01:57:25.832779",
+      "window_start": "2025-11-16T01:56:58.910906",
+      "window_end": "2025-11-16T01:57:20.962305",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter appears to be discussing git version control commands (git status, delete requirements) in a fragmented manner, with no discernible quant finance content in this brief excerpt.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "Conversation fragment unclear",
+        "No quant finance content detected",
+        "Possibly discussing technical setup or coding environment rather than quant concepts",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.6,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter appears to be discussing git version control commands (git status, delete requirements) in a fragmented manner, with no discernible quant finance content in this brief excerpt.\",\n    \"flags\": [\n        \"Off-topic discussion\",\n        \"Conversation fragment unclear\",\n        \"No quant finance content detected\",\n        \"Possibly discussing technical setup or coding environment rather than quant concepts\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.6\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T01:57:47.268589",
+      "window_start": "2025-11-16T01:57:17.921054",
+      "window_end": "2025-11-16T01:57:26.048229",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter is discussing git status and a delete requirement, which appears to be related to version control or coding logistics rather than quantitative finance concepts. This seems to be part of a technical screen focusing on software engineering rather than quant-specific topics.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - no quant finance content",
+        "Context unclear - appears to be reviewing code/git workflow",
+        "Very brief excerpt - limited information",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter is discussing git status and a delete requirement, which appears to be related to version control or coding logistics rather than quantitative finance concepts. This seems to be part of a technical screen focusing on software engineering rather than quant-specific topics.\",\n    \"flags\": [\"Off-topic discussion - no quant finance content\", \"Context unclear - appears to be reviewing code/git workflow\", \"Very brief excerpt - limited information\"],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.90,\n    \"confidence_tone\": 0.70\n}\n```"
+    }
+  ]
+}

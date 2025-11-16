@@ -1,0 +1,96 @@
+{
+  "room": "interview-20251116-100712",
+  "session_start": "2025-11-16T10:07:46.654157",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T10:07:46.654157",
+      "speaker": "recruiter",
+      "text": "Hey yo. Hey yo",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:07:59.035343",
+      "speaker": "recruiter",
+      "text": ". Hey yo.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:08:00.879124",
+      "speaker": "recruiter",
+      "text": ".",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:08:03.896542",
+      "speaker": "recruiter",
+      "text": ".",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:08:06.889207",
+      "speaker": "recruiter",
+      "text": ".",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:08:14.808235",
+      "speaker": "candidate",
+      "text": "let's",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:08:21.790110",
+      "speaker": "candidate",
+      "text": "Thank you.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:08:22.116801",
+      "speaker": "recruiter",
+      "text": "okay uh okay stepan welcome to this interview uh we'll jump right in can you can you",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:08:27.824965",
+      "speaker": "candidate",
+      "text": "Yeah, regularization is when you want your variable-- your variable--",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:08:32.743454",
+      "speaker": "recruiter",
+      "text": "tell me a bit about regularization regularization",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:08:38.265870",
+      "speaker": "candidate",
+      "text": "To verify some properties, for example, if you are less",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:08:43.129889",
+      "speaker": "candidate",
+      "text": "than 50% of your loss, the",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:08:43.286101",
+      "speaker": "recruiter",
+      "text": "That was a bug, a bug, a bug.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:08:49.501330",
+      "speaker": "recruiter",
+      "text": "No, no, no.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:08:49.503196",
+      "speaker": "candidate",
+      "text": "variable will be a sparser okay",
+      "is_final": true
+    }
+  ]
+}

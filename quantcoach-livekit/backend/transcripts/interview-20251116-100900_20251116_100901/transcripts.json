@@ -1,0 +1,132 @@
+{
+  "room": "interview-20251116-100900",
+  "session_start": "2025-11-16T10:09:57.524451",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T10:09:57.524451",
+      "speaker": "candidate",
+      "text": "Yes. Okay. Yes. Okay.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:10:31.214168",
+      "speaker": "candidate",
+      "text": "Let's begin.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:10:37.395353",
+      "speaker": "candidate",
+      "text": "Hello, thank you. Mhm.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:10:40.204023",
+      "speaker": "candidate",
+      "text": "Mhm.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:10:43.212513",
+      "speaker": "candidate",
+      "text": "Yeah. Uh Yeah. Uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:10:46.364655",
+      "speaker": "candidate",
+      "text": "course rotation techniques. Yeah, there is uh the uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:10:49.186204",
+      "speaker": "candidate",
+      "text": "validation validation",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:10:52.353686",
+      "speaker": "candidate",
+      "text": "it's when you divide the training set in k",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:10:55.378919",
+      "speaker": "candidate",
+      "text": "parts and you use k-1 parts to train",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:10:58.239628",
+      "speaker": "candidate",
+      "text": "and then the last part to evaluate",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:11:01.222403",
+      "speaker": "candidate",
+      "text": "your models.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:11:10.402844",
+      "speaker": "candidate",
+      "text": "Yeah, regularization is when you want your variable to verify some properties. For",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:11:13.232025",
+      "speaker": "candidate",
+      "text": "example, you add a lasso penalty",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:11:16.235128",
+      "speaker": "candidate",
+      "text": "to determine in your lasso",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:11:19.486649",
+      "speaker": "candidate",
+      "text": "and your variable will be more be more be more",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:11:34.372494",
+      "speaker": "candidate",
+      "text": "Sorry, I don't know linear algebra. Linear algebra.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:11:49.248164",
+      "speaker": "candidate",
+      "text": "oh okay sorry it's so mean sorry it's so mean",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:12:01.406900",
+      "speaker": "candidate",
+      "text": "do you have the the red the red",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:12:04.214320",
+      "speaker": "candidate",
+      "text": "okay okay okay okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:12:11.209121",
+      "speaker": "candidate",
+      "text": "is",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:12:28.212741",
+      "speaker": "candidate",
+      "text": "Okay.",
+      "is_final": true
+    }
+  ]
+}

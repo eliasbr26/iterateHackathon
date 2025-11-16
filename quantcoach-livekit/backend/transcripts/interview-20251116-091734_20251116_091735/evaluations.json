@@ -1,0 +1,49 @@
+{
+  "room": "interview-20251116-091734",
+  "total_evaluations": 2,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T09:19:29.711801",
+      "window_start": "2025-11-16T09:18:52.403147",
+      "window_end": "2025-11-16T09:19:24.263016",
+      "transcripts_evaluated": 7,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter appears to be wrapping up the interview with self-reflection about not asking follow-up questions. They mention that no technical quant finance topics were covered and seem to be providing a preliminary evaluation.",
+      "key_topics": [],
+      "flags": [
+        "No technical content discussed",
+        "Recruiter self-commentary only",
+        "Fragmented speech suggests recording/transcription issues",
+        "Explicit mention of 'no technical quant finances' indicates lack of substantive interview content",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.65,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter appears to be wrapping up the interview with self-reflection about not asking follow-up questions. They mention that no technical quant finance topics were covered and seem to be providing a preliminary evaluation.\",\n    \"flags\": [\n        \"No technical content discussed\",\n        \"Recruiter self-commentary only\",\n        \"Fragmented speech suggests recording/transcription issues\",\n        \"Explicit mention of 'no technical quant finances' indicates lack of substantive interview content\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.65\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:19:51.136795",
+      "window_start": "2025-11-16T09:19:24.263016",
+      "window_end": "2025-11-16T09:19:30.053533",
+      "transcripts_evaluated": 2,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The recruiter appears to be scoring or evaluating something numerically (mentioning scores less than 1.8), but the context is unclear and no technical quant finance content is discussed.",
+      "key_topics": [],
+      "flags": [
+        "Insufficient context to understand conversation",
+        "No technical discussion present",
+        "Unclear what is being evaluated",
+        "Very brief excerpt with ambiguous content"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.6,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The recruiter appears to be scoring or evaluating something numerically (mentioning scores less than 1.8), but the context is unclear and no technical quant finance content is discussed.\",\n    \"flags\": [\n        \"Insufficient context to understand conversation\",\n        \"No technical discussion present\",\n        \"Unclear what is being evaluated\",\n        \"Very brief excerpt with ambiguous content\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.6\n}\n```"
+    }
+  ]
+}

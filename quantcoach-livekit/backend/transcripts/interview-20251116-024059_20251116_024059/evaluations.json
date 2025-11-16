@@ -1,0 +1,27 @@
+{
+  "room": "interview-20251116-024059",
+  "total_evaluations": 1,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T02:44:46.977582",
+      "window_start": "2025-11-16T02:42:13.939075",
+      "window_end": "2025-11-16T02:42:31.080977",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "encouraging",
+      "summary": "This excerpt contains only casual, off-topic conversation between recruiters with no technical quant finance content. The discussion appears to be informal banter about keeping something alive, possibly referring to the conversation or interview energy.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "No technical content",
+        "Fragmented/unclear dialogue",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"encouraging\",\n    \"summary\": \"This excerpt contains only casual, off-topic conversation between recruiters with no technical quant finance content. The discussion appears to be informal banter about keeping something alive, possibly referring to the conversation or interview energy.\",\n    \"flags\": [\"Off-topic discussion\", \"No technical content\", \"Fragmented/unclear dialogue\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.7\n}\n```"
+    }
+  ]
+}

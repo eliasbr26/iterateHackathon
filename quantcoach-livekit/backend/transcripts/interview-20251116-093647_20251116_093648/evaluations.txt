@@ -1,0 +1,484 @@
+
+================================================================================
+[09:37:37] EVALUATION
+================================================================================
+Window: 09:37:19 - 09:37:32
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This excerpt contains only technical difficulties with audio/connection issues, with participants saying 'okay' and dealing with background noise and echoing. No substantive interview content is present.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No substantive content
+   - Technical audio/connection issues
+   - Interview may not have properly started
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:37:42] EVALUATION
+================================================================================
+Window: 09:37:23 - 09:37:37
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This excerpt contains only technical difficulties with audio/video connection, background noise, and brief acknowledgments between participants. No substantive interview content is present.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content discussed
+   - Audio/video connection issues
+   - Insufficient data for evaluation
+
+
+================================================================================
+[09:37:49] EVALUATION
+================================================================================
+Window: 09:37:28 - 09:37:44
+Transcripts: 9
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: This excerpt captures the initial connection phase of an interview with audio issues (beeping, echoing) and basic greetings. The candidate begins introducing themselves as Stephan El Echani before the excerpt ends.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Audio/technical difficulties present
+   - No substantive interview content yet
+   - Interview appears to be just starting
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:37:54] EVALUATION
+================================================================================
+Window: 09:37:37 - 09:37:50
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: Initial interview greeting and introduction phase where the candidate begins to introduce themselves as a fourth year student. No technical content discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content
+   - Audio quality issues indicated (beeping, foreign language)
+   - Interview just beginning
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:38:00] EVALUATION
+================================================================================
+Window: 09:37:43 - 09:37:50
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt captures the initial greeting and introduction phase of the interview where the candidate introduces himself as Stephan El Echani, a fourth year student, with some audio disruption and foreign language spoken.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content
+   - Audio quality issues apparent
+   - Foreign language spoken
+   - Interview just beginning
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:38:04] EVALUATION
+================================================================================
+Window: 09:37:43 - 09:38:00
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: Interview opening with greetings and candidate self-introduction. The candidate is introducing themselves as a fourth year student at what appears to be 'Ecithia' or similar institution. No technical content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Audio quality issues or transcription errors evident
+   - Foreign language segment at start
+   - Interview just beginning - no technical content yet
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:38:16] EVALUATION
+================================================================================
+Window: 09:38:00 - 09:38:06
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: Initial greeting exchange where the candidate introduces themselves as a fourth year student at Ecithia Polytechnic, with some apparent audio or technical issues causing repetition. The recruiter responds with a simple hello.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Audio/technical issues with candidate speech repetition
+   - No technical content yet - appears to be interview opening
+   - Very brief excerpt - insufficient for substantive evaluation
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:38:22] EVALUATION
+================================================================================
+Window: 09:38:00 - 09:38:16
+Transcripts: 4
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.60)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.30)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.20)
+
+📝 Summary: Interview excerpt shows fragmented conversation with candidate introducing themselves and making a brief statement about variable properties (possibly referencing regularization), but no clear technical question is visible from the recruiter.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Fragmented/incomplete conversation transcript
+   - Candidate appears to have speech repetition issues in introduction
+   - No clear question-answer structure established
+   - Insufficient data to assess interview quality
+   - Possible technical topic (regularization) mentioned but not developed
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:38:30] EVALUATION
+================================================================================
+Window: 09:38:16 - 09:38:23
+Transcripts: 6
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.30)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.60)
+
+📝 Summary: The candidate is explaining regularization techniques, specifically discussing how adding penalty terms to loss functions affects variables, and appears to be describing L1/L2 regularization concepts.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Incomplete explanation - candidate's response appears cut off
+   - No clear question visible from recruiter
+   - Context missing - unclear what prompted this explanation
+
+
+================================================================================
+[09:38:35] EVALUATION
+================================================================================
+Window: 09:38:16 - 09:38:30
+Transcripts: 7
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.90)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.40)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.60)
+
+📝 Summary: The candidate is explaining regularization techniques, specifically discussing how penalty terms added to loss functions affect variable properties, likely referring to L1/L2 regularization methods.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Candidate explanation incomplete/cut off
+   - No clear question visible in excerpt
+   - Recruiter response minimal ('Okay, yeah')
+
+
+================================================================================
+[09:38:40] EVALUATION
+================================================================================
+Window: 09:38:23 - 09:38:35
+Transcripts: 6
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.90)
+🎯 Question Difficulty: EASY (confidence: 0.75)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.80)
+
+📝 Summary: The candidate is explaining regularization techniques, specifically mentioning penalty terms in loss functions and starting to describe Lasso (L1) regularization for variable selection.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Incomplete explanation - candidate's response was cut off
+   - Audio quality issues noted (indistinct chatter)
+
+
+================================================================================
+[09:38:44] EVALUATION
+================================================================================
+Window: 09:38:30 - 09:38:35
+Transcripts: 3
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.60)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.30)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.50)
+
+📝 Summary: Brief exchange where candidate mentions 'variable' and offers to discuss time series topics, with recruiter providing acknowledgment and indistinct chatter.
+
+🔑 Key Topics: TIME_SERIES_MODELS, FEATURE_SELECTION
+
+🚩 Flags:
+   - Incomplete conversation fragment
+   - Indistinct audio/chatter present
+   - No clear technical question asked
+   - Context insufficient for full evaluation
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:38:50] EVALUATION
+================================================================================
+Window: 09:38:30 - 09:38:44
+Transcripts: 4
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.70)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.30)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.50)
+
+📝 Summary: Candidate mentions expertise in variable selection and time series analysis. The recruiter responds positively with brief acknowledgment, though the conversation is fragmented with indistinct chatter.
+
+🔑 Key Topics: FEATURE_SELECTION, TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Conversation fragment - very limited context
+   - Indistinct audio/chatter noted
+   - No clear question asked by interviewer
+
+
+================================================================================
+[09:38:54] EVALUATION
+================================================================================
+Window: 09:38:35 - 09:38:50
+Transcripts: 4
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.70)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.30)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.60)
+
+📝 Summary: Brief exchange where the candidate offers to discuss time series and begins explaining it as a modeling approach, with some indistinct chatter and casual conversation from the recruiter.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Incomplete conversation excerpt
+   - Indistinct audio noted
+   - Candidate self-initiated topic without clear question prompt
+   - Explanation cut off mid-sentence
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:39:00] EVALUATION
+================================================================================
+Window: 09:38:44 - 09:38:55
+Transcripts: 4
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.70)
+🎯 Question Difficulty: EASY (confidence: 0.50)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.10)
+
+📝 Summary: The candidate is attempting to define or explain what time series modeling is, though the response is incomplete and repetitive. The recruiter's question is inaudible.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Recruiter audio inaudible - cannot assess question quality
+   - Candidate response incomplete and repetitive
+   - Insufficient conversation content for meaningful evaluation
+
+
+================================================================================
+[09:39:05] EVALUATION
+================================================================================
+Window: 09:38:50 - 09:39:00
+Transcripts: 6
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.60)
+
+📝 Summary: The candidate provides a basic definition of time series and mentions ARIMA as the most commonly used model in finance. The recruiter acknowledges with brief verbal confirmations.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Very brief exchange with incomplete audio
+   - Candidate claim about ARIMA being 'most used' is debatable - GARCH and other models are also common
+   - Recruiter response is minimal/inaudible
+
+
+================================================================================
+[09:39:12] EVALUATION
+================================================================================
+Window: 09:38:54 - 09:39:05
+Transcripts: 6
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.30)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.20)
+
+📝 Summary: Candidate is explaining time series modeling concepts, specifically discussing ARIMA models as commonly used in finance. The recruiter provides minimal acknowledgment ('Okay') while the candidate describes the model.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Incomplete conversation excerpt - candidate mid-explanation
+   - Recruiter contributions are minimal/inaudible
+   - Cannot determine question being answered
+   - Conversation appears truncated at beginning and end
+
+
+================================================================================
+[09:39:18] EVALUATION
+================================================================================
+Window: 09:39:00 - 09:39:12
+Transcripts: 5
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.40)
+💬 Interviewer Tone: HARSH (confidence: 0.95)
+
+📝 Summary: The candidate briefly mentions an autoregressive model, but the recruiter immediately terminates the conversation with harsh criticism, stating the candidate is 'very not knowledgeable' and won't make it for the role.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Harsh tone detected - recruiter is dismissive and unprofessional
+   - Extremely brief interaction - insufficient evaluation time
+   - Negative feedback delivered unprofessionally
+   - Incomplete technical discussion
+   - Candidate appears confused or interrupted
+
+
+================================================================================
+[09:39:48] EVALUATION
+================================================================================
+Window: 09:39:05 - 09:39:42
+Transcripts: 11
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.75)
+💬 Interviewer Tone: HARSH (confidence: 0.95)
+
+📝 Summary: The candidate briefly mentioned an autoregressive model, then the recruiter harshly stated the candidate is not knowledgeable and asked about expectancy and variance of a Poisson distribution. The conversation appears fragmented with unclear responses about binomial distributions.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Harsh tone detected - recruiter explicitly stated candidate 'don't know anything'
+   - Unprofessional interview conduct - premature negative judgment
+   - Fragmented conversation - difficult to follow technical discussion
+   - Basic probability question (Poisson distribution) asked after harsh dismissal
+
+
+================================================================================
+[09:40:11] EVALUATION
+================================================================================
+Window: 09:39:32 - 09:40:05
+Transcripts: 5
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.10)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.10)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.20)
+
+📝 Summary: The conversation fragment is incomplete and incoherent, containing only partial statements from the recruiter about something being 'not independent', modifying a 'bridge', and mentioning 'voltage'. Context is insufficient to determine topic or intent.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incomplete conversation fragment
+   - No clear question or response structure
+   - Incoherent dialogue - possibly mid-sentence or corrupted transcript
+   - Only recruiter speaking - no candidate responses visible
+   - Insufficient context to evaluate
+
+
+================================================================================
+[09:40:46] EVALUATION
+================================================================================
+Window: 09:40:02 - 09:40:39
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: The conversation appears fragmented and incoherent, containing disconnected phrases about bridges, voltage, houses moving, and Arsenal, with no discernible quant finance content. This seems to be either a technical/audio issue, transcript error, or off-topic discussion before the actual interview begins.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incoherent transcript - possible technical issues
+   - No quant finance content detected
+   - Cannot assess interview quality from this excerpt
+   - May be pre-interview small talk or corrupted recording
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:41:15] EVALUATION
+================================================================================
+Window: 09:40:29 - 09:41:08
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt appears to capture technical difficulties or screen-sharing setup issues during the interview, with the recruiter struggling to arrange interface elements or make something scrollable. No quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Possible technical difficulties with interview setup
+   - No substantive content
+   - Fragmented/incomplete sentences suggest technical interruption
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:42:08] EVALUATION
+================================================================================
+Window: 09:40:59 - 09:41:23
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation appears to be about UI/dashboard layout design, specifically discussing making something scrollable and positioning elements at the same height. No quantitative finance topics are discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Appears to be about software UI/design rather than quant finance
+   - Incomplete or fragmented conversation
+   - Off-topic/casual discussion detected ([EXTRA])
+

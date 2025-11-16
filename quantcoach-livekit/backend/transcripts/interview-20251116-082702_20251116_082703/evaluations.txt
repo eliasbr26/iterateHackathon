@@ -1,0 +1,66 @@
+
+================================================================================
+[08:28:52] EVALUATION
+================================================================================
+Window: 08:28:16 - 08:28:46
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: The conversation appears to be fragmented or garbled audio/transcription with no discernible quant finance content. The recruiter seems to be having technical difficulties or the transcription is severely corrupted.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Severely corrupted or garbled transcription
+   - No intelligible technical content
+   - Possible audio/technical issues during interview
+   - Cannot assess interview quality
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[08:29:13] EVALUATION
+================================================================================
+Window: 08:28:37 - 08:29:07
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.60)
+
+📝 Summary: This conversation appears to be casual banter or technical setup discussion unrelated to quant finance, possibly involving equipment testing or room setup with fragmented speech patterns.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - no quant finance content detected
+   - Conversation appears fragmented or possibly transcription errors
+   - No discernible interview questions asked
+   - May be pre-interview setup or casual chat
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[08:29:43] EVALUATION
+================================================================================
+Window: 08:28:59 - 08:29:37
+Transcripts: 9
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: The conversation appears to be garbled or corrupted text with no coherent technical discussion. The recruiter seems to be having technical difficulties or the transcript is severely malformed, with fragmented sentences about 'Mickey', 'bugs', and unclear plans.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Transcript appears corrupted or malformed
+   - No intelligible technical content
+   - Possible recording or transcription error
+   - Cannot evaluate interview quality from this excerpt
+   - Off-topic/casual discussion detected ([EXTRA])
+

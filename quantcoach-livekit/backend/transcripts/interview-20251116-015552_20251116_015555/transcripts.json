@@ -1,0 +1,30 @@
+{
+  "room": "interview-20251116-015552",
+  "session_start": "2025-11-16T01:56:58.909631",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T01:56:58.909631",
+      "speaker": "recruiter",
+      "text": "In general, in general,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:57:17.917896",
+      "speaker": "recruiter",
+      "text": "Please on the git status, on the git status",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:57:20.960244",
+      "speaker": "recruiter",
+      "text": "There's also a delete requirement. Okay, not bad. Not bad.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:57:26.047044",
+      "speaker": "recruiter",
+      "text": "Okay. Okay.",
+      "is_final": true
+    }
+  ]
+}

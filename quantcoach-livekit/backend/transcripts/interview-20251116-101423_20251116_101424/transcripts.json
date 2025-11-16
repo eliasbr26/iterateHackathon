@@ -1,0 +1,300 @@
+{
+  "room": "interview-20251116-101423",
+  "session_start": "2025-11-16T10:14:58.260164",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T10:14:58.260164",
+      "speaker": "candidate",
+      "text": "Take",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:14:58.420010",
+      "speaker": "recruiter",
+      "text": "Okay okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:15:00.284343",
+      "speaker": "candidate",
+      "text": "it. Let's go.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:15:08.176030",
+      "speaker": "recruiter",
+      "text": "okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:15:14.170267",
+      "speaker": "recruiter",
+      "text": "I see you I'm great I'm great",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:15:14.480149",
+      "speaker": "candidate",
+      "text": "Great, great, great, great.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:15:19.190104",
+      "speaker": "recruiter",
+      "text": "look at this function function",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:15:19.192821",
+      "speaker": "candidate",
+      "text": "Look at this one.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:15:28.103305",
+      "speaker": "recruiter",
+      "text": "okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:15:32.868648",
+      "speaker": "candidate",
+      "text": "Okay. Okay.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:15:37.583995",
+      "speaker": "recruiter",
+      "text": "one for the group hello",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:15:41.459132",
+      "speaker": "recruiter",
+      "text": "hi hi",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:15:41.616525",
+      "speaker": "recruiter",
+      "text": "hi uh hi Stefan do you hear me uh uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:15:41.617130",
+      "speaker": "candidate",
+      "text": "Hi, I'm Stefan. Yeah, I can hear you. How is the transcription? Transcription.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:15:41.617508",
+      "speaker": "recruiter",
+      "text": "I can't look at the transcription because it's not shown because it's not",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:15:50.979700",
+      "speaker": "recruiter",
+      "text": "the if I look at it if I look at it",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:15:51.288891",
+      "speaker": "candidate",
+      "text": "Okay. Okay. Hi. Hi.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:15:51.290235",
+      "speaker": "recruiter",
+      "text": "I lose the video so let's try uh okay welcome Stefan uh uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:00.874969",
+      "speaker": "recruiter",
+      "text": "can you tell me about can you tell me about",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:01.027536",
+      "speaker": "recruiter",
+      "text": "the cross validation technique?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:01.337054",
+      "speaker": "candidate",
+      "text": "Yeah, a cross-validation technique that I know is the K-fold cross-validation. If when you divide your training",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:01.338076",
+      "speaker": "candidate",
+      "text": "set into K parts, you use K parts, you use K",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:06.750724",
+      "speaker": "candidate",
+      "text": "parts to train and then train and then.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:06.752015",
+      "speaker": "candidate",
+      "text": "Last part to to to to",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:06.752292",
+      "speaker": "candidate",
+      "text": "validate your your models your models.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:06.905696",
+      "speaker": "candidate",
+      "text": "It's when you're looking for you're looking for",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:06.907014",
+      "speaker": "candidate",
+      "text": "hyper parameters.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:08.328064",
+      "speaker": "recruiter",
+      "text": "OK, good. Well, can you tell me now--",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:14.198644",
+      "speaker": "recruiter",
+      "text": "about, uh, Kelly Hamilton. Kelly Hamilton.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:14.200606",
+      "speaker": "recruiter",
+      "text": "What is the theorem of Kelly Hamilton? What is the theorem of Kelly Hamilton",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:14.356559",
+      "speaker": "recruiter",
+      "text": "? Tell me in the energy problem.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:17.557477",
+      "speaker": "candidate",
+      "text": "Oh, sorry. I don't know the theorem.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:26.288621",
+      "speaker": "recruiter",
+      "text": "Okay, this is not normal. You should absolutely know this when coming prepared to this interview. I think it's very bad. You have to, you have to, you have to prepare",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:32.971377",
+      "speaker": "recruiter",
+      "text": "more for this type of interview, this type of interview.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:35.356421",
+      "speaker": "recruiter",
+      "text": "Yes, but I mean,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:35.517764",
+      "speaker": "candidate",
+      "text": "Okay, that's a little bit mean.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:41.257952",
+      "speaker": "recruiter",
+      "text": "that's how things work. How things work.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:46.245912",
+      "speaker": "recruiter",
+      "text": "You have to, you have to, you have",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:46.247030",
+      "speaker": "recruiter",
+      "text": "to do this. It worked.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:46.397596",
+      "speaker": "recruiter",
+      "text": "(Laughter)",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:47.556560",
+      "speaker": "candidate",
+      "text": "Okay, let's go. Thank you. Thank you.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:52.375907",
+      "speaker": "recruiter",
+      "text": "(Laughter) (Laughter) (Laughter)",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:16:57.614776",
+      "speaker": "candidate",
+      "text": "You can stop the recording if you want.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:17:04.379082",
+      "speaker": "recruiter",
+      "text": "yes I'm going to see I'm going to see",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:17:09.357766",
+      "speaker": "candidate",
+      "text": "Are you recording? Yes, yes, I'm recording. Okay, what do you want to say? I want to say that I'm happy to be here.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:17:38.388269",
+      "speaker": "candidate",
+      "text": "i don't know",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:17:53.391640",
+      "speaker": "candidate",
+      "text": "Questions?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:17:59.548121",
+      "speaker": "candidate",
+      "text": "Let's go. Come on.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T10:18:02.409834",
+      "speaker": "candidate",
+      "text": "Pizza.",
+      "is_final": true
+    }
+  ]
+}

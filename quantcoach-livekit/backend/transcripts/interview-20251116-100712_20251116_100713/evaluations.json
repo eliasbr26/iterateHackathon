@@ -1,0 +1,182 @@
+{
+  "room": "interview-20251116-100712",
+  "total_evaluations": 8,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T10:08:19.681304",
+      "window_start": "2025-11-16T10:07:46.656719",
+      "window_end": "2025-11-16T10:08:14.809142",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation contains only casual greetings and minimal interaction with no substantive content discussed. The recruiter repeats 'Hey yo' multiple times and the candidate responds with 'let's'.",
+      "key_topics": [],
+      "flags": [
+        "No substantive interview content",
+        "Extremely brief exchange",
+        "Appears to be opening pleasantries or technical difficulties",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.3,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation contains only casual greetings and minimal interaction with no substantive content discussed. The recruiter repeats 'Hey yo' multiple times and the candidate responds with 'let's'.\",\n    \"flags\": [\n        \"No substantive interview content\",\n        \"Extremely brief exchange\",\n        \"Appears to be opening pleasantries or technical difficulties\"\n    ],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.3\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T10:08:26.112221",
+      "window_start": "2025-11-16T10:08:06.891059",
+      "window_end": "2025-11-16T10:08:22.117722",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "This is the opening greeting and transition of the interview where the recruiter welcomes the candidate (Stepan) and indicates they will begin the interview questions.",
+      "key_topics": [],
+      "flags": [
+        "No technical content yet",
+        "Interview just beginning",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.8,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"This is the opening greeting and transition of the interview where the recruiter welcomes the candidate (Stepan) and indicates they will begin the interview questions.\",\n    \"flags\": [\"No technical content yet\", \"Interview just beginning\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.8\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T10:08:32.581358",
+      "window_start": "2025-11-16T10:08:14.809142",
+      "window_end": "2025-11-16T10:08:27.825857",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "partially_relevant",
+      "question_difficulty": "easy",
+      "interviewer_tone": "neutral",
+      "summary": "Interview opening with brief greetings followed by the candidate beginning to explain regularization at a basic definitional level, though the response appears incomplete or interrupted.",
+      "key_topics": [
+        "REGULARIZATION"
+      ],
+      "flags": [
+        "Incomplete candidate response",
+        "Very brief excerpt - limited context",
+        "Candidate appears to be stuttering or restarting explanation",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.85,
+      "confidence_difficulty": 0.75,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[REGULARIZATION]\", \"[EXTRA]\"],\n    \"subject_relevance\": \"partially_relevant\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"Interview opening with brief greetings followed by the candidate beginning to explain regularization at a basic definitional level, though the response appears incomplete or interrupted.\",\n    \"flags\": [\"Incomplete candidate response\", \"Very brief excerpt - limited context\", \"Candidate appears to be stuttering or restarting explanation\"],\n    \"confidence_subject\": 0.85,\n    \"confidence_difficulty\": 0.75,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T10:08:37.942111",
+      "window_start": "2025-11-16T10:08:21.791477",
+      "window_end": "2025-11-16T10:08:32.744820",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "partially_relevant",
+      "question_difficulty": "easy",
+      "interviewer_tone": "neutral",
+      "summary": "The interview begins with introductory greetings and quickly transitions to a technical question about regularization. The candidate starts to answer but the excerpt cuts off before a complete explanation is provided.",
+      "key_topics": [
+        "REGULARIZATION"
+      ],
+      "flags": [
+        "Incomplete answer - candidate was cut off mid-response",
+        "Very brief excerpt - limited context for evaluation",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.85,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[REGULARIZATION]\", \"[EXTRA]\"],\n    \"subject_relevance\": \"partially_relevant\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The interview begins with introductory greetings and quickly transitions to a technical question about regularization. The candidate starts to answer but the excerpt cuts off before a complete explanation is provided.\",\n    \"flags\": [\"Incomplete answer - candidate was cut off mid-response\", \"Very brief excerpt - limited context for evaluation\"],\n    \"confidence_subject\": 0.85,\n    \"confidence_difficulty\": 0.90,\n    \"confidence_tone\": 0.70\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T10:08:42.964828",
+      "window_start": "2025-11-16T10:08:27.825857",
+      "window_end": "2025-11-16T10:08:38.267586",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter asked the candidate to explain regularization. The candidate began attempting to define it but struggled to articulate a clear explanation, mentioning variables and verifying properties without completing coherent thoughts.",
+      "key_topics": [
+        "REGULARIZATION"
+      ],
+      "flags": [
+        "Candidate struggling to provide clear definition",
+        "Incomplete/incoherent response",
+        "Very brief excerpt - limited context"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[REGULARIZATION]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter asked the candidate to explain regularization. The candidate began attempting to define it but struggled to articulate a clear explanation, mentioning variables and verifying properties without completing coherent thoughts.\",\n    \"flags\": [\n        \"Candidate struggling to provide clear definition\",\n        \"Incomplete/incoherent response\",\n        \"Very brief excerpt - limited context\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T10:08:49.177296",
+      "window_start": "2025-11-16T10:08:32.744820",
+      "window_end": "2025-11-16T10:08:43.287204",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "unknown",
+      "summary": "Recruiter asks about regularization, but the candidate's response is fragmented and unclear, mentioning loss percentages incoherently. The recruiter mentions 'a bug' which may indicate technical issues or miscommunication during the interview.",
+      "key_topics": [
+        "REGULARIZATION"
+      ],
+      "flags": [
+        "Candidate response incoherent or incomplete",
+        "Technical communication issue or transcription error likely",
+        "Recruiter mentions 'bug' - possible technical difficulty during interview",
+        "No meaningful regularization discussion occurred despite topic being introduced"
+      ],
+      "confidence_subject": 0.85,
+      "confidence_difficulty": 0.7,
+      "confidence_tone": 0.3,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[REGULARIZATION]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"Recruiter asks about regularization, but the candidate's response is fragmented and unclear, mentioning loss percentages incoherently. The recruiter mentions 'a bug' which may indicate technical issues or miscommunication during the interview.\",\n    \"flags\": [\n        \"Candidate response incoherent or incomplete\",\n        \"Technical communication issue or transcription error likely\",\n        \"Recruiter mentions 'bug' - possible technical difficulty during interview\",\n        \"No meaningful regularization discussion occurred despite topic being introduced\"\n    ],\n    \"confidence_subject\": 0.85,\n    \"confidence_difficulty\": 0.7,\n    \"confidence_tone\": 0.3\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T10:08:55.227809",
+      "window_start": "2025-11-16T10:08:38.267586",
+      "window_end": "2025-11-16T10:08:49.503955",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "partially_relevant",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "Brief exchange mentioning sparse variables (likely L1 regularization/Lasso) and a bug discussion. The conversation is fragmented and difficult to interpret fully.",
+      "key_topics": [
+        "REGULARIZATION"
+      ],
+      "flags": [
+        "Fragmented conversation - difficult to assess context",
+        "Recruiter mentions 'bug' repeatedly - unclear if discussing code issue or interview problem",
+        "No clear question-answer structure",
+        "Insufficient context to evaluate technical depth"
+      ],
+      "confidence_subject": 0.6,
+      "confidence_difficulty": 0.3,
+      "confidence_tone": 0.4,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[REGULARIZATION]\"],\n    \"subject_relevance\": \"partially_relevant\",\n    \"question_difficulty\": \"unknown\",\n    \"question_difficulty_note\": \"No clear question structure visible in this fragment\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"Brief exchange mentioning sparse variables (likely L1 regularization/Lasso) and a bug discussion. The conversation is fragmented and difficult to interpret fully.\",\n    \"flags\": [\n        \"Fragmented conversation - difficult to assess context\",\n        \"Recruiter mentions 'bug' repeatedly - unclear if discussing code issue or interview problem\",\n        \"No clear question-answer structure\",\n        \"Insufficient context to evaluate technical depth\"\n    ],\n    \"confidence_subject\": 0.6,\n    \"confidence_difficulty\": 0.3,\n    \"confidence_tone\": 0.4\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T10:09:16.288840",
+      "window_start": "2025-11-16T10:08:43.130949",
+      "window_end": "2025-11-16T10:08:49.503955",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "Fragment of a conversation mentioning sparse variables (likely L1 regularization/Lasso) and a bug discussion. Context is too limited to determine full technical depth.",
+      "key_topics": [
+        "REGULARIZATION"
+      ],
+      "flags": [
+        "Incomplete conversation fragment",
+        "Unclear context",
+        "Mention of 'bug' suggests possible code debugging discussion"
+      ],
+      "confidence_subject": 0.6,
+      "confidence_difficulty": 0.3,
+      "confidence_tone": 0.4,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[REGULARIZATION]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"Fragment of a conversation mentioning sparse variables (likely L1 regularization/Lasso) and a bug discussion. Context is too limited to determine full technical depth.\",\n    \"flags\": [\"Incomplete conversation fragment\", \"Unclear context\", \"Mention of 'bug' suggests possible code debugging discussion\"],\n    \"confidence_subject\": 0.6,\n    \"confidence_difficulty\": 0.3,\n    \"confidence_tone\": 0.4\n}\n```"
+    }
+  ]
+}

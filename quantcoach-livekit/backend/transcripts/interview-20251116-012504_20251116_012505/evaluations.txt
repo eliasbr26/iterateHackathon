@@ -1,0 +1,195 @@
+
+================================================================================
+[01:25:47] EVALUATION
+================================================================================
+Window: 01:25:36 - 01:25:42
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: This excerpt appears to be a technical difficulty moment where the recruiter and candidate are troubleshooting screen sharing or code visibility issues at the start of an interview session.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Technical difficulties with screen sharing
+   - No substantive interview content
+   - Interview has not properly started yet
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:25:54] EVALUATION
+================================================================================
+Window: 01:25:36 - 01:25:49
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt appears to be a technical troubleshooting moment where the recruiter and candidate are experiencing screen sharing or visualization issues at the start of an interview session.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Technical difficulties - no substantive interview content
+   - Screen sharing or setup issues
+   - No quant finance discussion present
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:25:59] EVALUATION
+================================================================================
+Window: 01:25:39 - 01:25:54
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This appears to be a technical troubleshooting discussion about screen sharing or code visibility issues during the interview setup, with no substantive quant finance content discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - technical setup issues only
+   - No clear quant finance content
+   - Conversation lacks coherent structure
+   - Possible transcription or audio quality issues
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:26:03] EVALUATION
+================================================================================
+Window: 01:25:49 - 01:25:59
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This appears to be a casual conversation about technical difficulties or interface issues (possibly with video/audio ranking or display), with no discernible quant finance content.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical quant content
+   - Unclear context - appears to be troubleshooting technical issues
+   - Insufficient interview content to evaluate
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:26:09] EVALUATION
+================================================================================
+Window: 01:25:49 - 01:25:59
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt appears to be a technical troubleshooting or connection setup discussion, with participants checking audio/video functionality and discussing interface issues (ranking/positioning). No substantive quant finance content was discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Appears to be pre-interview setup or technical difficulties
+   - No technical quant finance content present
+   - Fragmented conversation
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:26:14] EVALUATION
+================================================================================
+Window: 01:25:49 - 01:26:09
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This appears to be a technical difficulty or connection issue discussion with fragmented conversation about detecting problems and communication quality. No quant finance content is present.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Fragmented conversation suggesting technical issues
+   - No substantive interview content
+   - Possible audio/video connection problems being discussed
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:26:20] EVALUATION
+================================================================================
+Window: 01:26:09 - 01:26:15
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt appears to be a technical discussion about interface/display issues (scrolling functionality) with no discernible quant finance content. The conversation is fragmented and seems to involve troubleshooting a visual presentation problem.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Fragmented conversation
+   - No quant finance content detected
+   - Unclear context - appears to be technical difficulties with presentation/screen
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:26:35] EVALUATION
+================================================================================
+Window: 01:26:09 - 01:26:30
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt contains fragmented, casual conversation about something being scrollable and sending content to ChatGPT, with no discernible quant finance technical content.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Fragmented conversation
+   - No technical content
+   - Unclear context - possible technical difficulty or screen sharing issue
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:33:41] EVALUATION
+================================================================================
+Window: 01:26:21 - 01:26:30
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.70)
+
+📝 Summary: This excerpt contains only casual banter between the recruiter and candidate, with informal acknowledgments and a mention of using ChatGPT. No technical quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Very brief excerpt - limited context
+   - Off-topic/casual discussion detected ([EXTRA])
+

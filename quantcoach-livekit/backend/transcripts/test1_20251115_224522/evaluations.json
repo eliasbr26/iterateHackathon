@@ -1,0 +1,114 @@
+{
+  "room": "test1",
+  "total_evaluations": 6,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-15T22:46:04.262148",
+      "window_start": "2025-11-15T22:45:42.244308",
+      "window_end": "2025-11-15T22:46:03.232760",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "unknown",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "Evaluation failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVAQdfxS9doQaMMtAgynm'}",
+      "key_topics": [],
+      "flags": [
+        "EVALUATION_ERROR: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVAQdfxS9doQaMMtAgynm'}"
+      ],
+      "confidence_subject": 0.0,
+      "confidence_difficulty": 0.0,
+      "confidence_tone": 0.0,
+      "raw_llm_response": null
+    },
+    {
+      "timestamp": "2025-11-15T22:46:05.375298",
+      "window_start": "2025-11-15T22:46:00.173262",
+      "window_end": "2025-11-15T22:46:05.181306",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "unknown",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "Evaluation failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVAQdkXGubCLkw7MNkWp8'}",
+      "key_topics": [],
+      "flags": [
+        "EVALUATION_ERROR: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVAQdkXGubCLkw7MNkWp8'}"
+      ],
+      "confidence_subject": 0.0,
+      "confidence_difficulty": 0.0,
+      "confidence_tone": 0.0,
+      "raw_llm_response": null
+    },
+    {
+      "timestamp": "2025-11-15T22:46:08.527046",
+      "window_start": "2025-11-15T22:46:00.173262",
+      "window_end": "2025-11-15T22:46:08.344768",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "unknown",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "Evaluation failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVAQdz56pWZcHdVRDHg1X'}",
+      "key_topics": [],
+      "flags": [
+        "EVALUATION_ERROR: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVAQdz56pWZcHdVRDHg1X'}"
+      ],
+      "confidence_subject": 0.0,
+      "confidence_difficulty": 0.0,
+      "confidence_tone": 0.0,
+      "raw_llm_response": null
+    },
+    {
+      "timestamp": "2025-11-15T22:46:11.312531",
+      "window_start": "2025-11-15T22:46:00.173262",
+      "window_end": "2025-11-15T22:46:11.169632",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "unknown",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "Evaluation failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVAQeC6QVaEykibMvC7XA'}",
+      "key_topics": [],
+      "flags": [
+        "EVALUATION_ERROR: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVAQeC6QVaEykibMvC7XA'}"
+      ],
+      "confidence_subject": 0.0,
+      "confidence_difficulty": 0.0,
+      "confidence_tone": 0.0,
+      "raw_llm_response": null
+    },
+    {
+      "timestamp": "2025-11-15T22:46:11.482684",
+      "window_start": "2025-11-15T22:46:03.232760",
+      "window_end": "2025-11-15T22:46:11.170368",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "unknown",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "Evaluation failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVAQeCgt4xQpvMYFopNqV'}",
+      "key_topics": [],
+      "flags": [
+        "EVALUATION_ERROR: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVAQeCgt4xQpvMYFopNqV'}"
+      ],
+      "confidence_subject": 0.0,
+      "confidence_difficulty": 0.0,
+      "confidence_tone": 0.0,
+      "raw_llm_response": null
+    },
+    {
+      "timestamp": "2025-11-15T22:46:24.604808",
+      "window_start": "2025-11-15T22:46:03.232760",
+      "window_end": "2025-11-15T22:46:11.170368",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "unknown",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "Evaluation failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVAQfAzD6PACnjsQDeh1v'}",
+      "key_topics": [],
+      "flags": [
+        "EVALUATION_ERROR: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVAQfAzD6PACnjsQDeh1v'}"
+      ],
+      "confidence_subject": 0.0,
+      "confidence_difficulty": 0.0,
+      "confidence_tone": 0.0,
+      "raw_llm_response": null
+    }
+  ]
+}

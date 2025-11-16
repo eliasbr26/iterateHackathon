@@ -1,0 +1,247 @@
+{
+  "room": "interview-20251116-083118",
+  "total_evaluations": 11,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T08:32:04.352730",
+      "window_start": "2025-11-16T08:31:52.174666",
+      "window_end": "2025-11-16T08:31:59.310281",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation appears to be a brief, unclear exchange mixing languages (English and French) discussing someone named Peshima and timing of leaving/returning. No quantitative finance content is discernible.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "Unclear context",
+        "Mixed language conversation",
+        "No technical content",
+        "Insufficient data to evaluate interview quality",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation appears to be a brief, unclear exchange mixing languages (English and French) discussing someone named Peshima and timing of leaving/returning. No quantitative finance content is discernible.\",\n    \"flags\": [\n        \"Off-topic discussion\",\n        \"Unclear context\",\n        \"Mixed language conversation\",\n        \"No technical content\",\n        \"Insufficient data to evaluate interview quality\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T08:32:09.880699",
+      "window_start": "2025-11-16T08:31:52.174666",
+      "window_end": "2025-11-16T08:31:59.311332",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This excerpt appears to be casual conversation or an unclear exchange, possibly in mixed languages, with no discernible quant finance content. The discussion involves references to 'Peshima' and timing of leaving/returning, but lacks any technical substance.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "No technical content",
+        "Unclear context - possibly mixed languages or audio transcription errors",
+        "Cannot assess interview quality from this excerpt",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This excerpt appears to be casual conversation or an unclear exchange, possibly in mixed languages, with no discernible quant finance content. The discussion involves references to 'Peshima' and timing of leaving/returning, but lacks any technical substance.\",\n    \"flags\": [\n        \"Off-topic discussion\",\n        \"No technical content\",\n        \"Unclear context - possibly mixed languages or audio transcription errors\",\n        \"Cannot assess interview quality from this excerpt\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.90,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T08:32:15.121675",
+      "window_start": "2025-11-16T08:31:52.174666",
+      "window_end": "2025-11-16T08:32:10.260645",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This excerpt appears to be casual conversation in mixed languages (English and French) discussing timing of leaving and returning, with no discernible quant finance content. The discussion involves someone named Peshima and coordination of schedules.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - no quant finance content detected",
+        "Mixed language conversation making interpretation difficult",
+        "Context unclear - may be pre-interview chat or break discussion",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This excerpt appears to be casual conversation in mixed languages (English and French) discussing timing of leaving and returning, with no discernible quant finance content. The discussion involves someone named Peshima and coordination of schedules.\",\n    \"flags\": [\n        \"Off-topic discussion - no quant finance content detected\",\n        \"Mixed language conversation making interpretation difficult\",\n        \"Context unclear - may be pre-interview chat or break discussion\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T08:32:25.903884",
+      "window_start": "2025-11-16T08:32:10.260645",
+      "window_end": "2025-11-16T08:32:20.985947",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This excerpt contains only technical/connection issues and fragmented conversation with no substantive content. Participants appear to be resolving audio/video setup problems before beginning the actual interview.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "No technical content",
+        "Appears to be pre-interview setup conversation",
+        "Fragmented/unclear dialogue suggesting connection issues",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.98,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This excerpt contains only technical/connection issues and fragmented conversation with no substantive content. Participants appear to be resolving audio/video setup problems before beginning the actual interview.\",\n    \"flags\": [\"Off-topic discussion\", \"No technical content\", \"Appears to be pre-interview setup conversation\", \"Fragmented/unclear dialogue suggesting connection issues\"],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.98,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T08:32:31.259741",
+      "window_start": "2025-11-16T08:32:16.947741",
+      "window_end": "2025-11-16T08:32:26.139415",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This excerpt appears to capture pre-interview casual conversation or technical difficulties with audio/video, with fragmented dialogue about what happened to someone's face or video feed. No quant finance content is present.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "Fragmented/unclear dialogue",
+        "Appears to be pre-interview setup or technical issues",
+        "No technical content discussed",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This excerpt appears to capture pre-interview casual conversation or technical difficulties with audio/video, with fragmented dialogue about what happened to someone's face or video feed. No quant finance content is present.\",\n    \"flags\": [\"Off-topic discussion\", \"Fragmented/unclear dialogue\", \"Appears to be pre-interview setup or technical issues\", \"No technical content discussed\"],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T08:32:36.479772",
+      "window_start": "2025-11-16T08:32:16.947741",
+      "window_end": "2025-11-16T08:32:31.732859",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This excerpt appears to be a fragmented or garbled conversation with incomplete sentences and unclear communication, possibly due to technical issues or transcription errors. No quant finance content is discernible.",
+      "key_topics": [],
+      "flags": [
+        "Unintelligible conversation",
+        "Possible technical/audio issues",
+        "No substantive content",
+        "Transcription quality concerns",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This excerpt appears to be a fragmented or garbled conversation with incomplete sentences and unclear communication, possibly due to technical issues or transcription errors. No quant finance content is discernible.\",\n    \"flags\": [\n        \"Unintelligible conversation\",\n        \"Possible technical/audio issues\",\n        \"No substantive content\",\n        \"Transcription quality concerns\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T08:32:41.843020",
+      "window_start": "2025-11-16T08:32:26.139415",
+      "window_end": "2025-11-16T08:32:36.713674",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation appears to be fragmented or corrupted with incomplete, repetitive phrases that don't form coherent technical discussion. No quantitative finance topics are identifiable.",
+      "key_topics": [],
+      "flags": [
+        "Unintelligible conversation - possible transcription error",
+        "No technical content detected",
+        "Conversation quality too poor to evaluate properly",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation appears to be fragmented or corrupted with incomplete, repetitive phrases that don't form coherent technical discussion. No quantitative finance topics are identifiable.\",\n    \"flags\": [\n        \"Unintelligible conversation - possible transcription error\",\n        \"No technical content detected\",\n        \"Conversation quality too poor to evaluate properly\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T08:32:46.820597",
+      "window_start": "2025-11-16T08:32:31.732859",
+      "window_end": "2025-11-16T08:32:42.166990",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This excerpt contains fragmented, unclear conversation that appears to be casual discussion about people named James and Alex, with no discernible quant finance content.",
+      "key_topics": [],
+      "flags": [
+        "Incoherent conversation fragments",
+        "No technical content detected",
+        "Possible audio transcription errors",
+        "Cannot assess interview quality",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This excerpt contains fragmented, unclear conversation that appears to be casual discussion about people named James and Alex, with no discernible quant finance content.\",\n    \"flags\": [\"Incoherent conversation fragments\", \"No technical content detected\", \"Possible audio transcription errors\", \"Cannot assess interview quality\"],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T08:32:51.924890",
+      "window_start": "2025-11-16T08:32:36.713215",
+      "window_end": "2025-11-16T08:32:42.167676",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This excerpt contains fragmented, unclear dialogue that appears to be casual conversation or possibly a technical issue with recording. No discernible quant finance topics are discussed.",
+      "key_topics": [],
+      "flags": [
+        "Unintelligible conversation",
+        "No technical content detected",
+        "Possible recording or transcription error",
+        "Cannot assess interview quality",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This excerpt contains fragmented, unclear dialogue that appears to be casual conversation or possibly a technical issue with recording. No discernible quant finance topics are discussed.\",\n    \"flags\": [\n        \"Unintelligible conversation\",\n        \"No technical content detected\",\n        \"Possible recording or transcription error\",\n        \"Cannot assess interview quality\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T08:32:57.477174",
+      "window_start": "2025-11-16T08:32:36.713215",
+      "window_end": "2025-11-16T08:32:52.403549",
+      "transcripts_evaluated": 7,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation appears to be fragmented casual dialogue with unclear context, possibly discussing names (James, Alex) and attempting to fix or feed something. No quantitative finance topics are discussed.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "No technical content",
+        "Fragmented/unclear conversation",
+        "Possible technical difficulties or casual pre-interview chat",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.6,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation appears to be fragmented casual dialogue with unclear context, possibly discussing names (James, Alex) and attempting to fix or feed something. No quantitative finance topics are discussed.\",\n    \"flags\": [\n        \"Off-topic discussion\",\n        \"No technical content\",\n        \"Fragmented/unclear conversation\",\n        \"Possible technical difficulties or casual pre-interview chat\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.6\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T08:33:34.734572",
+      "window_start": "2025-11-16T08:32:51.931794",
+      "window_end": "2025-11-16T08:33:11.006478",
+      "transcripts_evaluated": 8,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This excerpt contains fragmented, unclear dialogue that does not relate to any quantitative finance topics. The conversation appears to be either a technical glitch, casual off-topic discussion, or recording error.",
+      "key_topics": [],
+      "flags": [
+        "Incomprehensible dialogue",
+        "No technical content present",
+        "Possible recording or transcription error",
+        "No clear interview structure",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.9,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This excerpt contains fragmented, unclear dialogue that does not relate to any quantitative finance topics. The conversation appears to be either a technical glitch, casual off-topic discussion, or recording error.\",\n    \"flags\": [\n        \"Incomprehensible dialogue\",\n        \"No technical content present\",\n        \"Possible recording or transcription error\",\n        \"No clear interview structure\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.90\n}\n```"
+    }
+  ]
+}

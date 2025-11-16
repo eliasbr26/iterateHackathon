@@ -1,0 +1,96 @@
+[03:25:10] 👤 CANDIDATE: The first is the "Parakiet" (parakeet).
+[03:25:16] 👔 RECRUITER: You're faceless.
+[03:25:23] 👔 RECRUITER: You know, this is awesome.
+[03:25:27] 👔 RECRUITER: Okay, hello. Okay, hello.
+[03:25:29] 👔 RECRUITER: Do you hear me?
+[03:25:31] 👤 CANDIDATE: Yes, I can hear you. Tell me, tell
+[03:25:36] 👤 CANDIDATE: me if I am I am.
+[03:25:38] 👤 CANDIDATE: I mean, if it's really the, the candidate. Okay. Okay, great. Great. Okay, great. Great.
+[03:25:38] 👔 RECRUITER: Yes, you are the candidate, and I am the interviewer.
+[03:25:43] 👔 RECRUITER: Great. Okay. Okay. Okay.
+[03:25:43] 👤 CANDIDATE: So it works. Works.
+[03:25:43] 👤 CANDIDATE: Good news. Oh.
+[03:25:48] 👤 CANDIDATE: Yeah.
+[03:25:48] 👔 RECRUITER: So let's dive straight in. We'll talk about math. We'll talk about math.
+[03:25:48] 👔 RECRUITER: Questions?
+[03:25:54] 👤 CANDIDATE: Okay.
+[03:25:58] 👔 RECRUITER: OK. Can you tell me how-- tell me how--
+[03:26:03] 👤 CANDIDATE: Regulation, yeah, yeah.
+[03:26:08] 👤 CANDIDATE: It's when you add a penalty term in the loss, for example,
+[03:26:08] 👤 CANDIDATE: it can be a lasso
+[03:26:10] 👤 CANDIDATE: penalty or a rigid lasso. For example, if you add the lasso penalty, that's because you want
+[03:26:13] 👤 CANDIDATE: to use opacity in your, uh,
+[03:26:16] 👤 CANDIDATE: in, uh, in, uh,
+[03:26:19] 👤 CANDIDATE: in the thing that you, in the thing that you
+[03:26:22] 👤 CANDIDATE: want to, in the variable that we want to variable that we want to
+[03:26:25] 👤 CANDIDATE: to minimize on or maximize on or maximize on.
+[03:26:31] 👤 CANDIDATE: If you add the lasso term, the lasso term
+[03:26:31] 👤 CANDIDATE: it will there will be there will be
+[03:26:31] 👤 CANDIDATE: more coefficient coefficient
+[03:26:34] 👤 CANDIDATE: equal to zeros in your solution.
+[03:26:36] 👔 RECRUITER: OK, great. OK. OK.
+[03:26:42] 👔 RECRUITER: How do you do when you have to-- when you have to--
+[03:26:42] 👔 RECRUITER: when you want to do features like this? So let's say you have a-- so let's say you have a
+[03:26:43] 👔 RECRUITER: very big matrix. You will have to select-- you will have to select
+[03:26:44] 👤 CANDIDATE: yeah
+[03:26:51] 👔 RECRUITER: the main features but you don't really know how to select them. What's the
+[03:26:57] 👔 RECRUITER: Hello, my name is Jean-Louis
+[03:26:58] 👤 CANDIDATE: uh if you can compute a current a current
+[03:27:04] 👤 CANDIDATE: matrix but if but if
+[03:27:04] 👤 CANDIDATE: you you have a lot of a lot of uh
+[03:27:05] 👤 CANDIDATE: features and you want to select only three to select only three
+[03:27:07] 👤 CANDIDATE: I think the best way is to do a
+[03:27:10] 👤 CANDIDATE: DCA. It's the principle
+[03:27:13] 👤 CANDIDATE: of the potential analysis.
+[03:27:15] 👔 RECRUITER: You have to be more quick. You have to be more you have to be more
+[03:27:21] 👔 RECRUITER: You have to give me answers. You have to give me answers
+[03:27:21] 👔 RECRUITER: . So more reactively, I can't, I can't,
+[03:27:21] 👔 RECRUITER: this is not normal, this is not normal.
+[03:27:24] 👔 RECRUITER: I want your activity.
+[03:27:26] 👔 RECRUITER: Ah. Yeah. Yeah.
+[03:27:28] 👤 CANDIDATE: okay I'm a little bit dist distab little
+[03:27:35] 👤 CANDIDATE: ah ah
+[03:27:35] 👔 RECRUITER: Yeah. I know. Yeah. I know
+[03:27:35] 👔 RECRUITER: . I mean, this is, this is
+[03:27:40] 👔 RECRUITER: a, I mean, this is a very select, this is a very select.
+[03:27:42] 👔 RECRUITER: place so you have to expect to be selected accordingly.
+[03:27:42] 👤 CANDIDATE: yeah yeah
+[03:27:48] 👤 CANDIDATE: I think you put a lot a lot of a lot of
+[03:27:48] 👤 CANDIDATE: pressure on me.
+[03:27:50] 👔 RECRUITER: Maybe. How do you
+[03:27:56] 👔 RECRUITER: think you could do?
+[03:28:02] 👔 RECRUITER: Thanks.
+[03:28:04] 👔 RECRUITER: It's okay. It's okay. Okay. Okay.
+[03:28:04] 👤 CANDIDATE: I think I have a- *sigh*
+[03:28:09] 👤 CANDIDATE: *click*
+[03:28:10] 👔 RECRUITER: Let's move on to the next question. Question.
+[03:28:15] 👤 CANDIDATE: *click*
+[03:28:20] 👔 RECRUITER: Okay, thank you very much for your, uh, uh,
+[03:28:20] 👔 RECRUITER: time. I will, uh, talk to, uh, talk to
+[03:28:24] 👤 CANDIDATE: *click*
+[03:28:28] 👔 RECRUITER: guitar and give you an answer, give you an answer very
+[03:28:33] 👔 RECRUITER: quickly.
+[03:28:33] 👔 RECRUITER: This is one hour. Oh, just that. Oh, just that.
+[03:28:33] 👔 RECRUITER: Question. Question.
+[03:28:33] 👔 RECRUITER: Since the beginning of the project
+[03:28:33] 👔 RECRUITER: , we have been working on the
+[03:28:39] 👔 RECRUITER: Right. Once I put, but it is such a mean, such a mean,
+[03:28:41] 👔 RECRUITER: I was like, didn't that's like, look at, you know, that I did
+[03:28:45] 👔 RECRUITER: that. But in fact, I had a
+[03:28:48] 👔 RECRUITER: question. I think I just expressed the CC in the off-topic discussion. Off-topic discussion
+[03:28:50] 👔 RECRUITER: . It's a bit of a mess, I think. Okay, okay. Uh, uh
+[03:28:56] 👔 RECRUITER: I had, uh, I had
+[03:28:57] 👔 RECRUITER: done a, you know, little learning, harsh interview, tone learning, harsh interview, tone, interview, tone.
+[03:28:59] 👔 RECRUITER: Tone warning, tone warning.
+[03:29:03] 👔 RECRUITER: You can't say that at the end of the song. At the end of the song.
+[03:29:05] 👔 RECRUITER: Because at the beginning, it was still encouraging, I think.
+[03:29:14] 👔 RECRUITER: Hello, dear viewers of this video. It's just Li Xiang. It's just Li Xiang.
+[03:29:21] 👔 RECRUITER: Nika? C'est bien, c'est bien. C'est bien, c'est bien.
+[03:29:24] 👔 RECRUITER: Ah, ah, ah ! Il a fait le sexe seul ! Il est chaud ! Il a fait le
+[03:29:30] 👔 RECRUITER: No, Mohamed, you know, when I was young, you know, when I was young
+[03:29:33] 👔 RECRUITER: , I was always under pressure. I was always under pressure. He started
+[03:29:36] 👔 RECRUITER: to put pressure on me. Yes, because you were a big star.
+[03:29:43] 👔 RECRUITER: Was there something already in the topic? Ah yes, yes, yes.
+[03:29:44] 👔 RECRUITER: Yes, yes.
+[03:29:47] 👔 RECRUITER: Yes, yes.
+[03:29:50] 👔 RECRUITER: Critique, warning. Montre un peu. Montre un peu.
