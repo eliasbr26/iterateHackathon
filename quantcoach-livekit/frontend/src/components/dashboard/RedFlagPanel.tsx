@@ -178,12 +178,12 @@ const RedFlagPanel = ({ evaluations, className = '' }: RedFlagPanelProps) => {
         <h3 className="text-sm font-medium">Alerts & Flags</h3>
         <div className="flex gap-2">
           {criticalCount > 0 && (
-            <Badge variant="destructive" className="text-xs">
+            <Badge variant="destructive" className="text-xs font-semibold animate-pulse shadow-lg">
               {criticalCount} Critical
             </Badge>
           )}
           {warningCount > 0 && (
-            <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-300">
+            <Badge variant="outline" className="text-xs font-semibold bg-yellow-100 text-yellow-800 border-yellow-400 shadow-md">
               {warningCount} Warnings
             </Badge>
           )}
@@ -203,20 +203,46 @@ const RedFlagPanel = ({ evaluations, className = '' }: RedFlagPanelProps) => {
               <Alert
                 key={flag.id}
                 variant={getVariant(flag.type)}
-                className="relative"
+                className={`relative ${
+                  flag.type === 'critical'
+                    ? 'bg-red-100/90 border-red-400 border-2 shadow-xl backdrop-blur-sm'
+                    : flag.type === 'warning'
+                    ? 'bg-yellow-100/80 border-yellow-400 border-2 shadow-lg backdrop-blur-sm'
+                    : ''
+                }`}
               >
                 <div className="flex gap-3">
-                  <div className="mt-0.5">{getIcon(flag.type)}</div>
+                  <div className={`mt-0.5 ${
+                    flag.type === 'critical'
+                      ? 'text-red-600'
+                      : flag.type === 'warning'
+                      ? 'text-yellow-700'
+                      : 'text-blue-600'
+                  }`}>
+                    {getIcon(flag.type)}
+                  </div>
                   <div className="flex-1 space-y-1">
                     <div className="flex items-start justify-between gap-2">
-                      <h4 className="text-sm font-medium leading-none">
+                      <h4 className={`text-sm ${flag.type === 'critical' || flag.type === 'warning' ? 'font-bold' : 'font-medium'} leading-none ${
+                        flag.type === 'critical'
+                          ? 'text-red-900'
+                          : flag.type === 'warning'
+                          ? 'text-yellow-900'
+                          : ''
+                      }`}>
                         {flag.title}
                       </h4>
                       <span className="text-xs text-muted-foreground whitespace-nowrap">
                         {formatTime(flag.timestamp)}
                       </span>
                     </div>
-                    <AlertDescription className="text-xs">
+                    <AlertDescription className={`text-xs ${
+                      flag.type === 'critical'
+                        ? 'text-red-800 font-medium'
+                        : flag.type === 'warning'
+                        ? 'text-yellow-800 font-medium'
+                        : ''
+                    }`}>
                       {flag.description}
                     </AlertDescription>
                     {flag.confidence !== undefined && (

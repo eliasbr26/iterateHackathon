@@ -1,0 +1,95 @@
+{
+  "room": "interview-20251116-092056",
+  "total_evaluations": 4,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T09:22:49.551703",
+      "window_start": "2025-11-16T09:22:01.479198",
+      "window_end": "2025-11-16T09:22:44.662750",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation excerpt contains fragmented, unclear speech that appears to be either technical difficulties, casual banter, or incomprehensible dialogue. No substantive quant finance content is present.",
+      "key_topics": [],
+      "flags": [
+        "Incomprehensible dialogue",
+        "No technical content",
+        "Possible transcription error or audio issues",
+        "Unable to assess interview quality",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.98,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation excerpt contains fragmented, unclear speech that appears to be either technical difficulties, casual banter, or incomprehensible dialogue. No substantive quant finance content is present.\",\n    \"flags\": [\"Incomprehensible dialogue\", \"No technical content\", \"Possible transcription error or audio issues\", \"Unable to assess interview quality\"],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.98,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:23:31.554664",
+      "window_start": "2025-11-16T09:22:44.662750",
+      "window_end": "2025-11-16T09:23:26.520380",
+      "transcripts_evaluated": 8,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation appears to be garbled or mistranscribed text with no coherent discussion. The recruiter mentions being hungry, waiting, and references to a program/website and someone named Maggie, but no quant finance topics are addressed.",
+      "key_topics": [],
+      "flags": [
+        "Garbled or mistranscribed conversation",
+        "No coherent quant finance discussion",
+        "Possible technical issue with recording or transcription",
+        "Off-topic discussion only",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation appears to be garbled or mistranscribed text with no coherent discussion. The recruiter mentions being hungry, waiting, and references to a program/website and someone named Maggie, but no quant finance topics are addressed.\",\n    \"flags\": [\n        \"Garbled or mistranscribed conversation\",\n        \"No coherent quant finance discussion\",\n        \"Possible technical issue with recording or transcription\",\n        \"Off-topic discussion only\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:24:02.910658",
+      "window_start": "2025-11-16T09:23:26.520380",
+      "window_end": "2025-11-16T09:23:56.669689",
+      "transcripts_evaluated": 9,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This conversation appears to be largely incoherent or mistranscribed, containing fragments in multiple languages discussing front-end/back-end development for an app, with mentions of someone named Maggie and a reference to 3 o'clock in the morning. No quantitative finance topics are discussed.",
+      "key_topics": [],
+      "flags": [
+        "Conversation appears mistranscribed or corrupted",
+        "No technical quant finance content",
+        "Unclear context and coherence",
+        "Mixed languages and fragmented sentences",
+        "Discussion about app development (front-end/back-end) not quant finance",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This conversation appears to be largely incoherent or mistranscribed, containing fragments in multiple languages discussing front-end/back-end development for an app, with mentions of someone named Maggie and a reference to 3 o'clock in the morning. No quantitative finance topics are discussed.\",\n    \"flags\": [\n        \"Conversation appears mistranscribed or corrupted\",\n        \"No technical quant finance content\",\n        \"Unclear context and coherence\",\n        \"Mixed languages and fragmented sentences\",\n        \"Discussion about app development (front-end/back-end) not quant finance\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:24:47.528511",
+      "window_start": "2025-11-16T09:23:47.638722",
+      "window_end": "2025-11-16T09:24:11.638544",
+      "transcripts_evaluated": 8,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This conversation appears to be fragmented or mistranscribed content discussing arriving at a hotel at 3am, taking taxis, and mentions of an app backend and video intimidation. No quantitative finance topics are discussed.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - no quant finance content",
+        "Conversation appears fragmented or mistranscribed",
+        "Unable to identify clear interview structure",
+        "Content may be translation artifacts or transcription errors",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This conversation appears to be fragmented or mistranscribed content discussing arriving at a hotel at 3am, taking taxis, and mentions of an app backend and video intimidation. No quantitative finance topics are discussed.\",\n    \"flags\": [\n        \"Off-topic discussion - no quant finance content\",\n        \"Conversation appears fragmented or mistranscribed\",\n        \"Unable to identify clear interview structure\",\n        \"Content may be translation artifacts or transcription errors\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.7\n}\n```"
+    }
+  ]
+}

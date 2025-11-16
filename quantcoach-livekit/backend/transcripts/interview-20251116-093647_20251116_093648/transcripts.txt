@@ -1,0 +1,62 @@
+[09:37:19] 👤 CANDIDATE: Okay okay okay
+[09:37:19] 👔 RECRUITER: Okay okay
+[09:37:23] 👤 CANDIDATE: Let's see.
+[09:37:26] 👤 CANDIDATE: (crowd chattering)
+[09:37:28] 👤 CANDIDATE: - Sounds like, sounds like
+[09:37:30] 👤 CANDIDATE: (echoing)
+[09:37:32] 👤 CANDIDATE: (beeping) - Keep up with it. Keep up with it.
+[09:37:32] 👔 RECRUITER: okay okay
+[09:37:37] 👤 CANDIDATE: (beeping)
+[09:37:43] 👤 CANDIDATE: (speaking in foreign language)
+[09:37:43] 👤 CANDIDATE: - So, so.
+[09:37:44] 👤 CANDIDATE: - Hi, I'm Stephan El Echani. I'm a fourth
+[09:37:44] 👔 RECRUITER: Okay, hello. Okay, hello.
+[09:37:50] 👤 CANDIDATE: year student. - Yeah, yeah, yeah, yeah, yeah, yeah, yeah, yeah, yeah, yeah, yeah
+[09:37:50] 👔 RECRUITER: Number, number
+[09:38:00] 👤 CANDIDATE: . I'm a fourth year student at Ecithia student at Ecithia
+[09:38:05] 👤 CANDIDATE: student at Ecithia Polytechnic and I am well and I am well and I am well
+[09:38:06] 👔 RECRUITER: Hello.
+[09:38:16] 👤 CANDIDATE: When you want to make your variable respect some kind of property
+[09:38:16] 👤 CANDIDATE: this for example if you add
+[09:38:23] 👤 CANDIDATE: a certain penalty term in the loss that you want to minimize your variable will be different.
+[09:38:23] 👤 CANDIDATE: For example, you can add a
+[09:38:23] 👤 CANDIDATE: less penalty term to have a
+[09:38:23] 👔 RECRUITER: Okay, yeah.
+[09:38:30] 👤 CANDIDATE: variable
+[09:38:35] 👔 RECRUITER: Okay, nice. (indistinct chatter)
+[09:38:35] 👤 CANDIDATE: . I can also speak about time series. Uh, uh,
+[09:38:44] 👔 RECRUITER: (
+[09:38:50] 👤 CANDIDATE: time series is a way of modeling, way of modeling
+[09:38:54] 👤 CANDIDATE: modeling
+[09:38:55] 👔 RECRUITER: inaudible)
+[09:38:55] 👔 RECRUITER: Okay. Okay.
+[09:38:55] 👤 CANDIDATE: values that evolve through time. There exists a lot of models in time series, but I think the most used one for the moment in finance is the ARIMA model
+[09:39:00] 👔 RECRUITER: Okay. Okay.
+[09:39:05] 👤 CANDIDATE: . It is an autoregressive
+[09:39:05] 👤 CANDIDATE: model .
+[09:39:12] 👤 CANDIDATE: And do you have a question? Do you have a question
+[09:39:12] 👔 RECRUITER: Amazing. I think, yeah, I think you are very not knowledgeable. You don't know anything. It's very unfortunate, but I don't think you can make it for this role. For this role.
+[09:39:18] 👔 RECRUITER: okay okay uh
+[09:39:20] 👔 RECRUITER: can you tell me about the expectancy and the variance of a poisson law poisson law
+[09:39:23] 👔 RECRUITER: that's that's
+[09:39:26] 👔 RECRUITER: probably assertion distribution where where uh
+[09:39:29] 👔 RECRUITER: I mean for binomial where the input the input
+[09:39:32] 👔 RECRUITER: are not independent.
+[09:39:42] 👔 RECRUITER: okay maybe yeah maybe yeah
+[09:39:48] 👔 RECRUITER: okay I understand it's okay it's okay
+[09:40:02] 👔 RECRUITER: let's modify the bridge here here it's
+[09:40:05] 👔 RECRUITER: voltage but but
+[09:40:14] 👔 RECRUITER: I'm not sure if you can see it, but there's a video of the... the... the... the... the... the... the... the... the... the... the... the... the
+[09:40:20] 👔 RECRUITER: - Did you move the house? - Yes, it moved. -
+[09:40:24] 👔 RECRUITER: I was asked to interview Arsenal.
+[09:40:29] 👔 RECRUITER: a scenario okay that's that's
+[09:40:32] 👔 RECRUITER: okay
+[09:40:39] 👔 RECRUITER: Can we walk? It doesn't walk. It's a
+[09:40:47] 👔 RECRUITER: It's true that we can put a table here.
+[09:40:50] 👔 RECRUITER: But I wanted to put it here, but wait, okay, wait, okay, wait, okay, wait, okay,
+[09:40:56] 👔 RECRUITER: hey uh can you put the inter put the inter
+[09:40:59] 👔 RECRUITER: yeah yeah same
+[09:41:08] 👔 RECRUITER: make it scrollable what I mean what I mean
+[09:41:17] 👔 RECRUITER: at the same place as the dashboard and analysis etc.
+[09:41:20] 👔 RECRUITER: That's same height, height,
+[09:41:23] 👔 RECRUITER: that's on the right. Is it, is it, do

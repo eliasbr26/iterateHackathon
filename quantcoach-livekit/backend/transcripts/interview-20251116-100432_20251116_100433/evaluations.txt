@@ -1,0 +1,66 @@
+
+================================================================================
+[10:06:15] EVALUATION
+================================================================================
+Window: 10:05:38 - 10:06:10
+Transcripts: 10
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.85)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: HARSH (confidence: 0.95)
+
+📝 Summary: The recruiter mentions regularization and requests the candidate present themselves, but the conversation is largely incoherent with inappropriate language and off-topic discussion about bathrooms and finding things.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Harsh tone detected
+   - Inappropriate language used by recruiter
+   - Incoherent conversation flow
+   - Technical topics mentioned but not properly discussed
+   - Unprofessional interview conduct
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[10:06:39] EVALUATION
+================================================================================
+Window: 10:06:04 - 10:06:34
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation appears to be a casual transition moment discussing bathroom breaks and possibly technical difficulties with video sharing. No quantitative finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content present
+   - Possible transcription errors or audio issues
+   - Interview may not have started yet or is during a break
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[10:07:00] EVALUATION
+================================================================================
+Window: 10:06:25 - 10:06:34
+Transcripts: 2
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter is making a brief administrative comment about sending a video, with no technical content discussed. This appears to be a transition or technical setup moment in the interview.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Administrative/logistical conversation only
+   - No substantive interview content
+   - Off-topic/casual discussion detected ([EXTRA])
+

@@ -1,0 +1,92 @@
+{
+  "room": "interview-20251116-084252",
+  "total_evaluations": 4,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T08:44:42.418106",
+      "window_start": "2025-11-16T08:43:56.835426",
+      "window_end": "2025-11-16T08:44:36.890318",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation appears to be fragmented audio or transcription errors with no substantive content. The recruiter makes unclear statements about something being 'bad' and uncertainty about 'going for it,' but no technical quant finance topics are discussed.",
+      "key_topics": [],
+      "flags": [
+        "Conversation appears incomplete or corrupted",
+        "No technical content detected",
+        "Transcription quality issues - fragments like 'foreign' and incomplete sentences",
+        "Unable to determine interview context or subject matter",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation appears to be fragmented audio or transcription errors with no substantive content. The recruiter makes unclear statements about something being 'bad' and uncertainty about 'going for it,' but no technical quant finance topics are discussed.\",\n    \"flags\": [\n        \"Conversation appears incomplete or corrupted\",\n        \"No technical content detected\",\n        \"Transcription quality issues - fragments like 'foreign' and incomplete sentences\",\n        \"Unable to determine interview context or subject matter\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.90,\n    \"confidence_tone\": 0.70\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T08:45:23.671872",
+      "window_start": "2025-11-16T08:44:36.890318",
+      "window_end": "2025-11-16T08:45:18.849971",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation appears fragmented and incoherent, with the recruiter making unclear statements about something being 'bad' and suggesting they 'stop this story'. No quant finance topics were discussed.",
+      "key_topics": [],
+      "flags": [
+        "Incoherent conversation",
+        "No technical content",
+        "Possible interview disruption or technical recording issue",
+        "Recruiter appears confused or distracted"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.6,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation appears fragmented and incoherent, with the recruiter making unclear statements about something being 'bad' and suggesting they 'stop this story'. No quant finance topics were discussed.\",\n    \"flags\": [\n        \"Incoherent conversation\",\n        \"No technical content\",\n        \"Possible interview disruption or technical recording issue\",\n        \"Recruiter appears confused or distracted\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.6\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T08:45:59.686869",
+      "window_start": "2025-11-16T08:45:18.849971",
+      "window_end": "2025-11-16T08:45:55.000820",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation appears fragmented and off-topic, with the recruiter making unclear statements about stopping a story, fixing something, and asking about a song name. No quantitative finance content is discussed.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "Fragmented conversation - unclear context",
+        "No technical quant finance content",
+        "Possible technical or communication issue during interview",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.6,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation appears fragmented and off-topic, with the recruiter making unclear statements about stopping a story, fixing something, and asking about a song name. No quantitative finance content is discussed.\",\n    \"flags\": [\n        \"Off-topic discussion\",\n        \"Fragmented conversation - unclear context\",\n        \"No technical quant finance content\",\n        \"Possible technical or communication issue during interview\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.6\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T08:46:20.345618",
+      "window_start": "2025-11-16T08:45:45.835795",
+      "window_end": "2025-11-16T08:45:55.000820",
+      "transcripts_evaluated": 2,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter asks casual personal questions about the candidate's wellbeing and what song they're listening to. No technical or quant finance content discussed.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "No technical content",
+        "Appears to be casual chat or interview warm-up",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter asks casual personal questions about the candidate's wellbeing and what song they're listening to. No technical or quant finance content discussed.\",\n    \"flags\": [\"Off-topic discussion\", \"No technical content\", \"Appears to be casual chat or interview warm-up\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.7\n}\n```"
+    }
+  ]
+}

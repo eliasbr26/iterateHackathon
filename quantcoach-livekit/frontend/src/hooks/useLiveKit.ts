@@ -56,7 +56,15 @@ export const useLiveKit = () => {
       console.log('Connected to room:', newRoom.name);
 
       // Enable camera and microphone
+      console.log('useLiveKit: Enabling camera and microphone...');
       await newRoom.localParticipant.enableCameraAndMicrophone();
+      console.log('useLiveKit: Camera and microphone enabled');
+
+      // Log tracks
+      console.log('useLiveKit: Local tracks:', {
+        videoTracks: newRoom.localParticipant.videoTrackPublications.size,
+        audioTracks: newRoom.localParticipant.audioTrackPublications.size
+      });
 
       setRoom(newRoom);
       setIsConnected(true);

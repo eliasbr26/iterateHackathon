@@ -1,0 +1,49 @@
+[10:14:58] 👤 CANDIDATE: Take
+[10:14:58] 👔 RECRUITER: Okay okay
+[10:15:00] 👤 CANDIDATE: it. Let's go.
+[10:15:08] 👔 RECRUITER: okay
+[10:15:14] 👔 RECRUITER: I see you I'm great I'm great
+[10:15:14] 👤 CANDIDATE: Great, great, great, great.
+[10:15:19] 👔 RECRUITER: look at this function function
+[10:15:19] 👤 CANDIDATE: Look at this one.
+[10:15:28] 👔 RECRUITER: okay
+[10:15:32] 👤 CANDIDATE: Okay. Okay.
+[10:15:37] 👔 RECRUITER: one for the group hello
+[10:15:41] 👔 RECRUITER: hi hi
+[10:15:41] 👔 RECRUITER: hi uh hi Stefan do you hear me uh uh
+[10:15:41] 👤 CANDIDATE: Hi, I'm Stefan. Yeah, I can hear you. How is the transcription? Transcription.
+[10:15:41] 👔 RECRUITER: I can't look at the transcription because it's not shown because it's not
+[10:15:50] 👔 RECRUITER: the if I look at it if I look at it
+[10:15:51] 👤 CANDIDATE: Okay. Okay. Hi. Hi.
+[10:15:51] 👔 RECRUITER: I lose the video so let's try uh okay welcome Stefan uh uh
+[10:16:00] 👔 RECRUITER: can you tell me about can you tell me about
+[10:16:01] 👔 RECRUITER: the cross validation technique?
+[10:16:01] 👤 CANDIDATE: Yeah, a cross-validation technique that I know is the K-fold cross-validation. If when you divide your training
+[10:16:01] 👤 CANDIDATE: set into K parts, you use K parts, you use K
+[10:16:06] 👤 CANDIDATE: parts to train and then train and then.
+[10:16:06] 👤 CANDIDATE: Last part to to to to
+[10:16:06] 👤 CANDIDATE: validate your your models your models.
+[10:16:06] 👤 CANDIDATE: It's when you're looking for you're looking for
+[10:16:06] 👤 CANDIDATE: hyper parameters.
+[10:16:08] 👔 RECRUITER: OK, good. Well, can you tell me now--
+[10:16:14] 👔 RECRUITER: about, uh, Kelly Hamilton. Kelly Hamilton.
+[10:16:14] 👔 RECRUITER: What is the theorem of Kelly Hamilton? What is the theorem of Kelly Hamilton
+[10:16:14] 👔 RECRUITER: ? Tell me in the energy problem.
+[10:16:17] 👤 CANDIDATE: Oh, sorry. I don't know the theorem.
+[10:16:26] 👔 RECRUITER: Okay, this is not normal. You should absolutely know this when coming prepared to this interview. I think it's very bad. You have to, you have to, you have to prepare
+[10:16:32] 👔 RECRUITER: more for this type of interview, this type of interview.
+[10:16:35] 👔 RECRUITER: Yes, but I mean,
+[10:16:35] 👤 CANDIDATE: Okay, that's a little bit mean.
+[10:16:41] 👔 RECRUITER: that's how things work. How things work.
+[10:16:46] 👔 RECRUITER: You have to, you have to, you have
+[10:16:46] 👔 RECRUITER: to do this. It worked.
+[10:16:46] 👔 RECRUITER: (Laughter)
+[10:16:47] 👤 CANDIDATE: Okay, let's go. Thank you. Thank you.
+[10:16:52] 👔 RECRUITER: (Laughter) (Laughter) (Laughter)
+[10:16:57] 👤 CANDIDATE: You can stop the recording if you want.
+[10:17:04] 👔 RECRUITER: yes I'm going to see I'm going to see
+[10:17:09] 👤 CANDIDATE: Are you recording? Yes, yes, I'm recording. Okay, what do you want to say? I want to say that I'm happy to be here.
+[10:17:38] 👤 CANDIDATE: i don't know
+[10:17:53] 👤 CANDIDATE: Questions?
+[10:17:59] 👤 CANDIDATE: Let's go. Come on.
+[10:18:02] 👤 CANDIDATE: Pizza.

@@ -1,0 +1,306 @@
+
+================================================================================
+[09:50:18] EVALUATION
+================================================================================
+Window: 09:49:38 - 09:50:09
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt contains only fragmented recruiter-to-recruiter dialogue with no clear technical discussion or candidate interaction. The speakers appear to be coordinating logistics or discussing something off-screen.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No candidate responses detected
+   - Off-topic discussion - no quant finance content
+   - Fragmented conversation with unclear context
+   - Appears to be recruiter-only coordination, not actual interview dialogue
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:50:40] EVALUATION
+================================================================================
+Window: 09:50:04 - 09:50:36
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The recruiter appears to be making fragmented comments about reviewing something (possibly a document or report), but the conversation is unclear and contains no technical quant finance content.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Unclear conversation context
+   - No technical discussion
+   - Fragmented communication
+   - Possibly incomplete transcript
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:51:12] EVALUATION
+================================================================================
+Window: 09:50:36 - 09:51:06
+Transcripts: 9
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation appears to be a pre-interview setup or technical check discussing video recording logistics and instructions about question-answer format. No quantitative finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - no technical content
+   - Conversation appears fragmented or poorly transcribed
+   - Possible technical/setup phase before actual interview
+   - No clear questions asked yet
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:51:39] EVALUATION
+================================================================================
+Window: 09:50:57 - 09:51:34
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation appears to be fragmented and unclear, with the recruiter discussing procedural aspects of the interview format and making scattered comments. No substantive quant finance content is discernible from this excerpt.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Conversation is incoherent or poorly transcribed
+   - No technical content discussed
+   - Appears to be setup/procedural discussion only
+   - Multiple language fragments present (possible transcription errors)
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:52:12] EVALUATION
+================================================================================
+Window: 09:51:34 - 09:52:06
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt contains fragmented, casual conversation between recruiters with no technical content. The discussion appears to be informal banter including mentions of birthdays and unclear procedural discussions, with no quant finance topics addressed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Unprofessional casual conversation
+   - Fragmented and incoherent dialogue
+   - No clear interview structure
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:52:42] EVALUATION
+================================================================================
+Window: 09:52:00 - 09:52:37
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt contains casual, disjointed conversation with birthday references and informal language. No quantitative finance topics are discussed, and the content appears to be either off-topic banter or possibly a recording error.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Entirely off-topic discussion
+   - No professional interview content detected
+   - Unclear if this is actual interview dialogue
+   - Unprofessional language and context
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:53:13] EVALUATION
+================================================================================
+Window: 09:52:37 - 09:53:09
+Transcripts: 9
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.80)
+
+📝 Summary: This excerpt captures pre-interview technical difficulties with video setup and audio/visual connection issues. No substantive interview content or quant finance topics were discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Technical setup issues
+   - No interview content yet
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:53:36] EVALUATION
+================================================================================
+Window: 09:53:00 - 09:53:30
+Transcripts: 8
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.75)
+💬 Interviewer Tone: HARSH (confidence: 0.90)
+
+📝 Summary: The recruiter briefly mentions cross-validation but the conversation is fragmented and disorganized, with the recruiter complaining about technical bugs and abruptly transitioning between topics including an unexplained reference to food.
+
+🔑 Key Topics: CV_TECHNIQUES
+
+🚩 Flags:
+   - Harsh tone detected - recruiter appears frustrated
+   - Disorganized interview - fragmented speech and abrupt transitions
+   - Technical difficulties mentioned - possible system issues
+   - Cross-validation topic introduced but not developed
+   - Unprofessional elements - random mention of food
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:53:58] EVALUATION
+================================================================================
+Window: 09:53:21 - 09:53:52
+Transcripts: 5
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.70)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.30)
+
+📝 Summary: The recruiter mentions 'cross validation' twice, suggesting an attempt to discuss CV techniques, but the conversation quickly becomes incoherent with fragmented statements about video and food that appear off-topic or possibly due to technical/transcription issues.
+
+🔑 Key Topics: CV_TECHNIQUES
+
+🚩 Flags:
+   - Incoherent conversation - possible transcription errors
+   - Technical topic (cross-validation) mentioned but not developed
+   - Abrupt shift to off-topic discussion about food
+   - No clear question asked despite topic introduction
+   - Communication quality issues prevent proper interview assessment
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:54:38] EVALUATION
+================================================================================
+Window: 09:53:52 - 09:54:33
+Transcripts: 7
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.30)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.90)
+
+📝 Summary: The recruiter provides positive feedback about feature selection, saying 'very very good' and 'perfect', though the actual question and candidate response are not captured in this excerpt.
+
+🔑 Key Topics: FEATURE_SELECTION
+
+🚩 Flags:
+   - Incomplete conversation - only recruiter feedback visible
+   - No actual question or answer content present
+   - Cannot assess technical depth without full exchange
+
+
+================================================================================
+[09:55:11] EVALUATION
+================================================================================
+Window: 09:54:33 - 09:55:06
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: This appears to be a technical difficulty or connection issue during an interview setup. The conversation consists of fragmented statements about connectivity problems, camera issues, and alerts, with no substantive quant finance discussion.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Technical difficulties during interview
+   - No substantive content discussed
+   - Fragmented/unclear communication
+   - Possible recording or transcription error
+
+
+================================================================================
+[09:55:38] EVALUATION
+================================================================================
+Window: 09:55:01 - 09:55:33
+Transcripts: 11
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation consists entirely of technical connection issues, laughter, and dialogue in a foreign language with no discernible quant finance content.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content discussed
+   - Communication in foreign language prevents assessment
+   - Appears to be pre-interview setup or technical difficulties
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:56:02] EVALUATION
+================================================================================
+Window: 09:55:24 - 09:55:57
+Transcripts: 9
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.10)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.10)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.10)
+
+📝 Summary: The conversation is largely unintelligible with foreign language segments and fragmented English phrases mentioning 'balance' and 'AI analysis of data', but insufficient context to determine quant finance relevance or assess interview dynamics.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Conversation mostly unintelligible
+   - Foreign language segments present
+   - Insufficient context for assessment
+   - Fragmented speech pattern
+   - Unclear if technical discussion is occurring
+
+
+================================================================================
+[09:56:36] EVALUATION
+================================================================================
+Window: 09:55:54 - 09:56:15
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: This appears to be a fragmented technical setup or pre-interview conversation discussing AI transcription, video recording, and participants confirming their presence. No quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Fragmented/unclear conversation
+   - Appears to be pre-interview setup or technical difficulties
+   - Off-topic/casual discussion detected ([EXTRA])
+

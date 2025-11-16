@@ -1,0 +1,117 @@
+{
+  "room": "interview-20251116-100900",
+  "total_evaluations": 5,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T10:10:35.722965",
+      "window_start": "2025-11-16T10:09:57.528551",
+      "window_end": "2025-11-16T10:10:31.217819",
+      "transcripts_evaluated": 2,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation contains only brief acknowledgments and a statement to begin the interview. No substantive technical or quant finance content has been discussed yet.",
+      "key_topics": [],
+      "flags": [
+        "No technical content yet",
+        "Interview just starting",
+        "Insufficient data for meaningful evaluation",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 1.0,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation contains only brief acknowledgments and a statement to begin the interview. No substantive technical or quant finance content has been discussed yet.\",\n    \"flags\": [\"No technical content yet\", \"Interview just starting\", \"Insufficient data for meaningful evaluation\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 1.0\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T10:11:08.338060",
+      "window_start": "2025-11-16T10:10:31.217819",
+      "window_end": "2025-11-16T10:11:01.224390",
+      "transcripts_evaluated": 10,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "unknown",
+      "summary": "The candidate was asked about cross-validation techniques and provided a basic explanation of K-Fold cross-validation, describing how the training set is divided into k parts with k-1 parts used for training and the remaining part for evaluation.",
+      "key_topics": [
+        "CV_TECHNIQUES"
+      ],
+      "flags": [
+        "Interviewer questions not visible in transcript",
+        "Candidate response appears incomplete or hesitant with multiple filler words",
+        "Basic definition-level response lacking depth or practical application"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.85,
+      "confidence_tone": 0.3,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[CV_TECHNIQUES]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The candidate was asked about cross-validation techniques and provided a basic explanation of K-Fold cross-validation, describing how the training set is divided into k parts with k-1 parts used for training and the remaining part for evaluation.\",\n    \"flags\": [\n        \"Interviewer questions not visible in transcript\",\n        \"Candidate response appears incomplete or hesitant with multiple filler words\",\n        \"Basic definition-level response lacking depth or practical application\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.85,\n    \"confidence_tone\": 0.3\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T10:11:40.236739",
+      "window_start": "2025-11-16T10:10:52.354167",
+      "window_end": "2025-11-16T10:11:34.373928",
+      "transcripts_evaluated": 9,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "unknown",
+      "summary": "Candidate explains basic definitions of k-fold cross-validation and regularization with Lasso penalty, but struggles with articulation and appears to have gaps in understanding, particularly around linear algebra concepts.",
+      "key_topics": [
+        "CV_TECHNIQUES",
+        "REGULARIZATION"
+      ],
+      "flags": [
+        "Candidate shows difficulty articulating concepts clearly",
+        "Incomplete explanation of regularization",
+        "Admitted knowledge gap in linear algebra",
+        "No interviewer questions visible in excerpt"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.85,
+      "confidence_tone": 0.3,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[CV_TECHNIQUES]\", \"[REGULARIZATION]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"Candidate explains basic definitions of k-fold cross-validation and regularization with Lasso penalty, but struggles with articulation and appears to have gaps in understanding, particularly around linear algebra concepts.\",\n    \"flags\": [\"Candidate shows difficulty articulating concepts clearly\", \"Incomplete explanation of regularization\", \"Admitted knowledge gap in linear algebra\", \"No interviewer questions visible in excerpt\"],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.85,\n    \"confidence_tone\": 0.3\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T10:12:16.784920",
+      "window_start": "2025-11-16T10:11:34.373928",
+      "window_end": "2025-11-16T10:12:11.210392",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "unknown",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation excerpt shows fragmented, incomplete statements from the candidate mentioning linear algebra but contains no coherent technical discussion or clear interviewer responses.",
+      "key_topics": [],
+      "flags": [
+        "Incoherent conversation structure",
+        "No clear interviewer participation visible",
+        "Candidate appears confused or disoriented",
+        "Insufficient content for meaningful evaluation",
+        "Possible technical issues with recording or transcription"
+      ],
+      "confidence_subject": 0.3,
+      "confidence_difficulty": 0.2,
+      "confidence_tone": 0.1,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"unknown\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation excerpt shows fragmented, incomplete statements from the candidate mentioning linear algebra but contains no coherent technical discussion or clear interviewer responses.\",\n    \"flags\": [\n        \"Incoherent conversation structure\",\n        \"No clear interviewer participation visible\",\n        \"Candidate appears confused or disoriented\",\n        \"Insufficient content for meaningful evaluation\",\n        \"Possible technical issues with recording or transcription\"\n    ],\n    \"confidence_subject\": 0.3,\n    \"confidence_difficulty\": 0.2,\n    \"confidence_tone\": 0.1\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T10:12:52.045807",
+      "window_start": "2025-11-16T10:12:01.408354",
+      "window_end": "2025-11-16T10:12:28.213797",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "unknown",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation consists only of incomplete utterances and repetitive filler words from the candidate with no substantive content or interviewer participation visible.",
+      "key_topics": [],
+      "flags": [
+        "No substantive content detected",
+        "Only candidate speech fragments present",
+        "No interviewer questions or responses visible",
+        "Possible technical or recording issues",
+        "Insufficient data for meaningful evaluation"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.95,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"unknown\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation consists only of incomplete utterances and repetitive filler words from the candidate with no substantive content or interviewer participation visible.\",\n    \"flags\": [\n        \"No substantive content detected\",\n        \"Only candidate speech fragments present\",\n        \"No interviewer questions or responses visible\",\n        \"Possible technical or recording issues\",\n        \"Insufficient data for meaningful evaluation\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.95\n}\n```"
+    }
+  ]
+}

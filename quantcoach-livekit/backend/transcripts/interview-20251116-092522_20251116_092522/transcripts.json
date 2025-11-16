@@ -1,0 +1,36 @@
+{
+  "room": "interview-20251116-092522",
+  "session_start": "2025-11-16T09:26:25.703157",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T09:26:25.703157",
+      "speaker": "recruiter",
+      "text": "I'll tell you in two minutes, but I think",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:26:27.785800",
+      "speaker": "recruiter",
+      "text": "I hope, I hope.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:26:35.758284",
+      "speaker": "recruiter",
+      "text": "I'm so nervous, I'm about to pee my pants, so it's stressing me out.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:26:38.680907",
+      "speaker": "recruiter",
+      "text": "(laughs)",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:26:41.688057",
+      "speaker": "recruiter",
+      "text": "(mumbles)",
+      "is_final": true
+    }
+  ]
+}

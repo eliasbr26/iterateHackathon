@@ -1,0 +1,86 @@
+
+================================================================================
+[08:44:42] EVALUATION
+================================================================================
+Window: 08:43:56 - 08:44:36
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation appears to be fragmented audio or transcription errors with no substantive content. The recruiter makes unclear statements about something being 'bad' and uncertainty about 'going for it,' but no technical quant finance topics are discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Conversation appears incomplete or corrupted
+   - No technical content detected
+   - Transcription quality issues - fragments like 'foreign' and incomplete sentences
+   - Unable to determine interview context or subject matter
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[08:45:23] EVALUATION
+================================================================================
+Window: 08:44:36 - 08:45:18
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.60)
+
+📝 Summary: The conversation appears fragmented and incoherent, with the recruiter making unclear statements about something being 'bad' and suggesting they 'stop this story'. No quant finance topics were discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incoherent conversation
+   - No technical content
+   - Possible interview disruption or technical recording issue
+   - Recruiter appears confused or distracted
+
+
+================================================================================
+[08:45:59] EVALUATION
+================================================================================
+Window: 08:45:18 - 08:45:55
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.60)
+
+📝 Summary: The conversation appears fragmented and off-topic, with the recruiter making unclear statements about stopping a story, fixing something, and asking about a song name. No quantitative finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Fragmented conversation - unclear context
+   - No technical quant finance content
+   - Possible technical or communication issue during interview
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[08:46:20] EVALUATION
+================================================================================
+Window: 08:45:45 - 08:45:55
+Transcripts: 2
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter asks casual personal questions about the candidate's wellbeing and what song they're listening to. No technical or quant finance content discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Appears to be casual chat or interview warm-up
+   - Off-topic/casual discussion detected ([EXTRA])
+

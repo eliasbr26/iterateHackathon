@@ -13,12 +13,12 @@ import DifficultyBar from "@/components/dashboard/DifficultyBar";
 import TopicChecklistPanel from "@/components/dashboard/TopicChecklistPanel";
 import RedFlagPanel from "@/components/dashboard/RedFlagPanel";
 import ToneIndicator from "@/components/dashboard/ToneIndicator";
-import InterviewTimeline from "@/components/dashboard/InterviewTimeline";
 import ConfidenceMeters from "@/components/dashboard/ConfidenceMeters";
 import LiveTranscriptPanel from "@/components/dashboard/LiveTranscriptPanel";
+import FloatingOverlay from "@/components/ui/FloatingOverlay";
 
 // Real-time data hook
-import { useTranscriptStream } from "@/hooks/useTranscriptStream";
+import { useTranscriptStream, Evaluation } from "@/hooks/useTranscriptStream";
 
 // Demo data (kept for demo mode)
 const DEMO_TRANSCRIPTS = [
@@ -61,7 +61,8 @@ const Index = () => {
   const [sessionStatus, setSessionStatus] = useState<'initializing' | 'active' | 'paused' | 'completed'>('active');
   const [duration, setDuration] = useState(0);
   const [activeTab, setActiveTab] = useState("session");
-  const [roomName, setRoomName] = useState<string>("test1");
+  const [roomName, setRoomName] = useState<string>("");
+  const [isRoomConnected, setIsRoomConnected] = useState(false);
 
   // Real-time SSE connection
   const {
@@ -164,32 +165,50 @@ const Index = () => {
 
   const dashboardContent = useMemo(() => {
     return (
-      <div className="flex flex-col h-full overflow-hidden">
-        {/* Main Content Grid - Takes Full Height */}
-        <div className="flex-1 overflow-hidden">
-          <div className="h-full grid grid-cols-12 gap-3 p-3">
-            {/* Left Column - Fixed Width - Topic Coverage */}
-            <div className="col-span-3 h-full overflow-y-auto space-y-2 pr-2">
+      <div className="relative w-full h-full">
+        {/* Full-screen Video with floating overlays */}
+        <VideoArea
+          onRoomCreated={handleRoomCreated}
+          onConnectionChange={setIsRoomConnected}
+          fullScreenMode={true}
+        />
+
+        {/* Floating overlays - Only show when room is connected */}
+        {isRoomConnected && (
+          <>
+            {/* Top-left: Topic Checklist (moved to very top) */}
+            <div className="absolute top-4 left-4 z-20 opacity-30 hover:opacity-90 transition-opacity duration-200 pointer-events-auto backdrop-blur-sm rounded-lg max-w-xs">
               <TopicChecklistPanel evaluations={evaluations} />
             </div>
 
-            {/* Center Column - Flexible Width - Main Content */}
-            <div className="col-span-6 h-full flex flex-col space-y-2 overflow-y-auto">
-              <DifficultyBar evaluations={evaluations} />
-              <ToneIndicator evaluations={evaluations} />
-              <ConfidenceMeters evaluations={evaluations} />
-              <InterviewTimeline evaluations={evaluations} />
-            </div>
+            {/* Top: Combined Difficulty + Tone */}
+            <FloatingOverlay position="top-center" className="min-w-[650px]">
+              <div className="space-y-2">
+                <DifficultyBar evaluations={evaluations} />
+                <ToneIndicator evaluations={evaluations} />
+              </div>
+            </FloatingOverlay>
 
-            {/* Right Column - Fixed Width - Alerts & Metrics */}
-            <div className="col-span-3 h-full overflow-y-auto space-y-2 pl-2">
+            {/* Right: Alerts */}
+            <FloatingOverlay position="right" className="max-w-sm max-h-[80vh] overflow-y-auto">
               <RedFlagPanel evaluations={evaluations} />
-            </div>
-          </div>
-        </div>
+            </FloatingOverlay>
+
+            {/* Connection status indicator */}
+            {!demoMode && (
+              <div className="absolute top-2 right-2 z-40 flex items-center gap-2 text-xs bg-black/40 backdrop-blur-md px-3 py-1.5 rounded-full pointer-events-auto">
+                <div className={`w-2 h-2 rounded-full ${isConnected ? 'bg-green-500' : 'bg-red-500'}`} />
+                <span className="text-white">
+                  {isConnected ? 'Live data streaming' : 'Disconnected'}
+                  {sseError && ` - ${sseError}`}
+                </span>
+              </div>
+            )}
+          </>
+        )}
       </div>
     );
-  }, [evaluations, metrics]);
+  }, [evaluations, metrics, isConnected, sseError, demoMode, isRoomConnected]);
 
   // Interviewer profile (static for now)
   const INTERVIEWER_PROFILE = {
@@ -249,36 +268,46 @@ const Index = () => {
         onToggleDemo={handleToggleDemo}
       />
 
-      {/* Video Area - Always Visible Above Tabs */}
-      <div className="border-b border-border-subtle p-4 shrink-0">
-        <div className="max-w-7xl mx-auto">
-          <VideoArea onRoomCreated={handleRoomCreated} />
-
-          {/* Connection status indicator */}
-          {!demoMode && (
-            <div className="mt-3 flex items-center gap-2 text-xs">
-              <div className={`w-2 h-2 rounded-full ${isConnected ? 'bg-green-500' : 'bg-red-500'}`} />
-              <span className="text-muted-foreground">
-                {isConnected ? 'Live data streaming' : 'Disconnected'}
-                {sseError && ` - ${sseError}`}
-              </span>
-            </div>
-          )}
-        </div>
-      </div>
-
-      <div className="flex-1 overflow-hidden">
-        <Tabs value={activeTab} onValueChange={setActiveTab} className="h-full flex flex-col">
-          <div className="border-b border-border-subtle px-6">
+      <div className="flex-1 overflow-hidden flex flex-col relative">
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="h-full flex flex-col flex-1">
+          <div className="border-b border-border-subtle px-6 flex items-center justify-between">
             <TabsList className="h-12">
               <TabsTrigger value="session">Dashboard</TabsTrigger>
               <TabsTrigger value="transcripts">Live Transcription</TabsTrigger>
               <TabsTrigger value="profile">System Info</TabsTrigger>
               <TabsTrigger value="reviews">AI Analysis</TabsTrigger>
             </TabsList>
+
+            {/* Interview Timeline - Compact horizontal display */}
+            {isRoomConnected && evaluations.length > 0 && (
+              <div className="flex items-center gap-2 h-8 px-4 bg-white/90 rounded-full shadow-sm border border-gray-200" style={{ minWidth: '45%', maxWidth: '50%' }}>
+                <span className="text-xs font-medium text-gray-700 whitespace-nowrap">Timeline:</span>
+                <div className="flex gap-0.5 items-center flex-1 overflow-x-auto" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                  {evaluations.map((evaluation: Evaluation, index: number) => {
+                    const colors = evaluation.subject_relevance === 'off_topic'
+                      ? 'bg-red-400'
+                      : evaluation.subject_relevance === 'partially_relevant'
+                      ? 'bg-yellow-300'
+                      : evaluation.question_difficulty === 'hard'
+                      ? 'bg-red-500'
+                      : evaluation.question_difficulty === 'medium'
+                      ? 'bg-yellow-400'
+                      : 'bg-blue-400';
+
+                    return (
+                      <div
+                        key={index}
+                        className={`w-4 h-6 ${colors} rounded-sm flex-shrink-0`}
+                        title={`${evaluation.question_difficulty} - ${evaluation.subject_relevance}`}
+                      />
+                    );
+                  })}
+                </div>
+              </div>
+            )}
           </div>
 
-          <TabsContent value="session" className="flex-1 m-0 overflow-hidden">
+          <TabsContent value="session" className="flex-1 m-0 overflow-hidden relative">
             {dashboardContent}
           </TabsContent>
 
@@ -397,6 +426,9 @@ const Index = () => {
                       </div>
                     </CardHeader>
                   </Card>
+
+                  {/* AI Confidence Scores */}
+                  <ConfidenceMeters evaluations={evaluations} />
 
                   {AI_REVIEWS.strengths.length > 0 && (
                     <Card>

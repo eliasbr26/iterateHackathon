@@ -16,10 +16,18 @@ export const ParticipantView = ({ participant, isLocal = false }: ParticipantVie
 
     if (!videoElement || !audioElement) return;
 
+    console.log('ParticipantView: Setting up tracks for', participant.identity, {
+      isLocal,
+      videoTracks: participant.videoTrackPublications.size,
+      audioTracks: participant.audioTrackPublications.size
+    });
+
     const attachTrack = (track: any) => {
       if (track.kind === Track.Kind.Video) {
+        console.log('ParticipantView: Attaching video track for', participant.identity);
         track.attach(videoElement);
       } else if (track.kind === Track.Kind.Audio && !isLocal) {
+        console.log('ParticipantView: Attaching audio track for', participant.identity);
         track.attach(audioElement);
       }
     };
@@ -30,23 +38,43 @@ export const ParticipantView = ({ participant, isLocal = false }: ParticipantVie
 
     // Handle track subscribed (for remote participants)
     const handleTrackSubscribed = (track: any) => {
+      console.log('ParticipantView: Track subscribed', track.kind, 'for', participant.identity);
       attachTrack(track);
     };
 
     const handleTrackUnsubscribed = (track: any) => {
+      console.log('ParticipantView: Track unsubscribed', track.kind, 'for', participant.identity);
       detachTrack(track);
     };
 
     // Attach existing tracks
+    // For local participants, tracks are published, not subscribed
+    // For remote participants, check isSubscribed
     participant.videoTrackPublications.forEach((publication) => {
-      if (publication.track && publication.isSubscribed) {
-        attachTrack(publication.track);
+      console.log('ParticipantView: Video publication found', {
+        participant: participant.identity,
+        isLocal,
+        hasTrack: !!publication.track,
+        isSubscribed: publication.isSubscribed,
+        trackSid: publication.trackSid,
+        source: publication.source
+      });
+      if (publication.track) {
+        if (isLocal || publication.isSubscribed) {
+          attachTrack(publication.track);
+        } else {
+          console.log('ParticipantView: Skipping video track - not subscribed');
+        }
+      } else {
+        console.log('ParticipantView: No track available yet');
       }
     });
 
     participant.audioTrackPublications.forEach((publication) => {
-      if (publication.track && publication.isSubscribed && !isLocal) {
-        attachTrack(publication.track);
+      if (publication.track && !isLocal) {
+        if (publication.isSubscribed) {
+          attachTrack(publication.track);
+        }
       }
     });
 
@@ -58,7 +86,7 @@ export const ParticipantView = ({ participant, isLocal = false }: ParticipantVie
       participant.off('trackSubscribed', handleTrackSubscribed);
       participant.off('trackUnsubscribed', handleTrackUnsubscribed);
 
-      // Detach all tracks on cleanup
+      // Detach all tracks
       participant.videoTrackPublications.forEach((publication) => {
         if (publication.track) {
           publication.track.detach();
@@ -74,16 +102,45 @@ export const ParticipantView = ({ participant, isLocal = false }: ParticipantVie
   }, [participant, isLocal]);
 
   return (
-    <div className="relative w-full h-full bg-black rounded-lg overflow-hidden">
+    <div
+      style={{
+        position: 'relative',
+        width: '100%',
+        height: '100%',
+        backgroundColor: '#000',
+        borderRadius: '8px',
+        overflow: 'hidden',
+      }}
+    >
       <video
         ref={videoRef}
         autoPlay
         playsInline
         muted={isLocal}
-        className="w-full h-full object-cover"
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          backgroundColor: '#000',
+        }}
       />
       <audio ref={audioRef} autoPlay />
-      <div className="absolute bottom-2 left-2 bg-black/70 text-white px-3 py-1 rounded text-sm">
+      <div
+        style={{
+          position: 'absolute',
+          bottom: '8px',
+          left: '8px',
+          backgroundColor: 'rgba(0, 0, 0, 0.7)',
+          color: 'white',
+          padding: '4px 12px',
+          borderRadius: '4px',
+          fontSize: '14px',
+          zIndex: 10,
+        }}
+      >
         {isLocal ? 'You' : participant.identity}
       </div>
     </div>

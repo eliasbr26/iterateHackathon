@@ -1,0 +1,66 @@
+
+================================================================================
+[08:26:10] EVALUATION
+================================================================================
+Window: 08:25:32 - 08:26:02
+Transcripts: 10
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation appears to be fragmented technical difficulties or pre-interview logistics discussion with incomplete sentences about API keys, timing, and unclear technical issues. No quantitative finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - no quant finance content
+   - Fragmented/incoherent conversation - possible transcription errors
+   - Technical difficulties mentioned (API key issues)
+   - No substantive interview questions asked
+   - Communication clarity issues
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[08:26:35] EVALUATION
+================================================================================
+Window: 08:25:57 - 08:26:29
+Transcripts: 10
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: The conversation appears to be incoherent or possibly corrupted audio transcription, with fragmented sentences about API keys and unclear topics. No substantive quant finance discussion is present.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incoherent conversation - possible transcription error
+   - No technical content discussed
+   - Unable to determine interview structure or flow
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[08:27:00] EVALUATION
+================================================================================
+Window: 08:26:21 - 08:26:35
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation consists of fragmented, unclear statements from the recruiter with no coherent technical content or discernible quant finance discussion. The statements appear to be either casual chat, technical difficulties, or incomplete thoughts.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No coherent technical discussion
+   - Conversation appears fragmented or corrupted
+   - No candidate responses recorded
+   - Unclear communication from recruiter
+   - Off-topic/casual discussion detected ([EXTRA])
+

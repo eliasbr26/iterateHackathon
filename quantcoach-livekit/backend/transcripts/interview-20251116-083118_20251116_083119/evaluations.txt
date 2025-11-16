@@ -1,0 +1,241 @@
+
+================================================================================
+[08:32:04] EVALUATION
+================================================================================
+Window: 08:31:52 - 08:31:59
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: The conversation appears to be a brief, unclear exchange mixing languages (English and French) discussing someone named Peshima and timing of leaving/returning. No quantitative finance content is discernible.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Unclear context
+   - Mixed language conversation
+   - No technical content
+   - Insufficient data to evaluate interview quality
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[08:32:09] EVALUATION
+================================================================================
+Window: 08:31:52 - 08:31:59
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: This excerpt appears to be casual conversation or an unclear exchange, possibly in mixed languages, with no discernible quant finance content. The discussion involves references to 'Peshima' and timing of leaving/returning, but lacks any technical substance.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Unclear context - possibly mixed languages or audio transcription errors
+   - Cannot assess interview quality from this excerpt
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[08:32:15] EVALUATION
+================================================================================
+Window: 08:31:52 - 08:32:10
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt appears to be casual conversation in mixed languages (English and French) discussing timing of leaving and returning, with no discernible quant finance content. The discussion involves someone named Peshima and coordination of schedules.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - no quant finance content detected
+   - Mixed language conversation making interpretation difficult
+   - Context unclear - may be pre-interview chat or break discussion
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[08:32:25] EVALUATION
+================================================================================
+Window: 08:32:10 - 08:32:20
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt contains only technical/connection issues and fragmented conversation with no substantive content. Participants appear to be resolving audio/video setup problems before beginning the actual interview.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Appears to be pre-interview setup conversation
+   - Fragmented/unclear dialogue suggesting connection issues
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[08:32:31] EVALUATION
+================================================================================
+Window: 08:32:16 - 08:32:26
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt appears to capture pre-interview casual conversation or technical difficulties with audio/video, with fragmented dialogue about what happened to someone's face or video feed. No quant finance content is present.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Fragmented/unclear dialogue
+   - Appears to be pre-interview setup or technical issues
+   - No technical content discussed
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[08:32:36] EVALUATION
+================================================================================
+Window: 08:32:16 - 08:32:31
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt appears to be a fragmented or garbled conversation with incomplete sentences and unclear communication, possibly due to technical issues or transcription errors. No quant finance content is discernible.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Unintelligible conversation
+   - Possible technical/audio issues
+   - No substantive content
+   - Transcription quality concerns
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[08:32:41] EVALUATION
+================================================================================
+Window: 08:32:26 - 08:32:36
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: The conversation appears to be fragmented or corrupted with incomplete, repetitive phrases that don't form coherent technical discussion. No quantitative finance topics are identifiable.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Unintelligible conversation - possible transcription error
+   - No technical content detected
+   - Conversation quality too poor to evaluate properly
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[08:32:46] EVALUATION
+================================================================================
+Window: 08:32:31 - 08:32:42
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: This excerpt contains fragmented, unclear conversation that appears to be casual discussion about people named James and Alex, with no discernible quant finance content.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incoherent conversation fragments
+   - No technical content detected
+   - Possible audio transcription errors
+   - Cannot assess interview quality
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[08:32:51] EVALUATION
+================================================================================
+Window: 08:32:36 - 08:32:42
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: This excerpt contains fragmented, unclear dialogue that appears to be casual conversation or possibly a technical issue with recording. No discernible quant finance topics are discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Unintelligible conversation
+   - No technical content detected
+   - Possible recording or transcription error
+   - Cannot assess interview quality
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[08:32:57] EVALUATION
+================================================================================
+Window: 08:32:36 - 08:32:52
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.60)
+
+📝 Summary: The conversation appears to be fragmented casual dialogue with unclear context, possibly discussing names (James, Alex) and attempting to fix or feed something. No quantitative finance topics are discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Fragmented/unclear conversation
+   - Possible technical difficulties or casual pre-interview chat
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[08:33:34] EVALUATION
+================================================================================
+Window: 08:32:51 - 08:33:11
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This excerpt contains fragmented, unclear dialogue that does not relate to any quantitative finance topics. The conversation appears to be either a technical glitch, casual off-topic discussion, or recording error.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incomprehensible dialogue
+   - No technical content present
+   - Possible recording or transcription error
+   - No clear interview structure
+   - Off-topic/casual discussion detected ([EXTRA])
+

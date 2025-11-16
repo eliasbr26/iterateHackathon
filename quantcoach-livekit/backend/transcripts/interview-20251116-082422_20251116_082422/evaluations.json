@@ -1,0 +1,72 @@
+{
+  "room": "interview-20251116-082422",
+  "total_evaluations": 3,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T08:26:10.068167",
+      "window_start": "2025-11-16T08:25:32.914760",
+      "window_end": "2025-11-16T08:26:02.922268",
+      "transcripts_evaluated": 10,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation appears to be fragmented technical difficulties or pre-interview logistics discussion with incomplete sentences about API keys, timing, and unclear technical issues. No quantitative finance content is discussed.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - no quant finance content",
+        "Fragmented/incoherent conversation - possible transcription errors",
+        "Technical difficulties mentioned (API key issues)",
+        "No substantive interview questions asked",
+        "Communication clarity issues",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation appears to be fragmented technical difficulties or pre-interview logistics discussion with incomplete sentences about API keys, timing, and unclear technical issues. No quantitative finance content is discussed.\",\n    \"flags\": [\n        \"Off-topic discussion - no quant finance content\",\n        \"Fragmented/incoherent conversation - possible transcription errors\",\n        \"Technical difficulties mentioned (API key issues)\",\n        \"No substantive interview questions asked\",\n        \"Communication clarity issues\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T08:26:35.042143",
+      "window_start": "2025-11-16T08:25:57.039261",
+      "window_end": "2025-11-16T08:26:29.926594",
+      "transcripts_evaluated": 10,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation appears to be incoherent or possibly corrupted audio transcription, with fragmented sentences about API keys and unclear topics. No substantive quant finance discussion is present.",
+      "key_topics": [],
+      "flags": [
+        "Incoherent conversation - possible transcription error",
+        "No technical content discussed",
+        "Unable to determine interview structure or flow",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.98,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation appears to be incoherent or possibly corrupted audio transcription, with fragmented sentences about API keys and unclear topics. No substantive quant finance discussion is present.\",\n    \"flags\": [\n        \"Incoherent conversation - possible transcription error\",\n        \"No technical content discussed\",\n        \"Unable to determine interview structure or flow\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.98,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T08:27:00.952532",
+      "window_start": "2025-11-16T08:26:21.099500",
+      "window_end": "2025-11-16T08:26:35.867267",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation consists of fragmented, unclear statements from the recruiter with no coherent technical content or discernible quant finance discussion. The statements appear to be either casual chat, technical difficulties, or incomplete thoughts.",
+      "key_topics": [],
+      "flags": [
+        "No coherent technical discussion",
+        "Conversation appears fragmented or corrupted",
+        "No candidate responses recorded",
+        "Unclear communication from recruiter",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation consists of fragmented, unclear statements from the recruiter with no coherent technical content or discernible quant finance discussion. The statements appear to be either casual chat, technical difficulties, or incomplete thoughts.\",\n    \"flags\": [\n        \"No coherent technical discussion\",\n        \"Conversation appears fragmented or corrupted\",\n        \"No candidate responses recorded\",\n        \"Unclear communication from recruiter\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.7\n}\n```"
+    }
+  ]
+}

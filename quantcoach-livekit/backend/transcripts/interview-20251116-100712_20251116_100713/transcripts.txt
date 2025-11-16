@@ -1,0 +1,15 @@
+[10:07:46] 👔 RECRUITER: Hey yo. Hey yo
+[10:07:59] 👔 RECRUITER: . Hey yo.
+[10:08:00] 👔 RECRUITER: .
+[10:08:03] 👔 RECRUITER: .
+[10:08:06] 👔 RECRUITER: .
+[10:08:14] 👤 CANDIDATE: let's
+[10:08:21] 👤 CANDIDATE: Thank you.
+[10:08:22] 👔 RECRUITER: okay uh okay stepan welcome to this interview uh we'll jump right in can you can you
+[10:08:27] 👤 CANDIDATE: Yeah, regularization is when you want your variable-- your variable--
+[10:08:32] 👔 RECRUITER: tell me a bit about regularization regularization
+[10:08:38] 👤 CANDIDATE: To verify some properties, for example, if you are less
+[10:08:43] 👤 CANDIDATE: than 50% of your loss, the
+[10:08:43] 👔 RECRUITER: That was a bug, a bug, a bug.
+[10:08:49] 👔 RECRUITER: No, no, no.
+[10:08:49] 👤 CANDIDATE: variable will be a sparser okay

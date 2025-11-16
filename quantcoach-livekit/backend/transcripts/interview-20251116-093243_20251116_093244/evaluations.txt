@@ -1,0 +1,171 @@
+
+================================================================================
+[09:33:29] EVALUATION
+================================================================================
+Window: 09:33:19 - 09:33:25
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This excerpt contains only initial greetings and casual exchanges between recruiter and candidate with no substantive quant finance discussion.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Interview appears to be in very early greeting phase
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:34:03] EVALUATION
+================================================================================
+Window: 09:33:19 - 09:33:58
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This excerpt captures only the initial greeting phase of the interview with informal exchanges and apparent audio connection issues. No substantive quant finance discussion has begun.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - only greetings present
+   - Audio/connection issues mentioned
+   - No technical content yet
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:34:07] EVALUATION
+================================================================================
+Window: 09:33:58 - 09:34:03
+Transcripts: 2
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.90)
+
+📝 Summary: Technical difficulty at the start of the interview where the recruiter cannot hear the candidate, leading to a brief exchange about resolving the audio issue.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Technical audio issues
+   - Interview has not substantively begun
+   - No technical content discussed
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:34:15] EVALUATION
+================================================================================
+Window: 09:33:58 - 09:34:10
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: This is a brief technical difficulty exchange where the recruiter indicates audio problems and both parties are trying to resolve the connection issue before the interview can properly begin.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Technical difficulties before interview started
+   - No substantive content discussed
+   - Audio connection problems
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:34:34] EVALUATION
+================================================================================
+Window: 09:34:03 - 09:34:29
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This appears to be the initial connection phase of an interview with technical difficulties. The conversation consists only of greetings and attempts to establish audio/video communication with no substantive content discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content
+   - Communication/connection issues
+   - Incoherent dialogue suggesting audio problems
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:34:39] EVALUATION
+================================================================================
+Window: 09:34:26 - 09:34:34
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This excerpt captures only technical difficulties at the start of the interview with connection issues and unintelligible audio from the candidate. No substantive discussion occurred.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Technical difficulties - audio/video connection issues
+   - Unintelligible candidate response
+   - No actual interview content
+   - Interview may not have properly started
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:34:44] EVALUATION
+================================================================================
+Window: 09:34:26 - 09:34:39
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This appears to be a technical difficulty scenario where the recruiter and candidate are experiencing audio/video connection problems, with no substantive interview content taking place.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No interview content - technical difficulties
+   - Incoherent candidate audio
+   - Connection issues preventing interview
+   - No quant finance topics discussed
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:36:01] EVALUATION
+================================================================================
+Window: 09:34:34 - 09:34:44
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: This appears to be a technical difficulty moment at the start of an interview where the recruiter indicates they cannot see the candidate, followed by unintelligible or fragmented audio/text from the candidate, possibly attempting to address microphone issues.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Technical difficulties present
+   - No substantive interview content
+   - Communication breakdown
+   - Unintelligible candidate responses
+   - Off-topic/casual discussion detected ([EXTRA])
+

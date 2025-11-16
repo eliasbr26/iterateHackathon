@@ -1,4 +1,4 @@
-import { useState, memo } from 'react';
+import { useState, memo, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -9,12 +9,15 @@ import { useLiveKit } from '@/hooks/useLiveKit';
 import { api } from '@/services/api';
 import { ParticipantView } from './ParticipantView';
 import { useToast } from '@/hooks/use-toast';
+import AgentStatusIndicator from './AgentStatusIndicator';
 
 interface VideoAreaProps {
   onRoomCreated?: (roomName: string) => void;
+  onConnectionChange?: (isConnected: boolean) => void;
+  fullScreenMode?: boolean; // New prop for full-screen overlay mode
 }
 
-const VideoAreaComponent = ({ onRoomCreated }: VideoAreaProps) => {
+const VideoAreaComponent = ({ onRoomCreated, onConnectionChange, fullScreenMode = false }: VideoAreaProps) => {
   const [roomName, setRoomName] = useState('');
   const [participantName, setParticipantName] = useState('');
   const [role, setRole] = useState<'interviewer' | 'candidate'>('interviewer');
@@ -33,6 +36,11 @@ const VideoAreaComponent = ({ onRoomCreated }: VideoAreaProps) => {
     toggleAudio,
     toggleVideo,
   } = useLiveKit();
+
+  // Notify parent of connection state changes
+  useEffect(() => {
+    onConnectionChange?.(isConnected);
+  }, [isConnected, onConnectionChange]);
 
   const handleCreateRoom = async () => {
     setIsJoining(true);
@@ -116,8 +124,136 @@ const VideoAreaComponent = ({ onRoomCreated }: VideoAreaProps) => {
 
   if (isConnected && room) {
     const localParticipant = room.localParticipant;
-    const remoteParticipants = Array.from(room.remoteParticipants.values());
+    // Filter out agent participants - only show human candidates
+    const remoteParticipants = Array.from(room.remoteParticipants.values()).filter(
+      (participant) => !participant.identity.toLowerCase().includes('agent')
+    );
 
+    console.log('VideoArea: Connected to room', {
+      roomName: room.name,
+      remoteCount: remoteParticipants.length,
+      localIdentity: localParticipant.identity,
+      filteredAgents: Array.from(room.remoteParticipants.values()).length - remoteParticipants.length
+    });
+
+    // Full-screen mode for Dashboard tab
+    if (fullScreenMode) {
+      return (
+        <div
+          style={{
+            position: 'fixed',
+            top: '112px', // Account for header (64px) + tabs (48px)
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: '#1a1a1a',
+            zIndex: 1, // Low z-index so tab controls are clickable
+          }}
+        >
+          {/* Remote participant (full screen) */}
+          {remoteParticipants.length > 0 ? (
+            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none' }}>
+              <ParticipantView participant={remoteParticipants[0]} />
+            </div>
+          ) : (
+            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div style={{ textAlign: 'center', color: 'white' }}>
+                <Loader2 className="h-12 w-12 animate-spin mx-auto mb-4" />
+                <p style={{ fontSize: '18px' }}>Waiting for candidate to join...</p>
+                <p style={{ fontSize: '14px', marginTop: '8px', color: '#999' }}>Room: {room.name}</p>
+              </div>
+            </div>
+          )}
+
+          {/* Local participant (PiP bottom-right) - ALWAYS VISIBLE */}
+          <div
+            style={{
+              position: 'absolute',
+              bottom: '100px',
+              right: '30px',
+              width: '320px',
+              height: '240px',
+              zIndex: 50,
+              borderRadius: '12px',
+              overflow: 'hidden',
+              boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)',
+              border: '3px solid rgba(255, 255, 255, 0.3)',
+              backgroundColor: '#000',
+              pointerEvents: 'auto',
+            }}
+          >
+            <ParticipantView participant={localParticipant} isLocal={true} />
+          </div>
+
+          {/* Agent Status Indicator */}
+          <div style={{ position: 'absolute', top: '45px', right: '20px', zIndex: 50, pointerEvents: 'auto' }}>
+            <AgentStatusIndicator isActive={isConnected} agentName="AI Interview Analyst" />
+          </div>
+
+          {/* Controls (bottom-center) */}
+          <div style={{
+            position: 'absolute',
+            bottom: '20px',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            zIndex: 50,
+            display: 'flex',
+            alignItems: 'center',
+            gap: '12px',
+            backgroundColor: 'rgba(0, 0, 0, 0.7)',
+            backdropFilter: 'blur(10px)',
+            padding: '12px 16px',
+            borderRadius: '9999px',
+            pointerEvents: 'auto'
+          }}>
+            <Button
+              variant={audioEnabled ? 'default' : 'destructive'}
+              size="sm"
+              onClick={toggleAudio}
+              className="rounded-full w-10 h-10 p-0"
+            >
+              {audioEnabled ? <Mic className="h-4 w-4" /> : <MicOff className="h-4 w-4" />}
+            </Button>
+            <Button
+              variant={videoEnabled ? 'default' : 'destructive'}
+              size="sm"
+              onClick={toggleVideo}
+              className="rounded-full w-10 h-10 p-0"
+            >
+              {videoEnabled ? <Video className="h-4 w-4" /> : <VideoOff className="h-4 w-4" />}
+            </Button>
+            <Button
+              variant="destructive"
+              size="sm"
+              onClick={handleDisconnect}
+              className="rounded-full w-10 h-10 p-0"
+            >
+              <PhoneOff className="h-4 w-4" />
+            </Button>
+          </div>
+
+          {error && (
+            <div style={{
+              position: 'absolute',
+              top: '80px',
+              left: '50%',
+              transform: 'translateX(-50%)',
+              zIndex: 50,
+              fontSize: '14px',
+              color: 'white',
+              backgroundColor: '#dc2626',
+              padding: '8px 16px',
+              borderRadius: '8px',
+              pointerEvents: 'auto'
+            }}>
+              {error}
+            </div>
+          )}
+        </div>
+      );
+    }
+
+    // Normal card mode for other tabs
     return (
       <Card className="w-full">
         <CardHeader>
@@ -180,7 +316,7 @@ const VideoAreaComponent = ({ onRoomCreated }: VideoAreaProps) => {
   }
 
   return (
-    <Card className="w-full">
+    <Card className="w-full pointer-events-auto">
       <CardHeader>
         <CardTitle>Join Interview Room</CardTitle>
         <CardDescription>Create a new room or join an existing one</CardDescription>

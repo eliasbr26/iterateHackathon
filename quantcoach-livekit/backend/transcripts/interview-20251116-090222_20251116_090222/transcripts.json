@@ -1,0 +1,24 @@
+{
+  "room": "interview-20251116-090222",
+  "session_start": "2025-11-16T09:03:26.088373",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T09:03:26.088373",
+      "speaker": "recruiter",
+      "text": "I'm feeling like I should have gone to the airport as well.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:03:33.859955",
+      "speaker": "recruiter",
+      "text": "Hello, my name is Aram Reyyazoo.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:03:40.125851",
+      "speaker": "recruiter",
+      "text": "Hi, my name is Titi. Hi, my name is Titi. Hi, my name is Titi. Hi",
+      "is_final": true
+    }
+  ]
+}

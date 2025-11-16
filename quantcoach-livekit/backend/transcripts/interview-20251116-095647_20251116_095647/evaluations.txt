@@ -1,0 +1,171 @@
+
+================================================================================
+[09:58:38] EVALUATION
+================================================================================
+Window: 09:57:57 - 09:58:33
+Transcripts: 2
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 1.00)
+
+📝 Summary: The conversation consists only of pre-interview setup discussion about filming preferences and audio check confirmation. No technical content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Interview has not started
+   - Only logistical setup conversation
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:59:24] EVALUATION
+================================================================================
+Window: 09:58:33 - 09:59:18
+Transcripts: 8
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.75)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.20)
+
+📝 Summary: Interview beginning with introductions where candidate (Stefan, 4th year at Ecole Polytechnique) introduces himself and starts answering what appears to be a basic question about cross-validation.
+
+🔑 Key Topics: CV_TECHNIQUES
+
+🚩 Flags:
+   - Very brief excerpt
+   - Mostly introductory content
+   - Answer on cross-validation incomplete
+   - No interviewer speech captured
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:59:54] EVALUATION
+================================================================================
+Window: 09:59:18 - 09:59:48
+Transcripts: 12
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.75)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.30)
+
+📝 Summary: The candidate explains cross-validation as a technique to avoid overfitting, specifically describing k-fold cross-validation where the training set is divided into k parts, using k-1 parts for training and 1 for validation.
+
+🔑 Key Topics: CV_TECHNIQUES, REGULARIZATION
+
+🚩 Flags:
+   - Candidate shows hesitation and repetitive speech patterns
+   - Explanation lacks clarity and completeness
+   - Only candidate speaking - no interviewer questions visible in excerpt
+   - Mentions 'scaffold cross-validation' which appears to be confused terminology (likely meant k-fold)
+   - Incomplete explanation of how cross-validation works
+
+
+================================================================================
+[10:00:18] EVALUATION
+================================================================================
+Window: 09:59:39 - 10:00:12
+Transcripts: 10
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.30)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.20)
+
+📝 Summary: The candidate is discussing regularization techniques, specifically mentioning the concept of adding a penalty term to the loss function to constrain variables, though the explanation is fragmented and incomplete.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Fragmented speech - difficult to assess understanding
+   - No interviewer dialogue visible
+   - Incomplete explanation of regularization concept
+
+
+================================================================================
+[10:00:48] EVALUATION
+================================================================================
+Window: 10:00:03 - 10:00:42
+Transcripts: 7
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.75)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.20)
+
+📝 Summary: Candidate attempts to explain regularization and penalty terms in loss functions, specifically mentioning Lasso regularization, but struggles to complete the explanation and admits lack of knowledge in linear algebra.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Candidate shows incomplete understanding of regularization concepts
+   - Candidate explicitly admits weakness in linear algebra
+   - Response is fragmented and incomplete
+   - No interviewer input visible in this excerpt
+
+
+================================================================================
+[10:01:21] EVALUATION
+================================================================================
+Window: 10:00:42 - 10:01:15
+Transcripts: 3
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.30)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.20)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.10)
+
+📝 Summary: Candidate apologizes multiple times for not knowing linear algebra and appears uncertain or struggling to respond. The excerpt is too brief and lacks context to determine what was actually discussed or asked.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Insufficient conversation context
+   - Only candidate responses visible - no interviewer questions
+   - Candidate showing uncertainty and lack of knowledge
+   - Linear algebra mentioned but no clear quant finance connection in excerpt
+
+
+================================================================================
+[10:02:00] EVALUATION
+================================================================================
+Window: 10:01:15 - 10:01:54
+Transcripts: 6
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.70)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.80)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.30)
+
+📝 Summary: Candidate makes fragmented statements about organizing metrics and eigenspaces (possibly related to PCA/dimensionality reduction), then transitions to discussing interview dynamics and assertiveness. The technical content is minimal and unclear.
+
+🔑 Key Topics: FEATURE_SELECTION
+
+🚩 Flags:
+   - Fragmented technical discussion - unclear context
+   - Candidate discussing interview process/dynamics rather than answering technical questions
+   - Insufficient interviewer input to assess tone or questions
+   - Possible language barrier or communication difficulty ('Jawadla' repetition)
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[10:02:36] EVALUATION
+================================================================================
+Window: 10:01:54 - 10:02:12
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation appears to be a meta-discussion about the interview process itself, with the candidate discussing restarting or redoing a video recording. No quant finance topics were discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - no technical content
+   - Unclear context - appears to be technical difficulties or recording issues
+   - Possible interview disruption or restart
+   - Fragmented speech suggests recording or transcription issues
+   - Off-topic/casual discussion detected ([EXTRA])
+

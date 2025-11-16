@@ -1,0 +1,21 @@
+[10:09:57] 👤 CANDIDATE: Yes. Okay. Yes. Okay.
+[10:10:31] 👤 CANDIDATE: Let's begin.
+[10:10:37] 👤 CANDIDATE: Hello, thank you. Mhm.
+[10:10:40] 👤 CANDIDATE: Mhm.
+[10:10:43] 👤 CANDIDATE: Yeah. Uh Yeah. Uh
+[10:10:46] 👤 CANDIDATE: course rotation techniques. Yeah, there is uh the uh
+[10:10:49] 👤 CANDIDATE: validation validation
+[10:10:52] 👤 CANDIDATE: it's when you divide the training set in k
+[10:10:55] 👤 CANDIDATE: parts and you use k-1 parts to train
+[10:10:58] 👤 CANDIDATE: and then the last part to evaluate
+[10:11:01] 👤 CANDIDATE: your models.
+[10:11:10] 👤 CANDIDATE: Yeah, regularization is when you want your variable to verify some properties. For
+[10:11:13] 👤 CANDIDATE: example, you add a lasso penalty
+[10:11:16] 👤 CANDIDATE: to determine in your lasso
+[10:11:19] 👤 CANDIDATE: and your variable will be more be more be more
+[10:11:34] 👤 CANDIDATE: Sorry, I don't know linear algebra. Linear algebra.
+[10:11:49] 👤 CANDIDATE: oh okay sorry it's so mean sorry it's so mean
+[10:12:01] 👤 CANDIDATE: do you have the the red the red
+[10:12:04] 👤 CANDIDATE: okay okay okay okay
+[10:12:11] 👤 CANDIDATE: is
+[10:12:28] 👤 CANDIDATE: Okay.

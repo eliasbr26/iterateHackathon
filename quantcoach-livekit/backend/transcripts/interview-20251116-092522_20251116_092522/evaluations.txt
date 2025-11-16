@@ -1,0 +1,21 @@
+
+================================================================================
+[09:27:06] EVALUATION
+================================================================================
+Window: 09:26:25 - 09:26:41
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt contains only casual conversation from the recruiter expressing nervousness about an upcoming event. No quant finance topics or technical content are discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Appears to be pre-interview or transition moment
+   - Off-topic/casual discussion detected ([EXTRA])
+

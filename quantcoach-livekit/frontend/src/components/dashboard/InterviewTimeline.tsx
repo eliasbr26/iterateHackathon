@@ -5,6 +5,7 @@
 
 import { Evaluation } from '@/hooks/useTranscriptStream';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { Card } from '@/components/ui/card';
 import {
   Tooltip,
   TooltipContent,
@@ -93,96 +94,100 @@ const InterviewTimeline = ({
 
   if (evaluations.length === 0) {
     return (
-      <div className={`space-y-4 ${className}`}>
-        <h3 className="text-sm font-medium">Interview Timeline</h3>
-        <div className="text-center py-8 text-muted-foreground text-sm">
-          <p>Timeline will appear as interview progresses</p>
+      <Card className={`p-4 bg-white ${className}`}>
+        <div className="space-y-4">
+          <h3 className="text-sm font-medium text-gray-900">Interview Timeline</h3>
+          <div className="text-center py-8 text-gray-500 text-sm">
+            <p>Timeline will appear as interview progresses</p>
+          </div>
         </div>
-      </div>
+      </Card>
     );
   }
 
   return (
-    <div className={`space-y-2 ${className}`}>
-      <div className="flex items-center justify-between">
-        <h3 className="text-xs font-medium">Interview Timeline</h3>
-        <div className="flex gap-2 text-[10px] text-muted-foreground">
-          <span>🧊 Easy</span>
-          <span>🌡️ Medium</span>
-          <span>🔥 Hard</span>
-        </div>
-      </div>
-
-      <ScrollArea className="w-full" orientation="horizontal">
-        <div className="relative pb-2">
-          {/* Timeline segments - Compact Version */}
-          <div className="flex gap-1 relative" style={{ minWidth: 'max-content' }}>
-            {/* Timeline line */}
-            <div className="absolute left-0 right-0 top-4 h-0.5 bg-gray-200" style={{ width: '100%' }} />
-            <TooltipProvider>
-              {evaluations.map((evaluation, index) => {
-                const colors = getSegmentColor(
-                  evaluation.question_difficulty,
-                  evaluation.subject_relevance
-                );
-
-                return (
-                  <Tooltip key={`segment-${index}`}>
-                    <TooltipTrigger asChild>
-                      <button
-                        className={`flex flex-col items-center min-w-[50px] group ${
-                          onSegmentClick ? 'cursor-pointer' : ''
-                        }`}
-                        onClick={() => onSegmentClick?.(evaluation)}
-                      >
-                        {/* Time label - Compact */}
-                        <div className="text-[9px] text-muted-foreground mb-0.5">
-                          {formatTime(evaluation.timestamp)}
-                        </div>
-
-                        {/* Segment - Reduced Height */}
-                        <div
-                          className={`w-full h-8 ${colors.bg} ${colors.border} border rounded shadow-sm transition-all duration-200 group-hover:shadow-md group-hover:scale-105 flex items-center justify-center`}
-                        >
-                          <div className="text-center">
-                            <div className="text-base">
-                              {getDifficultyLabel(evaluation.question_difficulty)}
-                            </div>
-                          </div>
-                        </div>
-                      </button>
-                    </TooltipTrigger>
-                    <TooltipContent className="max-w-xs">
-                      <div className="space-y-1">
-                        <div className="font-semibold text-xs">
-                          {formatTime(evaluation.timestamp)}
-                        </div>
-                        <div className="text-xs space-y-1">
-                          <p>
-                            <span className="font-medium">Difficulty:</span>{' '}
-                            {evaluation.question_difficulty}
-                          </p>
-                          <p>
-                            <span className="font-medium">Relevance:</span>{' '}
-                            {evaluation.subject_relevance.replace('_', ' ')}
-                          </p>
-                          {evaluation.key_topics.length > 0 && (
-                            <p>
-                              <span className="font-medium">Topics:</span>{' '}
-                              {evaluation.key_topics.slice(0, 2).join(', ')}
-                            </p>
-                          )}
-                        </div>
-                      </div>
-                    </TooltipContent>
-                  </Tooltip>
-                );
-              })}
-            </TooltipProvider>
+    <Card className={`p-3 bg-white ${className}`}>
+      <div className="space-y-2">
+        <div className="flex items-center justify-between">
+          <h3 className="text-xs font-medium text-gray-900">Interview Timeline</h3>
+          <div className="flex gap-2 text-[10px] text-gray-600">
+            <span>🧊 Easy</span>
+            <span>🌡️ Medium</span>
+            <span>🔥 Hard</span>
           </div>
         </div>
-      </ScrollArea>
-    </div>
+
+        <ScrollArea className="w-full" orientation="horizontal">
+          <div className="relative pb-2">
+            {/* Timeline segments - Compact Version */}
+            <div className="flex gap-1 relative" style={{ minWidth: 'max-content' }}>
+              {/* Timeline line */}
+              <div className="absolute left-0 right-0 top-4 h-0.5 bg-gray-200" style={{ width: '100%' }} />
+              <TooltipProvider>
+                {evaluations.map((evaluation, index) => {
+                  const colors = getSegmentColor(
+                    evaluation.question_difficulty,
+                    evaluation.subject_relevance
+                  );
+
+                  return (
+                    <Tooltip key={`segment-${index}`}>
+                      <TooltipTrigger asChild>
+                        <button
+                          className={`flex flex-col items-center min-w-[50px] group ${
+                            onSegmentClick ? 'cursor-pointer' : ''
+                          }`}
+                          onClick={() => onSegmentClick?.(evaluation)}
+                        >
+                          {/* Time label - Compact */}
+                          <div className="text-[9px] text-gray-600 mb-0.5">
+                            {formatTime(evaluation.timestamp)}
+                          </div>
+
+                          {/* Segment - Reduced Height */}
+                          <div
+                            className={`w-full h-8 ${colors.bg} ${colors.border} border rounded shadow-sm transition-all duration-200 group-hover:shadow-md group-hover:scale-105 flex items-center justify-center`}
+                          >
+                            <div className="text-center">
+                              <div className="text-base">
+                                {getDifficultyLabel(evaluation.question_difficulty)}
+                              </div>
+                            </div>
+                          </div>
+                        </button>
+                      </TooltipTrigger>
+                      <TooltipContent className="max-w-xs">
+                        <div className="space-y-1">
+                          <div className="font-semibold text-xs">
+                            {formatTime(evaluation.timestamp)}
+                          </div>
+                          <div className="text-xs space-y-1">
+                            <p>
+                              <span className="font-medium">Difficulty:</span>{' '}
+                              {evaluation.question_difficulty}
+                            </p>
+                            <p>
+                              <span className="font-medium">Relevance:</span>{' '}
+                              {evaluation.subject_relevance.replace('_', ' ')}
+                            </p>
+                            {evaluation.key_topics.length > 0 && (
+                              <p>
+                                <span className="font-medium">Topics:</span>{' '}
+                                {evaluation.key_topics.slice(0, 2).join(', ')}
+                              </p>
+                            )}
+                          </div>
+                        </div>
+                      </TooltipContent>
+                    </Tooltip>
+                  );
+                })}
+              </TooltipProvider>
+            </div>
+          </div>
+        </ScrollArea>
+      </div>
+    </Card>
   );
 };
 
