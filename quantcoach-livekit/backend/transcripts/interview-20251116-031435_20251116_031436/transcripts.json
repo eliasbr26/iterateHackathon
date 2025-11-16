@@ -1,0 +1,330 @@
+{
+  "room": "interview-20251116-031435",
+  "session_start": "2025-11-16T03:15:08.709527",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T03:15:08.709527",
+      "speaker": "candidate",
+      "text": "Okay okay okay okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:15:08.866311",
+      "speaker": "recruiter",
+      "text": "Okay yes yes yes",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:15:18.973753",
+      "speaker": "recruiter",
+      "text": "I promise, I'm going to turn it on. Wait, wait, wait, wait, wait, wait, wait,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:15:31.722253",
+      "speaker": "recruiter",
+      "text": "yeah yeah yeah",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:15:33.820971",
+      "speaker": "recruiter",
+      "text": "no need for no need for opinion",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:15:36.692459",
+      "speaker": "recruiter",
+      "text": "opinion",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:15:42.700715",
+      "speaker": "recruiter",
+      "text": "connect and connect me",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:15:48.723092",
+      "speaker": "recruiter",
+      "text": "wait wait",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:15:48.724669",
+      "speaker": "candidate",
+      "text": "okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:15:48.725694",
+      "speaker": "recruiter",
+      "text": "no no you're there you're there",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:08.853163",
+      "speaker": "candidate",
+      "text": "okay welcome in this interview how are you doing how are you doing",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:13.874177",
+      "speaker": "recruiter",
+      "text": "to us and visit.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:19.289989",
+      "speaker": "recruiter",
+      "text": "I'm doing good. Thank you. And you?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:19.446935",
+      "speaker": "candidate",
+      "text": "I'm very good. Okay. I'll let you dive in. I'll let you dive in.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:19.448242",
+      "speaker": "candidate",
+      "text": "Directly. Can you talk? Can you talk?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:24.696281",
+      "speaker": "recruiter",
+      "text": "okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:24.697584",
+      "speaker": "candidate",
+      "text": "Can you tell me a bit about, uh, about, uh,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:33.872653",
+      "speaker": "candidate",
+      "text": "linear algebra? Uh, how do you, uh, how do you,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:34.025698",
+      "speaker": "candidate",
+      "text": "regularize, uh, rise, uh,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:34.185318",
+      "speaker": "candidate",
+      "text": "victories, I meet you victories, I meet you",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:34.345860",
+      "speaker": "candidate",
+      "text": "and how do you do and how do you do",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:34.346674",
+      "speaker": "candidate",
+      "text": "how do how do",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:34.505825",
+      "speaker": "candidate",
+      "text": "you do regularization in a in a in a in",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:35.702988",
+      "speaker": "recruiter",
+      "text": "okay so so",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:42.029865",
+      "speaker": "recruiter",
+      "text": "first if we want to if we want to",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:42.031100",
+      "speaker": "recruiter",
+      "text": "for example diagonal matrix diagonal matrix",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:42.184543",
+      "speaker": "recruiter",
+      "text": "we have to verify we have to verify",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:44.614870",
+      "speaker": "recruiter",
+      "text": "if it's possible if we want to we want to",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:47.657441",
+      "speaker": "recruiter",
+      "text": "take a take a nice uh eat in uh eat in",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:50.549463",
+      "speaker": "recruiter",
+      "text": "the in the uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:53.568957",
+      "speaker": "recruiter",
+      "text": "complex Corp uh it is always possible but always possible but",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:56.554545",
+      "speaker": "recruiter",
+      "text": "in in reals uh uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:16:59.576835",
+      "speaker": "recruiter",
+      "text": "it's not always possible if it's possible if it's possible",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:17:02.804845",
+      "speaker": "recruiter",
+      "text": "now we have to find the",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:17:08.572711",
+      "speaker": "recruiter",
+      "text": "To do that, we can compute",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:17:14.354434",
+      "speaker": "recruiter",
+      "text": "the the",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:17:14.356528",
+      "speaker": "recruiter",
+      "text": "characteristical polin polin",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:17:15.731923",
+      "speaker": "candidate",
+      "text": "It's okay, it's okay. Let's move to another subject. Let's move to another subject.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:17:22.549020",
+      "speaker": "recruiter",
+      "text": "okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:17:27.368306",
+      "speaker": "candidate",
+      "text": "How do you do feature selection? Feature selection.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:17:27.369605",
+      "speaker": "candidate",
+      "text": "In machine learning, how do you select? How do you select?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:17:33.034619",
+      "speaker": "recruiter",
+      "text": "okay okay uh okay uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:17:33.036136",
+      "speaker": "recruiter",
+      "text": "um for example for example",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:17:38.054751",
+      "speaker": "recruiter",
+      "text": "I can uh I can come I can come",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:17:38.214813",
+      "speaker": "recruiter",
+      "text": "compute the correlation between the features between the features",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:17:38.215902",
+      "speaker": "recruiter",
+      "text": "and uh uh uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:17:38.548923",
+      "speaker": "recruiter",
+      "text": "and also with and also with uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:17:41.554632",
+      "speaker": "recruiter",
+      "text": "the question with the the the",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:17:44.555266",
+      "speaker": "recruiter",
+      "text": "the class for example the class for",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:17:47.607417",
+      "speaker": "recruiter",
+      "text": "example the class for example if we are in a the class for example if we are in a the class for example if we are in a",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:17:53.760872",
+      "speaker": "recruiter",
+      "text": "In a classification setting, for example, for example,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:17:56.644281",
+      "speaker": "recruiter",
+      "text": "we can compute a matrix",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:17:56.798166",
+      "speaker": "candidate",
+      "text": "thank you",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T03:18:02.205270",
+      "speaker": "recruiter",
+      "text": "of correlation",
+      "is_final": true
+    }
+  ]
+}

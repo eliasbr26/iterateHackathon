@@ -1,0 +1,593 @@
+
+================================================================================
+[03:25:21] EVALUATION
+================================================================================
+Window: 03:25:10 - 03:25:16
+Transcripts: 2
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation appears fragmented and off-topic, with the candidate mentioning 'Parakiet' (parakeet) and the recruiter making an unclear comment about being 'faceless'. No quantitative finance content is present.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Unclear context
+   - No technical content
+   - Conversation appears disjointed or incomplete
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:25:36] EVALUATION
+================================================================================
+Window: 03:25:10 - 03:25:31
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt captures the initial connection phase of an interview with audio/video setup issues being resolved. No substantive quant finance discussion has begun yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Technical setup issues
+   - Interview not yet started
+   - Incomplete conversation fragment
+   - No technical content
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:25:43] EVALUATION
+================================================================================
+Window: 03:25:23 - 03:25:38
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.90)
+
+📝 Summary: Initial greeting and audio check between interviewer and candidate. No technical content discussed, only establishing connection and confirming roles.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content
+   - Interview just starting - preliminary setup only
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:25:48] EVALUATION
+================================================================================
+Window: 03:25:29 - 03:25:43
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.90)
+
+📝 Summary: This is the initial connection and audio check portion of the interview where the candidate and recruiter confirm they can hear each other and establish their respective roles.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content yet
+   - Initial setup and greeting only
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:25:53] EVALUATION
+================================================================================
+Window: 03:25:36 - 03:25:48
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.75)
+
+📝 Summary: This excerpt captures the initial greeting and technical setup phase of the interview, with participants confirming audio/video functionality before transitioning to technical content. The interviewer announces they will discuss math topics next.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content yet - interview just beginning
+   - Audio/connection testing phase
+   - Repeated/garbled text suggests transcription issues
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:25:58] EVALUATION
+================================================================================
+Window: 03:25:38 - 03:25:54
+Transcripts: 9
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.75)
+
+📝 Summary: This excerpt captures the initial greeting and setup phase of the interview where the interviewer and candidate confirm roles and prepare to begin discussing math questions. No technical content has been covered yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content discussed yet
+   - Interview just beginning
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:26:03] EVALUATION
+================================================================================
+Window: 03:25:48 - 03:25:58
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.75)
+
+📝 Summary: Interview opening with brief greetings and transition. Recruiter announces they will discuss math topics but no actual technical content has been presented yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content yet
+   - Incomplete question from recruiter
+   - Too brief to assess substantive content
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:26:08] EVALUATION
+================================================================================
+Window: 03:25:54 - 03:26:03
+Transcripts: 3
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.00)
+
+📝 Summary: Evaluation failed: Missing required field: interviewer_tone
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - EVALUATION_ERROR: Missing required field: interviewer_tone
+
+
+================================================================================
+[03:26:30] EVALUATION
+================================================================================
+Window: 03:25:54 - 03:26:25
+Transcripts: 11
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter asked about regularization, and the candidate attempted to explain it as adding a penalty term to a loss function, mentioning lasso and ridge regularization, though struggled with articulation and clarity.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Candidate showed difficulty articulating explanation
+   - Incomplete explanation of regularization concepts
+   - Mentioned 'rigid lasso' (likely meant 'ridge' or 'elastic net')
+   - Unclear explanation of sparsity and variable selection
+
+
+================================================================================
+[03:26:41] EVALUATION
+================================================================================
+Window: 03:26:16 - 03:26:36
+Transcripts: 9
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: The candidate explains that adding a Lasso term to an objective function results in more coefficients being set to zero in the solution, demonstrating basic understanding of L1 regularization and sparsity. The interviewer responds positively to this explanation.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Candidate shows significant speech disfluency or hesitation
+   - Explanation is correct but very basic
+
+
+================================================================================
+[03:26:49] EVALUATION
+================================================================================
+Window: 03:26:31 - 03:26:44
+Transcripts: 9
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: MEDIUM (confidence: 0.75)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.80)
+
+📝 Summary: The candidate explains that lasso regularization causes more coefficients to become zero. The recruiter then transitions to asking about feature selection methods when dealing with large matrices.
+
+🔑 Key Topics: REGULARIZATION, FEATURE_SELECTION
+
+🚩 Flags:
+   - Candidate speech is fragmented/repetitive
+   - Recruiter question incomplete - cut off mid-sentence
+
+
+================================================================================
+[03:26:56] EVALUATION
+================================================================================
+Window: 03:26:34 - 03:26:51
+Transcripts: 7
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: MEDIUM (confidence: 0.75)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter is asking about feature selection methods when dealing with a large feature matrix, following up on a previous discussion that likely involved regularization techniques (L1 regularization was mentioned, which sets coefficients to zero).
+
+🔑 Key Topics: REGULARIZATION, FEATURE_SELECTION
+
+🚩 Flags:
+   - Conversation fragment - missing context from earlier discussion
+   - Recruiter appears to be hesitating or reformulating question multiple times
+
+
+================================================================================
+[03:27:04] EVALUATION
+================================================================================
+Window: 03:26:42 - 03:26:58
+Transcripts: 7
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.75)
+🎯 Question Difficulty: MEDIUM (confidence: 0.65)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.50)
+
+📝 Summary: The recruiter begins asking about feature selection from a large matrix but the conversation is fragmented with interruptions and an introduction. The candidate starts to respond about computing correlations but the exchange is incomplete.
+
+🔑 Key Topics: FEATURE_SELECTION
+
+🚩 Flags:
+   - Conversation is highly fragmented and incomplete
+   - Interview interrupted by recruiter introducing themselves mid-question
+   - Candidate response cut off - unclear if answer was relevant
+   - Audio/transcription quality issues evident
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:27:21] EVALUATION
+================================================================================
+Window: 03:26:51 - 03:27:15
+Transcripts: 10
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.90)
+🎯 Question Difficulty: MEDIUM (confidence: 0.75)
+💬 Interviewer Tone: HARSH (confidence: 0.95)
+
+📝 Summary: The recruiter asks about feature selection methods when you don't know which features to choose. The candidate mentions correlation matrix and PCA (though says 'DCA'), but struggles to articulate clearly. The recruiter criticizes the candidate's speed of response.
+
+🔑 Key Topics: FEATURE_SELECTION
+
+🚩 Flags:
+   - Harsh tone detected - recruiter interrupts and criticizes response speed
+   - Candidate appears to say 'DCA' instead of 'PCA' - possible terminology confusion
+   - Communication issues - candidate's response is fragmented and unclear
+   - Recruiter cuts off candidate mid-explanation
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:27:34] EVALUATION
+================================================================================
+Window: 03:27:07 - 03:27:28
+Transcripts: 10
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.70)
+💬 Interviewer Tone: HARSH (confidence: 0.95)
+
+📝 Summary: The recruiter aggressively criticizes the candidate for not responding quickly enough and demands faster, more reactive answers. The candidate appears distressed and struggling to respond coherently.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Harsh tone detected - recruiter being aggressive and demanding
+   - Candidate appears distressed and unable to complete sentences
+   - Unprofessional interview conduct
+   - No clear technical question visible in excerpt
+   - Possible high-pressure stress test or problematic interview environment
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:27:40] EVALUATION
+================================================================================
+Window: 03:27:21 - 03:27:35
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: HARSH (confidence: 0.90)
+
+📝 Summary: The conversation appears fragmented and tense, with the recruiter demanding answers and expressing that the situation is not normal, while the candidate seems distracted or disturbed. No technical quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Harsh tone detected
+   - Off-topic discussion
+   - Communication breakdown evident
+   - Candidate appears distressed or distracted
+   - Recruiter expressing frustration
+   - No technical content covered
+   - Unprofessional interview conduct
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:27:47] EVALUATION
+================================================================================
+Window: 03:27:26 - 03:27:42
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The conversation consists of fragmented exchanges where the candidate appears distracted or nervous, and the recruiter acknowledges the selective nature of the position. No technical quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Candidate appears distracted or uncomfortable
+   - No technical content in this excerpt
+   - Fragmented communication from both parties
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:27:56] EVALUATION
+================================================================================
+Window: 03:27:35 - 03:27:50
+Transcripts: 9
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter acknowledges the selective nature of the position and the candidate mentions feeling pressure. The recruiter begins to ask a follow-up question, likely about handling pressure, but the excerpt cuts off.
+
+🔑 Key Topics: BEHAVIORAL_PRESSURE
+
+🚩 Flags:
+   - Off-topic discussion - no technical content
+   - Candidate expresses feeling pressured
+   - Incomplete exchange - recruiter's question cut off
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:28:09] EVALUATION
+================================================================================
+Window: 03:27:42 - 03:28:04
+Transcripts: 9
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: Brief exchange where the candidate expresses feeling pressure from the recruiter's expectations, followed by an incomplete response. No technical quant finance content was discussed.
+
+🔑 Key Topics: BEHAVIORAL_PRESSURE
+
+🚩 Flags:
+   - No technical content discussed
+   - Candidate appears uncertain or stressed
+   - Incomplete conversation excerpt
+   - Behavioral pressure acknowledged by candidate
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:28:15] EVALUATION
+================================================================================
+Window: 03:27:56 - 03:28:10
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.75)
+
+📝 Summary: This excerpt captures a transitional moment where the candidate appears to be struggling or hesitating, and the recruiter reassures them before moving to the next question. No technical content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content in excerpt
+   - Candidate appears to be struggling or uncertain
+   - Only transition dialogue captured
+   - Insufficient context to evaluate quant finance discussion
+
+
+================================================================================
+[03:28:20] EVALUATION
+================================================================================
+Window: 03:28:02 - 03:28:15
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.75)
+
+📝 Summary: Brief transition moment where the recruiter acknowledges the candidate's response and moves on to the next question. No technical content discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content in this excerpt
+   - Candidate appears to sigh, possibly indicating frustration or difficulty
+   - Pure transition dialogue only
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:28:24] EVALUATION
+================================================================================
+Window: 03:28:09 - 03:28:20
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.75)
+
+📝 Summary: This excerpt shows only transition moments between questions with clicking sounds and the recruiter thanking the candidate, with no substantive technical content discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content in excerpt
+   - Only procedural/transition dialogue captured
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:28:28] EVALUATION
+================================================================================
+Window: 03:28:15 - 03:28:24
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: Brief interview closing with the recruiter thanking the candidate for their time. No technical content was discussed in this excerpt.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content
+   - Interview appears to be ending or transitioning
+   - Extremely short excerpt with limited context
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:28:33] EVALUATION
+================================================================================
+Window: 03:28:15 - 03:28:28
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: This is a brief closing segment of an interview where the recruiter is thanking the candidate for their time and indicating they will follow up with feedback or a decision.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content present
+   - Interview closing segment only
+   - Audio artifacts present (clicks)
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:28:56] EVALUATION
+================================================================================
+Window: 03:28:20 - 03:28:50
+Transcripts: 14
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.30)
+
+📝 Summary: This appears to be a closing segment of an interview with fragmented conversation, possibly due to poor audio quality or transcription errors. The recruiter is wrapping up and mentioning follow-up, with references to off-topic discussion.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Poor audio/transcription quality - conversation largely unintelligible
+   - No technical content detected
+   - Appears to be interview closing/wrap-up only
+   - Recruiter mentions 'off-topic discussion' explicitly
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:29:20] EVALUATION
+================================================================================
+Window: 03:28:41 - 03:29:14
+Transcripts: 10
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.30)
+
+📝 Summary: This excerpt appears to be fragmented, possibly machine-translated or poorly transcribed conversation that mentions 'off-topic discussion' and some references to interview tone/learning, but contains no substantive quant finance content.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incoherent or corrupted transcript
+   - Off-topic discussion explicitly mentioned by speaker
+   - No technical content present
+   - Possible translation or transcription errors
+   - Interview tone mentioned meta-textually ('harsh interview tone', 'tone warning')
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:29:41] EVALUATION
+================================================================================
+Window: 03:29:05 - 03:29:36
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.40)
+
+📝 Summary: The conversation appears to be fragmented, possibly mistranscribed, containing casual greetings and personal anecdotes about pressure and being a 'big star'. No technical quant finance content is present.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Transcript quality issues - appears garbled or mistranscribed
+   - Contains non-English fragments
+   - No clear interview structure
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:30:13] EVALUATION
+================================================================================
+Window: 03:29:30 - 03:29:50
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt contains fragmented casual conversation about being under pressure when young, with unclear context and mixed language phrases. No quantitative finance topics are discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Fragmented conversation with unclear context
+   - Possible transcription errors or language mixing
+   - Off-topic/casual discussion detected ([EXTRA])
+

@@ -29,6 +29,58 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
+class AlertThrottler:
+    """
+    Manages alert throttling to reduce false positives.
+    Only triggers alerts for sustained issues (4 out of last 6 windows).
+    """
+    def __init__(self):
+        self.evaluation_history = []  # Store recent evaluations
+
+    def should_trigger_alert(self, evaluation: dict, alert_type: str) -> bool:
+        """
+        Determines if an alert should be triggered based on sustained pattern.
+
+        Args:
+            evaluation: Current evaluation dict
+            alert_type: 'offtopic', 'partially_relevant', or 'low_confidence'
+
+        Returns:
+            True if 4+ out of last 6 windows match the alert condition
+        """
+        # Add current evaluation to history
+        self.evaluation_history.append(evaluation)
+
+        # Keep only last 6 evaluations
+        if len(self.evaluation_history) > 6:
+            self.evaluation_history = self.evaluation_history[-6:]
+
+        # Need at least 4 evaluations to make decision
+        if len(self.evaluation_history) < 4:
+            return False
+
+        # Count matching conditions in last 6
+        recent_evals = self.evaluation_history[-6:]
+        match_count = 0
+
+        for e in recent_evals:
+            if alert_type == 'offtopic':
+                if e.get('subject_relevance') == 'off_topic':
+                    match_count += 1
+            elif alert_type == 'partially_relevant':
+                if e.get('subject_relevance') == 'partially_relevant':
+                    match_count += 1
+            elif alert_type == 'low_confidence':
+                # Low confidence in any metric
+                if (e.get('confidence_subject', 1.0) < 0.7 or
+                    e.get('confidence_difficulty', 1.0) < 0.7 or
+                    e.get('confidence_tone', 1.0) < 0.7):
+                    match_count += 1
+
+        # Trigger alert if 4+ out of last 6 match
+        return match_count >= 4
+
+
 class TranscriptAndEvaluationStorage:
     """Handles saving transcripts AND evaluations to files"""
 
@@ -166,7 +218,7 @@ async def run_agent(
     # Initialize components
     storage = TranscriptAndEvaluationStorage(room_name=room_name, output_dir=output_dir)
     buffer = TranscriptBuffer(
-        window_size_seconds=20.0,
+        window_size_seconds=30.0,
         overlap_seconds=10.0,
         min_transcripts_for_evaluation=2
     )
@@ -174,7 +226,7 @@ async def run_agent(
 
     logger.info(f"🎙️  Starting audio transcription + evaluation agent for room: {room_name}")
     logger.info(f"📡 Connecting to: {livekit_url}")
-    logger.info(f"🤖 LLM Evaluation: ENABLED (20s windows with 10s overlap)")
+    logger.info(f"🤖 LLM Evaluation: ENABLED (30s windows with 10s overlap)")
 
     # Send status event
     if event_callback:
@@ -205,6 +257,9 @@ async def run_agent(
     # Queue for evaluation tasks
     evaluation_queue = asyncio.Queue()
 
+    # Initialize alert throttler
+    throttler = AlertThrottler()
+
     async def evaluation_worker():
         """Background worker for LLM evaluations"""
         while True:
@@ -217,11 +272,36 @@ async def run_agent(
                 evaluation = await evaluator.evaluate(window)
                 storage.add_evaluation(evaluation)
 
-                # Send evaluation event
+                # Create filtered evaluation for alerts
+                filtered_evaluation = evaluation.to_dict().copy()
+
+                # Check each alert type for suppression
+                filtered_evaluation['_suppress_offtopic_alert'] = False
+                filtered_evaluation['_suppress_partially_relevant_alert'] = False
+                filtered_evaluation['_suppress_low_confidence_alert'] = False
+
+                # Off-topic: requires 4 out of last 6
+                if filtered_evaluation.get('subject_relevance') == 'off_topic':
+                    if not throttler.should_trigger_alert(filtered_evaluation, 'offtopic'):
+                        filtered_evaluation['_suppress_offtopic_alert'] = True
+
+                # Partially relevant: requires 4 out of last 6
+                if filtered_evaluation.get('subject_relevance') == 'partially_relevant':
+                    if not throttler.should_trigger_alert(filtered_evaluation, 'partially_relevant'):
+                        filtered_evaluation['_suppress_partially_relevant_alert'] = True
+
+                # Low confidence: requires 4 out of last 6
+                if (filtered_evaluation.get('confidence_subject', 1.0) < 0.7 or
+                    filtered_evaluation.get('confidence_difficulty', 1.0) < 0.7 or
+                    filtered_evaluation.get('confidence_tone', 1.0) < 0.7):
+                    if not throttler.should_trigger_alert(filtered_evaluation, 'low_confidence'):
+                        filtered_evaluation['_suppress_low_confidence_alert'] = True
+
+                # Send evaluation event (still sends every 30s for metrics)
                 if event_callback:
                     await event_callback({
                         "type": "evaluation",
-                        "data": evaluation.to_dict()
+                        "data": filtered_evaluation
                     })
 
                 # Display evaluation

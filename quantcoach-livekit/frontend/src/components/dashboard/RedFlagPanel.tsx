@@ -30,63 +30,98 @@ const RedFlagPanel = ({ evaluations, className = '' }: RedFlagPanelProps) => {
     evaluations.forEach((evaluation, index) => {
       const evalId = `eval-${index}-${evaluation.timestamp}`;
 
-      // Critical: Off-topic
-      if (evaluation.subject_relevance === 'off_topic') {
+      // Check suppression flags from backend
+      const suppressOfftopic = evaluation._suppress_offtopic_alert === true;
+      const suppressPartiallyRelevant = evaluation._suppress_partially_relevant_alert === true;
+      const suppressLowConfidence = evaluation._suppress_low_confidence_alert === true;
+
+      // Critical: Off-topic (only if not suppressed)
+      if (evaluation.subject_relevance === 'off_topic' && !suppressOfftopic) {
         flags.push({
           id: `${evalId}-offtopic`,
           type: 'critical',
-          title: 'Off-Topic Discussion',
-          description: evaluation.summary || 'Conversation went off-topic from quantitative finance.',
+          title: 'Sustained Off-Topic Discussion',
+          description: evaluation.summary || 'Conversation has been off-topic for multiple windows.',
           timestamp: evaluation.timestamp,
           confidence: evaluation.confidence_subject,
         });
       }
 
-      // Warning: Partially relevant
-      if (evaluation.subject_relevance === 'partially_relevant') {
+      // Warning: Partially relevant (only if not suppressed)
+      if (evaluation.subject_relevance === 'partially_relevant' && !suppressPartiallyRelevant) {
         flags.push({
           id: `${evalId}-partial`,
           type: 'warning',
           title: 'Partially Off-Topic',
-          description: evaluation.summary || 'Discussion partially strayed from core topics.',
+          description: evaluation.summary || 'Discussion has partially strayed from core topics.',
           timestamp: evaluation.timestamp,
           confidence: evaluation.confidence_subject,
         });
       }
 
-      // Warning: Low confidence in any metric
+      // Harsh tone alerts - NEVER suppressed (always immediate)
+      if (evaluation.interviewer_tone === 'harsh') {
+        flags.push({
+          id: `${evalId}-harsh-tone`,
+          type: 'critical',
+          title: 'Harsh Interviewer Tone',
+          description: 'Interviewer tone detected as harsh or aggressive.',
+          timestamp: evaluation.timestamp,
+          confidence: evaluation.confidence_tone,
+        });
+      }
+
+      // Low confidence warnings (only if not suppressed)
       const lowConfidenceThreshold = 0.7;
-      if (evaluation.confidence_subject < lowConfidenceThreshold) {
-        flags.push({
-          id: `${evalId}-low-conf-subject`,
-          type: 'warning',
-          title: 'Low Confidence: Subject Relevance',
-          description: `AI is uncertain about topic relevance (${(evaluation.confidence_subject * 100).toFixed(0)}% confidence)`,
-          timestamp: evaluation.timestamp,
-          confidence: evaluation.confidence_subject,
-        });
+      if (!suppressLowConfidence) {
+        if (evaluation.confidence_subject < lowConfidenceThreshold) {
+          flags.push({
+            id: `${evalId}-low-conf-subject`,
+            type: 'warning',
+            title: 'Low Confidence: Subject Relevance',
+            description: `AI is uncertain about topic relevance (${(evaluation.confidence_subject * 100).toFixed(0)}% confidence)`,
+            timestamp: evaluation.timestamp,
+            confidence: evaluation.confidence_subject,
+          });
+        }
+
+        if (evaluation.confidence_difficulty < lowConfidenceThreshold) {
+          flags.push({
+            id: `${evalId}-low-conf-difficulty`,
+            type: 'warning',
+            title: 'Low Confidence: Question Difficulty',
+            description: `AI is uncertain about difficulty level (${(evaluation.confidence_difficulty * 100).toFixed(0)}% confidence)`,
+            timestamp: evaluation.timestamp,
+            confidence: evaluation.confidence_difficulty,
+          });
+        }
+
+        if (evaluation.confidence_tone < lowConfidenceThreshold) {
+          flags.push({
+            id: `${evalId}-low-conf-tone`,
+            type: 'warning',
+            title: 'Low Confidence: Interviewer Tone',
+            description: `AI is uncertain about tone assessment (${(evaluation.confidence_tone * 100).toFixed(0)}% confidence)`,
+            timestamp: evaluation.timestamp,
+            confidence: evaluation.confidence_tone,
+          });
+        }
       }
 
-      if (evaluation.confidence_difficulty < lowConfidenceThreshold) {
-        flags.push({
-          id: `${evalId}-low-conf-difficulty`,
-          type: 'info',
-          title: 'Low Confidence: Difficulty',
-          description: `AI is uncertain about question difficulty (${(evaluation.confidence_difficulty * 100).toFixed(0)}% confidence)`,
-          timestamp: evaluation.timestamp,
-          confidence: evaluation.confidence_difficulty,
-        });
-      }
-
-      // LLM-generated flags
+      // LLM-generated flags - harsh tone never suppressed, others follow general rules
       evaluation.flags.forEach((flag, flagIndex) => {
-        flags.push({
-          id: `${evalId}-llm-${flagIndex}`,
-          type: 'info',
-          title: 'AI Suggestion',
-          description: flag,
-          timestamp: evaluation.timestamp,
-        });
+        const isHarshTone = flag.toLowerCase().includes('harsh');
+
+        // Harsh tone always shows, others respect low confidence suppression
+        if (isHarshTone || !suppressLowConfidence) {
+          flags.push({
+            id: `${evalId}-llm-${flagIndex}`,
+            type: isHarshTone ? 'critical' : 'info',
+            title: isHarshTone ? 'Tone Warning' : 'AI Suggestion',
+            description: flag,
+            timestamp: evaluation.timestamp,
+          });
+        }
       });
     });
 
