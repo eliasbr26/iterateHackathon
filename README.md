@@ -3,7 +3,7 @@
 
 BetterVue provides real-time visibility into the quality of technical interviews: question relevance and difficulty, topic coverage, tone, red flags, and AI-generated summaries.  
 This quick guide explains how to install, configure, and run the app in the `quantcoach-livekit` directory.
-![](iterateHackathon/WhatsApp Image 2025-11-16 at 10.51.26.jpeg)
+![demo](demo.jpeg)
 ⚠️ **Never commit API keys.** Use a local `.env` or a secrets manager.
 
 ---
