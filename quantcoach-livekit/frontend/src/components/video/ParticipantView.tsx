@@ -16,7 +16,7 @@ export const ParticipantView = ({ participant, isLocal = false }: ParticipantVie
 
     if (!videoElement || !audioElement) return;
 
-    const handleTrackSubscribed = (track: any) => {
+    const attachTrack = (track: any) => {
       if (track.kind === Track.Kind.Video) {
         track.attach(videoElement);
       } else if (track.kind === Track.Kind.Audio && !isLocal) {
@@ -24,24 +24,33 @@ export const ParticipantView = ({ participant, isLocal = false }: ParticipantVie
       }
     };
 
-    const handleTrackUnsubscribed = (track: any) => {
+    const detachTrack = (track: any) => {
       track.detach();
+    };
+
+    // Handle track subscribed (for remote participants)
+    const handleTrackSubscribed = (track: any) => {
+      attachTrack(track);
+    };
+
+    const handleTrackUnsubscribed = (track: any) => {
+      detachTrack(track);
     };
 
     // Attach existing tracks
     participant.videoTrackPublications.forEach((publication) => {
-      if (publication.track) {
-        handleTrackSubscribed(publication.track);
+      if (publication.track && publication.isSubscribed) {
+        attachTrack(publication.track);
       }
     });
 
     participant.audioTrackPublications.forEach((publication) => {
-      if (publication.track && !isLocal) {
-        handleTrackSubscribed(publication.track);
+      if (publication.track && publication.isSubscribed && !isLocal) {
+        attachTrack(publication.track);
       }
     });
 
-    // Listen for new tracks
+    // Listen for track subscription events (remote participants)
     participant.on('trackSubscribed', handleTrackSubscribed);
     participant.on('trackUnsubscribed', handleTrackUnsubscribed);
 
@@ -49,7 +58,7 @@ export const ParticipantView = ({ participant, isLocal = false }: ParticipantVie
       participant.off('trackSubscribed', handleTrackSubscribed);
       participant.off('trackUnsubscribed', handleTrackUnsubscribed);
 
-      // Detach all tracks
+      // Detach all tracks on cleanup
       participant.videoTrackPublications.forEach((publication) => {
         if (publication.track) {
           publication.track.detach();

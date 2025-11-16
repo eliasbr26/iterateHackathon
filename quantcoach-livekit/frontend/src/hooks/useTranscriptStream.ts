@@ -25,6 +25,9 @@ export interface Evaluation {
   confidence_subject: number;
   confidence_difficulty: number;
   confidence_tone: number;
+  _suppress_offtopic_alert?: boolean;
+  _suppress_partially_relevant_alert?: boolean;
+  _suppress_low_confidence_alert?: boolean;
 }
 
 export interface TranscriptStreamData {

@@ -1,0 +1,355 @@
+
+================================================================================
+[03:15:48] EVALUATION
+================================================================================
+Window: 03:15:08 - 03:15:42
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This appears to be a pre-interview technical setup or connection issue, with both parties attempting to establish proper communication. No substantive quant finance content was discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Technical setup/connection issues
+   - No interview content present
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:15:53] EVALUATION
+================================================================================
+Window: 03:15:33 - 03:15:48
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.65)
+
+📝 Summary: The recruiter appears to be experiencing technical difficulties or attempting to establish/re-establish connection with the candidate. No substantive quant finance content was discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Technical/connection issues
+   - No quant finance content
+   - Fragmented communication
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:15:57] EVALUATION
+================================================================================
+Window: 03:15:42 - 03:15:48
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.90)
+
+📝 Summary: This is a brief technical connection issue at the start of an interview where the recruiter is ensuring the audio/video connection is working properly before beginning the actual interview.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No substantive content discussed
+   - Technical connection setup only
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:16:13] EVALUATION
+================================================================================
+Window: 03:15:42 - 03:16:08
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.80)
+
+📝 Summary: This excerpt captures only the initial connection and greeting phase of the interview with technical difficulties being resolved. No substantive quant finance content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content yet
+   - Interview just starting
+   - Connection issues at beginning
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:16:18] EVALUATION
+================================================================================
+Window: 03:16:08 - 03:16:13
+Transcripts: 2
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This excerpt captures only the opening greetings of the interview with casual exchanges between candidate and recruiter. No technical content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content yet
+   - Interview just beginning
+   - Recruiter response unclear/incomplete
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:16:24] EVALUATION
+================================================================================
+Window: 03:16:08 - 03:16:19
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.90)
+
+📝 Summary: This excerpt captures only the initial greeting and pleasantries at the start of the interview. No technical quant finance content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content yet
+   - Interview just beginning
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:16:29] EVALUATION
+================================================================================
+Window: 03:16:13 - 03:16:24
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: This excerpt captures only the initial greeting and transition phase of the interview, with no technical content discussed yet. The participants are exchanging pleasantries and preparing to begin the substantive conversation.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content yet
+   - Interview just starting
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:16:33] EVALUATION
+================================================================================
+Window: 03:16:19 - 03:16:24
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt captures the initial greeting and opening moments of the interview where the candidate appears to be asking the recruiter to provide information about the role or company. No technical content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical discussion
+   - Interview just beginning
+   - Incomplete/fragmented conversation
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:16:41] EVALUATION
+================================================================================
+Window: 03:16:19 - 03:16:35
+Transcripts: 12
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.75)
+🎯 Question Difficulty: EASY (confidence: 0.60)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.50)
+
+📝 Summary: The conversation begins with brief greetings and small talk, then the recruiter attempts to ask about linear algebra and regularization techniques, though the audio/transcription quality appears problematic with repeated fragmented phrases.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Poor audio/transcription quality - repeated and fragmented speech
+   - Question unclear due to technical issues
+   - Very brief excerpt - limited context
+   - Interview just starting - insufficient data for robust assessment
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[03:17:13] EVALUATION
+================================================================================
+Window: 03:16:33 - 03:17:08
+Transcripts: 18
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.70)
+🎯 Question Difficulty: MEDIUM (confidence: 0.60)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.50)
+
+📝 Summary: The candidate asked about regularization methods, and the recruiter began explaining matrix diagonalization concepts, discussing conditions for diagonalization in complex versus real number fields.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Poor audio quality or transcription errors evident
+   - Conversation fragmented and difficult to follow
+   - Recruiter's response about matrix diagonalization doesn't directly address regularization question
+   - Topic mismatch between question and answer
+
+
+================================================================================
+[03:17:20] EVALUATION
+================================================================================
+Window: 03:16:59 - 03:17:15
+Transcripts: 6
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.30)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.20)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.60)
+
+📝 Summary: The recruiter appears to be struggling to articulate a concept (possibly about characteristic polynomials), but the candidate interrupts and requests to move to another subject before any meaningful technical discussion occurs.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incomplete exchange - no clear question asked
+   - Recruiter struggled with articulation
+   - Candidate cut off discussion before completion
+   - Insufficient content to assess technical depth
+
+
+================================================================================
+[03:17:26] EVALUATION
+================================================================================
+Window: 03:17:08 - 03:17:22
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.75)
+
+📝 Summary: The recruiter attempted to explain something about characteristic polynomials but struggled with the explanation. The candidate interrupted and requested to move to a different topic, which the recruiter accepted.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incomplete technical explanation
+   - Candidate redirected conversation
+   - No clear technical content discussed
+   - Communication difficulty detected
+
+
+================================================================================
+[03:17:32] EVALUATION
+================================================================================
+Window: 03:17:14 - 03:17:27
+Transcripts: 5
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.70)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.40)
+
+📝 Summary: The conversation shows a transition where the candidate suggests moving to another subject, then asks about feature selection methods. The recruiter appears to have communication difficulties (unclear speech/transcription errors).
+
+🔑 Key Topics: FEATURE_SELECTION
+
+🚩 Flags:
+   - Unclear/garbled recruiter speech
+   - Role reversal: candidate asking the question instead of recruiter
+   - Abrupt topic transition suggesting previous difficulty
+   - No actual discussion of feature selection content yet
+
+
+================================================================================
+[03:17:37] EVALUATION
+================================================================================
+Window: 03:17:22 - 03:17:33
+Transcripts: 4
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.85)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.40)
+
+📝 Summary: The candidate asked about feature selection methods in machine learning, but the recruiter only provided minimal acknowledgment without substantive response.
+
+🔑 Key Topics: FEATURE_SELECTION
+
+🚩 Flags:
+   - Candidate appears to be asking the questions rather than answering
+   - Recruiter provides no technical response
+   - Very brief exchange with limited content
+   - Role reversal: candidate questioning recruiter
+
+
+================================================================================
+[03:18:01] EVALUATION
+================================================================================
+Window: 03:17:27 - 03:17:56
+Transcripts: 14
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.85)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.60)
+
+📝 Summary: The candidate asks about feature selection in machine learning, and the recruiter begins explaining correlation-based methods, including computing correlations between features and with the target class in classification settings.
+
+🔑 Key Topics: FEATURE_SELECTION
+
+🚩 Flags:
+   - Role reversal: candidate asking questions instead of answering
+   - Recruiter speech is fragmented and repetitive
+   - Answer incomplete - explanation cut off mid-sentence
+   - Poor audio quality or transcription issues evident
+
+
+================================================================================
+[03:20:24] EVALUATION
+================================================================================
+Window: 03:17:47 - 03:18:02
+Transcripts: 5
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.30)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.20)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.20)
+
+📝 Summary: The conversation appears fragmented and incomplete, with the recruiter attempting to discuss classification and correlation matrices but the exchange is incoherent and lacks substance.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Conversation is fragmented and difficult to interpret
+   - Recruiter statement is repetitive and unclear
+   - Insufficient content to evaluate technical depth
+   - Possible transcription or audio quality issues
+
+
+================================================================================
+[03:20:31] EVALUATION
+================================================================================
+Window: 03:17:53 - 03:18:02
+Transcripts: 4
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.70)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.30)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.50)
+
+📝 Summary: The recruiter begins discussing classification problems and mentions computing a correlation matrix, which relates to feature analysis and selection. The conversation fragment is too brief to assess the full context or difficulty.
+
+🔑 Key Topics: FEATURE_SELECTION
+
+🚩 Flags:
+   - Incomplete conversation snippet
+   - Cannot assess full question difficulty
+   - Candidate only provides acknowledgment
+

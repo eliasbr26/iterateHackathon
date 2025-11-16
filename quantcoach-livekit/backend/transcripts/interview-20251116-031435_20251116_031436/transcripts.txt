@@ -1,0 +1,54 @@
+[03:15:08] 👤 CANDIDATE: Okay okay okay okay
+[03:15:08] 👔 RECRUITER: Okay yes yes yes
+[03:15:18] 👔 RECRUITER: I promise, I'm going to turn it on. Wait, wait, wait, wait, wait, wait, wait,
+[03:15:31] 👔 RECRUITER: yeah yeah yeah
+[03:15:33] 👔 RECRUITER: no need for no need for opinion
+[03:15:36] 👔 RECRUITER: opinion
+[03:15:42] 👔 RECRUITER: connect and connect me
+[03:15:48] 👔 RECRUITER: wait wait
+[03:15:48] 👤 CANDIDATE: okay
+[03:15:48] 👔 RECRUITER: no no you're there you're there
+[03:16:08] 👤 CANDIDATE: okay welcome in this interview how are you doing how are you doing
+[03:16:13] 👔 RECRUITER: to us and visit.
+[03:16:19] 👔 RECRUITER: I'm doing good. Thank you. And you?
+[03:16:19] 👤 CANDIDATE: I'm very good. Okay. I'll let you dive in. I'll let you dive in.
+[03:16:19] 👤 CANDIDATE: Directly. Can you talk? Can you talk?
+[03:16:24] 👔 RECRUITER: okay
+[03:16:24] 👤 CANDIDATE: Can you tell me a bit about, uh, about, uh,
+[03:16:33] 👤 CANDIDATE: linear algebra? Uh, how do you, uh, how do you,
+[03:16:34] 👤 CANDIDATE: regularize, uh, rise, uh,
+[03:16:34] 👤 CANDIDATE: victories, I meet you victories, I meet you
+[03:16:34] 👤 CANDIDATE: and how do you do and how do you do
+[03:16:34] 👤 CANDIDATE: how do how do
+[03:16:34] 👤 CANDIDATE: you do regularization in a in a in a in
+[03:16:35] 👔 RECRUITER: okay so so
+[03:16:42] 👔 RECRUITER: first if we want to if we want to
+[03:16:42] 👔 RECRUITER: for example diagonal matrix diagonal matrix
+[03:16:42] 👔 RECRUITER: we have to verify we have to verify
+[03:16:44] 👔 RECRUITER: if it's possible if we want to we want to
+[03:16:47] 👔 RECRUITER: take a take a nice uh eat in uh eat in
+[03:16:50] 👔 RECRUITER: the in the uh
+[03:16:53] 👔 RECRUITER: complex Corp uh it is always possible but always possible but
+[03:16:56] 👔 RECRUITER: in in reals uh uh
+[03:16:59] 👔 RECRUITER: it's not always possible if it's possible if it's possible
+[03:17:02] 👔 RECRUITER: now we have to find the
+[03:17:08] 👔 RECRUITER: To do that, we can compute
+[03:17:14] 👔 RECRUITER: the the
+[03:17:14] 👔 RECRUITER: characteristical polin polin
+[03:17:15] 👤 CANDIDATE: It's okay, it's okay. Let's move to another subject. Let's move to another subject.
+[03:17:22] 👔 RECRUITER: okay
+[03:17:27] 👤 CANDIDATE: How do you do feature selection? Feature selection.
+[03:17:27] 👤 CANDIDATE: In machine learning, how do you select? How do you select?
+[03:17:33] 👔 RECRUITER: okay okay uh okay uh
+[03:17:33] 👔 RECRUITER: um for example for example
+[03:17:38] 👔 RECRUITER: I can uh I can come I can come
+[03:17:38] 👔 RECRUITER: compute the correlation between the features between the features
+[03:17:38] 👔 RECRUITER: and uh uh uh
+[03:17:38] 👔 RECRUITER: and also with and also with uh
+[03:17:41] 👔 RECRUITER: the question with the the the
+[03:17:44] 👔 RECRUITER: the class for example the class for
+[03:17:47] 👔 RECRUITER: example the class for example if we are in a the class for example if we are in a the class for example if we are in a
+[03:17:53] 👔 RECRUITER: In a classification setting, for example, for example,
+[03:17:56] 👔 RECRUITER: we can compute a matrix
+[03:17:56] 👤 CANDIDATE: thank you
+[03:18:02] 👔 RECRUITER: of correlation
