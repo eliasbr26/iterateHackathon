@@ -163,10 +163,18 @@ export const useTranscriptStream = ({
     setIsConnected(false);
   }, []);
 
-  // Auto-connect on mount
+  // Auto-connect on mount and reconnect when roomName changes
   useEffect(() => {
-    if (autoConnect) {
+    if (autoConnect && roomName) {
       shouldReconnectRef.current = true;
+
+      // Disconnect from previous room if connected
+      if (eventSourceRef.current) {
+        eventSourceRef.current.close();
+        eventSourceRef.current = null;
+      }
+
+      // Connect to new room
       connect();
     }
 
@@ -174,7 +182,7 @@ export const useTranscriptStream = ({
     return () => {
       disconnect();
     };
-  }, [autoConnect, connect, disconnect]);
+  }, [autoConnect, roomName, connect, disconnect]);
 
   return {
     transcripts,

@@ -10,7 +10,11 @@ import { api } from '@/services/api';
 import { ParticipantView } from './ParticipantView';
 import { useToast } from '@/hooks/use-toast';
 
-const VideoAreaComponent = () => {
+interface VideoAreaProps {
+  onRoomCreated?: (roomName: string) => void;
+}
+
+const VideoAreaComponent = ({ onRoomCreated }: VideoAreaProps) => {
   const [roomName, setRoomName] = useState('');
   const [participantName, setParticipantName] = useState('');
   const [role, setRole] = useState<'interviewer' | 'candidate'>('interviewer');
@@ -42,6 +46,9 @@ const VideoAreaComponent = () => {
         url: response.url,
         token,
       });
+
+      // Notify parent component about room creation
+      onRoomCreated?.(response.name);
 
       toast({
         title: 'Room Created',

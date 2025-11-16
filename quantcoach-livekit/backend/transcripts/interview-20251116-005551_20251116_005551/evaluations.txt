@@ -1,0 +1,22 @@
+
+================================================================================
+[00:58:04] EVALUATION
+================================================================================
+Window: 00:56:54 - 00:57:07
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: HARSH (confidence: 0.85)
+
+📝 Summary: This excerpt contains fragmented conversation about technical difficulties with a tool, includes inappropriate language, and shows no quant finance content whatsoever.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - no quant finance content
+   - Unprofessional language used by recruiter
+   - Technical difficulties interrupt interview flow
+   - Highly fragmented and unclear conversation
+   - Off-topic/casual discussion detected ([EXTRA])
+

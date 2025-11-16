@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, useCallback } from "react";
 import DashboardHeader from "@/components/dashboard/DashboardHeader";
 import MetricsPanel from "@/components/dashboard/MetricsPanel";
 import TranscriptFeed from "@/components/dashboard/TranscriptFeed";
@@ -75,6 +75,13 @@ const Index = () => {
     apiBaseUrl: import.meta.env.VITE_API_URL || 'http://localhost:8000',
     autoConnect: !demoMode, // Only connect if not in demo mode
   });
+
+  // Handle room creation from VideoArea
+  const handleRoomCreated = useCallback((newRoomName: string) => {
+    console.log('[Index] Room created:', newRoomName);
+    // Update room name - the hook will automatically reconnect
+    setRoomName(newRoomName);
+  }, []);
 
   // Choose between demo and real data
   const transcripts = demoMode ? DEMO_TRANSCRIPTS : liveTranscripts;
@@ -182,7 +189,7 @@ const Index = () => {
         <div className="flex-1 flex flex-col overflow-hidden">
           {/* Video Area - Top Section */}
           <div className="border-b border-border-subtle p-6">
-            <VideoArea />
+            <VideoArea onRoomCreated={handleRoomCreated} />
 
             {/* Connection status indicator */}
             {!demoMode && (
