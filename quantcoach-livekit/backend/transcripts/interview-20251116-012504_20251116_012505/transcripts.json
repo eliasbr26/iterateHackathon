@@ -1,0 +1,90 @@
+{
+  "room": "interview-20251116-012504",
+  "session_start": "2025-11-16T01:25:36.511737",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T01:25:36.511737",
+      "speaker": "recruiter",
+      "text": "I can't see anything",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:25:39.547070",
+      "speaker": "recruiter",
+      "text": "I can't see anything Maybe it's because I haven't started yet",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:25:40.512181",
+      "speaker": "candidate",
+      "text": "Why? Maybe because I just started a new version of the code.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:25:42.554344",
+      "speaker": "recruiter",
+      "text": "I'm not sure if it's because I haven't started yet",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:25:49.488540",
+      "speaker": "candidate",
+      "text": "it's not the same",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:25:54.463468",
+      "speaker": "recruiter",
+      "text": "but I think it's normal that I'm not in the top 3. It's weird that I'm the last one. Oh yeah, it's fine now. It detects that there's a problem.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:25:59.105485",
+      "speaker": "candidate",
+      "text": "story. Yeah.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:25:59.106690",
+      "speaker": "recruiter",
+      "text": "Let's see if we can talk. Let's see if we can talk.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:26:09.187519",
+      "speaker": "recruiter",
+      "text": "it's a perfect game better but this is getting better but",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:26:09.199159",
+      "speaker": "candidate",
+      "text": "Stop.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:26:15.706055",
+      "speaker": "recruiter",
+      "text": "Okay, well, look, now it's scrollable. It's good. But there's all that there. Oh, damn, yeah. There's so many things. There's so many things.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:26:21.241394",
+      "speaker": "recruiter",
+      "text": "Yeah, yeah, yeah.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:26:22.543430",
+      "speaker": "recruiter",
+      "text": "I'll try to send it to ChatGPT.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:26:30.518715",
+      "speaker": "recruiter",
+      "text": "Love it. Love it. Love it.",
+      "is_final": true
+    }
+  ]
+}

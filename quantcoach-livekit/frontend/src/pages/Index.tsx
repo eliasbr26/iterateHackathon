@@ -13,6 +13,7 @@ import { CheckCircle2, TrendingUp, User, Briefcase, Globe, Calendar } from "luci
 // New visualization components
 import DifficultyBar from "@/components/dashboard/DifficultyBar";
 import TopicCoverageRadar from "@/components/dashboard/TopicCoverageRadar";
+import TopicChecklistPanel from "@/components/dashboard/TopicChecklistPanel";
 import RedFlagPanel from "@/components/dashboard/RedFlagPanel";
 import ToneIndicator from "@/components/dashboard/ToneIndicator";
 import InterviewTimeline from "@/components/dashboard/InterviewTimeline";
@@ -185,15 +186,15 @@ const Index = () => {
 
   const dashboardContent = useMemo(() => {
     return (
-      <>
-        <div className="flex-1 flex flex-col overflow-hidden">
-          {/* Video Area - Top Section */}
-          <div className="border-b border-border-subtle p-6">
+      <div className="flex flex-col h-full overflow-hidden">
+        {/* Video Area - Top Section - Fixed Height */}
+        <div className="border-b border-border-subtle p-4 shrink-0">
+          <div className="max-w-7xl mx-auto">
             <VideoArea onRoomCreated={handleRoomCreated} />
 
             {/* Connection status indicator */}
             {!demoMode && (
-              <div className="mt-4 flex items-center gap-2 text-xs">
+              <div className="mt-3 flex items-center gap-2 text-xs">
                 <div className={`w-2 h-2 rounded-full ${isConnected ? 'bg-green-500' : 'bg-red-500'}`} />
                 <span className="text-muted-foreground">
                   {isConnected ? 'Live data streaming' : 'Disconnected'}
@@ -202,47 +203,52 @@ const Index = () => {
               </div>
             )}
           </div>
+        </div>
 
-          {/* Main Content Grid */}
-          <div className="flex-1 grid grid-cols-12 gap-6 p-6 overflow-auto">
-            {/* Left Column - 3 cols */}
-            <div className="col-span-3 space-y-6 overflow-y-auto">
+        {/* Main Content Grid - Takes Remaining Height */}
+        <div className="flex-1 overflow-hidden">
+          <div className="h-full grid grid-cols-12 gap-4 p-4">
+            {/* Left Column - Fixed Width - Topic Coverage */}
+            <div className="col-span-3 h-full overflow-y-auto space-y-4 pr-2">
+              <TopicChecklistPanel evaluations={evaluations} />
               <ToneIndicator evaluations={evaluations} />
               <ConfidenceMeters evaluations={evaluations} />
-              <MetricsPanel metrics={metrics} />
             </div>
 
-            {/* Center Column - 6 cols */}
-            <div className="col-span-6 flex flex-col space-y-4 overflow-hidden">
+            {/* Center Column - Flexible Width - Main Content */}
+            <div className="col-span-6 h-full flex flex-col space-y-3 overflow-hidden">
               <DifficultyBar evaluations={evaluations} />
-              <div className="flex-1 border rounded-lg overflow-hidden">
+
+              {/* Transcript Feed - Takes Remaining Space */}
+              <div className="flex-1 border rounded-lg overflow-hidden min-h-0">
                 <TranscriptFeed
                   messages={transcriptFeedData}
                   isLive={sessionStatus === 'active'}
                   audioActivity={{ interviewer: 0, candidate: 0 }}
                 />
               </div>
+
+              {/* Interview Timeline - Compact */}
+              <div className="shrink-0">
+                <InterviewTimeline evaluations={evaluations} />
+              </div>
             </div>
 
-            {/* Right Column - 3 cols */}
-            <div className="col-span-3 overflow-y-auto">
+            {/* Right Column - Fixed Width - Alerts & Metrics */}
+            <div className="col-span-3 h-full overflow-y-auto space-y-4 pl-2">
               <RedFlagPanel evaluations={evaluations} />
-            </div>
-          </div>
-
-          {/* Bottom Section - Visualizations */}
-          <div className="border-t p-6 space-y-6">
-            <div className="grid grid-cols-2 gap-6">
-              <TopicCoverageRadar evaluations={evaluations} />
-              <InterviewTimeline evaluations={evaluations} />
+              <MetricsPanel metrics={metrics} />
             </div>
           </div>
         </div>
 
-        <CoverageProgressBar coverage={coverage} />
-      </>
+        {/* Footer - Coverage Bar - Fixed Height */}
+        <div className="shrink-0 border-t">
+          <CoverageProgressBar coverage={coverage} />
+        </div>
+      </div>
     );
-  }, [demoMode, isConnected, sseError, evaluations, metrics, transcriptFeedData, sessionStatus, coverage]);
+  }, [demoMode, isConnected, sseError, evaluations, metrics, transcriptFeedData, sessionStatus, coverage, handleRoomCreated]);
 
   // Interviewer profile (static for now)
   const INTERVIEWER_PROFILE = {

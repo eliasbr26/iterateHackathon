@@ -1,0 +1,156 @@
+
+================================================================================
+[01:35:26] EVALUATION
+================================================================================
+Window: 01:34:44 - 01:35:21
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation appears to be fragmented casual remarks about unidentified subjects ('the kids'), with no discernible quant finance content or structured interview dialogue.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content detected
+   - Fragmented/unclear conversation
+   - Possible transcription error or non-interview content
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:36:36] EVALUATION
+================================================================================
+Window: 01:35:21 - 01:36:31
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This excerpt contains only fragmented speech from the recruiter with no substantive content - appears to be technical difficulties, waiting periods, or connection issues at the start of an interview.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No substantive content
+   - Fragmented communication
+   - Possible technical or connection issues
+   - Interview has not begun properly
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:36:59] EVALUATION
+================================================================================
+Window: 01:36:31 - 01:36:54
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation contains only casual, fragmented speech with no identifiable quant finance content. The recruiter appears to be speaking informally with phrases like 'chat to me bro' and 'come on bro' without any technical discussion.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content detected
+   - Unprofessional communication style
+   - Incoherent conversation structure
+   - No actual interview questions asked
+   - Possible recording or transcription error
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:37:11] EVALUATION
+================================================================================
+Window: 01:36:45 - 01:37:06
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt contains fragmented, unclear conversation with no discernible quant finance content. The recruiter appears to be addressing technical difficulties or coordinating with someone named Elias, with mentions of other individuals (Libro, Jawad).
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No quant finance content detected
+   - Conversation appears fragmented or corrupted
+   - Possible technical/logistical issues during interview
+   - Unprofessional or chaotic interview environment
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:37:29] EVALUATION
+================================================================================
+Window: 01:37:01 - 01:37:24
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.60)
+
+📝 Summary: This appears to be casual conversation between recruiters discussing technical setup and someone named Elias, with no quantitative finance content. The discussion focuses on interface recovery and improving skills in a non-technical context.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No interview content detected
+   - Appears to be pre-interview or technical setup conversation
+   - Unclear context and participants
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:37:42] EVALUATION
+================================================================================
+Window: 01:37:15 - 01:37:36
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This conversation excerpt appears to be fragmented or possibly mistranscribed text with no coherent technical content. The recruiter discusses someone named Elias improving skills and mentions being in the street and missing music, but no quant finance topics are addressed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content present
+   - Conversation appears fragmented or mistranscribed
+   - Possible transcription error or audio quality issue
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:38:03] EVALUATION
+================================================================================
+Window: 01:37:29 - 01:37:36
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.30)
+
+📝 Summary: The recruiter makes repeated, seemingly incoherent statements about being in the street and missing music, with no discernible quant finance content or professional interview discussion.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Incoherent or garbled conversation
+   - Possible transcription error or technical issue
+   - No professional interview dialogue detected
+   - Off-topic/casual discussion detected ([EXTRA])
+
