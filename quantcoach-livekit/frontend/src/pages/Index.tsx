@@ -18,6 +18,7 @@ import RedFlagPanel from "@/components/dashboard/RedFlagPanel";
 import ToneIndicator from "@/components/dashboard/ToneIndicator";
 import InterviewTimeline from "@/components/dashboard/InterviewTimeline";
 import ConfidenceMeters from "@/components/dashboard/ConfidenceMeters";
+import LiveTranscriptPanel from "@/components/dashboard/LiveTranscriptPanel";
 
 // Real-time data hook
 import { useTranscriptStream } from "@/hooks/useTranscriptStream";
@@ -187,55 +188,24 @@ const Index = () => {
   const dashboardContent = useMemo(() => {
     return (
       <div className="flex flex-col h-full overflow-hidden">
-        {/* Video Area - Top Section - Fixed Height */}
-        <div className="border-b border-border-subtle p-4 shrink-0">
-          <div className="max-w-7xl mx-auto">
-            <VideoArea onRoomCreated={handleRoomCreated} />
-
-            {/* Connection status indicator */}
-            {!demoMode && (
-              <div className="mt-3 flex items-center gap-2 text-xs">
-                <div className={`w-2 h-2 rounded-full ${isConnected ? 'bg-green-500' : 'bg-red-500'}`} />
-                <span className="text-muted-foreground">
-                  {isConnected ? 'Live data streaming' : 'Disconnected'}
-                  {sseError && ` - ${sseError}`}
-                </span>
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* Main Content Grid - Takes Remaining Height */}
+        {/* Main Content Grid - Takes Full Height */}
         <div className="flex-1 overflow-hidden">
-          <div className="h-full grid grid-cols-12 gap-4 p-4">
+          <div className="h-full grid grid-cols-12 gap-3 p-3">
             {/* Left Column - Fixed Width - Topic Coverage */}
-            <div className="col-span-3 h-full overflow-y-auto space-y-4 pr-2">
+            <div className="col-span-3 h-full overflow-y-auto space-y-2 pr-2">
               <TopicChecklistPanel evaluations={evaluations} />
-              <ToneIndicator evaluations={evaluations} />
-              <ConfidenceMeters evaluations={evaluations} />
             </div>
 
             {/* Center Column - Flexible Width - Main Content */}
-            <div className="col-span-6 h-full flex flex-col space-y-3 overflow-hidden">
+            <div className="col-span-6 h-full flex flex-col space-y-2 overflow-y-auto">
               <DifficultyBar evaluations={evaluations} />
-
-              {/* Transcript Feed - Takes Remaining Space */}
-              <div className="flex-1 border rounded-lg overflow-hidden min-h-0">
-                <TranscriptFeed
-                  messages={transcriptFeedData}
-                  isLive={sessionStatus === 'active'}
-                  audioActivity={{ interviewer: 0, candidate: 0 }}
-                />
-              </div>
-
-              {/* Interview Timeline - Compact */}
-              <div className="shrink-0">
-                <InterviewTimeline evaluations={evaluations} />
-              </div>
+              <ToneIndicator evaluations={evaluations} />
+              <ConfidenceMeters evaluations={evaluations} />
+              <InterviewTimeline evaluations={evaluations} />
             </div>
 
             {/* Right Column - Fixed Width - Alerts & Metrics */}
-            <div className="col-span-3 h-full overflow-y-auto space-y-4 pl-2">
+            <div className="col-span-3 h-full overflow-y-auto space-y-2 pl-2">
               <RedFlagPanel evaluations={evaluations} />
               <MetricsPanel metrics={metrics} />
             </div>
@@ -248,7 +218,7 @@ const Index = () => {
         </div>
       </div>
     );
-  }, [demoMode, isConnected, sseError, evaluations, metrics, transcriptFeedData, sessionStatus, coverage, handleRoomCreated]);
+  }, [evaluations, metrics, coverage]);
 
   // Interviewer profile (static for now)
   const INTERVIEWER_PROFILE = {
@@ -308,11 +278,30 @@ const Index = () => {
         onToggleDemo={handleToggleDemo}
       />
 
+      {/* Video Area - Always Visible Above Tabs */}
+      <div className="border-b border-border-subtle p-4 shrink-0">
+        <div className="max-w-7xl mx-auto">
+          <VideoArea onRoomCreated={handleRoomCreated} />
+
+          {/* Connection status indicator */}
+          {!demoMode && (
+            <div className="mt-3 flex items-center gap-2 text-xs">
+              <div className={`w-2 h-2 rounded-full ${isConnected ? 'bg-green-500' : 'bg-red-500'}`} />
+              <span className="text-muted-foreground">
+                {isConnected ? 'Live data streaming' : 'Disconnected'}
+                {sseError && ` - ${sseError}`}
+              </span>
+            </div>
+          )}
+        </div>
+      </div>
+
       <div className="flex-1 overflow-hidden">
         <Tabs value={activeTab} onValueChange={setActiveTab} className="h-full flex flex-col">
           <div className="border-b border-border-subtle px-6">
             <TabsList className="h-12">
-              <TabsTrigger value="session">Live Session</TabsTrigger>
+              <TabsTrigger value="session">Dashboard</TabsTrigger>
+              <TabsTrigger value="transcripts">Live Transcription</TabsTrigger>
               <TabsTrigger value="profile">System Info</TabsTrigger>
               <TabsTrigger value="reviews">AI Analysis</TabsTrigger>
             </TabsList>
@@ -320,6 +309,15 @@ const Index = () => {
 
           <TabsContent value="session" className="flex-1 m-0 overflow-hidden">
             {dashboardContent}
+          </TabsContent>
+
+          <TabsContent value="transcripts" className="flex-1 m-0 overflow-auto p-6">
+            <div className="max-w-7xl mx-auto">
+              <LiveTranscriptPanel
+                messages={transcriptFeedData}
+                isLive={sessionStatus === 'active'}
+              />
+            </div>
           </TabsContent>
 
           <TabsContent value="profile" className="flex-1 m-0 overflow-auto p-6">

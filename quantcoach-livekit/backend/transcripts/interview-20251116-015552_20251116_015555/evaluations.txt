@@ -1,0 +1,43 @@
+
+================================================================================
+[01:57:25] EVALUATION
+================================================================================
+Window: 01:56:58 - 01:57:20
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.60)
+
+📝 Summary: The recruiter appears to be discussing git version control commands (git status, delete requirements) in a fragmented manner, with no discernible quant finance content in this brief excerpt.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Conversation fragment unclear
+   - No quant finance content detected
+   - Possibly discussing technical setup or coding environment rather than quant concepts
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:57:47] EVALUATION
+================================================================================
+Window: 01:57:17 - 01:57:26
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter is discussing git status and a delete requirement, which appears to be related to version control or coding logistics rather than quantitative finance concepts. This seems to be part of a technical screen focusing on software engineering rather than quant-specific topics.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - no quant finance content
+   - Context unclear - appears to be reviewing code/git workflow
+   - Very brief excerpt - limited information
+   - Off-topic/casual discussion detected ([EXTRA])
+

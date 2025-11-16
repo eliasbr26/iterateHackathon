@@ -1,0 +1,18 @@
+{
+  "room": "interview-20251116-022858",
+  "session_start": "2025-11-16T02:30:03.250827",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T02:30:03.250827",
+      "speaker": "candidate",
+      "text": "First of all,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T02:30:05.247517",
+      "speaker": "candidate",
+      "text": "you need to",
+      "is_final": true
+    }
+  ]
+}

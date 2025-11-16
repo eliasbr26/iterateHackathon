@@ -323,9 +323,15 @@ class AudioPipeline:
                 receiver_tasks.append(task)
 
             # Yield transcripts as they arrive from any speaker
+            # Use a buffer to sort by timestamp for chronological order
             active_queues = set(transcript_queues.keys())
+            transcript_buffer = []  # Buffer for timestamp-based sorting
+            BUFFER_DELAY_MS = 150  # Wait 150ms to collect transcripts before sorting
+            last_yield_time = asyncio.get_event_loop().time()
 
             while active_queues and self._running:
+                current_time = asyncio.get_event_loop().time()
+
                 # Check all queues for available transcripts
                 for speaker_label in list(active_queues):
                     queue = transcript_queues[speaker_label]
@@ -339,14 +345,37 @@ class AudioPipeline:
                             active_queues.remove(speaker_label)
                             logger.info(f"[{speaker_label}] 🏁 Stream ended")
                         else:
-                            yield transcript
+                            # Add to buffer with timestamp for sorting
+                            transcript_buffer.append(transcript)
 
                     except asyncio.QueueEmpty:
                         # No transcript available from this speaker yet
                         pass
 
+                # Yield transcripts from buffer if delay has passed
+                time_since_last_yield = (current_time - last_yield_time) * 1000  # Convert to ms
+
+                if time_since_last_yield >= BUFFER_DELAY_MS and transcript_buffer:
+                    # Sort buffer by timestamp (using end_ms for finalized order)
+                    # Handle None values by defaulting to 0
+                    transcript_buffer.sort(key=lambda t: t.end_ms if t.end_ms is not None else (t.start_ms if t.start_ms is not None else 0))
+
+                    # Yield all buffered transcripts in chronological order
+                    for transcript in transcript_buffer:
+                        yield transcript
+
+                    # Clear buffer and reset timer
+                    transcript_buffer.clear()
+                    last_yield_time = current_time
+
                 # Small delay to prevent busy-waiting
                 await asyncio.sleep(0.01)
+
+            # Flush remaining transcripts in buffer at the end
+            if transcript_buffer:
+                transcript_buffer.sort(key=lambda t: t.end_ms if t.end_ms is not None else (t.start_ms if t.start_ms is not None else 0))
+                for transcript in transcript_buffer:
+                    yield transcript
 
             # Cleanup
             logger.info("🧹 Transcription ended, cleaning up...")

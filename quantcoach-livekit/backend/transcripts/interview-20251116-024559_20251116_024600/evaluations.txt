@@ -1,0 +1,448 @@
+
+================================================================================
+[02:47:29] EVALUATION
+================================================================================
+Window: 02:47:03 - 02:47:25
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt contains only introductory remarks and casual conversation between the recruiter and candidate as they begin the interview session. No technical quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content
+   - Interview opening only
+   - Incomplete conversation excerpt
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:47:42] EVALUATION
+================================================================================
+Window: 02:47:16 - 02:47:37
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: This appears to be an initial greeting/setup phase of an interview with casual comments like 'nice' and 'this looks really good', possibly reviewing materials or waiting for a connection to stabilize ('why is it lagging a bit').
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content discussed
+   - Appears to be interview setup/introduction phase
+   - Possible technical connectivity issues mentioned
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:47:58] EVALUATION
+================================================================================
+Window: 02:47:29 - 02:47:52
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: The recruiter appears to be experiencing technical difficulties with their system or screen sharing, mentioning lag and needing to restart something. No substantive quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - no quant finance content
+   - Technical difficulties during interview
+   - No candidate responses captured
+   - Insufficient substantive content to evaluate
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:48:09] EVALUATION
+================================================================================
+Window: 02:47:44 - 02:48:04
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The recruiter appears to be having technical difficulties or discussing something unrelated to the interview, possibly troubleshooting a dashboard or screen-sharing issue. No substantive quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No clear interview structure
+   - Possible technical difficulties with interview setup
+   - Unprofessional language used
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:48:26] EVALUATION
+================================================================================
+Window: 02:48:01 - 02:48:22
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The recruiter appears to be showing or demonstrating a dashboard interface, making fragmented comments about its appearance and elements. No substantive quant finance discussion is present.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Incoherent or incomplete sentences
+   - No technical content
+   - Appears to be demonstrating software/dashboard rather than conducting interview
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:48:42] EVALUATION
+================================================================================
+Window: 02:48:16 - 02:48:37
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The recruiter appears to be having technical difficulties or explaining a screen-sharing setup, with fragmented speech about modifying files and explaining something to ChatGPT. No substantive quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incomplete/fragmented conversation
+   - No technical quant finance content present
+   - Appears to be technical setup or transition phase
+   - Unintelligible speech patterns suggest recording/transcription issues
+
+
+================================================================================
+[02:49:00] EVALUATION
+================================================================================
+Window: 02:48:32 - 02:48:55
+Transcripts: 7
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.85)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter encountered technical difficulties with screen sharing and ChatGPT, then transitioned to asking about the candidate's ability to handle pressure from teammates, which is a behavioral question relevant to quant finance work environments.
+
+🔑 Key Topics: BEHAVIORAL_PRESSURE
+
+🚩 Flags:
+   - Technical difficulties dominated conversation
+   - Limited substantive content
+   - Behavioral question asked but no candidate response captured
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:49:15] EVALUATION
+================================================================================
+Window: 02:48:49 - 02:49:10
+Transcripts: 5
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter is attempting to ask about handling pressure from teammates, but the question is incomplete and fragmented. No technical quant finance content is discussed, only behavioral/soft skills.
+
+🔑 Key Topics: BEHAVIORAL_PRESSURE, BEHAVIORAL_TEAMWORK
+
+🚩 Flags:
+   - Incomplete question - interviewer did not finish formulating the question
+   - Communication issue - multiple false starts and fragmented speech
+
+
+================================================================================
+[02:49:28] EVALUATION
+================================================================================
+Window: 02:49:00 - 02:49:22
+Transcripts: 4
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.75)
+🎯 Question Difficulty: EASY (confidence: 0.60)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.30)
+
+📝 Summary: The recruiter appears to be asking about data cleaning practices, which is relevant to data pipeline management in quant finance, though the question is fragmented and includes a confusing non-sequitur about 'attacking'.
+
+🔑 Key Topics: DATA_PIPELINE
+
+🚩 Flags:
+   - Recruiter question is poorly articulated and fragmented
+   - Contains confusing statement about 'attacking' that doesn't relate to data cleaning
+   - Communication quality is unclear - may indicate language barrier or transcription error
+   - No candidate response captured in excerpt
+
+
+================================================================================
+[02:49:42] EVALUATION
+================================================================================
+Window: 02:49:16 - 02:49:37
+Transcripts: 6
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.75)
+💬 Interviewer Tone: HARSH (confidence: 0.80)
+
+📝 Summary: The recruiter is asking about handling missing values in data cleaning, but the conversation is fragmented and difficult to follow with repetitive phrasing and unclear communication.
+
+🔑 Key Topics: DATA_PIPELINE
+
+🚩 Flags:
+   - Harsh/pressuring tone detected with repeated 'you have to do it' statements
+   - Poor question clarity - fragmented sentences
+   - Communication quality concerns - difficult to understand question structure
+   - Unclear context for 'Who do you think is attacking?' question
+
+
+================================================================================
+[02:49:54] EVALUATION
+================================================================================
+Window: 02:49:28 - 02:49:49
+Transcripts: 7
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.75)
+🎯 Question Difficulty: MEDIUM (confidence: 0.65)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.60)
+
+📝 Summary: The recruiter is asking about handling missing values in data, specifically mentioning a covariance matrix context, which relates to data cleaning and preprocessing in quantitative finance.
+
+🔑 Key Topics: DATA_PIPELINE
+
+🚩 Flags:
+   - Recruiter speech is fragmented and unclear
+   - Question not fully articulated
+   - Context incomplete - covariance matrix example introduced but not developed
+
+
+================================================================================
+[02:50:09] EVALUATION
+================================================================================
+Window: 02:49:42 - 02:50:04
+Transcripts: 8
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.10)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.10)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.10)
+
+📝 Summary: The conversation appears fragmented and unintelligible, with broken sentences mentioning covariance matrix, noise, and maximum likelihood estimation, but no coherent question or discussion can be extracted.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Conversation quality extremely poor - unintelligible
+   - Possible transcription errors or audio issues
+   - Cannot determine actual interview content
+   - Mentions technical terms (covariance matrix, maximum likelihood) but no coherent question formed
+
+
+================================================================================
+[02:50:21] EVALUATION
+================================================================================
+Window: 02:49:54 - 02:50:16
+Transcripts: 8
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.60)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.20)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.10)
+
+📝 Summary: The recruiter appears to be discussing time series analysis and maximum likelihood estimation with noise considerations, but the audio quality or transcription is severely fragmented, making the actual content unclear.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Severely fragmented or corrupted conversation transcript
+   - Unable to determine actual question being asked
+   - Poor audio quality or transcription errors apparent
+   - No candidate response visible in excerpt
+   - Insufficient data to assess interview quality
+
+
+================================================================================
+[02:50:39] EVALUATION
+================================================================================
+Window: 02:50:11 - 02:50:34
+Transcripts: 7
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: MEDIUM (confidence: 0.70)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.60)
+
+📝 Summary: The recruiter is asking about modern architectures, specifically transformers, and how they can be adapted for time series analysis. The question appears incomplete but focuses on applying deep learning sequence models to temporal data.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Question incomplete/cut off mid-sentence
+   - Repetitive phrasing suggests recruiter may be struggling to articulate the question
+   - No candidate response captured in excerpt
+
+
+================================================================================
+[02:50:58] EVALUATION
+================================================================================
+Window: 02:50:25 - 02:50:53
+Transcripts: 6
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.75)
+🎯 Question Difficulty: MEDIUM (confidence: 0.50)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.20)
+
+📝 Summary: Recruiter asks about adapting transformers to time series data and feature selection, but the conversation appears corrupted or poorly transcribed with fragmented sentences and unclear context.
+
+🔑 Key Topics: FEATURE_SELECTION, TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Transcript quality severely degraded - contains fragmented/corrupted text
+   - Candidate response not captured or missing
+   - Unclear context due to poor audio/transcription quality
+   - Question about transformers for time series is valid but answer unclear
+
+
+================================================================================
+[02:51:27] EVALUATION
+================================================================================
+Window: 02:50:53 - 02:51:22
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: The conversation contains unintelligible or fragmented speech with no discernible quant finance content. The recruiter appears to be speaking incoherently about unrelated topics like guitar and gas.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Unintelligible conversation
+   - No technical content detected
+   - Possible recording error or technical issue
+   - Interview does not appear to have started properly
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:51:52] EVALUATION
+================================================================================
+Window: 02:51:22 - 02:51:47
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The recruiter appears to be making unclear or garbled statements about performance and areas for improvement, but no coherent technical discussion is evident. The conversation lacks any identifiable quant finance content.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incoherent conversation
+   - No technical content present
+   - Unclear communication from recruiter
+   - Possible transcription errors or audio quality issues
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:52:09] EVALUATION
+================================================================================
+Window: 02:51:37 - 02:52:04
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: This excerpt appears to be fragmented conversation with unclear context, possibly showing technical difficulties or the beginning/transition of an interview with greetings and informal remarks about 'area for improvement'.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Conversation is fragmented and unclear
+   - No substantive technical content
+   - Possible audio/connection issues
+   - Insufficient data for meaningful evaluation
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:52:29] EVALUATION
+================================================================================
+Window: 02:52:04 - 02:52:25
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation consists entirely of casual introductions where the recruiter shares personal information about being from rural Peru and the city of Iquitos. No quant finance topics were discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Appears to be informal introduction or connection issue
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:52:51] EVALUATION
+================================================================================
+Window: 02:52:25 - 02:52:46
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation appears to be fragmented and incoherent, with the recruiter making unclear statements about not being a modder, being a gamer, and referencing 'Claude' without any discernible quant finance content.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Conversation is incoherent and fragmented
+   - No technical content present
+   - Appears to be corrupted or incomplete transcript
+   - No clear question-answer structure
+   - Possible transcription error or non-interview content
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[02:53:13] EVALUATION
+================================================================================
+Window: 02:52:37 - 02:52:46
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.30)
+
+📝 Summary: The conversation consists of fragmented, repetitive statements from the recruiter with no clear technical content or coherent discussion. No quant finance topics are addressed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incoherent conversation excerpt
+   - No technical content present
+   - Repetitive fragmented statements
+   - Insufficient data for meaningful analysis
+   - Possible transcription error or data quality issue
+   - Off-topic/casual discussion detected ([EXTRA])
+

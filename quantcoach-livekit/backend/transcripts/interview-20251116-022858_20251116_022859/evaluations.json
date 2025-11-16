@@ -1,0 +1,25 @@
+{
+  "room": "interview-20251116-022858",
+  "total_evaluations": 1,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T02:30:11.819288",
+      "window_start": "2025-11-16T02:30:03.252476",
+      "window_end": "2025-11-16T02:30:05.248390",
+      "transcripts_evaluated": 2,
+      "subject_relevance": "unknown",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation excerpt is too brief and incomplete to analyze. The candidate appears to be starting a response but the statement is cut off mid-sentence.",
+      "key_topics": [],
+      "flags": [
+        "Insufficient data - conversation excerpt too short",
+        "Incomplete candidate statement"
+      ],
+      "confidence_subject": 0.1,
+      "confidence_difficulty": 0.0,
+      "confidence_tone": 0.0,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"unknown\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation excerpt is too brief and incomplete to analyze. The candidate appears to be starting a response but the statement is cut off mid-sentence.\",\n    \"flags\": [\"Insufficient data - conversation excerpt too short\", \"Incomplete candidate statement\"],\n    \"confidence_subject\": 0.1,\n    \"confidence_difficulty\": 0.0,\n    \"confidence_tone\": 0.0\n}\n```"
+    }
+  ]
+}

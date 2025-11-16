@@ -1,0 +1,49 @@
+{
+  "room": "interview-20251116-023053",
+  "total_evaluations": 2,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T02:31:37.961849",
+      "window_start": "2025-11-16T02:31:26.178258",
+      "window_end": "2025-11-16T02:31:33.195536",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This excerpt contains only technical difficulties with video connectivity at the start of the interview, with no substantive content discussed yet.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - technical setup only",
+        "Unprofessional language ('What's up, baby?' repeated)",
+        "No quant finance content yet",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This excerpt contains only technical difficulties with video connectivity at the start of the interview, with no substantive content discussed yet.\",\n    \"flags\": [\n        \"Off-topic discussion - technical setup only\",\n        \"Unprofessional language ('What's up, baby?' repeated)\",\n        \"No quant finance content yet\"\n    ],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T02:31:45.502752",
+      "window_start": "2025-11-16T02:31:26.178258",
+      "window_end": "2025-11-16T02:31:33.195536",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This excerpt shows only initial technical difficulties with video connectivity at the start of the interview, with no substantive content discussed yet.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - only technical setup issues",
+        "No quant finance content present",
+        "Unprofessional language used by recruiter ('What's up, baby?')",
+        "Video connectivity problems",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This excerpt shows only initial technical difficulties with video connectivity at the start of the interview, with no substantive content discussed yet.\",\n    \"flags\": [\n        \"Off-topic discussion - only technical setup issues\",\n        \"No quant finance content present\",\n        \"Unprofessional language used by recruiter ('What's up, baby?')\",\n        \"Video connectivity problems\"\n    ],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.7\n}\n```"
+    }
+  ]
+}

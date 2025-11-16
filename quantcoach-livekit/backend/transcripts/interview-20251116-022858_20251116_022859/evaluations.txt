@@ -1,0 +1,19 @@
+
+================================================================================
+[02:30:11] EVALUATION
+================================================================================
+Window: 02:30:03 - 02:30:05
+Transcripts: 2
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.10)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.00)
+
+📝 Summary: The conversation excerpt is too brief and incomplete to analyze. The candidate appears to be starting a response but the statement is cut off mid-sentence.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Insufficient data - conversation excerpt too short
+   - Incomplete candidate statement
+

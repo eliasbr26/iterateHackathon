@@ -1,0 +1,24 @@
+{
+  "room": "interview-20251116-023053",
+  "session_start": "2025-11-16T02:31:26.176909",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T02:31:26.176909",
+      "speaker": "recruiter",
+      "text": "What's up, baby? What's up, baby?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T02:31:30.180026",
+      "speaker": "recruiter",
+      "text": "You don't see me? You don't see me? You don't see me?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T02:31:33.193124",
+      "speaker": "candidate",
+      "text": "I can't see you. Can't see anyone?",
+      "is_final": true
+    }
+  ]
+}

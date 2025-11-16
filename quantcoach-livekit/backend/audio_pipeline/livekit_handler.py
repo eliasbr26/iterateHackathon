@@ -130,16 +130,35 @@ class LiveKitHandler:
         if identity_lower.startswith("audio-agent-") or identity_lower.startswith("agent-simple-") or "agent" in identity_lower:
             return "agent"
 
-        if self.recruiter_identity.lower() in identity_lower or "interviewer" in identity_lower:
+        # Get existing speaker labels
+        existing_labels = {p.speaker_label for p in self.participants.values()}
+
+        # Check for explicit interviewer/recruiter identity
+        if "interviewer" in identity_lower or self.recruiter_identity.lower() in identity_lower:
+            # If recruiter slot is already taken, assign as candidate
+            if "recruiter" in existing_labels:
+                logger.warning(f"Recruiter slot already taken, assigning {identity} as candidate")
+                return "candidate"
             return "recruiter"
-        elif self.candidate_identity.lower() in identity_lower or "candidate" in identity_lower:
-            return "candidate"
-        else:
-            # Default fallback based on order of joining
-            existing_labels = {p.speaker_label for p in self.participants.values()}
-            if "recruiter" not in existing_labels:
+
+        # Check for explicit candidate identity
+        elif "candidate" in identity_lower or self.candidate_identity.lower() in identity_lower:
+            # If candidate slot is already taken, assign as recruiter if available
+            if "candidate" in existing_labels and "recruiter" not in existing_labels:
+                logger.warning(f"Candidate slot already taken, assigning {identity} as recruiter")
                 return "recruiter"
             return "candidate"
+
+        else:
+            # Default fallback based on order of joining
+            if "recruiter" not in existing_labels:
+                return "recruiter"
+            elif "candidate" not in existing_labels:
+                return "candidate"
+            else:
+                # Both slots taken - assign as candidate (will be filtered or cause warning)
+                logger.warning(f"Both recruiter and candidate slots taken, assigning {identity} as candidate (duplicate)")
+                return "candidate"
 
     def _handle_audio_track(
         self,
