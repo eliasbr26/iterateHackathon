@@ -68,19 +68,29 @@ quantcoach-livekit/frontend/.env.example
 IMPLEMENTATION_GUIDE.md
 
 
-
 ## Quick Start
 
-cd quantcoach-livekit/backend
-python -m venv .venv
-source .venv/bin/activate   # macOS/Linux
-.venv\Scripts\activate    # Windows
-pip install -r requirements.txt
+### Backend (FastAPI)
 
+```bash
+cd quantcoach-livekit/backend
+
+python -m venv .venv
+
+# macOS/Linux
+source .venv/bin/activate
+
+# Windows
+.venv\Scripts\activate
+
+pip install -r requirements.txt
+```
+### Frontend
+```bash
 cd quantcoach-livekit/frontend
 npm install
-
 npm run dev
+```
 
 ## How it works
 
