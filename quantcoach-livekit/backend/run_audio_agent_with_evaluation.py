@@ -11,7 +11,7 @@ import asyncio
 import logging
 import os
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -33,9 +33,12 @@ class AlertThrottler:
     """
     Manages alert throttling to reduce false positives.
     Only triggers alerts for sustained issues (4 out of last 6 windows).
+    Includes a 1-minute cool-off period at interview start.
     """
     def __init__(self):
         self.evaluation_history = []  # Store recent evaluations
+        self.interview_start_time = None  # Track interview start
+        self.cooloff_period_seconds = 60  # 1 minute cool-off
 
     def should_trigger_alert(self, evaluation: dict, alert_type: str) -> bool:
         """
@@ -43,17 +46,26 @@ class AlertThrottler:
 
         Args:
             evaluation: Current evaluation dict
-            alert_type: 'offtopic', 'partially_relevant', or 'low_confidence'
+            alert_type: 'partially_relevant', 'low_confidence', or 'interviewer_dominance'
 
         Returns:
-            True if 4+ out of last 6 windows match the alert condition
+            True if 4+ out of last 6 windows match the alert condition AND cool-off period has passed
         """
+        # Initialize interview start time on first evaluation
+        if self.interview_start_time is None:
+            self.interview_start_time = datetime.now()
+
         # Add current evaluation to history
         self.evaluation_history.append(evaluation)
 
         # Keep only last 6 evaluations
         if len(self.evaluation_history) > 6:
             self.evaluation_history = self.evaluation_history[-6:]
+
+        # Cool-off period: suppress all alerts during first 1 minute
+        elapsed_seconds = (datetime.now() - self.interview_start_time).total_seconds()
+        if elapsed_seconds < self.cooloff_period_seconds:
+            return False
 
         # Need at least 4 evaluations to make decision
         if len(self.evaluation_history) < 4:
@@ -64,10 +76,7 @@ class AlertThrottler:
         match_count = 0
 
         for e in recent_evals:
-            if alert_type == 'offtopic':
-                if e.get('subject_relevance') == 'off_topic':
-                    match_count += 1
-            elif alert_type == 'partially_relevant':
+            if alert_type == 'partially_relevant':
                 if e.get('subject_relevance') == 'partially_relevant':
                     match_count += 1
             elif alert_type == 'low_confidence':
@@ -260,6 +269,44 @@ async def run_agent(
     # Initialize alert throttler
     throttler = AlertThrottler()
 
+    # Track speaker statistics for interviewer dominance detection
+    speaker_stats = {
+        'last_check_time': None,
+        'transcript_history': []  # List of (timestamp, speaker, text_length)
+    }
+
+    def check_interviewer_dominance() -> tuple[bool, float]:
+        """
+        Check if interviewer speaks >70% in last 60 seconds.
+        Returns: (is_dominant, interviewer_percentage)
+        """
+        import time
+
+        current_time = datetime.now()
+        cutoff_time = current_time - timedelta(seconds=60)
+
+        # Filter transcripts from last 60 seconds
+        recent_transcripts = [
+            t for t in speaker_stats['transcript_history']
+            if t[0] >= cutoff_time
+        ]
+
+        if not recent_transcripts:
+            return False, 0.0
+
+        # Calculate word counts by speaker
+        interviewer_words = sum(t[2] for t in recent_transcripts if t[1] == 'recruiter')
+        candidate_words = sum(t[2] for t in recent_transcripts if t[1] == 'candidate')
+        total_words = interviewer_words + candidate_words
+
+        if total_words == 0:
+            return False, 0.0
+
+        interviewer_percentage = (interviewer_words / total_words) * 100
+        is_dominant = interviewer_percentage > 70
+
+        return is_dominant, interviewer_percentage
+
     async def evaluation_worker():
         """Background worker for LLM evaluations"""
         while True:
@@ -275,15 +322,30 @@ async def run_agent(
                 # Create filtered evaluation for alerts
                 filtered_evaluation = evaluation.to_dict().copy()
 
+                # Check interviewer dominance (every minute)
+                current_time = datetime.now()
+
+                # Check dominance every 60 seconds
+                should_check_dominance = (
+                    speaker_stats['last_check_time'] is None or
+                    (current_time - speaker_stats['last_check_time']).total_seconds() >= 60
+                )
+
+                if should_check_dominance:
+                    is_dominant, percentage = check_interviewer_dominance()
+                    filtered_evaluation['interviewer_dominance'] = {
+                        'is_dominant': is_dominant,
+                        'percentage': round(percentage, 1),
+                        'threshold': 70
+                    }
+                    speaker_stats['last_check_time'] = current_time
+                else:
+                    filtered_evaluation['interviewer_dominance'] = None
+
                 # Check each alert type for suppression
-                filtered_evaluation['_suppress_offtopic_alert'] = False
+                # Note: Off-topic alerts have been removed per product requirements
                 filtered_evaluation['_suppress_partially_relevant_alert'] = False
                 filtered_evaluation['_suppress_low_confidence_alert'] = False
-
-                # Off-topic: requires 4 out of last 6
-                if filtered_evaluation.get('subject_relevance') == 'off_topic':
-                    if not throttler.should_trigger_alert(filtered_evaluation, 'offtopic'):
-                        filtered_evaluation['_suppress_offtopic_alert'] = True
 
                 # Partially relevant: requires 4 out of last 6
                 if filtered_evaluation.get('subject_relevance') == 'partially_relevant':
@@ -339,6 +401,20 @@ async def run_agent(
 
                 # Save final transcript
                 storage.add_transcript(transcript)
+
+                # Track transcript for speaker dominance detection
+                word_count = len(transcript.text.split())
+                speaker_stats['transcript_history'].append((
+                    datetime.now(),
+                    transcript.speaker,
+                    word_count
+                ))
+                # Keep only last 2 minutes of transcripts for memory efficiency
+                cutoff = datetime.now() - timedelta(seconds=120)
+                speaker_stats['transcript_history'] = [
+                    t for t in speaker_stats['transcript_history']
+                    if t[0] >= cutoff
+                ]
 
                 # Send transcript event
                 if event_callback:

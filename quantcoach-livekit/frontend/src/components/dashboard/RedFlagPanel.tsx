@@ -31,21 +31,10 @@ const RedFlagPanel = ({ evaluations, className = '' }: RedFlagPanelProps) => {
       const evalId = `eval-${index}-${evaluation.timestamp}`;
 
       // Check suppression flags from backend
-      const suppressOfftopic = evaluation._suppress_offtopic_alert === true;
       const suppressPartiallyRelevant = evaluation._suppress_partially_relevant_alert === true;
       const suppressLowConfidence = evaluation._suppress_low_confidence_alert === true;
 
-      // Critical: Off-topic (only if not suppressed)
-      if (evaluation.subject_relevance === 'off_topic' && !suppressOfftopic) {
-        flags.push({
-          id: `${evalId}-offtopic`,
-          type: 'critical',
-          title: 'Sustained Off-Topic Discussion',
-          description: evaluation.summary || 'Conversation has been off-topic for multiple windows.',
-          timestamp: evaluation.timestamp,
-          confidence: evaluation.confidence_subject,
-        });
-      }
+      // Note: Off-topic alerts have been removed per product requirements
 
       // Warning: Partially relevant (only if not suppressed)
       if (evaluation.subject_relevance === 'partially_relevant' && !suppressPartiallyRelevant) {
@@ -68,6 +57,17 @@ const RedFlagPanel = ({ evaluations, className = '' }: RedFlagPanelProps) => {
           description: 'Interviewer tone detected as harsh or aggressive.',
           timestamp: evaluation.timestamp,
           confidence: evaluation.confidence_tone,
+        });
+      }
+
+      // Interviewer dominance alert
+      if (evaluation.interviewer_dominance?.is_dominant) {
+        flags.push({
+          id: `${evalId}-interviewer-dominance`,
+          type: 'warning',
+          title: 'Interviewer Speaking Too Much',
+          description: `Interviewer is speaking ${evaluation.interviewer_dominance.percentage}% of the time in the last minute (threshold: ${evaluation.interviewer_dominance.threshold}%). Consider letting the candidate speak more.`,
+          timestamp: evaluation.timestamp,
         });
       }
 

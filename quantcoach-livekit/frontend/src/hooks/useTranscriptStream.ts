@@ -28,6 +28,11 @@ export interface Evaluation {
   _suppress_offtopic_alert?: boolean;
   _suppress_partially_relevant_alert?: boolean;
   _suppress_low_confidence_alert?: boolean;
+  interviewer_dominance?: {
+    is_dominant: boolean;
+    percentage: number;
+    threshold: number;
+  } | null;
 }
 
 export interface TranscriptStreamData {

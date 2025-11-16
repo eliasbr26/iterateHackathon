@@ -1,0 +1,411 @@
+
+================================================================================
+[04:01:53] EVALUATION
+================================================================================
+Window: 04:01:44 - 04:01:49
+Transcripts: 2
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.90)
+
+📝 Summary: Initial greeting and welcome exchange between recruiter and candidate at the start of the interview. No technical content discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content yet
+   - Interview just beginning
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[04:01:59] EVALUATION
+================================================================================
+Window: 04:01:44 - 04:01:56
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.90)
+
+📝 Summary: Initial greeting and introductions between the recruiter from Swarpan and the candidate. No technical content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content yet - interview just starting
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[04:02:05] EVALUATION
+================================================================================
+Window: 04:01:49 - 04:02:01
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.90)
+
+📝 Summary: This excerpt captures only the initial greetings and introductions between the candidate and recruiter from Swarpan Capital. No technical content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Interview just beginning - no technical content yet
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[04:02:09] EVALUATION
+================================================================================
+Window: 04:01:56 - 04:02:05
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: Initial greeting and introduction between recruiter from Swarpan Capital and candidate. No technical content discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Interview just starting - no technical content yet
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[04:02:13] EVALUATION
+================================================================================
+Window: 04:01:56 - 04:02:09
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: Initial greetings and introductions between recruiter from Swarpan Capital and candidate. No technical content discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Interview just starting - no technical content yet
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[04:02:18] EVALUATION
+================================================================================
+Window: 04:02:00 - 04:02:13
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.75)
+
+📝 Summary: This is the opening exchange of an interview with introductory greetings and the recruiter indicating they will begin asking questions. No technical content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content yet
+   - Interview just starting
+   - Incomplete/fragmented speech patterns
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[04:02:39] EVALUATION
+================================================================================
+Window: 04:02:05 - 04:02:34
+Transcripts: 9
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.75)
+💬 Interviewer Tone: HARSH (confidence: 0.90)
+
+📝 Summary: The recruiter begins by making unprofessional comments about not drinking coffee and not being positive, then asks about regression hypotheses. The candidate appears confused and unable to answer the question about regression assumptions.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Highly unprofessional interviewer behavior
+   - Recruiter admitted to being unprepared ('didn't drink coffee', 'don't want to talk', 'not positive today')
+   - Question about regression hypotheses cut off mid-conversation
+   - Candidate unable to answer basic regression question
+   - Poor interview environment and tone
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[04:02:47] EVALUATION
+================================================================================
+Window: 04:02:24 - 04:02:42
+Transcripts: 6
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: HARSH (confidence: 0.95)
+
+📝 Summary: The recruiter asked the candidate to explain the hypotheses of linear regression, but the candidate was unable to answer. The recruiter responded critically, stating 'this is not normal.'
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Harsh tone detected
+   - Candidate unable to answer basic question
+   - Interviewer appears dismissive of candidate's knowledge gap
+
+
+================================================================================
+[04:02:53] EVALUATION
+================================================================================
+Window: 04:02:34 - 04:02:47
+Transcripts: 4
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: HARSH (confidence: 0.95)
+
+📝 Summary: Candidate struggled to answer a basic question about the assumptions/hypotheses of linear regression and couldn't provide any response. The recruiter expressed disapproval, stating this level of knowledge gap is not normal.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Harsh tone detected - recruiter's response 'this is not normal' is dismissive
+   - Candidate unable to answer fundamental statistics question
+   - Very brief exchange suggesting interview may be ending poorly
+   - Candidate appears distressed and unable to recover
+
+
+================================================================================
+[04:02:59] EVALUATION
+================================================================================
+Window: 04:02:39 - 04:02:53
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: HARSH (confidence: 0.85)
+
+📝 Summary: The conversation shows a breakdown in communication where the candidate mentions 'linear regression' but the interviewer responds negatively saying 'this is not normal', followed by apologies from the candidate and confusion from both parties.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Communication breakdown detected
+   - Harsh tone detected - interviewer says 'this is not normal'
+   - Candidate appears distressed with multiple apologies
+   - No substantive technical discussion
+   - Interview may have derailed
+   - Incomplete or fragmented conversation
+
+
+================================================================================
+[04:03:14] EVALUATION
+================================================================================
+Window: 04:02:47 - 04:03:09
+Transcripts: 8
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.90)
+🎯 Question Difficulty: EASY (confidence: 0.85)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.75)
+
+📝 Summary: Interview excerpt shows initial confusion and communication difficulties, followed by the recruiter attempting to redirect the conversation by asking a basic question about ARIMA models, a fundamental time series technique in quantitative finance.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Communication difficulties present
+   - Candidate appears uncertain or distressed
+   - Multiple false starts before technical question posed
+   - No substantive answer provided yet to ARIMA question
+
+
+================================================================================
+[04:03:21] EVALUATION
+================================================================================
+Window: 04:03:00 - 04:03:16
+Transcripts: 7
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: Recruiter asks candidate about ARIMA models. Candidate begins explaining it as an autoregressive model for time series but the response is incomplete and fragmented.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Incomplete candidate response
+   - Significant hesitation and stuttering from candidate
+   - Very brief excerpt - limited context
+
+
+================================================================================
+[04:03:28] EVALUATION
+================================================================================
+Window: 04:03:07 - 04:03:24
+Transcripts: 6
+
+📊 Subject Relevance: ON_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: EASY (confidence: 0.95)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.85)
+
+📝 Summary: Recruiter asks candidate to explain ARIMA model. Candidate begins defining it as an autoregressive model for time series, explaining that previous values impact future values, but the response is incomplete and shows hesitation.
+
+🔑 Key Topics: TIME_SERIES_MODELS
+
+🚩 Flags:
+   - Candidate shows significant hesitation and incomplete response
+   - Answer cut off mid-sentence
+
+
+================================================================================
+[04:03:39] EVALUATION
+================================================================================
+Window: 04:03:14 - 04:03:33
+Transcripts: 9
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter asked the candidate to explain autoregressive models for time series, and the candidate provided a basic, somewhat confused explanation mentioning that previous values impact future values and there is an order component. The recruiter then began asking about Python functions related to this topic.
+
+🔑 Key Topics: TIME_SERIES_MODELS, OPTIMIZATION_PYTHON
+
+🚩 Flags:
+   - Candidate explanation unclear and disjointed
+   - Candidate appears uncertain about terminology ('jump series' is non-standard)
+   - Incomplete response - candidate knowledge appears limited
+
+
+================================================================================
+[04:03:45] EVALUATION
+================================================================================
+Window: 04:03:24 - 04:03:39
+Transcripts: 7
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.75)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The candidate attempts to explain autoregressive models and their properties related to jumps/series dependence, though the explanation is fragmented. The recruiter begins asking about a Python function, likely related to implementing time series models.
+
+🔑 Key Topics: TIME_SERIES_MODELS, OPTIMIZATION_PYTHON
+
+🚩 Flags:
+   - Candidate explanation is unclear and fragmented
+   - Candidate mentions 'Auto Rugers' likely meaning 'Autoregressive'
+   - Response quality suggests communication difficulties or knowledge gaps
+   - Incomplete exchange - recruiter's question is cut off
+
+
+================================================================================
+[04:03:50] EVALUATION
+================================================================================
+Window: 04:03:30 - 04:03:45
+Transcripts: 5
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.60)
+🎯 Question Difficulty: EASY (confidence: 0.50)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.40)
+
+📝 Summary: The recruiter appears to be asking the candidate about a specific Python function, though the conversation fragment is incomplete and lacks clear context about what was discussed before or the specific function being referenced.
+
+🔑 Key Topics: OPTIMIZATION_PYTHON
+
+🚩 Flags:
+   - Incomplete conversation - cannot fully assess context
+   - Candidate responses are fragmented and unclear
+   - Insufficient information to evaluate answer quality
+
+
+================================================================================
+[04:03:55] EVALUATION
+================================================================================
+Window: 04:03:39 - 04:03:45
+Transcripts: 3
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.20)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.10)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.15)
+
+📝 Summary: Extremely brief exchange with minimal content. Candidate appears to be responding negatively or indicating lack of knowledge, but no clear question or topic is discernible from the transcript.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Insufficient conversation content
+   - Incomplete transcript - context missing
+   - Candidate expressing lack of knowledge without clear question context
+
+
+================================================================================
+[04:04:00] EVALUATION
+================================================================================
+Window: 04:03:39 - 04:03:56
+Transcripts: 5
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This conversation excerpt contains only fragmented utterances and incomplete exchanges with no discernible technical content or coherent discussion.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Conversation is incoherent or incomplete
+   - No substantive technical discussion detected
+   - Candidate appears to lack knowledge ('I don't know')
+   - Insufficient data for meaningful evaluation
+
+
+================================================================================
+[04:04:12] EVALUATION
+================================================================================
+Window: 04:03:55 - 04:04:07
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation contains fragmented speech from the recruiter attempting to transition or move on, followed by an inappropriate and unprofessional comment from the candidate. No quant finance content was discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Highly unprofessional candidate behavior
+   - Inappropriate comment from candidate
+   - No technical content discussed
+   - Interview appears to be ending or experiencing serious issues
+   - Concerning interview dynamics
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[04:04:34] EVALUATION
+================================================================================
+Window: 04:04:00 - 04:04:07
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter is attempting to move the interview forward while the candidate makes an inappropriate and bizarre comment about biting their neck, indicating a complete breakdown in professional discourse.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Highly inappropriate candidate behavior
+   - No technical content discussed
+   - Interview appears to be ending or transitioning abruptly
+   - Unprofessional conduct - potential interview termination scenario
+   - Off-topic/casual discussion detected ([EXTRA])
+

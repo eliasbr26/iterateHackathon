@@ -2,7 +2,6 @@ import { useState, useEffect, useMemo, useCallback } from "react";
 import DashboardHeader from "@/components/dashboard/DashboardHeader";
 import MetricsPanel from "@/components/dashboard/MetricsPanel";
 import TranscriptFeed from "@/components/dashboard/TranscriptFeed";
-import CoverageProgressBar from "@/components/dashboard/CoverageProgressBar";
 import { VideoArea } from "@/components/video/VideoArea";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -12,7 +11,6 @@ import { CheckCircle2, TrendingUp, User, Briefcase, Globe, Calendar } from "luci
 
 // New visualization components
 import DifficultyBar from "@/components/dashboard/DifficultyBar";
-import TopicCoverageRadar from "@/components/dashboard/TopicCoverageRadar";
 import TopicChecklistPanel from "@/components/dashboard/TopicChecklistPanel";
 import RedFlagPanel from "@/components/dashboard/RedFlagPanel";
 import ToneIndicator from "@/components/dashboard/ToneIndicator";
@@ -138,27 +136,7 @@ const Index = () => {
 
   const metrics = calculateMetrics();
 
-  // Calculate topic coverage for progress bar
-  const calculateCoverage = () => {
-    const allTopics = evaluations.flatMap(e => e.key_topics);
-
-    const technicalTopics = ['CV_TECHNIQUES', 'REGULARIZATION', 'FEATURE_SELECTION',
-                             'STATIONARITY', 'TIME_SERIES_MODELS', 'OPTIMIZATION_PYTHON'];
-    const behavioralTopics = ['BEHAVIORAL_PRESSURE', 'BEHAVIORAL_TEAMWORK'];
-    const marketTopics = ['LOOKAHEAD_BIAS', 'DATA_PIPELINE'];
-
-    const technicalCovered = technicalTopics.filter(t => allTopics.includes(t)).length;
-    const behavioralCovered = behavioralTopics.filter(t => allTopics.includes(t)).length;
-    const marketCovered = marketTopics.filter(t => allTopics.includes(t)).length;
-
-    return {
-      technical: technicalCovered / technicalTopics.length,
-      behavioral: behavioralCovered / behavioralTopics.length,
-      market_knowledge: marketCovered / marketTopics.length,
-    };
-  };
-
-  const coverage = calculateCoverage();
+  // Note: Coverage calculation removed per product requirements
 
   // Update duration timer
   useEffect(() => {
@@ -211,14 +189,9 @@ const Index = () => {
             </div>
           </div>
         </div>
-
-        {/* Footer - Coverage Bar - Fixed Height */}
-        <div className="shrink-0 border-t">
-          <CoverageProgressBar coverage={coverage} />
-        </div>
       </div>
     );
-  }, [evaluations, metrics, coverage]);
+  }, [evaluations, metrics]);
 
   // Interviewer profile (static for now)
   const INTERVIEWER_PROFILE = {
@@ -425,13 +398,6 @@ const Index = () => {
                         </div>
                       </div>
                     </CardHeader>
-                    <CardContent>
-                      <div className="flex items-center gap-2 text-sm">
-                        <CheckCircle2 className="h-5 w-5 text-primary" />
-                        <span className="font-medium">{AI_REVIEWS.biasCheck.status === 'passed' ? 'Bias Check Passed' : 'Bias Warnings'}</span>
-                        <span className="text-muted-foreground">- {AI_REVIEWS.biasCheck.notes}</span>
-                      </div>
-                    </CardContent>
                   </Card>
 
                   {AI_REVIEWS.strengths.length > 0 && (

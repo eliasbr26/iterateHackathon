@@ -1,0 +1,41 @@
+[04:01:43] 👔 RECRUITER: okay welcome Mr far far far
+[04:01:49] 👤 CANDIDATE: Thank you very much. Hello, Mr. Jawad.
+[04:01:56] 👔 RECRUITER: Yes, I'm your interviewer today from Swarpan
+[04:02:00] 👔 RECRUITER: Capital. I'm
+[04:02:01] 👤 CANDIDATE: Okay, great.
+[04:02:05] 👔 RECRUITER: the manager. I
+[04:02:09] 👔 RECRUITER: hope you're going well. Okay, okay, today I will ask
+[04:02:09] 👤 CANDIDATE: yeah i'm doing good thank you thank you
+[04:02:13] 👔 RECRUITER: questions because I have questions because I have
+[04:02:20] 👔 RECRUITER: I didn't drink coffee this morning. I don't want to talk. Okay, I don't think I'm encouraging. I don't think I'm positive today. I think I'm positive today.
+[04:02:24] 👔 RECRUITER: So, yes.
+[04:02:28] 👔 RECRUITER: OK. Can you tell me everything you know about--
+[04:02:30] 👔 RECRUITER: regression, all the hypotheses?
+[04:02:34] 👤 CANDIDATE: uh sorry i don't know the hypothesis of hypothesis of
+[04:02:39] 👤 CANDIDATE: linear regression regression
+[04:02:42] 👔 RECRUITER: Okay, I'm sorry, but this is not normal.
+[04:02:47] 👤 CANDIDATE: uh i i don't know what to i don't know what to say
+[04:02:47] 👤 CANDIDATE: sir i'm sorry i'm sorry
+[04:02:53] 👔 RECRUITER: Ah, I don't know, no. Me too, I don't know. I think, uh, I think, uh,
+[04:02:53] 👔 RECRUITER: What's your fat? No. No.
+[04:03:00] 👔 RECRUITER: but uh okay it's okay it's okay uh uh
+[04:03:03] 👔 RECRUITER: um so let's look at same series uh
+[04:03:07] 👔 RECRUITER: what do you know about Arima?
+[04:03:09] 👤 CANDIDATE: uh okay it's uh okay it's uh
+[04:03:14] 👤 CANDIDATE: auto regressive uh mod mod
+[04:03:16] 👤 CANDIDATE: for time series uh aut regressive means that uh that uh the
+[04:03:16] 👔 RECRUITER: Okay.
+[04:03:24] 👤 CANDIDATE: The previous values of your jump series have an impact on the future. A
+[04:03:29] 👤 CANDIDATE: jump series is a series of jumps that you make in a row. There is an order of the jumps
+[04:03:29] 👤 CANDIDATE: Auto Rugers
+[04:03:30] 👤 CANDIDATE: to this and that and that
+[04:03:33] 👤 CANDIDATE: . That's all I know.
+[04:03:33] 👔 RECRUITER: Okay. Can you tell me the function in Python that
+[04:03:39] 👤 CANDIDATE: .
+[04:03:45] 👔 RECRUITER: um yeah um yeah
+[04:03:45] 👤 CANDIDATE: No, sorry, I don't know.
+[04:03:55] 👤 CANDIDATE: okay
+[04:03:56] 👔 RECRUITER: because you're uh yeah uh yeah
+[04:04:00] 👔 RECRUITER: yeah I think uh I'm sorry I'm sorry
+[04:04:00] 👔 RECRUITER: but we have to move on we need to move on we need
+[04:04:07] 👤 CANDIDATE: Do you want to bite my neck?

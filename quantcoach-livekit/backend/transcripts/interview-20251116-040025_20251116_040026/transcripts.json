@@ -1,0 +1,252 @@
+{
+  "room": "interview-20251116-040025",
+  "session_start": "2025-11-16T04:01:43.999655",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T04:01:43.999655",
+      "speaker": "recruiter",
+      "text": "okay welcome Mr far far far",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:01:49.359430",
+      "speaker": "candidate",
+      "text": "Thank you very much. Hello, Mr. Jawad.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:01:56.050928",
+      "speaker": "recruiter",
+      "text": "Yes, I'm your interviewer today from Swarpan",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:02:00.207550",
+      "speaker": "recruiter",
+      "text": "Capital. I'm",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:02:01.352650",
+      "speaker": "candidate",
+      "text": "Okay, great.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:02:05.746982",
+      "speaker": "recruiter",
+      "text": "the manager. I",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:02:09.882219",
+      "speaker": "recruiter",
+      "text": "hope you're going well. Okay, okay, today I will ask",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:02:09.883347",
+      "speaker": "candidate",
+      "text": "yeah i'm doing good thank you thank you",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:02:13.674370",
+      "speaker": "recruiter",
+      "text": "questions because I have questions because I have",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:02:20.018726",
+      "speaker": "recruiter",
+      "text": "I didn't drink coffee this morning. I don't want to talk. Okay, I don't think I'm encouraging. I don't think I'm positive today. I think I'm positive today.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:02:24.853617",
+      "speaker": "recruiter",
+      "text": "So, yes.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:02:28.074542",
+      "speaker": "recruiter",
+      "text": "OK. Can you tell me everything you know about--",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:02:30.892253",
+      "speaker": "recruiter",
+      "text": "regression, all the hypotheses?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:02:34.334530",
+      "speaker": "candidate",
+      "text": "uh sorry i don't know the hypothesis of hypothesis of",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:02:39.995487",
+      "speaker": "candidate",
+      "text": "linear regression regression",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:02:42.886663",
+      "speaker": "recruiter",
+      "text": "Okay, I'm sorry, but this is not normal.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:02:47.487043",
+      "speaker": "candidate",
+      "text": "uh i i don't know what to i don't know what to say",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:02:47.488475",
+      "speaker": "candidate",
+      "text": "sir i'm sorry i'm sorry",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:02:53.839115",
+      "speaker": "recruiter",
+      "text": "Ah, I don't know, no. Me too, I don't know. I think, uh, I think, uh,",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:02:53.841800",
+      "speaker": "recruiter",
+      "text": "What's your fat? No. No.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:03:00.871779",
+      "speaker": "recruiter",
+      "text": "but uh okay it's okay it's okay uh uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:03:03.991646",
+      "speaker": "recruiter",
+      "text": "um so let's look at same series uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:03:07.013449",
+      "speaker": "recruiter",
+      "text": "what do you know about Arima?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:03:09.333834",
+      "speaker": "candidate",
+      "text": "uh okay it's uh okay it's uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:03:14.776231",
+      "speaker": "candidate",
+      "text": "auto regressive uh mod mod",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:03:16.447081",
+      "speaker": "candidate",
+      "text": "for time series uh aut regressive means that uh that uh the",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:03:16.839166",
+      "speaker": "recruiter",
+      "text": "Okay.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:03:24.346395",
+      "speaker": "candidate",
+      "text": "The previous values of your jump series have an impact on the future. A",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:03:29.156868",
+      "speaker": "candidate",
+      "text": "jump series is a series of jumps that you make in a row. There is an order of the jumps",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:03:29.157843",
+      "speaker": "candidate",
+      "text": "Auto Rugers",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:03:30.456898",
+      "speaker": "candidate",
+      "text": "to this and that and that",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:03:33.314087",
+      "speaker": "candidate",
+      "text": ". That's all I know.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:03:33.889218",
+      "speaker": "recruiter",
+      "text": "Okay. Can you tell me the function in Python that",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:03:39.376170",
+      "speaker": "candidate",
+      "text": ".",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:03:45.645283",
+      "speaker": "recruiter",
+      "text": "um yeah um yeah",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:03:45.647165",
+      "speaker": "candidate",
+      "text": "No, sorry, I don't know.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:03:55.975760",
+      "speaker": "candidate",
+      "text": "okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:03:56.135120",
+      "speaker": "recruiter",
+      "text": "because you're uh yeah uh yeah",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:04:00.636534",
+      "speaker": "recruiter",
+      "text": "yeah I think uh I'm sorry I'm sorry",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:04:00.792379",
+      "speaker": "recruiter",
+      "text": "but we have to move on we need to move on we need",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T04:04:07.326919",
+      "speaker": "candidate",
+      "text": "Do you want to bite my neck?",
+      "is_final": true
+    }
+  ]
+}
