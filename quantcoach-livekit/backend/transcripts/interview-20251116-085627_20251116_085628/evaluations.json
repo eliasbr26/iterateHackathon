@@ -1,0 +1,222 @@
+{
+  "room": "interview-20251116-085627",
+  "total_evaluations": 4,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T08:57:50.926341",
+      "window_start": "2025-11-16T08:57:23.104840",
+      "window_end": "2025-11-16T08:57:38.088996",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "encouraging",
+      "summary": "This is the opening greeting of the interview with no technical content discussed yet. The recruiter established a friendly tone but needs to transition into substantive quant finance questions.",
+      "key_topics": [],
+      "flags": [],
+      "coaching_flags": [
+        {
+          "type": "positive",
+          "severity": "info",
+          "message": "Friendly opening greeting establishes rapport",
+          "suggestion": null,
+          "example_good": null,
+          "example_bad": null,
+          "timestamp": "2025-11-16T08:57:50.926204",
+          "context_quote": "okay hi Jawad how are you I'm good I'm good"
+        },
+        {
+          "type": "speaking_too_much",
+          "severity": "warning",
+          "message": "Interviewer answered their own question ('how are you I'm good I'm good'), not giving candidate space to respond",
+          "suggestion": "Ask 'How are you?' and pause to let the candidate respond fully before continuing",
+          "example_good": "Hi Jawad, how are you? [pause for response] Great. Let's get started...",
+          "example_bad": null,
+          "timestamp": "2025-11-16T08:57:50.926307",
+          "context_quote": "how are you I'm good I'm good"
+        },
+        {
+          "type": "unclear_question",
+          "severity": "warning",
+          "message": "Interview hasn't properly begun - need to transition to technical content after greeting",
+          "suggestion": "After pleasantries, provide a clear transition: 'Let me start by asking you about...' or 'Can you walk me through...'",
+          "example_good": "Thanks for joining. I'd like to start by understanding your experience with time series modeling. Can you tell me about a recent project?",
+          "example_bad": null,
+          "timestamp": "2025-11-16T08:57:50.926313",
+          "context_quote": "okay hi Jawad how are you I'm good I'm good"
+        }
+      ],
+      "interviewer_technique": {
+        "open_ended_ratio": 0.5,
+        "question_quality": "poor",
+        "follow_up_effectiveness": "poor",
+        "confidence": 0.3
+      },
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.2,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"encouraging\",\n    \"interviewer_technique\": {\n        \"open_ended_ratio\": 0.5,\n        \"question_quality\": \"poor\",\n        \"follow_up_effectiveness\": \"poor\",\n        \"confidence\": 0.3\n    },\n    \"coaching_flags\": [\n        {\n            \"type\": \"positive\",\n            \"severity\": \"info\",\n            \"message\": \"Friendly opening greeting establishes rapport\",\n            \"suggestion\": null,\n            \"example_good\": null,\n            \"context_quote\": \"okay hi Jawad how are you I'm good I'm good\"\n        },\n        {\n            \"type\": \"speaking_too_much\",\n            \"severity\": \"warning\",\n            \"message\": \"Interviewer answered their own question ('how are you I'm good I'm good'), not giving candidate space to respond\",\n            \"suggestion\": \"Ask 'How are you?' and pause to let the candidate respond fully before continuing\",\n            \"example_good\": \"Hi Jawad, how are you? [pause for response] Great. Let's get started...\",\n            \"context_quote\": \"how are you I'm good I'm good\"\n        },\n        {\n            \"type\": \"unclear_question\",\n            \"severity\": \"warning\",\n            \"message\": \"Interview hasn't properly begun - need to transition to technical content after greeting\",\n            \"suggestion\": \"After pleasantries, provide a clear transition: 'Let me start by asking you about...' or 'Can you walk me through...'\",\n            \"example_good\": \"Thanks for joining. I'd like to start by understanding your experience with time series modeling. Can you tell me about a recent project?\",\n            \"context_quote\": \"okay hi Jawad how are you I'm good I'm good\"\n        }\n    ],\n    \"summary\": \"This is the opening greeting of the interview with no technical content discussed yet. The recruiter established a friendly tone but needs to transition into substantive quant finance questions.\",\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.2,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T08:58:03.876665",
+      "window_start": "2025-11-16T08:57:34.128162",
+      "window_end": "2025-11-16T08:57:51.759601",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "encouraging",
+      "summary": "This excerpt captures only the greeting and audio check at the very beginning of the interview. No technical content has been discussed yet, only pleasantries and logistics.",
+      "key_topics": [],
+      "flags": [],
+      "coaching_flags": [
+        {
+          "type": "speaking_too_much",
+          "severity": "warning",
+          "message": "Interviewer is engaging in small talk and pleasantries that consume interview time without assessing candidate skills",
+          "suggestion": "Keep introductions brief (under 30 seconds). Move quickly to substantive technical questions after confirming audio/video works",
+          "example_good": "Hi Jawad, good to meet you. I can hear you fine. Let's dive in - tell me about a recent quantitative project you worked on.",
+          "example_bad": null,
+          "timestamp": "2025-11-16T08:58:03.876574",
+          "context_quote": "okay hi Jawad how are you I'm good I'm good yes yes I"
+        },
+        {
+          "type": "closed_question",
+          "severity": "info",
+          "message": "Asked closed yes/no question about audio rather than transitioning to substantive content",
+          "suggestion": "After confirming logistics, immediately transition to open-ended technical questions",
+          "example_good": "Great, audio is working. Let's start with your experience - walk me through your approach to building a trading model from scratch.",
+          "example_bad": null,
+          "timestamp": "2025-11-16T08:58:03.876605",
+          "context_quote": "Can you hear me? Yes, I can."
+        },
+        {
+          "type": "unclear_question",
+          "severity": "warning",
+          "message": "Interviewer's speech is fragmented and unclear ('yes yes I'), suggesting lack of preparation or structure",
+          "suggestion": "Prepare a clear opening statement and first question in advance. Have your interview structure documented and ready",
+          "example_good": null,
+          "example_bad": null,
+          "timestamp": "2025-11-16T08:58:03.876632",
+          "context_quote": "yes yes I"
+        }
+      ],
+      "interviewer_technique": {
+        "open_ended_ratio": 0.5,
+        "question_quality": "poor",
+        "follow_up_effectiveness": "poor",
+        "confidence": 0.9
+      },
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"encouraging\",\n    \"interviewer_technique\": {\n        \"open_ended_ratio\": 0.5,\n        \"question_quality\": \"poor\",\n        \"follow_up_effectiveness\": \"poor\",\n        \"confidence\": 0.9\n    },\n    \"coaching_flags\": [\n        {\n            \"type\": \"speaking_too_much\",\n            \"severity\": \"warning\",\n            \"message\": \"Interviewer is engaging in small talk and pleasantries that consume interview time without assessing candidate skills\",\n            \"suggestion\": \"Keep introductions brief (under 30 seconds). Move quickly to substantive technical questions after confirming audio/video works\",\n            \"example_good\": \"Hi Jawad, good to meet you. I can hear you fine. Let's dive in - tell me about a recent quantitative project you worked on.\",\n            \"context_quote\": \"okay hi Jawad how are you I'm good I'm good yes yes I\"\n        },\n        {\n            \"type\": \"closed_question\",\n            \"severity\": \"info\",\n            \"message\": \"Asked closed yes/no question about audio rather than transitioning to substantive content\",\n            \"suggestion\": \"After confirming logistics, immediately transition to open-ended technical questions\",\n            \"example_good\": \"Great, audio is working. Let's start with your experience - walk me through your approach to building a trading model from scratch.\",\n            \"context_quote\": \"Can you hear me? Yes, I can.\"\n        },\n        {\n            \"type\": \"unclear_question\",\n            \"severity\": \"warning\",\n            \"message\": \"Interviewer's speech is fragmented and unclear ('yes yes I'), suggesting lack of preparation or structure\",\n            \"suggestion\": \"Prepare a clear opening statement and first question in advance. Have your interview structure documented and ready\",\n            \"example_good\": null,\n            \"context_quote\": \"yes yes I\"\n        }\n    ],\n    \"summary\": \"This excerpt captures only the greeting and audio check at the very beginning of the interview. No technical content has been discussed yet, only pleasantries and logistics.\",\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T08:58:17.891237",
+      "window_start": "2025-11-16T08:57:51.605059",
+      "window_end": "2025-11-16T08:58:04.269544",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This excerpt shows only the initial connection phase with apparent technical/audio issues. No substantive quant finance topics were discussed, and the interviewer's speech became unclear or garbled.",
+      "key_topics": [],
+      "flags": [],
+      "coaching_flags": [
+        {
+          "type": "speaking_too_much",
+          "severity": "critical",
+          "message": "Interviewer appears to have audio/connection issues with repetitive unclear speech ('less as a clench come' repeated twice)",
+          "suggestion": "Test audio setup before the interview. If technical issues occur, pause and resolve them clearly: 'I'm having audio trouble, let me fix this quickly' rather than continuing with garbled communication",
+          "example_good": "Let me check my audio setup. Can you hear me clearly now?",
+          "example_bad": null,
+          "timestamp": "2025-11-16T08:58:17.891215",
+          "context_quote": "will say less as a clench come less as a clench come"
+        },
+        {
+          "type": "unclear_question",
+          "severity": "critical",
+          "message": "No clear technical question was asked. The conversation consists only of connection checks and unclear speech",
+          "suggestion": "After confirming audio/video works, transition immediately to substantive content with a clear opening question like 'Let's start with your recent project on [topic from CV]. Can you walk me through your approach?'",
+          "example_good": "Great, now that we're connected, tell me about your experience with time series modeling in your previous role.",
+          "example_bad": null,
+          "timestamp": "2025-11-16T08:58:17.891226",
+          "context_quote": "yes yes I... will say less as a clench come less as a clench come"
+        },
+        {
+          "type": "closed_question",
+          "severity": "warning",
+          "message": "Only connection-testing closed questions were asked (Can you hear me?)",
+          "suggestion": "Once technical setup is confirmed, move quickly to open-ended technical questions that allow the candidate to demonstrate knowledge",
+          "example_good": "Now that we're all set, I'd like to understand your approach to model validation. How do you typically prevent overfitting in financial models?",
+          "example_bad": null,
+          "timestamp": "2025-11-16T08:58:17.891229",
+          "context_quote": "Can you hear me?"
+        }
+      ],
+      "interviewer_technique": {
+        "open_ended_ratio": 0.0,
+        "question_quality": "poor",
+        "follow_up_effectiveness": "poor",
+        "confidence": 0.95
+      },
+      "confidence_subject": 0.98,
+      "confidence_difficulty": 0.3,
+      "confidence_tone": 0.4,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"interviewer_technique\": {\n        \"open_ended_ratio\": 0.0,\n        \"question_quality\": \"poor\",\n        \"follow_up_effectiveness\": \"poor\",\n        \"confidence\": 0.95\n    },\n    \"coaching_flags\": [\n        {\n            \"type\": \"speaking_too_much\",\n            \"severity\": \"critical\",\n            \"message\": \"Interviewer appears to have audio/connection issues with repetitive unclear speech ('less as a clench come' repeated twice)\",\n            \"suggestion\": \"Test audio setup before the interview. If technical issues occur, pause and resolve them clearly: 'I'm having audio trouble, let me fix this quickly' rather than continuing with garbled communication\",\n            \"example_good\": \"Let me check my audio setup. Can you hear me clearly now?\",\n            \"context_quote\": \"will say less as a clench come less as a clench come\"\n        },\n        {\n            \"type\": \"unclear_question\",\n            \"severity\": \"critical\",\n            \"message\": \"No clear technical question was asked. The conversation consists only of connection checks and unclear speech\",\n            \"suggestion\": \"After confirming audio/video works, transition immediately to substantive content with a clear opening question like 'Let's start with your recent project on [topic from CV]. Can you walk me through your approach?'\",\n            \"example_good\": \"Great, now that we're connected, tell me about your experience with time series modeling in your previous role.\",\n            \"context_quote\": \"yes yes I... will say less as a clench come less as a clench come\"\n        },\n        {\n            \"type\": \"closed_question\",\n            \"severity\": \"warning\",\n            \"message\": \"Only connection-testing closed questions were asked (Can you hear me?)\",\n            \"suggestion\": \"Once technical setup is confirmed, move quickly to open-ended technical questions that allow the candidate to demonstrate knowledge\",\n            \"example_good\": \"Now that we're all set, I'd like to understand your approach to model validation. How do you typically prevent overfitting in financial models?\",\n            \"context_quote\": \"Can you hear me?\"\n        }\n    ],\n    \"summary\": \"This excerpt shows only the initial connection phase with apparent technical/audio issues. No substantive quant finance topics were discussed, and the interviewer's speech became unclear or garbled.\",\n    \"confidence_subject\": 0.98,\n    \"confidence_difficulty\": 0.3,\n    \"confidence_tone\": 0.4\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T08:58:28.625437",
+      "window_start": "2025-11-16T08:58:04.113987",
+      "window_end": "2025-11-16T08:58:17.947339",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "This excerpt captures only the opening moments of the interview with audio/connection issues and introductory remarks. No technical quant finance content has been discussed yet.",
+      "key_topics": [],
+      "flags": [],
+      "coaching_flags": [
+        {
+          "type": "unclear_question",
+          "severity": "critical",
+          "message": "Interviewer's speech is unintelligible ('less as a clench come') suggesting technical or communication issues",
+          "suggestion": "Check audio quality and ensure clear articulation. If technical issues persist, restart the connection before proceeding with substantive questions",
+          "example_good": "Clear, articulated speech without garbled audio",
+          "example_bad": null,
+          "timestamp": "2025-11-16T08:58:28.625415",
+          "context_quote": "will say less as a clench come less as a clench come"
+        },
+        {
+          "type": "speaking_too_much",
+          "severity": "warning",
+          "message": "Interviewer repeats phrases unnecessarily ('can you can you', 'Jawad Jawad')",
+          "suggestion": "Pause and formulate complete thoughts before speaking. Ask clear, single questions without repetition",
+          "example_good": "Can you please introduce yourself, Jawad?",
+          "example_bad": null,
+          "timestamp": "2025-11-16T08:58:28.625424",
+          "context_quote": "can you can you just to introduce yourself Jawad Jawad"
+        },
+        {
+          "type": "positive",
+          "severity": "info",
+          "message": "Good practice to start with candidate introduction request",
+          "suggestion": null,
+          "example_good": null,
+          "example_bad": null,
+          "timestamp": "2025-11-16T08:58:28.625426",
+          "context_quote": "just to introduce yourself"
+        }
+      ],
+      "interviewer_technique": {
+        "open_ended_ratio": 1.0,
+        "question_quality": "poor",
+        "follow_up_effectiveness": "poor",
+        "confidence": 0.3
+      },
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.2,
+      "confidence_tone": 0.4,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"interviewer_technique\": {\n        \"open_ended_ratio\": 1.0,\n        \"question_quality\": \"poor\",\n        \"follow_up_effectiveness\": \"poor\",\n        \"confidence\": 0.3\n    },\n    \"coaching_flags\": [\n        {\n            \"type\": \"unclear_question\",\n            \"severity\": \"critical\",\n            \"message\": \"Interviewer's speech is unintelligible ('less as a clench come') suggesting technical or communication issues\",\n            \"suggestion\": \"Check audio quality and ensure clear articulation. If technical issues persist, restart the connection before proceeding with substantive questions\",\n            \"example_good\": \"Clear, articulated speech without garbled audio\",\n            \"context_quote\": \"will say less as a clench come less as a clench come\"\n        },\n        {\n            \"type\": \"speaking_too_much\",\n            \"severity\": \"warning\",\n            \"message\": \"Interviewer repeats phrases unnecessarily ('can you can you', 'Jawad Jawad')\",\n            \"suggestion\": \"Pause and formulate complete thoughts before speaking. Ask clear, single questions without repetition\",\n            \"example_good\": \"Can you please introduce yourself, Jawad?\",\n            \"context_quote\": \"can you can you just to introduce yourself Jawad Jawad\"\n        },\n        {\n            \"type\": \"positive\",\n            \"severity\": \"info\",\n            \"message\": \"Good practice to start with candidate introduction request\",\n            \"suggestion\": null,\n            \"example_good\": null,\n            \"context_quote\": \"just to introduce yourself\"\n        }\n    ],\n    \"summary\": \"This excerpt captures only the opening moments of the interview with audio/connection issues and introductory remarks. No technical quant finance content has been discussed yet.\",\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.2,\n    \"confidence_tone\": 0.4\n}\n```"
+    }
+  ]
+}

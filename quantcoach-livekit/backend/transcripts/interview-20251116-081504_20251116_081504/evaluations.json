@@ -1,0 +1,26 @@
+{
+  "room": "interview-20251116-081504",
+  "total_evaluations": 1,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T08:20:16.122604",
+      "window_start": "2025-11-16T08:16:23.827854",
+      "window_end": "2025-11-16T08:16:46.849321",
+      "transcripts_evaluated": 3,
+      "subject_relevance": "unknown",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "Evaluation failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVBARGPtPbrgUa9Wj4aZW'}",
+      "key_topics": [],
+      "flags": [
+        "EVALUATION_ERROR: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVBARGPtPbrgUa9Wj4aZW'}"
+      ],
+      "coaching_flags": [],
+      "interviewer_technique": null,
+      "confidence_subject": 0.0,
+      "confidence_difficulty": 0.0,
+      "confidence_tone": 0.0,
+      "raw_llm_response": null
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+
+================================================================================
+[08:57:50] EVALUATION
+================================================================================
+Window: 08:57:23 - 08:57:38
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.20)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: This is the opening greeting of the interview with no technical content discussed yet. The recruiter established a friendly tone but needs to transition into substantive quant finance questions.
+
+🔑 Key Topics: None
+
+
+================================================================================
+[08:58:03] EVALUATION
+================================================================================
+Window: 08:57:34 - 08:57:51
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: This excerpt captures only the greeting and audio check at the very beginning of the interview. No technical content has been discussed yet, only pleasantries and logistics.
+
+🔑 Key Topics: None
+
+
+================================================================================
+[08:58:17] EVALUATION
+================================================================================
+Window: 08:57:51 - 08:58:04
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.98)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.30)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.40)
+
+📝 Summary: This excerpt shows only the initial connection phase with apparent technical/audio issues. No substantive quant finance topics were discussed, and the interviewer's speech became unclear or garbled.
+
+🔑 Key Topics: None
+
+
+================================================================================
+[08:58:28] EVALUATION
+================================================================================
+Window: 08:58:04 - 08:58:17
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.20)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.40)
+
+📝 Summary: This excerpt captures only the opening moments of the interview with audio/connection issues and introductory remarks. No technical quant finance content has been discussed yet.
+
+🔑 Key Topics: None
+

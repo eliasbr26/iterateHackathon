@@ -33,6 +33,22 @@ export interface Evaluation {
     percentage: number;
     threshold: number;
   } | null;
+  coaching_flags?: Array<{
+    type: string;
+    severity: string;
+    message: string;
+    suggestion?: string;
+    example_good?: string;
+    example_bad?: string;
+    timestamp: string;
+    context_quote?: string;
+  }>;
+  interviewer_technique?: {
+    open_ended_ratio: number;
+    question_quality: string;
+    follow_up_effectiveness: string;
+    confidence: number;
+  } | null;
 }
 
 export interface TranscriptStreamData {

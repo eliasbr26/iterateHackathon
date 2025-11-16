@@ -1,0 +1,24 @@
+{
+  "room": "interview-20251116-081504",
+  "session_start": "2025-11-16T08:16:23.816720",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T08:16:23.816720",
+      "speaker": "recruiter",
+      "text": "oh no",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T08:16:40.841102",
+      "speaker": "recruiter",
+      "text": "maybe if you can't turn it on",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T08:16:46.846782",
+      "speaker": "recruiter",
+      "text": "Nervous Liquidity. Nervous Liquidity",
+      "is_final": true
+    }
+  ]
+}

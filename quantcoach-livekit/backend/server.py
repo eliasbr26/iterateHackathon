@@ -568,6 +568,147 @@ async def get_room_analytics(room_name: str):
     }
 
 
+@app.get("/rooms/{room_name}/interviewer-report")
+async def get_interviewer_performance_report(room_name: str):
+    """
+    Generate comprehensive performance report for the interviewer
+
+    This endpoint analyzes the entire interview session and provides:
+    - Overall performance score (0-10)
+    - Key strengths with examples
+    - Areas for improvement with actionable suggestions
+    - Detailed metrics (open-ended ratio, follow-up rate, speaking balance)
+    - Question quality breakdown
+    - Topic coverage analysis
+    - Tone consistency analysis
+
+    Returns:
+        InterviewerPerformanceReport with complete assessment
+    """
+    if room_name not in session_data:
+        raise HTTPException(
+            status_code=404,
+            detail=f"No session data found for room: {room_name}"
+        )
+
+    data = session_data[room_name]
+    evaluations_data = data["evaluations"]
+    transcripts_data = data["transcripts"]
+
+    if not evaluations_data:
+        raise HTTPException(
+            status_code=400,
+            detail=f"No evaluations found for room: {room_name}. Cannot generate report."
+        )
+
+    try:
+        # Import here to avoid circular dependency
+        from interview_evaluator import InterviewEvaluator
+        from audio_pipeline.models import EvaluationResult, Transcript
+        from audio_pipeline.models import (
+            SubjectRelevance, QuestionDifficulty, InterviewerTone,
+            CoachingFlag, CoachingFlagType, InterviewerTechniqueAssessment,
+            InterviewerTechniqueQuality
+        )
+
+        # Convert raw evaluation dicts to EvaluationResult objects
+        evaluation_objects = []
+        for eval_dict in evaluations_data:
+            try:
+                # Parse coaching flags
+                coaching_flags = []
+                if "coaching_flags" in eval_dict:
+                    for cf_data in eval_dict["coaching_flags"]:
+                        cf = CoachingFlag(
+                            type=CoachingFlagType(cf_data["type"]),
+                            severity=cf_data["severity"],
+                            message=cf_data["message"],
+                            suggestion=cf_data.get("suggestion"),
+                            example_good=cf_data.get("example_good"),
+                            example_bad=cf_data.get("example_bad"),
+                            timestamp=datetime.fromisoformat(cf_data["timestamp"]),
+                            context_quote=cf_data.get("context_quote")
+                        )
+                        coaching_flags.append(cf)
+
+                # Parse interviewer technique
+                interviewer_technique = None
+                if "interviewer_technique" in eval_dict and eval_dict["interviewer_technique"]:
+                    tech_data = eval_dict["interviewer_technique"]
+                    interviewer_technique = InterviewerTechniqueAssessment(
+                        open_ended_ratio=tech_data["open_ended_ratio"],
+                        question_quality=InterviewerTechniqueQuality(tech_data["question_quality"]),
+                        follow_up_effectiveness=InterviewerTechniqueQuality(tech_data["follow_up_effectiveness"]),
+                        confidence=tech_data["confidence"]
+                    )
+
+                # Create EvaluationResult
+                eval_obj = EvaluationResult(
+                    timestamp=datetime.fromisoformat(eval_dict["timestamp"]),
+                    window_start=datetime.fromisoformat(eval_dict["window_start"]),
+                    window_end=datetime.fromisoformat(eval_dict["window_end"]),
+                    transcripts_evaluated=eval_dict["transcripts_evaluated"],
+                    subject_relevance=SubjectRelevance(eval_dict["subject_relevance"]),
+                    question_difficulty=QuestionDifficulty(eval_dict["question_difficulty"]),
+                    interviewer_tone=InterviewerTone(eval_dict["interviewer_tone"]),
+                    summary=eval_dict["summary"],
+                    key_topics=eval_dict["key_topics"],
+                    flags=eval_dict.get("flags", []),
+                    coaching_flags=coaching_flags,
+                    interviewer_technique=interviewer_technique,
+                    confidence_subject=eval_dict["confidence_subject"],
+                    confidence_difficulty=eval_dict["confidence_difficulty"],
+                    confidence_tone=eval_dict["confidence_tone"],
+                    raw_llm_response=eval_dict.get("raw_llm_response")
+                )
+                evaluation_objects.append(eval_obj)
+            except Exception as e:
+                logger.warning(f"Failed to parse evaluation: {e}")
+                continue
+
+        # Convert transcript dicts to Transcript objects
+        transcript_objects = []
+        for t_dict in transcripts_data:
+            try:
+                t_obj = Transcript(
+                    text=t_dict["text"],
+                    speaker=t_dict["speaker"],
+                    is_final=t_dict.get("is_final", True),
+                    timestamp=datetime.fromisoformat(t_dict["timestamp"])
+                )
+                transcript_objects.append(t_obj)
+            except Exception as e:
+                logger.warning(f"Failed to parse transcript: {e}")
+                continue
+
+        # Get Anthropic API key
+        anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
+        if not anthropic_api_key:
+            raise HTTPException(
+                status_code=503,
+                detail="ANTHROPIC_API_KEY not configured"
+            )
+
+        # Initialize evaluator
+        evaluator = InterviewEvaluator(api_key=anthropic_api_key)
+
+        # Generate performance report
+        logger.info(f"📊 Generating interviewer performance report for room: {room_name}")
+        report = await evaluator.evaluate_interviewer_performance(
+            all_transcripts=transcript_objects,
+            evaluation_history=evaluation_objects
+        )
+
+        return report.to_dict()
+
+    except Exception as e:
+        logger.error(f"❌ Error generating interviewer report: {e}", exc_info=True)
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to generate interviewer report: {str(e)}"
+        )
+
+
 @app.get("/rooms/{room_name}/status")
 async def get_room_status(room_name: str):
     """Get status of agent for a room"""

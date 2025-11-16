@@ -1,0 +1,72 @@
+{
+  "room": "interview-20251116-085627",
+  "session_start": "2025-11-16T08:57:23.097154",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T08:57:23.097154",
+      "speaker": "candidate",
+      "text": "okay okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T08:57:34.108217",
+      "speaker": "candidate",
+      "text": "oh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T08:57:38.088034",
+      "speaker": "recruiter",
+      "text": "okay hi Jawad how are you I'm good I'm good",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T08:57:51.603707",
+      "speaker": "recruiter",
+      "text": "yes yes I",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T08:57:51.757440",
+      "speaker": "candidate",
+      "text": "I'm good and you? Can you hear me? Yes, I can.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T08:58:04.112388",
+      "speaker": "candidate",
+      "text": "Okay, I can hear you.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T08:58:04.267185",
+      "speaker": "candidate",
+      "text": "Okay, I can hear you.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T08:58:04.268830",
+      "speaker": "recruiter",
+      "text": "will say less as a clench come less as a clench come",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T08:58:04.270867",
+      "speaker": "recruiter",
+      "text": "can you can you",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T08:58:04.271940",
+      "speaker": "recruiter",
+      "text": "just to introduce yourself Jawad Jawad",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T08:58:17.945889",
+      "speaker": "candidate",
+      "text": "My name is",
+      "is_final": true
+    }
+  ]
+}

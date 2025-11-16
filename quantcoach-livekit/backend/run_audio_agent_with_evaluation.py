@@ -373,11 +373,43 @@ async def run_agent(
                 print(f"📊 Subject: {evaluation.subject_relevance.value.upper()} (conf: {evaluation.confidence_subject:.2f})")
                 print(f"🎯 Difficulty: {evaluation.question_difficulty.value.upper()} (conf: {evaluation.confidence_difficulty:.2f})")
                 print(f"💬 Tone: {evaluation.interviewer_tone.value.upper()} (conf: {evaluation.confidence_tone:.2f})")
+
+                # Display interviewer technique assessment
+                if evaluation.interviewer_technique:
+                    tech = evaluation.interviewer_technique
+                    print(f"🎓 Technique: Q.Quality={tech.question_quality.value.upper()}, "
+                          f"Open-ended={tech.open_ended_ratio:.0%}, "
+                          f"Follow-ups={tech.follow_up_effectiveness.value.upper()}")
+
                 print(f"📝 {evaluation.summary}")
                 if evaluation.key_topics:
                     print(f"🔑 Topics: {', '.join(evaluation.key_topics)}")
                 if evaluation.flags:
                     print(f"🚩 Flags: {', '.join(evaluation.flags)}")
+
+                # Display coaching flags (new real-time coaching feedback)
+                if evaluation.coaching_flags:
+                    print(f"\n💡 COACHING FEEDBACK:")
+                    for cf in evaluation.coaching_flags:
+                        severity_icon = {
+                            'critical': '🚨',
+                            'warning': '⚠️',
+                            'info': 'ℹ️'
+                        }.get(cf.severity, 'ℹ️')
+
+                        # Positive feedback gets special treatment
+                        if cf.type.value in ['positive', 'great_probing']:
+                            print(f"   ✅ {cf.message}")
+                            if cf.context_quote:
+                                print(f"      Example: \"{cf.context_quote}\"")
+                        else:
+                            # Issues with suggestions
+                            print(f"   {severity_icon} {cf.message}")
+                            if cf.suggestion:
+                                print(f"      💬 Try: {cf.suggestion}")
+                            if cf.context_quote:
+                                print(f"      Context: \"{cf.context_quote}\"")
+
                 print(f"{'─'*80}\n")
 
                 evaluation_queue.task_done()

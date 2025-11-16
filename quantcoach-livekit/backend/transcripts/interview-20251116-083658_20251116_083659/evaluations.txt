@@ -1,0 +1,144 @@
+
+================================================================================
+[08:38:14] EVALUATION
+================================================================================
+Window: 08:38:01 - 08:38:12
+Transcripts: 2
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.00)
+
+📝 Summary: Evaluation failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVBBnjjdeGWxvYFysF7ft'}
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - EVALUATION_ERROR: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVBBnjjdeGWxvYFysF7ft'}
+
+
+================================================================================
+[08:38:48] EVALUATION
+================================================================================
+Window: 08:38:12 - 08:38:48
+Transcripts: 6
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.00)
+
+📝 Summary: Evaluation failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVBBqHAJirvK53dDdubB1'}
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - EVALUATION_ERROR: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVBBqHAJirvK53dDdubB1'}
+
+
+================================================================================
+[08:39:20] EVALUATION
+================================================================================
+Window: 08:38:48 - 08:39:19
+Transcripts: 3
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.00)
+
+📝 Summary: Evaluation failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVBBsbc8Be9hfQMBthTiL'}
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - EVALUATION_ERROR: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVBBsbc8Be9hfQMBthTiL'}
+
+
+================================================================================
+[08:40:07] EVALUATION
+================================================================================
+Window: 08:39:19 - 08:40:06
+Transcripts: 9
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.00)
+
+📝 Summary: Evaluation failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVBBw5MZkne2C7tVHPFxD'}
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - EVALUATION_ERROR: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVBBw5MZkne2C7tVHPFxD'}
+
+
+================================================================================
+[08:41:04] EVALUATION
+================================================================================
+Window: 08:40:06 - 08:41:03
+Transcripts: 3
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.00)
+
+📝 Summary: Evaluation failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVBC1GPTFfSgdrxo6QMDx'}
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - EVALUATION_ERROR: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVBC1GPTFfSgdrxo6QMDx'}
+
+
+================================================================================
+[08:41:54] EVALUATION
+================================================================================
+Window: 08:41:03 - 08:41:53
+Transcripts: 4
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.00)
+
+📝 Summary: Evaluation failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVBC4xxa35kBz8L81i22X'}
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - EVALUATION_ERROR: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVBC4xxa35kBz8L81i22X'}
+
+
+================================================================================
+[08:42:27] EVALUATION
+================================================================================
+Window: 08:41:53 - 08:42:26
+Transcripts: 9
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.00)
+
+📝 Summary: Evaluation failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVBC7PLpe4t9U3qGfQRyy'}
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - EVALUATION_ERROR: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVBC7PLpe4t9U3qGfQRyy'}
+
+
+================================================================================
+[08:42:59] EVALUATION
+================================================================================
+Window: 08:42:17 - 08:42:33
+Transcripts: 5
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.00)
+
+📝 Summary: Evaluation failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVBC9oALwh95JS7dc5Y2y'}
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - EVALUATION_ERROR: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CVBC9oALwh95JS7dc5Y2y'}
+
