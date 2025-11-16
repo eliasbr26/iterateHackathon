@@ -1,9 +1,11 @@
 # BetterVue — Quick Start
 
+#### You don’t want your recruiters to be like Pierre Chartrier.
 
-BetterVue provides real-time visibility into the quality of technical interviews: question relevance and difficulty, topic coverage, tone, red flags, and AI-generated summaries.  
-This quick guide explains how to install, configure, and run the app in the `quantcoach-livekit` directory.
+BetterVue gives companies real-time visibility into how their recruiters perform during technical interviews. The platform analyzes candidates’ résumés, helps recruiters ask smarter questions, and evaluates each question’s relevance, difficulty, and coverage of key technical topics. It also ensures recruiters stay professional and aligned with company values. After each interview, BetterVue generates an AI-powered summary with a performance score, strengths, red flags, and improvement suggestions. In short, BetterVue makes interviews fairer, more consistent, and more effective for everyone.
 ![demo](demo.jpeg)
+This quick guide explains how to install, configure, and run the app in the `quantcoach-livekit` directory.
+
 ⚠️ **Never commit API keys.** Use a local `.env` or a secrets manager.
 
 ---
