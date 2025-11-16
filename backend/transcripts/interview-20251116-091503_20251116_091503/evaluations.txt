@@ -1,0 +1,374 @@
+
+================================================================================
+[09:15:55] EVALUATION
+================================================================================
+Window: 09:15:33 - 09:15:49
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: The conversation appears to contain only casual, fragmented exchanges with no discernible quant finance content. The dialogue seems unclear or possibly incorrectly transcribed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content detected
+   - Conversation appears fragmented or mistranscribed
+   - Cannot assess interview quality
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:16:02] EVALUATION
+================================================================================
+Window: 09:15:49 - 09:15:57
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This excerpt captures what appears to be the beginning or end of an interview call with casual farewells and a technical connection issue. No substantive quant finance discussion occurred.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Possible technical/connection issues
+   - No interview content present
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:16:09] EVALUATION
+================================================================================
+Window: 09:15:49 - 09:16:04
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: This excerpt captures the initial greeting and connection phase of an interview, with casual exchanges and technical difficulties before the substantive conversation begins.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content discussed
+   - Interview appears to be just starting
+   - Connection/technical issues mentioned
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:16:14] EVALUATION
+================================================================================
+Window: 09:15:55 - 09:16:10
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: This excerpt captures the opening moments of an interview with initial greetings and casual pleasantries between the recruiter and candidate. No technical quant finance topics were discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Interview beginning - no technical content yet
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:16:20] EVALUATION
+================================================================================
+Window: 09:16:04 - 09:16:14
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: This is the opening greeting phase of the interview where both parties exchange pleasantries and establish audio connection. No technical content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content yet
+   - Audio connection issues mentioned
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:16:25] EVALUATION
+================================================================================
+Window: 09:16:04 - 09:16:20
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.85)
+
+📝 Summary: This is the opening greeting and introduction phase of the interview. The recruiter asks the candidate to introduce themselves, but no technical content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content yet
+   - Interview just beginning
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:16:29] EVALUATION
+================================================================================
+Window: 09:16:14 - 09:16:25
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.90)
+
+📝 Summary: This is the opening moment of the interview with audio/connection issues. The recruiter asks the candidate to introduce themselves, but there are technical difficulties with hearing.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Audio/connection issues
+   - No technical content yet
+   - Interview just starting
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:16:34] EVALUATION
+================================================================================
+Window: 09:16:20 - 09:16:30
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.85)
+
+📝 Summary: Interview opening with basic introductory questions about the candidate's background and software engineering. No quant finance topics discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Interview just starting
+   - Communication issue - candidate didn't hear first question
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:16:40] EVALUATION
+================================================================================
+Window: 09:16:20 - 09:16:34
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: This is an opening segment of an interview where the recruiter asks the candidate to introduce themselves and discuss software engineering. The candidate appears to have audio difficulties and is struggling to begin their response.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Communication difficulties present
+   - No technical content discussed yet
+   - Candidate hesitation and audio issues
+   - Interview just starting - introductory phase
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:16:55] EVALUATION
+================================================================================
+Window: 09:16:25 - 09:16:49
+Transcripts: 9
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter asked about software engineering, but the candidate struggled to respond coherently, mentioning limited knowledge and briefly referencing cloud code and quantitative finance research capabilities.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Candidate appears unprepared or confused
+   - Communication difficulties present
+   - No substantive technical discussion
+   - Candidate self-identifies as better fit for different role
+   - Incomplete responses and fragmented speech
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:17:02] EVALUATION
+================================================================================
+Window: 09:16:40 - 09:16:57
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: This appears to be the opening moments of an interview where the candidate is expressing uncertainty about their software engineering skills and mentioning they use 'cloud code' for research. The recruiter is checking if the technical setup is working properly.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Candidate expressing low confidence and uncertainty
+   - No technical quant finance discussion yet
+   - Appears to be technical setup/introduction phase
+   - Candidate mentions disclaimer but context unclear
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:17:10] EVALUATION
+================================================================================
+Window: 09:16:49 - 09:17:04
+Transcripts: 6
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.90)
+🎯 Question Difficulty: EASY (confidence: 0.85)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.80)
+
+📝 Summary: The interviewer is testing technical setup and asks the candidate to explain regularization as a basic technical check. The candidate begins to respond but the excerpt cuts off before a complete answer.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Incomplete response - candidate answer cut off
+   - Significant technical audio/connection testing preceding the question
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:17:21] EVALUATION
+================================================================================
+Window: 09:16:55 - 09:17:16
+Transcripts: 9
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.75)
+
+📝 Summary: The recruiter is testing audio/video setup and asks a basic question about regularization. The candidate begins explaining it as a penalty term added to a loss function but the response is incomplete and fragmented.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Audio/video testing in progress
+   - Incomplete candidate response
+   - Fragmented speech suggests technical issues
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:17:36] EVALUATION
+================================================================================
+Window: 09:17:10 - 09:17:31
+Transcripts: 9
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.85)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.10)
+
+📝 Summary: The candidate is explaining regularization techniques, specifically discussing penalty terms in loss functions and mentioning Lasso regularization, though the explanation is incomplete and somewhat fragmented.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Incomplete explanation
+   - Fragmented speech pattern suggests candidate may be struggling
+   - No interviewer speech captured in this excerpt
+
+
+================================================================================
+[09:17:44] EVALUATION
+================================================================================
+Window: 09:17:22 - 09:17:39
+Transcripts: 9
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.40)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The candidate is explaining Lasso regularization and its property of inducing sparsity in variables (resulting in more zero coefficients). The recruiter acknowledges with a brief 'Thank you.'
+
+🔑 Key Topics: REGULARIZATION, FEATURE_SELECTION
+
+🚩 Flags:
+   - Candidate speech is fragmented and contains repetition
+   - No clear question visible in excerpt - appears to be mid-response
+   - Very brief exchange limits full assessment
+
+
+================================================================================
+[09:17:49] EVALUATION
+================================================================================
+Window: 09:17:31 - 09:17:44
+Transcripts: 6
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: MEDIUM (confidence: 0.65)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The candidate is explaining Lasso regularization properties, specifically how it induces sparsity by driving coefficients to zero, which relates to automatic feature selection.
+
+🔑 Key Topics: REGULARIZATION, FEATURE_SELECTION
+
+🚩 Flags:
+   - Incomplete excerpt - context and full question unclear
+   - Mid-answer snippet - cannot assess full candidate understanding
+
+
+================================================================================
+[09:17:55] EVALUATION
+================================================================================
+Window: 09:17:36 - 09:17:49
+Transcripts: 6
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.70)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.30)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: The candidate is completing an explanation about sparsity (likely related to L1 regularization producing sparse coefficients), and the recruiter thanks them and wraps up the interview positively.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Incomplete conversation context - only showing end of candidate's response
+   - No full question visible to assess difficulty
+   - Cannot verify depth of regularization discussion
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:18:16] EVALUATION
+================================================================================
+Window: 09:17:44 - 09:17:56
+Transcripts: 3
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.85)
+
+📝 Summary: This is the closing segment of an interview where the recruiter is wrapping up and thanking the candidate. No technical quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Interview conclusion only - no technical content
+   - Insufficient context to evaluate quant finance discussion
+   - Off-topic/casual discussion detected ([EXTRA])
+

@@ -1,0 +1,168 @@
+{
+  "room": "interview-20251116-095216",
+  "session_start": "2025-11-16T09:53:00.838251",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T09:53:00.838251",
+      "speaker": "candidate",
+      "text": "I have a question, Sam",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:53:15.904280",
+      "speaker": "recruiter",
+      "text": "okay okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:53:20.816254",
+      "speaker": "recruiter",
+      "text": "okay perfect uh could you please talk to me about uh cross uh cross",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:53:21.905184",
+      "speaker": "recruiter",
+      "text": "cross validation please cross validation please",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:53:25.841425",
+      "speaker": "candidate",
+      "text": "Yeah, cause validation is a mean to avoid the over to avoid the over.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:53:30.752537",
+      "speaker": "candidate",
+      "text": "The question is the k-fold cross-validation. The cross-validation.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:53:31.780562",
+      "speaker": "candidate",
+      "text": "It's when you divide your divide your",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:53:34.767603",
+      "speaker": "candidate",
+      "text": "transit with key parts key parts.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:53:37.798745",
+      "speaker": "candidate",
+      "text": "And you use a k-1 part to train and to train and",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:53:42.897992",
+      "speaker": "candidate",
+      "text": "the last part the last part.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:53:44.797439",
+      "speaker": "candidate",
+      "text": "To validate. It is useful if you if you're",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:53:46.761928",
+      "speaker": "candidate",
+      "text": "looking for a good hyperpower",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:53:49.772609",
+      "speaker": "candidate",
+      "text": "for example and you want to avoid over",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:53:54.860672",
+      "speaker": "recruiter",
+      "text": "evaluate different methods um",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:54:00.242342",
+      "speaker": "recruiter",
+      "text": "for feature selection.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:54:01.772311",
+      "speaker": "candidate",
+      "text": "Okay, the most basic method is a",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:54:07.937508",
+      "speaker": "candidate",
+      "text": "I think the just to look just to look",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:54:10.776864",
+      "speaker": "candidate",
+      "text": "at the correlation matrix and to delete some features",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:54:13.767430",
+      "speaker": "candidate",
+      "text": "that are very correlated, another mean is to",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:54:16.774702",
+      "speaker": "candidate",
+      "text": "do a PCA, it's a principal component",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:54:21.343247",
+      "speaker": "candidate",
+      "text": "analysis. It's a mean to",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:54:22.775768",
+      "speaker": "candidate",
+      "text": "reduce the dimension of your features in",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:54:25.755335",
+      "speaker": "candidate",
+      "text": "your model. And it is a",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:54:28.756462",
+      "speaker": "candidate",
+      "text": "quite useful and used in most of",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:54:33.455676",
+      "speaker": "candidate",
+      "text": "the cases.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:54:34.914067",
+      "speaker": "recruiter",
+      "text": "Okay, perfect. Thank you so much for your time today. And we'll get back to you soon. We'll get back to you soon.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:54:39.855988",
+      "speaker": "recruiter",
+      "text": "Don't work in Google. Don't work in Google.",
+      "is_final": true
+    }
+  ]
+}

@@ -1,0 +1,435 @@
+2025-11-16 09:51:08,126 - database.db - INFO - 📦 Using SQLite database: sqlite:///./quantcoach_interviews.db
+2025-11-16 09:51:08,726 - room_manager - INFO - ✅ RoomManager initialized
+2025-11-16 09:51:08,727 - __main__ - INFO - ✅ RoomManager initialized successfully
+2025-11-16 09:51:08,727 - __main__ - INFO - ✅ AgentManager initialized successfully
+2025-11-16 09:51:08,752 - evaluators.competency_evaluator - INFO - ✅ CompetencyEvaluator initialized with model: claude-sonnet-4-5
+2025-11-16 09:51:08,756 - evaluators.star_analyzer - INFO - ✅ STARAnalyzer initialized with model: claude-sonnet-4-5
+2025-11-16 09:51:08,760 - evaluators.bluffing_detector - INFO - ✅ BluffingDetector initialized with model: claude-sonnet-4-5
+2025-11-16 09:51:08,764 - evaluators.cultural_fit_analyzer - INFO - ✅ CulturalFitAnalyzer initialized with model: claude-sonnet-4-5, 8 values
+2025-11-16 09:51:08,768 - profiles.cv_parser - INFO - ✅ CVParser initialized with model: claude-sonnet-4-5
+2025-11-16 09:51:08,768 - __main__ - INFO - ✅ Phase 2 evaluators initialized successfully
+2025-11-16 09:51:08,772 - copilot.followup_suggester - INFO - ✅ FollowUpSuggester initialized with model: claude-sonnet-4-5
+2025-11-16 09:51:08,772 - __main__ - INFO - ✅ PILLAR 1 Co-Pilot initialized successfully
+2025-11-16 09:51:08,775 - question_bank.question_generator - INFO - ✅ QuestionGenerator initialized with model: claude-sonnet-4-5
+2025-11-16 09:51:08,775 - __main__ - INFO - ✅ PILLAR 3 Question Bank initialized successfully
+2025-11-16 09:51:08,779 - interviewer_feedback.tone_analyzer - INFO - ✅ ToneAnalyzer initialized with model: claude-sonnet-4-5
+2025-11-16 09:51:08,783 - interviewer_feedback.question_quality_checker - INFO - ✅ QuestionQualityChecker initialized with model: claude-sonnet-4-5
+2025-11-16 09:51:08,786 - interviewer_feedback.bias_detector - INFO - ✅ BiasDetector initialized with model: claude-sonnet-4-5
+2025-11-16 09:51:08,786 - __main__ - INFO - ✅ PILLAR 4 Interviewer Feedback initialized successfully
+2025-11-16 09:51:08,790 - reporting.summary_generator - INFO - ✅ SummaryGenerator initialized with model: claude-sonnet-4-5
+2025-11-16 09:51:08,790 - reporting.report_builder - INFO - ✅ ReportBuilder initialized
+2025-11-16 09:51:08,790 - reporting.export_formatter - INFO - ✅ ExportFormatter initialized
+2025-11-16 09:51:08,790 - __main__ - INFO - ✅ PILLAR 5 Post-Interview Analysis & Reporting initialized successfully
+2025-11-16 09:51:08,952 - rag_engine.vector_store - INFO - ✅ VectorStore initialized with 0 documents
+2025-11-16 09:51:08,962 - rag_engine.document_indexer - INFO - ✅ DocumentIndexer initialized with model: text-embedding-3-small
+2025-11-16 09:51:08,962 - rag_engine.conversational_assistant - INFO - ✅ ConversationalAssistant initialized with model: claude-sonnet-4-5
+2025-11-16 09:51:08,962 - __main__ - INFO - ✅ PILLAR 7 RAG Conversational Q&A Engine initialized successfully
+/Users/adamzer/Downloads/iterateHackathon-jawad-front/quantcoach-livekit/backend/server.py:211: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+/Users/adamzer/Downloads/iterateHackathon-jawad-front/quantcoach-livekit/backend/server.py:227: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("shutdown")
+2025-11-16 09:51:08,984 - __main__ - INFO - 🚀 Starting QuantCoach LiveKit API Server
+2025-11-16 09:51:08,985 - __main__ - INFO - 📍 Server will run on: http://0.0.0.0:8000
+2025-11-16 09:51:08,985 - __main__ - INFO - 📖 API Docs: http://localhost:8000/docs
+INFO:     Started server process [64881]
+INFO:     Waiting for application startup.
+2025-11-16 09:51:09,227 - __main__ - INFO - 🚀 Starting QuantCoach LiveKit API...
+2025-11-16 09:51:09,227 - __main__ - INFO - 📦 Initializing database...
+2025-11-16 09:51:09,227 - database.db - INFO - 🔨 Creating database tables...
+2025-11-16 09:51:09,233 - database.db - INFO - ✅ Database tables created successfully
+2025-11-16 09:51:09,233 - database.db - INFO - 📊 Created 17 tables: candidates, interviewers, interviews, transcripts, evaluations, competency_scores, star_analyses, interviewer_metrics, red_flags, follow_up_suggestions, contradictions, evidence_entries, interview_summaries, candidate_profiles, question_bank, interview_questions, interviewer_feedback_alerts
+2025-11-16 09:51:09,233 - __main__ - INFO - ✅ Database initialized successfully
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-11-16 09:51:10,234 - __main__ - INFO - 📡 New SSE client connected to room: test1
+INFO:     127.0.0.1:61081 - "GET /rooms/test1/stream HTTP/1.1" 200 OK
+2025-11-16 09:51:19,607 - __main__ - INFO - ✅ Updated interview 1 status to COMPLETED
+2025-11-16 09:51:19,611 - __main__ - INFO - 📄 Loaded 26 transcripts from file: transcripts/interview-20251116-094233_20251116_094234/transcripts.json
+2025-11-16 09:51:19,616 - __main__ - INFO - ✅ Processed interview completion for candidate 4
+INFO:     127.0.0.1:61124 - "POST /interviews/1/process-completion HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61130 - "GET /candidates/4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61199 - "GET /candidates HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61199 - "GET /candidates/4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61199 - "GET /candidates HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61394 - "OPTIONS /rooms/create HTTP/1.1" 200 OK
+2025-11-16 09:52:16,361 - __main__ - INFO - Creating room: interview-20251116-095216
+2025-11-16 09:52:16,912 - room_manager - INFO - ✅ Room created: interview-20251116-095216 (sid: RM_J88KgkhqBcq9)
+2025-11-16 09:52:16,912 - __main__ - INFO - ✅ Room created: interview-20251116-095216 (sid: RM_J88KgkhqBcq9)
+2025-11-16 09:52:16,912 - room_manager - INFO - ✅ Token generated for interviewer-1763283136.912779 in room interview-20251116-095216
+2025-11-16 09:52:16,913 - room_manager - INFO - ✅ Token generated for candidate-1763283136.913065 in room interview-20251116-095216
+2025-11-16 09:52:16,913 - room_manager - INFO - ✅ Token generated for agent-1763283136.913224 in room interview-20251116-095216
+2025-11-16 09:52:16,913 - __main__ - INFO - ✅ Tokens generated for room: interview-20251116-095216
+2025-11-16 09:52:16,914 - agent_manager - INFO - ✅ Started agent for room: interview-20251116-095216
+2025-11-16 09:52:16,914 - __main__ - INFO - ✅ Agent auto-started for room: interview-20251116-095216
+INFO:     127.0.0.1:61394 - "POST /rooms/create HTTP/1.1" 200 OK
+2025-11-16 09:52:16,917 - run_audio_agent_with_evaluation - INFO - 💾 Saving session data to: transcripts/interview-20251116-095216_20251116_095216
+2025-11-16 09:52:16,917 - transcript_buffer - INFO - TranscriptBuffer initialized: window=20.0s, overlap=10.0s
+2025-11-16 09:52:16,931 - interview_evaluator - INFO - ✅ InterviewEvaluator initialized with model: claude-sonnet-4-5
+2025-11-16 09:52:16,931 - run_audio_agent_with_evaluation - INFO - 🎙️  Starting audio transcription + evaluation agent for room: interview-20251116-095216
+2025-11-16 09:52:16,932 - run_audio_agent_with_evaluation - INFO - 📡 Connecting to: wss://iterate-hackathon-1qxzyt73.livekit.cloud
+2025-11-16 09:52:16,932 - run_audio_agent_with_evaluation - INFO - 🤖 LLM Evaluation: ENABLED (20s windows with 10s overlap)
+2025-11-16 09:52:16,932 - audio_pipeline.pipeline - INFO - 🚀 Initializing audio pipeline...
+2025-11-16 09:52:16,933 - audio_pipeline.livekit_handler - INFO - 🔌 Connecting to LiveKit room: interview-20251116-095216
+2025-11-16 09:52:16,944 - livekit - INFO - livekit_ffi::server:139:livekit_ffi::server - initializing ffi server v0.12.39
+2025-11-16 09:52:16,945 - livekit - INFO - livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.39
+2025-11-16 09:52:16,970 - livekit - INFO - livekit_api::signal_client::signal_stream:92:livekit_api::signal_client::signal_stream - connecting to wss://iterate-hackathon-1qxzyt73.livekit.cloud/rtc?sdk=python&protocol=16&auto_subscribe=1&adaptive_stream=0&version=1.0.19
+2025-11-16 09:52:17,485 - audio_pipeline.livekit_handler - INFO - ✅ Connected to LiveKit room
+2025-11-16 09:52:17,485 - audio_pipeline.pipeline - INFO - ⏳ Waiting for participants...
+2025-11-16 09:52:18,061 - audio_pipeline.livekit_handler - INFO - ✅ Participant connected: interviewer-1763283136.912779
+2025-11-16 09:52:18,061 - audio_pipeline.livekit_handler - INFO - ✅ Registered participant interviewer-1763283136.912779 as recruiter
+2025-11-16 09:52:19,792 - audio_pipeline.livekit_handler - INFO - 📢 Track published: TR_AMZJ5vt2xdVe2i by interviewer-1763283136.912779
+2025-11-16 09:52:19,852 - __main__ - INFO - ✅ Linked interview 1 to candidate 4
+2025-11-16 09:52:19,857 - audio_pipeline.livekit_handler - INFO - 🎧 Track subscribed: TR_AMZJ5vt2xdVe2i by interviewer-1763283136.912779
+2025-11-16 09:52:19,857 - audio_pipeline.livekit_handler - INFO - 🎤 Audio track registered for interviewer-1763283136.912779 (recruiter)
+2025-11-16 09:52:19,857 - audio_pipeline.livekit_handler - INFO - 📢 Track published: TR_VCwUaJjLpiwmRk by interviewer-1763283136.912779
+2025-11-16 09:52:19,858 - __main__ - INFO - 📡 New SSE client connected to room: interview-20251116-095216
+2025-11-16 09:52:19,858 - __main__ - INFO - 📡 SSE client disconnected from room: test1
+
+================================================================================
+🎙️  REAL-TIME AUDIO TRANSCRIPTION + LLM EVALUATION
+================================================================================
+
+INFO:     127.0.0.1:61423 - "GET /rooms/interview-20251116-095216/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61394 - "POST /interviews/1/link-candidate/4 HTTP/1.1" 200 OK
+2025-11-16 09:52:20,011 - audio_pipeline.livekit_handler - INFO - 🎧 Track subscribed: TR_VCwUaJjLpiwmRk by interviewer-1763283136.912779
+2025-11-16 09:52:52,702 - audio_pipeline.livekit_handler - INFO - ✅ Participant connected: candidate-1763283168631
+2025-11-16 09:52:52,703 - audio_pipeline.livekit_handler - INFO - ✅ Registered participant candidate-1763283168631 as candidate
+2025-11-16 09:52:53,108 - audio_pipeline.pipeline - INFO - ✅ Found 2 participants
+2025-11-16 09:52:53,108 - audio_pipeline.pipeline - INFO - ⏳ Waiting 5s for audio tracks to stabilize...
+2025-11-16 09:52:54,626 - audio_pipeline.livekit_handler - INFO - 📢 Track published: TR_AM4Sji8h5ooxLh by candidate-1763283168631
+2025-11-16 09:52:54,667 - audio_pipeline.livekit_handler - INFO - 🎧 Track subscribed: TR_AM4Sji8h5ooxLh by candidate-1763283168631
+2025-11-16 09:52:54,667 - audio_pipeline.livekit_handler - INFO - 🎤 Audio track registered for candidate-1763283168631 (candidate)
+2025-11-16 09:52:54,691 - audio_pipeline.livekit_handler - INFO - 📢 Track published: TR_VCH8Jq5jMKphhv by candidate-1763283168631
+2025-11-16 09:52:54,854 - audio_pipeline.livekit_handler - INFO - 🎧 Track subscribed: TR_VCH8Jq5jMKphhv by candidate-1763283168631
+2025-11-16 09:52:58,111 - audio_pipeline.pipeline - INFO - 🔍 Validating audio tracks for participants...
+2025-11-16 09:52:58,112 - audio_pipeline.pipeline - INFO - ✅ Participant interviewer-1763283136.912779 (recruiter) has audio track ready
+2025-11-16 09:52:58,112 - audio_pipeline.pipeline - INFO - ✅ Participant candidate-1763283168631 (candidate) has audio track ready
+2025-11-16 09:52:58,112 - audio_pipeline.elevenlabs_stt - INFO - [recruiter] Connecting to ElevenLabs STT WebSocket...
+2025-11-16 09:52:58,352 - audio_pipeline.elevenlabs_stt - INFO - [recruiter] ✅ Connected to ElevenLabs STT
+2025-11-16 09:52:58,352 - audio_pipeline.pipeline - INFO - [recruiter] ✅ Stream manager started
+2025-11-16 09:52:58,352 - audio_pipeline.elevenlabs_stt - INFO - [candidate] Connecting to ElevenLabs STT WebSocket...
+2025-11-16 09:52:58,598 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ Connected to ElevenLabs STT
+2025-11-16 09:52:58,600 - audio_pipeline.pipeline - INFO - [candidate] ✅ Stream manager started
+2025-11-16 09:52:58,600 - audio_pipeline.pipeline - INFO - ✅ Initialized 2 stream managers (skipped agents)
+2025-11-16 09:52:58,601 - audio_pipeline.elevenlabs_stt - INFO - [recruiter] Starting to receive transcripts...
+2025-11-16 09:52:58,602 - audio_pipeline.elevenlabs_stt - INFO - [recruiter] ✅ Session started: bf8baa37956f41dcac9f36883839f361
+2025-11-16 09:52:58,602 - audio_pipeline.elevenlabs_stt - INFO - [candidate] Starting to receive transcripts...
+2025-11-16 09:52:58,602 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ Session started: 6d0717fa4b084939b4c0b4138ce06862
+2025-11-16 09:52:58,602 - audio_pipeline.livekit_handler - INFO - 🎵 Starting audio stream for interviewer-1763283136.912779
+2025-11-16 09:52:58,604 - audio_pipeline.livekit_handler - INFO - 🎵 Starting audio stream for candidate-1763283168631
+2025-11-16 09:52:59,027 - audio_pipeline.livekit_handler - INFO - 🔇 Track unsubscribed: TR_AMZJ5vt2xdVe2i by interviewer-1763283136.912779
+2025-11-16 09:52:59,080 - audio_pipeline.livekit_handler - INFO - 🔇 Track unsubscribed: TR_VCwUaJjLpiwmRk by interviewer-1763283136.912779
+2025-11-16 09:52:59,081 - audio_pipeline.livekit_handler - INFO - 🚪 Participant disconnected: interviewer-1763283136.912779
+2025-11-16 09:53:00,837 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ [FINAL] I have a question, Sam
+👤 [CANDIDATE] ✓ I have a question, Sam
+👤 [CANDIDATE] ~ Wait, I have a question.INFO:     127.0.0.1:61599 - "OPTIONS /tokens/generate HTTP/1.1" 200 OK
+2025-11-16 09:53:01,796 - __main__ - INFO - Generating token for interviewer-1763283181778 in room interview-20251116-095216
+2025-11-16 09:53:01,796 - room_manager - INFO - ✅ Token generated for interviewer-1763283181778 in room interview-20251116-095216
+2025-11-16 09:53:01,797 - __main__ - INFO - ✅ Token generated for interviewer-1763283181778
+INFO:     127.0.0.1:61599 - "POST /tokens/generate HTTP/1.1" 200 OK
+2025-11-16 09:53:01,899 - audio_pipeline.livekit_handler - INFO - ✅ Participant connected: interviewer-1763283181778
+2025-11-16 09:53:01,899 - audio_pipeline.livekit_handler - INFO - ✅ Registered participant interviewer-1763283181778 as recruiter
+2025-11-16 09:53:04,294 - audio_pipeline.livekit_handler - INFO - 📢 Track published: TR_AMfVTyy4UHrq7R by interviewer-1763283181778
+2025-11-16 09:53:04,311 - audio_pipeline.livekit_handler - INFO - 🎧 Track subscribed: TR_AMfVTyy4UHrq7R by interviewer-1763283181778
+2025-11-16 09:53:04,378 - audio_pipeline.livekit_handler - INFO - 🎤 Audio track registered for interviewer-1763283181778 (recruiter)
+2025-11-16 09:53:04,407 - audio_pipeline.livekit_handler - INFO - 📢 Track published: TR_VCHm5iSfXf9xZt by interviewer-1763283181778
+2025-11-16 09:53:04,584 - audio_pipeline.livekit_handler - INFO - 🎧 Track subscribed: TR_VCHm5iSfXf9xZt by interviewer-1763283181778
+2025-11-16 09:53:15,896 - audio_pipeline.elevenlabs_stt - INFO - [recruiter] ✅ [FINAL] okay okay
+2025-11-16 09:53:15,905 - transcript_buffer - INFO - Created window: 2 transcripts, 15.1s, 1 turns, trigger=speaker_turn
+2025-11-16 09:53:15,906 - run_audio_agent_with_evaluation - INFO - 📦 Window ready for evaluation (2 transcripts)
+2025-11-16 09:53:15,906 - run_audio_agent_with_evaluation - INFO - 🤖 Starting LLM evaluation for window...
+2025-11-16 09:53:15,906 - interview_evaluator - INFO - 🤖 Evaluating window: 2 transcripts, 15.1s duration
+2025-11-16 09:53:20,378 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 09:53:20,418 - interview_evaluator - INFO - ✅ Evaluation complete: relevance=off_topic, difficulty=unknown, tone=neutral
+2025-11-16 09:53:20,809 - audio_pipeline.elevenlabs_stt - INFO - [recruiter] ✅ [FINAL] okay perfect uh could you please talk to me about uh cross uh cross
+2025-11-16 09:53:21,905 - audio_pipeline.elevenlabs_stt - INFO - [recruiter] ✅ [FINAL] cross validation please cross validation please
+2025-11-16 09:53:25,836 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ [FINAL] Yeah, cause validation is a mean to avoid the over to avoid the over.
+2025-11-16 09:53:25,842 - transcript_buffer - INFO - Created window: 4 transcripts, 9.9s, 1 turns, trigger=speaker_turn
+2025-11-16 09:53:25,842 - run_audio_agent_with_evaluation - INFO - 📦 Window ready for evaluation (4 transcripts)
+2025-11-16 09:53:25,843 - run_audio_agent_with_evaluation - INFO - 🤖 Starting LLM evaluation for window...
+2025-11-16 09:53:25,843 - interview_evaluator - INFO - 🤖 Evaluating window: 4 transcripts, 9.9s duration
+2025-11-16 09:53:30,399 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 09:53:30,403 - interview_evaluator - INFO - ✅ Evaluation complete: relevance=on_topic, difficulty=easy, tone=neutral
+2025-11-16 09:53:30,749 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ [FINAL] The question is the k-fold cross-validation. The cross-validation.
+2025-11-16 09:53:31,772 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ [FINAL] It's when you divide your divide your
+2025-11-16 09:53:34,767 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ [FINAL] transit with key parts key parts.
+2025-11-16 09:53:37,795 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ [FINAL] And you use a k-1 part to train and to train and
+2025-11-16 09:53:37,800 - transcript_buffer - INFO - Created window: 8 transcripts, 21.9s, 1 turns, trigger=time_limit
+2025-11-16 09:53:37,801 - run_audio_agent_with_evaluation - INFO - 📦 Window ready for evaluation (8 transcripts)
+2025-11-16 09:53:37,801 - run_audio_agent_with_evaluation - INFO - 🤖 Starting LLM evaluation for window...
+2025-11-16 09:53:37,809 - interview_evaluator - INFO - 🤖 Evaluating window: 8 transcripts, 21.9s duration
+2025-11-16 09:53:42,653 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 09:53:42,659 - interview_evaluator - INFO - ✅ Evaluation complete: relevance=on_topic, difficulty=easy, tone=neutral
+2025-11-16 09:53:42,892 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ [FINAL] the last part the last part.
+2025-11-16 09:53:44,787 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ [FINAL] To validate. It is useful if you if you're
+2025-11-16 09:53:46,752 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ [FINAL] looking for a good hyperpower
+2025-11-16 09:53:49,764 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ [FINAL] for example and you want to avoid over
+2025-11-16 09:53:54,852 - audio_pipeline.elevenlabs_stt - INFO - [recruiter] ✅ [FINAL] evaluate different methods um
+2025-11-16 09:53:54,861 - transcript_buffer - INFO - Created window: 9 transcripts, 24.1s, 1 turns, trigger=time_limit
+2025-11-16 09:53:54,862 - run_audio_agent_with_evaluation - INFO - 📦 Window ready for evaluation (9 transcripts)
+2025-11-16 09:53:54,862 - run_audio_agent_with_evaluation - INFO - 🤖 Starting LLM evaluation for window...
+2025-11-16 09:53:54,862 - interview_evaluator - INFO - 🤖 Evaluating window: 9 transcripts, 24.1s duration
+2025-11-16 09:54:00,000 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 09:54:00,026 - interview_evaluator - INFO - ✅ Evaluation complete: relevance=on_topic, difficulty=easy, tone=neutral
+2025-11-16 09:54:00,236 - audio_pipeline.elevenlabs_stt - INFO - [recruiter] ✅ [FINAL] for feature selection.
+2025-11-16 09:54:01,770 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ [FINAL] Okay, the most basic method is a
+2025-11-16 09:54:01,773 - transcript_buffer - INFO - Created window: 5 transcripts, 15.0s, 2 turns, trigger=speaker_turn
+2025-11-16 09:54:01,773 - run_audio_agent_with_evaluation - INFO - 📦 Window ready for evaluation (5 transcripts)
+2025-11-16 09:54:01,773 - run_audio_agent_with_evaluation - INFO - 🤖 Starting LLM evaluation for window...
+2025-11-16 09:54:01,773 - interview_evaluator - INFO - 🤖 Evaluating window: 5 transcripts, 15.0s duration
+2025-11-16 09:54:07,674 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 09:54:07,679 - interview_evaluator - INFO - ✅ Evaluation complete: relevance=on_topic, difficulty=medium, tone=neutral
+👤 [CANDIDATE] ~ I just👤 [CANDIDATE] ~ okay okay👤 [CANDIDATE] ~ okay okay👤 [CANDIDATE] ~ I'm going to👤 [CANDIDATE] ~ okay👔 [RECRUITER] ~ okay👤 [CANDIDATE] ~ let's let's👔 [RECRUITER] ~ okay👤 [CANDIDATE] ~ what👔 [RECRUITER] ~ okay all right👤 [CANDIDATE] ~ what? oh, i just have a coffee👔 [RECRUITER] ~ okay all right that's about perfect👔 [RECRUITER] ~ It's your bossy. She went on.👤 [CANDIDATE] ~ what's👔 [RECRUITER] ~ What's👔 [RECRUITER] ✓ okay okay
+
+────────────────────────────────────────────────────────────────────────────────
+🤖 EVALUATION [09:53:20]
+────────────────────────────────────────────────────────────────────────────────
+📊 Subject: OFF_TOPIC (conf: 0.95)
+🎯 Difficulty: UNKNOWN (conf: 0.95)
+💬 Tone: NEUTRAL (conf: 0.70)
+📝 Brief conversational exchange where the candidate indicates they have a question and the recruiter acknowledges. No technical content discussed yet.
+🚩 Flags: No technical content, Conversation transition only, Off-topic/casual discussion detected ([EXTRA])
+────────────────────────────────────────────────────────────────────────────────
+
+👔 [RECRUITER] ~ okay perfect uh could👔 [RECRUITER] ~ okay perfect uh could you please talk to me👔 [RECRUITER] ~ okay perfect uh could you please talk to me about uh👔 [RECRUITER] ✓ okay perfect uh could you please talk to me about uh cross uh cross
+👔 [RECRUITER] ~ okay perfect uh could you please talk to me about uh cross👔 [RECRUITER] ✓ cross validation please cross validation please
+👔 [RECRUITER] ~ cross validation please👤 [CANDIDATE] ~ yeah👔 [RECRUITER] ~ cross validation please👤 [CANDIDATE] ~ Yeah, I mean,👔 [RECRUITER] ~ cross validation please👔 [RECRUITER] ~ cross validation please👤 [CANDIDATE] ~ Yeah, cause validation is a👤 [CANDIDATE] ✓ Yeah, cause validation is a mean to avoid the over to avoid the over.
+
+────────────────────────────────────────────────────────────────────────────────
+🤖 EVALUATION [09:53:30]
+────────────────────────────────────────────────────────────────────────────────
+📊 Subject: ON_TOPIC (conf: 0.95)
+🎯 Difficulty: EASY (conf: 0.90)
+💬 Tone: NEUTRAL (conf: 0.70)
+📝 The recruiter asked the candidate to explain cross-validation, and the candidate began responding by mentioning it as a means to avoid overfitting, though the response was cut off mid-sentence.
+🔑 Topics: CV_TECHNIQUES, REGULARIZATION
+🚩 Flags: Incomplete candidate response - answer was cut off, Candidate mentioned overfitting which relates to regularization concepts
+────────────────────────────────────────────────────────────────────────────────
+
+👤 [CANDIDATE] ~ Yeah, cause validation is a mean to avoid the over.👤 [CANDIDATE] ~ One type of cross validation👔 [RECRUITER] ~ oh👤 [CANDIDATE] ~ The question is the key for👤 [CANDIDATE] ~ The question is the k-fold cross-validation.👤 [CANDIDATE] ✓ The question is the k-fold cross-validation. The cross-validation.
+👤 [CANDIDATE] ~ It's when you.👤 [CANDIDATE] ✓ It's when you divide your divide your
+👤 [CANDIDATE] ~ It's when you divide your👤 [CANDIDATE] ~ transit.👤 [CANDIDATE] ~ transit with a👤 [CANDIDATE] ~ transit with key parts.👤 [CANDIDATE] ✓ transit with key parts key parts.
+👤 [CANDIDATE] ~ And you use a key👤 [CANDIDATE] ~ And you use a k-1 part.👤 [CANDIDATE] ~ And you use a k-1 part to train and👤 [CANDIDATE] ✓ And you use a k-1 part to train and to train and
+
+────────────────────────────────────────────────────────────────────────────────
+🤖 EVALUATION [09:53:42]
+────────────────────────────────────────────────────────────────────────────────
+📊 Subject: ON_TOPIC (conf: 0.95)
+🎯 Difficulty: EASY (conf: 0.90)
+💬 Tone: NEUTRAL (conf: 0.70)
+📝 The recruiter asked the candidate to explain cross-validation. The candidate began describing k-fold cross-validation, mentioning dividing the training set into k parts and using k-1 parts for training, but the response was incomplete and somewhat fragmented.
+🔑 Topics: CV_TECHNIQUES
+🚩 Flags: Incomplete answer, Candidate response fragmented and cut off, Answer lacks clarity and completeness
+────────────────────────────────────────────────────────────────────────────────
+
+👤 [CANDIDATE] ✓ the last part the last part.
+👤 [CANDIDATE] ~ the last part,👤 [CANDIDATE] ~ To to validate.👤 [CANDIDATE] ~ To validate it👤 [CANDIDATE] ~ To validate. It is useful if👤 [CANDIDATE] ✓ To validate. It is useful if you if you're
+👤 [CANDIDATE] ~ To validate. It is useful if you if you're👤 [CANDIDATE] ~ looking for a good👤 [CANDIDATE] ✓ looking for a good hyperpower
+👤 [CANDIDATE] ~ looking for a good hyperpar👤 [CANDIDATE] ~ for example👤 [CANDIDATE] ~ for example and you want to avoid over👤 [CANDIDATE] ✓ for example and you want to avoid over
+👔 [RECRUITER] ~ evaluate this👔 [RECRUITER] ~ evaluate different methods uh👔 [RECRUITER] ✓ evaluate different methods um
+
+────────────────────────────────────────────────────────────────────────────────
+🤖 EVALUATION [09:54:00]
+────────────────────────────────────────────────────────────────────────────────
+📊 Subject: ON_TOPIC (conf: 0.95)
+🎯 Difficulty: EASY (conf: 0.90)
+💬 Tone: NEUTRAL (conf: 0.70)
+📝 Candidate explains k-fold cross-validation fundamentals, mentioning dividing data into k parts, using k-1 for training and 1 for validation, and briefly touching on hyperparameter tuning and overfitting prevention.
+🔑 Topics: CV_TECHNIQUES, REGULARIZATION
+🚩 Flags: Candidate's explanation incomplete/fragmented, Candidate mentions 'the last part' suggesting misunderstanding of k-fold rotation, Overfitting mention cut off mid-sentence
+────────────────────────────────────────────────────────────────────────────────
+
+👔 [RECRUITER] ~ Evaluate different methods of👔 [RECRUITER] ~ for feature selection👔 [RECRUITER] ~ for feature selection.👔 [RECRUITER] ✓ for feature selection.
+👤 [CANDIDATE] ~ Okay, the most👤 [CANDIDATE] ~ Okay, the most basic method👤 [CANDIDATE] ✓ Okay, the most basic method is a
+2025-11-16 09:54:07,929 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ [FINAL] I think the just to look just to look
+2025-11-16 09:54:10,771 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ [FINAL] at the correlation matrix and to delete some features
+2025-11-16 09:54:13,764 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ [FINAL] that are very correlated, another mean is to
+2025-11-16 09:54:16,765 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ [FINAL] do a PCA, it's a principal component
+2025-11-16 09:54:16,775 - transcript_buffer - INFO - Created window: 7 transcripts, 21.9s, 1 turns, trigger=time_limit
+2025-11-16 09:54:16,775 - run_audio_agent_with_evaluation - INFO - 📦 Window ready for evaluation (7 transcripts)
+2025-11-16 09:54:16,776 - run_audio_agent_with_evaluation - INFO - 🤖 Starting LLM evaluation for window...
+2025-11-16 09:54:16,776 - interview_evaluator - INFO - 🤖 Evaluating window: 7 transcripts, 21.9s duration
+2025-11-16 09:54:20,983 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 09:54:20,989 - interview_evaluator - INFO - ✅ Evaluation complete: relevance=on_topic, difficulty=easy, tone=neutral
+2025-11-16 09:54:21,340 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ [FINAL] analysis. It's a mean to
+2025-11-16 09:54:22,764 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ [FINAL] reduce the dimension of your features in
+2025-11-16 09:54:25,754 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ [FINAL] your model. And it is a
+2025-11-16 09:54:28,756 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ [FINAL] quite useful and used in most of
+2025-11-16 09:54:28,761 - transcript_buffer - INFO - Created window: 8 transcripts, 20.8s, 0 turns, trigger=time_limit
+2025-11-16 09:54:28,761 - run_audio_agent_with_evaluation - INFO - 📦 Window ready for evaluation (8 transcripts)
+2025-11-16 09:54:28,762 - run_audio_agent_with_evaluation - INFO - 🤖 Starting LLM evaluation for window...
+2025-11-16 09:54:28,762 - interview_evaluator - INFO - 🤖 Evaluating window: 8 transcripts, 20.8s duration
+2025-11-16 09:54:33,218 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 09:54:33,221 - interview_evaluator - INFO - ✅ Evaluation complete: relevance=on_topic, difficulty=medium, tone=unknown
+2025-11-16 09:54:33,438 - audio_pipeline.elevenlabs_stt - INFO - [candidate] ✅ [FINAL] the cases.
+2025-11-16 09:54:34,905 - audio_pipeline.elevenlabs_stt - INFO - [recruiter] ✅ [FINAL] Okay, perfect. Thank you so much for your time today. And we'll get back to you soon. We'll get back to you soon.
+2025-11-16 09:54:34,915 - transcript_buffer - INFO - Created window: 6 transcripts, 13.6s, 1 turns, trigger=speaker_turn
+2025-11-16 09:54:34,915 - run_audio_agent_with_evaluation - INFO - 📦 Window ready for evaluation (6 transcripts)
+2025-11-16 09:54:34,915 - run_audio_agent_with_evaluation - INFO - 🤖 Starting LLM evaluation for window...
+2025-11-16 09:54:34,915 - interview_evaluator - INFO - 🤖 Evaluating window: 6 transcripts, 13.6s duration
+2025-11-16 09:54:39,615 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 09:54:39,618 - interview_evaluator - INFO - ✅ Evaluation complete: relevance=partially_relevant, difficulty=easy, tone=encouraging
+2025-11-16 09:54:39,624 - audio_pipeline.livekit_handler - INFO - 🔇 Track unsubscribed: TR_VCH8Jq5jMKphhv by candidate-1763283168631
+2025-11-16 09:54:39,625 - audio_pipeline.livekit_handler - INFO - 🔇 Track unsubscribed: TR_AM4Sji8h5ooxLh by candidate-1763283168631
+2025-11-16 09:54:39,625 - audio_pipeline.livekit_handler - INFO - 🚪 Participant disconnected: candidate-1763283168631
+2025-11-16 09:54:39,628 - audio_pipeline.livekit_handler - INFO - 🔇 Track unsubscribed: TR_AMfVTyy4UHrq7R by interviewer-1763283181778
+2025-11-16 09:54:39,628 - audio_pipeline.livekit_handler - INFO - 🔇 Track unsubscribed: TR_VCHm5iSfXf9xZt by interviewer-1763283181778
+2025-11-16 09:54:39,628 - audio_pipeline.livekit_handler - INFO - 🚪 Participant disconnected: interviewer-1763283181778
+2025-11-16 09:54:39,855 - audio_pipeline.elevenlabs_stt - INFO - [recruiter] ✅ [FINAL] Don't work in Google. Don't work in Google.
+2025-11-16 09:54:43,377 - __main__ - INFO - ✅ Updated interview 1 status to COMPLETED
+2025-11-16 09:54:43,380 - __main__ - INFO - 📄 Loaded 26 transcripts from file: transcripts/interview-20251116-094233_20251116_094234/transcripts.json
+2025-11-16 09:54:43,384 - __main__ - INFO - ✅ Processed interview completion for candidate 4
+
+────────────────────────────────────────────────────────────────────────────────
+🤖 EVALUATION [09:54:07]
+────────────────────────────────────────────────────────────────────────────────
+📊 Subject: ON_TOPIC (conf: 0.85)
+🎯 Difficulty: MEDIUM (conf: 0.75)
+💬 Tone: NEUTRAL (conf: 0.70)
+📝 The recruiter asked the candidate to evaluate different methods for feature selection. The candidate began discussing hyperparameter tuning and overfitting avoidance, then started explaining a basic feature selection method.
+🔑 Topics: REGULARIZATION, FEATURE_SELECTION
+🚩 Flags: Incomplete conversation - candidate response cut off, Candidate appears to mention 'hyperpower' (likely hyperparameter) and overfitting, suggesting discussion of regularization techniques
+────────────────────────────────────────────────────────────────────────────────
+
+👤 [CANDIDATE] ~ Okay, the most basic method is a👤 [CANDIDATE] ✓ I think the just to look just to look
+👤 [CANDIDATE] ~ I think the👤 [CANDIDATE] ~ I think the just to look👤 [CANDIDATE] ~ at the at the corollary👤 [CANDIDATE] ~ at the correlation matrix and the👤 [CANDIDATE] ~ at the correlation matrix and to.👤 [CANDIDATE] ~ at the correlation matrix and to to👤 [CANDIDATE] ~ at the correlation matrix and to delete.👤 [CANDIDATE] ~ at the correlation matrix and to delete some.👤 [CANDIDATE] ✓ at the correlation matrix and to delete some features
+👤 [CANDIDATE] ~ at the correlation matrix and to delete some features👤 [CANDIDATE] ~ that are very close👤 [CANDIDATE] ~ that are very correlated on👤 [CANDIDATE] ✓ that are very correlated, another mean is to
+👤 [CANDIDATE] ~ that are very correlated, another mean is to👤 [CANDIDATE] ~ do a PCA👤 [CANDIDATE] ~ do a PCA, it's a pretty👤 [CANDIDATE] ✓ do a PCA, it's a principal component
+
+────────────────────────────────────────────────────────────────────────────────
+🤖 EVALUATION [09:54:20]
+────────────────────────────────────────────────────────────────────────────────
+📊 Subject: ON_TOPIC (conf: 0.95)
+🎯 Difficulty: EASY (conf: 0.90)
+💬 Tone: NEUTRAL (conf: 0.70)
+📝 The recruiter asks about feature selection methods, and the candidate begins explaining basic approaches including correlation matrix analysis and PCA (Principal Component Analysis).
+🔑 Topics: FEATURE_SELECTION
+🚩 Flags: Candidate response incomplete/cut off, Only basic feature selection methods mentioned so far
+────────────────────────────────────────────────────────────────────────────────
+
+👤 [CANDIDATE] ~ do a PCA, it's a principal component👔 [RECRUITER] ~ Thank you.👤 [CANDIDATE] ✓ analysis. It's a mean to
+👤 [CANDIDATE] ~ analysis.👤 [CANDIDATE] ~ analysis. It's a mean to👤 [CANDIDATE] ~ reduce the dimension of your👤 [CANDIDATE] ~ reduce the dimension of your uh👤 [CANDIDATE] ~ reduce the dimension of your future👤 [CANDIDATE] ~ reduce the dimension of your features in👤 [CANDIDATE] ✓ reduce the dimension of your features in
+👤 [CANDIDATE] ~ your image.👤 [CANDIDATE] ~ your image. And it👤 [CANDIDATE] ✓ your model. And it is a
+👤 [CANDIDATE] ~ your model. And it is a👤 [CANDIDATE] ~ quite useful.👤 [CANDIDATE] ~ quite useful and you👤 [CANDIDATE] ✓ quite useful and used in most of
+
+────────────────────────────────────────────────────────────────────────────────
+🤖 EVALUATION [09:54:33]
+────────────────────────────────────────────────────────────────────────────────
+📊 Subject: ON_TOPIC (conf: 0.95)
+🎯 Difficulty: MEDIUM (conf: 0.65)
+💬 Tone: UNKNOWN (conf: 0.00)
+📝 Candidate discusses feature selection methods including examining correlation matrices to remove highly correlated features and using Principal Component Analysis (PCA) for dimensionality reduction.
+🔑 Topics: FEATURE_SELECTION
+🚩 Flags: Only candidate response visible - no interviewer question context, Incomplete sentence at end suggests excerpt is cut off
+────────────────────────────────────────────────────────────────────────────────
+
+👤 [CANDIDATE] ~ quite useful and used in most of👤 [CANDIDATE] ~ the cases.👔 [RECRUITER] ~ Okay,👤 [CANDIDATE] ~ the cases.👤 [CANDIDATE] ✓ the cases.
+👔 [RECRUITER] ~ okay perfect thank you so much for it👔 [RECRUITER] ~ Okay, perfect. Thank you so much for your time today. Uh,👔 [RECRUITER] ~ Okay, perfect. Thank you so much for your time today. And, uh,👔 [RECRUITER] ~ Okay, perfect. Thank you so much for your time today. And we'll get back to you.👔 [RECRUITER] ✓ Okay, perfect. Thank you so much for your time today. And we'll get back to you soon. We'll get back to you soon.
+
+────────────────────────────────────────────────────────────────────────────────
+🤖 EVALUATION [09:54:39]
+────────────────────────────────────────────────────────────────────────────────
+📊 Subject: PARTIALLY_RELEVANT (conf: 0.75)
+🎯 Difficulty: EASY (conf: 0.65)
+💬 Tone: ENCOURAGING (conf: 0.85)
+📝 The candidate was explaining dimensionality reduction and PCA as a feature engineering technique. The interviewer politely concluded the interview and indicated they would follow up.
+🔑 Topics: FEATURE_SELECTION
+🚩 Flags: Incomplete response captured - only tail end of answer visible, Interview appears to be ending, limited context for full assessment, Off-topic/casual discussion detected ([EXTRA])
+────────────────────────────────────────────────────────────────────────────────
+
+👔 [RECRUITER] ✓ Don't work in Google. Don't work in Google.
+👔 [RECRUITER] ~ No, we can do it.INFO:     127.0.0.1:62038 - "POST /interviews/1/process-completion HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62038 - "GET /candidates HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62038 - "GET /candidates/4 HTTP/1.1" 200 OK
+2025-11-16 09:54:56,000 - audio_pipeline.elevenlabs_stt - INFO - [candidate] Stopped receiving transcripts
+2025-11-16 09:54:56,001 - audio_pipeline.elevenlabs_stt - INFO - [recruiter] Stopped receiving transcripts
+2025-11-16 09:54:56,003 - audio_pipeline.pipeline - INFO - [candidate] 🏁 Stream ended
+2025-11-16 09:54:56,003 - audio_pipeline.pipeline - INFO - [recruiter] 🏁 Stream ended
+2025-11-16 09:54:56,014 - audio_pipeline.pipeline - INFO - 🧹 Transcription ended, cleaning up...
+2025-11-16 09:54:56,014 - audio_pipeline.pipeline - INFO - [recruiter] 🛑 Audio streaming stopped
+2025-11-16 09:54:56,015 - audio_pipeline.pipeline - INFO - [candidate] 🛑 Audio streaming stopped
+2025-11-16 09:54:56,015 - audio_pipeline.pipeline - INFO - 🧹 Cleaning up audio pipeline...
+2025-11-16 09:54:56,015 - audio_pipeline.pipeline - INFO - [recruiter] 🛑 Stream manager stopped
+2025-11-16 09:54:56,015 - audio_pipeline.pipeline - INFO - [candidate] 🛑 Stream manager stopped
+2025-11-16 09:54:56,046 - audio_pipeline.livekit_handler - INFO - 🔌 Disconnected from LiveKit room
+2025-11-16 09:54:56,046 - audio_pipeline.pipeline - INFO - ✅ Audio pipeline cleanup complete
+2025-11-16 09:54:56,046 - run_audio_agent_with_evaluation - INFO - 🛑 Stopping pipeline...
+2025-11-16 09:54:56,046 - transcript_buffer - INFO - Flushing buffer
+2025-11-16 09:54:56,046 - transcript_buffer - INFO - Created window: 5 transcripts, 14.1s, 1 turns, trigger=flush
+2025-11-16 09:54:56,046 - run_audio_agent_with_evaluation - INFO - 📦 Evaluating final window...
+2025-11-16 09:54:56,046 - run_audio_agent_with_evaluation - INFO - 🤖 Starting LLM evaluation for window...
+2025-11-16 09:54:56,046 - interview_evaluator - INFO - 🤖 Evaluating window: 5 transcripts, 14.1s duration
+2025-11-16 09:55:01,687 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 09:55:01,691 - interview_evaluator - INFO - ✅ Evaluation complete: relevance=off_topic, difficulty=unknown, tone=neutral
+2025-11-16 09:55:01,695 - audio_pipeline.pipeline - INFO - 🧹 Cleaning up audio pipeline...
+2025-11-16 09:55:01,695 - audio_pipeline.pipeline - INFO - [recruiter] 🛑 Stream manager stopped
+2025-11-16 09:55:01,695 - audio_pipeline.pipeline - INFO - [candidate] 🛑 Stream manager stopped
+2025-11-16 09:55:01,695 - audio_pipeline.pipeline - INFO - ✅ Audio pipeline cleanup complete
+2025-11-16 09:55:01,695 - run_audio_agent_with_evaluation - INFO - ✅ Pipeline stopped
+2025-11-16 09:55:01,695 - run_audio_agent_with_evaluation - INFO - 📊 Session summary:
+2025-11-16 09:55:01,695 - run_audio_agent_with_evaluation - INFO -    - Total transcripts: 27
+2025-11-16 09:55:01,695 - run_audio_agent_with_evaluation - INFO -    - Total evaluations: 9
+2025-11-16 09:55:01,695 - run_audio_agent_with_evaluation - INFO -    - Speakers: candidate, recruiter
+2025-11-16 09:55:01,695 - run_audio_agent_with_evaluation - INFO -    - Saved to: transcripts/interview-20251116-095216_20251116_095216
+
+────────────────────────────────────────────────────────────────────────────────
+🤖 EVALUATION [09:55:01]
+────────────────────────────────────────────────────────────────────────────────
+📊 Subject: OFF_TOPIC (conf: 0.95)
+🎯 Difficulty: UNKNOWN (conf: 0.90)
+💬 Tone: NEUTRAL (conf: 0.70)
+📝 This excerpt captures only the closing moments of an interview where the recruiter thanks the candidate and ends the conversation. The candidate's incomplete statement appears to reference a model but context is missing.
+🚩 Flags: Incomplete conversation excerpt - missing context, Only closing pleasantries captured, Candidate statement truncated/incomplete, Cryptic closing remark from recruiter about Google, Off-topic/casual discussion detected ([EXTRA])
+────────────────────────────────────────────────────────────────────────────────
+
+INFO:     127.0.0.1:62171 - "OPTIONS /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62173 - "GET /knowledge/stats HTTP/1.1" 200 OK
+2025-11-16 09:55:26,488 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 09:55:26,500 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 09:55:26,500 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 09:55:47,805 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 09:55:47,808 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+INFO:     127.0.0.1:62171 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62175 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62173 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62177 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62179 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62173 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62171 - "GET /candidates HTTP/1.1" 200 OK
+2025-11-16 09:55:48,869 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+INFO:     127.0.0.1:62171 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+2025-11-16 09:55:48,881 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 09:55:48,881 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 09:56:10,431 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 09:56:10,435 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+INFO:     127.0.0.1:62171 - "GET /knowledge/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62173 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62179 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62177 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62175 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62171 - "GET /candidates HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62179 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62677 - "GET /candidates HTTP/1.1" 200 OK
+2025-11-16 09:59:42,732 - __main__ - INFO - 📡 SSE client disconnected from room: interview-20251116-095216
+2025-11-16 09:59:42,734 - __main__ - INFO - 📡 New SSE client connected to room: interview-20251116-095216
+INFO:     127.0.0.1:62677 - "GET /rooms/interview-20251116-095216/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62692 - "GET /candidates HTTP/1.1" 200 OK
+2025-11-16 09:59:50,692 - __main__ - INFO - 📡 SSE client disconnected from room: interview-20251116-095216
+2025-11-16 09:59:50,693 - __main__ - INFO - 📡 New SSE client connected to room: interview-20251116-095216
+INFO:     127.0.0.1:62692 - "GET /rooms/interview-20251116-095216/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62722 - "GET /candidates HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62746 - "GET /candidates HTTP/1.1" 200 OK
+2025-11-16 10:00:30,206 - __main__ - INFO - 📡 SSE client disconnected from room: interview-20251116-095216
+2025-11-16 10:00:30,209 - __main__ - INFO - 📡 New SSE client connected to room: interview-20251116-095216
+INFO:     127.0.0.1:62793 - "GET /rooms/interview-20251116-095216/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62820 - "GET /candidates HTTP/1.1" 200 OK

@@ -1,0 +1,248 @@
+
+================================================================================
+[09:43:40] EVALUATION
+================================================================================
+Window: 09:43:28 - 09:43:35
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.90)
+
+📝 Summary: This is the opening greeting and audio check portion of the interview where the recruiter and candidate are establishing connection and confirming they can hear each other.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Interview just beginning
+   - No technical content yet
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:43:45] EVALUATION
+================================================================================
+Window: 09:43:28 - 09:43:40
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.90)
+
+📝 Summary: This excerpt captures the initial audio/connection check at the start of an interview, with both parties confirming they can hear each other. No substantive content was discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content yet
+   - Interview introduction/setup phase
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:43:50] EVALUATION
+================================================================================
+Window: 09:43:32 - 09:43:45
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.90)
+
+📝 Summary: This excerpt captures only the initial audio check and greeting phase of the interview. No technical content or quant finance topics were discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content - interview setup only
+   - Audio quality issues mentioned
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:43:54] EVALUATION
+================================================================================
+Window: 09:43:40 - 09:43:50
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: This excerpt captures the initial moments of an interview with audio/connection issues being resolved. No substantive technical or quant finance content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Audio quality issues present
+   - No technical content discussed
+   - Interview just beginning
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:44:00] EVALUATION
+================================================================================
+Window: 09:43:40 - 09:43:55
+Transcripts: 10
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.75)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.65)
+
+📝 Summary: Interview beginning with audio/connection issues and greetings, followed by recruiter asking a basic question about cross-validation. Candidate responses are largely unintelligible due to audio distortion.
+
+🔑 Key Topics: CV_TECHNIQUES
+
+🚩 Flags:
+   - Severe audio quality issues
+   - Candidate responses mostly inaudible/distorted
+   - Incomplete exchange - no substantive answer captured
+   - Technical question asked but not properly answered
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:44:05] EVALUATION
+================================================================================
+Window: 09:43:45 - 09:44:01
+Transcripts: 9
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.70)
+🎯 Question Difficulty: EASY (confidence: 0.80)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.50)
+
+📝 Summary: The recruiter begins the interview and asks about cross-validation, but significant audio distortion disrupts the conversation and the candidate's response is unclear.
+
+🔑 Key Topics: CV_TECHNIQUES
+
+🚩 Flags:
+   - Severe audio quality issues
+   - Candidate response unintelligible due to audio distortion
+   - Conversation fragmented and incomplete
+   - Cannot properly evaluate candidate's technical knowledge
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:44:10] EVALUATION
+================================================================================
+Window: 09:43:54 - 09:44:05
+Transcripts: 4
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.85)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.60)
+
+📝 Summary: The recruiter asks about cross-validation, and the candidate begins explaining that it reduces variance in model training, though the response is fragmented and includes unclear references to 'Rosalind'.
+
+🔑 Key Topics: CV_TECHNIQUES
+
+🚩 Flags:
+   - Fragmented conversation - candidate appears to repeat phrases
+   - Unclear reference to 'Rosalind' - possible technical issue or confusion
+   - Incomplete candidate response - explanation of cross-validation cut off
+   - Audio or transcription quality issues likely present
+
+
+================================================================================
+[09:44:18] EVALUATION
+================================================================================
+Window: 09:44:01 - 09:44:11
+Transcripts: 5
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.60)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: Candidate discusses cross-validation (possibly referencing k-fold or similar technique they call 'Rosalind') explaining how it reduces variance by training models on different datasets. The recruiter prompts for clarification or additional details.
+
+🔑 Key Topics: CV_TECHNIQUES
+
+🚩 Flags:
+   - Unclear terminology - 'Rosalind' not standard CV terminology
+   - Candidate explanation is fragmented and incomplete
+   - Recruiter's question unclear - 'tell me different' lacks specificity
+
+
+================================================================================
+[09:44:26] EVALUATION
+================================================================================
+Window: 09:44:05 - 09:44:21
+Transcripts: 7
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter asks about regularization methods. The candidate discusses cross-validation variance reduction and mentions L1 (Lasso) and L2 (Ridge) regularization techniques, though the explanation is incomplete and somewhat unclear.
+
+🔑 Key Topics: CV_TECHNIQUES, REGULARIZATION
+
+🚩 Flags:
+   - Candidate response is fragmented and unclear
+   - Technical explanation lacks precision (e.g., 'shift the great fish into zero' likely means 'shrink coefficients to zero')
+   - Answer appears incomplete or cut off
+
+
+================================================================================
+[09:44:34] EVALUATION
+================================================================================
+Window: 09:44:11 - 09:44:29
+Transcripts: 6
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: Recruiter asks about regularization techniques, and candidate discusses L1 regression (Lasso) and Ridge regression, mentioning their effects on coefficients though with some unclear articulation.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Candidate communication unclear - possible audio issues or language barrier
+   - Candidate mentions 'day' which is unclear, likely meant 'Lasso'
+   - Response lacks depth - only names methods without explaining use cases or tradeoffs
+
+
+================================================================================
+[09:44:42] EVALUATION
+================================================================================
+Window: 09:44:21 - 09:44:36
+Transcripts: 4
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.90)
+🎯 Question Difficulty: MEDIUM (confidence: 0.75)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: Candidate discusses regularization techniques, specifically mentioning L1 regression (Lasso) and Ridge regression, explaining their properties regarding coefficient shrinkage and exact beta values, though the response is somewhat fragmented.
+
+🔑 Key Topics: REGULARIZATION
+
+🚩 Flags:
+   - Candidate response is fragmented and unclear
+   - Technical explanation incomplete - mentions 'shift the great fish into zero' which appears garbled
+   - Interviewer provides minimal engagement or follow-up
+
+
+================================================================================
+[09:45:04] EVALUATION
+================================================================================
+Window: 09:44:26 - 09:44:42
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.90)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: The conversation appears fragmented and unclear, with the candidate mentioning 'beta' values and both parties making incomplete or unintelligible statements. No substantive quant finance discussion is evident.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Conversation fragmented and unclear
+   - No coherent technical discussion
+   - Possible audio/transcription quality issues
+   - Cannot assess interview quality from this excerpt
+   - Off-topic/casual discussion detected ([EXTRA])
+

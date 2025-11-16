@@ -1,0 +1,596 @@
+
+================================================================================
+[01:07:13] EVALUATION
+================================================================================
+Window: 01:06:32 - 01:07:08
+Transcripts: 2
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The conversation shows only initial audio check and what appears to be an accidental recording or introduction from an unrelated pronunciation guide. No substantive interview content has begun.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No interview content yet
+   - Possible recording error or technical issue
+   - Pronunciation guide audio may be accidental
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:07:34] EVALUATION
+================================================================================
+Window: 01:07:08 - 01:07:29
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: This excerpt captures only the initial technical setup of the interview, with the recruiter checking audio connection and confirming the live transcript is working. No substantive content was discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content yet
+   - Interview setup phase only
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:07:52] EVALUATION
+================================================================================
+Window: 01:07:26 - 01:07:47
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: This excerpt captures the initial setup phase of the interview where the recruiter is testing the live transcript functionality and expressing enthusiasm. No technical quant finance content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content yet
+   - Interview appears to be in setup/introduction phase
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:08:00] EVALUATION
+================================================================================
+Window: 01:07:44 - 01:07:56
+Transcripts: 6
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.60)
+🎯 Question Difficulty: EASY (confidence: 0.70)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.40)
+
+📝 Summary: The recruiter attempts to ask about linear regression but the conversation is fragmented and unclear. The candidate responds that they are not prepared for the question.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Extremely fragmented conversation - possible transcription errors
+   - Candidate claims unpreparedness for basic linear regression question
+   - Poor audio/transcription quality makes assessment difficult
+
+
+================================================================================
+[01:08:11] EVALUATION
+================================================================================
+Window: 01:07:47 - 01:08:05
+Transcripts: 9
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: HARSH (confidence: 0.95)
+
+📝 Summary: Recruiter asks candidate about linear regression. Candidate appears unprepared and only provides a partial, incomplete answer before being cut off. Recruiter responds critically telling candidate they need to be prepared.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Harsh tone detected - recruiter dismissive of candidate's unpreparedness
+   - Candidate very unprepared for basic question
+   - Audio quality or transcription issues apparent (repeated words, fragments)
+   - Incomplete technical discussion - candidate unable to explain linear regression adequately
+
+
+================================================================================
+[01:08:17] EVALUATION
+================================================================================
+Window: 01:07:56 - 01:08:11
+Transcripts: 6
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.00)
+
+📝 Summary: Evaluation failed: Missing required field: interviewer_tone
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - EVALUATION_ERROR: Missing required field: interviewer_tone
+
+
+================================================================================
+[01:08:25] EVALUATION
+================================================================================
+Window: 01:08:02 - 01:08:20
+Transcripts: 6
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.20)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.10)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.40)
+
+📝 Summary: Fragmented conversation with incomplete candidate responses followed by recruiter asking about Transformers. Insufficient context to determine if this refers to the machine learning architecture or another topic.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Extremely fragmented dialogue
+   - Candidate appears unable to complete thoughts
+   - Insufficient content for meaningful evaluation
+   - Unclear if 'Transformers' refers to ML architecture or other concept
+   - Possible audio/transcription quality issues
+
+
+================================================================================
+[01:08:32] EVALUATION
+================================================================================
+Window: 01:08:11 - 01:08:25
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.70)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.60)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.75)
+
+📝 Summary: The candidate appears to be struggling to articulate a response about a hypothesis test, and the recruiter redirects to ask about Transformers (likely the ML architecture). The candidate begins describing Transformers with keys and queries but the excerpt cuts off.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Very brief excerpt with incomplete responses
+   - Candidate appears to be struggling with articulation
+   - Topic unclear - Transformers mentioned but not definitively quant finance related without more context
+   - No clear quant finance themes identified in this short segment
+
+
+================================================================================
+[01:08:41] EVALUATION
+================================================================================
+Window: 01:08:17 - 01:08:35
+Transcripts: 9
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.70)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.60)
+
+📝 Summary: The conversation shows a candidate struggling to explain transformers (a machine learning concept not directly related to quant finance themes tracked) with fragmented speech, expressing self-doubt. The interviewer attempts to redirect or continue but the exchange is incomplete and incoherent.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Candidate expressing severe doubt ('I'm not a good candidate')
+   - Highly fragmented communication from both parties
+   - Incomplete responses and unclear questions
+   - Discussion of transformers (ML/NLP) not aligned with tracked quant finance topics
+   - Possible candidate distress or interview breakdown
+
+
+================================================================================
+[01:08:49] EVALUATION
+================================================================================
+Window: 01:08:25 - 01:08:44
+Transcripts: 10
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.70)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.75)
+
+📝 Summary: Candidate briefly mentions transformers architecture but expresses self-doubt, then recruiter asks about the Black-Scholes equation which the candidate begins to answer.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Candidate showing low confidence ('I'm not a good candidate')
+   - Incomplete responses - candidate interrupted or trailing off
+   - Recruiter audio/transcription quality issues (unclear what was asked)
+   - Topic shift from ML (transformers) to derivatives pricing (Black-Scholes)
+
+
+================================================================================
+[01:09:01] EVALUATION
+================================================================================
+Window: 01:08:35 - 01:08:56
+Transcripts: 10
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: EASY (confidence: 0.80)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.75)
+
+📝 Summary: The recruiter asks the candidate to explain the Black-Scholes equation. The candidate begins a basic explanation describing it as pricing calls/puts given payoff and time, though shows some uncertainty.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Candidate expresses self-doubt at beginning
+   - Recruiter's question is unclear/fragmented
+   - Incomplete answer - candidate only partially describes Black-Scholes
+
+
+================================================================================
+[01:09:07] EVALUATION
+================================================================================
+Window: 01:08:49 - 01:09:01
+Transcripts: 5
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.20)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.10)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.10)
+
+📝 Summary: Candidate appears to be describing option pricing (call/put) based on payoff and time, but the excerpt is too fragmented and incomplete to determine the actual topic or question being discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Conversation fragment too brief for meaningful assessment
+   - Candidate response appears incomplete or stuttering
+   - Context missing - unclear what question was asked
+   - Possible discussion of derivatives pricing but insufficient detail to confirm
+
+
+================================================================================
+[01:09:19] EVALUATION
+================================================================================
+Window: 01:08:53 - 01:09:14
+Transcripts: 8
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.75)
+🎯 Question Difficulty: MEDIUM (confidence: 0.65)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.50)
+
+📝 Summary: The recruiter is asking about handling missing data in linear regression and evaluating correlation functions, which relates to data preprocessing and feature analysis in quantitative finance modeling.
+
+🔑 Key Topics: FEATURE_SELECTION
+
+🚩 Flags:
+   - Incomplete conversation excerpt
+   - Candidate responses are fragmented and unclear
+   - Question about missing data handling is relevant but not fully articulated
+
+
+================================================================================
+[01:09:24] EVALUATION
+================================================================================
+Window: 01:09:07 - 01:09:19
+Transcripts: 6
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.70)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.30)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.20)
+
+📝 Summary: The recruiter is attempting to ask a question about linear regression with missing data and correlation evaluation, but the question is incomplete and unclear. The candidate is asking for clarification.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Question incomplete and unclear
+   - Communication difficulty - recruiter struggling to articulate question
+   - Insufficient conversation to assess themes or difficulty
+
+
+================================================================================
+[01:09:29] EVALUATION
+================================================================================
+Window: 01:09:09 - 01:09:24
+Transcripts: 6
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.85)
+🎯 Question Difficulty: MEDIUM (confidence: 0.65)
+💬 Interviewer Tone: HARSH (confidence: 0.90)
+
+📝 Summary: Recruiter asks about evaluating correlation with missing data, but communication breaks down due to audio issues and candidate distraction. Recruiter becomes dismissive, stating the candidate doesn't understand the question.
+
+🔑 Key Topics: DATA_PIPELINE
+
+🚩 Flags:
+   - Harsh tone detected - recruiter dismissive about comprehension
+   - Communication breakdown - candidate distracted/poor environment
+   - Question incomplete/unclear due to audio issues
+   - Unprofessional interview environment (candidate near toilet)
+
+
+================================================================================
+[01:09:34] EVALUATION
+================================================================================
+Window: 01:09:14 - 01:09:29
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: HARSH (confidence: 0.90)
+
+📝 Summary: This excerpt shows a disrupted interview moment where the candidate appears to be dealing with a location issue (near bathroom) and the recruiter expresses frustration that the candidate doesn't understand the question. No technical content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Harsh tone detected - recruiter states candidate doesn't understand
+   - Communication breakdown evident
+   - Candidate appears distracted or in inappropriate location
+   - No technical discussion occurring
+   - Potential interview conduct issue
+
+
+================================================================================
+[01:09:39] EVALUATION
+================================================================================
+Window: 01:09:24 - 01:09:34
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.60)
+
+📝 Summary: This excerpt captures a moment of confusion or miscommunication during the interview, with the candidate mentioning being near a toilet and the recruiter indicating the candidate doesn't understand the question. No technical content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Severe communication breakdown
+   - Candidate appears distracted or in inappropriate location
+   - No technical discussion visible
+   - Interview quality concern - potential technical issues or unprofessional setting
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:09:44] EVALUATION
+================================================================================
+Window: 01:09:29 - 01:09:39
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: The candidate appears confused or struggling with a question, and the recruiter offers reassurance that it's okay not to understand. The candidate expresses feeling destabilized by the situation.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Candidate showing significant distress
+   - No technical content in this excerpt
+   - Possible interview performance issue
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:09:49] EVALUATION
+================================================================================
+Window: 01:09:34 - 01:09:44
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.90)
+
+📝 Summary: The recruiter is reassuring a distressed candidate that it's okay they didn't understand a question. No technical quant finance content is discussed in this excerpt.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Candidate appears destabilized/stressed
+   - No technical content in excerpt
+   - Recruiter providing emotional support rather than technical discussion
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:09:54] EVALUATION
+================================================================================
+Window: 01:09:39 - 01:09:49
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.75)
+
+📝 Summary: This appears to be a moment of confusion or communication breakdown where the candidate expresses being destabilized and apologizes, while the recruiter attempts to reassure them that it's okay.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Communication breakdown during interview
+   - Candidate expressing distress/destabilization
+   - Candidate criticizing interviewer
+   - No technical content discussed
+   - Possible interview crisis moment
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:10:00] EVALUATION
+================================================================================
+Window: 01:09:39 - 01:09:54
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: HARSH (confidence: 0.95)
+
+📝 Summary: This appears to be a breakdown in communication during an interview where the candidate expresses being destabilized and criticizes the interviewer, while the recruiter dismisses the candidate as 'not a good candidate.' No technical content was discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Harsh tone detected - recruiter directly calls candidate 'not a good candidate'
+   - Complete communication breakdown
+   - No technical discussion occurred
+   - Candidate criticized interviewer during interview
+   - Unprofessional exchange on both sides
+   - Interview appears to have failed
+
+
+================================================================================
+[01:10:05] EVALUATION
+================================================================================
+Window: 01:09:44 - 01:10:00
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: HARSH (confidence: 0.95)
+
+📝 Summary: This appears to be a contentious exchange where the candidate criticizes the interviewer, and the recruiter responds by calling the candidate inadequate. No technical quant finance content was discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Harsh tone detected
+   - Off-topic discussion
+   - Unprofessional exchange between parties
+   - No technical content present
+   - Potential interview breakdown
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:10:11] EVALUATION
+================================================================================
+Window: 01:09:54 - 01:10:05
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: HARSH (confidence: 0.95)
+
+📝 Summary: The recruiter directly tells the candidate they are not a good fit, and the candidate responds emotionally saying 'that's so mean.' No technical quant finance content was discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Harsh tone detected - recruiter directly dismisses candidate
+   - Off-topic discussion - no technical content
+   - Unprofessional interaction
+   - Appears to be rejection without constructive feedback
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:10:16] EVALUATION
+================================================================================
+Window: 01:10:00 - 01:10:11
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: This appears to be a brief emotional exchange where the candidate is expressing distress about something being 'mean' and asking if they can return, while the recruiter provides reassurance that 'it's okay.'
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Candidate appears distressed
+   - Unclear context - possible interview interruption or break
+   - No technical content discussed
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:10:21] EVALUATION
+================================================================================
+Window: 01:10:05 - 01:10:16
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: This appears to be a brief interstitial moment in the interview where the candidate expresses concern about something, and the recruiter reassures them in a supportive manner that they can continue or return.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Appears to be emotional or stressful moment for candidate
+   - Context missing - unclear what prompted this exchange
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:10:26] EVALUATION
+================================================================================
+Window: 01:10:11 - 01:10:21
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: This excerpt contains fragmented conversation with unclear context, appearing to involve technical difficulties or confusion about whether the candidate should return or leave. No quant finance content is discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Fragmented conversation with unclear context
+   - Possible technical difficulties or interview disruption
+   - No substantive content exchanged
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:10:32] EVALUATION
+================================================================================
+Window: 01:10:16 - 01:10:26
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt contains fragmented, unclear dialogue with no discernible quant finance content. The conversation appears disrupted with the candidate mentioning quitting/stopping and unclear back-and-forth exchanges.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Conversation quality concern - fragmented and unclear dialogue
+   - Candidate mentions 'quitting' or 'stopping' - potential interview disruption
+   - No technical content detected
+   - Insufficient coherent exchange to assess interview quality
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:10:37] EVALUATION
+================================================================================
+Window: 01:10:21 - 01:10:32
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt contains only fragmented casual conversation with no discernible technical content. The participants appear to be having an informal exchange with unclear context.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content detected
+   - Fragmented conversation - unclear context
+   - Candidate mentions 'quitting' or 'stopping' - potential concern
+   - Off-topic/casual discussion detected ([EXTRA])
+

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantCoach LiveKit - Presentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            overflow: hidden;
+        }
+
+        .presentation {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        .slide {
+            width: 100%;
+            height: 100%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 80px;
+            background: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .slide.active {
+            display: flex;
+        }
+
+        .slide-content {
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 72px;
+            font-weight: 800;
+            color: #1e40af;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            font-size: 36px;
+            font-weight: 600;
+            color: #3b82f6;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 28px;
+            color: #334155;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        li {
+            font-size: 32px;
+            color: #334155;
+            margin: 20px 0;
+            padding-left: 60px;
+            position: relative;
+        }
+
+        li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .problem-stat {
+            font-size: 120px;
+            font-weight: 900;
+            color: #ef4444;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .tagline {
+            font-size: 42px;
+            color: #64748b;
+            font-style: italic;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin: 40px 0;
+        }
+
+        .impact-card {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .impact-card h3 {
+            color: white;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .impact-card p {
+            color: rgba(255,255,255,0.9);
+            font-size: 20px;
+        }
+
+        .logo {
+            font-size: 64px;
+            font-weight: 900;
+            color: #1e40af;
+            margin-bottom: 20px;
+        }
+
+        .demo-placeholder {
+            background: #f1f5f9;
+            border: 4px dashed #cbd5e1;
+            border-radius: 20px;
+            padding: 100px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .demo-placeholder h3 {
+            color: #64748b;
+        }
+
+        .controls {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            display: flex;
+            gap: 20px;
+            z-index: 1000;
+        }
+
+        button {
+            background: #1e40af;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background: #3b82f6;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(30, 64, 175, 0.4);
+        }
+
+        .slide-number {
+            position: fixed;
+            bottom: 40px;
+            left: 40px;
+            font-size: 24px;
+            color: #94a3b8;
+            font-weight: 600;
+        }
+
+        .highlight {
+            color: #10b981;
+            font-weight: 700;
+        }
+
+        .pain-points {
+            background: #fef2f2;
+            border-left: 6px solid #ef4444;
+            padding: 30px;
+            margin: 30px 0;
+        }
+
+        .pain-points li:before {
+            content: "✗";
+            color: #ef4444;
+        }
+
+        .solution-points li {
+            font-size: 28px;
+            margin: 15px 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .slide.active .slide-content > * {
+            animation: fadeIn 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation">
+        <!-- Slide 1: Title -->
+        <div class="slide active">
+            <div class="slide-content">
+                <div class="logo">🎯 QuantCoach LiveKit</div>
+                <h1>Your AI Interview Co-Pilot</h1>
+                <p class="tagline">Because great interviews shouldn't be left to chance</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: The Problem -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>The Problem</h2>
+                <p>Conducting interviews is impossibly hard...</p>
+                <div class="problem-stat">73%</div>
+                <p style="text-align: center; font-size: 32px;">of interviewers miss critical details</p>
+                <div class="pain-points">
+                    <ul>
+                        <li>Can't focus on both conversation AND taking notes</li>
+                        <li>Interview quality is inconsistent</li>
+                        <li>Unconscious bias goes undetected</li>
+                        <li>Notes are incomplete or written hours later</li>
+                    </ul>
+                </div>
+                <p style="text-align: center; font-weight: 700; color: #ef4444; font-size: 36px;">
+                    Companies lose top talent because of poor interview execution.
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 3: Our Solution -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Our Solution: QuantCoach LiveKit</h2>
+                <h3>Your AI co-pilot that handles everything you can't</h3>
+                <ul class="solution-points">
+                    <li><span class="highlight">Real-time transcription</span> - Every word captured automatically</li>
+                    <li><span class="highlight">AI analysis</span> - Evaluates responses for competency signals</li>
+                    <li><span class="highlight">Bias detection</span> - Identifies tone and fairness issues live</li>
+                    <li><span class="highlight">Smart suggestions</span> - Recommends follow-up questions</li>
+                    <li><span class="highlight">Instant reports</span> - Comprehensive notes generated automatically</li>
+                </ul>
+                <p style="margin-top: 50px; font-size: 34px; text-align: center; font-weight: 600;">
+                    It's like having an expert interviewer coaching you <span class="highlight">live</span>, during every interview.
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 4: Live Demo -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Live Demo</h2>
+                <div class="demo-placeholder">
+                    <h3>🎬 DEMO TIME</h3>
+                    <p style="font-size: 24px; color: #64748b; margin-top: 20px;">
+                        Show the live dashboard with:
+                        <br>• Real-time transcription
+                        <br>• AI analysis and scoring
+                        <br>• Smart question suggestions
+                        <br>• Click "End Interview" → Instant comprehensive report
+                    </p>
+                </div>
+                <p style="text-align: center; font-size: 36px; font-weight: 700; color: #10b981;">
+                    BAM! Everything documented automatically.
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 5: The Impact -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>The Impact</h2>
+                <div class="impact-grid">
+                    <div class="impact-card">
+                        <h3>Focus</h3>
+                        <p>100% attention on candidates, 0% on note-taking</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3>Quality</h3>
+                        <p>Consistent, comprehensive evaluations every time</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3>Fairness</h3>
+                        <p>AI detects bias patterns humans miss</p>
+                    </div>
+                </div>
+                <p style="margin-top: 60px; text-align: center; font-size: 42px; font-weight: 700; color: #1e40af;">
+                    Better hires. Faster decisions. Fairer process.
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 6: The Vision -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>The Vision</h2>
+                <p style="font-size: 36px; margin: 40px 0;">
+                    We're starting with quantitative finance interviews...
+                </p>
+                <p style="font-size: 42px; font-weight: 700; color: #10b981; margin: 40px 0;">
+                    But this works for ANY industry.
+                </p>
+                <div style="background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); padding: 60px; border-radius: 20px; color: white; margin: 60px 0; text-align: center;">
+                    <p style="font-size: 48px; font-weight: 800; color: white; margin-bottom: 20px;">
+                        Our Vision
+                    </p>
+                    <p style="font-size: 36px; color: rgba(255,255,255,0.95);">
+                        Every interviewer, everywhere, has an AI co-pilot helping them find the best talent.
+                    </p>
+                </div>
+                <div class="logo" style="text-align: center; margin-top: 40px;">🎯 QuantCoach LiveKit</div>
+                <p class="tagline">Because great interviews shouldn't be left to chance</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-number">
+        <span id="current-slide">1</span> / 6
+    </div>
+
+    <div class="controls">
+        <button id="prev">← Previous</button>
+        <button id="next">Next →</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            document.getElementById('current-slide').textContent = currentSlide + 1;
+        }
+
+        document.getElementById('next').addEventListener('click', () => showSlide(currentSlide + 1));
+        document.getElementById('prev').addEventListener('click', () => showSlide(currentSlide - 1));
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') showSlide(currentSlide + 1);
+            if (e.key === 'ArrowLeft') showSlide(currentSlide - 1);
+        });
+
+        // Auto-start timer for 2-minute presentation
+        let presentationTime = 0;
+        setInterval(() => {
+            presentationTime++;
+            if (presentationTime === 120) {
+                alert('2 minutes completed! 🎉');
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

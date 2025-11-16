@@ -1,0 +1,20 @@
+
+================================================================================
+[09:03:17] EVALUATION
+================================================================================
+Window: 09:02:49 - 09:03:12
+Transcripts: 2
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: This is the opening moment of the interview where the recruiter asks the candidate to introduce themselves. The candidate begins their self-introduction but the excerpt cuts off immediately.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Conversation just starting - insufficient content for technical assessment
+   - Language switch from French to English
+   - Off-topic/casual discussion detected ([EXTRA])
+

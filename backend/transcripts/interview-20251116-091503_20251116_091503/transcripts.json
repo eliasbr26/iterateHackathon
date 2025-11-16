@@ -1,0 +1,264 @@
+{
+  "room": "interview-20251116-091503",
+  "session_start": "2025-11-16T09:15:33.856873",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T09:15:33.856873",
+      "speaker": "candidate",
+      "text": "Singing about what? Singing about what?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:15:33.882156",
+      "speaker": "recruiter",
+      "text": "Shivappa Shivappa",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:15:35.913611",
+      "speaker": "recruiter",
+      "text": "Is it a pity to come?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:15:49.855842",
+      "speaker": "candidate",
+      "text": "Bye, love.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:15:55.747775",
+      "speaker": "candidate",
+      "text": "Bye, bye. Bye, love. Bye, love. You're not supposed to see that, so. Okay. Okay.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:15:57.607857",
+      "speaker": "recruiter",
+      "text": "I'm sorry, I'm not sure if I'm on the right channel.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:16:04.415078",
+      "speaker": "recruiter",
+      "text": "Hi, how are you doing?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:16:04.910556",
+      "speaker": "candidate",
+      "text": "Hi, how are you doing? I'm doing good, thank you. And you?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:16:10.048951",
+      "speaker": "candidate",
+      "text": "I'm doing good.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:16:10.103228",
+      "speaker": "recruiter",
+      "text": "uh i'm doing good i'm doing good doing good i'm doing good",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:16:14.654765",
+      "speaker": "recruiter",
+      "text": "so uh please tell me a little bit please tell me a little bit",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:16:14.688496",
+      "speaker": "candidate",
+      "text": "Can you hear me? I got it. I got it.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:16:20.560734",
+      "speaker": "recruiter",
+      "text": "about yourself",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:16:25.405926",
+      "speaker": "candidate",
+      "text": "Excuse me, I didn't understand the, I didn't hear the question. Yeah",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:16:30.018693",
+      "speaker": "recruiter",
+      "text": "please tell me a little bit about software engineering",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:16:34.688701",
+      "speaker": "candidate",
+      "text": "uh yeah uh I can speak about um speak about um",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:16:40.109037",
+      "speaker": "candidate",
+      "text": "I don't know much I don't know much",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:16:40.141738",
+      "speaker": "candidate",
+      "text": "Things about software engineering uh uh uh uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:16:40.184693",
+      "speaker": "candidate",
+      "text": "Mostly I use cloud code, cloud code.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:16:41.919921",
+      "speaker": "candidate",
+      "text": "I can do research in quantitative finance if you want. I think I'm",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:16:43.900244",
+      "speaker": "candidate",
+      "text": "a better candidate for disclaimer",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:16:49.889128",
+      "speaker": "candidate",
+      "text": "I hope what we did learn, we did learn",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:16:55.889620",
+      "speaker": "candidate",
+      "text": "is working.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:16:57.456351",
+      "speaker": "recruiter",
+      "text": "Yes, I think it's genuinely working, which is wonderful. Could we just quickly",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:17:02.970480",
+      "speaker": "recruiter",
+      "text": "just to test something? Can you please? Can you please",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:17:03.057338",
+      "speaker": "recruiter",
+      "text": "talk to me a little bit about regularization? Regularization?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:17:04.884890",
+      "speaker": "candidate",
+      "text": "Yeah, regularization is some is some is",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:17:10.602539",
+      "speaker": "candidate",
+      "text": "is adding a penalty",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:17:11.954399",
+      "speaker": "candidate",
+      "text": "to term in a in a loss that you want to minimize and maximize in a in a",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:17:13.851308",
+      "speaker": "candidate",
+      "text": "order to to",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:17:16.871282",
+      "speaker": "candidate",
+      "text": "make to make",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:17:22.216636",
+      "speaker": "candidate",
+      "text": "the variable variable uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:17:23.870734",
+      "speaker": "candidate",
+      "text": "respect some some property some property",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:17:25.927108",
+      "speaker": "candidate",
+      "text": "this for example if you had had you had had",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:17:28.874238",
+      "speaker": "candidate",
+      "text": "a lasso penalty",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:17:31.870311",
+      "speaker": "candidate",
+      "text": "term in your lasso your",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:17:36.962186",
+      "speaker": "candidate",
+      "text": "variable will be will be",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:17:37.016559",
+      "speaker": "candidate",
+      "text": "more sparse.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:17:38.903597",
+      "speaker": "candidate",
+      "text": "That's to say that there will be more zeros and",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:17:39.427351",
+      "speaker": "recruiter",
+      "text": "Thank you.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:17:44.692847",
+      "speaker": "candidate",
+      "text": "ones.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:17:49.739713",
+      "speaker": "recruiter",
+      "text": "Okay, perfect. Thank you so much. I think this will be all. I think this will be all. It's",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:17:56.045074",
+      "speaker": "recruiter",
+      "text": "thank you",
+      "is_final": true
+    }
+  ]
+}

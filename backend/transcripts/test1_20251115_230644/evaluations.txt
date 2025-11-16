@@ -1,0 +1,275 @@
+
+================================================================================
+[23:07:30] EVALUATION
+================================================================================
+Window: 23:07:11 - 23:07:22
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This conversation appears to be casual or off-record discussion between recruiter and candidate about someone or something being visible/hidden, with no discernible quant finance content.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Unclear context - possibly technical difficulties or side conversation
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[23:07:36] EVALUATION
+================================================================================
+Window: 23:07:17 - 23:07:30
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This appears to be a technical setup or pre-interview conversation with fragmented dialogue about hiding something on screen and greetings. No substantive quant finance content was discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Fragmented/unclear conversation
+   - No technical content
+   - Possible recording/setup phase
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[23:07:41] EVALUATION
+================================================================================
+Window: 23:07:22 - 23:07:36
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.75)
+
+📝 Summary: This is the opening moments of an interview with greetings and what appears to be a technical difficulty or confusion about readiness. No technical quant finance content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Interview appears to have technical/logistical issues
+   - Recruiter mentions candidate may not be ready
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[23:07:47] EVALUATION
+================================================================================
+Window: 23:07:30 - 23:07:42
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.85)
+
+📝 Summary: Interview opening with initial greetings and a general introductory question asking the candidate to describe themselves. No technical quant finance content discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Interview just beginning - no technical content yet
+   - Recruiter mentions candidate may not be ready
+   - Audio/connection issues apparent ('off, off')
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[23:07:52] EVALUATION
+================================================================================
+Window: 23:07:36 - 23:07:47
+Transcripts: 8
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: This is the opening small talk of an interview where the recruiter asks the candidate to tell them about their personal life (kids, friends, family). The candidate begins responding about having two brothers.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content yet
+   - Interview just beginning
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[23:08:07] EVALUATION
+================================================================================
+Window: 23:07:41 - 23:08:00
+Transcripts: 10
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: The recruiter asks the candidate to introduce themselves and talk about their personal life. The candidate responds by discussing their two brothers in casual, non-technical terms.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Appears to be casual introduction/warm-up phase
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[23:08:16] EVALUATION
+================================================================================
+Window: 23:07:52 - 23:08:10
+Transcripts: 9
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This conversation appears to be fragmented or possibly mistranscribed, discussing sharks metaphorically and family members with no clear connection to quantitative finance topics.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - no quant finance content detected
+   - Conversation quality issue - appears fragmented or mistranscribed
+   - Unclear context - metaphorical language about sharks without technical substance
+   - No technical questions identified
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[23:08:23] EVALUATION
+================================================================================
+Window: 23:08:00 - 23:08:19
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation consists mostly of fragmented small talk about family members, followed by the recruiter starting to ask about linear regression but the question is incomplete.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Conversation heavily fragmented and unclear
+   - Technical question about linear regression started but not completed
+   - Mostly off-topic discussion before technical content begins
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[23:08:35] EVALUATION
+================================================================================
+Window: 23:08:10 - 23:08:29
+Transcripts: 4
+
+📊 Subject Relevance: UNKNOWN (confidence: 0.30)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.20)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.50)
+
+📝 Summary: The recruiter appears to be asking about linear regression but the conversation is fragmented with incomplete statements. The candidate suggests they may have already discussed this topic extensively.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incomplete conversation fragment
+   - Topic (linear regression) mentioned but not actually discussed
+   - Communication unclear - recruiter statement incomplete
+
+
+================================================================================
+[23:08:48] EVALUATION
+================================================================================
+Window: 23:08:19 - 23:08:44
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.85)
+
+📝 Summary: The recruiter attempted to ask about linear regression, but the candidate declined to answer, stating they had already discussed it too much. The recruiter accepted this and moved on.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Candidate refused to answer question
+   - No substantive technical discussion occurred
+   - Recruiter's question was incomplete/unclear
+
+
+================================================================================
+[23:08:56] EVALUATION
+================================================================================
+Window: 23:08:35 - 23:08:52
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The interview appears to have ended abruptly with the candidate rejecting a question, followed by the recruiter terminating the interview. No technical quant finance content was discussed in this excerpt.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Interview terminated prematurely
+   - Candidate rejected question
+   - No technical content discussed
+   - Incomplete conversation excerpt
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[23:09:02] EVALUATION
+================================================================================
+Window: 23:08:44 - 23:08:57
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.85)
+
+📝 Summary: This is the closing segment of an interview where the recruiter is rejecting the candidate and both parties are ending the conversation with brief goodbyes.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Interview rejection/termination
+   - No technical content discussed in this excerpt
+   - Appears to be end of interview only
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[23:09:17] EVALUATION
+================================================================================
+Window: 23:08:48 - 23:09:05
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: This excerpt captures only the closing moments of an interview where the recruiter is rejecting the candidate and both parties are exchanging final pleasantries and goodbyes.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion - only interview conclusion captured
+   - No technical content present
+   - Candidate rejection communicated
+   - Incomplete conversation excerpt
+   - Off-topic/casual discussion detected ([EXTRA])
+

@@ -1,0 +1,281 @@
+{
+  "room": "test1",
+  "total_evaluations": 13,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-15T23:07:30.231572",
+      "window_start": "2025-11-15T23:07:11.010900",
+      "window_end": "2025-11-15T23:07:22.082861",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This conversation appears to be casual or off-record discussion between recruiter and candidate about someone or something being visible/hidden, with no discernible quant finance content.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "No technical content",
+        "Unclear context - possibly technical difficulties or side conversation",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.98,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This conversation appears to be casual or off-record discussion between recruiter and candidate about someone or something being visible/hidden, with no discernible quant finance content.\",\n    \"flags\": [\"Off-topic discussion\", \"No technical content\", \"Unclear context - possibly technical difficulties or side conversation\"],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.98,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T23:07:36.068616",
+      "window_start": "2025-11-15T23:07:17.025805",
+      "window_end": "2025-11-15T23:07:30.761950",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This appears to be a technical setup or pre-interview conversation with fragmented dialogue about hiding something on screen and greetings. No substantive quant finance content was discussed.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "Fragmented/unclear conversation",
+        "No technical content",
+        "Possible recording/setup phase",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.98,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This appears to be a technical setup or pre-interview conversation with fragmented dialogue about hiding something on screen and greetings. No substantive quant finance content was discussed.\",\n    \"flags\": [\"Off-topic discussion\", \"Fragmented/unclear conversation\", \"No technical content\", \"Possible recording/setup phase\"],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.98,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T23:07:41.673456",
+      "window_start": "2025-11-15T23:07:22.082861",
+      "window_end": "2025-11-15T23:07:36.548508",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "This is the opening moments of an interview with greetings and what appears to be a technical difficulty or confusion about readiness. No technical quant finance content has been discussed yet.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "Interview appears to have technical/logistical issues",
+        "Recruiter mentions candidate may not be ready",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.98,
+      "confidence_tone": 0.75,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"This is the opening moments of an interview with greetings and what appears to be a technical difficulty or confusion about readiness. No technical quant finance content has been discussed yet.\",\n    \"flags\": [\"Off-topic discussion\", \"Interview appears to have technical/logistical issues\", \"Recruiter mentions candidate may not be ready\"],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.98,\n    \"confidence_tone\": 0.75\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T23:07:47.116076",
+      "window_start": "2025-11-15T23:07:30.761950",
+      "window_end": "2025-11-15T23:07:42.055079",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "Interview opening with initial greetings and a general introductory question asking the candidate to describe themselves. No technical quant finance content discussed yet.",
+      "key_topics": [],
+      "flags": [
+        "Interview just beginning - no technical content yet",
+        "Recruiter mentions candidate may not be ready",
+        "Audio/connection issues apparent ('off, off')",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"Interview opening with initial greetings and a general introductory question asking the candidate to describe themselves. No technical quant finance content discussed yet.\",\n    \"flags\": [\n        \"Interview just beginning - no technical content yet\",\n        \"Recruiter mentions candidate may not be ready\",\n        \"Audio/connection issues apparent ('off, off')\"\n    ],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T23:07:52.269601",
+      "window_start": "2025-11-15T23:07:36.386618",
+      "window_end": "2025-11-15T23:07:47.542648",
+      "transcripts_evaluated": 8,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "encouraging",
+      "summary": "This is the opening small talk of an interview where the recruiter asks the candidate to tell them about their personal life (kids, friends, family). The candidate begins responding about having two brothers.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "No technical content yet",
+        "Interview just beginning",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"encouraging\",\n    \"summary\": \"This is the opening small talk of an interview where the recruiter asks the candidate to tell them about their personal life (kids, friends, family). The candidate begins responding about having two brothers.\",\n    \"flags\": [\"Off-topic discussion\", \"No technical content yet\", \"Interview just beginning\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T23:08:07.478164",
+      "window_start": "2025-11-15T23:07:41.715769",
+      "window_end": "2025-11-15T23:08:00.998606",
+      "transcripts_evaluated": 10,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "encouraging",
+      "summary": "The recruiter asks the candidate to introduce themselves and talk about their personal life. The candidate responds by discussing their two brothers in casual, non-technical terms.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "No technical content",
+        "Appears to be casual introduction/warm-up phase",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"encouraging\",\n    \"summary\": \"The recruiter asks the candidate to introduce themselves and talk about their personal life. The candidate responds by discussing their two brothers in casual, non-technical terms.\",\n    \"flags\": [\"Off-topic discussion\", \"No technical content\", \"Appears to be casual introduction/warm-up phase\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T23:08:16.103748",
+      "window_start": "2025-11-15T23:07:52.333973",
+      "window_end": "2025-11-15T23:08:10.092660",
+      "transcripts_evaluated": 9,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This conversation appears to be fragmented or possibly mistranscribed, discussing sharks metaphorically and family members with no clear connection to quantitative finance topics.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - no quant finance content detected",
+        "Conversation quality issue - appears fragmented or mistranscribed",
+        "Unclear context - metaphorical language about sharks without technical substance",
+        "No technical questions identified",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This conversation appears to be fragmented or possibly mistranscribed, discussing sharks metaphorically and family members with no clear connection to quantitative finance topics.\",\n    \"flags\": [\n        \"Off-topic discussion - no quant finance content detected\",\n        \"Conversation quality issue - appears fragmented or mistranscribed\",\n        \"Unclear context - metaphorical language about sharks without technical substance\",\n        \"No technical questions identified\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T23:08:23.821721",
+      "window_start": "2025-11-15T23:08:00.998606",
+      "window_end": "2025-11-15T23:08:19.034667",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation consists mostly of fragmented small talk about family members, followed by the recruiter starting to ask about linear regression but the question is incomplete.",
+      "key_topics": [],
+      "flags": [
+        "Conversation heavily fragmented and unclear",
+        "Technical question about linear regression started but not completed",
+        "Mostly off-topic discussion before technical content begins",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.85,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation consists mostly of fragmented small talk about family members, followed by the recruiter starting to ask about linear regression but the question is incomplete.\",\n    \"flags\": [\n        \"Conversation heavily fragmented and unclear\",\n        \"Technical question about linear regression started but not completed\",\n        \"Mostly off-topic discussion before technical content begins\"\n    ],\n    \"confidence_subject\": 0.85,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T23:08:35.504021",
+      "window_start": "2025-11-15T23:08:10.092660",
+      "window_end": "2025-11-15T23:08:29.010776",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "unknown",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter appears to be asking about linear regression but the conversation is fragmented with incomplete statements. The candidate suggests they may have already discussed this topic extensively.",
+      "key_topics": [],
+      "flags": [
+        "Incomplete conversation fragment",
+        "Topic (linear regression) mentioned but not actually discussed",
+        "Communication unclear - recruiter statement incomplete"
+      ],
+      "confidence_subject": 0.3,
+      "confidence_difficulty": 0.2,
+      "confidence_tone": 0.5,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"unknown\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter appears to be asking about linear regression but the conversation is fragmented with incomplete statements. The candidate suggests they may have already discussed this topic extensively.\",\n    \"flags\": [\n        \"Incomplete conversation fragment\",\n        \"Topic (linear regression) mentioned but not actually discussed\",\n        \"Communication unclear - recruiter statement incomplete\"\n    ],\n    \"confidence_subject\": 0.3,\n    \"confidence_difficulty\": 0.2,\n    \"confidence_tone\": 0.5\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T23:08:48.625775",
+      "window_start": "2025-11-15T23:08:19.034667",
+      "window_end": "2025-11-15T23:08:44.026309",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter attempted to ask about linear regression, but the candidate declined to answer, stating they had already discussed it too much. The recruiter accepted this and moved on.",
+      "key_topics": [],
+      "flags": [
+        "Candidate refused to answer question",
+        "No substantive technical discussion occurred",
+        "Recruiter's question was incomplete/unclear"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter attempted to ask about linear regression, but the candidate declined to answer, stating they had already discussed it too much. The recruiter accepted this and moved on.\",\n    \"flags\": [\n        \"Candidate refused to answer question\",\n        \"No substantive technical discussion occurred\",\n        \"Recruiter's question was incomplete/unclear\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T23:08:56.603834",
+      "window_start": "2025-11-15T23:08:35.782696",
+      "window_end": "2025-11-15T23:08:52.048575",
+      "transcripts_evaluated": 7,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "The interview appears to have ended abruptly with the candidate rejecting a question, followed by the recruiter terminating the interview. No technical quant finance content was discussed in this excerpt.",
+      "key_topics": [],
+      "flags": [
+        "Interview terminated prematurely",
+        "Candidate rejected question",
+        "No technical content discussed",
+        "Incomplete conversation excerpt",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The interview appears to have ended abruptly with the candidate rejecting a question, followed by the recruiter terminating the interview. No technical quant finance content was discussed in this excerpt.\",\n    \"flags\": [\n        \"Interview terminated prematurely\",\n        \"Candidate rejected question\",\n        \"No technical content discussed\",\n        \"Incomplete conversation excerpt\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T23:09:02.655858",
+      "window_start": "2025-11-15T23:08:44.026309",
+      "window_end": "2025-11-15T23:08:57.996411",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "This is the closing segment of an interview where the recruiter is rejecting the candidate and both parties are ending the conversation with brief goodbyes.",
+      "key_topics": [],
+      "flags": [
+        "Interview rejection/termination",
+        "No technical content discussed in this excerpt",
+        "Appears to be end of interview only",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"This is the closing segment of an interview where the recruiter is rejecting the candidate and both parties are ending the conversation with brief goodbyes.\",\n    \"flags\": [\n        \"Interview rejection/termination\",\n        \"No technical content discussed in this excerpt\",\n        \"Appears to be end of interview only\"\n    ],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-15T23:09:17.653899",
+      "window_start": "2025-11-15T23:08:48.918426",
+      "window_end": "2025-11-15T23:09:05.243937",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "This excerpt captures only the closing moments of an interview where the recruiter is rejecting the candidate and both parties are exchanging final pleasantries and goodbyes.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion - only interview conclusion captured",
+        "No technical content present",
+        "Candidate rejection communicated",
+        "Incomplete conversation excerpt",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"This excerpt captures only the closing moments of an interview where the recruiter is rejecting the candidate and both parties are exchanging final pleasantries and goodbyes.\",\n    \"flags\": [\n        \"Off-topic discussion - only interview conclusion captured\",\n        \"No technical content present\",\n        \"Candidate rejection communicated\",\n        \"Incomplete conversation excerpt\"\n    ],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.7\n}\n```"
+    }
+  ]
+}

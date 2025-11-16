@@ -1,0 +1,165 @@
+
+================================================================================
+[09:30:15] EVALUATION
+================================================================================
+Window: 09:29:58 - 09:30:07
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.60)
+
+📝 Summary: The conversation appears to be a confused exchange with unclear context, possibly about someone's mother, with no substantive quant finance content discussed. This seems to be either a technical disruption or pre-interview small talk that went awry.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Conversation lacks clarity and professionalism
+   - Possible disruption or recording error
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:30:20] EVALUATION
+================================================================================
+Window: 09:29:58 - 09:30:15
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: This appears to be a fragmented or disrupted conversation with unclear context, possibly involving technical difficulties or an interrupted introduction. No quantitative finance topics were discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Conversation unclear or fragmented
+   - Possible technical difficulties or connection issues
+   - No substantive interview content
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:30:27] EVALUATION
+================================================================================
+Window: 09:30:07 - 09:30:20
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This excerpt captures the initial technical setup phase of the interview where the recruiter and candidate are checking audio connectivity and greeting each other. No substantive quant finance content was discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content
+   - Audio/connection check only
+   - Interview has not substantively begun
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:30:31] EVALUATION
+================================================================================
+Window: 09:30:15 - 09:30:27
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: This excerpt captures only the initial technical setup phase of the interview where both parties are testing audio connectivity and establishing communication.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No substantive content discussed
+   - Audio/connectivity troubleshooting only
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:30:36] EVALUATION
+================================================================================
+Window: 09:30:20 - 09:30:27
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.95)
+
+📝 Summary: This excerpt captures only the initial technical setup of the interview where both participants are testing audio connectivity. No substantive content has been discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content discussed
+   - Audio/connection setup only
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:30:42] EVALUATION
+================================================================================
+Window: 09:30:20 - 09:30:36
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.90)
+
+📝 Summary: This excerpt captures the initial audio check at the beginning of the interview where both parties are confirming they can hear each other properly.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content discussed yet
+   - Initial setup/greeting phase only
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:30:47] EVALUATION
+================================================================================
+Window: 09:30:27 - 09:30:36
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.90)
+
+📝 Summary: This is an initial technical check at the beginning of the interview where the recruiter and candidate are verifying audio connection. No substantive quant finance content discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content yet
+   - Audio/connection check only
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:30:52] EVALUATION
+================================================================================
+Window: 09:30:27 - 09:30:47
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.85)
+
+📝 Summary: This is an initial technical check at the beginning of an interview where the recruiter and candidate are testing audio connectivity and confirming they can hear each other properly.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No substantive content discussed
+   - Audio/connectivity check only
+   - Off-topic/casual discussion detected ([EXTRA])
+

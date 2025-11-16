@@ -1,0 +1,43 @@
+[09:15:33] 👤 CANDIDATE: Singing about what? Singing about what?
+[09:15:33] 👔 RECRUITER: Shivappa Shivappa
+[09:15:35] 👔 RECRUITER: Is it a pity to come?
+[09:15:49] 👤 CANDIDATE: Bye, love.
+[09:15:55] 👤 CANDIDATE: Bye, bye. Bye, love. Bye, love. You're not supposed to see that, so. Okay. Okay.
+[09:15:57] 👔 RECRUITER: I'm sorry, I'm not sure if I'm on the right channel.
+[09:16:04] 👔 RECRUITER: Hi, how are you doing?
+[09:16:04] 👤 CANDIDATE: Hi, how are you doing? I'm doing good, thank you. And you?
+[09:16:10] 👤 CANDIDATE: I'm doing good.
+[09:16:10] 👔 RECRUITER: uh i'm doing good i'm doing good doing good i'm doing good
+[09:16:14] 👔 RECRUITER: so uh please tell me a little bit please tell me a little bit
+[09:16:14] 👤 CANDIDATE: Can you hear me? I got it. I got it.
+[09:16:20] 👔 RECRUITER: about yourself
+[09:16:25] 👤 CANDIDATE: Excuse me, I didn't understand the, I didn't hear the question. Yeah
+[09:16:30] 👔 RECRUITER: please tell me a little bit about software engineering
+[09:16:34] 👤 CANDIDATE: uh yeah uh I can speak about um speak about um
+[09:16:40] 👤 CANDIDATE: I don't know much I don't know much
+[09:16:40] 👤 CANDIDATE: Things about software engineering uh uh uh uh
+[09:16:40] 👤 CANDIDATE: Mostly I use cloud code, cloud code.
+[09:16:41] 👤 CANDIDATE: I can do research in quantitative finance if you want. I think I'm
+[09:16:43] 👤 CANDIDATE: a better candidate for disclaimer
+[09:16:49] 👤 CANDIDATE: I hope what we did learn, we did learn
+[09:16:55] 👤 CANDIDATE: is working.
+[09:16:57] 👔 RECRUITER: Yes, I think it's genuinely working, which is wonderful. Could we just quickly
+[09:17:02] 👔 RECRUITER: just to test something? Can you please? Can you please
+[09:17:03] 👔 RECRUITER: talk to me a little bit about regularization? Regularization?
+[09:17:04] 👤 CANDIDATE: Yeah, regularization is some is some is
+[09:17:10] 👤 CANDIDATE: is adding a penalty
+[09:17:11] 👤 CANDIDATE: to term in a in a loss that you want to minimize and maximize in a in a
+[09:17:13] 👤 CANDIDATE: order to to
+[09:17:16] 👤 CANDIDATE: make to make
+[09:17:22] 👤 CANDIDATE: the variable variable uh
+[09:17:23] 👤 CANDIDATE: respect some some property some property
+[09:17:25] 👤 CANDIDATE: this for example if you had had you had had
+[09:17:28] 👤 CANDIDATE: a lasso penalty
+[09:17:31] 👤 CANDIDATE: term in your lasso your
+[09:17:36] 👤 CANDIDATE: variable will be will be
+[09:17:37] 👤 CANDIDATE: more sparse.
+[09:17:38] 👤 CANDIDATE: That's to say that there will be more zeros and
+[09:17:39] 👔 RECRUITER: Thank you.
+[09:17:44] 👤 CANDIDATE: ones.
+[09:17:49] 👔 RECRUITER: Okay, perfect. Thank you so much. I think this will be all. I think this will be all. It's
+[09:17:56] 👔 RECRUITER: thank you

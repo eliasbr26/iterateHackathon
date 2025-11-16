@@ -1,0 +1,162 @@
+{
+  "room": "interview-20251116-094233",
+  "session_start": "2025-11-16T09:43:28.792919",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T09:43:28.792919",
+      "speaker": "candidate",
+      "text": "Wait wait wait",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:43:32.955074",
+      "speaker": "recruiter",
+      "text": "Hello Hello",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:43:35.016495",
+      "speaker": "recruiter",
+      "text": "Can you hear me? Yes, yes, yes",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:43:35.870066",
+      "speaker": "candidate",
+      "text": "- Hello, can you hear me? - Yes, I can hear you.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:43:40.705980",
+      "speaker": "candidate",
+      "text": "- I don't think so. I think",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:43:40.943128",
+      "speaker": "recruiter",
+      "text": "I can hear you can hear me okay okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:43:45.880722",
+      "speaker": "recruiter",
+      "text": "perfect uh let's start off let's start off",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:43:45.943058",
+      "speaker": "candidate",
+      "text": "I can. Wait, that's it. Okay, perfect. (audio distorts)",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:43:50.164190",
+      "speaker": "candidate",
+      "text": "(audio distorts)",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:43:50.362792",
+      "speaker": "candidate",
+      "text": "(audio distorts)",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:43:50.434657",
+      "speaker": "candidate",
+      "text": "(audio distorts)",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:43:50.445941",
+      "speaker": "recruiter",
+      "text": "uh I just want to ask you real quick uh what do you think uh about uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:43:54.987680",
+      "speaker": "recruiter",
+      "text": "um cross validation cross validation",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:43:55.223159",
+      "speaker": "candidate",
+      "text": "- I think Rosalind, I think Rosalind",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:44:01.004246",
+      "speaker": "recruiter",
+      "text": "Hello.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:44:05.506322",
+      "speaker": "candidate",
+      "text": "- I think Rosalind - is very interesting because it allows you to reduce variance of your dataset when you train your model because you train your model because",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:44:10.827688",
+      "speaker": "candidate",
+      "text": "you can use it on different different",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:44:10.839219",
+      "speaker": "candidate",
+      "text": "datasets.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:44:11.063030",
+      "speaker": "recruiter",
+      "text": "okay cool um uh tell me tell me different tell me tell me different",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:44:18.252422",
+      "speaker": "recruiter",
+      "text": "ways you can uh uh",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:44:18.264539",
+      "speaker": "recruiter",
+      "text": "do for regularization",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:44:21.022567",
+      "speaker": "candidate",
+      "text": "okay so like my favorite one I'd say it's like the day so because it's L1 regression and you can shift the great fish into zero I also love the bridge or you can just like have uh exact uh exact",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:44:26.944275",
+      "speaker": "candidate",
+      "text": "values for you you beta you beta",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:44:29.006108",
+      "speaker": "recruiter",
+      "text": "okay perfect and uh perfect that's good uh let me check uh let me check",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:44:36.812903",
+      "speaker": "candidate",
+      "text": "some much",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:44:42.496466",
+      "speaker": "candidate",
+      "text": "interview not interview not",
+      "is_final": true
+    }
+  ]
+}

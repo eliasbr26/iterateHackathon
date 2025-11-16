@@ -1,0 +1,171 @@
+{
+  "room": "interview-20251116-092923",
+  "total_evaluations": 8,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T09:30:15.647595",
+      "window_start": "2025-11-16T09:29:58.606704",
+      "window_end": "2025-11-16T09:30:07.577581",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "The conversation appears to be a confused exchange with unclear context, possibly about someone's mother, with no substantive quant finance content discussed. This seems to be either a technical disruption or pre-interview small talk that went awry.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "No technical content",
+        "Conversation lacks clarity and professionalism",
+        "Possible disruption or recording error",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.98,
+      "confidence_tone": 0.6,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"The conversation appears to be a confused exchange with unclear context, possibly about someone's mother, with no substantive quant finance content discussed. This seems to be either a technical disruption or pre-interview small talk that went awry.\",\n    \"flags\": [\n        \"Off-topic discussion\",\n        \"No technical content\",\n        \"Conversation lacks clarity and professionalism\",\n        \"Possible disruption or recording error\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.98,\n    \"confidence_tone\": 0.6\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:30:20.702586",
+      "window_start": "2025-11-16T09:29:58.606704",
+      "window_end": "2025-11-16T09:30:15.918992",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This appears to be a fragmented or disrupted conversation with unclear context, possibly involving technical difficulties or an interrupted introduction. No quantitative finance topics were discussed.",
+      "key_topics": [],
+      "flags": [
+        "Off-topic discussion",
+        "Conversation unclear or fragmented",
+        "Possible technical difficulties or connection issues",
+        "No substantive interview content",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This appears to be a fragmented or disrupted conversation with unclear context, possibly involving technical difficulties or an interrupted introduction. No quantitative finance topics were discussed.\",\n    \"flags\": [\n        \"Off-topic discussion\",\n        \"Conversation unclear or fragmented\",\n        \"Possible technical difficulties or connection issues\",\n        \"No substantive interview content\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:30:27.160023",
+      "window_start": "2025-11-16T09:30:07.577581",
+      "window_end": "2025-11-16T09:30:20.742170",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This excerpt captures the initial technical setup phase of the interview where the recruiter and candidate are checking audio connectivity and greeting each other. No substantive quant finance content was discussed.",
+      "key_topics": [],
+      "flags": [
+        "No technical content",
+        "Audio/connection check only",
+        "Interview has not substantively begun",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.9,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This excerpt captures the initial technical setup phase of the interview where the recruiter and candidate are checking audio connectivity and greeting each other. No substantive quant finance content was discussed.\",\n    \"flags\": [\"No technical content\", \"Audio/connection check only\", \"Interview has not substantively begun\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.9\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:30:31.670559",
+      "window_start": "2025-11-16T09:30:15.897587",
+      "window_end": "2025-11-16T09:30:27.167707",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This excerpt captures only the initial technical setup phase of the interview where both parties are testing audio connectivity and establishing communication.",
+      "key_topics": [],
+      "flags": [
+        "No substantive content discussed",
+        "Audio/connectivity troubleshooting only",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.9,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This excerpt captures only the initial technical setup phase of the interview where both parties are testing audio connectivity and establishing communication.\",\n    \"flags\": [\"No substantive content discussed\", \"Audio/connectivity troubleshooting only\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.9\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:30:36.418802",
+      "window_start": "2025-11-16T09:30:20.741037",
+      "window_end": "2025-11-16T09:30:27.169245",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "unknown",
+      "summary": "This excerpt captures only the initial technical setup of the interview where both participants are testing audio connectivity. No substantive content has been discussed yet.",
+      "key_topics": [],
+      "flags": [
+        "No technical content discussed",
+        "Audio/connection setup only",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.95,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"This excerpt captures only the initial technical setup of the interview where both participants are testing audio connectivity. No substantive content has been discussed yet.\",\n    \"flags\": [\"No technical content discussed\", \"Audio/connection setup only\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.95\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:30:42.185235",
+      "window_start": "2025-11-16T09:30:20.741037",
+      "window_end": "2025-11-16T09:30:36.443655",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "This excerpt captures the initial audio check at the beginning of the interview where both parties are confirming they can hear each other properly.",
+      "key_topics": [],
+      "flags": [
+        "No technical content discussed yet",
+        "Initial setup/greeting phase only",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.9,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"This excerpt captures the initial audio check at the beginning of the interview where both parties are confirming they can hear each other properly.\",\n    \"flags\": [\"No technical content discussed yet\", \"Initial setup/greeting phase only\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.9\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:30:47.187993",
+      "window_start": "2025-11-16T09:30:27.167707",
+      "window_end": "2025-11-16T09:30:36.444452",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "This is an initial technical check at the beginning of the interview where the recruiter and candidate are verifying audio connection. No substantive quant finance content discussed.",
+      "key_topics": [],
+      "flags": [
+        "No technical content yet",
+        "Audio/connection check only",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.9,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"This is an initial technical check at the beginning of the interview where the recruiter and candidate are verifying audio connection. No substantive quant finance content discussed.\",\n    \"flags\": [\"No technical content yet\", \"Audio/connection check only\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.9\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:30:52.129016",
+      "window_start": "2025-11-16T09:30:27.167707",
+      "window_end": "2025-11-16T09:30:47.375974",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "This is an initial technical check at the beginning of an interview where the recruiter and candidate are testing audio connectivity and confirming they can hear each other properly.",
+      "key_topics": [],
+      "flags": [
+        "No substantive content discussed",
+        "Audio/connectivity check only",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 1.0,
+      "confidence_difficulty": 1.0,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"This is an initial technical check at the beginning of an interview where the recruiter and candidate are testing audio connectivity and confirming they can hear each other properly.\",\n    \"flags\": [\"No substantive content discussed\", \"Audio/connectivity check only\"],\n    \"confidence_subject\": 1.0,\n    \"confidence_difficulty\": 1.0,\n    \"confidence_tone\": 0.85\n}\n```"
+    }
+  ]
+}

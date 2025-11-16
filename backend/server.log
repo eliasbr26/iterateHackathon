@@ -1,0 +1,492 @@
+2025-11-16 07:25:08,832 - database.db - INFO - 📦 Using SQLite database: sqlite:///./quantcoach_interviews.db
+2025-11-16 07:25:09,345 - room_manager - INFO - ✅ RoomManager initialized
+2025-11-16 07:25:09,345 - __main__ - INFO - ✅ RoomManager initialized successfully
+2025-11-16 07:25:09,345 - __main__ - INFO - ✅ AgentManager initialized successfully
+2025-11-16 07:25:09,371 - evaluators.competency_evaluator - INFO - ✅ CompetencyEvaluator initialized with model: claude-sonnet-4-5
+2025-11-16 07:25:09,375 - evaluators.star_analyzer - INFO - ✅ STARAnalyzer initialized with model: claude-sonnet-4-5
+2025-11-16 07:25:09,379 - evaluators.bluffing_detector - INFO - ✅ BluffingDetector initialized with model: claude-sonnet-4-5
+2025-11-16 07:25:09,384 - evaluators.cultural_fit_analyzer - INFO - ✅ CulturalFitAnalyzer initialized with model: claude-sonnet-4-5, 8 values
+2025-11-16 07:25:09,388 - profiles.cv_parser - INFO - ✅ CVParser initialized with model: claude-sonnet-4-5
+2025-11-16 07:25:09,388 - __main__ - INFO - ✅ Phase 2 evaluators initialized successfully
+2025-11-16 07:25:09,391 - copilot.followup_suggester - INFO - ✅ FollowUpSuggester initialized with model: claude-sonnet-4-5
+2025-11-16 07:25:09,391 - __main__ - INFO - ✅ PILLAR 1 Co-Pilot initialized successfully
+2025-11-16 07:25:09,395 - question_bank.question_generator - INFO - ✅ QuestionGenerator initialized with model: claude-sonnet-4-5
+2025-11-16 07:25:09,395 - __main__ - INFO - ✅ PILLAR 3 Question Bank initialized successfully
+2025-11-16 07:25:09,399 - interviewer_feedback.tone_analyzer - INFO - ✅ ToneAnalyzer initialized with model: claude-sonnet-4-5
+2025-11-16 07:25:09,403 - interviewer_feedback.question_quality_checker - INFO - ✅ QuestionQualityChecker initialized with model: claude-sonnet-4-5
+2025-11-16 07:25:09,407 - interviewer_feedback.bias_detector - INFO - ✅ BiasDetector initialized with model: claude-sonnet-4-5
+2025-11-16 07:25:09,407 - __main__ - INFO - ✅ PILLAR 4 Interviewer Feedback initialized successfully
+2025-11-16 07:25:09,410 - reporting.summary_generator - INFO - ✅ SummaryGenerator initialized with model: claude-sonnet-4-5
+2025-11-16 07:25:09,410 - reporting.report_builder - INFO - ✅ ReportBuilder initialized
+2025-11-16 07:25:09,411 - reporting.export_formatter - INFO - ✅ ExportFormatter initialized
+2025-11-16 07:25:09,411 - __main__ - INFO - ✅ PILLAR 5 Post-Interview Analysis & Reporting initialized successfully
+2025-11-16 07:25:09,593 - rag_engine.vector_store - INFO - ✅ VectorStore initialized with 0 documents
+2025-11-16 07:25:09,601 - rag_engine.document_indexer - INFO - ✅ DocumentIndexer initialized with model: text-embedding-3-small
+2025-11-16 07:25:09,601 - rag_engine.conversational_assistant - INFO - ✅ ConversationalAssistant initialized with model: claude-sonnet-4-5
+2025-11-16 07:25:09,601 - __main__ - INFO - ✅ PILLAR 7 RAG Conversational Q&A Engine initialized successfully
+/Users/adamzer/Downloads/iterateHackathon-jawad-front/quantcoach-livekit/backend/server.py:200: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+/Users/adamzer/Downloads/iterateHackathon-jawad-front/quantcoach-livekit/backend/server.py:216: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("shutdown")
+2025-11-16 07:25:09,617 - __main__ - INFO - 🚀 Starting QuantCoach LiveKit API Server
+2025-11-16 07:25:09,617 - __main__ - INFO - 📍 Server will run on: http://0.0.0.0:8000
+2025-11-16 07:25:09,617 - __main__ - INFO - 📖 API Docs: http://localhost:8000/docs
+INFO:     Started server process [57322]
+INFO:     Waiting for application startup.
+2025-11-16 07:25:09,642 - __main__ - INFO - 🚀 Starting QuantCoach LiveKit API...
+2025-11-16 07:25:09,642 - __main__ - INFO - 📦 Initializing database...
+2025-11-16 07:25:09,642 - database.db - INFO - 🔨 Creating database tables...
+2025-11-16 07:25:09,645 - database.db - INFO - ✅ Database tables created successfully
+2025-11-16 07:25:09,645 - database.db - INFO - 📊 Created 17 tables: candidates, interviewers, interviews, transcripts, evaluations, competency_scores, star_analyses, interviewer_metrics, red_flags, follow_up_suggestions, contradictions, evidence_entries, interview_summaries, candidate_profiles, question_bank, interview_questions, interviewer_feedback_alerts
+2025-11-16 07:25:09,645 - __main__ - INFO - ✅ Database initialized successfully
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-11-16 07:25:12,141 - __main__ - INFO - 📡 New SSE client connected to room: test1
+INFO:     127.0.0.1:59175 - "GET /rooms/test1/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59186 - "GET /interviews/1 HTTP/1.1" 200 OK
+2025-11-16 07:25:19,524 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+INFO:     127.0.0.1:59192 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59195 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59197 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59228 - "OPTIONS /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59228 - "GET /knowledge/stats HTTP/1.1" 200 OK
+2025-11-16 07:26:38,047 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+INFO:     127.0.0.1:59227 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+2025-11-16 07:26:38,051 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:26:38,051 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 07:27:01,355 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 07:27:01,378 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+INFO:     127.0.0.1:59229 - "GET /questions HTTP/1.1" 200 OK
+2025-11-16 07:27:01,382 - __main__ - INFO - 📡 New SSE client connected to room: test1
+2025-11-16 07:27:01,382 - __main__ - INFO - 📡 SSE client disconnected from room: test1
+INFO:     127.0.0.1:59244 - "GET /rooms/test1/stream HTTP/1.1" 200 OK
+2025-11-16 07:27:01,388 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:27:01,388 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 07:27:21,059 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 07:27:21,060 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+2025-11-16 07:27:21,061 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+INFO:     127.0.0.1:59250 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59249 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59251 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59254 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59255 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59250 - "GET /knowledge/stats HTTP/1.1" 200 OK
+2025-11-16 07:27:21,072 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+INFO:     127.0.0.1:59249 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59251 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59254 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59255 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59250 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+2025-11-16 07:27:21,076 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+INFO:     127.0.0.1:59255 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+2025-11-16 07:27:21,078 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+INFO:     127.0.0.1:59254 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59251 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59249 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+2025-11-16 07:27:21,082 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+INFO:     127.0.0.1:59254 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59255 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59249 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59255 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+2025-11-16 07:27:21,106 - __main__ - INFO - 📡 SSE client disconnected from room: test1
+2025-11-16 07:28:00,921 - __main__ - INFO - 📡 New SSE client connected to room: test1
+INFO:     127.0.0.1:59320 - "GET /rooms/test1/stream HTTP/1.1" 200 OK
+2025-11-16 07:28:02,445 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:28:02,452 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:28:02,452 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 07:28:23,252 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 07:28:23,260 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+INFO:     127.0.0.1:59323 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59326 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59327 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59329 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59331 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59323 - "GET /knowledge/stats HTTP/1.1" 200 OK
+2025-11-16 07:28:23,294 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+INFO:     127.0.0.1:59326 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59327 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59329 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+2025-11-16 07:28:23,304 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:28:23,309 - __main__ - INFO - 📡 SSE client disconnected from room: test1
+INFO:     127.0.0.1:59326 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59329 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59327 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59329 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+2025-11-16 07:30:43,189 - __main__ - INFO - 📡 New SSE client connected to room: test1
+INFO:     127.0.0.1:59467 - "GET /rooms/test1/stream HTTP/1.1" 200 OK
+2025-11-16 07:31:13,496 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:31:13,498 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 07:31:34,783 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 07:31:34,789 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+2025-11-16 07:31:34,794 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+INFO:     127.0.0.1:59500 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59501 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59502 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59505 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59506 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59500 - "GET /knowledge/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59501 - "GET /questions HTTP/1.1" 200 OK
+2025-11-16 07:31:34,835 - __main__ - INFO - 📡 SSE client disconnected from room: test1
+2025-11-16 07:32:39,662 - __main__ - INFO - 📡 New SSE client connected to room: test1
+INFO:     127.0.0.1:62747 - "GET /rooms/test1/stream HTTP/1.1" 200 OK
+2025-11-16 07:32:43,489 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:32:43,496 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:32:43,497 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 07:33:06,826 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 07:33:06,832 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+INFO:     127.0.0.1:62754 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62757 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62758 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62761 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62762 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62754 - "GET /knowledge/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62758 - "OPTIONS /interviews/1/ask HTTP/1.1" 200 OK
+2025-11-16 07:33:06,860 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:33:06,861 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 07:33:29,386 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 07:33:29,388 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+2025-11-16 07:33:29,395 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+INFO:     127.0.0.1:62757 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62761 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62762 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62761 - "GET /knowledge/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62754 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62758 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+2025-11-16 07:33:29,419 - __main__ - INFO - 💬 Interviewer asking: What are good follow-up questions for this role...
+2025-11-16 07:33:29,424 - rag_engine.conversational_assistant - INFO - 💬 Answering question for interview 1: What are good follow-up questions for this role...
+2025-11-16 07:33:29,589 - __main__ - INFO - 📡 SSE client disconnected from room: test1
+INFO:     127.0.0.1:62757 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62761 - "GET /questions HTTP/1.1" 200 OK
+2025-11-16 07:33:30,449 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-16 07:33:30,450 - openai._base_client - INFO - Retrying request to /embeddings in 0.475516 seconds
+2025-11-16 07:33:31,500 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-16 07:33:31,501 - openai._base_client - INFO - Retrying request to /embeddings in 0.887086 seconds
+2025-11-16 07:33:33,006 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-16 07:33:33,009 - rag_engine.document_indexer - ERROR - ❌ Failed to create embedding: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-11-16 07:33:33,009 - rag_engine.conversational_assistant - ERROR - ❌ Failed to generate answer: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Traceback (most recent call last):
+  File "/Users/adamzer/Downloads/iterateHackathon-jawad-front/quantcoach-livekit/backend/rag_engine/conversational_assistant.py", line 114, in ask
+    query_embedding = await self.document_indexer._create_embedding(question)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adamzer/Downloads/iterateHackathon-jawad-front/quantcoach-livekit/backend/rag_engine/document_indexer.py", line 203, in _create_embedding
+    response = await self.client.embeddings.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adamzer/.pyenv/versions/3.11.9/lib/python3.11/site-packages/openai/resources/embeddings.py", line 251, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/adamzer/.pyenv/versions/3.11.9/lib/python3.11/site-packages/openai/_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adamzer/.pyenv/versions/3.11.9/lib/python3.11/site-packages/openai/_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-11-16 07:33:33,012 - rag_engine.conversational_assistant - WARNING - ⚠️ Using fallback response
+2025-11-16 07:33:33,012 - __main__ - INFO - ✅ Answer generated with 0 sources
+INFO:     127.0.0.1:62762 - "POST /interviews/1/ask HTTP/1.1" 200 OK
+2025-11-16 07:34:15,629 - __main__ - INFO - 📡 New SSE client connected to room: test1
+INFO:     127.0.0.1:62930 - "GET /rooms/test1/stream HTTP/1.1" 200 OK
+2025-11-16 07:34:17,031 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:34:17,038 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:34:17,040 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 07:34:39,128 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 07:34:39,134 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+INFO:     127.0.0.1:62934 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62935 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62938 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62940 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62941 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62934 - "GET /knowledge/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62938 - "GET /questions HTTP/1.1" 200 OK
+2025-11-16 07:34:39,174 - __main__ - INFO - 📡 SSE client disconnected from room: test1
+2025-11-16 07:36:02,009 - __main__ - INFO - 📡 New SSE client connected to room: test1
+INFO:     127.0.0.1:62981 - "GET /rooms/test1/stream HTTP/1.1" 200 OK
+2025-11-16 07:36:04,035 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:36:04,041 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:36:04,042 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 07:36:34,210 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 07:36:34,219 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+INFO:     127.0.0.1:62986 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62987 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62988 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62991 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62992 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62986 - "GET /knowledge/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62991 - "GET /questions HTTP/1.1" 200 OK
+2025-11-16 07:36:34,263 - __main__ - INFO - 📡 SSE client disconnected from room: test1
+2025-11-16 07:37:36,200 - __main__ - INFO - 📡 New SSE client connected to room: test1
+INFO:     127.0.0.1:63040 - "GET /rooms/test1/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63101 - "OPTIONS /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63101 - "GET /knowledge/stats HTTP/1.1" 200 OK
+2025-11-16 07:38:00,935 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+INFO:     127.0.0.1:63099 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+2025-11-16 07:38:00,944 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:38:00,945 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 07:38:22,334 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 07:38:22,348 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+INFO:     127.0.0.1:63102 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63104 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63106 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63101 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63099 - "GET /questions HTTP/1.1" 200 OK
+2025-11-16 07:38:22,376 - __main__ - INFO - 📡 SSE client disconnected from room: test1
+2025-11-16 07:44:08,933 - __main__ - INFO - 💬 Interviewer asking: What are good follow-up questions for leadership c...
+2025-11-16 07:44:08,936 - rag_engine.conversational_assistant - INFO - 💬 Answering question for interview 1: What are good follow-up questions for leadership c...
+2025-11-16 07:44:10,069 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-16 07:44:10,107 - rag_engine.vector_store - INFO - 🔍 Found 0 results for query
+2025-11-16 07:44:20,828 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 07:44:20,830 - rag_engine.conversational_assistant - INFO - ✅ Answer generated with confidence: 0.85
+2025-11-16 07:44:20,830 - __main__ - INFO - ✅ Answer generated with 0 sources
+INFO:     127.0.0.1:63295 - "POST /interviews/1/ask HTTP/1.1" 200 OK
+2025-11-16 07:45:26,801 - __main__ - INFO - 📡 New SSE client connected to room: test1
+INFO:     127.0.0.1:63346 - "GET /rooms/test1/stream HTTP/1.1" 200 OK
+2025-11-16 07:45:27,874 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:45:27,880 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:45:27,881 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 07:45:50,430 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 07:45:50,445 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+INFO:     127.0.0.1:63351 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63353 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63357 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63351 - "GET /knowledge/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63353 - "OPTIONS /interviews/1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63359 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63358 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+2025-11-16 07:45:50,479 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:45:50,480 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 07:46:14,174 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 07:46:14,181 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+INFO:     127.0.0.1:63359 - "GET /knowledge/stats HTTP/1.1" 200 OK
+2025-11-16 07:46:14,202 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+INFO:     127.0.0.1:63357 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63351 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63353 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+2025-11-16 07:46:14,209 - __main__ - INFO - 💬 Interviewer asking: How should I evaluate technical depth?...
+2025-11-16 07:46:14,210 - rag_engine.conversational_assistant - INFO - 💬 Answering question for interview 1: How should I evaluate technical depth?...
+INFO:     127.0.0.1:63358 - "GET /questions HTTP/1.1" 200 OK
+2025-11-16 07:46:14,218 - __main__ - INFO - 💬 Interviewer asking: What are good follow-up questions for this role...
+2025-11-16 07:46:14,219 - rag_engine.conversational_assistant - INFO - 💬 Answering question for interview 1: What are good follow-up questions for this role...
+INFO:     127.0.0.1:63357 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63351 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63358 - "GET /questions HTTP/1.1" 200 OK
+2025-11-16 07:46:14,243 - __main__ - INFO - 📡 SSE client disconnected from room: test1
+2025-11-16 07:46:14,459 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-16 07:46:14,463 - rag_engine.vector_store - INFO - 🔍 Found 0 results for query
+2025-11-16 07:46:23,076 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 07:46:23,080 - rag_engine.conversational_assistant - INFO - ✅ Answer generated with confidence: 0.90
+2025-11-16 07:46:23,080 - __main__ - INFO - ✅ Answer generated with 0 sources
+2025-11-16 07:46:23,092 - openai._base_client - INFO - Retrying request to /embeddings in 0.423675 seconds
+INFO:     127.0.0.1:63359 - "POST /interviews/1/ask HTTP/1.1" 200 OK
+2025-11-16 07:46:23,839 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-16 07:46:23,845 - rag_engine.vector_store - INFO - 🔍 Found 0 results for query
+2025-11-16 07:46:35,165 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 07:46:35,176 - rag_engine.conversational_assistant - INFO - ✅ Answer generated with confidence: 0.92
+2025-11-16 07:46:35,176 - __main__ - INFO - ✅ Answer generated with 0 sources
+2025-11-16 07:46:35,183 - __main__ - INFO - 📡 New SSE client connected to room: test1
+INFO:     127.0.0.1:63359 - "GET /rooms/test1/stream HTTP/1.1" 200 OK
+2025-11-16 07:47:26,647 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:47:26,656 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:47:26,657 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 07:47:49,890 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 07:47:49,898 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+INFO:     127.0.0.1:50191 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50193 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50196 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50198 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50199 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50191 - "GET /knowledge/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50196 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50450 - "OPTIONS /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50450 - "GET /knowledge/stats HTTP/1.1" 200 OK
+2025-11-16 07:48:44,482 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:48:44,496 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:48:44,496 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 07:49:05,325 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 07:49:05,331 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+INFO:     127.0.0.1:50451 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50452 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50455 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50456 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50450 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+2025-11-16 07:49:05,357 - __main__ - INFO - 💬 Interviewer asking: How should I evaluate technical depth...
+2025-11-16 07:49:05,372 - rag_engine.conversational_assistant - INFO - 💬 Answering question for interview 1: How should I evaluate technical depth...
+2025-11-16 07:49:05,387 - __main__ - INFO - 📡 SSE client disconnected from room: test1
+INFO:     127.0.0.1:50452 - "GET /questions HTTP/1.1" 200 OK
+2025-11-16 07:49:06,015 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-16 07:49:06,025 - rag_engine.vector_store - INFO - 🔍 Found 0 results for query
+2025-11-16 07:49:17,068 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 07:49:17,078 - rag_engine.conversational_assistant - INFO - ✅ Answer generated with confidence: 0.95
+2025-11-16 07:49:17,078 - __main__ - INFO - ✅ Answer generated with 0 sources
+INFO:     127.0.0.1:50451 - "POST /interviews/1/ask HTTP/1.1" 200 OK
+2025-11-16 07:53:15,357 - __main__ - INFO - 📡 New SSE client connected to room: test1
+INFO:     127.0.0.1:50668 - "GET /rooms/test1/stream HTTP/1.1" 200 OK
+2025-11-16 07:55:01,172 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:55:01,179 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:55:01,180 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 07:59:19,908 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 07:59:19,929 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+2025-11-16 07:59:19,962 - __main__ - INFO - 📡 SSE client disconnected from room: test1
+2025-11-16 07:59:19,964 - __main__ - INFO - 📡 New SSE client connected to room: test1
+INFO:     127.0.0.1:50897 - "GET /rooms/test1/stream HTTP/1.1" 200 OK
+2025-11-16 07:59:19,966 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:59:19,969 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 07:59:19,969 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 07:59:40,419 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 07:59:40,423 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+INFO:     127.0.0.1:50902 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50903 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50904 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50907 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50908 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50902 - "GET /knowledge/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50903 - "OPTIONS /interviews/1/ask HTTP/1.1" 200 OK
+2025-11-16 07:59:40,474 - __main__ - INFO - 📡 SSE client disconnected from room: test1
+INFO:     127.0.0.1:50904 - "GET /questions HTTP/1.1" 200 OK
+2025-11-16 07:59:40,479 - __main__ - INFO - 💬 Interviewer asking: How should I evaluate technical depth?...
+2025-11-16 07:59:40,484 - rag_engine.conversational_assistant - INFO - 💬 Answering question for interview 1: How should I evaluate technical depth?...
+2025-11-16 07:59:40,884 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-16 07:59:40,903 - rag_engine.vector_store - INFO - 🔍 Found 0 results for query
+2025-11-16 07:59:51,739 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 07:59:51,742 - rag_engine.conversational_assistant - INFO - ✅ Answer generated with confidence: 0.95
+2025-11-16 07:59:51,742 - __main__ - INFO - ✅ Answer generated with 0 sources
+INFO:     127.0.0.1:50903 - "POST /interviews/1/ask HTTP/1.1" 200 OK
+2025-11-16 08:00:18,210 - __main__ - INFO - 📡 New SSE client connected to room: test1
+INFO:     127.0.0.1:51104 - "GET /rooms/test1/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51137 - "OPTIONS /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+2025-11-16 08:01:04,664 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+INFO:     127.0.0.1:51137 - "GET /knowledge/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51135 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51139 - "GET /questions HTTP/1.1" 200 OK
+2025-11-16 08:01:04,685 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 08:01:04,685 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 08:01:27,158 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 08:01:27,160 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+INFO:     127.0.0.1:51141 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51142 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51137 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+2025-11-16 08:01:27,169 - __main__ - INFO - 💬 Interviewer asking: How should I evaluate technical depth?...
+2025-11-16 08:01:27,172 - rag_engine.conversational_assistant - INFO - 💬 Answering question for interview 1: How should I evaluate technical depth?...
+2025-11-16 08:01:27,176 - __main__ - INFO - 📡 SSE client disconnected from room: test1
+INFO:     127.0.0.1:51135 - "GET /questions HTTP/1.1" 200 OK
+2025-11-16 08:01:27,713 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-16 08:01:27,722 - rag_engine.vector_store - INFO - 🔍 Found 0 results for query
+2025-11-16 08:01:37,415 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 08:01:37,422 - rag_engine.conversational_assistant - INFO - ✅ Answer generated with confidence: 0.95
+2025-11-16 08:01:37,422 - __main__ - INFO - ✅ Answer generated with 0 sources
+INFO:     127.0.0.1:51139 - "POST /interviews/1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54346 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+2025-11-16 08:02:37,297 - __main__ - INFO - 📡 New SSE client connected to room: test1
+INFO:     127.0.0.1:54458 - "GET /rooms/test1/stream HTTP/1.1" 200 OK
+2025-11-16 08:02:53,960 - __main__ - INFO - 📡 SSE client disconnected from room: test1
+2025-11-16 08:02:54,440 - __main__ - INFO - 📡 New SSE client connected to room: test1
+INFO:     127.0.0.1:54657 - "GET /rooms/test1/stream HTTP/1.1" 200 OK
+2025-11-16 08:02:56,490 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 08:02:56,505 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 08:02:56,506 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 08:03:18,409 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 08:03:18,416 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+INFO:     127.0.0.1:54661 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54664 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54665 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54667 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54669 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54664 - "GET /knowledge/stats HTTP/1.1" 200 OK
+2025-11-16 08:03:18,450 - __main__ - INFO - 💬 Interviewer asking: How should I evaluate technical depth?...
+2025-11-16 08:03:18,453 - rag_engine.conversational_assistant - INFO - 💬 Answering question for interview 1: How should I evaluate technical depth?...
+INFO:     127.0.0.1:54665 - "GET /questions HTTP/1.1" 200 OK
+2025-11-16 08:03:18,472 - __main__ - INFO - 📡 SSE client disconnected from room: test1
+2025-11-16 08:03:18,938 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-16 08:03:18,944 - rag_engine.vector_store - INFO - 🔍 Found 0 results for query
+2025-11-16 08:03:27,209 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 08:03:27,216 - rag_engine.conversational_assistant - INFO - ✅ Answer generated with confidence: 0.95
+2025-11-16 08:03:27,216 - __main__ - INFO - ✅ Answer generated with 0 sources
+INFO:     127.0.0.1:54661 - "POST /interviews/1/ask HTTP/1.1" 200 OK
+2025-11-16 08:04:02,195 - __main__ - INFO - 📡 New SSE client connected to room: test1
+INFO:     127.0.0.1:54879 - "GET /rooms/test1/stream HTTP/1.1" 200 OK
+2025-11-16 08:04:37,074 - __main__ - INFO - 📡 SSE client disconnected from room: test1
+2025-11-16 08:04:37,784 - __main__ - INFO - 📡 New SSE client connected to room: test1
+INFO:     127.0.0.1:55060 - "GET /rooms/test1/stream HTTP/1.1" 200 OK
+2025-11-16 08:04:41,520 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 08:04:41,537 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 08:04:41,538 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 08:05:03,376 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 08:05:03,382 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+INFO:     127.0.0.1:55075 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55077 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55079 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55083 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55075 - "GET /knowledge/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55082 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+2025-11-16 08:05:03,418 - __main__ - INFO - 💬 Interviewer asking: How should I evaluate technical depth?...
+2025-11-16 08:05:03,420 - rag_engine.conversational_assistant - INFO - 💬 Answering question for interview 1: How should I evaluate technical depth?...
+INFO:     127.0.0.1:55079 - "GET /questions HTTP/1.1" 200 OK
+2025-11-16 08:05:03,918 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-16 08:05:03,925 - rag_engine.vector_store - INFO - 🔍 Found 0 results for query
+2025-11-16 08:05:12,179 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 08:05:12,181 - rag_engine.conversational_assistant - INFO - ✅ Answer generated with confidence: 0.95
+2025-11-16 08:05:12,182 - __main__ - INFO - ✅ Answer generated with 0 sources
+INFO:     127.0.0.1:55077 - "POST /interviews/1/ask HTTP/1.1" 200 OK
+2025-11-16 08:09:38,925 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 08:09:38,935 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 08:09:38,935 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 08:10:02,084 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 08:10:02,088 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+INFO:     127.0.0.1:55339 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55340 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55341 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55344 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55345 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55340 - "GET /knowledge/stats HTTP/1.1" 200 OK
+2025-11-16 08:10:02,136 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 08:10:02,136 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 08:10:20,146 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 08:10:20,152 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+2025-11-16 08:10:20,159 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 08:10:20,160 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 08:10:42,725 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 08:10:42,732 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+2025-11-16 08:10:42,743 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+INFO:     127.0.0.1:55339 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55341 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55344 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55345 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55340 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55344 - "GET /knowledge/stats HTTP/1.1" 200 OK
+2025-11-16 08:10:42,760 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+INFO:     127.0.0.1:55341 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55345 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55339 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55340 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55344 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55341 - "GET /knowledge/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55340 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55339 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55344 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55575 - "OPTIONS /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55575 - "GET /knowledge/stats HTTP/1.1" 200 OK
+2025-11-16 08:13:13,172 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+INFO:     127.0.0.1:55574 - "GET /interviews/1/copilot/suggestions HTTP/1.1" 200 OK
+2025-11-16 08:13:13,177 - copilot.coverage_tracker - INFO - ✅ CoverageTracker initialized
+2025-11-16 08:13:13,178 - question_bank.question_generator - INFO - 🎯 Generating 3 medium behavioral questions for competency: leadership
+2025-11-16 08:13:36,419 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-16 08:13:36,423 - question_bank.question_generator - INFO - ✅ Generated 3 questions
+INFO:     127.0.0.1:55579 - "GET /interviews/1/feedback/current HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55576 - "GET /questions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55580 - "GET /interviews/1/assistant-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55575 - "POST /interviews/1/questions/suggestions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55574 - "GET /questions HTTP/1.1" 200 OK
+2025-11-16 08:14:16,525 - __main__ - INFO - 📡 SSE client disconnected from room: test1
+2025-11-16 08:14:16,530 - __main__ - INFO - 📡 New SSE client connected to room: test1
+INFO:     127.0.0.1:55708 - "GET /rooms/test1/stream HTTP/1.1" 200 OK
+2025-11-16 08:14:26,611 - __main__ - INFO - 📡 SSE client disconnected from room: test1
+2025-11-16 08:14:26,612 - __main__ - INFO - 📡 New SSE client connected to room: test1
+INFO:     127.0.0.1:55738 - "GET /rooms/test1/stream HTTP/1.1" 200 OK

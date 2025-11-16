@@ -1,0 +1,178 @@
+
+================================================================================
+[09:53:20] EVALUATION
+================================================================================
+Window: 09:53:00 - 09:53:15
+Transcripts: 2
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: Brief conversational exchange where the candidate indicates they have a question and the recruiter acknowledges. No technical content discussed yet.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content
+   - Conversation transition only
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:53:30] EVALUATION
+================================================================================
+Window: 09:53:15 - 09:53:25
+Transcripts: 4
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter asked the candidate to explain cross-validation, and the candidate began responding by mentioning it as a means to avoid overfitting, though the response was cut off mid-sentence.
+
+🔑 Key Topics: CV_TECHNIQUES, REGULARIZATION
+
+🚩 Flags:
+   - Incomplete candidate response - answer was cut off
+   - Candidate mentioned overfitting which relates to regularization concepts
+
+
+================================================================================
+[09:53:42] EVALUATION
+================================================================================
+Window: 09:53:15 - 09:53:37
+Transcripts: 8
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter asked the candidate to explain cross-validation. The candidate began describing k-fold cross-validation, mentioning dividing the training set into k parts and using k-1 parts for training, but the response was incomplete and somewhat fragmented.
+
+🔑 Key Topics: CV_TECHNIQUES
+
+🚩 Flags:
+   - Incomplete answer
+   - Candidate response fragmented and cut off
+   - Answer lacks clarity and completeness
+
+
+================================================================================
+[09:54:00] EVALUATION
+================================================================================
+Window: 09:53:30 - 09:53:54
+Transcripts: 9
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: Candidate explains k-fold cross-validation fundamentals, mentioning dividing data into k parts, using k-1 for training and 1 for validation, and briefly touching on hyperparameter tuning and overfitting prevention.
+
+🔑 Key Topics: CV_TECHNIQUES, REGULARIZATION
+
+🚩 Flags:
+   - Candidate's explanation incomplete/fragmented
+   - Candidate mentions 'the last part' suggesting misunderstanding of k-fold rotation
+   - Overfitting mention cut off mid-sentence
+
+
+================================================================================
+[09:54:07] EVALUATION
+================================================================================
+Window: 09:53:46 - 09:54:01
+Transcripts: 5
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.85)
+🎯 Question Difficulty: MEDIUM (confidence: 0.75)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter asked the candidate to evaluate different methods for feature selection. The candidate began discussing hyperparameter tuning and overfitting avoidance, then started explaining a basic feature selection method.
+
+🔑 Key Topics: REGULARIZATION, FEATURE_SELECTION
+
+🚩 Flags:
+   - Incomplete conversation - candidate response cut off
+   - Candidate appears to mention 'hyperpower' (likely hyperparameter) and overfitting, suggesting discussion of regularization techniques
+
+
+================================================================================
+[09:54:20] EVALUATION
+================================================================================
+Window: 09:53:54 - 09:54:16
+Transcripts: 7
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: EASY (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: The recruiter asks about feature selection methods, and the candidate begins explaining basic approaches including correlation matrix analysis and PCA (Principal Component Analysis).
+
+🔑 Key Topics: FEATURE_SELECTION
+
+🚩 Flags:
+   - Candidate response incomplete/cut off
+   - Only basic feature selection methods mentioned so far
+
+
+================================================================================
+[09:54:33] EVALUATION
+================================================================================
+Window: 09:54:07 - 09:54:28
+Transcripts: 8
+
+📊 Subject Relevance: ON_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: MEDIUM (confidence: 0.65)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.00)
+
+📝 Summary: Candidate discusses feature selection methods including examining correlation matrices to remove highly correlated features and using Principal Component Analysis (PCA) for dimensionality reduction.
+
+🔑 Key Topics: FEATURE_SELECTION
+
+🚩 Flags:
+   - Only candidate response visible - no interviewer question context
+   - Incomplete sentence at end suggests excerpt is cut off
+
+
+================================================================================
+[09:54:39] EVALUATION
+================================================================================
+Window: 09:54:21 - 09:54:34
+Transcripts: 6
+
+📊 Subject Relevance: PARTIALLY_RELEVANT (confidence: 0.75)
+🎯 Question Difficulty: EASY (confidence: 0.65)
+💬 Interviewer Tone: ENCOURAGING (confidence: 0.85)
+
+📝 Summary: The candidate was explaining dimensionality reduction and PCA as a feature engineering technique. The interviewer politely concluded the interview and indicated they would follow up.
+
+🔑 Key Topics: FEATURE_SELECTION
+
+🚩 Flags:
+   - Incomplete response captured - only tail end of answer visible
+   - Interview appears to be ending, limited context for full assessment
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[09:55:01] EVALUATION
+================================================================================
+Window: 09:54:25 - 09:54:39
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: NEUTRAL (confidence: 0.70)
+
+📝 Summary: This excerpt captures only the closing moments of an interview where the recruiter thanks the candidate and ends the conversation. The candidate's incomplete statement appears to reference a model but context is missing.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incomplete conversation excerpt - missing context
+   - Only closing pleasantries captured
+   - Candidate statement truncated/incomplete
+   - Cryptic closing remark from recruiter about Google
+   - Off-topic/casual discussion detected ([EXTRA])
+

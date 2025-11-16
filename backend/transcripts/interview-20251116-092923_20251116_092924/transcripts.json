@@ -1,0 +1,84 @@
+{
+  "room": "interview-20251116-092923",
+  "session_start": "2025-11-16T09:29:58.604664",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T09:29:58.604664",
+      "speaker": "candidate",
+      "text": "Is that your mum? Is that your mum?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:29:58.606744",
+      "speaker": "recruiter",
+      "text": "What do you want?",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:30:02.617514",
+      "speaker": "candidate",
+      "text": "No, they don't speak. No, they don't speak.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:30:07.576457",
+      "speaker": "recruiter",
+      "text": "uh no let me know let me just",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:30:15.896192",
+      "speaker": "recruiter",
+      "text": "okay like okay like",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:30:15.917493",
+      "speaker": "candidate",
+      "text": "okay perfect okay perfect like",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:30:20.739578",
+      "speaker": "candidate",
+      "text": "can you hear me uh can you hear me",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:30:20.741048",
+      "speaker": "recruiter",
+      "text": "see you uh can you hear me can you hear me okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:30:27.166108",
+      "speaker": "candidate",
+      "text": "I think I think",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:30:27.167950",
+      "speaker": "recruiter",
+      "text": "yes yes",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:30:36.442724",
+      "speaker": "candidate",
+      "text": "it's good.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:30:36.443787",
+      "speaker": "recruiter",
+      "text": "okay perfect I can hear you I can hear you",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:30:47.375294",
+      "speaker": "candidate",
+      "text": "Okay, perfect. I can do it. I can do it.",
+      "is_final": true
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "room": "interview-20251116-090215",
+  "total_evaluations": 1,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T09:03:17.404879",
+      "window_start": "2025-11-16T09:02:49.848370",
+      "window_end": "2025-11-16T09:03:12.147312",
+      "transcripts_evaluated": 2,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "This is the opening moment of the interview where the recruiter asks the candidate to introduce themselves. The candidate begins their self-introduction but the excerpt cuts off immediately.",
+      "key_topics": [],
+      "flags": [
+        "Conversation just starting - insufficient content for technical assessment",
+        "Language switch from French to English",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"This is the opening moment of the interview where the recruiter asks the candidate to introduce themselves. The candidate begins their self-introduction but the excerpt cuts off immediately.\",\n    \"flags\": [\"Conversation just starting - insufficient content for technical assessment\", \"Language switch from French to English\"],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.7\n}\n```"
+    }
+  ]
+}

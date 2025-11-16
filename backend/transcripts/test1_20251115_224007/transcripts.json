@@ -1,0 +1,84 @@
+{
+  "room": "test1",
+  "session_start": "2025-11-15T22:40:17.439252",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-15T22:40:17.439252",
+      "speaker": "recruiter",
+      "text": "Okay okay okay okay",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:40:19.368708",
+      "speaker": "recruiter",
+      "text": "I think we can start",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:40:21.934600",
+      "speaker": "recruiter",
+      "text": "Hi Elias, I'm Stephan. I'm Stephan.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:40:24.419029",
+      "speaker": "recruiter",
+      "text": "I will be your interviewer today. I'm a",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:40:27.582437",
+      "speaker": "recruiter",
+      "text": "senior researcher at at.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:40:30.391524",
+      "speaker": "recruiter",
+      "text": "The QRT. Can you introduce yourself? Can you introduce yourself",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:40:34.446961",
+      "speaker": "candidate",
+      "text": "yeah of course um so yeah I'm Elias I'm a fourth year Elias I'm a fourth year",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:40:37.409552",
+      "speaker": "candidate",
+      "text": "student at Eco Polytechnique Polytechnique",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:40:39.453684",
+      "speaker": "candidate",
+      "text": "and I'm currently specializing in artificial intelligence artificial intelligence",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:40:42.427909",
+      "speaker": "candidate",
+      "text": "and data science.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:40:42.455011",
+      "speaker": "recruiter",
+      "text": "No, I don't want to fuck up my",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:40:55.425542",
+      "speaker": "recruiter",
+      "text": "But we're going to ask Claude. Tell him, my Raph, what's going on. I asked him. I asked him.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-15T22:41:01.804765",
+      "speaker": "recruiter",
+      "text": "I'm going to quit because",
+      "is_final": true
+    }
+  ]
+}

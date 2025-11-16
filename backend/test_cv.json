@@ -1,0 +1,5 @@
+{
+  "cv_text": "John Doe\njohn@example.com\n+1234567890\n\nSenior Software Engineer with 8 years of experience in Python, React, and AWS. Led teams of 5-10 engineers.\n\nExperience:\n\nSenior Software Engineer at Tech Corp (2020-Present)\n- Led development of microservices architecture\n- Managed team of 8 engineers\n- Reduced deployment time by 60%\n\nSoftware Engineer at StartupXYZ (2017-2020)\n- Built React frontend applications\n- Implemented CI/CD pipelines\n\nEducation:\nBS Computer Science, MIT (2017)\nGPA: 3.8\n\nSkills:\nPython (Expert), React (Advanced), AWS (Advanced), Docker, Kubernetes",
+  "candidate_name": "John Doe",
+  "candidate_email": "john@example.com"
+}

@@ -1,0 +1,18 @@
+{
+  "room": "interview-20251116-090215",
+  "session_start": "2025-11-16T09:02:49.846238",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T09:02:49.846238",
+      "speaker": "recruiter",
+      "text": "Fais voir qui t'es revient juste.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T09:03:12.144999",
+      "speaker": "candidate",
+      "text": "Hello, my name is",
+      "is_final": true
+    }
+  ]
+}

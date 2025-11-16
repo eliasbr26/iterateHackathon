@@ -1,0 +1,27 @@
+[09:53:00] 👤 CANDIDATE: I have a question, Sam
+[09:53:15] 👔 RECRUITER: okay okay
+[09:53:20] 👔 RECRUITER: okay perfect uh could you please talk to me about uh cross uh cross
+[09:53:21] 👔 RECRUITER: cross validation please cross validation please
+[09:53:25] 👤 CANDIDATE: Yeah, cause validation is a mean to avoid the over to avoid the over.
+[09:53:30] 👤 CANDIDATE: The question is the k-fold cross-validation. The cross-validation.
+[09:53:31] 👤 CANDIDATE: It's when you divide your divide your
+[09:53:34] 👤 CANDIDATE: transit with key parts key parts.
+[09:53:37] 👤 CANDIDATE: And you use a k-1 part to train and to train and
+[09:53:42] 👤 CANDIDATE: the last part the last part.
+[09:53:44] 👤 CANDIDATE: To validate. It is useful if you if you're
+[09:53:46] 👤 CANDIDATE: looking for a good hyperpower
+[09:53:49] 👤 CANDIDATE: for example and you want to avoid over
+[09:53:54] 👔 RECRUITER: evaluate different methods um
+[09:54:00] 👔 RECRUITER: for feature selection.
+[09:54:01] 👤 CANDIDATE: Okay, the most basic method is a
+[09:54:07] 👤 CANDIDATE: I think the just to look just to look
+[09:54:10] 👤 CANDIDATE: at the correlation matrix and to delete some features
+[09:54:13] 👤 CANDIDATE: that are very correlated, another mean is to
+[09:54:16] 👤 CANDIDATE: do a PCA, it's a principal component
+[09:54:21] 👤 CANDIDATE: analysis. It's a mean to
+[09:54:22] 👤 CANDIDATE: reduce the dimension of your features in
+[09:54:25] 👤 CANDIDATE: your model. And it is a
+[09:54:28] 👤 CANDIDATE: quite useful and used in most of
+[09:54:33] 👤 CANDIDATE: the cases.
+[09:54:34] 👔 RECRUITER: Okay, perfect. Thank you so much for your time today. And we'll get back to you soon. We'll get back to you soon.
+[09:54:39] 👔 RECRUITER: Don't work in Google. Don't work in Google.

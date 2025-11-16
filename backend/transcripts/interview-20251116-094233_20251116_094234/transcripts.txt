@@ -1,0 +1,26 @@
+[09:43:28] 👤 CANDIDATE: Wait wait wait
+[09:43:32] 👔 RECRUITER: Hello Hello
+[09:43:35] 👔 RECRUITER: Can you hear me? Yes, yes, yes
+[09:43:35] 👤 CANDIDATE: - Hello, can you hear me? - Yes, I can hear you.
+[09:43:40] 👤 CANDIDATE: - I don't think so. I think
+[09:43:40] 👔 RECRUITER: I can hear you can hear me okay okay
+[09:43:45] 👔 RECRUITER: perfect uh let's start off let's start off
+[09:43:45] 👤 CANDIDATE: I can. Wait, that's it. Okay, perfect. (audio distorts)
+[09:43:50] 👤 CANDIDATE: (audio distorts)
+[09:43:50] 👤 CANDIDATE: (audio distorts)
+[09:43:50] 👤 CANDIDATE: (audio distorts)
+[09:43:50] 👔 RECRUITER: uh I just want to ask you real quick uh what do you think uh about uh
+[09:43:54] 👔 RECRUITER: um cross validation cross validation
+[09:43:55] 👤 CANDIDATE: - I think Rosalind, I think Rosalind
+[09:44:01] 👔 RECRUITER: Hello.
+[09:44:05] 👤 CANDIDATE: - I think Rosalind - is very interesting because it allows you to reduce variance of your dataset when you train your model because you train your model because
+[09:44:10] 👤 CANDIDATE: you can use it on different different
+[09:44:10] 👤 CANDIDATE: datasets.
+[09:44:11] 👔 RECRUITER: okay cool um uh tell me tell me different tell me tell me different
+[09:44:18] 👔 RECRUITER: ways you can uh uh
+[09:44:18] 👔 RECRUITER: do for regularization
+[09:44:21] 👤 CANDIDATE: okay so like my favorite one I'd say it's like the day so because it's L1 regression and you can shift the great fish into zero I also love the bridge or you can just like have uh exact uh exact
+[09:44:26] 👤 CANDIDATE: values for you you beta you beta
+[09:44:29] 👔 RECRUITER: okay perfect and uh perfect that's good uh let me check uh let me check
+[09:44:36] 👤 CANDIDATE: some much
+[09:44:42] 👤 CANDIDATE: interview not interview not

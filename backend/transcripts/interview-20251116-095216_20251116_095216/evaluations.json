@@ -1,0 +1,201 @@
+{
+  "room": "interview-20251116-095216",
+  "total_evaluations": 9,
+  "evaluations": [
+    {
+      "timestamp": "2025-11-16T09:53:20.418009",
+      "window_start": "2025-11-16T09:53:00.839252",
+      "window_end": "2025-11-16T09:53:15.905578",
+      "transcripts_evaluated": 2,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "Brief conversational exchange where the candidate indicates they have a question and the recruiter acknowledges. No technical content discussed yet.",
+      "key_topics": [],
+      "flags": [
+        "No technical content",
+        "Conversation transition only",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.95,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"Brief conversational exchange where the candidate indicates they have a question and the recruiter acknowledges. No technical content discussed yet.\",\n    \"flags\": [\"No technical content\", \"Conversation transition only\"],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.95,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:53:30.402909",
+      "window_start": "2025-11-16T09:53:15.905578",
+      "window_end": "2025-11-16T09:53:25.842503",
+      "transcripts_evaluated": 4,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter asked the candidate to explain cross-validation, and the candidate began responding by mentioning it as a means to avoid overfitting, though the response was cut off mid-sentence.",
+      "key_topics": [
+        "CV_TECHNIQUES",
+        "REGULARIZATION"
+      ],
+      "flags": [
+        "Incomplete candidate response - answer was cut off",
+        "Candidate mentioned overfitting which relates to regularization concepts"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[CV_TECHNIQUES]\", \"[REGULARIZATION]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter asked the candidate to explain cross-validation, and the candidate began responding by mentioning it as a means to avoid overfitting, though the response was cut off mid-sentence.\",\n    \"flags\": [\n        \"Incomplete candidate response - answer was cut off\",\n        \"Candidate mentioned overfitting which relates to regularization concepts\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:53:42.659717",
+      "window_start": "2025-11-16T09:53:15.905578",
+      "window_end": "2025-11-16T09:53:37.800629",
+      "transcripts_evaluated": 8,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter asked the candidate to explain cross-validation. The candidate began describing k-fold cross-validation, mentioning dividing the training set into k parts and using k-1 parts for training, but the response was incomplete and somewhat fragmented.",
+      "key_topics": [
+        "CV_TECHNIQUES"
+      ],
+      "flags": [
+        "Incomplete answer",
+        "Candidate response fragmented and cut off",
+        "Answer lacks clarity and completeness"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[CV_TECHNIQUES]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter asked the candidate to explain cross-validation. The candidate began describing k-fold cross-validation, mentioning dividing the training set into k parts and using k-1 parts for training, but the response was incomplete and somewhat fragmented.\",\n    \"flags\": [\"Incomplete answer\", \"Candidate response fragmented and cut off\", \"Answer lacks clarity and completeness\"],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:54:00.025775",
+      "window_start": "2025-11-16T09:53:30.753347",
+      "window_end": "2025-11-16T09:53:54.861802",
+      "transcripts_evaluated": 9,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "neutral",
+      "summary": "Candidate explains k-fold cross-validation fundamentals, mentioning dividing data into k parts, using k-1 for training and 1 for validation, and briefly touching on hyperparameter tuning and overfitting prevention.",
+      "key_topics": [
+        "CV_TECHNIQUES",
+        "REGULARIZATION"
+      ],
+      "flags": [
+        "Candidate's explanation incomplete/fragmented",
+        "Candidate mentions 'the last part' suggesting misunderstanding of k-fold rotation",
+        "Overfitting mention cut off mid-sentence"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[CV_TECHNIQUES]\", \"[REGULARIZATION]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"Candidate explains k-fold cross-validation fundamentals, mentioning dividing data into k parts, using k-1 for training and 1 for validation, and briefly touching on hyperparameter tuning and overfitting prevention.\",\n    \"flags\": [\n        \"Candidate's explanation incomplete/fragmented\",\n        \"Candidate mentions 'the last part' suggesting misunderstanding of k-fold rotation\",\n        \"Overfitting mention cut off mid-sentence\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:54:07.679821",
+      "window_start": "2025-11-16T09:53:46.762714",
+      "window_end": "2025-11-16T09:54:01.773182",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "medium",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter asked the candidate to evaluate different methods for feature selection. The candidate began discussing hyperparameter tuning and overfitting avoidance, then started explaining a basic feature selection method.",
+      "key_topics": [
+        "REGULARIZATION",
+        "FEATURE_SELECTION"
+      ],
+      "flags": [
+        "Incomplete conversation - candidate response cut off",
+        "Candidate appears to mention 'hyperpower' (likely hyperparameter) and overfitting, suggesting discussion of regularization techniques"
+      ],
+      "confidence_subject": 0.85,
+      "confidence_difficulty": 0.75,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[REGULARIZATION]\", \"[FEATURE_SELECTION]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"medium\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter asked the candidate to evaluate different methods for feature selection. The candidate began discussing hyperparameter tuning and overfitting avoidance, then started explaining a basic feature selection method.\",\n    \"flags\": [\"Incomplete conversation - candidate response cut off\", \"Candidate appears to mention 'hyperpower' (likely hyperparameter) and overfitting, suggesting discussion of regularization techniques\"],\n    \"confidence_subject\": 0.85,\n    \"confidence_difficulty\": 0.75,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:54:20.989732",
+      "window_start": "2025-11-16T09:53:54.861802",
+      "window_end": "2025-11-16T09:54:16.775319",
+      "transcripts_evaluated": 7,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "easy",
+      "interviewer_tone": "neutral",
+      "summary": "The recruiter asks about feature selection methods, and the candidate begins explaining basic approaches including correlation matrix analysis and PCA (Principal Component Analysis).",
+      "key_topics": [
+        "FEATURE_SELECTION"
+      ],
+      "flags": [
+        "Candidate response incomplete/cut off",
+        "Only basic feature selection methods mentioned so far"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[FEATURE_SELECTION]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"The recruiter asks about feature selection methods, and the candidate begins explaining basic approaches including correlation matrix analysis and PCA (Principal Component Analysis).\",\n    \"flags\": [\"Candidate response incomplete/cut off\", \"Only basic feature selection methods mentioned so far\"],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.9,\n    \"confidence_tone\": 0.7\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:54:33.221896",
+      "window_start": "2025-11-16T09:54:07.941538",
+      "window_end": "2025-11-16T09:54:28.761617",
+      "transcripts_evaluated": 8,
+      "subject_relevance": "on_topic",
+      "question_difficulty": "medium",
+      "interviewer_tone": "unknown",
+      "summary": "Candidate discusses feature selection methods including examining correlation matrices to remove highly correlated features and using Principal Component Analysis (PCA) for dimensionality reduction.",
+      "key_topics": [
+        "FEATURE_SELECTION"
+      ],
+      "flags": [
+        "Only candidate response visible - no interviewer question context",
+        "Incomplete sentence at end suggests excerpt is cut off"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.65,
+      "confidence_tone": 0.0,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[FEATURE_SELECTION]\"],\n    \"subject_relevance\": \"on_topic\",\n    \"question_difficulty\": \"medium\",\n    \"interviewer_tone\": \"unknown\",\n    \"summary\": \"Candidate discusses feature selection methods including examining correlation matrices to remove highly correlated features and using Principal Component Analysis (PCA) for dimensionality reduction.\",\n    \"flags\": [\"Only candidate response visible - no interviewer question context\", \"Incomplete sentence at end suggests excerpt is cut off\"],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.65,\n    \"confidence_tone\": 0.0\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:54:39.618589",
+      "window_start": "2025-11-16T09:54:21.344131",
+      "window_end": "2025-11-16T09:54:34.915016",
+      "transcripts_evaluated": 6,
+      "subject_relevance": "partially_relevant",
+      "question_difficulty": "easy",
+      "interviewer_tone": "encouraging",
+      "summary": "The candidate was explaining dimensionality reduction and PCA as a feature engineering technique. The interviewer politely concluded the interview and indicated they would follow up.",
+      "key_topics": [
+        "FEATURE_SELECTION"
+      ],
+      "flags": [
+        "Incomplete response captured - only tail end of answer visible",
+        "Interview appears to be ending, limited context for full assessment",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.75,
+      "confidence_difficulty": 0.65,
+      "confidence_tone": 0.85,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[FEATURE_SELECTION]\", \"[EXTRA]\"],\n    \"subject_relevance\": \"partially_relevant\",\n    \"question_difficulty\": \"easy\",\n    \"interviewer_tone\": \"encouraging\",\n    \"summary\": \"The candidate was explaining dimensionality reduction and PCA as a feature engineering technique. The interviewer politely concluded the interview and indicated they would follow up.\",\n    \"flags\": [\"Incomplete response captured - only tail end of answer visible\", \"Interview appears to be ending, limited context for full assessment\"],\n    \"confidence_subject\": 0.75,\n    \"confidence_difficulty\": 0.65,\n    \"confidence_tone\": 0.85\n}\n```"
+    },
+    {
+      "timestamp": "2025-11-16T09:55:01.691104",
+      "window_start": "2025-11-16T09:54:25.756006",
+      "window_end": "2025-11-16T09:54:39.856882",
+      "transcripts_evaluated": 5,
+      "subject_relevance": "off_topic",
+      "question_difficulty": "unknown",
+      "interviewer_tone": "neutral",
+      "summary": "This excerpt captures only the closing moments of an interview where the recruiter thanks the candidate and ends the conversation. The candidate's incomplete statement appears to reference a model but context is missing.",
+      "key_topics": [],
+      "flags": [
+        "Incomplete conversation excerpt - missing context",
+        "Only closing pleasantries captured",
+        "Candidate statement truncated/incomplete",
+        "Cryptic closing remark from recruiter about Google",
+        "Off-topic/casual discussion detected ([EXTRA])"
+      ],
+      "confidence_subject": 0.95,
+      "confidence_difficulty": 0.9,
+      "confidence_tone": 0.7,
+      "raw_llm_response": "```json\n{\n    \"quant_themes\": [\"[EXTRA]\"],\n    \"subject_relevance\": \"off_topic\",\n    \"question_difficulty\": \"unknown\",\n    \"interviewer_tone\": \"neutral\",\n    \"summary\": \"This excerpt captures only the closing moments of an interview where the recruiter thanks the candidate and ends the conversation. The candidate's incomplete statement appears to reference a model but context is missing.\",\n    \"flags\": [\n        \"Incomplete conversation excerpt - missing context\",\n        \"Only closing pleasantries captured\",\n        \"Candidate statement truncated/incomplete\",\n        \"Cryptic closing remark from recruiter about Google\"\n    ],\n    \"confidence_subject\": 0.95,\n    \"confidence_difficulty\": 0.90,\n    \"confidence_tone\": 0.70\n}\n```"
+    }
+  ]
+}
