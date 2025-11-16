@@ -103,10 +103,10 @@ const InterviewTimeline = ({
   }
 
   return (
-    <div className={`space-y-4 ${className}`}>
+    <div className={`space-y-2 ${className}`}>
       <div className="flex items-center justify-between">
-        <h3 className="text-sm font-medium">Interview Timeline</h3>
-        <div className="flex gap-2 text-xs text-muted-foreground">
+        <h3 className="text-xs font-medium">Interview Timeline</h3>
+        <div className="flex gap-2 text-[10px] text-muted-foreground">
           <span>🧊 Easy</span>
           <span>🌡️ Medium</span>
           <span>🔥 Hard</span>
@@ -114,12 +114,12 @@ const InterviewTimeline = ({
       </div>
 
       <ScrollArea className="w-full">
-        <div className="relative pb-4">
+        <div className="relative pb-2">
           {/* Timeline line */}
-          <div className="absolute left-0 right-0 top-6 h-0.5 bg-gray-200" />
+          <div className="absolute left-0 right-0 top-4 h-0.5 bg-gray-200" />
 
-          {/* Timeline segments */}
-          <div className="flex gap-2 relative">
+          {/* Timeline segments - Compact Version */}
+          <div className="flex gap-1 relative">
             <TooltipProvider>
               {evaluations.map((evaluation, index) => {
                 const colors = getSegmentColor(
@@ -131,40 +131,30 @@ const InterviewTimeline = ({
                   <Tooltip key={`segment-${index}`}>
                     <TooltipTrigger asChild>
                       <button
-                        className={`flex flex-col items-center min-w-[60px] group ${
+                        className={`flex flex-col items-center min-w-[50px] group ${
                           onSegmentClick ? 'cursor-pointer' : ''
                         }`}
                         onClick={() => onSegmentClick?.(evaluation)}
                       >
-                        {/* Time label */}
-                        <div className="text-[10px] text-muted-foreground mb-1">
+                        {/* Time label - Compact */}
+                        <div className="text-[9px] text-muted-foreground mb-0.5">
                           {formatTime(evaluation.timestamp)}
                         </div>
 
-                        {/* Segment */}
+                        {/* Segment - Reduced Height */}
                         <div
-                          className={`w-full h-12 ${colors.bg} ${colors.border} border-2 rounded-lg shadow-sm transition-all duration-200 group-hover:shadow-md group-hover:scale-105 flex items-center justify-center`}
+                          className={`w-full h-8 ${colors.bg} ${colors.border} border rounded shadow-sm transition-all duration-200 group-hover:shadow-md group-hover:scale-105 flex items-center justify-center`}
                         >
                           <div className="text-center">
-                            <div className="text-xl">
+                            <div className="text-base">
                               {getDifficultyLabel(evaluation.question_difficulty)}
-                            </div>
-                            <div className="text-xs font-bold text-white drop-shadow">
-                              {getRelevanceIcon(evaluation.subject_relevance)}
                             </div>
                           </div>
                         </div>
-
-                        {/* Topics (if any) */}
-                        {evaluation.key_topics.length > 0 && (
-                          <div className="text-[9px] text-muted-foreground mt-1 max-w-[60px] truncate">
-                            {evaluation.key_topics[0]}
-                          </div>
-                        )}
                       </button>
                     </TooltipTrigger>
                     <TooltipContent className="max-w-xs">
-                      <div className="space-y-2">
+                      <div className="space-y-1">
                         <div className="font-semibold text-xs">
                           {formatTime(evaluation.timestamp)}
                         </div>
@@ -180,41 +170,16 @@ const InterviewTimeline = ({
                           {evaluation.key_topics.length > 0 && (
                             <p>
                               <span className="font-medium">Topics:</span>{' '}
-                              {evaluation.key_topics.slice(0, 3).join(', ')}
-                              {evaluation.key_topics.length > 3 && '...'}
+                              {evaluation.key_topics.slice(0, 2).join(', ')}
                             </p>
                           )}
                         </div>
-                        <p className="text-xs text-muted-foreground italic">
-                          {evaluation.summary.slice(0, 100)}
-                          {evaluation.summary.length > 100 && '...'}
-                        </p>
                       </div>
                     </TooltipContent>
                   </Tooltip>
                 );
               })}
             </TooltipProvider>
-          </div>
-
-          {/* Legend */}
-          <div className="mt-6 flex flex-wrap gap-3 text-xs">
-            <div className="flex items-center gap-1">
-              <div className="w-3 h-3 bg-blue-400 border border-blue-600 rounded" />
-              <span className="text-muted-foreground">Easy</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <div className="w-3 h-3 bg-yellow-400 border border-yellow-600 rounded" />
-              <span className="text-muted-foreground">Medium</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <div className="w-3 h-3 bg-red-500 border border-red-700 rounded" />
-              <span className="text-muted-foreground">Hard</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <div className="w-3 h-3 bg-red-400 border border-red-600 rounded" />
-              <span className="text-muted-foreground">Off-topic</span>
-            </div>
           </div>
         </div>
       </ScrollArea>

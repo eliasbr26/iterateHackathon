@@ -1,0 +1,48 @@
+{
+  "room": "interview-20251116-013946",
+  "session_start": "2025-11-16T01:41:15.498321",
+  "transcripts": [
+    {
+      "timestamp": "2025-11-16T01:41:15.498321",
+      "speaker": "recruiter",
+      "text": "Ah, I remember what I was trying to say. The word I was looking for.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:41:18.481005",
+      "speaker": "recruiter",
+      "text": "I'm a senior dev. Ah, yes. Ah, yes.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:41:21.476515",
+      "speaker": "recruiter",
+      "text": "This is Simon Creachet.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:41:24.460912",
+      "speaker": "recruiter",
+      "text": "I don't know what to call you. I was looking for a name.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:41:31.501095",
+      "speaker": "recruiter",
+      "text": "It's not bad, I think. No, it's shit, bro. I really have nothing. I really have nothing.",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:41:33.452233",
+      "speaker": "recruiter",
+      "text": "I'm",
+      "is_final": true
+    },
+    {
+      "timestamp": "2025-11-16T01:41:36.478472",
+      "speaker": "recruiter",
+      "text": "surrounded by a bunch of other people uh also um also",
+      "is_final": true
+    }
+  ]
+}

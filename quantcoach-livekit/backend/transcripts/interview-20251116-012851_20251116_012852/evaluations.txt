@@ -1,0 +1,217 @@
+
+================================================================================
+[01:30:46] EVALUATION
+================================================================================
+Window: 01:30:20 - 01:30:41
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: The conversation appears to be unintelligible or possibly corrupted audio transcription with no discernible quant finance content. The text consists of fragmented, repetitive phrases that do not form coherent interview questions or discussion.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Unintelligible conversation - possibly transcription error
+   - No recognizable interview content
+   - No technical questions asked
+   - Cannot assess interview quality
+
+
+================================================================================
+[01:31:04] EVALUATION
+================================================================================
+Window: 01:30:32 - 01:30:59
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation appears to be casual, fragmented dialogue that does not contain any discernible quant finance technical content. The exchange seems to be about waiting for transportation or an informal personal discussion.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content detected
+   - Conversation unclear/fragmented
+   - Possible recording error or irrelevant audio captured
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:31:28] EVALUATION
+================================================================================
+Window: 01:30:59 - 01:31:23
+Transcripts: 5
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt contains only informal conversation fragments, including greetings and unclear statements. No quantitative finance topics are discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - No technical content
+   - Unclear/fragmented communication
+   - Appears to be conversation start or technical difficulty
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:31:51] EVALUATION
+================================================================================
+Window: 01:31:14 - 01:31:45
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This conversation appears to be incoherent or possibly corrupted audio/transcription with fragmented statements about money, fixing problems, and waiting, with no discernible quant finance content.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Conversation appears incoherent or corrupted
+   - No technical content identified
+   - Possible transcription error or recording quality issue
+   - Unusual mention of money transaction ('Give me 50 dollars')
+   - No clear interview structure present
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:32:12] EVALUATION
+================================================================================
+Window: 01:31:45 - 01:32:08
+Transcripts: 7
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: This excerpt contains only procedural conversation about technical setup (video control and wireless) with no substantive quant finance content discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content discussed
+   - Only procedural/setup conversation
+   - Repetitive/unclear communication from recruiter
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:32:25] EVALUATION
+================================================================================
+Window: 01:31:59 - 01:32:20
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.98)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.85)
+
+📝 Summary: The conversation appears to be technical setup or audio/video troubleshooting at the beginning of an interview, with fragmented speech that suggests connection or recording issues. No substantive quant finance content discussed.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - No technical content discussed
+   - Fragmented/corrupted transcript
+   - Appears to be pre-interview setup only
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:33:02] EVALUATION
+================================================================================
+Window: 01:32:18 - 01:32:56
+Transcripts: 4
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: The conversation appears to be garbled or corrupted text with no coherent technical content. The recruiter's statements are fragmented and unintelligible, containing no discernible Quant Finance discussion.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Conversation text appears corrupted or garbled
+   - No coherent technical discussion
+   - No identifiable questions asked
+   - Possible transcription error or audio quality issue
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:33:22] EVALUATION
+================================================================================
+Window: 01:32:56 - 01:33:17
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 1.00)
+🎯 Question Difficulty: UNKNOWN (confidence: 1.00)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.30)
+
+📝 Summary: This conversation appears incoherent and contains no recognizable quant finance content. The recruiter's statements are fragmented and nonsensical, possibly due to transcription errors or technical issues during recording.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Incoherent conversation - possible transcription error
+   - No technical content present
+   - No clear interview structure
+   - Unprofessional or corrupted dialogue
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:33:35] EVALUATION
+================================================================================
+Window: 01:33:08 - 01:33:29
+Transcripts: 9
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.90)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.70)
+
+📝 Summary: The conversation appears to be fragmented casual chat or technical audio issues with no discernible quant finance content. The transcript shows incomplete sentences and unclear dialogue that does not relate to any technical interview topics.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Off-topic discussion
+   - Transcript appears corrupted or contains audio artifacts
+   - No technical content detected
+   - Unable to identify substantive interview questions or answers
+   - Off-topic/casual discussion detected ([EXTRA])
+
+
+================================================================================
+[01:33:57] EVALUATION
+================================================================================
+Window: 01:33:22 - 01:33:35
+Transcripts: 6
+
+📊 Subject Relevance: OFF_TOPIC (confidence: 0.95)
+🎯 Question Difficulty: UNKNOWN (confidence: 0.95)
+💬 Interviewer Tone: UNKNOWN (confidence: 0.90)
+
+📝 Summary: The conversation excerpt contains fragmented, unintelligible dialogue with no discernible technical content or coherent discussion. No quant finance topics are identifiable.
+
+🔑 Key Topics: None
+
+🚩 Flags:
+   - Unintelligible conversation
+   - No technical content detected
+   - Transcript quality issues - fragmented speech
+   - Unable to assess interview substance
+
